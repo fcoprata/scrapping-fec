@@ -1,0 +1,21 @@
+# Arquivos de dados
+*.csv
+*.json
+
+# Ambiente virtual
+.venv/
+venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Configurações do editor
+.vscode/
+.idea/
+
+# Outros arquivos comuns
+*.log
+.DS_Store
+.env
