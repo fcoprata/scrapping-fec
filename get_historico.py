@@ -31,6 +31,14 @@ def get_jogos_ano(ano: int) -> list:
             if len(cols) < 9:
                 continue
 
+            # Captura do link detalhado
+            link_tag = linha.select_one("td.result a")
+            link_detalhado = (
+                "https://www.ogol.com.br" + link_tag["href"]
+                if link_tag and link_tag.get("href")
+                else None
+            )
+
             jogo = {
                 "ano": ano,
                 "resultado": cols[0].get_text(strip=True),
@@ -40,12 +48,12 @@ def get_jogos_ano(ano: int) -> list:
                 "adversario": cols[5].get_text(strip=True),
                 "placar": cols[6].get_text(strip=True),
                 "competicao": cols[7].get_text(strip=True),
-                "rodada": cols[8].get_text(strip=True)
+                "rodada": cols[8].get_text(strip=True),
+                "url_detalhes": link_detalhado
             }
 
             jogos.append(jogo)
 
-        # Avança a página
         page += 1
 
     return jogos
