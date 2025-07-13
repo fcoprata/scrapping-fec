@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 
+
 def get_clean_facts_graphs(soup: BeautifulSoup):
     """
     Localiza a div 'facts_graphs', remove elementos desnecessários
@@ -10,7 +11,7 @@ def get_clean_facts_graphs(soup: BeautifulSoup):
 
     if not facts_graphs:
         return None
-    
+
     for garbage in facts_graphs.find_all(["div"], class_=["goal_shadow", "bars_shadow"]):
         garbage.decompose()
 

@@ -3,6 +3,7 @@ import json
 from flask import Request
 from scrapper import extract_all_games, extract_fatcs, extract_historico_completo
 
+
 def api_fortaleza(request: Request):
     try:
         path = request.path
