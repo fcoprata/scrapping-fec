@@ -6,8 +6,8 @@ from views._common import render_page_header
 # EDITE AQUI — seus links pessoais
 # ============================================================
 AUTHOR_NAME = "Francisco Prata"
-LINKEDIN_URL = "https://www.linkedin.com/in/SEU-USUARIO"
-INSTAGRAM_URL = "https://www.instagram.com/SEU-USUARIO"
+LINKEDIN_URL = "https://www.linkedin.com/in/franciscoprataneto/"
+INSTAGRAM_URL = "https://www.instagram.com/fcoprata"
 CONTACT_EMAIL = "fcopratan@gmail.com"
 # ============================================================
 
