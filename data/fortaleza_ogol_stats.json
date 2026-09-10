@@ -1,0 +1,1027 @@
+[
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-23-criciuma-fortaleza/12043450",
+    "home_team": "Criciúma",
+    "away_team": "Fortaleza",
+    "referee": "Alex Gomes Stefano",
+    "stadium": "Heriberto Hülse",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 73,
+    "possession_away_pct": 27,
+    "shots_home": 19,
+    "shots_away": 10,
+    "shots_on_target_home": 6,
+    "shots_on_target_away": 5,
+    "corners_home": 10,
+    "corners_away": 4,
+    "fouls_home": 9,
+    "fouls_away": 13,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "43'",
+        "cumulative_score": "",
+        "scorer": "Pedro Henrique",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "87'",
+        "cumulative_score": "",
+        "scorer": "Paulo Baya",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-19-fortaleza-sao-bernardo/12043438",
+    "home_team": "Fortaleza",
+    "away_team": "São Bernardo",
+    "referee": "Fernando Mendes Filho",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 51,
+    "possession_away_pct": 49,
+    "shots_home": 24,
+    "shots_away": 14,
+    "shots_on_target_home": 5,
+    "shots_on_target_away": 5,
+    "corners_home": 8,
+    "corners_away": 6,
+    "fouls_home": 9,
+    "fouls_away": 8,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "32'",
+        "cumulative_score": "",
+        "scorer": "Lucas Sasha",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "43'",
+        "cumulative_score": "",
+        "scorer": "Pedrinho",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-15-juventude-fortaleza/12043433",
+    "home_team": "Juventude",
+    "away_team": "Fortaleza",
+    "referee": "Savio Pereira Sampaio",
+    "stadium": "Alfredo Jaconi",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 51,
+    "possession_away_pct": 49,
+    "shots_home": 16,
+    "shots_away": 7,
+    "shots_on_target_home": 4,
+    "shots_on_target_away": 2,
+    "corners_home": 5,
+    "corners_away": 4,
+    "fouls_home": 16,
+    "fouls_away": 11,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-09-cuiaba-fortaleza/12043422",
+    "home_team": "Cuiabá",
+    "away_team": "Fortaleza",
+    "referee": "Lucas Torezin",
+    "stadium": "Arena Pantanal",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 57,
+    "possession_away_pct": 43,
+    "shots_home": 16,
+    "shots_away": 5,
+    "shots_on_target_home": 3,
+    "shots_on_target_away": 1,
+    "corners_home": 4,
+    "corners_away": 3,
+    "fouls_home": 11,
+    "fouls_away": 10,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "9'",
+        "cumulative_score": "",
+        "scorer": "Jean Dias",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "53' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Maílton",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-06-fortaleza-palmeiras/12235385",
+    "home_team": "Fortaleza",
+    "away_team": "Palmeiras",
+    "referee": "Rafael Rodrigo Klein",
+    "stadium": "Arena Pantanal",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 43,
+    "possession_away_pct": 57,
+    "shots_home": 14,
+    "shots_away": 14,
+    "shots_on_target_home": 4,
+    "shots_on_target_away": 4,
+    "corners_home": 6,
+    "corners_away": 4,
+    "fouls_home": 12,
+    "fouls_away": 8,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "34'",
+        "cumulative_score": "",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "44'",
+        "cumulative_score": "",
+        "scorer": "Rodriguinho",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "88'",
+        "cumulative_score": "",
+        "scorer": "Lucas Emanoel",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "41'",
+        "cumulative_score": "",
+        "scorer": "Flaco López",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "61'",
+        "cumulative_score": "",
+        "scorer": "Murilo",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-02-palmeiras-fortaleza/12235377",
+    "home_team": "Palmeiras",
+    "away_team": "Fortaleza",
+    "referee": "Rodrigo José Pereira de Lima",
+    "stadium": "Nubank Parque",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 62,
+    "possession_away_pct": 38,
+    "shots_home": 18,
+    "shots_away": 17,
+    "shots_on_target_home": 9,
+    "shots_on_target_away": 2,
+    "corners_home": 7,
+    "corners_away": 7,
+    "fouls_home": 9,
+    "fouls_away": 9,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "48'",
+        "cumulative_score": "",
+        "scorer": "Maurício",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "64'",
+        "cumulative_score": "",
+        "scorer": "Jhon Arias",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "85'",
+        "cumulative_score": "",
+        "scorer": "Flaco López",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-29-fortaleza-botafogo-sp/12043408",
+    "home_team": "Fortaleza",
+    "away_team": "Botafogo-SP",
+    "referee": "Charly Wendy Straub Deretti",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 54,
+    "possession_away_pct": 46,
+    "shots_home": 18,
+    "shots_away": 9,
+    "shots_on_target_home": 5,
+    "shots_on_target_away": 5,
+    "corners_home": 10,
+    "corners_away": 6,
+    "fouls_home": 13,
+    "fouls_away": 18,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "59'",
+        "cumulative_score": "",
+        "scorer": "Ronald",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-22-vila-nova-fortaleza/12043403",
+    "home_team": "Vila Nova",
+    "away_team": "Fortaleza",
+    "referee": "Daiane Muniz",
+    "stadium": "Onésio Brasileiro Alvarenga (OBA)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 52,
+    "possession_away_pct": 48,
+    "shots_home": 10,
+    "shots_away": 9,
+    "shots_on_target_home": 4,
+    "shots_on_target_away": 3,
+    "corners_home": 4,
+    "corners_away": 4,
+    "fouls_home": 18,
+    "fouls_away": 12,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "14'",
+        "cumulative_score": "",
+        "scorer": "Douglas Mendes",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "32'",
+        "cumulative_score": "",
+        "scorer": "João Vieira",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "78'",
+        "cumulative_score": "",
+        "scorer": "Pedro Henrique",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-18-fortaleza-gremio-novorizontino/12043388",
+    "home_team": "Fortaleza",
+    "away_team": "Grêmio Novorizontino",
+    "referee": "Savio Pereira Sampaio",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 38,
+    "possession_away_pct": 62,
+    "shots_home": 17,
+    "shots_away": 19,
+    "shots_on_target_home": 4,
+    "shots_on_target_away": 4,
+    "corners_home": 10,
+    "corners_away": 6,
+    "fouls_home": 17,
+    "fouls_away": 6,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "3'",
+        "cumulative_score": "",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-12-atletico-goianiense-fortaleza/12043379",
+    "home_team": "Atlético Goianiense",
+    "away_team": "Fortaleza",
+    "referee": "Lucas Canetto Bellote",
+    "stadium": "Antônio Accioly",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 36,
+    "possession_away_pct": 64,
+    "shots_home": 6,
+    "shots_away": 15,
+    "shots_on_target_home": 2,
+    "shots_on_target_away": 3,
+    "corners_home": 1,
+    "corners_away": 11,
+    "fouls_home": 9,
+    "fouls_away": 16,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "41'",
+        "cumulative_score": "",
+        "scorer": "Klebert",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-03-fortaleza-ponte-preta/12043368",
+    "home_team": "Fortaleza",
+    "away_team": "Ponte Preta",
+    "referee": "Felipe Fernandes de Lima",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 64,
+    "possession_away_pct": 36,
+    "shots_home": 16,
+    "shots_away": 11,
+    "shots_on_target_home": 6,
+    "shots_on_target_away": 3,
+    "corners_home": 7,
+    "corners_away": 4,
+    "fouls_home": 18,
+    "fouls_away": 20,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "60'",
+        "cumulative_score": "",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "84'",
+        "cumulative_score": "",
+        "scorer": "Maílton",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-28-fortaleza-sport/12043358",
+    "home_team": "Fortaleza",
+    "away_team": "Sport",
+    "referee": "Anderson Daronco",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 40,
+    "possession_away_pct": 60,
+    "shots_home": 12,
+    "shots_away": 16,
+    "shots_on_target_home": 7,
+    "shots_on_target_away": 5,
+    "corners_home": 2,
+    "corners_away": 6,
+    "fouls_home": 20,
+    "fouls_away": 9,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "27'",
+        "cumulative_score": "",
+        "scorer": "Rodrigo",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "90+5'",
+        "cumulative_score": "",
+        "scorer": "Welliton",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "67'",
+        "cumulative_score": "",
+        "scorer": "Pedro Perotti",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-21-crb-fortaleza/12043352",
+    "home_team": "CRB",
+    "away_team": "Fortaleza",
+    "referee": "Bruno Arleu",
+    "stadium": "Rei Pelé (Trapichão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 41,
+    "possession_away_pct": 59,
+    "shots_home": 15,
+    "shots_away": 22,
+    "shots_on_target_home": 7,
+    "shots_on_target_away": 5,
+    "corners_home": 7,
+    "corners_away": 7,
+    "fouls_home": 4,
+    "fouls_away": 11,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "6'",
+        "cumulative_score": "",
+        "scorer": "Mikael",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "81'",
+        "cumulative_score": "",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-17-fortaleza-america-mineiro/12043338",
+    "home_team": "Fortaleza",
+    "away_team": "América Mineiro",
+    "referee": "Alex Gomes Stefano",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 65,
+    "possession_away_pct": 35,
+    "shots_home": 25,
+    "shots_away": 8,
+    "shots_on_target_home": 10,
+    "shots_on_target_away": 7,
+    "corners_home": 10,
+    "corners_away": 0,
+    "fouls_home": 11,
+    "fouls_away": 11,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "29'",
+        "cumulative_score": "",
+        "scorer": "Matías Segovia",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "43'",
+        "cumulative_score": "",
+        "scorer": "Gabriel Barros",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "90+8' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Willian Bigode",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-09-nautico-fortaleza/12043331",
+    "home_team": "Náutico",
+    "away_team": "Fortaleza",
+    "referee": "Lucas Casagrande",
+    "stadium": "Estádio Esportes da Sorte Aflitos",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 73,
+    "possession_away_pct": 27,
+    "shots_home": 31,
+    "shots_away": 4,
+    "shots_on_target_home": 9,
+    "shots_on_target_away": 1,
+    "corners_home": 11,
+    "corners_away": 4,
+    "fouls_home": 7,
+    "fouls_away": 16,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "44' (g.c.)",
+        "cumulative_score": "",
+        "scorer": "Mateus Silva",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-06-vitoria-fortaleza/12236298",
+    "home_team": "Vitória",
+    "away_team": "Fortaleza",
+    "referee": "Rodrigo José Pereira de Lima",
+    "stadium": "Manoel Barradas (Barradão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 52,
+    "possession_away_pct": 48,
+    "shots_home": 11,
+    "shots_away": 6,
+    "shots_on_target_home": 4,
+    "shots_on_target_away": 2,
+    "corners_home": 3,
+    "corners_away": 6,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "72'",
+        "cumulative_score": "",
+        "scorer": "Emmanuel Martínez",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "90'",
+        "cumulative_score": "",
+        "scorer": "Renato Kayzer",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "27'",
+        "cumulative_score": "",
+        "scorer": "Luiz Fernando",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-03-fortaleza-vitoria/12236297",
+    "home_team": "Fortaleza",
+    "away_team": "Vitória",
+    "referee": "Afro Rocha",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 40,
+    "possession_away_pct": 60,
+    "shots_home": 10,
+    "shots_away": 11,
+    "shots_on_target_home": 3,
+    "shots_on_target_away": 7,
+    "corners_home": 3,
+    "corners_away": 7,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "54'",
+        "cumulative_score": "",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "83' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Renato Kayzer",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "90+2'",
+        "cumulative_score": "",
+        "scorer": "Diego Tarzia",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-30-athletic-mg-fortaleza/12043316",
+    "home_team": "Athletic-MG",
+    "away_team": "Fortaleza",
+    "referee": "Wagner do Nascimento Magalhães",
+    "stadium": "Joaquim Portugal (Arena Sicredi)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 46,
+    "possession_away_pct": 54,
+    "shots_home": 13,
+    "shots_away": 14,
+    "shots_on_target_home": 2,
+    "shots_on_target_away": 4,
+    "corners_home": 8,
+    "corners_away": 7,
+    "fouls_home": 17,
+    "fouls_away": 15,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "54'",
+        "cumulative_score": "",
+        "scorer": "Ian Luccas",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-28-sport-fortaleza/12217401",
+    "home_team": "Sport",
+    "away_team": "Fortaleza",
+    "referee": "Denis Ribeiro Serafim",
+    "stadium": "Adelmar da Costa Carvalho (Ilha do Retiro)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "36'",
+        "cumulative_score": "",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "57'",
+        "cumulative_score": "",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-23-fortaleza-londrina/12043308",
+    "home_team": "Fortaleza",
+    "away_team": "Londrina",
+    "referee": "Braulio da Silva Machado",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 52,
+    "possession_away_pct": 48,
+    "shots_home": 17,
+    "shots_away": 9,
+    "shots_on_target_home": 4,
+    "shots_on_target_away": 2,
+    "corners_home": 5,
+    "corners_away": 1,
+    "fouls_home": 14,
+    "fouls_away": 15,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "36'",
+        "cumulative_score": "",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "52' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Luiz Fernando",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "90+10'",
+        "cumulative_score": "",
+        "scorer": "Lucca Prior",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-21-fortaleza-sport/12217399",
+    "home_team": "Fortaleza",
+    "away_team": "Sport",
+    "referee": "Emerson Ricardo Andrade",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "72'",
+        "cumulative_score": "",
+        "scorer": "Luiz Fernando",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "10'  46'",
+        "cumulative_score": "",
+        "scorer": "Pedro Perotti",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-17-ceara-fortaleza/12043298",
+    "home_team": "Ceará",
+    "away_team": "Fortaleza",
+    "referee": "Rodrigo José Pereira de Lima",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 50,
+    "possession_away_pct": 50,
+    "shots_home": 10,
+    "shots_away": 17,
+    "shots_on_target_home": 5,
+    "shots_on_target_away": 5,
+    "corners_home": 3,
+    "corners_away": 2,
+    "fouls_home": 20,
+    "fouls_away": 21,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "58'",
+        "cumulative_score": "",
+        "scorer": "Melk",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "68'",
+        "cumulative_score": "",
+        "scorer": "Julio César",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "28' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Maílton",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-15-crb-fortaleza/12140584",
+    "home_team": "CRB",
+    "away_team": "Fortaleza",
+    "referee": "Anderson Daronco",
+    "stadium": "Rei Pelé (Trapichão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 62,
+    "possession_away_pct": 38,
+    "shots_home": 15,
+    "shots_away": 17,
+    "shots_on_target_home": 4,
+    "shots_on_target_away": 6,
+    "corners_home": 3,
+    "corners_away": 8,
+    "fouls_home": 12,
+    "fouls_away": 13,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-10-avai-fortaleza/12043290",
+    "home_team": "Avaí",
+    "away_team": "Fortaleza",
+    "referee": "Paulo Cesar Zanovelli",
+    "stadium": "Aderbal Ramos da Silva (Ressacada)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 55,
+    "possession_away_pct": 45,
+    "shots_home": 20,
+    "shots_away": 9,
+    "shots_on_target_home": 6,
+    "shots_on_target_away": 2,
+    "corners_home": 5,
+    "corners_away": 4,
+    "fouls_home": 19,
+    "fouls_away": 17,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-07-confianca-fortaleza/12210194",
+    "home_team": "Confiança",
+    "away_team": "Fortaleza",
+    "referee": "Paulo José Souza Mourão",
+    "stadium": "Lourival Baptista (Arena Batistão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 51,
+    "possession_away_pct": 49,
+    "shots_home": 12,
+    "shots_away": 10,
+    "shots_on_target_home": 3,
+    "shots_on_target_away": 7,
+    "corners_home": 2,
+    "corners_away": 6,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "89' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Ícaro",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "7'",
+        "cumulative_score": "",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "41'",
+        "cumulative_score": "",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-03-fortaleza-goias/12043278",
+    "home_team": "Fortaleza",
+    "away_team": "Goiás",
+    "referee": "André Policarpo Bento",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 43,
+    "possession_away_pct": 57,
+    "shots_home": 17,
+    "shots_away": 10,
+    "shots_on_target_home": 9,
+    "shots_on_target_away": 4,
+    "corners_home": 3,
+    "corners_away": 3,
+    "fouls_home": 11,
+    "fouls_away": 17,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "54'  61'",
+        "cumulative_score": "",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "78'  90+1'",
+        "cumulative_score": "",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "23'",
+        "cumulative_score": "",
+        "scorer": "Gegê",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2026-11-14",
+    "opponent": "CRB",
+    "score": null,
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-11-14-crb-ceara/12043592"
+  },
+  {
+    "date": "2026-11-06",
+    "opponent": "América Mineiro",
+    "score": null,
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-11-06-ceara-america-mineiro/12043578"
+  },
+  {
+    "date": "2026-10-30",
+    "opponent": "Athletic-MG",
+    "score": null,
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-30-athletic-mg-ceara/12043566"
+  },
+  {
+    "date": "2026-10-22",
+    "opponent": "Goiás",
+    "score": null,
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-23-ceara-goias/12043558"
+  },
+  {
+    "date": "2026-10-15",
+    "opponent": "Juventude",
+    "score": null,
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-16-ceara-juventude/12043548"
+  },
+  {
+    "date": "2026-10-08",
+    "opponent": "Botafogo-SP",
+    "score": null,
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-09-botafogo-sp-ceara/12043534"
+  },
+  {
+    "date": "2026-10-05",
+    "opponent": "Criciúma",
+    "score": null,
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-06-ceara-criciuma/12043528"
+  },
+  {
+    "date": "2026-10-01",
+    "opponent": "Avaí",
+    "score": null,
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-02-avai-ceara/12043520"
+  },
+  {
+    "date": "2026-09-26",
+    "opponent": "Operário Ferroviário",
+    "score": null,
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-09-26-operario-ferroviario-ceara/12043507"
+  },
+  {
+    "date": "2026-09-18",
+    "opponent": "Grêmio Novorizontino",
+    "score": null,
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-09-19-ceara-gremio-novorizontino/12043498"
+  },
+  {
+    "date": "2026-09-13",
+    "opponent": "Fortaleza",
+    "score": null,
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-09-13-fortaleza-ceara/12043488"
+  },
+  {
+    "date": "2026-09-09",
+    "opponent": "Atlético Goianiense",
+    "score": null,
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-09-10-atletico-goianiense-ceara/12043479"
+  },
+  {
+    "date": "2026-09-05",
+    "opponent": "Sport",
+    "score": null,
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "upcoming",
+    "match_url": "https://www.ogol.com.br/jogo/2026-09-05-ceara-sport/12043468"
+  },
+  {
+    "date": "2026-08-30",
+    "opponent": "Vila Nova",
+    "score": "2-0",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-30-vila-nova-ceara/12043463"
+  },
+  {
+    "date": "2026-08-22",
+    "opponent": "Londrina",
+    "score": "2-1",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-22-ceara-londrina/12043448"
+  },
+  {
+    "date": "2026-08-18",
+    "opponent": "Náutico",
+    "score": "1-0",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-19-nautico-ceara/12043441"
+  },
+  {
+    "date": "2026-08-15",
+    "opponent": "Cuiabá",
+    "score": "1-3",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-15-ceara-cuiaba/12043428"
+  },
+  {
+    "date": "2026-08-07",
+    "opponent": "Ponte Preta",
+    "score": "2-0",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-08-ceara-ponte-preta/12043418"
+  },
+  {
+    "date": "2026-07-26",
+    "opponent": "São Bernardo",
+    "score": "3-4",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-26-sao-bernardo-ceara/12043405"
+  },
+  {
+    "date": "2026-07-22",
+    "opponent": "CRB",
+    "score": "0-1",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-22-ceara-crb/12043398"
+  },
+  {
+    "date": "2026-07-17",
+    "opponent": "América Mineiro",
+    "score": "1-1",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-17-america-mineiro-ceara/12043386"
+  },
+  {
+    "date": "2026-07-13",
+    "opponent": "Athletic-MG",
+    "score": "0-0",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-14-ceara-athletic-mg/12043378"
+  },
+  {
+    "date": "2026-07-04",
+    "opponent": "Goiás",
+    "score": "2-0",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-05-goias-ceara/12043369"
+  },
+  {
+    "date": "2026-06-28",
+    "opponent": "Juventude",
+    "score": "2-0",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-28-juventude-ceara/12043363"
+  },
+  {
+    "date": "2026-06-20",
+    "opponent": "Botafogo-SP",
+    "score": "0-1",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-20-ceara-botafogo-sp/12043348"
+  },
+  {
+    "date": "2026-06-15",
+    "opponent": "Criciúma",
+    "score": "1-1",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-16-criciuma-ceara/12043340"
+  },
+  {
+    "date": "2026-06-10",
+    "opponent": "Avaí",
+    "score": "2-1",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-11-ceara-avai/12043328"
+  },
+  {
+    "date": "2026-05-31",
+    "opponent": "Operário Ferroviário",
+    "score": "1-2",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-31-ceara-operario-ferroviario/12043318"
+  },
+  {
+    "date": "2026-05-23",
+    "opponent": "Grêmio Novorizontino",
+    "score": "2-1",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-23-gremio-novorizontino-ceara/12043305"
+  },
+  {
+    "date": "2026-05-17",
+    "opponent": "Fortaleza",
+    "score": "2-1",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-17-ceara-fortaleza/12043298"
+  },
+  {
+    "date": "2026-05-13",
+    "opponent": "Atlético Mineiro",
+    "score": "2-1(2-4 Pen.)",
+    "home_away": "H",
+    "competition": "Copa do Brasil 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-14-ceara-atletico-mineiro/12140578"
+  },
+  {
+    "date": "2026-05-09",
+    "opponent": "Atlético Goianiense",
+    "score": "0-1",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-09-ceara-atletico-goianiense/12043288"
+  },
+  {
+    "date": "2026-05-06",
+    "opponent": "Vitória",
+    "score": "1-0",
+    "home_away": "A",
+    "competition": "Copa do Nordeste 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-07-vitoria-ceara/12210192"
+  },
+  {
+    "date": "2026-05-03",
+    "opponent": "Sport",
+    "score": "2-0",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-03-sport-ceara/12043281"
+  },
+  {
+    "date": "2026-04-29",
+    "opponent": "Maranhão",
+    "score": "1-3",
+    "home_away": "A",
+    "competition": "Copa do Nordeste 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-30-maranhao-ceara/12114819"
+  },
+  {
+    "date": "2026-04-26",
+    "opponent": "Vila Nova",
+    "score": "3-3",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-26-ceara-vila-nova/12043268"
+  },
+  {
+    "date": "2026-04-23",
+    "opponent": "Atlético Mineiro",
+    "score": "2-1",
+    "home_away": "A",
+    "competition": "Copa do Brasil 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-23-atletico-mineiro-ceara/12140562"
+  },
+  {
+    "date": "2026-04-19",
+    "opponent": "Londrina",
+    "score": "0-0",
+    "home_away": "A",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-19-londrina-ceara/12043257"
+  },
+  {
+    "date": "2026-04-14",
+    "opponent": "Jacuipense",
+    "score": "4-1",
+    "home_away": "H",
+    "competition": "Copa do Nordeste 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-15-ceara-jacuipense/12114806"
+  },
+  {
+    "date": "2026-04-11",
+    "opponent": "Náutico",
+    "score": "1-0",
+    "home_away": "H",
+    "competition": "Brasileirão Série B 2026",
+    "status": "played",
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-12-ceara-nautico/12043248"
+  }
+]

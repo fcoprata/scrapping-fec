@@ -1,0 +1,1130 @@
+[
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-30-vila-nova-ceara/12043463",
+    "home_team": "Vila Nova",
+    "away_team": "Ceará",
+    "referee": "Leonardo Willers Lorenzatto",
+    "stadium": "Onésio Brasileiro Alvarenga (OBA)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 46,
+    "possession_away_pct": 54,
+    "shots_home": 16,
+    "shots_away": 7,
+    "shots_on_target_home": 7,
+    "shots_on_target_away": 3,
+    "corners_home": 5,
+    "corners_away": 9,
+    "fouls_home": 18,
+    "fouls_away": 10,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "16'",
+        "cumulative_score": "",
+        "scorer": "Breno Bora",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "75'",
+        "cumulative_score": "",
+        "scorer": "André Luís",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-22-ceara-londrina/12043448",
+    "home_team": "Ceará",
+    "away_team": "Londrina",
+    "referee": "Jonathan Benkenstein",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 49,
+    "possession_away_pct": 51,
+    "shots_home": 13,
+    "shots_away": 12,
+    "shots_on_target_home": 5,
+    "shots_on_target_away": 4,
+    "corners_home": 8,
+    "corners_away": 1,
+    "fouls_home": 18,
+    "fouls_away": 17,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "39'",
+        "cumulative_score": "",
+        "scorer": "Gabriel Rocha",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "61'",
+        "cumulative_score": "",
+        "scorer": "Luizão",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "4' (pen.)",
+        "cumulative_score": "",
+        "scorer": "João Vitor",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-19-nautico-ceara/12043441",
+    "home_team": "Náutico",
+    "away_team": "Ceará",
+    "referee": "Afro Rocha",
+    "stadium": "Estádio Esportes da Sorte Aflitos",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "45+9'",
+        "cumulative_score": "",
+        "scorer": "Léo Índio",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-15-ceara-cuiaba/12043428",
+    "home_team": "Ceará",
+    "away_team": "Cuiabá",
+    "referee": "Lucas Rechatiko Horn",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 64,
+    "possession_away_pct": 36,
+    "shots_home": 7,
+    "shots_away": 13,
+    "shots_on_target_home": 3,
+    "shots_on_target_away": 5,
+    "corners_home": 4,
+    "corners_away": 5,
+    "fouls_home": 17,
+    "fouls_away": 13,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "70'",
+        "cumulative_score": "",
+        "scorer": "Enzo Lodovico",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "41'",
+        "cumulative_score": "",
+        "scorer": "Jean Dias",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "54'",
+        "cumulative_score": "",
+        "scorer": "Calebe",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "90+7'",
+        "cumulative_score": "",
+        "scorer": "Kauan Cristtyan",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-08-08-ceara-ponte-preta/12043418",
+    "home_team": "Ceará",
+    "away_team": "Ponte Preta",
+    "referee": "Paulo Cesar Zanovelli",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "29'",
+        "cumulative_score": "",
+        "scorer": "Lucca",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "78'",
+        "cumulative_score": "",
+        "scorer": "Giulio",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-26-sao-bernardo-ceara/12043405",
+    "home_team": "São Bernardo",
+    "away_team": "Ceará",
+    "referee": "Savio Pereira Sampaio",
+    "stadium": "Estádio Municipal Primeiro de Maio",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 54,
+    "possession_away_pct": 46,
+    "shots_home": 19,
+    "shots_away": 17,
+    "shots_on_target_home": 5,
+    "shots_on_target_away": 8,
+    "corners_home": 10,
+    "corners_away": 3,
+    "fouls_home": 13,
+    "fouls_away": 20,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "23'",
+        "cumulative_score": "",
+        "scorer": "Hélder Maciel",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "59'",
+        "cumulative_score": "",
+        "scorer": "Hugo Sanches",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "81'",
+        "cumulative_score": "",
+        "scorer": "Pedrinho",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "48'",
+        "cumulative_score": "",
+        "scorer": "Nicolás Ferreira",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "63'",
+        "cumulative_score": "",
+        "scorer": "Vina",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "74'",
+        "cumulative_score": "",
+        "scorer": "João Gabriel",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "90'",
+        "cumulative_score": "",
+        "scorer": "Enzo Lodovico",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-22-ceara-crb/12043398",
+    "home_team": "Ceará",
+    "away_team": "CRB",
+    "referee": "Paulo Henrique Vollkopf",
+    "stadium": "Presidente Vargas (PV)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 52,
+    "possession_away_pct": 48,
+    "shots_home": 20,
+    "shots_away": 12,
+    "shots_on_target_home": 6,
+    "shots_on_target_away": 3,
+    "corners_home": 7,
+    "corners_away": 1,
+    "fouls_home": 18,
+    "fouls_away": 12,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "45+4' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Mikael",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-17-america-mineiro-ceara/12043386",
+    "home_team": "América Mineiro",
+    "away_team": "Ceará",
+    "referee": "Fernando Mendes Filho",
+    "stadium": "Raimundo Sampaio (Arena Independência)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 60,
+    "possession_away_pct": 40,
+    "shots_home": 12,
+    "shots_away": 11,
+    "shots_on_target_home": 4,
+    "shots_on_target_away": 3,
+    "corners_home": 4,
+    "corners_away": 5,
+    "fouls_home": 11,
+    "fouls_away": 12,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "67'",
+        "cumulative_score": "",
+        "scorer": "Matías Segovia",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "89'",
+        "cumulative_score": "",
+        "scorer": "Vina",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-14-ceara-athletic-mg/12043378",
+    "home_team": "Ceará",
+    "away_team": "Athletic-MG",
+    "referee": "José Mendonça da Silva Jr.",
+    "stadium": "Presidente Vargas (PV)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 70,
+    "possession_away_pct": 30,
+    "shots_home": 12,
+    "shots_away": 13,
+    "shots_on_target_home": 2,
+    "shots_on_target_away": 1,
+    "corners_home": 7,
+    "corners_away": 6,
+    "fouls_home": 9,
+    "fouls_away": 9,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-07-05-goias-ceara/12043369",
+    "home_team": "Goiás",
+    "away_team": "Ceará",
+    "referee": "Paulo Henrique Vollkopf",
+    "stadium": "Hailé Pinheiro (Serrinha)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 38,
+    "possession_away_pct": 62,
+    "shots_home": 5,
+    "shots_away": 17,
+    "shots_on_target_home": 3,
+    "shots_on_target_away": 0,
+    "corners_home": 2,
+    "corners_away": 14,
+    "fouls_home": 16,
+    "fouls_away": 13,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "11'",
+        "cumulative_score": "",
+        "scorer": "Kadu",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "80'",
+        "cumulative_score": "",
+        "scorer": "Juninho",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-28-juventude-ceara/12043363",
+    "home_team": "Juventude",
+    "away_team": "Ceará",
+    "referee": "Lucas Casagrande",
+    "stadium": "Alfredo Jaconi",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "26'",
+        "cumulative_score": "",
+        "scorer": "Alisson Safira",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "34'",
+        "cumulative_score": "",
+        "scorer": "Gabriel Pinheiro",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-20-ceara-botafogo-sp/12043348",
+    "home_team": "Ceará",
+    "away_team": "Botafogo-SP",
+    "referee": "Afro Rocha",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "76'",
+        "cumulative_score": "",
+        "scorer": "Rafael Gava",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-16-criciuma-ceara/12043340",
+    "home_team": "Criciúma",
+    "away_team": "Ceará",
+    "referee": "João Vitor Gobi",
+    "stadium": "Heriberto Hülse",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 59,
+    "possession_away_pct": 41,
+    "shots_home": 16,
+    "shots_away": 14,
+    "shots_on_target_home": 6,
+    "shots_on_target_away": 7,
+    "corners_home": 3,
+    "corners_away": 3,
+    "fouls_home": 15,
+    "fouls_away": 13,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "25'",
+        "cumulative_score": "",
+        "scorer": "Fellipe Mateus",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "80'",
+        "cumulative_score": "",
+        "scorer": "João Gabriel",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-06-11-ceara-avai/12043328",
+    "home_team": "Ceará",
+    "away_team": "Avaí",
+    "referee": "Jonathan Benkenstein",
+    "stadium": "Presidente Vargas (PV)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 0,
+    "possession_away_pct": 100,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "19'",
+        "cumulative_score": "",
+        "scorer": "Julio César",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "45+1'",
+        "cumulative_score": "",
+        "scorer": "Melk",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "60'",
+        "cumulative_score": "",
+        "scorer": "Sorriso",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-31-ceara-operario-ferroviario/12043318",
+    "home_team": "Ceará",
+    "away_team": "Operário Ferroviário",
+    "referee": "Gustavo Ervino Bauermann",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "38'",
+        "cumulative_score": "",
+        "scorer": "Melk",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "53'",
+        "cumulative_score": "",
+        "scorer": "Boschilia",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "58'",
+        "cumulative_score": "",
+        "scorer": "Gabriel Feliciano",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-23-gremio-novorizontino-ceara/12043305",
+    "home_team": "Grêmio Novorizontino",
+    "away_team": "Ceará",
+    "referee": "Jonathan Benkenstein",
+    "stadium": "Doutor Jorge Ismael de Biasi (Jorjão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 67,
+    "possession_away_pct": 33,
+    "shots_home": 1,
+    "shots_away": 0,
+    "shots_on_target_home": 1,
+    "shots_on_target_away": 0,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": 2,
+    "fouls_away": 2,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "6'",
+        "cumulative_score": "",
+        "scorer": "Matheus Bianqui",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "86'",
+        "cumulative_score": "",
+        "scorer": "Juninho",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "44'",
+        "cumulative_score": "",
+        "scorer": "Melk",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-17-ceara-fortaleza/12043298",
+    "home_team": "Ceará",
+    "away_team": "Fortaleza",
+    "referee": "Rodrigo José Pereira de Lima",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 50,
+    "possession_away_pct": 50,
+    "shots_home": 10,
+    "shots_away": 17,
+    "shots_on_target_home": 5,
+    "shots_on_target_away": 5,
+    "corners_home": 3,
+    "corners_away": 2,
+    "fouls_home": 20,
+    "fouls_away": 21,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "58'",
+        "cumulative_score": "",
+        "scorer": "Melk",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "68'",
+        "cumulative_score": "",
+        "scorer": "Julio César",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "28' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Maílton",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-14-ceara-atletico-mineiro/12140578",
+    "home_team": "Ceará",
+    "away_team": "Atlético Mineiro",
+    "referee": "Matheus Delgado Candançan",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 53,
+    "possession_away_pct": 47,
+    "shots_home": 14,
+    "shots_away": 4,
+    "shots_on_target_home": 5,
+    "shots_on_target_away": 1,
+    "corners_home": 3,
+    "corners_away": 3,
+    "fouls_home": 19,
+    "fouls_away": 18,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "8' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Alex Silva",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "23' (g.c.)",
+        "cumulative_score": "",
+        "scorer": "Éverson",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "90'",
+        "cumulative_score": "",
+        "scorer": "Kauã Pascini",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-09-ceara-atletico-goianiense/12043288",
+    "home_team": "Ceará",
+    "away_team": "Atlético Goianiense",
+    "referee": "Fernando Mendes Filho",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 75,
+    "possession_away_pct": 25,
+    "shots_home": 32,
+    "shots_away": 5,
+    "shots_on_target_home": 9,
+    "shots_on_target_away": 1,
+    "corners_home": 11,
+    "corners_away": 1,
+    "fouls_home": 14,
+    "fouls_away": 15,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "29' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Gustavo Coutinho",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-07-vitoria-ceara/12210192",
+    "home_team": "Vitória",
+    "away_team": "Ceará",
+    "referee": "Denis Ribeiro Serafim",
+    "stadium": "Manoel Barradas (Barradão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 63,
+    "possession_away_pct": 37,
+    "shots_home": 22,
+    "shots_away": 11,
+    "shots_on_target_home": 9,
+    "shots_on_target_away": 5,
+    "corners_home": 9,
+    "corners_away": 4,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "73'",
+        "cumulative_score": "",
+        "scorer": "Renato Kayzer",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-05-03-sport-ceara/12043281",
+    "home_team": "Sport",
+    "away_team": "Ceará",
+    "referee": "Braulio da Silva Machado",
+    "stadium": "Adelmar da Costa Carvalho (Ilha do Retiro)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "52' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Chrystian Barletta",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "71'",
+        "cumulative_score": "",
+        "scorer": "Madson",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-30-maranhao-ceara/12114819",
+    "home_team": "Maranhão",
+    "away_team": "Ceará",
+    "referee": "Antônio Moraes de Souza",
+    "stadium": "Governador João Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "70' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Vagalume",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "29'",
+        "cumulative_score": "",
+        "scorer": "Lucca",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "33'",
+        "cumulative_score": "",
+        "scorer": "Fernandinho",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "37'",
+        "cumulative_score": "",
+        "scorer": "Matheus Araújo",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-26-ceara-vila-nova/12043268",
+    "home_team": "Ceará",
+    "away_team": "Vila Nova",
+    "referee": "Yuri Elino da Cruz",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "14'",
+        "cumulative_score": "",
+        "scorer": "Lucas Lima",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "43'  45+2'",
+        "cumulative_score": "",
+        "scorer": "Matheus Araújo",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "12'  67'",
+        "cumulative_score": "",
+        "scorer": "Rafa Silva",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "62' (pen.)",
+        "cumulative_score": "",
+        "scorer": "João Vieira",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-23-atletico-mineiro-ceara/12140562",
+    "home_team": "Atlético Mineiro",
+    "away_team": "Ceará",
+    "referee": "Braulio da Silva Machado",
+    "stadium": "Arena MRV",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 59,
+    "possession_away_pct": 41,
+    "shots_home": 21,
+    "shots_away": 6,
+    "shots_on_target_home": 10,
+    "shots_on_target_away": 3,
+    "corners_home": 12,
+    "corners_away": 0,
+    "fouls_home": 12,
+    "fouls_away": 13,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "44'",
+        "cumulative_score": "",
+        "scorer": "Mateo Cassierra",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "73'",
+        "cumulative_score": "",
+        "scorer": "Renan Lodi",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "65'",
+        "cumulative_score": "",
+        "scorer": "Wendel Silva",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-19-londrina-ceara/12043257",
+    "home_team": "Londrina",
+    "away_team": "Ceará",
+    "referee": "Paulo Henrique Vollkopf",
+    "stadium": "Vitorino Gonçalves Dias",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 51,
+    "possession_away_pct": 49,
+    "shots_home": 18,
+    "shots_away": 13,
+    "shots_on_target_home": 3,
+    "shots_on_target_away": 6,
+    "corners_home": 14,
+    "corners_away": 4,
+    "fouls_home": 18,
+    "fouls_away": 11,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-15-ceara-jacuipense/12114806",
+    "home_team": "Ceará",
+    "away_team": "Jacuipense",
+    "referee": "Jardiel da Rocha Soares",
+    "stadium": "Presidente Vargas (PV)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": null,
+    "possession_away_pct": null,
+    "shots_home": null,
+    "shots_away": null,
+    "shots_on_target_home": null,
+    "shots_on_target_away": null,
+    "corners_home": null,
+    "corners_away": null,
+    "fouls_home": null,
+    "fouls_away": null,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "35'",
+        "cumulative_score": "",
+        "scorer": "Giulio",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "47'",
+        "cumulative_score": "",
+        "scorer": "Julio César",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "83'",
+        "cumulative_score": "",
+        "scorer": "Melk",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "90+3' (pen.)",
+        "cumulative_score": "",
+        "scorer": "Vina",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "5'",
+        "cumulative_score": "",
+        "scorer": "Gustavo Pereira",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  },
+  {
+    "match_url": "https://www.ogol.com.br/jogo/2026-04-12-ceara-nautico/12043248",
+    "home_team": "Ceará",
+    "away_team": "Náutico",
+    "referee": "Wilton Pereira Sampaio",
+    "stadium": "Governador Plácido Aderaldo Castelo (Castelão)",
+    "attendance": null,
+    "round": null,
+    "possession_home_pct": 41,
+    "possession_away_pct": 59,
+    "shots_home": 10,
+    "shots_away": 15,
+    "shots_on_target_home": 5,
+    "shots_on_target_away": 3,
+    "corners_home": 3,
+    "corners_away": 4,
+    "fouls_home": 12,
+    "fouls_away": 15,
+    "xg_home": null,
+    "xg_away": null,
+    "goals": [
+      {
+        "minute": "47'",
+        "cumulative_score": "",
+        "scorer": "Fernandinho",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [],
+    "substitutions": []
+  }
+]

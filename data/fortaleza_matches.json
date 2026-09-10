@@ -1,0 +1,578 @@
+[
+  {
+    "date": "sáb 21/03/2026",
+    "opponent": "Botafogo-SP",
+    "score": "4:0",
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841900"
+  },
+  {
+    "date": "ter 31/03/2026",
+    "opponent": "Cuiabá",
+    "score": "0:0",
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841784"
+  },
+  {
+    "date": "sáb 04/04/2026",
+    "opponent": "Juventude",
+    "score": "2:1",
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841864"
+  },
+  {
+    "date": "dom 12/04/2026",
+    "opponent": "São Bernardo",
+    "score": "0:1",
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841791"
+  },
+  {
+    "date": "dom 19/04/2026",
+    "opponent": "Criciúma",
+    "score": "3:2",
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841844"
+  },
+  {
+    "date": "dom 26/04/2026",
+    "opponent": "Operário-PR",
+    "score": "0:0",
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841883"
+  },
+  {
+    "date": "sáb 02/05/2026",
+    "opponent": "Goiás",
+    "score": "4:1",
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841824"
+  },
+  {
+    "date": "dom 10/05/2026",
+    "opponent": "Avaí",
+    "score": "0:0",
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841956"
+  },
+  {
+    "date": "dom 17/05/2026",
+    "opponent": "Ceará",
+    "score": "2:1",
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841874"
+  },
+  {
+    "date": "sáb 23/05/2026",
+    "opponent": "Londrina",
+    "score": "3:0",
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4842064"
+  },
+  {
+    "date": "sáb 30/05/2026",
+    "opponent": "Athletic",
+    "score": "1:0",
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4842122"
+  },
+  {
+    "date": "ter 09/06/2026",
+    "opponent": "Náutico",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "ter 16/06/2026",
+    "opponent": "América-MG",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "dom 21/06/2026",
+    "opponent": "CRB",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "dom 28/06/2026",
+    "opponent": "Sport",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 02/07/2026",
+    "opponent": "Ponte Preta",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "dom 12/07/2026",
+    "opponent": "Atlético-GO",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "sex 17/07/2026",
+    "opponent": "Novorizontino",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "seg 20/07/2026",
+    "opponent": "Vila Nova",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 23/07/2026",
+    "opponent": "Botafogo-SP",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 06/08/2026",
+    "opponent": "Cuiabá",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 13/08/2026",
+    "opponent": "Juventude",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "seg 17/08/2026",
+    "opponent": "São Bernardo",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 20/08/2026",
+    "opponent": "Criciúma",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 27/08/2026",
+    "opponent": "Operário-PR",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 03/09/2026",
+    "opponent": "Goiás",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "seg 07/09/2026",
+    "opponent": "Avaí",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 10/09/2026",
+    "opponent": "Ceará",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 17/09/2026",
+    "opponent": "Londrina",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 24/09/2026",
+    "opponent": "Athletic",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 01/10/2026",
+    "opponent": "Náutico",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "seg 05/10/2026",
+    "opponent": "América-MG",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 08/10/2026",
+    "opponent": "CRB",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 15/10/2026",
+    "opponent": "Sport",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 22/10/2026",
+    "opponent": "Ponte Preta",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 29/10/2026",
+    "opponent": "Atlético-GO",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "qui 05/11/2026",
+    "opponent": "Novorizontino",
+    "score": null,
+    "home_away": "A",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "sex 13/11/2026",
+    "opponent": "Vila Nova",
+    "score": null,
+    "home_away": "H",
+    "competition": "Campeonato Brasileiro Série B",
+    "status": "upcoming",
+    "match_url": null
+  },
+  {
+    "date": "ter 24/02/2026",
+    "opponent": "Maguary",
+    "score": "4:3",
+    "home_away": "H",
+    "competition": "Copa do Brasil",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4831113"
+  },
+  {
+    "date": "qua 11/03/2026",
+    "opponent": "Manauara",
+    "score": "0:1",
+    "home_away": "A",
+    "competition": "Copa do Brasil",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4839061"
+  },
+  {
+    "date": "ter 17/03/2026",
+    "opponent": "Nova Iguaçu",
+    "score": "0:1",
+    "home_away": "A",
+    "competition": "Copa do Brasil",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4844949"
+  },
+  {
+    "date": "qua 22/04/2026",
+    "opponent": "CRB",
+    "score": "2:1",
+    "home_away": "H",
+    "competition": "Copa do Brasil",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4867984"
+  },
+  {
+    "date": "qui 14/05/2026",
+    "opponent": "CRB",
+    "score": "0:0",
+    "home_away": "A",
+    "competition": "Copa do Brasil",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4881366"
+  },
+  {
+    "date": "ter 24/03/2026",
+    "opponent": "Ferroviário",
+    "score": "0:1",
+    "home_away": "A",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4848502"
+  },
+  {
+    "date": "sáb 28/03/2026",
+    "opponent": "Imperatriz",
+    "score": "2:1",
+    "home_away": "H",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4852936"
+  },
+  {
+    "date": "qua 08/04/2026",
+    "opponent": "Ceará",
+    "score": "2:0",
+    "home_away": "A",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4858904"
+  },
+  {
+    "date": "qui 16/04/2026",
+    "opponent": "América-RN",
+    "score": "1:1",
+    "home_away": "A",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4863677"
+  },
+  {
+    "date": "qua 29/04/2026",
+    "opponent": "Sport",
+    "score": "2:0",
+    "home_away": "H",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4872026"
+  },
+  {
+    "date": "qui 07/05/2026",
+    "opponent": "Confiança",
+    "score": "1:2",
+    "home_away": "A",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4873804"
+  },
+  {
+    "date": "qua 20/05/2026",
+    "opponent": "Sport",
+    "score": "1:2",
+    "home_away": "H",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4882424"
+  },
+  {
+    "date": "qua 27/05/2026",
+    "opponent": "Sport",
+    "score": "0:2",
+    "home_away": "A",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4882426"
+  },
+  {
+    "date": "ter 02/06/2026",
+    "opponent": "Vitória",
+    "score": "1:2",
+    "home_away": "H",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4891209"
+  },
+  {
+    "date": "sáb 06/06/2026",
+    "opponent": "Vitória",
+    "score": "2:1",
+    "home_away": "A",
+    "competition": "Copa do Nordeste",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4891210"
+  },
+  {
+    "date": "dom 11/01/2026",
+    "opponent": "Ferroviário",
+    "score": "0:0",
+    "home_away": "A",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4783084"
+  },
+  {
+    "date": "qui 15/01/2026",
+    "opponent": "Quixadá",
+    "score": "4:0",
+    "home_away": "H",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4783088"
+  },
+  {
+    "date": "dom 18/01/2026",
+    "opponent": "Maracanã",
+    "score": "1:0",
+    "home_away": "H",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4783092"
+  },
+  {
+    "date": "qui 22/01/2026",
+    "opponent": "Horizonte",
+    "score": "0:1",
+    "home_away": "A",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4783096"
+  },
+  {
+    "date": "seg 26/01/2026",
+    "opponent": "Floresta",
+    "score": "1:0",
+    "home_away": "H",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4809858"
+  },
+  {
+    "date": "sáb 31/01/2026",
+    "opponent": "Iguatu",
+    "score": "1:1",
+    "home_away": "H",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4814169"
+  },
+  {
+    "date": "dom 08/02/2026",
+    "opponent": "Ceará",
+    "score": "0:0",
+    "home_away": "A",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4816328"
+  },
+  {
+    "date": "sáb 14/02/2026",
+    "opponent": "Ferroviário",
+    "score": "0:2",
+    "home_away": "A",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4822108"
+  },
+  {
+    "date": "sáb 21/02/2026",
+    "opponent": "Ferroviário",
+    "score": "2:0",
+    "home_away": "H",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4825846"
+  },
+  {
+    "date": "dom 01/03/2026",
+    "opponent": "Ceará",
+    "score": "1:1",
+    "home_away": "H",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4832241"
+  },
+  {
+    "date": "dom 08/03/2026",
+    "opponent": "Ceará",
+    "score": "5:6pen.",
+    "home_away": "A",
+    "competition": "Campeonato Cearense",
+    "status": "played",
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4832242"
+  }
+]

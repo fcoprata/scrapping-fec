@@ -1,0 +1,1490 @@
+{
+  "season_year": "2026",
+  "players": [
+    {
+      "player_id": "172093",
+      "name": "João Ricardo",
+      "profile_url": "https://www.ogol.com.br/jogador/joao-ricardo/172093?epoca_id=155",
+      "position": "Goleiro",
+      "total_appearances": 21,
+      "total_minutes": 1861,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": 20,
+      "starts": 18,
+      "substitute_appearances": 1,
+      "avg_rating": 7.21,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 15,
+          "minutes": 1350,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": 11
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 2,
+          "minutes": 180,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": 5
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 4,
+          "minutes": 331,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": 4
+        }
+      ]
+    },
+    {
+      "player_id": "543361",
+      "name": "Magrão",
+      "profile_url": "https://www.ogol.com.br/jogador/magrao/543361?epoca_id=155",
+      "position": "Goleiro",
+      "total_appearances": 0,
+      "total_minutes": 0,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 0,
+      "substitute_appearances": 0,
+      "avg_rating": null,
+      "competitions": []
+    },
+    {
+      "player_id": "216884",
+      "name": "Vinicius Silvestre",
+      "profile_url": "https://www.ogol.com.br/jogador/vinicius-silvestre/216884?epoca_id=155",
+      "position": "Goleiro",
+      "total_appearances": 14,
+      "total_minutes": 1199,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": 11,
+      "starts": 14,
+      "substitute_appearances": 0,
+      "avg_rating": 7.11,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 6,
+          "minutes": 540,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": 5
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 6,
+          "minutes": 479,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": 5
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 2,
+          "minutes": 180,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": 1
+        }
+      ]
+    },
+    {
+      "player_id": "730296",
+      "name": "Samuel Brunhara",
+      "profile_url": "https://www.ogol.com.br/jogador/samuel-brunhara/730296?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 0,
+      "total_minutes": 0,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 0,
+      "substitute_appearances": 0,
+      "avg_rating": null,
+      "competitions": []
+    },
+    {
+      "player_id": "549214",
+      "name": "Lucas Gazal",
+      "profile_url": "https://www.ogol.com.br/jogador/lucas-gazal/549214?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 44,
+      "total_minutes": 3732,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 29,
+      "substitute_appearances": 4,
+      "avg_rating": 6.86,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 21,
+          "minutes": 1796,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 7,
+          "minutes": 585,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 7,
+          "minutes": 626,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 9,
+          "minutes": 725,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "680854",
+      "name": "Luan Freitas",
+      "profile_url": "https://www.ogol.com.br/jogador/luan-freitas/680854?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 31,
+      "total_minutes": 2300,
+      "total_goals": 0,
+      "total_assists": 1,
+      "total_goals_conceded": null,
+      "starts": 21,
+      "substitute_appearances": 5,
+      "avg_rating": 6.83,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 14,
+          "minutes": 1045,
+          "goals": 0,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 2,
+          "minutes": 180,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 8,
+          "minutes": 613,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 7,
+          "minutes": 462,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "547298",
+      "name": "Maílton",
+      "profile_url": "https://www.ogol.com.br/jogador/mailton/547298?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 42,
+      "total_minutes": 3160,
+      "total_goals": 6,
+      "total_assists": 6,
+      "total_goals_conceded": null,
+      "starts": 28,
+      "substitute_appearances": 5,
+      "avg_rating": 7.07,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 19,
+          "minutes": 1352,
+          "goals": 4,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 7,
+          "minutes": 608,
+          "goals": 2,
+          "assists": 3,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 6,
+          "minutes": 355,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 10,
+          "minutes": 845,
+          "goals": 0,
+          "assists": 2,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "266822",
+      "name": "Neris",
+      "profile_url": "https://www.ogol.com.br/jogador/neris/266822?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 16,
+      "total_minutes": 956,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 12,
+      "substitute_appearances": 3,
+      "avg_rating": 6.51,
+      "competitions": [
+        {
+          "competition": "Brasileirão",
+          "appearances": 4,
+          "minutes": 178,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Série B",
+          "appearances": 5,
+          "minutes": 345,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 2,
+          "minutes": 118,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 1,
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Baiano",
+          "appearances": 4,
+          "minutes": 225,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "1172285",
+      "name": "Kauã Rocha",
+      "profile_url": "https://www.ogol.com.br/jogador/kaua-rocha/1172285?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 18,
+      "total_minutes": 1350,
+      "total_goals": 1,
+      "total_assists": 1,
+      "total_goals_conceded": null,
+      "starts": 12,
+      "substitute_appearances": 5,
+      "avg_rating": 6.95,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 7,
+          "minutes": 450,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 5,
+          "minutes": 360,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 1,
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copinha",
+          "appearances": 5,
+          "minutes": 450,
+          "goals": 1,
+          "assists": 1,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "1005017",
+      "name": "Cristovam",
+      "profile_url": "https://www.ogol.com.br/jogador/cristovam/1005017?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 24,
+      "total_minutes": 2066,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 21,
+      "substitute_appearances": 2,
+      "avg_rating": null,
+      "competitions": [
+        {
+          "competition": "Brasileiro S20",
+          "appearances": 12,
+          "minutes": 999,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense S20",
+          "appearances": 9,
+          "minutes": 797,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa Nordeste Sub-20",
+          "appearances": 3,
+          "minutes": 270,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "718994",
+      "name": "Paulinho",
+      "profile_url": "https://www.ogol.com.br/jogador/paulinho/718994?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 3,
+      "total_minutes": 155,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 1,
+      "substitute_appearances": 2,
+      "avg_rating": null,
+      "competitions": [
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 3,
+          "minutes": 155,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "500895",
+      "name": "Tomás Cardona",
+      "profile_url": "https://www.ogol.com.br/jogador/tomas-cardona/500895?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 14,
+      "total_minutes": 1034,
+      "total_goals": 1,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 9,
+      "substitute_appearances": 2,
+      "avg_rating": 6.97,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 5,
+          "minutes": 297,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 2,
+          "minutes": 152,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 7,
+          "minutes": 585,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "805867",
+      "name": "Maurício Mucuri",
+      "profile_url": "https://www.ogol.com.br/jogador/mauricio-mucuri/805867?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 44,
+      "total_minutes": 3330,
+      "total_goals": 0,
+      "total_assists": 2,
+      "total_goals_conceded": null,
+      "starts": 26,
+      "substitute_appearances": 17,
+      "avg_rating": 6.66,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 21,
+          "minutes": 1442,
+          "goals": 0,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 5,
+          "minutes": 450,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 7,
+          "minutes": 444,
+          "goals": 0,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Paranaense",
+          "appearances": 11,
+          "minutes": 994,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "548741",
+      "name": "Gabriel Fuentes",
+      "profile_url": "https://www.ogol.com.br/jogador/gabriel-fuentes/548741?epoca_id=155",
+      "position": "Defensor",
+      "total_appearances": 26,
+      "total_minutes": 1937,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 16,
+      "substitute_appearances": 5,
+      "avg_rating": 6.83,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 14,
+          "minutes": 1041,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 5,
+          "minutes": 450,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 3,
+          "minutes": 131,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 4,
+          "minutes": 315,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "238452",
+      "name": "Lucas Crispim",
+      "profile_url": "https://www.ogol.com.br/jogador/lucas-crispim/238452?epoca_id=155",
+      "position": "Meia",
+      "total_appearances": 31,
+      "total_minutes": 1208,
+      "total_goals": 0,
+      "total_assists": 1,
+      "total_goals_conceded": null,
+      "starts": 22,
+      "substitute_appearances": 9,
+      "avg_rating": 6.77,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 12,
+          "minutes": 305,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 3,
+          "minutes": 87,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 5,
+          "minutes": 188,
+          "goals": 0,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 11,
+          "minutes": 628,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "1021310",
+      "name": "Bruninho",
+      "profile_url": "https://www.ogol.com.br/jogador/bruninho/1021310?epoca_id=155",
+      "position": "Meia",
+      "total_appearances": 6,
+      "total_minutes": 379,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 3,
+      "substitute_appearances": 2,
+      "avg_rating": 6.5,
+      "competitions": [
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 1,
+          "minutes": 28,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 1,
+          "minutes": 1,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copinha",
+          "appearances": 4,
+          "minutes": 350,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "716458",
+      "name": "Ryan",
+      "profile_url": "https://www.ogol.com.br/jogador/ryan/716458?epoca_id=155",
+      "position": "Meia",
+      "total_appearances": 30,
+      "total_minutes": 996,
+      "total_goals": 0,
+      "total_assists": 1,
+      "total_goals_conceded": null,
+      "starts": 17,
+      "substitute_appearances": 13,
+      "avg_rating": 6.64,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 16,
+          "minutes": 594,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 3,
+          "minutes": 78,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 8,
+          "minutes": 263,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Paulista",
+          "appearances": 1,
+          "minutes": 4,
+          "goals": 0,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 2,
+          "minutes": 57,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "790287",
+      "name": "Lucca Prior",
+      "profile_url": "https://www.ogol.com.br/jogador/lucca-prior/790287?epoca_id=155",
+      "position": "Meia",
+      "total_appearances": 29,
+      "total_minutes": 750,
+      "total_goals": 2,
+      "total_assists": 1,
+      "total_goals_conceded": null,
+      "starts": 24,
+      "substitute_appearances": 5,
+      "avg_rating": 6.56,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 10,
+          "minutes": 190,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 4,
+          "minutes": 39,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 5,
+          "minutes": 209,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 10,
+          "minutes": 312,
+          "goals": 0,
+          "assists": 1,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "715043",
+      "name": "Rodriguinho",
+      "profile_url": "https://www.ogol.com.br/jogador/rodriguinho/715043?epoca_id=155",
+      "position": "Meia",
+      "total_appearances": 32,
+      "total_minutes": 2002,
+      "total_goals": 1,
+      "total_assists": 2,
+      "total_goals_conceded": null,
+      "starts": 17,
+      "substitute_appearances": 12,
+      "avg_rating": 6.9,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 17,
+          "minutes": 1081,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 3,
+          "minutes": 164,
+          "goals": 1,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 8,
+          "minutes": 565,
+          "goals": 0,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Mineiro",
+          "appearances": 2,
+          "minutes": 150,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 2,
+          "minutes": 42,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "127135",
+      "name": "Lucas Sasha",
+      "profile_url": "https://www.ogol.com.br/jogador/lucas-sasha/127135?epoca_id=155",
+      "position": "Meia",
+      "total_appearances": 45,
+      "total_minutes": 3261,
+      "total_goals": 2,
+      "total_assists": 5,
+      "total_goals_conceded": null,
+      "starts": 24,
+      "substitute_appearances": 17,
+      "avg_rating": 6.84,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 22,
+          "minutes": 1488,
+          "goals": 1,
+          "assists": 2,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 7,
+          "minutes": 475,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 6,
+          "minutes": 480,
+          "goals": 0,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 10,
+          "minutes": 818,
+          "goals": 1,
+          "assists": 2,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "648061",
+      "name": "Pierre",
+      "profile_url": "https://www.ogol.com.br/jogador/pierre/648061?epoca_id=155",
+      "position": "Meia",
+      "total_appearances": 33,
+      "total_minutes": 2320,
+      "total_goals": 0,
+      "total_assists": 1,
+      "total_goals_conceded": null,
+      "starts": 9,
+      "substitute_appearances": 20,
+      "avg_rating": 6.82,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 14,
+          "minutes": 912,
+          "goals": 0,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 7,
+          "minutes": 476,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 4,
+          "minutes": 270,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 8,
+          "minutes": 662,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "717382",
+      "name": "Ronald",
+      "profile_url": "https://www.ogol.com.br/jogador/ronald/717382?epoca_id=155",
+      "position": "Meia",
+      "total_appearances": 24,
+      "total_minutes": 1213,
+      "total_goals": 1,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 20,
+      "substitute_appearances": 4,
+      "avg_rating": 6.76,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 7,
+          "minutes": 398,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 3,
+          "minutes": 129,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 6,
+          "minutes": 449,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 8,
+          "minutes": 237,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "620644",
+      "name": "Rodrigo",
+      "profile_url": "https://www.ogol.com.br/jogador/rodrigo/620644?epoca_id=155",
+      "position": "Meia",
+      "total_appearances": 42,
+      "total_minutes": 2301,
+      "total_goals": 3,
+      "total_assists": 3,
+      "total_goals_conceded": null,
+      "starts": 23,
+      "substitute_appearances": 17,
+      "avg_rating": 6.78,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 22,
+          "minutes": 1155,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 6,
+          "minutes": 284,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 6,
+          "minutes": 359,
+          "goals": 0,
+          "assists": 3,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 8,
+          "minutes": 503,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "977099",
+      "name": "Cerri",
+      "profile_url": "https://www.ogol.com.br/jogador/cerri/977099?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 0,
+      "total_minutes": 0,
+      "total_goals": 0,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 0,
+      "substitute_appearances": 0,
+      "avg_rating": null,
+      "competitions": []
+    },
+    {
+      "player_id": "682142",
+      "name": "Vitinho",
+      "profile_url": "https://www.ogol.com.br/jogador/vitinho/682142?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 35,
+      "total_minutes": 1813,
+      "total_goals": 10,
+      "total_assists": 1,
+      "total_goals_conceded": null,
+      "starts": 24,
+      "substitute_appearances": 22,
+      "avg_rating": 6.75,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 19,
+          "minutes": 1053,
+          "goals": 4,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 5,
+          "minutes": 196,
+          "goals": 1,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 7,
+          "minutes": 407,
+          "goals": 4,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 4,
+          "minutes": 157,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "174460",
+      "name": "Pedro Henrique",
+      "profile_url": "https://www.ogol.com.br/jogador/pedro-henrique/174460?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 23,
+      "total_minutes": 1339,
+      "total_goals": 4,
+      "total_assists": 3,
+      "total_goals_conceded": null,
+      "starts": 8,
+      "substitute_appearances": 15,
+      "avg_rating": 6.79,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 10,
+          "minutes": 576,
+          "goals": 2,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 2,
+          "minutes": 111,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 3,
+          "minutes": 111,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 8,
+          "minutes": 541,
+          "goals": 2,
+          "assists": 3,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "974253",
+      "name": "Lucas Emanoel",
+      "profile_url": "https://www.ogol.com.br/jogador/lucas-emanoel/974253?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 24,
+      "total_minutes": 1073,
+      "total_goals": 4,
+      "total_assists": 1,
+      "total_goals_conceded": null,
+      "starts": 15,
+      "substitute_appearances": 9,
+      "avg_rating": 6.78,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 7,
+          "minutes": 273,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 3,
+          "minutes": 81,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 5,
+          "minutes": 310,
+          "goals": 1,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 6,
+          "minutes": 151,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Brasileiro S20",
+          "appearances": 1,
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copinha",
+          "appearances": 2,
+          "minutes": 168,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "1003309",
+      "name": "Caio Wesley",
+      "profile_url": "https://www.ogol.com.br/jogador/caio-wesley/1003309?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 31,
+      "total_minutes": 1969,
+      "total_goals": 8,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 18,
+      "substitute_appearances": 9,
+      "avg_rating": null,
+      "competitions": [
+        {
+          "competition": "Brasileiro S20",
+          "appearances": 17,
+          "minutes": 1050,
+          "goals": 3,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copinha",
+          "appearances": 5,
+          "minutes": 332,
+          "goals": 3,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense S20",
+          "appearances": 6,
+          "minutes": 377,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa Nordeste Sub-20",
+          "appearances": 3,
+          "minutes": 210,
+          "goals": 2,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "457216",
+      "name": "Luiz Fernando",
+      "profile_url": "https://www.ogol.com.br/jogador/luiz-fernando/457216?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 43,
+      "total_minutes": 2979,
+      "total_goals": 6,
+      "total_assists": 6,
+      "total_goals_conceded": null,
+      "starts": 12,
+      "substitute_appearances": 27,
+      "avg_rating": 6.8,
+      "competitions": [
+        {
+          "competition": "Brasileirão",
+          "appearances": 1,
+          "minutes": 10,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Série B",
+          "appearances": 21,
+          "minutes": 1501,
+          "goals": 2,
+          "assists": 2,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 6,
+          "minutes": 405,
+          "goals": 1,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 8,
+          "minutes": 586,
+          "goals": 2,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Paranaense",
+          "appearances": 3,
+          "minutes": 168,
+          "goals": 0,
+          "assists": 2,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Cearense",
+          "appearances": 4,
+          "minutes": 309,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "772006",
+      "name": "Paulo Baya",
+      "profile_url": "https://www.ogol.com.br/jogador/paulo-baya/772006?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 30,
+      "total_minutes": 1347,
+      "total_goals": 2,
+      "total_assists": 3,
+      "total_goals_conceded": null,
+      "starts": 21,
+      "substitute_appearances": 8,
+      "avg_rating": 6.83,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 13,
+          "minutes": 305,
+          "goals": 1,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 5,
+          "minutes": 207,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 5,
+          "minutes": 284,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Paulista",
+          "appearances": 7,
+          "minutes": 551,
+          "goals": 1,
+          "assists": 2,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "457229",
+      "name": "Welliton",
+      "profile_url": "https://www.ogol.com.br/jogador/welliton/457229?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 38,
+      "total_minutes": 1734,
+      "total_goals": 4,
+      "total_assists": 2,
+      "total_goals_conceded": null,
+      "starts": 23,
+      "substitute_appearances": 14,
+      "avg_rating": 6.7,
+      "competitions": [
+        {
+          "competition": "Série B",
+          "appearances": 17,
+          "minutes": 571,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 5,
+          "minutes": 174,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 8,
+          "minutes": 375,
+          "goals": 1,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Paulista",
+          "appearances": 8,
+          "minutes": 614,
+          "goals": 2,
+          "assists": 1,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "764393",
+      "name": "Juan Miritello",
+      "profile_url": "https://www.ogol.com.br/jogador/juan-miritello/764393?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 38,
+      "total_minutes": 2545,
+      "total_goals": 12,
+      "total_assists": 1,
+      "total_goals_conceded": null,
+      "starts": 19,
+      "substitute_appearances": 16,
+      "avg_rating": 6.82,
+      "competitions": [
+        {
+          "competition": "Campeonato Argentino",
+          "appearances": 6,
+          "minutes": 393,
+          "goals": 2,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Série B",
+          "appearances": 20,
+          "minutes": 1406,
+          "goals": 5,
+          "assists": 1,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 5,
+          "minutes": 287,
+          "goals": 2,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Nordeste",
+          "appearances": 7,
+          "minutes": 459,
+          "goals": 3,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    },
+    {
+      "player_id": "547957",
+      "name": "Nathan Fogaça",
+      "profile_url": "https://www.ogol.com.br/jogador/nathan-fogaca/547957?epoca_id=155",
+      "position": "Atacante",
+      "total_appearances": 24,
+      "total_minutes": 894,
+      "total_goals": 3,
+      "total_assists": 0,
+      "total_goals_conceded": null,
+      "starts": 20,
+      "substitute_appearances": 4,
+      "avg_rating": 6.71,
+      "competitions": [
+        {
+          "competition": "Copa Libertadores",
+          "appearances": 4,
+          "minutes": 101,
+          "goals": 1,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Brasileirão",
+          "appearances": 10,
+          "minutes": 349,
+          "goals": 2,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Série B",
+          "appearances": 3,
+          "minutes": 128,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Copa do Brasil",
+          "appearances": 2,
+          "minutes": 62,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        },
+        {
+          "competition": "Paulista",
+          "appearances": 5,
+          "minutes": 254,
+          "goals": 0,
+          "assists": 0,
+          "goals_conceded": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,905 @@
+{
+  "season_year": "2026",
+  "season": {
+    "strengths": [
+      {
+        "tag": "defesa",
+        "kind": "strength",
+        "text": "Defesa/goleiro seguram abaixo do xG sofrido.",
+        "evidence": "21 sofridos vs 27.82 xG (+6.8)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "tag": "mando",
+        "kind": "weakness",
+        "text": "Fraco fora de casa.",
+        "evidence": "1.08 ppg fora em 13 jogos"
+      }
+    ],
+    "notes": [
+      {
+        "tag": "mando",
+        "kind": "note",
+        "text": "Rendimento muito superior como mandante.",
+        "evidence": "2.36 ppg casa vs 1.08 fora"
+      },
+      {
+        "tag": "resistencia",
+        "kind": "note",
+        "text": "Período mais frágil defensivamente: 30-45'.",
+        "evidence": "xG sofrido 5.79 no intervalo"
+      },
+      {
+        "tag": "estilo",
+        "kind": "note",
+        "text": "Estilo de posse/construção.",
+        "evidence": "posse média 47.8%"
+      }
+    ],
+    "facts": {
+      "points_real": 40,
+      "points_expected": 35.2271,
+      "xg_diff": 3.05,
+      "finishing": -3.87,
+      "keeping": 6.82,
+      "ppg_home": 2.364,
+      "ppg_away": 1.077
+    },
+    "narrative": "O Fortaleza EC soma **40 pontos reais** em 24 jogos (11V, 7E, 6D), com expectativa Poisson de **35.2 xPts** e saldo acumulado de xG de **+3.05**.\n\n**Principais virtudes da equipe:** Defesa/goleiro seguram abaixo do xG sofrido.\n\n**Vulnerabilidades monitoradas:** Fraco fora de casa.\n\n**Padrões táticos observados:** Rendimento muito superior como mandante; Período mais frágil defensivamente: 30-45'; Estilo de posse/construção."
+  },
+  "matches": {
+    "15525984": {
+      "event_id": 15525984,
+      "date": "2026-03-21",
+      "opponent": "Botafogo-SP",
+      "score": "4:0",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Goleada sofrida.",
+          "evidence": "0-4"
+        },
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Amassado no volume de chances.",
+          "evidence": "xG final 0.34-2.60"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Brenno abaixo.",
+          "evidence": "nota 5.6"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "2 gol(s) em corner"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Hygor foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.95"
+        }
+      ],
+      "narrative": "No confronto contra o **Botafogo-SP** (2026-03-21, fora de casa), finalizado com o placar de **4:0**, o Fortaleza EC registrou **0.34 xG gerados** contra **2.60 xG concedidos**.\n\n**Pontos de atenção:** Goleada sofrida; Amassado no volume de chances; Brenno abaixo; Sofreu gol de bola parada.\n\n**Observações:** Hygor foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Luiz Fernando, Maílton, Welliton**."
+    },
+    "15525999": {
+      "event_id": 15525999,
+      "date": "2026-03-31",
+      "opponent": "Cuiabá",
+      "score": "0:0",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 0.54-0.06"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lucas Gazal melhor em campo.",
+          "evidence": "nota 7.9, xG+xA 0.04"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Tomás Pochettino abaixo.",
+          "evidence": "nota 6.0"
+        }
+      ],
+      "notes": [],
+      "narrative": "No confronto contra o **Cuiabá** (2026-03-31, em casa), finalizado com o placar de **0:0**, o Fortaleza EC registrou **0.54 xG gerados** contra **0.06 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; Lucas Gazal melhor em campo.\n\n**Pontos de atenção:** Tomás Pochettino abaixo.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Gabriel Fuentes, Juan Miritello, Lucas Crispim**."
+    },
+    "15526009": {
+      "event_id": 15526009,
+      "date": "2026-04-04",
+      "opponent": "Juventude",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 1.73-1.05"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Ryan Gustavo melhor em campo.",
+          "evidence": "nota 7.8, xG+xA 0.01"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [],
+      "narrative": "No confronto contra o **Juventude** (2026-04-04, em casa), finalizado com o placar de **2:1**, o Fortaleza EC registrou **1.73 xG gerados** contra **1.05 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; Ryan Gustavo melhor em campo.\n\n**Pontos de atenção:** Sofreu gol de bola parada.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Maílton, Luiz Fernando, Lucas Emanoel**."
+    },
+    "15526016": {
+      "event_id": 15526016,
+      "date": "2026-04-12",
+      "opponent": "São Bernardo",
+      "score": "0:1",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "0 sofridos de 1.35 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Vinicius Silvestre melhor em campo.",
+          "evidence": "nota 7.8, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Luiz Fernando abaixo.",
+          "evidence": "nota 6.0"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Pedro Vitor foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.79"
+        }
+      ],
+      "narrative": "No confronto contra o **São Bernardo** (2026-04-12, fora de casa), finalizado com o placar de **0:1**, o Fortaleza EC registrou **1.49 xG gerados** contra **1.35 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Vinicius Silvestre melhor em campo.\n\n**Pontos de atenção:** Luiz Fernando abaixo.\n\n**Observações:** Pedro Vitor foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Tomás Pochettino, Juan Miritello, Luiz Fernando**."
+    },
+    "15526029": {
+      "event_id": 15526029,
+      "date": "2026-04-19",
+      "opponent": "Criciúma",
+      "score": "3:2",
+      "strengths": [
+        {
+          "tag": "finalizacao",
+          "kind": "strength",
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "3 gols de 0.55 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Luiz Fernando melhor em campo.",
+          "evidence": "nota 8.4, xG+xA 0.30"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "defesa",
+          "kind": "weakness",
+          "text": "Punição acima do esperado — erros pontuais custaram caro.",
+          "evidence": "2 sofridos de 0.85 xG"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em set-piece"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 0.55-0.85, xPts 1.04"
+        }
+      ],
+      "narrative": "No confronto contra o **Criciúma** (2026-04-19, em casa), finalizado com o placar de **3:2**, o Fortaleza EC registrou **0.55 xG gerados** contra **0.85 xG concedidos**.\n\n**Destaques positivos:** Finalização clínica: converteu acima do xG; Luiz Fernando melhor em campo.\n\n**Pontos de atenção:** Punição acima do esperado — erros pontuais custaram caro; Sofreu gol de bola parada.\n\n**Observações:** Vitória sofrida — foi superado no volume de chances.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Luiz Fernando, Lucas Emanoel, Maílton**."
+    },
+    "15526039": {
+      "event_id": 15526039,
+      "date": "2026-04-26",
+      "opponent": "Operário-PR",
+      "score": "0:0",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 0.66-0.59"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Kauã Rocha melhor em campo.",
+          "evidence": "nota 7.7, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "No confronto contra o **Operário-PR** (2026-04-26, fora de casa), finalizado com o placar de **0:0**, o Fortaleza EC registrou **0.66 xG gerados** contra **0.59 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; Kauã Rocha melhor em campo.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Luiz Fernando, Juan Miritello, Maílton**."
+    },
+    "15526051": {
+      "event_id": 15526051,
+      "date": "2026-05-02",
+      "opponent": "Goiás",
+      "score": "4:1",
+      "strengths": [
+        {
+          "tag": "resultado",
+          "kind": "strength",
+          "text": "Goleada aplicada.",
+          "evidence": "4-1"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "strength",
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "4 gols de 1.79 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Vitinho melhor em campo.",
+          "evidence": "nota 8.7, xG+xA 0.37"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em free-kick"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Gegê foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.51"
+        }
+      ],
+      "narrative": "No confronto contra o **Goiás** (2026-05-02, em casa), finalizado com o placar de **4:1**, o Fortaleza EC registrou **1.79 xG gerados** contra **0.81 xG concedidos**.\n\n**Destaques positivos:** Goleada aplicada; Finalização clínica: converteu acima do xG; Vitinho melhor em campo.\n\n**Pontos de atenção:** Sofreu gol de bola parada.\n\n**Observações:** Gegê foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Juan Miritello, Vitinho, Maílton**."
+    },
+    "15526082": {
+      "event_id": 15526082,
+      "date": "2026-05-10",
+      "opponent": "Avaí",
+      "score": "0:0",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "0 sofridos de 1.55 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Vinicius Silvestre melhor em campo.",
+          "evidence": "nota 8.1, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho pior que o placar.",
+          "evidence": "xG 0.58-1.55"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Thayllon Roberth foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.63"
+        }
+      ],
+      "narrative": "No confronto contra o **Avaí** (2026-05-10, fora de casa), finalizado com o placar de **0:0**, o Fortaleza EC registrou **0.58 xG gerados** contra **1.55 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Vinicius Silvestre melhor em campo.\n\n**Observações:** Empate com desempenho pior que o placar; Thayllon Roberth foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Maílton, Emanuel Brítez, Rodrigo Santos**."
+    },
+    "15526090": {
+      "event_id": 15526090,
+      "date": "2026-05-17",
+      "opponent": "Ceará",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 1.66-1.09"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Maílton decisivo.",
+          "evidence": "nota 7.3, xG+xA 0.92"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Dominou e perdeu — falta de eficiência decidiu.",
+          "evidence": "xG 1.66-1.09, xPts 1.76"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Matheus Araújo foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.57"
+        }
+      ],
+      "narrative": "No confronto contra o **Ceará** (2026-05-17, fora de casa), finalizado com o placar de **2:1**, o Fortaleza EC registrou **1.66 xG gerados** contra **1.09 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; Maílton decisivo.\n\n**Pontos de atenção:** Dominou e perdeu — falta de eficiência decidiu; Sofreu gol de bola parada.\n\n**Observações:** Matheus Araújo foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Maílton, Juan Miritello, Maurício Lima**."
+    },
+    "15526101": {
+      "event_id": 15526101,
+      "date": "2026-05-23",
+      "opponent": "Londrina",
+      "score": "3:0",
+      "strengths": [
+        {
+          "tag": "resultado",
+          "kind": "strength",
+          "text": "Goleada aplicada.",
+          "evidence": "3-0"
+        },
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 2.30-0.23"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Vitinho melhor em campo.",
+          "evidence": "nota 8.1, xG+xA 0.28"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "No confronto contra o **Londrina** (2026-05-23, em casa), finalizado com o placar de **3:0**, o Fortaleza EC registrou **2.30 xG gerados** contra **0.23 xG concedidos**.\n\n**Destaques positivos:** Goleada aplicada; Controlou o jogo do início ao fim no xG; Vitinho melhor em campo.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Luiz Fernando, Lucca Prior, Rodriguinho**."
+    },
+    "15526109": {
+      "event_id": 15526109,
+      "date": "2026-05-30",
+      "opponent": "Athletic Club",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 1.22-0.82"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Dominou e perdeu — falta de eficiência decidiu.",
+          "evidence": "xG 1.22-0.82, xPts 1.66"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "0 gols de 1.22 xG"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [],
+      "narrative": "No confronto contra o **Athletic Club** (2026-05-30, fora de casa), finalizado com o placar de **1:0**, o Fortaleza EC registrou **1.22 xG gerados** contra **0.82 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG.\n\n**Pontos de atenção:** Dominou e perdeu — falta de eficiência decidiu; Pouca pontaria: criou e não converteu; Sofreu gol de bola parada.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Juan Miritello, Lucas Sasha, Rodriguinho**."
+    },
+    "15526124": {
+      "event_id": 15526124,
+      "date": "2026-06-09",
+      "opponent": "Náutico",
+      "score": "0:1",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "0 sofridos de 1.80 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "João Ricardo melhor em campo.",
+          "evidence": "nota 9.7, xG+xA 0.02"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Amassado no volume de chances.",
+          "evidence": "xG final 0.31-1.80"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Rodriguinho abaixo.",
+          "evidence": "nota 6.0"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 0.31-1.80, xPts 0.37"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Dodô foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.07"
+        }
+      ],
+      "narrative": "No confronto contra o **Náutico** (2026-06-09, fora de casa), finalizado com o placar de **0:1**, o Fortaleza EC registrou **0.31 xG gerados** contra **1.80 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; João Ricardo melhor em campo.\n\n**Pontos de atenção:** Amassado no volume de chances; Rodriguinho abaixo.\n\n**Observações:** Vitória sofrida — foi superado no volume de chances; Dodô foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Kayke, Emanuel Brítez, Rodriguinho**."
+    },
+    "15526132": {
+      "event_id": 15526132,
+      "date": "2026-06-16",
+      "opponent": "América Mineiro",
+      "score": "0:3",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Welliton melhor em campo.",
+          "evidence": "nota 7.6, xG+xA 0.26"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Goleada sofrida.",
+          "evidence": "0-3"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "0 gols de 1.77 xG"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em penalty"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Matías Segovia foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.46"
+        }
+      ],
+      "narrative": "No confronto contra o **América Mineiro** (2026-06-16, em casa), finalizado com o placar de **0:3**, o Fortaleza EC registrou **1.77 xG gerados** contra **2.60 xG concedidos**.\n\n**Destaques positivos:** Welliton melhor em campo.\n\n**Pontos de atenção:** Goleada sofrida; Pouca pontaria: criou e não converteu; Sofreu gol de bola parada.\n\n**Observações:** Matías Segovia foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Luiz Fernando, Gabriel Fuentes, Vitinho**."
+    },
+    "15526146": {
+      "event_id": 15526146,
+      "date": "2026-06-21",
+      "opponent": "Clube De Regatas Brasil",
+      "score": "1:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "João Ricardo melhor em campo.",
+          "evidence": "nota 8.3, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho melhor que o placar.",
+          "evidence": "xG 1.99-1.08"
+        }
+      ],
+      "narrative": "No confronto contra o **Clube De Regatas Brasil** (2026-06-21, fora de casa), finalizado com o placar de **1:1**, o Fortaleza EC registrou **1.99 xG gerados** contra **1.08 xG concedidos**.\n\n**Destaques positivos:** João Ricardo melhor em campo.\n\n**Observações:** Empate com desempenho melhor que o placar.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Juan Miritello, Paulo Baya, Luiz Fernando**."
+    },
+    "15526152": {
+      "event_id": 15526152,
+      "date": "2026-06-28",
+      "opponent": "Sport Recife",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "1 sofridos de 2.24 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "João Ricardo melhor em campo.",
+          "evidence": "nota 7.6, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Amassado no volume de chances.",
+          "evidence": "xG final 1.28-2.24"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 1.28-2.24, xPts 0.83"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Perotti foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.26"
+        }
+      ],
+      "narrative": "No confronto contra o **Sport Recife** (2026-06-28, em casa), finalizado com o placar de **2:1**, o Fortaleza EC registrou **1.28 xG gerados** contra **2.24 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; João Ricardo melhor em campo.\n\n**Pontos de atenção:** Amassado no volume de chances.\n\n**Observações:** Vitória sofrida — foi superado no volume de chances; Perotti foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Juan Miritello, Pierre, Luiz Fernando**."
+    },
+    "15526162": {
+      "event_id": 15526162,
+      "date": "2026-07-03",
+      "opponent": "Ponte Preta",
+      "score": "2:0",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 1.83-0.47"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Maurício Lima melhor em campo.",
+          "evidence": "nota 7.9, xG+xA 0.06"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "No confronto contra o **Ponte Preta** (2026-07-03, em casa), finalizado com o placar de **2:0**, o Fortaleza EC registrou **1.83 xG gerados** contra **0.47 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; Maurício Lima melhor em campo.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Juan Miritello, Welliton, Luiz Fernando**."
+    },
+    "15526173": {
+      "event_id": 15526173,
+      "date": "2026-07-12",
+      "opponent": "Atlético Goianiense",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lucas Gazal melhor em campo.",
+          "evidence": "nota 7.5, xG+xA 0.15"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Dominou e perdeu — falta de eficiência decidiu.",
+          "evidence": "xG 1.26-0.52, xPts 1.94"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "0 gols de 1.26 xG"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em free-kick"
+        }
+      ],
+      "notes": [],
+      "narrative": "No confronto contra o **Atlético Goianiense** (2026-07-12, fora de casa), finalizado com o placar de **1:0**, o Fortaleza EC registrou **1.26 xG gerados** contra **0.52 xG concedidos**.\n\n**Destaques positivos:** Lucas Gazal melhor em campo.\n\n**Pontos de atenção:** Dominou e perdeu — falta de eficiência decidiu; Pouca pontaria: criou e não converteu; Sofreu gol de bola parada.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Maílton, Luiz Fernando, Rodrigo Santos**."
+    },
+    "15526182": {
+      "event_id": 15526182,
+      "date": "2026-07-18",
+      "opponent": "Grêmio Novorizontino",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Vitinho melhor em campo.",
+          "evidence": "nota 7.8, xG+xA 0.21"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "No confronto contra o **Grêmio Novorizontino** (2026-07-18, em casa), finalizado com o placar de **1:0**, o Fortaleza EC registrou **1.26 xG gerados** contra **0.98 xG concedidos**.\n\n**Destaques positivos:** Vitinho melhor em campo.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Welliton, Juan Miritello, Pedro Henrique**."
+    },
+    "15526197": {
+      "event_id": 15526197,
+      "date": "2026-07-22",
+      "opponent": "Vila Nova FC",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Pierre melhor em campo.",
+          "evidence": "nota 7.3, xG+xA 0.03"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Maurício Lima abaixo.",
+          "evidence": "nota 5.9"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em set-piece"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "João Vieira foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.54"
+        }
+      ],
+      "narrative": "No confronto contra o **Vila Nova FC** (2026-07-22, fora de casa), finalizado com o placar de **2:1**, o Fortaleza EC registrou **0.93 xG gerados** contra **1.23 xG concedidos**.\n\n**Destaques positivos:** Pierre melhor em campo.\n\n**Pontos de atenção:** Maurício Lima abaixo; Sofreu gol de bola parada.\n\n**Observações:** João Vieira foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Pedro Henrique, Luiz Fernando, Nathan Fogaça**."
+    },
+    "15526202": {
+      "event_id": 15526202,
+      "date": "2026-07-29",
+      "opponent": "Botafogo-SP",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 2.24-0.35"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "João Ricardo melhor em campo.",
+          "evidence": "nota 8.3, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "1 gols de 2.24 xG"
+        }
+      ],
+      "notes": [],
+      "narrative": "No confronto contra o **Botafogo-SP** (2026-07-29, em casa), finalizado com o placar de **1:0**, o Fortaleza EC registrou **2.24 xG gerados** contra **0.35 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; João Ricardo melhor em campo.\n\n**Pontos de atenção:** Pouca pontaria: criou e não converteu.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Ronald, Pedro Henrique, Vitinho**."
+    },
+    "15526216": {
+      "event_id": 15526216,
+      "date": "2026-08-09",
+      "opponent": "Cuiabá",
+      "score": "1:1",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Entrou mal no jogo — cedeu xG cedo.",
+          "evidence": "atrás no xG já aos 30'"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Juan Miritello abaixo.",
+          "evidence": "nota 5.8"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho pior que o placar.",
+          "evidence": "xG 1.03-1.94"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Eliel foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.76"
+        }
+      ],
+      "narrative": "No confronto contra o **Cuiabá** (2026-08-09, fora de casa), finalizado com o placar de **1:1**, o Fortaleza EC registrou **1.03 xG gerados** contra **1.94 xG concedidos**.\n\n**Pontos de atenção:** Entrou mal no jogo — cedeu xG cedo; Juan Miritello abaixo.\n\n**Observações:** Empate com desempenho pior que o placar; Eliel foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Maílton, Vitinho, Rodrigo Santos**."
+    },
+    "15526227": {
+      "event_id": 15526227,
+      "date": "2026-08-15",
+      "opponent": "Juventude",
+      "score": "0:0",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "0 sofridos de 1.46 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "João Ricardo melhor em campo.",
+          "evidence": "nota 7.8, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Entrou mal no jogo — cedeu xG cedo.",
+          "evidence": "atrás no xG já aos 27'"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Maurício Lima abaixo.",
+          "evidence": "nota 5.9"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho pior que o placar.",
+          "evidence": "xG 0.27-1.46"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Alisson Safira foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.52"
+        }
+      ],
+      "narrative": "No confronto contra o **Juventude** (2026-08-15, fora de casa), finalizado com o placar de **0:0**, o Fortaleza EC registrou **0.27 xG gerados** contra **1.46 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; João Ricardo melhor em campo.\n\n**Pontos de atenção:** Entrou mal no jogo — cedeu xG cedo; Maurício Lima abaixo.\n\n**Observações:** Empate com desempenho pior que o placar; Alisson Safira foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Nathan Fogaça, Rodriguinho, Rodrigo Santos**."
+    },
+    "15526232": {
+      "event_id": 15526232,
+      "date": "2026-08-19",
+      "opponent": "São Bernardo",
+      "score": "1:1",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 2.33-1.15"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Maílton decisivo.",
+          "evidence": "nota 7.4, xG+xA 0.70"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "1 gols de 2.33 xG"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho melhor que o placar.",
+          "evidence": "xG 2.33-1.15"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Romisson foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.56"
+        }
+      ],
+      "narrative": "No confronto contra o **São Bernardo** (2026-08-19, em casa), finalizado com o placar de **1:1**, o Fortaleza EC registrou **2.33 xG gerados** contra **1.15 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; Maílton decisivo.\n\n**Pontos de atenção:** Pouca pontaria: criou e não converteu.\n\n**Observações:** Empate com desempenho melhor que o placar; Romisson foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Lucas Sasha, Maílton, Lucas Gazal**."
+    },
+    "15526244": {
+      "event_id": 15526244,
+      "date": "2026-08-23",
+      "opponent": "Criciúma",
+      "score": "0:2",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "0 sofridos de 1.00 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "João Ricardo melhor em campo.",
+          "evidence": "nota 8.4, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Rómulo Otero foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.66"
+        }
+      ],
+      "narrative": "No confronto contra o **Criciúma** (2026-08-23, fora de casa), finalizado com o placar de **0:2**, o Fortaleza EC registrou **1.51 xG gerados** contra **1.00 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; João Ricardo melhor em campo.\n\n**Observações:** Rómulo Otero foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Paulo Baya, Juan Miritello, Maílton**."
+    }
+  }
+}

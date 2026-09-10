@@ -1,0 +1,5129 @@
+[
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841900",
+    "home_team": "Botafogo FC",
+    "away_team": "Fortaleza EC",
+    "referee": "Felipe Fernandes de Lima",
+    "stadium": "Santa Cruz",
+    "attendance": 2754,
+    "round": "1. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Hygor",
+        "assist": "Everton Morelli",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:0",
+        "scorer": "Everton Morelli",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "+4",
+        "cumulative_score": "3:0",
+        "scorer": "Vilar",
+        "assist": "Patrick Brey",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "4:0",
+        "scorer": "Everton Morelli",
+        "assist": "Rafael Gava",
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Everton Morelli",
+        "card_type": "yellow",
+        "reason": "Tirar a camisa",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Luiz Fernando",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Crispim",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Sasha",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Maílton",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Maílton",
+        "card_type": "red",
+        "reason": "Agressão",
+        "team": "away"
+      },
+      {
+        "minute": "+5",
+        "player": "Felipe Vieira",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Matheus Sales",
+        "player_out": "Everton Morelli",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulo Baya",
+        "player_out": "Juan Miritello",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Felipe Vieira",
+        "player_out": "Patrick Brey",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Thiaguinho",
+        "player_out": "Rafael Gava",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ryan",
+        "player_out": "Lucas Sasha",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": "+1",
+        "player_in": "Jefferson Nem",
+        "player_out": "Kelvin",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": "+2",
+        "player_in": "Marquinho",
+        "player_out": "Leandro Maciel",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841784",
+    "home_team": "Fortaleza EC",
+    "away_team": "Cuiabá EC",
+    "referee": "André Luiz Skettino Policarpo Bento",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 7679,
+    "round": "2. rodada",
+    "goals": [],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Lucas Emanoel",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "David Miguel",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Hernandes",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Kauan Cristtyan",
+        "player_out": "Vinicius Peixoto",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "João Basso",
+        "player_out": "Luis Soares",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Gabriel Fuentes",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Emanoel",
+        "player_out": "Lucca Prior",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Weverson",
+        "player_out": "Luiz Otávio",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Juan Miritello",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Maurício Mucuri",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Hernandes",
+        "player_out": "Rodrigo Rodrigues",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Eric",
+        "player_out": "Lorenzo",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841864",
+    "home_team": "Fortaleza EC",
+    "away_team": "EC Juventude",
+    "referee": "Raphael Claus",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 7437,
+    "round": "3. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Maílton",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "cumulative_score": "2:0",
+        "scorer": "Ryan",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:1",
+        "scorer": "Alan Kardec",
+        "assist": "Manuel Castro",
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Maílton",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Luiz Fernando",
+        "card_type": "yellow",
+        "reason": "Cera",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Rodrigo Santos",
+        "card_type": "yellow",
+        "reason": "Cera",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Alan Kardec",
+        "player_out": "Alisson Safira",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Fábio Lima",
+        "player_out": "Raí Ramos",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Juan Miritello",
+        "player_out": "Lucas Emanoel",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Maurício Mucuri",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Luan Freitas",
+        "player_out": "Lucas Sasha",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Léo Oliveira",
+        "player_out": "Messias",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Carlos Júnior",
+        "player_out": "Luan Martins",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Marcos Paulo",
+        "player_out": "Wadson",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Nathan",
+        "player_out": "Marcos Paulo",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841791",
+    "home_team": "São Bernardo FC",
+    "away_team": "Fortaleza EC",
+    "referee": "Yuri Elino Ferreira da Cruz",
+    "stadium": "Primeiro de Maio",
+    "attendance": 961,
+    "round": "4. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Pará",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Gabriel Fuentes",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Pierre",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Hélder Maciel",
+        "player_out": "Matheus Salustiano",
+        "reason": "Lesão",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Juan Miritello",
+        "player_out": "Lucas Emanoel",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Maurício Mucuri",
+        "player_out": "Gabriel Fuentes",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Hyoran",
+        "player_out": "Dudu Miraíma",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Echaporã",
+        "player_out": "Pedrinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Luizão",
+        "player_out": "Foguinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulo Baya",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Fabrício Daniel",
+        "player_out": "Daniel Amorim",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841844",
+    "home_team": "Fortaleza EC",
+    "away_team": "Criciúma EC",
+    "referee": "Lucas Casagrande",
+    "stadium": "Presidente Vargas",
+    "attendance": 7604,
+    "round": "5. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Luiz Fernando",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Fellipe Mateus",
+        "assist": "Nicolas",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:1",
+        "scorer": "Ruan Carvalho",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:2",
+        "scorer": "Bruno Alves",
+        "assist": "Romarinho",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "3:2",
+        "scorer": "Bruno Alves",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Lucas Emanoel",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Ryan",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Marcelo Hermes",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Ruan Carvalho",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+5",
+        "player": "Rodriguinho",
+        "card_type": "yellow",
+        "reason": "Cera",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Waguininho",
+        "player_out": "Romarinho",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Sasha",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Maurício Mucuri",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rómulo Otero",
+        "player_out": "Nicolas",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Hiago Alves",
+        "player_out": "Fellipe Mateus",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulo Baya",
+        "player_out": "Lucas Emanoel",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Léo Mana",
+        "player_out": "Ruan Carvalho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Bidu",
+        "player_out": "Bruno Alves",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Maílton",
+        "reason": "Lesão",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841883",
+    "home_team": "Operário FEC",
+    "away_team": "Fortaleza EC",
+    "referee": "Jefferson Ferreira de Moraes",
+    "stadium": "Germano Krüger",
+    "attendance": 2381,
+    "round": "6. rodada",
+    "goals": [],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Tomás Pochettino",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "José Cuenú",
+        "card_type": "yellow",
+        "reason": "Mão na bola",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Luiz Fernando",
+        "card_type": "yellow",
+        "reason": "Reclamação",
+        "team": "away"
+      },
+      {
+        "minute": "+5",
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Reclamação",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Berto",
+        "player_out": "Edwin Torres",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Sasha",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Juan Miritello",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Pedro Vilhena",
+        "player_out": "Gabriel Boschilia",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Matheus Trindade",
+        "player_out": "Aylon",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Neto Paraíba",
+        "player_out": "Índio",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "William Klaus",
+        "player_out": "Miranda",
+        "reason": "Lesão",
+        "team": "home"
+      },
+      {
+        "minute": "+3",
+        "player_in": "Paulo Baya",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": "+3",
+        "player_in": "Lucas Emanoel",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841824",
+    "home_team": "Fortaleza EC",
+    "away_team": "Goiás EC",
+    "referee": "André Luiz Skettino Policarpo Bento",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 19050,
+    "round": "7. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Gegê",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Vitinho",
+        "assist": "Maurício Mucuri",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:1",
+        "scorer": "Vitinho",
+        "assist": "Pierre",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "3:1",
+        "scorer": "Juan Miritello",
+        "assist": "Emanuel Brítez",
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "cumulative_score": "4:1",
+        "scorer": "Juan Miritello",
+        "assist": "Maílton",
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Paulo Baya",
+        "card_type": "yellow",
+        "reason": "Reclamação",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Nicolas",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Vitinho",
+        "card_type": "yellow",
+        "reason": "Tirar a camisa",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Ryan",
+        "card_type": "yellow",
+        "reason": "Tirar a camisa",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Diego Caito",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Nicolas",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Anselmo Ramon",
+        "player_out": "Cadu",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Paulo Baya",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Kauã Rocha",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Diego Caito",
+        "player_out": "Rodrigo Soares",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Brayann",
+        "player_out": "Baldória",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Sasha",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Esli García",
+        "player_out": "Lucas Rodrigues",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Pedrinho",
+        "player_out": "Jean Carlos",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841956",
+    "home_team": "Avaí FC",
+    "away_team": "Fortaleza EC",
+    "referee": "Paulo Cesar Zanovelli",
+    "stadium": "Aderbal Ramos da Silva",
+    "attendance": 5270,
+    "round": "8. rodada",
+    "goals": [],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Bruno Baldini",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Ryan",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+2",
+        "player": "Guilherme Aquino",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Douglas Teixeira",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": "+6",
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+7",
+        "player": "Pierre",
+        "card_type": "red",
+        "reason": null,
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Sorriso",
+        "player_out": "Jean Lucas",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Kauã Rocha",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Wenderson",
+        "player_out": "Rafael Bilu",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Sasha",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Hyan",
+        "player_out": "Luiz Henrique",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Isaías",
+        "player_out": "Thayllon",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": "+4",
+        "player_in": "Felipe Avenatti",
+        "player_out": "Daniel Penha",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4841874",
+    "home_team": "Ceará SC",
+    "away_team": "Fortaleza EC",
+    "referee": "Rodrigo José Pereira de Lima",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 20362,
+    "round": "9. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Maílton",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Melk",
+        "assist": "Enzo Lodovico",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:1",
+        "scorer": "Júlio César",
+        "assist": "Melk",
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Vitinho",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+3",
+        "player": "Juan Miritello",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Alex Silva",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Maílton",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Dieguinho",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": "+3",
+        "player": "Enzo Lodovico",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": "+5",
+        "player": "Lucas Sasha",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Sánchez",
+        "player_out": "Fernando",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Enzo Lodovico",
+        "player_out": "Alex Silva",
+        "reason": "Lesão",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Matheus Araújo",
+        "player_out": "Fernandinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Giulio",
+        "player_out": "Gustavo Prado",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulo Baya",
+        "player_out": "Ronald",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Lima",
+        "player_out": "Dieguinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4842064",
+    "home_team": "Fortaleza EC",
+    "away_team": "Londrina EC",
+    "referee": "Bráulio da Silva Machado",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 7666,
+    "round": "10. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Vitinho",
+        "assist": "Matheus Rossetto",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:0",
+        "scorer": "Luiz Fernando",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "+9",
+        "cumulative_score": "3:0",
+        "scorer": "Lucca Prior",
+        "assist": "Kayke",
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Matheus Rossetto",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Reclamação",
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "player": "Caio",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Vitinho Mota",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Rafael Monteiro",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Iago Teles",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Rodriguinho",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "André Cardoso",
+        "player_out": "André Luiz",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Matheus Rossetto",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulinho Moccelin",
+        "player_out": "Vitinho Mota",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Caio Rafael",
+        "player_out": "Thalis",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Fabiano",
+        "player_out": "João Tavares",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Maurício Mucuri",
+        "player_out": "Gabriel Fuentes",
+        "reason": "Lesão",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Juninho",
+        "player_out": "Caio Rafael",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Heron",
+        "player_out": "Rafael Monteiro",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Juan Miritello",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": "+3",
+        "player_in": "Ryan",
+        "player_out": "Lucas Sasha",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": "+3",
+        "player_in": "Lucca Prior",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4842122",
+    "home_team": "Athletic Club",
+    "away_team": "Fortaleza EC",
+    "referee": "Wagner do Nascimento Magalhães",
+    "stadium": "Joaquim Portugal",
+    "attendance": 3857,
+    "round": "11. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Ian Luccas",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Kauã Rocha",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Luiz Fernando",
+        "player_out": "Kauã Rocha",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Maílton",
+        "player_out": "Rodriguinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Tomás Pochettino",
+        "player_out": "Welliton",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Bruninho",
+        "player_out": "Max",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Jota",
+        "player_out": "Dixon Vera",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Ruan Assis",
+        "player_out": "Ian Luccas",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Felipe Vieira",
+        "player_out": "Zeca",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Alexandre Pena",
+        "player_out": "Gian Cabezas",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4831113",
+    "home_team": "Fortaleza EC",
+    "away_team": "AA Maguary",
+    "referee": "Márcio dos Santos Oliveira",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 5097,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Luiz Fernando",
+        "assist": "Maílton",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Júlio Cesar",
+        "assist": "Matías Verdún",
+        "team": "away"
+      },
+      {
+        "minute": "+4",
+        "cumulative_score": "2:1",
+        "scorer": "Tomás Cardona",
+        "assist": "Maílton",
+        "team": "home"
+      },
+      {
+        "minute": "+6",
+        "cumulative_score": "2:2",
+        "scorer": "Vinicius Kanu",
+        "assist": "Matías Verdún",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:3",
+        "scorer": "Eduardo",
+        "assist": "Marquinhos",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "3:3",
+        "scorer": "Rodrigo Santos",
+        "assist": "Luiz Fernando",
+        "team": "home"
+      },
+      {
+        "minute": "+5",
+        "cumulative_score": "4:3",
+        "scorer": "Lucca Prior",
+        "assist": "Vitinho",
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Maílton",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Marquinhos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Histone",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Eduardo",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Luiz Fernando",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Ítalo",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+5",
+        "player": "Lucca Prior",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Histone",
+        "player_out": "Matías Verdún",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "GB",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Jalysson",
+        "player_out": "Iago Felipe",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Emanoel",
+        "player_out": "Lucas Crispim",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Francisco",
+        "player_out": "Vinicius Kanu",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Nathan Silva",
+        "player_out": "Júlio Cesar",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4839061",
+    "home_team": "Manauara EC",
+    "away_team": "Fortaleza EC",
+    "referee": "Gustavo Ervino Bauermann",
+    "stadium": "Arena da Amazônia",
+    "attendance": 2686,
+    "round": null,
+    "goals": [
+      {
+        "minute": "+8",
+        "cumulative_score": "0:1",
+        "scorer": "Maílton",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "João Guilherme",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Brenno",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+2",
+        "player": "Luan Freitas",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+4",
+        "player": "Gui Campana",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Paulo Baya",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Quadrado",
+        "player_out": "Maicon",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Lucas Gazal",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Éverson",
+        "player_out": "Felipe Camargo",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Giba",
+        "player_out": "Pablo Pardal",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Állefe",
+        "player_out": "Adriano Klein",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Ronald",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Juan Miritello",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Gui Campana",
+        "player_out": "Marinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4844949",
+    "home_team": "Nova Iguaçu FC",
+    "away_team": "Fortaleza EC",
+    "referee": "Maguielson Lima Barbosa",
+    "stadium": "Luso Brasileiro",
+    "attendance": 608,
+    "round": null,
+    "goals": [
+      {
+        "minute": "+6",
+        "cumulative_score": "0:1",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": "+4",
+        "player": "Xandinho",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": "+4",
+        "player": "Gabriel Fuentes",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Maílton",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Cera",
+        "team": "away"
+      },
+      {
+        "minute": "+5",
+        "player": "Wender",
+        "card_type": "red",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": "+5",
+        "player": "Pedro Thomaz",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Juan Miritello",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Paulo Baya",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Léo David",
+        "player_out": "Iago Lacerda",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Weverton",
+        "player_out": "Vini Charopem",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Arthur Neves",
+        "player_out": "Wender",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rickelme Lopes",
+        "player_out": "Jorge Pedra",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Pedro Thomaz",
+        "player_out": "Léo Rafael",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4867984",
+    "home_team": "Fortaleza EC",
+    "away_team": "CRB",
+    "referee": null,
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 6962,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Mikael",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Maílton",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:1",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Fábio Alemão",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Ryan",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Pedro Castro",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+4",
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Henri",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Patrick de Lucca",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Ronald",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Juan Miritello",
+        "player_out": "Lucas Emanoel",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Patrick de Lucca",
+        "player_out": "Pedro Castro",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Douglas Baggio",
+        "player_out": "Danielzinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Sasha",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Luiz Phellype",
+        "player_out": "Mikael",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Kevin",
+        "player_out": "Hereda",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulo Baya",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": "+5",
+        "player_in": "Guilherme Pato",
+        "player_out": "Dadá Belmonte",
+        "reason": "Lesão",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4881366",
+    "home_team": "CRB",
+    "away_team": "Fortaleza EC",
+    "referee": "Anderson Daronco",
+    "stadium": "Rei Pelé",
+    "attendance": 9197,
+    "round": null,
+    "goals": [],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Luan Freitas",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Henri",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Rodrigo Santos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Luiz Fernando",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Crystopher",
+        "player_out": "Patrick de Lucca",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Douglas Baggio",
+        "player_out": "Thiaguinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Maílton",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Sasha",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Guilherme Pato",
+        "player_out": "Lucas Lovat",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Luiz Phellype",
+        "player_out": "Pedro Castro",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Guilherme Estrella",
+        "player_out": "Danielzinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Ryan",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4848502",
+    "home_team": "Ferroviário AC",
+    "away_team": "Fortaleza EC",
+    "referee": "Afro Rocha de Carvalho Filho",
+    "stadium": "Presidente Vargas",
+    "attendance": 1509,
+    "round": "1. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Pedro Gomes",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Rodriguinho",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Welliton",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Iago Reis",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Bruninho",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Ryan",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Paulo Ricardo",
+        "player_out": "Carlinhos",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Camilo",
+        "player_out": "Jefinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Bruninho",
+        "player_out": "Ronald",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Ryan",
+        "player_out": "Lucca Prior",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Fernando Portel",
+        "player_out": "Luan",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Léo Paraíso",
+        "player_out": "Iago Reis",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Welliton",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Juan Miritello",
+        "player_out": "Lucas Emanoel",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Paulinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Pablinho",
+        "player_out": "Brayan",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4852936",
+    "home_team": "Fortaleza EC",
+    "away_team": "Imperatriz-MA",
+    "referee": "Tiago Ramos de Oliveira",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 5239,
+    "round": "2. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Lucas Emanoel",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:0",
+        "scorer": "Welliton",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:1",
+        "scorer": "Artur Potiguar",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Guilherme Moura",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Artur Potiguar",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+2",
+        "player": "Vinícius",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": "+2",
+        "player": "Ivan",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+2",
+        "player": "Maurício Mucuri",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Ivan",
+        "player_out": "Fidel",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulo Baya",
+        "player_out": "Guilherme Moura",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Matheus Rossetto",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Maurício Mucuri",
+        "player_out": "Paulinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Lucca Prior",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Vinícius",
+        "player_out": "João Ricardo",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Palominha",
+        "player_out": "Doda",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Anderson Brito",
+        "player_out": "Bideli",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Wendel Bahia",
+        "player_out": "Pedro Sena",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Joel Araújo",
+        "player_out": "Mateus Sabiá",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4858904",
+    "home_team": "Ceará SC",
+    "away_team": "Fortaleza EC",
+    "referee": "Bruno Pereira Vasconcelos",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 13014,
+    "round": "3. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Fernando",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "+7",
+        "cumulative_score": "2:0",
+        "scorer": "Alex Silva",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Ryan",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Fernandinho",
+        "card_type": "red",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Richard Costa",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Wendel",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Maílton",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Júlio César",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "João Gabriel",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Fernando",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Richardson",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": "+5",
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Alex Silva",
+        "player_out": "Rafael Ramos",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Sánchez",
+        "player_out": "Matheusinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Kauã Rocha",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Pierre",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Maurício Mucuri",
+        "player_out": "Lucas Crispim",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "GB",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Richardson",
+        "player_out": "Júlio César",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Dieguinho",
+        "player_out": "Juan Alano",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Luiz Fernando",
+        "player_out": "Lucas Emanoel",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Luiz Otávio",
+        "player_out": "João Gabriel",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4863677",
+    "home_team": "América FC",
+    "away_team": "Fortaleza EC",
+    "referee": "Denis Ribeiro Serafim",
+    "stadium": "Arena das Dunas",
+    "attendance": 1297,
+    "round": "4. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Gustavo Ferreira",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Carlos Coppetti",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Luiz Fernando",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Pierre",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Juan Miritello",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Carlos Coppetti",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Lucca Prior",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Wellington Tanque",
+        "player_out": "Paulinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Antônio",
+        "player_out": "Gustavo Ferreira",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Sasha",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulinho",
+        "player_out": "Maílton",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Josiel",
+        "player_out": "Aruá",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Augusto Galvan",
+        "player_out": "Cassiano Bouzon",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulo Baya",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Jadson",
+        "player_out": "Judson",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Emanoel",
+        "player_out": "Juan Miritello",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4872026",
+    "home_team": "Fortaleza EC",
+    "away_team": "Sport Recife",
+    "referee": "Afro Rocha de Carvalho Filho",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 5465,
+    "round": "5. rodada",
+    "goals": [
+      {
+        "minute": "+3",
+        "cumulative_score": "1:0",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "+8",
+        "cumulative_score": "2:0",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Luiz Fernando",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Marcelo Ajul",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Halls",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Yago Felipe",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Yago Felipe",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Vitinho",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Paulo Baya",
+        "player_out": "Lucca Prior",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Kauã Rocha",
+        "player_out": "João Lucas",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Juan Miritello",
+        "player_out": "Lucas Emanoel",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Rodriguinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Patrick",
+        "player_out": "Gustavo Maia",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Micael",
+        "player_out": "Max",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Dedezinho",
+        "player_out": "Augusto",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Welliton",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4873804",
+    "home_team": "AD Confiança",
+    "away_team": "Fortaleza EC",
+    "referee": "Paulo Jose Souza Mourão",
+    "stadium": "Estadual Lourival Baptista",
+    "attendance": 2889,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "0:2",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:2",
+        "scorer": "Ícaro",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Lucas Sasha",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Eduardo Moura",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Luan Freitas",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+3",
+        "player": "Kayke",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Matheus Julião",
+        "player_out": "Weriton",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Gustavo Nicola",
+        "player_out": "Marcelo",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Eduardo Moura",
+        "player_out": "Paulo Henrique",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Maílton",
+        "player_out": "Welliton",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Juan Miritello",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Tomás Pochettino",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Danielzinho",
+        "player_out": "PK",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Matheus Rossetto",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Andrey Quintino",
+        "player_out": "Valdir",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4882424",
+    "home_team": "Fortaleza EC",
+    "away_team": "Sport Recife",
+    "referee": "Emerson Ricardo Andrade",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 9289,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Perotti",
+        "assist": "Chrystian Barletta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "0:2",
+        "scorer": "Perotti",
+        "assist": "Felipinho",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:2",
+        "scorer": "Luiz Fernando",
+        "assist": "Welliton",
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Rodrigo Santos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Zé Lucas",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Pierre",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Vitinho",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Thiago Couto",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+4",
+        "player": "Zé Marcos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Luan Freitas",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Ryan",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Zé Gabriel",
+        "player_out": "Zé Lucas",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Maurício Mucuri",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Pedro Martins",
+        "player_out": "Biel Fonseca",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Augusto",
+        "player_out": "Madson",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Iury Castilho",
+        "player_out": "Chrystian Barletta",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Carlos de Pena",
+        "player_out": "Yago Felipe",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4882426",
+    "home_team": "Sport Recife",
+    "away_team": "Fortaleza EC",
+    "referee": "Denis Ribeiro Serafim",
+    "stadium": "Adelmar da Costa Carvalho",
+    "attendance": 19832,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Juan Miritello",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "0:2",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Perotti",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "player": "Juan Miritello",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Maurício Mucuri",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Juan Miritello",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+7",
+        "player": "Rodrigo Santos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+7",
+        "player": "Marcelo Benevenuto",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Rodrigo Santos",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Maílton",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Iury Castilho",
+        "player_out": "Clayson",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Carlos de Pena",
+        "player_out": "Yago Felipe",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Augusto",
+        "player_out": "Madson",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Gabriel Fuentes",
+        "player_out": "Maurício Mucuri",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Edson Lucas",
+        "player_out": "Biel Fonseca",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": "+5",
+        "player_in": "Ryan",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4891209",
+    "home_team": "Fortaleza EC",
+    "away_team": "EC Vitória",
+    "referee": "Afro Rocha de Carvalho Filho",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 30042,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Vitinho",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Renato Kayzer",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": "+3",
+        "cumulative_score": "1:2",
+        "scorer": "Diego Tarzia",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Emmanuel Martínez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Renato Kayzer",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Ronald",
+        "card_type": "red",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Cacá",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Sasha",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Ryan",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": "+3",
+        "player": "Diego Tarzia",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": "+3",
+        "player": "Rodrigo Santos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Luan Freitas",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Jamerson",
+        "player_out": "Caíque Gonçalves",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Renato Kayzer",
+        "player_out": "Edenilson",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Ryan",
+        "player_out": "Vitinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Gabriel Fuentes",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Diego Tarzia",
+        "player_out": "Emmanuel Martínez",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Ramon",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Maurício Mucuri",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": "+5",
+        "player_in": "Marinho",
+        "player_out": "Erick",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4891210",
+    "home_team": "EC Vitória",
+    "away_team": "Fortaleza EC",
+    "referee": "Rodrigo José Pereira de Lima",
+    "stadium": "Manoel Barradas",
+    "attendance": 28678,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Luiz Fernando",
+        "assist": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Emmanuel Martínez",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:1",
+        "scorer": "Renato Kayzer",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Maurício Mucuri",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Diego Tarzia",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Arcanjo",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Renato Kayzer",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Maílton",
+        "player_out": "Maurício Mucuri",
+        "reason": "Sem mais detalhes",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Diego Tarzia",
+        "player_out": "Zé Vitor",
+        "reason": "Sem mais detalhes",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Tomás Pochettino",
+        "player_out": "Luiz Fernando",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Ryan",
+        "player_out": "Rodriguinho",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Marinho",
+        "player_out": "Erick",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Welliton",
+        "player_out": "Luan Freitas",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Osvaldo",
+        "player_out": "Matheuzinho",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Renato Kayzer",
+        "player_out": "Renê",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Lucas Gazal",
+        "reason": null,
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4783084",
+    "home_team": "Ferroviário AC",
+    "away_team": "Fortaleza EC",
+    "referee": "Leo Simão Holanda",
+    "stadium": "Presidente Vargas",
+    "attendance": 3577,
+    "round": null,
+    "goals": [],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Bruno Miranda",
+        "card_type": "red",
+        "reason": "Falta grave",
+        "team": "home"
+      },
+      {
+        "minute": "+5",
+        "player": "Ramires",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": "+5",
+        "player": "Adam Bareiro",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Sasha",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Tomás Cardona",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Sivaldo Júnior",
+        "card_type": "yellow",
+        "reason": "Cera",
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "player": "Lucas Black",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "João Neto",
+        "player_out": "Luan",
+        "reason": "Lesão",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Iago Reis",
+        "player_out": "Jefinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Maílton",
+        "player_out": "Lucas Crispim",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Emanoel",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Camilo",
+        "player_out": "Felipe Sales",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Kiuan",
+        "player_out": "Yair Mena",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Matheus Rossetto",
+        "player_out": "Lucas Sasha",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Eros Mancuso",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4783088",
+    "home_team": "Fortaleza EC",
+    "away_team": "Quixadá FC",
+    "referee": "Wanderson Marques Martins",
+    "stadium": "Presidente Vargas",
+    "attendance": 6407,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Samuel",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:0",
+        "scorer": "Tomás Pochettino",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "3:0",
+        "scorer": "Kayke",
+        "assist": "Maílton",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "4:0",
+        "scorer": "Tomás Pochettino",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Tomás Cardona",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Santos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Erikin",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Kayke",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Erikin",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Moisés",
+        "player_out": "Eros Mancuso",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Santos",
+        "player_out": "Davi Ceará",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Gleryston",
+        "player_out": "Dim",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Adam Bareiro",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Lucas Sasha",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Paulo Rodrigo",
+        "player_out": "Conrado",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Benjamín Kuscevic",
+        "player_out": "Lucas Crispim",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Natan",
+        "player_out": "Gustavo Queiroz",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Eduardo Ninja",
+        "player_out": "Anderson Paulista",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4783092",
+    "home_team": "Fortaleza EC",
+    "away_team": "Maracanã EC",
+    "referee": "Marcelo de Lima Henrique",
+    "stadium": "Presidente Vargas",
+    "attendance": 7137,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Adam Bareiro",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Guilherme",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Lucca Prior",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": "+2",
+        "player": "Guilherme",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Matheus Rossetto",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Lucas Sasha",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Victor Hugo",
+        "player_out": "Luís Soares",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitor Hugo",
+        "player_out": "Welton Santana",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Gazal",
+        "player_out": "Lucas Crispim",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Emanoel",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Valdo Paraíba",
+        "player_out": "Guilha",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Shider",
+        "player_out": "Thalison",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Adam Bareiro",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4783096",
+    "home_team": "Horizonte FC",
+    "away_team": "Fortaleza EC",
+    "referee": "Avelar Rodrigo da Silva",
+    "stadium": "Olímpico Horácio Domingos de Sousa",
+    "attendance": 4356,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Rodrigo Santos",
+        "assist": null,
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Luan Freitas",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Kayke",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Alex Panelas",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Emanoel",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Guilherme",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Tiago Bettim",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Tomás Roco",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Ryan",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Tomás Pochettino",
+        "player_out": "Lucas Emanoel",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Tomás Roco",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Léo Ribeiro",
+        "player_out": "Willian Anicete",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Palominha",
+        "player_out": "Alex Panelas",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Moisés",
+        "player_out": "Lucca Prior",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Adam Bareiro",
+        "player_out": "Kayke",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Max",
+        "player_out": "Caio Pedro",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "player_in": "Alan Calbergue",
+        "player_out": "Lauro",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "player_in": "Ray Sapé",
+        "player_out": "Guilherme",
+        "reason": "Lesão",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4809858",
+    "home_team": "Fortaleza EC",
+    "away_team": "Floresta EC",
+    "referee": "Raimundo Rodrigues de Oliveira Júnior",
+    "stadium": "Presidente Vargas",
+    "attendance": 5333,
+    "round": "6. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Adam Bareiro",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Rodrigo Santos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Diogo Mourão",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Nonato",
+        "player_out": "Marco Antônio",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Diogo Mourão",
+        "player_out": "Bismark",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Moisés",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Thailor",
+        "player_out": "João Celeri",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Cedric",
+        "player_out": "Guilherme Borges",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Matheusinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": "+2",
+        "player_in": "Bruninho",
+        "player_out": "Lucas Sasha",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4814169",
+    "home_team": "Fortaleza EC",
+    "away_team": "AD Iguatu",
+    "referee": "Leo Simão Holanda",
+    "stadium": "Presidente Vargas",
+    "attendance": 5578,
+    "round": "7. rodada",
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Diguinho",
+        "assist": "Biel Potiguar",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Adam Bareiro",
+        "assist": null,
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Maílton",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Biel Potiguar",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Diguinho",
+        "card_type": "red",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Zé Oliveira",
+        "card_type": "yellow",
+        "reason": "Reclamação",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Tiaguinho",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Adam Bareiro",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "player": "Tomás Pochettino",
+        "card_type": "yellow",
+        "reason": "Reclamação",
+        "team": "home"
+      },
+      {
+        "minute": "+7",
+        "player": "Caio Soares",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Zé Rafael",
+        "card_type": "yellow",
+        "reason": "Cera",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Wagner Vidal",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Ryan",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "player": "Lucas Emanoel",
+        "card_type": "yellow",
+        "reason": "Reclamação",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "João Pedro",
+        "player_out": "Matheus Lima",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Tomás Cardona",
+        "reason": "Lesão",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ryan",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Moisés",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Jeffinho",
+        "player_out": "Cássio",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Alison Araçoiaba",
+        "player_out": "Biel Potiguar",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Zé Oliveira",
+        "player_out": "Tiaguinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Bruno Menezes",
+        "player_out": "Caio Soares",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": "+1",
+        "player_in": "Lucas Emanoel",
+        "player_out": "Lucas Sasha",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4816328",
+    "home_team": "Ceará SC",
+    "away_team": "Fortaleza EC",
+    "referee": "Marcelo de Lima Henrique",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 34758,
+    "round": "8. rodada",
+    "goals": [],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Pierre",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Rafael Ramos",
+        "card_type": "yellow",
+        "reason": "Reclamação",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Pedro Gilmar",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Gazal",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Adam Bareiro",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Zanocelo",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Juan Alano",
+        "player_out": "Fernandinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Richardson",
+        "player_out": "Lucca",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Matheusinho",
+        "player_out": "Pedro Henrique",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Luan Freitas",
+        "player_out": "Emanuel Brítez",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Guilherme Moura",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Melk",
+        "player_out": "Lucas Lima",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Júlio César",
+        "player_out": "Rafael Ramos",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Lucas Crispim",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4822108",
+    "home_team": "Ferroviário AC",
+    "away_team": "Fortaleza EC",
+    "referee": "Raimundo Rodrigues de Oliveira Júnior",
+    "stadium": "Presidente Vargas",
+    "attendance": 2220,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "0:1",
+        "scorer": "Adam Bareiro",
+        "assist": "Maílton",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "0:2",
+        "scorer": "Vitinho",
+        "assist": "Lucas Sasha",
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Luan",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Iago Reis",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Maílton",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Tomás Cardona",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Gabriel Fuentes",
+        "player_out": "Luan Freitas",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Carlinhos",
+        "player_out": "Kiuan",
+        "reason": "Lesão",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Lucas Crispim",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Felipe Sales",
+        "player_out": "Ramires",
+        "reason": "Lesão",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Victor Diotti",
+        "player_out": "Luan",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Fernando Portel",
+        "player_out": "João Neto",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Pablo Maldini",
+        "player_out": "Pedro Gomes",
+        "reason": "Tática",
+        "team": "home"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4825846",
+    "home_team": "Fortaleza EC",
+    "away_team": "Ferroviário AC",
+    "referee": "Luciano da Silva Miranda Filho",
+    "stadium": "Presidente Vargas",
+    "attendance": 8012,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Lucas Sasha",
+        "assist": "GB",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "2:0",
+        "scorer": "Tomás Pochettino",
+        "assist": "Lucas Sasha",
+        "team": "home"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Pedro Gomes",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Léo Paraíso",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Gabriel Fuentes",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Luiz Fernando",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Ramires",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Iago Reis",
+        "card_type": "red",
+        "reason": "Agressão",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Pablo Maldini",
+        "player_out": "Pedro Gomes",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Lucas Crispim",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Camilo",
+        "player_out": "Jefinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Carlinhos",
+        "player_out": "Kiuan",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Emanoel",
+        "player_out": "GB",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rodriguinho",
+        "player_out": "Lucas Sasha",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Kayke",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Bruno Miranda",
+        "player_out": "Luan",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "João Lucas",
+        "player_out": "Lucas Gazal",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Fernando Portel",
+        "player_out": "Lucas Black",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4832241",
+    "home_team": "Fortaleza EC",
+    "away_team": "Ceará SC",
+    "referee": "Rafael Rodrigo Klein",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 20611,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Lucas Emanoel",
+        "assist": null,
+        "team": "home"
+      },
+      {
+        "minute": "+1",
+        "cumulative_score": "1:1",
+        "scorer": "Lucca",
+        "assist": "Rafael Ramos",
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Luan Freitas",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Lucas Sasha",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Zanocelo",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Pedro Gilmar",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Rafael Ramos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Tomás Pochettino",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Melk",
+        "player_out": "Matheusinho",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Rafael Ramos",
+        "player_out": "Fernando",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Fernandinho",
+        "player_out": "Pedro Henrique",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Pedro Gilmar",
+        "player_out": "Júlio César",
+        "reason": "Lesão",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Emanoel",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca",
+        "player_out": "Wendel",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  },
+  {
+    "match_url": "https://www.transfermarkt.com.br/spielbericht/index/spielbericht/4832242",
+    "home_team": "Ceará SC",
+    "away_team": "Fortaleza EC",
+    "referee": "Rodrigo José Pereira de Lima",
+    "stadium": "Governador Plácido Castelo",
+    "attendance": 49240,
+    "round": null,
+    "goals": [
+      {
+        "minute": null,
+        "cumulative_score": "1:0",
+        "scorer": "Luizão",
+        "assist": "Matheus Araújo",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "cumulative_score": "1:1",
+        "scorer": "Luiz Fernando",
+        "assist": "Gabriel Fuentes",
+        "team": "away"
+      }
+    ],
+    "cards": [
+      {
+        "minute": null,
+        "player": "Rodrigo Santos",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Emanuel Brítez",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Fernando",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Pierre",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Zanocelo",
+        "card_type": "yellow",
+        "reason": "Falta",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Luiz Fernando",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player": "Vina",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player": "Richard Costa",
+        "card_type": "yellow",
+        "reason": null,
+        "team": "home"
+      }
+    ],
+    "substitutions": [
+      {
+        "minute": null,
+        "player_in": "Vitinho",
+        "player_out": "Rodrigo Santos",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca Prior",
+        "player_out": "Luan Freitas",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Vina",
+        "player_out": "Melk",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Juan Alano",
+        "player_out": "Matheus Araújo",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Ronald",
+        "player_out": "Pierre",
+        "reason": "Tática",
+        "team": "away"
+      },
+      {
+        "minute": null,
+        "player_in": "Fernandinho",
+        "player_out": "Matheusinho",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucca",
+        "player_out": "Wendel",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Rafael Ramos",
+        "player_out": "Alex Silva",
+        "reason": "Tática",
+        "team": "home"
+      },
+      {
+        "minute": null,
+        "player_in": "Lucas Crispim",
+        "player_out": "Luiz Fernando",
+        "reason": "Tática",
+        "team": "away"
+      }
+    ]
+  }
+]

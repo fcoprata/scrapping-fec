@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+.DS_Store
+
+# data/ IS committed (static JSON powers the deployed dashboard).
+# Only keep heavy/derived binaries out:
+data/*.duckdb
+data/videos/
+data/*.bak

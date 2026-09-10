@@ -1,0 +1,531 @@
+{
+  "season_year": "2026",
+  "season": {
+    "strengths": [],
+    "weaknesses": [
+      {
+        "tag": "mando",
+        "kind": "weakness",
+        "text": "Fraco fora de casa.",
+        "evidence": "0.69 ppg fora em 13 jogos"
+      }
+    ],
+    "notes": [
+      {
+        "tag": "mando",
+        "kind": "note",
+        "text": "Rendimento muito superior como mandante.",
+        "evidence": "1.54 ppg casa vs 0.69 fora"
+      },
+      {
+        "tag": "estilo",
+        "kind": "note",
+        "text": "Estilo de posse/construção.",
+        "evidence": "posse média 47.6%"
+      }
+    ],
+    "facts": {
+      "points_real": 29,
+      "points_expected": null,
+      "xg_diff": null,
+      "finishing": null,
+      "keeping": null,
+      "ppg_home": 1.538,
+      "ppg_away": 0.692
+    },
+    "narrative": "Na temporada, Ceará SC soma **29 pontos reais** (8V, 5E, 13D).\n\n**Vulnerabilidades:** Fraco fora de casa.\n\n**Padrões Táticos:** Rendimento muito superior como mandante; Estilo de posse/construção."
+  },
+  "matches": {
+    "https://www.ogol.com.br/jogo/2026-04-12-ceara-nautico/12043248": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-04-12-ceara-nautico/12043248",
+      "date": "2026-04-11",
+      "opponent": "Náutico",
+      "score": "1:0",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Náutico** (2026-04-11, em casa), encerrada em **1:0**, 10 x 15 finalizações e 41% de posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-04-15-ceara-jacuipense/12114806": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-04-15-ceara-jacuipense/12114806",
+      "date": "2026-04-14",
+      "opponent": "Jacuipense",
+      "score": "4:1",
+      "tier": "ogol",
+      "strengths": [
+        {
+          "tag": "resultado",
+          "kind": "strength",
+          "text": "Goleada aplicada.",
+          "evidence": "4-1"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Jacuipense** (2026-04-14, em casa), encerrada em **4:1**.\n\n**Pontos Positivos:** Goleada aplicada."
+    },
+    "https://www.ogol.com.br/jogo/2026-04-19-londrina-ceara/12043257": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-04-19-londrina-ceara/12043257",
+      "date": "2026-04-19",
+      "opponent": "Londrina",
+      "score": "0:0",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: muito chute no alvo, poucos gols.",
+          "evidence": "0 gol(s) de 6 no alvo"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida contra o **Londrina** (2026-04-19, fora de casa), encerrada em **0:0**, 13 x 18 finalizações e 49% de posse.\n\n**Pontos Negativos:** Pouca pontaria: muito chute no alvo, poucos gols."
+    },
+    "https://www.ogol.com.br/jogo/2026-04-23-atletico-mineiro-ceara/12140562": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-04-23-atletico-mineiro-ceara/12140562",
+      "date": "2026-04-23",
+      "opponent": "Atlético Mineiro",
+      "score": "2:1",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Foi amassado no volume de finalizações.",
+          "evidence": "6 x 21 chutes"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida contra o **Atlético Mineiro** (2026-04-23, fora de casa), encerrada em **2:1**, 6 x 21 finalizações e 41% de posse.\n\n**Pontos Negativos:** Foi amassado no volume de finalizações."
+    },
+    "https://www.ogol.com.br/jogo/2026-04-26-ceara-vila-nova/12043268": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-04-26-ceara-vila-nova/12043268",
+      "date": "2026-04-26",
+      "opponent": "Vila Nova",
+      "score": "3:3",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Vila Nova** (2026-04-26, em casa), encerrada em **3:3**."
+    },
+    "https://www.ogol.com.br/jogo/2026-04-30-maranhao-ceara/12114819": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-04-30-maranhao-ceara/12114819",
+      "date": "2026-04-29",
+      "opponent": "Maranhão",
+      "score": "1:3",
+      "tier": "ogol",
+      "strengths": [
+        {
+          "tag": "resultado",
+          "kind": "strength",
+          "text": "Goleada aplicada.",
+          "evidence": "3-1"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Maranhão** (2026-04-29, fora de casa), encerrada em **1:3**.\n\n**Pontos Positivos:** Goleada aplicada."
+    },
+    "https://www.ogol.com.br/jogo/2026-05-03-sport-ceara/12043281": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-05-03-sport-ceara/12043281",
+      "date": "2026-05-03",
+      "opponent": "Sport",
+      "score": "2:0",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Sport** (2026-05-03, fora de casa), encerrada em **2:0**."
+    },
+    "https://www.ogol.com.br/jogo/2026-05-07-vitoria-ceara/12210192": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-05-07-vitoria-ceara/12210192",
+      "date": "2026-05-06",
+      "opponent": "Vitória",
+      "score": "1:0",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Foi amassado no volume de finalizações.",
+          "evidence": "11 x 22 chutes"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "estilo",
+          "kind": "note",
+          "text": "Abriu mão da posse.",
+          "evidence": "37% de posse"
+        }
+      ],
+      "narrative": "Partida contra o **Vitória** (2026-05-06, fora de casa), encerrada em **1:0**, 11 x 22 finalizações e 37% de posse.\n\n**Pontos Negativos:** Foi amassado no volume de finalizações.\n\n**Observações Táticas:** Abriu mão da posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-05-09-ceara-atletico-goianiense/12043288": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-05-09-ceara-atletico-goianiense/12043288",
+      "date": "2026-05-09",
+      "opponent": "Atlético Goianiense",
+      "score": "0:1",
+      "tier": "ogol",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Dominou o volume de finalizações.",
+          "evidence": "32 x 5 chutes"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: muito chute no alvo, poucos gols.",
+          "evidence": "0 gol(s) de 9 no alvo"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "estilo",
+          "kind": "note",
+          "text": "Time dominou a posse.",
+          "evidence": "75% de posse"
+        }
+      ],
+      "narrative": "Partida contra o **Atlético Goianiense** (2026-05-09, em casa), encerrada em **0:1**, 32 x 5 finalizações e 75% de posse.\n\n**Pontos Positivos:** Dominou o volume de finalizações.\n\n**Pontos Negativos:** Pouca pontaria: muito chute no alvo, poucos gols.\n\n**Observações Táticas:** Time dominou a posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-05-14-ceara-atletico-mineiro/12140578": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-05-14-ceara-atletico-mineiro/12140578",
+      "date": "2026-05-13",
+      "opponent": "Atlético Mineiro",
+      "score": null,
+      "tier": "ogol",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Dominou o volume de finalizações.",
+          "evidence": "14 x 4 chutes"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Atlético Mineiro** (2026-05-13, em casa), encerrada em **None**, 14 x 4 finalizações e 53% de posse.\n\n**Pontos Positivos:** Dominou o volume de finalizações."
+    },
+    "https://www.ogol.com.br/jogo/2026-05-17-ceara-fortaleza/12043298": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-05-17-ceara-fortaleza/12043298",
+      "date": "2026-05-17",
+      "opponent": "Fortaleza",
+      "score": "2:1",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Foi amassado no volume de finalizações.",
+          "evidence": "10 x 17 chutes"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida contra o **Fortaleza** (2026-05-17, em casa), encerrada em **2:1**, 10 x 17 finalizações e 50% de posse.\n\n**Pontos Negativos:** Foi amassado no volume de finalizações."
+    },
+    "https://www.ogol.com.br/jogo/2026-05-23-gremio-novorizontino-ceara/12043305": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-05-23-gremio-novorizontino-ceara/12043305",
+      "date": "2026-05-23",
+      "opponent": "Grêmio Novorizontino",
+      "score": "2:1",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "defesa",
+          "kind": "weakness",
+          "text": "Punição acima do esperado — poucos chutes, muitos gols sofridos.",
+          "evidence": "2 sofridos de 1 no alvo"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "estilo",
+          "kind": "note",
+          "text": "Abriu mão da posse.",
+          "evidence": "33% de posse"
+        }
+      ],
+      "narrative": "Partida contra o **Grêmio Novorizontino** (2026-05-23, fora de casa), encerrada em **2:1**, 0 x 1 finalizações e 33% de posse.\n\n**Pontos Negativos:** Punição acima do esperado — poucos chutes, muitos gols sofridos.\n\n**Observações Táticas:** Abriu mão da posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-05-31-ceara-operario-ferroviario/12043318": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-05-31-ceara-operario-ferroviario/12043318",
+      "date": "2026-05-31",
+      "opponent": "Operário Ferroviário",
+      "score": "1:2",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Operário Ferroviário** (2026-05-31, em casa), encerrada em **1:2**."
+    },
+    "https://www.ogol.com.br/jogo/2026-06-11-ceara-avai/12043328": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-06-11-ceara-avai/12043328",
+      "date": "2026-06-10",
+      "opponent": "Avaí",
+      "score": "2:1",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "estilo",
+          "kind": "note",
+          "text": "Abriu mão da posse.",
+          "evidence": "0% de posse"
+        }
+      ],
+      "narrative": "Partida contra o **Avaí** (2026-06-10, em casa), encerrada em **2:1** e 0% de posse.\n\n**Observações Táticas:** Abriu mão da posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-06-16-criciuma-ceara/12043340": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-06-16-criciuma-ceara/12043340",
+      "date": "2026-06-15",
+      "opponent": "Criciúma",
+      "score": "1:1",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: muito chute no alvo, poucos gols.",
+          "evidence": "1 gol(s) de 7 no alvo"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida contra o **Criciúma** (2026-06-15, fora de casa), encerrada em **1:1**, 14 x 16 finalizações e 41% de posse.\n\n**Pontos Negativos:** Pouca pontaria: muito chute no alvo, poucos gols."
+    },
+    "https://www.ogol.com.br/jogo/2026-06-20-ceara-botafogo-sp/12043348": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-06-20-ceara-botafogo-sp/12043348",
+      "date": "2026-06-20",
+      "opponent": "Botafogo-SP",
+      "score": "0:1",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Botafogo-SP** (2026-06-20, em casa), encerrada em **0:1**."
+    },
+    "https://www.ogol.com.br/jogo/2026-06-28-juventude-ceara/12043363": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-06-28-juventude-ceara/12043363",
+      "date": "2026-06-28",
+      "opponent": "Juventude",
+      "score": "2:0",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Juventude** (2026-06-28, fora de casa), encerrada em **2:0**."
+    },
+    "https://www.ogol.com.br/jogo/2026-07-05-goias-ceara/12043369": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-07-05-goias-ceara/12043369",
+      "date": "2026-07-04",
+      "opponent": "Goiás",
+      "score": "2:0",
+      "tier": "ogol",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Dominou o volume de finalizações.",
+          "evidence": "17 x 5 chutes"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "defesa",
+          "kind": "weakness",
+          "text": "Punição acima do esperado — poucos chutes, muitos gols sofridos.",
+          "evidence": "2 sofridos de 3 no alvo"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "estilo",
+          "kind": "note",
+          "text": "Time dominou a posse.",
+          "evidence": "62% de posse"
+        }
+      ],
+      "narrative": "Partida contra o **Goiás** (2026-07-04, fora de casa), encerrada em **2:0**, 17 x 5 finalizações e 62% de posse.\n\n**Pontos Positivos:** Dominou o volume de finalizações.\n\n**Pontos Negativos:** Punição acima do esperado — poucos chutes, muitos gols sofridos.\n\n**Observações Táticas:** Time dominou a posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-07-14-ceara-athletic-mg/12043378": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-07-14-ceara-athletic-mg/12043378",
+      "date": "2026-07-13",
+      "opponent": "Athletic-MG",
+      "score": "0:0",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "estilo",
+          "kind": "note",
+          "text": "Time dominou a posse.",
+          "evidence": "70% de posse"
+        }
+      ],
+      "narrative": "Partida contra o **Athletic-MG** (2026-07-13, em casa), encerrada em **0:0**, 12 x 13 finalizações e 70% de posse.\n\n**Observações Táticas:** Time dominou a posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-07-17-america-mineiro-ceara/12043386": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-07-17-america-mineiro-ceara/12043386",
+      "date": "2026-07-17",
+      "opponent": "América Mineiro",
+      "score": "1:1",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "estilo",
+          "kind": "note",
+          "text": "Abriu mão da posse.",
+          "evidence": "40% de posse"
+        }
+      ],
+      "narrative": "Partida contra o **América Mineiro** (2026-07-17, fora de casa), encerrada em **1:1**, 11 x 12 finalizações e 40% de posse.\n\n**Observações Táticas:** Abriu mão da posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-07-22-ceara-crb/12043398": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-07-22-ceara-crb/12043398",
+      "date": "2026-07-22",
+      "opponent": "CRB",
+      "score": "0:1",
+      "tier": "ogol",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Dominou o volume de finalizações.",
+          "evidence": "20 x 12 chutes"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: muito chute no alvo, poucos gols.",
+          "evidence": "0 gol(s) de 6 no alvo"
+        },
+        {
+          "tag": "disciplina",
+          "kind": "weakness",
+          "text": "Jogo muito truncado pelo próprio time.",
+          "evidence": "18 faltas x 12 do rival"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida contra o **CRB** (2026-07-22, em casa), encerrada em **0:1**, 20 x 12 finalizações e 52% de posse.\n\n**Pontos Positivos:** Dominou o volume de finalizações.\n\n**Pontos Negativos:** Pouca pontaria: muito chute no alvo, poucos gols; Jogo muito truncado pelo próprio time."
+    },
+    "https://www.ogol.com.br/jogo/2026-07-26-sao-bernardo-ceara/12043405": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-07-26-sao-bernardo-ceara/12043405",
+      "date": "2026-07-26",
+      "opponent": "São Bernardo",
+      "score": "3:4",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "disciplina",
+          "kind": "weakness",
+          "text": "Jogo muito truncado pelo próprio time.",
+          "evidence": "20 faltas x 13 do rival"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida contra o **São Bernardo** (2026-07-26, fora de casa), encerrada em **3:4**, 17 x 19 finalizações e 46% de posse.\n\n**Pontos Negativos:** Jogo muito truncado pelo próprio time."
+    },
+    "https://www.ogol.com.br/jogo/2026-08-08-ceara-ponte-preta/12043418": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-08-08-ceara-ponte-preta/12043418",
+      "date": "2026-08-07",
+      "opponent": "Ponte Preta",
+      "score": "2:0",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Ponte Preta** (2026-08-07, em casa), encerrada em **2:0**."
+    },
+    "https://www.ogol.com.br/jogo/2026-08-15-ceara-cuiaba/12043428": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-08-15-ceara-cuiaba/12043428",
+      "date": "2026-08-15",
+      "opponent": "Cuiabá",
+      "score": "1:3",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Goleada sofrida.",
+          "evidence": "1-3"
+        },
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Foi amassado no volume de finalizações.",
+          "evidence": "7 x 13 chutes"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "estilo",
+          "kind": "note",
+          "text": "Time dominou a posse.",
+          "evidence": "64% de posse"
+        }
+      ],
+      "narrative": "Partida contra o **Cuiabá** (2026-08-15, em casa), encerrada em **1:3**, 7 x 13 finalizações e 64% de posse.\n\n**Pontos Negativos:** Goleada sofrida; Foi amassado no volume de finalizações.\n\n**Observações Táticas:** Time dominou a posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-08-19-nautico-ceara/12043441": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-08-19-nautico-ceara/12043441",
+      "date": "2026-08-18",
+      "opponent": "Náutico",
+      "score": "1:0",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Náutico** (2026-08-18, fora de casa), encerrada em **1:0**."
+    },
+    "https://www.ogol.com.br/jogo/2026-08-22-ceara-londrina/12043448": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-08-22-ceara-londrina/12043448",
+      "date": "2026-08-22",
+      "opponent": "Londrina",
+      "score": "2:1",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida contra o **Londrina** (2026-08-22, em casa), encerrada em **2:1**, 13 x 12 finalizações e 49% de posse."
+    },
+    "https://www.ogol.com.br/jogo/2026-08-30-vila-nova-ceara/12043463": {
+      "event_id": "https://www.ogol.com.br/jogo/2026-08-30-vila-nova-ceara/12043463",
+      "date": "2026-08-30",
+      "opponent": "Vila Nova",
+      "score": "2:0",
+      "tier": "ogol",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Foi amassado no volume de finalizações.",
+          "evidence": "7 x 16 chutes"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida contra o **Vila Nova** (2026-08-30, fora de casa), encerrada em **2:0**, 7 x 16 finalizações e 54% de posse.\n\n**Pontos Negativos:** Foi amassado no volume de finalizações."
+    }
+  }
+}

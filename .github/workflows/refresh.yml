@@ -1,0 +1,103 @@
+name: Refresh data
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # toda segunda-feira, 06:00 UTC (03:00 BRT)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Backup current metrics
+        run: |
+          mkdir -p .refresh_bak
+          cp data/fortaleza_team_metrics.json .refresh_bak/ 2>/dev/null || true
+          cp data/ceara_team_metrics.json .refresh_bak/ 2>/dev/null || true
+
+      - name: Run pipeline (Fortaleza)
+        run: python main.py --team fortaleza --all
+        continue-on-error: true
+
+      - name: Run pipeline (Ceará)
+        run: python main.py --team ceara --all
+        continue-on-error: true
+
+      - name: Regenerate deterministic narratives
+        run: |
+          python main.py --team fortaleza --analyze || true
+          python main.py --team ceara --analyze || true
+        continue-on-error: true
+
+      - name: Sanity check (no regression to empty)
+        id: check
+        run: |
+          python - <<'EOF'
+          import json, sys, pathlib
+          ok = True
+          for t in ("fortaleza", "ceara"):
+              p = pathlib.Path(f"data/{t}_team_metrics.json")
+              try:
+                  n = json.loads(p.read_text()).get("summary", {}).get("matches", 0)
+              except Exception as e:
+                  print(f"{t}: unreadable ({e})"); ok = False; continue
+              print(f"{t}: {n} matches")
+              if not n:
+                  ok = False
+          sys.exit(0 if ok else 1)
+          EOF
+
+      - name: Restore backup on regression
+        if: failure() && steps.check.conclusion == 'failure'
+        run: |
+          cp .refresh_bak/*.json data/ 2>/dev/null || true
+
+      - name: Commit refreshed data
+        if: steps.check.outcome == 'success'
+        run: |
+          rm -rf .refresh_bak
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "sem mudanças" && exit 0
+          git commit -m "chore: refresh dados $(date -u +%F) [skip ci]"
+          git push
+
+      - name: Open issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `Refresh de dados falhou — ${new Date().toISOString().slice(0,10)}`;
+            const body = `O workflow \`Refresh data\` falhou (run ${context.runId}).\n\n` +
+              `Provável causa: scrapers bloqueados no runner (OGol / SofaScore) ou mudança de layout.\n` +
+              `Os dados publicados NÃO foram alterados. Rode localmente:\n\n` +
+              `\`\`\`\npython main.py --team fortaleza --all\npython main.py --team ceara --all\n\`\`\``;
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "refresh-failure",
+            });
+            if (issues.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ["refresh-failure"],
+              });
+            }
