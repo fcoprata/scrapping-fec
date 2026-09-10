@@ -166,6 +166,7 @@ def build_player_metrics(
     team_matches = len(am_list)
     starts_by_id: dict = {}
     apps_by_id: dict = {}
+    ratings_by_id: dict = {}
     for match in am_list:
         for pl in match.get("players", []):
             pid = pl.get("player_id")
@@ -174,6 +175,21 @@ def build_player_metrics(
             apps_by_id[pid] = apps_by_id.get(pid, 0) + 1
             if pl.get("is_starter"):
                 starts_by_id[pid] = starts_by_id.get(pid, 0) + 1
+            if pl.get("rating") is not None:
+                try:
+                    ratings_by_id.setdefault(pid, []).append(float(pl["rating"]))
+                except (ValueError, TypeError):
+                    pass
+
+    # Lookup de player_stats (OGol) para fallback
+    ps_by_ogol = {
+        str(p.get("player_id")): p
+        for p in (player_stats or {}).get("players", []) if p.get("player_id")
+    }
+    ps_by_name = {
+        (p.get("name") or "").lower(): p
+        for p in (player_stats or {}).get("players", [])
+    }
 
     rows: List[dict] = []
 
@@ -188,6 +204,15 @@ def build_player_metrics(
         assists, xa = adv.get("assists", 0), adv.get("xa", 0.0)
         shots = adv.get("shots", 0)
         dw, dl = adv.get("duels_won", 0), adv.get("duels_lost", 0)
+
+        # Média de rating das partidas
+        r_list = ratings_by_id.get(sid, []) if sid else []
+        calc_avg_rating = round(sum(r_list) / len(r_list), 2) if r_list else None
+
+        # Fallback para OGol se não houver nota SofaScore
+        ps = ps_by_ogol.get(str(pm.get("ogol_id"))) or ps_by_name.get((pm.get("name") or "").lower())
+        if calc_avg_rating is None and ps:
+            calc_avg_rating = ps.get("avg_rating")
 
         m = PlayerMetrics(
             key=pm["key"],
@@ -211,6 +236,10 @@ def build_player_metrics(
             xg_overperformance=round(goals - xg, 3) if adv else None,
             xa_overperformance=round(assists - xa, 3) if adv else None,
             shot_quality=round(xg / shots, 3) if (shots and adv) else None,
+            tier="sofascore",
+            goals=goals,
+            assists=assists,
+            avg_rating=calc_avg_rating,
         )
         for src, dst in _P90_FIELDS.items():
             setattr(m, dst, _p90(adv.get(src, 0) or 0, minutes))

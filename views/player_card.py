@@ -20,6 +20,9 @@ render_page_header(
 
 pmj = load_json(f"{team}_player_metrics.json")
 reports = load_json(f"{team}_match_reports.json").get("reports", [])
+stats_data = load_json(f"{team}_player_stats.json")
+ogol_players = stats_data.get("players", []) if isinstance(stats_data, dict) else []
+
 players = pmj.get("players", [])
 if not players:
     st.warning(f"Sem métricas individuais de jogadores para {team_name}. Rode: `python main.py --team {team} --build`")
@@ -29,7 +32,41 @@ by_name = {p["name"]: p for p in sorted(players, key=lambda x: -(x.get("minutes"
 name = st.selectbox("Selecione o Jogador do Elenco", list(by_name.keys()))
 p = by_name[name]
 
+# Dados complementares do OGol (ano todo / todas competições)
+ogol_hit = next(
+    (
+        x
+        for x in ogol_players
+        if (x.get("name") or "").lower() == (p.get("name") or "").lower()
+        or str(x.get("player_id")) == str(p.get("ogol_id"))
+    ),
+    {},
+)
+ogol_mins = ogol_hit.get("total_minutes")
+ogol_apps = ogol_hit.get("total_appearances")
+ogol_rating = ogol_hit.get("avg_rating")
+ogol_goals = ogol_hit.get("total_goals")
+ogol_assists = ogol_hit.get("total_assists")
+ogol_conceded = ogol_hit.get("total_goals_conceded")
+
+# Calcular nota média real a partir das partidas do SofaScore
+match_ratings = [
+    float(x["rating"])
+    for r in reports
+    for x in r.get("players_for", [])
+    if (x.get("key") == p.get("key") or (x.get("name") or "").lower() == (p.get("name") or "").lower())
+    and x.get("rating") is not None
+]
+sofascore_rating = round(sum(match_ratings) / len(match_ratings), 2) if match_ratings else None
+rating_final = p.get("avg_rating") or sofascore_rating or ogol_rating
+
 val_str = f"€ {p['market_value_eur']:,}" if p.get("market_value_eur") else "N/A"
+
+# Texto comparativo de minutagem
+min_badge = f"⏱️ <b>{p.get('minutes', 0)} min</b> ({p.get('matches', 0)} jgs na Série B)"
+if ogol_mins and ogol_mins != p.get("minutes"):
+    min_badge += f" &nbsp;·&nbsp; 🌍 <b>{ogol_mins} min</b> ({ogol_apps} jgs no ano total)"
+
 st.markdown(
     f"""
     <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-left: 5px solid #002B7F; border-radius: 10px; padding: 12px 18px; margin-bottom: 20px;">
@@ -39,7 +76,7 @@ st.markdown(
             🎂 <b>{p.get('age') or '?'} anos</b> &nbsp;·&nbsp;
             📄 Contrato: <b>{p.get('contract_until') or '?'}</b> &nbsp;·&nbsp;
             💰 Valor: <b>{val_str}</b> &nbsp;·&nbsp;
-            ⏱️ <b>{p.get('minutes', 0)} min</b> ({p.get('matches', 0)} jogos)
+            {min_badge}
         </span>
     </div>
     """,
@@ -55,51 +92,58 @@ if is_goalkeeper:
     # Goleiro: Nota Média | Gols Sofridos | Jogos | Minutos
     c1.metric(
         "Nota Média",
-        f"{p.get('rating_mean'):.2f}" if p.get("rating_mean") else "—",
-        help="Nota média SofaScore / OGol na temporada",
+        f"{rating_final:.2f}" if rating_final else "—",
+        help=f"Nota SofaScore (Série B): {sofascore_rating or 'N/A'} | Nota OGol (Ano Todo): {ogol_rating or 'N/A'}",
     )
-    goals_conceded = p.get("goals_conceded") or p.get("total_goals_conceded") or 0
+    goals_conceded = p.get("goals_conceded") or ogol_conceded or 0
     c2.metric(
         "Gols Sofridos",
-        int(goals_conceded) if goals_conceded else "—",
-        help="Total de gols sofridos na temporada",
+        int(goals_conceded) if goals_conceded else "0",
+        help=f"Gols sofridos na temporada: {ogol_conceded if ogol_conceded is not None else goals_conceded}",
     )
     c3.metric(
         "Jogos",
         int(p.get("matches") or 0),
-        help="Total de partidas na temporada",
+        delta=f"{ogol_apps} jgs no ano" if ogol_apps and ogol_apps != p.get("matches") else None,
+        delta_color="off",
+        help=f"Jogos na Série B: {p.get('matches', 0)}. Jogos no ano todo: {ogol_apps or p.get('matches', 0)}.",
     )
     c4.metric(
         "Minutos",
         int(p.get("minutes") or 0),
-        help="Total de minutos jogados na temporada",
+        delta=f"{ogol_mins} min no ano" if ogol_mins and ogol_mins != p.get("minutes") else None,
+        delta_color="off",
+        help=f"Minutos na Série B: {p.get('minutes', 0)}. Minutos no ano todo: {ogol_mins or p.get('minutes', 0)}.",
     )
 else:
-    # Jogadores de linha: Nota Média | Gols | Assistências | Minutos (c/ Jogos como delta)
-    goals = p.get("goals") or int(round((p.get("goals_p90") or 0) * (p.get("minutes") or 0) / 90.0))
-    assists = p.get("assists") or int(round((p.get("assists_p90") or 0) * (p.get("minutes") or 0) / 90.0))
+    # Jogadores de linha: Nota Média | Gols | Assistências | Minutos
+    goals = p.get("goals") if p.get("goals") is not None else int(round((p.get("goals_p90") or 0) * (p.get("minutes") or 0) / 90.0))
+    assists = p.get("assists") if p.get("assists") is not None else int(round((p.get("assists_p90") or 0) * (p.get("minutes") or 0) / 90.0))
+    
     c1.metric(
         "Nota Média",
-        f"{p.get('rating_mean'):.2f}" if p.get("rating_mean") else "—",
-        help="Nota média SofaScore / OGol na temporada",
+        f"{rating_final:.2f}" if rating_final else "—",
+        help=f"Nota SofaScore (Série B): {sofascore_rating or 'N/A'} | Nota OGol (Ano Todo): {ogol_rating or 'N/A'}",
     )
     c2.metric(
         "Gols",
         int(goals),
-        delta=round(p.get("xg_overperformance"), 2) if p.get("xg_overperformance") is not None else None,
-        help="Total de gols na temporada. Delta = Gols − xG (overperformance)",
+        delta=f"{ogol_goals} no ano" if ogol_goals and ogol_goals != goals else (round(p.get("xg_overperformance"), 2) if p.get("xg_overperformance") is not None else None),
+        help=f"Gols na Série B: {goals}. Gols no ano todo (todas as competições): {ogol_goals if ogol_goals is not None else goals}. Delta xG: {p.get('xg_overperformance')}",
     )
     c3.metric(
         "Assist.",
         int(assists),
-        help="Total de assistências na temporada",
+        delta=f"{ogol_assists} no ano" if ogol_assists and ogol_assists != assists else None,
+        delta_color="off",
+        help=f"Assistências na Série B: {assists}. Assistências no ano todo: {ogol_assists if ogol_assists is not None else assists}.",
     )
     c4.metric(
         "Minutos",
         int(p.get("minutes") or 0),
-        delta=f"{int(p.get('matches') or 0)} jogos",
+        delta=f"{ogol_mins} min no ano" if ogol_mins and ogol_mins != p.get("minutes") else f"{int(p.get('matches') or 0)} jogos",
         delta_color="off",
-        help="Minutos jogados na temporada",
+        help=f"Minutos na Série B: {p.get('minutes', 0)} ({p.get('matches', 0)} jogos). Minutos somando todas as competições: {ogol_mins or p.get('minutes', 0)} ({ogol_apps or p.get('matches', 0)} jogos).",
     )
 
 
