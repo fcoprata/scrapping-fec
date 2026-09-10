@@ -41,9 +41,15 @@ def _format_match(r: dict) -> str:
 
 
 match_options = {r["event_id"]: r for r in reports}
+# Mais recente primeiro (padrão do selectbox = índice 0)
+ordered_ids = sorted(
+    match_options,
+    key=lambda eid: match_options[eid].get("date") or "",
+    reverse=True,
+)
 selected_id = st.selectbox(
     "Selecione a partida para análise detalhada",
-    list(match_options.keys()),
+    ordered_ids,
     format_func=lambda eid: _format_match(match_options[eid]),
 )
 
