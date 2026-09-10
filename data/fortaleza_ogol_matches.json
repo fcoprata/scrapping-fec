@@ -101,28 +101,28 @@
   {
     "date": "2026-09-09",
     "opponent": "Avaí",
-    "score": null,
+    "score": "1-0",
     "home_away": "H",
     "competition": "Brasileirão Série B 2026",
-    "status": "upcoming",
+    "status": "played",
     "match_url": "https://www.ogol.com.br/jogo/2026-09-09-fortaleza-avai/12043478"
   },
   {
     "date": "2026-09-05",
     "opponent": "Goiás",
-    "score": null,
+    "score": "0-1",
     "home_away": "A",
     "competition": "Brasileirão Série B 2026",
-    "status": "upcoming",
+    "status": "played",
     "match_url": "https://www.ogol.com.br/jogo/2026-09-05-goias-fortaleza/12043469"
   },
   {
     "date": "2026-08-31",
     "opponent": "Operário Ferroviário",
-    "score": null,
+    "score": "1-1",
     "home_away": "H",
     "competition": "Brasileirão Série B 2026",
-    "status": "upcoming",
+    "status": "played",
     "match_url": "https://www.ogol.com.br/jogo/2026-08-31-fortaleza-operario-ferroviario/12043458"
   },
   {

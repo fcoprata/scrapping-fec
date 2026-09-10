@@ -24,7 +24,7 @@ with st.sidebar:
             <div style="font-size: 2.5rem; line-height: 1;">🦁</div>
             <div style="font-size: 1.25rem; font-weight: 800; color: #002B7F; letter-spacing: 0.5px; margin-top: 4px;">FORTALEZA ANALYTICS</div>
             <div style="display: flex; justify-content: center; gap: 4px; margin-top: 6px;">
-                <span class="fec-badge" style="font-size: 0.75rem; padding: 2px 8px;">Série A</span>
+                <span class="fec-badge" style="font-size: 0.75rem; padding: 2px 8px;">Série B</span>
                 <span class="fec-badge fec-badge-gold" style="font-size: 0.75rem; padding: 2px 8px;">Temporada 2026</span>
             </div>
             <div style="font-size: 0.78rem; color: #64748B; margin-top: 8px; font-weight: 500;">

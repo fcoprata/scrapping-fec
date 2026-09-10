@@ -53,7 +53,7 @@ TEAMS = {
         "transfermarkt": {"id": 2029, "slug": "ceara-sporting-club"},
         "ogol": {"slug": "ceara"},
         "sofascore": {
-            "team_id": 2000,
+            "team_id": 2001,
             "seasons": {
                 "serie-b-2026": {"tournament_id": 390, "season_id": 89840},
             },
