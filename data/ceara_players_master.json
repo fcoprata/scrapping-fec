@@ -2,9 +2,25 @@
   "season_year": "2026",
   "players": [
     {
+      "key": "caique franca",
+      "name": "Caíque França",
+      "sofascore_id": "799667",
+      "ogol_id": "215573",
+      "position_group": "Goleiro",
+      "position_detail": "Goleiro",
+      "age": 31,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": "30/11/2026",
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
       "key": "richard",
       "name": "Richard",
-      "sofascore_id": null,
+      "sofascore_id": "883906",
       "ogol_id": "123999",
       "position_group": "Goleiro",
       "position_detail": "Goleiro",
@@ -15,12 +31,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "matheus nogueira",
       "name": "Matheus Nogueira",
-      "sofascore_id": null,
+      "sofascore_id": "977806",
       "ogol_id": "433671",
       "position_group": "Goleiro",
       "position_detail": "Goleiro",
@@ -31,23 +47,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
-    },
-    {
-      "key": "jorge",
-      "name": "Jorge",
-      "sofascore_id": null,
-      "ogol_id": "701576",
-      "position_group": "Goleiro",
-      "position_detail": null,
-      "age": 25,
-      "nationality": "Brasil",
-      "market_value_eur": null,
-      "contract_until": null,
-      "active": true,
-      "in_squad": true,
-      "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "gustavo martins",
@@ -82,9 +82,25 @@
       "in_advanced": false
     },
     {
+      "key": "jorge",
+      "name": "Jorge Bartholdy",
+      "sofascore_id": "1639127",
+      "ogol_id": "701576",
+      "position_group": "Goleiro",
+      "position_detail": null,
+      "age": 25,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": false,
+      "in_squad": true,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
       "key": "bruno ferreira",
       "name": "Bruno Ferreira",
-      "sofascore_id": null,
+      "sofascore_id": "1066241",
       "ogol_id": "268919",
       "position_group": "Goleiro",
       "position_detail": null,
@@ -95,12 +111,12 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "thalisson",
-      "name": "Thalisson",
-      "sofascore_id": null,
+      "name": "Thalisson Gabriel",
+      "sofascore_id": "1109577",
       "ogol_id": "716116",
       "position_group": "Defensor",
       "position_detail": "Zagueiro",
@@ -111,7 +127,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "luizao",
@@ -132,7 +148,7 @@
     {
       "key": "savio",
       "name": "Sávio",
-      "sofascore_id": null,
+      "sofascore_id": "866369",
       "ogol_id": "444110",
       "position_group": "Defensor",
       "position_detail": "Lateral Esq.",
@@ -143,12 +159,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "sanchez",
       "name": "Sánchez",
-      "sofascore_id": null,
+      "sofascore_id": "870753",
       "ogol_id": "406404",
       "position_group": "Defensor",
       "position_detail": "Lateral Esq.",
@@ -159,12 +175,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "luiz otavio",
       "name": "Luiz Otávio",
-      "sofascore_id": null,
+      "sofascore_id": "871204",
       "ogol_id": "176173",
       "position_group": "Defensor",
       "position_detail": "Zagueiro",
@@ -175,28 +191,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
-    },
-    {
-      "key": "stanley boateng",
-      "name": "Stanley Boateng",
-      "sofascore_id": null,
-      "ogol_id": "1357324",
-      "position_group": "Defensor",
-      "position_detail": "Zagueiro",
-      "age": 21,
-      "nationality": "Gana",
-      "market_value_eur": 50000,
-      "contract_until": "31/12/2026",
-      "active": true,
-      "in_squad": true,
-      "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "bryan borges",
       "name": "Bryan Borges",
-      "sofascore_id": null,
+      "sofascore_id": "882748",
       "ogol_id": "512697",
       "position_group": "Defensor",
       "position_detail": "Lateral Dir.",
@@ -207,7 +207,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "vini uchella",
@@ -275,8 +275,8 @@
     },
     {
       "key": "aloisio",
-      "name": "Aloísio",
-      "sofascore_id": null,
+      "name": "Aloísio Barbosa de Abreu Neto",
+      "sofascore_id": "2537131",
       "ogol_id": "1217759",
       "position_group": "Defensor",
       "position_detail": null,
@@ -287,12 +287,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "gilmar",
-      "name": "Gilmar",
-      "sofascore_id": null,
+      "name": "Pedro Gilmar",
+      "sofascore_id": "1589365",
       "ogol_id": "770737",
       "position_group": "Defensor",
       "position_detail": "Zagueiro",
@@ -303,12 +303,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "rafael ramos",
       "name": "Rafael Ramos",
-      "sofascore_id": null,
+      "sofascore_id": "788195",
       "ogol_id": "80621",
       "position_group": "Defensor",
       "position_detail": "Lateral Dir.",
@@ -319,12 +319,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "julio cesar",
       "name": "Julio César",
-      "sofascore_id": null,
+      "sofascore_id": "1185832",
       "ogol_id": "715047",
       "position_group": "Defensor",
       "position_detail": "Zagueiro",
@@ -335,12 +335,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "eder",
       "name": "Éder",
-      "sofascore_id": null,
+      "sofascore_id": "842072",
       "ogol_id": "455426",
       "position_group": "Defensor",
       "position_detail": "Zagueiro",
@@ -351,7 +351,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "eric melo",
@@ -370,9 +370,25 @@
       "in_advanced": false
     },
     {
+      "key": "stanley boateng",
+      "name": "Stanley Boateng",
+      "sofascore_id": null,
+      "ogol_id": "1357324",
+      "position_group": "Defensor",
+      "position_detail": "Zagueiro",
+      "age": 21,
+      "nationality": "Gana",
+      "market_value_eur": 50000,
+      "contract_until": "31/12/2026",
+      "active": false,
+      "in_squad": true,
+      "in_ogol_stats": false,
+      "in_advanced": false
+    },
+    {
       "key": "dieguinho",
       "name": "Dieguinho",
-      "sofascore_id": null,
+      "sofascore_id": "1016930",
       "ogol_id": "568031",
       "position_group": "Defensor",
       "position_detail": null,
@@ -383,12 +399,12 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "alex silva",
       "name": "Alex Silva",
-      "sofascore_id": null,
+      "sofascore_id": "335187",
       "ogol_id": "360911",
       "position_group": "Defensor",
       "position_detail": null,
@@ -399,7 +415,7 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "ronald carvalho",
@@ -420,7 +436,7 @@
     {
       "key": "fernando",
       "name": "Fernando",
-      "sofascore_id": null,
+      "sofascore_id": "1017746",
       "ogol_id": "561631",
       "position_group": "Defensor",
       "position_detail": null,
@@ -431,7 +447,7 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "samuel",
@@ -452,7 +468,7 @@
     {
       "key": "matheus araujo",
       "name": "Matheus Araújo",
-      "sofascore_id": null,
+      "sofascore_id": "1002617",
       "ogol_id": "716431",
       "position_group": "Meia",
       "position_detail": "Meia Ofensivo",
@@ -463,28 +479,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
-    },
-    {
-      "key": "lucas mugni",
-      "name": "Lucas Mugni",
-      "sofascore_id": null,
-      "ogol_id": "153067",
-      "position_group": "Meia",
-      "position_detail": "Meia Ofensivo",
-      "age": 34,
-      "nationality": "Argentina",
-      "market_value_eur": 200000,
-      "contract_until": "31/12/2027",
-      "active": true,
-      "in_squad": true,
-      "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "pavani",
-      "name": "Pavani",
-      "sofascore_id": null,
+      "name": "Giovanni Pavani",
+      "sofascore_id": "1176815",
       "ogol_id": "549380",
       "position_group": "Meia",
       "position_detail": "Meia Central",
@@ -495,12 +495,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "vinicius zanocelo",
       "name": "Vinícius Zanocelo",
-      "sofascore_id": null,
+      "sofascore_id": "973841",
       "ogol_id": "691917",
       "position_group": "Meia",
       "position_detail": "Volante",
@@ -511,12 +511,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "richardson",
       "name": "Richardson",
-      "sofascore_id": null,
+      "sofascore_id": "870758",
       "ogol_id": "161415",
       "position_group": "Meia",
       "position_detail": "Volante",
@@ -527,7 +527,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "caio",
@@ -564,7 +564,7 @@
     {
       "key": "joao gabriel",
       "name": "João Gabriel",
-      "sofascore_id": null,
+      "sofascore_id": "2118168",
       "ogol_id": "1045959",
       "position_group": "Meia",
       "position_detail": "Volante",
@@ -575,12 +575,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "melk",
       "name": "Melk",
-      "sofascore_id": null,
+      "sofascore_id": "2440251",
       "ogol_id": "998501",
       "position_group": "Meia",
       "position_detail": "Meia Ofensivo",
@@ -591,12 +591,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "pedro esli",
-      "name": "Pedro Esli",
-      "sofascore_id": null,
+      "name": "Pedro Esli da Silva",
+      "sofascore_id": "2025593",
       "ogol_id": "1191547",
       "position_group": "Meia",
       "position_detail": null,
@@ -607,12 +607,28 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
+    },
+    {
+      "key": "lucas mugni",
+      "name": "Lucas Mugni",
+      "sofascore_id": "249881",
+      "ogol_id": "153067",
+      "position_group": "Meia",
+      "position_detail": "Meia Ofensivo",
+      "age": 34,
+      "nationality": "Argentina",
+      "market_value_eur": 200000,
+      "contract_until": "31/12/2027",
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
+      "in_advanced": true
     },
     {
       "key": "vina",
       "name": "Vina",
-      "sofascore_id": null,
+      "sofascore_id": "1101714",
       "ogol_id": "98069",
       "position_group": "Meia",
       "position_detail": "Meia Ofensivo",
@@ -623,44 +639,28 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
-    },
-    {
-      "key": "gustavo prado",
-      "name": "Gustavo Prado",
-      "sofascore_id": null,
-      "ogol_id": "890344",
-      "position_group": "Meia",
-      "position_detail": "Ponta Direita",
-      "age": 21,
-      "nationality": "Brasil",
-      "market_value_eur": 2500000,
-      "contract_until": "31/12/2026",
-      "active": true,
-      "in_squad": true,
-      "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "juan alano",
       "name": "Juan Alano",
-      "sofascore_id": null,
+      "sofascore_id": "875906",
       "ogol_id": "555395",
       "position_group": "Meia",
       "position_detail": null,
-      "age": 29,
+      "age": 30,
       "nationality": "Brasil",
       "market_value_eur": 900000,
       "contract_until": null,
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "lucas lima",
       "name": "Lucas Lima",
-      "sofascore_id": null,
+      "sofascore_id": "1048254",
       "ogol_id": "708204",
       "position_group": "Meia",
       "position_detail": null,
@@ -671,6 +671,54 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "gustavo prado",
+      "name": "Gustavo Prado",
+      "sofascore_id": "1485220",
+      "ogol_id": "890344",
+      "position_group": "Meia",
+      "position_detail": null,
+      "age": 21,
+      "nationality": "Brasil",
+      "market_value_eur": 2500000,
+      "contract_until": null,
+      "active": false,
+      "in_squad": true,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "saulo mineiro",
+      "name": "Saulo Mineiro",
+      "sofascore_id": null,
+      "ogol_id": "543813",
+      "position_group": "Atacante",
+      "position_detail": "Centroavante",
+      "age": 29,
+      "nationality": "Brasil",
+      "market_value_eur": 1000000,
+      "contract_until": "30/11/2026",
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
+      "in_advanced": false
+    },
+    {
+      "key": "rian santana",
+      "name": "Rian Santana",
+      "sofascore_id": null,
+      "ogol_id": "735011",
+      "position_group": "Atacante",
+      "position_detail": "Ponta Esquerda",
+      "age": 25,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": "31/12/2027",
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
       "in_advanced": false
     },
     {
@@ -692,7 +740,7 @@
     {
       "key": "lucca",
       "name": "Lucca",
-      "sofascore_id": null,
+      "sofascore_id": "1199435",
       "ogol_id": "644598",
       "position_group": "Atacante",
       "position_detail": "Centroavante",
@@ -703,12 +751,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "renzo lopez",
       "name": "Renzo López",
-      "sofascore_id": null,
+      "sofascore_id": "926513",
       "ogol_id": "398255",
       "position_group": "Atacante",
       "position_detail": "Centroavante",
@@ -719,12 +767,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "wendel silva",
       "name": "Wendel Silva",
-      "sofascore_id": null,
+      "sofascore_id": "937265",
       "ogol_id": "619610",
       "position_group": "Atacante",
       "position_detail": "Centroavante",
@@ -735,44 +783,28 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "gabriel amaral",
       "name": "Gabriel Amaral",
-      "sofascore_id": null,
-      "ogol_id": "739340",
+      "sofascore_id": "2454253",
+      "ogol_id": "911829",
       "position_group": "Atacante",
       "position_detail": null,
-      "age": 22,
+      "age": 20,
       "nationality": "Brasil",
       "market_value_eur": null,
       "contract_until": null,
-      "active": false,
-      "in_squad": true,
-      "in_ogol_stats": true,
-      "in_advanced": false
-    },
-    {
-      "key": "lenny lobato",
-      "name": "Lenny Lobato",
-      "sofascore_id": null,
-      "ogol_id": "726590",
-      "position_group": "Atacante",
-      "position_detail": "Ponta Esquerda",
-      "age": 25,
-      "nationality": "Brasil",
-      "market_value_eur": 800000,
-      "contract_until": "31/12/2026",
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "nicolas ferreira",
       "name": "Nicolás Ferreira",
-      "sofascore_id": null,
+      "sofascore_id": "1190330",
       "ogol_id": "953347",
       "position_group": "Atacante",
       "position_detail": "Ponta Esquerda",
@@ -783,12 +815,28 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
+    },
+    {
+      "key": "lenny lobato",
+      "name": "Lenny Lobato",
+      "sofascore_id": "1104316",
+      "ogol_id": "726590",
+      "position_group": "Atacante",
+      "position_detail": "Ponta Esquerda",
+      "age": 25,
+      "nationality": "Brasil",
+      "market_value_eur": 800000,
+      "contract_until": "31/12/2026",
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
+      "in_advanced": true
     },
     {
       "key": "kaua ziegler",
       "name": "Kauã Ziegler",
-      "sofascore_id": null,
+      "sofascore_id": "1657072",
       "ogol_id": "987173",
       "position_group": "Atacante",
       "position_detail": "Ponta Esquerda",
@@ -799,12 +847,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "pedro henrique",
       "name": "Pedro Henrique",
-      "sofascore_id": null,
+      "sofascore_id": "219190",
       "ogol_id": "174460",
       "position_group": "Atacante",
       "position_detail": null,
@@ -815,7 +863,7 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "rian patric",
@@ -836,7 +884,7 @@
     {
       "key": "fernandinho",
       "name": "Fernandinho",
-      "sofascore_id": null,
+      "sofascore_id": "871219",
       "ogol_id": "451637",
       "position_group": "Atacante",
       "position_detail": null,
@@ -847,12 +895,12 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "matheusinho",
       "name": "Matheusinho",
-      "sofascore_id": null,
+      "sofascore_id": "822523",
       "ogol_id": "484832",
       "position_group": "Atacante",
       "position_detail": null,
@@ -863,12 +911,12 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "giulio",
       "name": "Giulio",
-      "sofascore_id": null,
+      "sofascore_id": "1631766",
       "ogol_id": "1185834",
       "position_group": "Atacante",
       "position_detail": null,
@@ -879,7 +927,87 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": false
+      "in_advanced": true
+    },
+    {
+      "key": "gabriel silva rocha",
+      "name": "Gabriel Silva Rocha",
+      "sofascore_id": "1591290",
+      "ogol_id": null,
+      "position_group": null,
+      "position_detail": null,
+      "age": null,
+      "nationality": null,
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "enzo valentim lodovico",
+      "name": "Enzo Valentim Lodovico",
+      "sofascore_id": "1631189",
+      "ogol_id": null,
+      "position_group": null,
+      "position_detail": null,
+      "age": null,
+      "nationality": null,
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "jose wilson neto",
+      "name": "José Wilson Neto",
+      "sofascore_id": "1911817",
+      "ogol_id": null,
+      "position_group": null,
+      "position_detail": null,
+      "age": null,
+      "nationality": null,
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "gustavo dias martins",
+      "name": "Gustavo Dias Martins",
+      "sofascore_id": "2537130",
+      "ogol_id": null,
+      "position_group": null,
+      "position_detail": null,
+      "age": null,
+      "nationality": null,
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "vinicius menezes uchella",
+      "name": "Vinicius Menezes Uchella",
+      "sofascore_id": "1631204",
+      "ogol_id": null,
+      "position_group": null,
+      "position_detail": null,
+      "age": null,
+      "nationality": null,
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
     }
   ]
 }
