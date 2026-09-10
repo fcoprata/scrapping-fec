@@ -6,29 +6,35 @@
         "tag": "defesa",
         "kind": "strength",
         "text": "Defesa/goleiro seguram abaixo do xG sofrido.",
-        "evidence": "21 sofridos vs 27.82 xG (+6.8)"
+        "evidence": "22 sofridos vs 30.2 xG (+8.2)"
       }
     ],
     "weaknesses": [
       {
-        "tag": "mando",
+        "tag": "finalizacao",
         "kind": "weakness",
-        "text": "Fraco fora de casa.",
-        "evidence": "1.08 ppg fora em 13 jogos"
+        "text": "Desperdiça chances: produz xG mas não converte.",
+        "evidence": "30 gols vs 34.85 xG (-4.8)"
       }
     ],
     "notes": [
       {
+        "tag": "sorte",
+        "kind": "note",
+        "text": "Pontuação acima do desempenho — regressão provável.",
+        "evidence": "47 pts reais vs 40.0584 esperados (+6.9)"
+      },
+      {
         "tag": "mando",
         "kind": "note",
         "text": "Rendimento muito superior como mandante.",
-        "evidence": "2.36 ppg casa vs 1.08 fora"
+        "evidence": "2.31 ppg casa vs 1.21 fora"
       },
       {
         "tag": "resistencia",
         "kind": "note",
         "text": "Período mais frágil defensivamente: 30-45'.",
-        "evidence": "xG sofrido 5.79 no intervalo"
+        "evidence": "xG sofrido 6.99 no intervalo"
       },
       {
         "tag": "estilo",
@@ -38,15 +44,15 @@
       }
     ],
     "facts": {
-      "points_real": 40,
-      "points_expected": 35.2271,
-      "xg_diff": 3.05,
-      "finishing": -3.87,
-      "keeping": 6.82,
-      "ppg_home": 2.364,
-      "ppg_away": 1.077
+      "points_real": 47,
+      "points_expected": 40.0584,
+      "xg_diff": 4.65,
+      "finishing": -4.85,
+      "keeping": 8.2,
+      "ppg_home": 2.308,
+      "ppg_away": 1.214
     },
-    "narrative": "O Fortaleza EC soma **40 pontos reais** em 24 jogos (11V, 7E, 6D), com expectativa Poisson de **35.2 xPts** e saldo acumulado de xG de **+3.05**.\n\n**Principais virtudes da equipe:** Defesa/goleiro seguram abaixo do xG sofrido.\n\n**Vulnerabilidades monitoradas:** Fraco fora de casa.\n\n**Padrões táticos observados:** Rendimento muito superior como mandante; Período mais frágil defensivamente: 30-45'; Estilo de posse/construção."
+    "narrative": "O Fortaleza EC soma **47 pontos reais** em 27 jogos (13V, 8E, 6D), com expectativa Poisson de **40.1 xPts** e saldo acumulado de xG de **+4.65**.\n\n**Principais virtudes da equipe:** Defesa/goleiro seguram abaixo do xG sofrido.\n\n**Vulnerabilidades monitoradas:** Desperdiça chances: produz xG mas não converte.\n\n**Padrões táticos observados:** Pontuação acima do desempenho — regressão provável; Rendimento muito superior como mandante; Período mais frágil defensivamente: 30-45'; Estilo de posse/construção."
   },
   "matches": {
     "15525984": {
@@ -900,6 +906,110 @@
         }
       ],
       "narrative": "No confronto contra o **Criciúma** (2026-08-23, fora de casa), finalizado com o placar de **0:2**, o Fortaleza EC registrou **1.51 xG gerados** contra **1.00 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; João Ricardo melhor em campo.\n\n**Observações:** Rómulo Otero foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Paulo Baya, Juan Miritello, Maílton**."
+    },
+    "15526252": {
+      "event_id": 15526252,
+      "date": "2026-08-31",
+      "opponent": "Operário-PR",
+      "score": "1:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Maílton decisivo.",
+          "evidence": "nota 9.2, xG+xA 0.98"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "1 gols de 2.70 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Juan Miritello abaixo.",
+          "evidence": "nota 5.6"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho melhor que o placar.",
+          "evidence": "xG 2.70-0.85"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Ángel Torres foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.64"
+        }
+      ],
+      "narrative": "No confronto contra o **Operário-PR** (2026-08-31, em casa), finalizado com o placar de **1:1**, o Fortaleza EC registrou **2.70 xG gerados** contra **0.85 xG concedidos**.\n\n**Destaques positivos:** Maílton decisivo.\n\n**Pontos de atenção:** Pouca pontaria: criou e não converteu; Juan Miritello abaixo.\n\n**Observações:** Empate com desempenho melhor que o placar; Ángel Torres foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Juan Miritello, Maílton, Pierre**."
+    },
+    "15526263": {
+      "event_id": 15526263,
+      "date": "2026-09-05",
+      "opponent": "Goiás",
+      "score": "0:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "João Ricardo melhor em campo.",
+          "evidence": "nota 7.7, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 0.53-0.56, xPts 1.25"
+        }
+      ],
+      "narrative": "No confronto contra o **Goiás** (2026-09-05, fora de casa), finalizado com o placar de **0:1**, o Fortaleza EC registrou **0.53 xG gerados** contra **0.56 xG concedidos**.\n\n**Destaques positivos:** João Ricardo melhor em campo.\n\n**Observações:** Vitória sofrida — foi superado no volume de chances.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Maílton, Welliton, Pedro Henrique**."
+    },
+    "15526272": {
+      "event_id": 15526272,
+      "date": "2026-09-09",
+      "opponent": "Avaí",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "João Ricardo melhor em campo.",
+          "evidence": "nota 8.0, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Juan Miritello abaixo.",
+          "evidence": "nota 6.0"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 0.75-0.97, xPts 1.15"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Felipe Vizeu foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.53"
+        }
+      ],
+      "narrative": "No confronto contra o **Avaí** (2026-09-09, em casa), finalizado com o placar de **1:0**, o Fortaleza EC registrou **0.75 xG gerados** contra **0.97 xG concedidos**.\n\n**Destaques positivos:** João Ricardo melhor em campo.\n\n**Pontos de atenção:** Juan Miritello abaixo.\n\n**Observações:** Vitória sofrida — foi superado no volume de chances; Felipe Vizeu foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Juan Miritello, Lucas Crispim, Vitinho**."
     }
   }
 }

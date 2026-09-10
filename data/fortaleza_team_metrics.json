@@ -2,22 +2,22 @@
   "season_year": "2026",
   "summary": {
     "tier": "sofascore",
-    "matches": 24,
-    "scored_matches": 24,
-    "wins": 11,
-    "draws": 7,
+    "matches": 27,
+    "scored_matches": 27,
+    "wins": 13,
+    "draws": 8,
     "losses": 6,
-    "points_real": 40,
-    "goals_for": 27,
-    "goals_against": 21,
-    "points_expected": 35.2271,
-    "points_expected_scored": 35.2271,
-    "points_luck": 4.773,
-    "xg_for_total": 30.87,
-    "xg_against_total": 27.82,
-    "xg_diff": 3.05,
-    "finishing": -3.87,
-    "keeping": 6.82
+    "points_real": 47,
+    "goals_for": 30,
+    "goals_against": 22,
+    "points_expected": 40.0584,
+    "points_expected_scored": 40.0584,
+    "points_luck": 6.942,
+    "xg_for_total": 34.85,
+    "xg_against_total": 30.2,
+    "xg_diff": 4.65,
+    "finishing": -4.85,
+    "keeping": 8.2
   },
   "per_match": [
     {
@@ -475,56 +475,113 @@
       "xg_for_roll5": 1.476,
       "xg_against_roll5": 1.18,
       "points_roll5": 1.8
+    },
+    {
+      "date": "2026-08-31",
+      "opponent": "Operário-PR",
+      "is_home": true,
+      "score": "1:1",
+      "points": 1,
+      "goals_for": 1,
+      "goals_against": 1,
+      "xg_for": 2.7,
+      "xg_against": 0.85,
+      "xg_diff": 1.85,
+      "xpoints": 2.4333,
+      "p_win": 0.7632,
+      "p_draw": 0.1436,
+      "p_loss": 0.0931,
+      "xg_for_roll5": 1.568,
+      "xg_against_roll5": 1.28,
+      "points_roll5": 1.4
+    },
+    {
+      "date": "2026-09-05",
+      "opponent": "Goiás",
+      "is_home": false,
+      "score": "0:1",
+      "points": 3,
+      "goals_for": 1,
+      "goals_against": 0,
+      "xg_for": 0.53,
+      "xg_against": 0.56,
+      "xg_diff": -0.03,
+      "xpoints": 1.2487,
+      "p_win": 0.2683,
+      "p_draw": 0.4437,
+      "p_loss": 0.288,
+      "xg_for_roll5": 1.468,
+      "xg_against_roll5": 1.004,
+      "points_roll5": 1.8
+    },
+    {
+      "date": "2026-09-09",
+      "opponent": "Avaí",
+      "is_home": true,
+      "score": "1:0",
+      "points": 3,
+      "goals_for": 1,
+      "goals_against": 0,
+      "xg_for": 0.75,
+      "xg_against": 0.97,
+      "xg_diff": -0.22,
+      "xpoints": 1.1493,
+      "p_win": 0.2714,
+      "p_draw": 0.335,
+      "p_loss": 0.3935,
+      "xg_for_roll5": 1.564,
+      "xg_against_roll5": 0.906,
+      "points_roll5": 2.2
     }
   ],
   "home_away": {
     "home": {
-      "matches": 11,
-      "xg_for": 1.602,
-      "xg_against": 0.981,
-      "ppg": 2.364
+      "matches": 13,
+      "xg_for": 1.621,
+      "xg_against": 0.97,
+      "ppg": 2.308
     },
     "away": {
-      "matches": 13,
-      "xg_for": 1.019,
-      "xg_against": 1.31,
-      "ppg": 1.077
+      "matches": 14,
+      "xg_for": 0.984,
+      "xg_against": 1.256,
+      "ppg": 1.214
     }
   },
   "set_pieces": {
-    "xg_for_setpiece_pct": 29.5,
-    "xg_against_setpiece_pct": 26.3
+    "xg_for_setpiece_pct": 29.2,
+    "xg_against_setpiece_pct": 25.7
   },
   "shot_situations": {
     "for": {
       "assisted": {
-        "count": 184,
-        "xg_sum": 15.176,
+        "count": 205,
+        "xg_sum": 17.25,
         "goals": 11
       },
       "corner": {
-        "count": 52,
-        "xg_sum": 4.409,
-        "goals": 2
+        "count": 66,
+        "xg_sum": 5.286,
+        "goals": 3
       },
       "fast-break": {
-        "count": 29,
-        "xg_sum": 2.502,
-        "goals": 1
+        "count": 35,
+        "xg_sum": 3.106,
+        "goals": 2
       },
       "set-piece": {
-        "count": 18,
-        "xg_sum": 1.206,
+        "count": 20,
+        "xg_sum": 1.25,
         "goals": 0
       },
       "regular": {
-        "count": 45,
-        "xg_sum": 4.251,
-        "goals": 8
+        "count": 51,
+        "xg_sum": 4.483,
+        "goals": 9
       },
       "free-kick": {
-        "count": 9,
-        "xg_sum": 0.306,
+        "count": 11,
+        "xg_sum": 0.461,
         "goals": 0
       },
       "penalty": {
@@ -540,28 +597,28 @@
     },
     "against": {
       "regular": {
-        "count": 34,
-        "xg_sum": 4.139,
+        "count": 38,
+        "xg_sum": 4.225,
         "goals": 2
       },
       "corner": {
-        "count": 59,
-        "xg_sum": 4.187,
+        "count": 62,
+        "xg_sum": 4.511,
         "goals": 5
       },
       "assisted": {
-        "count": 167,
-        "xg_sum": 14.64,
-        "goals": 9
+        "count": 185,
+        "xg_sum": 15.972,
+        "goals": 10
       },
       "free-kick": {
-        "count": 14,
-        "xg_sum": 0.542,
+        "count": 16,
+        "xg_sum": 0.616,
         "goals": 2
       },
       "set-piece": {
-        "count": 29,
-        "xg_sum": 1.475,
+        "count": 31,
+        "xg_sum": 1.528,
         "goals": 2
       },
       "throw-in-set-piece": {
@@ -570,8 +627,8 @@
         "goals": 0
       },
       "fast-break": {
-        "count": 17,
-        "xg_sum": 2.204,
+        "count": 21,
+        "xg_sum": 2.737,
         "goals": 0
       },
       "penalty": {
@@ -583,35 +640,35 @@
   },
   "timeline": {
     "for": {
-      "0-15": 3.631,
-      "15-30": 4.359,
-      "30-45": 4.088,
-      "45-60": 6.81,
-      "60-75": 3.637,
-      "75-90": 8.564,
+      "0-15": 3.787,
+      "15-30": 4.867,
+      "30-45": 4.721,
+      "45-60": 7.06,
+      "60-75": 4.078,
+      "75-90": 10.562,
       "90+": 0.0
     },
     "against": {
-      "0-15": 3.368,
-      "15-30": 4.348,
-      "30-45": 5.79,
-      "45-60": 3.922,
-      "60-75": 5.448,
-      "75-90": 5.591,
+      "0-15": 3.406,
+      "15-30": 4.634,
+      "30-45": 6.991,
+      "45-60": 4.009,
+      "60-75": 5.87,
+      "75-90": 5.959,
       "90+": 0.0
     }
   },
   "discipline": {
-    "coverage": "14/24",
+    "coverage": "17/27",
     "games_with_fouls": 14,
     "avg_fouls": 13.93,
     "avg_fouls_against": 12.29
   },
   "style": {
-    "coverage": "14/24",
+    "coverage": "17/27",
     "games_with_possession": 14,
     "avg_possession": 47.8,
-    "prod_per_possession_point": 0.0269,
+    "prod_per_possession_point": 0.027,
     "label": "apoio"
   }
 }

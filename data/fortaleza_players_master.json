@@ -8,7 +8,7 @@
       "ogol_id": "172093",
       "position_group": "Goleiro",
       "position_detail": "Goleiro",
-      "age": 37,
+      "age": 38,
       "nationality": "Brasil",
       "market_value_eur": 300000,
       "contract_until": "31/12/2027",
@@ -73,6 +73,22 @@
       "position_group": "Defensor",
       "position_detail": null,
       "age": 21,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
+      "in_advanced": false
+    },
+    {
+      "key": "lucyo",
+      "name": "Lucyo",
+      "sofascore_id": null,
+      "ogol_id": "1004398",
+      "position_group": "Defensor",
+      "position_detail": null,
+      "age": 20,
       "nationality": "Brasil",
       "market_value_eur": null,
       "contract_until": null,
@@ -212,7 +228,7 @@
     {
       "key": "kaio henrique",
       "name": "Kaio Henrique",
-      "sofascore_id": null,
+      "sofascore_id": "1636415",
       "ogol_id": "978427",
       "position_group": "Defensor",
       "position_detail": "Lateral Esq.",
@@ -222,8 +238,8 @@
       "contract_until": "30/06/2028",
       "active": true,
       "in_squad": true,
-      "in_ogol_stats": false,
-      "in_advanced": false
+      "in_ogol_stats": true,
+      "in_advanced": true
     },
     {
       "key": "mauricio mucuri",
@@ -367,6 +383,22 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
+      "in_advanced": false
+    },
+    {
+      "key": "luiz locio",
+      "name": "Luiz Lócio",
+      "sofascore_id": null,
+      "ogol_id": "1173235",
+      "position_group": "Meia",
+      "position_detail": null,
+      "age": 20,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
       "in_advanced": false
     },
     {
@@ -658,22 +690,6 @@
       "in_advanced": false
     },
     {
-      "key": "luiz fernando",
-      "name": "Luiz Fernando",
-      "sofascore_id": "874143",
-      "ogol_id": "457216",
-      "position_group": "Atacante",
-      "position_detail": "Ponta Esquerda",
-      "age": 29,
-      "nationality": "Brasil",
-      "market_value_eur": 1800000,
-      "contract_until": "31/12/2027",
-      "active": true,
-      "in_squad": true,
-      "in_ogol_stats": true,
-      "in_advanced": true
-    },
-    {
       "key": "paulo baya",
       "name": "Paulo Baya",
       "sofascore_id": "1174206",
@@ -738,6 +754,22 @@
       "in_advanced": true
     },
     {
+      "key": "luiz fernando",
+      "name": "Luiz Fernando",
+      "sofascore_id": "874143",
+      "ogol_id": "457216",
+      "position_group": "Atacante",
+      "position_detail": "Ponta Esquerda",
+      "age": 29,
+      "nationality": "Brasil",
+      "market_value_eur": 1800000,
+      "contract_until": "31/12/2027",
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
       "key": "gb",
       "name": "GB",
       "sofascore_id": null,
@@ -760,7 +792,7 @@
       "ogol_id": "695780",
       "position_group": "Atacante",
       "position_detail": null,
-      "age": 29,
+      "age": 30,
       "nationality": "Brasil",
       "market_value_eur": 2000000,
       "contract_until": null,

@@ -3,6 +3,21 @@
   "epoca_id": "155",
   "players": [
     {
+      "player_id": "215573",
+      "slug": "caique-franca",
+      "name": "Caíque França",
+      "position": "Goleiro",
+      "jersey_number": null,
+      "age": 31,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/55/73/215573_caique_franca_20260909025938.jpg",
+      "profile_url": "https://www.ogol.com.br/jogador/caique-franca/215573?epoca_id=155",
+      "active": true,
+      "position_detail": "Goleiro",
+      "contract_until": "30/11/2026"
+    },
+    {
       "player_id": "123999",
       "slug": "richard",
       "name": "Richard",
@@ -33,21 +48,6 @@
       "contract_until": "30/11/2026"
     },
     {
-      "player_id": "701576",
-      "slug": "jorge",
-      "name": "Jorge",
-      "position": "Goleiro",
-      "jersey_number": "23",
-      "age": 25,
-      "nationality": "Brasil",
-      "market_value_eur": null,
-      "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/72/70/16227270_jorge_20260308004843.jpg",
-      "profile_url": "https://www.ogol.com.br/jogador/jorge/701576?epoca_id=155",
-      "active": true,
-      "position_detail": null,
-      "contract_until": null
-    },
-    {
       "player_id": "1049220",
       "slug": "gustavo-martins",
       "name": "Gustavo Martins",
@@ -74,6 +74,21 @@
       "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/87/86/1018786_mateus_20250207223948.jpg",
       "profile_url": "https://www.ogol.com.br/jogador/mateus/1018786?epoca_id=155",
       "active": true,
+      "position_detail": null,
+      "contract_until": null
+    },
+    {
+      "player_id": "701576",
+      "slug": "jorge",
+      "name": "Jorge",
+      "position": "Goleiro",
+      "jersey_number": "23",
+      "age": 25,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/72/70/16227270_jorge_20260308004843.jpg",
+      "profile_url": "https://www.ogol.com.br/jogador/jorge/701576?epoca_id=155",
+      "active": false,
       "position_detail": null,
       "contract_until": null
     },
@@ -163,21 +178,6 @@
       "market_value_eur": 50000,
       "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/61/73/176173_luiz_otavio_20240807202422.png",
       "profile_url": "https://www.ogol.com.br/jogador/luiz-otavio/176173?epoca_id=155",
-      "active": true,
-      "position_detail": "Zagueiro",
-      "contract_until": "31/12/2026"
-    },
-    {
-      "player_id": "1357324",
-      "slug": "stanley-boateng",
-      "name": "Stanley Boateng",
-      "position": "Defensor",
-      "jersey_number": "19",
-      "age": 21,
-      "nationality": "Gana",
-      "market_value_eur": 50000,
-      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/73/24/1357324_stanley_boateng_20240807202234.png",
-      "profile_url": "https://www.ogol.com.br/jogador/stanley-boateng/1357324?epoca_id=155",
       "active": true,
       "position_detail": "Zagueiro",
       "contract_until": "31/12/2026"
@@ -348,6 +348,21 @@
       "contract_until": null
     },
     {
+      "player_id": "1357324",
+      "slug": "stanley-boateng",
+      "name": "Stanley Boateng",
+      "position": "Defensor",
+      "jersey_number": "19",
+      "age": 21,
+      "nationality": "Gana",
+      "market_value_eur": 50000,
+      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/73/24/1357324_stanley_boateng_20240807202234.png",
+      "profile_url": "https://www.ogol.com.br/jogador/stanley-boateng/1357324?epoca_id=155",
+      "active": false,
+      "position_detail": "Zagueiro",
+      "contract_until": "31/12/2026"
+    },
+    {
       "player_id": "568031",
       "slug": "dieguinho",
       "name": "Dieguinho",
@@ -433,21 +448,6 @@
       "market_value_eur": 1500000,
       "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/64/31/716431_matheus_araujo_20250407100728.png",
       "profile_url": "https://www.ogol.com.br/jogador/matheus-araujo/716431?epoca_id=155",
-      "active": true,
-      "position_detail": "Meia Ofensivo",
-      "contract_until": "31/12/2027"
-    },
-    {
-      "player_id": "153067",
-      "slug": "lucas-mugni",
-      "name": "Lucas Mugni",
-      "position": "Meia",
-      "jersey_number": "11",
-      "age": 34,
-      "nationality": "Argentina",
-      "market_value_eur": 200000,
-      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/30/67/153067_lucas_mugni_20250205115418.jpg",
-      "profile_url": "https://www.ogol.com.br/jogador/lucas-mugni/153067?epoca_id=155",
       "active": true,
       "position_detail": "Meia Ofensivo",
       "contract_until": "31/12/2027"
@@ -573,6 +573,21 @@
       "contract_until": null
     },
     {
+      "player_id": "153067",
+      "slug": "lucas-mugni",
+      "name": "Lucas Mugni",
+      "position": "Meia",
+      "jersey_number": "11",
+      "age": 34,
+      "nationality": "Argentina",
+      "market_value_eur": 200000,
+      "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/85/15/16638515_lucas_mugni_20260903155420.png",
+      "profile_url": "https://www.ogol.com.br/jogador/lucas-mugni/153067?epoca_id=155",
+      "active": true,
+      "position_detail": "Meia Ofensivo",
+      "contract_until": "31/12/2027"
+    },
+    {
       "player_id": "98069",
       "slug": "vina",
       "name": "Vina",
@@ -588,27 +603,12 @@
       "contract_until": "31/12/2026"
     },
     {
-      "player_id": "890344",
-      "slug": "gustavo-prado",
-      "name": "Gustavo Prado",
-      "position": "Meia",
-      "jersey_number": "30",
-      "age": 21,
-      "nationality": "Brasil",
-      "market_value_eur": 2500000,
-      "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/01/84/16450184_gustavo_prado_20260501203011.jpg",
-      "profile_url": "https://www.ogol.com.br/jogador/gustavo-prado/890344?epoca_id=155",
-      "active": true,
-      "position_detail": "Ponta Direita",
-      "contract_until": "31/12/2026"
-    },
-    {
       "player_id": "555395",
       "slug": "juan-alano",
       "name": "Juan Alano",
       "position": "Meia",
       "jersey_number": "10",
-      "age": 29,
+      "age": 30,
       "nationality": "Brasil",
       "market_value_eur": 900000,
       "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/84/55/16178455_juan_alano_20260811175335.png",
@@ -631,6 +631,51 @@
       "active": false,
       "position_detail": null,
       "contract_until": null
+    },
+    {
+      "player_id": "890344",
+      "slug": "gustavo-prado",
+      "name": "Gustavo Prado",
+      "position": "Meia",
+      "jersey_number": "30",
+      "age": 21,
+      "nationality": "Brasil",
+      "market_value_eur": 2500000,
+      "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/01/84/16450184_gustavo_prado_20260501203011.jpg",
+      "profile_url": "https://www.ogol.com.br/jogador/gustavo-prado/890344?epoca_id=155",
+      "active": false,
+      "position_detail": null,
+      "contract_until": null
+    },
+    {
+      "player_id": "543813",
+      "slug": "saulo-mineiro",
+      "name": "Saulo Mineiro",
+      "position": "Atacante",
+      "jersey_number": null,
+      "age": 29,
+      "nationality": "Brasil",
+      "market_value_eur": 1000000,
+      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/38/13/543813_saulo_mineiro_20250427102352.png",
+      "profile_url": "https://www.ogol.com.br/jogador/saulo-mineiro/543813?epoca_id=155",
+      "active": true,
+      "position_detail": "Centroavante",
+      "contract_until": "30/11/2026"
+    },
+    {
+      "player_id": "735011",
+      "slug": "rian-santana",
+      "name": "Rian Santana",
+      "position": "Atacante",
+      "jersey_number": null,
+      "age": 25,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/50/11/735011_rian_santana_20260108222541.jpg",
+      "profile_url": "https://www.ogol.com.br/jogador/rian-santana/735011?epoca_id=155",
+      "active": true,
+      "position_detail": "Ponta Esquerda",
+      "contract_until": "31/12/2027"
     },
     {
       "player_id": "970023",
@@ -708,21 +753,6 @@
       "contract_until": null
     },
     {
-      "player_id": "726590",
-      "slug": "lenny-lobato",
-      "name": "Lenny Lobato",
-      "position": "Atacante",
-      "jersey_number": null,
-      "age": 25,
-      "nationality": "Brasil",
-      "market_value_eur": 800000,
-      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/65/90/726590_lenny_lobato_20260822015001.jpg",
-      "profile_url": "https://www.ogol.com.br/jogador/lenny-lobato/726590?epoca_id=155",
-      "active": true,
-      "position_detail": "Ponta Esquerda",
-      "contract_until": "31/12/2026"
-    },
-    {
       "player_id": "953347",
       "slug": "nicolas-ferreira",
       "name": "Nicolás Ferreira",
@@ -733,6 +763,21 @@
       "market_value_eur": 600000,
       "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/33/47/953347_nicolas_ferreira_20260722000641.jpg",
       "profile_url": "https://www.ogol.com.br/jogador/nicolas-ferreira/953347?epoca_id=155",
+      "active": true,
+      "position_detail": "Ponta Esquerda",
+      "contract_until": "31/12/2026"
+    },
+    {
+      "player_id": "726590",
+      "slug": "lenny-lobato",
+      "name": "Lenny Lobato",
+      "position": "Atacante",
+      "jersey_number": "77",
+      "age": 25,
+      "nationality": "Brasil",
+      "market_value_eur": 800000,
+      "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/77/45/16787745_lenny_lobato_20260903155825.png",
+      "profile_url": "https://www.ogol.com.br/jogador/lenny-lobato/726590?epoca_id=155",
       "active": true,
       "position_detail": "Ponta Esquerda",
       "contract_until": "31/12/2026"
@@ -751,21 +796,6 @@
       "active": true,
       "position_detail": "Ponta Esquerda",
       "contract_until": "31/12/2027"
-    },
-    {
-      "player_id": "739340",
-      "slug": "gabriel-amaral",
-      "name": "Gabriel Amaral",
-      "position": "Atacante",
-      "jersey_number": null,
-      "age": 22,
-      "nationality": "Brasil",
-      "market_value_eur": null,
-      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/88/80/1528880_gabriel_amaral_20260806094127.jpg",
-      "profile_url": "https://www.ogol.com.br/jogador/gabriel-amaral/739340?epoca_id=155",
-      "active": false,
-      "position_detail": null,
-      "contract_until": null
     },
     {
       "player_id": "174460",
