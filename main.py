@@ -293,6 +293,10 @@ def _fetch_player_stats(team: str, limit: int | None, scraper: OGolScraper, stor
             print(f"    Warning: no season stats parsed for {p['name']}")
             continue
         starts, subs, avg_rating = scraper.get_player_match_log(p["slug"], p["player_id"], squad["epoca_id"])
+        # match_log não separa competições; se o atleta não somou minutos profissionais
+        # (só jogou base: S20/Copinha/etc.), zera titularidades e nota.
+        if (stats.total_minutes or 0) == 0:
+            starts, subs, avg_rating = 0, 0, None
         stats.starts, stats.substitute_appearances, stats.avg_rating = starts, subs, avg_rating
         all_stats.append(stats)
 

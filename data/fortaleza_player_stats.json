@@ -120,31 +120,15 @@
       "name": "Lucyo",
       "profile_url": "https://www.ogol.com.br/jogador/lucyo/1004398?epoca_id=155",
       "position": "Defensor",
-      "total_appearances": 10,
-      "total_minutes": 632,
-      "total_goals": 1,
+      "total_appearances": 4,
+      "total_minutes": 209,
+      "total_goals": 0,
       "total_assists": 1,
       "total_goals_conceded": null,
       "starts": 4,
       "substitute_appearances": 5,
       "avg_rating": null,
       "competitions": [
-        {
-          "competition": "Brasileiro S20",
-          "appearances": 4,
-          "minutes": 266,
-          "goals": 1,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "CS20",
-          "appearances": 2,
-          "minutes": 157,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
         {
           "competition": "OPG",
           "appearances": 4,
@@ -365,10 +349,10 @@
       "name": "Kauã Rocha",
       "profile_url": "https://www.ogol.com.br/jogador/kaua-rocha/1172285?epoca_id=155",
       "position": "Defensor",
-      "total_appearances": 20,
-      "total_minutes": 1530,
-      "total_goals": 1,
-      "total_assists": 1,
+      "total_appearances": 13,
+      "total_minutes": 900,
+      "total_goals": 0,
+      "total_assists": 0,
       "total_goals_conceded": null,
       "starts": 13,
       "substitute_appearances": 5,
@@ -397,30 +381,6 @@
           "goals": 0,
           "assists": 0,
           "goals_conceded": null
-        },
-        {
-          "competition": "Copa Brasil Sub-20",
-          "appearances": 1,
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copinha",
-          "appearances": 5,
-          "minutes": 450,
-          "goals": 1,
-          "assists": 1,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Cearense S20",
-          "appearances": 1,
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
         }
       ],
       "advanced": null
@@ -430,48 +390,15 @@
       "name": "Cristovam",
       "profile_url": "https://www.ogol.com.br/jogador/cristovam/1005017?epoca_id=155",
       "position": "Defensor",
-      "total_appearances": 27,
-      "total_minutes": 2336,
+      "total_appearances": 0,
+      "total_minutes": 0,
       "total_goals": 0,
       "total_assists": 0,
       "total_goals_conceded": null,
-      "starts": 24,
-      "substitute_appearances": 2,
+      "starts": 0,
+      "substitute_appearances": 0,
       "avg_rating": null,
-      "competitions": [
-        {
-          "competition": "Brasileiro S20",
-          "appearances": 12,
-          "minutes": 999,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copa Brasil Sub-20",
-          "appearances": 1,
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Cearense S20",
-          "appearances": 10,
-          "minutes": 887,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copa Nordeste Sub-20",
-          "appearances": 4,
-          "minutes": 360,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        }
-      ],
+      "competitions": [],
       "advanced": null
     },
     {
@@ -676,8 +603,8 @@
       "name": "Luiz Lócio",
       "profile_url": "https://www.ogol.com.br/jogador/luiz-locio/1173235?epoca_id=155",
       "position": "Meia",
-      "total_appearances": 34,
-      "total_minutes": 1942,
+      "total_appearances": 4,
+      "total_minutes": 264,
       "total_goals": 0,
       "total_assists": 0,
       "total_goals_conceded": null,
@@ -685,38 +612,6 @@
       "substitute_appearances": 17,
       "avg_rating": 6.9,
       "competitions": [
-        {
-          "competition": "Brasileiro S20",
-          "appearances": 19,
-          "minutes": 1018,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copa Brasil Sub-20",
-          "appearances": 1,
-          "minutes": 45,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copinha",
-          "appearances": 4,
-          "minutes": 266,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copa Rio S20",
-          "appearances": 6,
-          "minutes": 349,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
         {
           "competition": "OPG",
           "appearances": 4,
@@ -782,8 +677,8 @@
       "name": "Bruninho",
       "profile_url": "https://www.ogol.com.br/jogador/bruninho/1021310?epoca_id=155",
       "position": "Meia",
-      "total_appearances": 6,
-      "total_minutes": 379,
+      "total_appearances": 2,
+      "total_minutes": 29,
       "total_goals": 0,
       "total_assists": 0,
       "total_goals_conceded": null,
@@ -803,14 +698,6 @@
           "competition": "Cearense",
           "appearances": 1,
           "minutes": 1,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copinha",
-          "appearances": 4,
-          "minutes": 350,
           "goals": 0,
           "assists": 0,
           "goals_conceded": null
@@ -1296,9 +1183,9 @@
       "name": "Lucas Emanoel",
       "profile_url": "https://www.ogol.com.br/jogador/lucas-emanoel/974253?epoca_id=155",
       "position": "Atacante",
-      "total_appearances": 26,
-      "total_minutes": 1243,
-      "total_goals": 4,
+      "total_appearances": 21,
+      "total_minutes": 815,
+      "total_goals": 3,
       "total_assists": 1,
       "total_goals_conceded": null,
       "starts": 16,
@@ -1336,38 +1223,6 @@
           "goals": 1,
           "assists": 0,
           "goals_conceded": null
-        },
-        {
-          "competition": "Brasileiro S20",
-          "appearances": 1,
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copa Brasil Sub-20",
-          "appearances": 1,
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copinha",
-          "appearances": 2,
-          "minutes": 168,
-          "goals": 1,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Cearense S20",
-          "appearances": 1,
-          "minutes": 80,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
         }
       ],
       "advanced": null
@@ -1377,56 +1232,15 @@
       "name": "Caio Wesley",
       "profile_url": "https://www.ogol.com.br/jogador/caio-wesley/1003309?epoca_id=155",
       "position": "Atacante",
-      "total_appearances": 34,
-      "total_minutes": 2218,
-      "total_goals": 8,
+      "total_appearances": 0,
+      "total_minutes": 0,
+      "total_goals": 0,
       "total_assists": 0,
       "total_goals_conceded": null,
-      "starts": 19,
-      "substitute_appearances": 11,
+      "starts": 0,
+      "substitute_appearances": 0,
       "avg_rating": null,
-      "competitions": [
-        {
-          "competition": "Brasileiro S20",
-          "appearances": 17,
-          "minutes": 1050,
-          "goals": 3,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copinha",
-          "appearances": 5,
-          "minutes": 332,
-          "goals": 3,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copa Brasil Sub-20",
-          "appearances": 1,
-          "minutes": 86,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Cearense S20",
-          "appearances": 7,
-          "minutes": 467,
-          "goals": 0,
-          "assists": 0,
-          "goals_conceded": null
-        },
-        {
-          "competition": "Copa Nordeste Sub-20",
-          "appearances": 4,
-          "minutes": 283,
-          "goals": 2,
-          "assists": 0,
-          "goals_conceded": null
-        }
-      ],
+      "competitions": [],
       "advanced": null
     },
     {

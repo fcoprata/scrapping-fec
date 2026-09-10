@@ -14,6 +14,16 @@ _JOGADOR_RE = re.compile(r"^/jogador/([^/]+)/(\d+)")
 _AGE_RE = re.compile(r"(\d+)\s*anos")
 _SEASON_YEAR_RE = re.compile(r"Resumo da Temporada\((\d{4})\)")
 _EPOCA_ID_RE = re.compile(r"epoca_id=(\d+)")
+# Competições de base / categorias inferiores — não contam para o time profissional.
+_YOUTH_COMP_RE = re.compile(
+    r"sub[\s.\-]?\d{2}|s\s?20\b|s\s?17\b|s\s?15\b|copinha|copa s[ãa]o paulo|"
+    r"aspirante|junior|júnior|juvenil|u-?\d{2}\b|infantil",
+    re.IGNORECASE,
+)
+
+
+def _is_youth_comp(name: str) -> bool:
+    return bool(_YOUTH_COMP_RE.search(name or ""))
 
 
 class OGolScraper(BaseScraper):
@@ -331,20 +341,27 @@ class OGolScraper(BaseScraper):
                 goals = 0 if is_conceded else third_stat
                 conceded = third_stat if is_conceded else None
                 if "totals" in (label_cell.get("class") or []):
-                    total_appearances, total_minutes, total_assists = appearances, minutes, assists
-                    total_goals = goals
-                    total_goals_conceded = conceded
-                else:
-                    link = label_cell.find("a")
-                    competition = link.get_text(strip=True) if link else label_cell.get_text(strip=True)
-                    competitions.append(CompetitionStats(
-                        competition=competition,
-                        appearances=appearances,
-                        minutes=minutes,
-                        goals=goals,
-                        assists=assists,
-                        goals_conceded=conceded,
-                    ))
+                    continue  # recomputamos os totais só com competições profissionais
+                link = label_cell.find("a")
+                competition = link.get_text(strip=True) if link else label_cell.get_text(strip=True)
+                if _is_youth_comp(competition):
+                    continue
+                competitions.append(CompetitionStats(
+                    competition=competition,
+                    appearances=appearances,
+                    minutes=minutes,
+                    goals=goals,
+                    assists=assists,
+                    goals_conceded=conceded,
+                ))
+
+            total_appearances = sum(c.appearances or 0 for c in competitions)
+            total_minutes = sum(c.minutes or 0 for c in competitions)
+            total_goals = 0 if is_conceded else sum(c.goals or 0 for c in competitions)
+            total_assists = sum(c.assists or 0 for c in competitions)
+            if is_conceded:
+                gc = [c.goals_conceded for c in competitions if c.goals_conceded is not None]
+                total_goals_conceded = sum(gc) if gc else None
 
         return PlayerSeasonStats(
             player_id=player_id,
