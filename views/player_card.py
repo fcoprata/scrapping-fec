@@ -47,20 +47,61 @@ st.markdown(
 )
 
 c1, c2, c3, c4 = st.columns(4)
-goals_calc = int(round((p.get("goals_p90") or 0) * p.get("minutes", 0) / 90.0)) if p.get("minutes") else 0
-c1.metric(
-    "Gols",
-    goals_calc,
-    delta=p.get("xg_overperformance"),
-    help="delta = gols − xG na temporada (over/underperformance)",
-)
-c2.metric("xA/90", p.get("xa_p90") if p.get("xa_p90") is not None else "-")
-c3.metric("Passes-chave/90", p.get("key_passes_p90") if p.get("key_passes_p90") is not None else "-")
-c4.metric(
-    "Taxa de Perda de Posse",
-    f"{p.get('turnover_rate')}%" if p.get("turnover_rate") is not None else "-",
-    help="% de posses perdidas por toques na bola",
-)
+
+pos_group = (p.get("position_group") or "").lower()
+is_goalkeeper = "goleiro" in pos_group
+
+if is_goalkeeper:
+    # Goleiro: Nota Média | Gols Sofridos | Jogos | Minutos
+    c1.metric(
+        "Nota Média",
+        f"{p.get('rating_mean'):.2f}" if p.get("rating_mean") else "—",
+        help="Nota média SofaScore / OGol na temporada",
+    )
+    goals_conceded = p.get("goals_conceded") or p.get("total_goals_conceded") or 0
+    c2.metric(
+        "Gols Sofridos",
+        int(goals_conceded) if goals_conceded else "—",
+        help="Total de gols sofridos na temporada",
+    )
+    c3.metric(
+        "Jogos",
+        int(p.get("matches") or 0),
+        help="Total de partidas na temporada",
+    )
+    c4.metric(
+        "Minutos",
+        int(p.get("minutes") or 0),
+        help="Total de minutos jogados na temporada",
+    )
+else:
+    # Jogadores de linha: Nota Média | Gols | Assistências | Minutos (c/ Jogos como delta)
+    goals = p.get("goals") or int(round((p.get("goals_p90") or 0) * (p.get("minutes") or 0) / 90.0))
+    assists = p.get("assists") or int(round((p.get("assists_p90") or 0) * (p.get("minutes") or 0) / 90.0))
+    c1.metric(
+        "Nota Média",
+        f"{p.get('rating_mean'):.2f}" if p.get("rating_mean") else "—",
+        help="Nota média SofaScore / OGol na temporada",
+    )
+    c2.metric(
+        "Gols",
+        int(goals),
+        delta=round(p.get("xg_overperformance"), 2) if p.get("xg_overperformance") is not None else None,
+        help="Total de gols na temporada. Delta = Gols − xG (overperformance)",
+    )
+    c3.metric(
+        "Assist.",
+        int(assists),
+        help="Total de assistências na temporada",
+    )
+    c4.metric(
+        "Minutos",
+        int(p.get("minutes") or 0),
+        delta=f"{int(p.get('matches') or 0)} jogos",
+        delta_color="off",
+        help="Minutos jogados na temporada",
+    )
+
 
 st.divider()
 

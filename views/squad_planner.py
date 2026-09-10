@@ -72,101 +72,16 @@ c4.metric(
 
 st.divider()
 
-tab_planner, tab_squad_table = st.tabs(["📊 Profundidade & Minutagem", "📋 Tabela Geral do Plantel (OGol + Transfermarkt)"])
+# Lookup de métricas analíticas por nome do jogador
+pm_lookup = {p.get("name"): p for p in players}
 
-with tab_planner:
-    # 2. Depth Chart e Distribuição de Minutos
-    col_left, col_right = st.columns([3, 2])
+tab_squad_table, tab_planner = st.tabs(
+    ["📋 Plantel Geral (OGol + Transfermarkt)", "📊 Profundidade & Minutagem"]
+)
 
-    with col_left:
-        st.subheader("📋 Depth Chart por Posição")
-        pos_list = sorted([p for p in active_df["position_group"].dropna().unique()])
-        selected_pos = st.selectbox("Filtrar Posição", ["Todas"] + pos_list)
-
-        display_subset = active_df if selected_pos == "Todas" else active_df[active_df["position_group"] == selected_pos]
-        display_subset = display_subset.copy()
-        display_subset["titular_txt"] = display_subset["starts"].astype("Int64").astype(str) + f"/{team_games}"
-        depth_table = (
-            display_subset.sort_values(["position_group", "minutes"], ascending=[True, False])
-            .rename(
-                columns={
-                    "name": "Nome",
-                    "position_group": "Posição",
-                    "age": "Idade",
-                    "minutes": "Minutos",
-                    "titular_txt": "Titular",
-                    "starts_share": "% Titular",
-                    "contract_until": "Contrato até",
-                    "market_value_eur": "Valor (€)",
-                    "prod_p90": "xG+xA/90",
-                }
-            )[["Nome", "Posição", "Idade", "Minutos", "Titular", "% Titular", "xG+xA/90", "Contrato até", "Valor (€)"]]
-        )
-        st.dataframe(
-            depth_table,
-            width="stretch",
-            hide_index=True,
-            column_config={"% Titular": _PCT_COL, "Valor (€)": _EUR_COL},
-        )
-
-    with col_right:
-        st.subheader("⏱️ Minutos por Posição")
-        min_by_pos = (
-            active_df.groupby("position_group")["minutes"]
-            .sum()
-            .reset_index()
-            .rename(columns={"position_group": "Posição", "minutes": "Total Minutos"})
-        )
-        st.bar_chart(min_by_pos.set_index("Posição"), color="#002B7F", width="stretch")
-
-    st.divider()
-
-    # 3. Alertas de Contrato e Eficiência de Mercado
-    col_c1, col_c2 = st.columns(2)
-
-    with col_c1:
-        st.subheader("⚠️ Alertas de Vencimento de Contrato")
-        expiring = active_df[active_df["contract_until"].str.contains("2025|2026", na=False)].sort_values(
-            "contract_until"
-        )
-        if not expiring.empty:
-            exp_table = expiring[
-                ["name", "position_group", "age", "minutes", "contract_until", "market_value_eur"]
-            ].rename(
-                columns={
-                    "name": "Atleta",
-                    "position_group": "Posição",
-                    "age": "Idade",
-                    "minutes": "Minutos",
-                    "contract_until": "Vencimento",
-                    "market_value_eur": "Valor (€)",
-                }
-            )
-            st.dataframe(
-                exp_table,
-                width="stretch",
-                hide_index=True,
-                column_config={"Valor (€)": _EUR_COL},
-            )
-        else:
-            st.info("Nenhum contrato com vencimento próximo identificado.")
-
-    with col_c2:
-        st.subheader("💰 Eficiência de Mercado (Valor vs Produção)")
-        scatter_df = active_df[active_df["minutes"] >= 180].dropna(subset=["market_value_eur", "prod_total"])
-        if not scatter_df.empty:
-            st.scatter_chart(
-                scatter_df,
-                x="market_value_eur",
-                y="prod_total",
-                color="position_group",
-                size="minutes",
-                width="stretch",
-            )
-            st.caption("Eixo X: Valor de Mercado (€) | Eixo Y: Produção Total (xG + xA acumulado)")
-        else:
-            st.caption("Dados insuficientes para o gráfico de dispersão.")
-
+# ============================================================
+# TAB 1 — Tabela Geral do Plantel
+# ============================================================
 with tab_squad_table:
     st.subheader("👥 Plantel Completo e Histórico por Competição")
     squad = squad_data.get("players", [])
@@ -200,6 +115,17 @@ with tab_squad_table:
             if col not in df_merged.columns:
                 df_merged[col] = None
 
+        # Integrar xG+xA/90 do player_metrics
+        def _xgxa(name):
+            p = pm_lookup.get(name)
+            if not p:
+                return None
+            xg = float(p.get("xg_p90") or 0)
+            xa = float(p.get("xa_p90") or 0)
+            return round(xg + xa, 3) if (xg + xa) > 0 else None
+
+        df_merged["xg_xa_p90"] = df_merged["name"].map(_xgxa)
+
         col_f1, col_f2 = st.columns([1, 2])
         with col_f1:
             show_inactive = st.checkbox("Mostrar inativos / transferidos", value=False, key="sq_inactive")
@@ -217,6 +143,7 @@ with tab_squad_table:
             "Gols": "total_goals",
             "Assistências": "total_assists",
             "Rating médio": "avg_rating",
+            "xG+xA/90": "xg_xa_p90",
             "Idade": "age",
             "Valor de mercado": "market_value_eur",
         }
@@ -228,7 +155,6 @@ with tab_squad_table:
                 "jersey_number": "#",
                 "name": "Nome",
                 "position": "Posição",
-                "position_detail": "Detalhe",
                 "age": "Idade",
                 "nationality": "País",
                 "market_value_eur": "Valor (€)",
@@ -241,6 +167,7 @@ with tab_squad_table:
                 "starts": "Titular",
                 "substitute_appearances": "Banco",
                 "avg_rating": "Rating",
+                "xg_xa_p90": "xG+xA/90",
             }
         )[[
             "#",
@@ -256,10 +183,20 @@ with tab_squad_table:
             "Minutos",
             "Gols",
             "Assist.",
+            "xG+xA/90",
             "Rating",
         ]]
 
-        st.dataframe(display_raw, width="stretch", hide_index=True, column_config={"Valor (€)": _EUR_COL})
+        st.dataframe(
+            display_raw,
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "Valor (€)": _EUR_COL,
+                "xG+xA/90": st.column_config.NumberColumn("xG+xA/90", format="%.3f"),
+                "Rating": st.column_config.NumberColumn("Rating", format="%.2f"),
+            },
+        )
 
         st.divider()
         st.subheader("🏆 Detalhe por Campeonato")
@@ -281,8 +218,108 @@ with tab_squad_table:
                 )
                 if detail.get("position") != "Goleiro":
                     comp_df = comp_df.drop(columns=["Gols sofridos"], errors="ignore")
-                st.dataframe(comp_df, width="stretch", hide_index=True)
+                st.dataframe(comp_df, use_container_width=True, hide_index=True)
             else:
                 st.caption("Sem estatísticas detalhadas de competições para este atleta.")
     else:
         st.info("Sem dados brutos do OGol/Transfermarkt disponíveis.")
+
+# ============================================================
+# TAB 2 — Profundidade & Minutagem
+# ============================================================
+with tab_planner:
+    col_left, col_right = st.columns([3, 2])
+
+    with col_left:
+        st.subheader("📋 Depth Chart por Posição")
+        pos_list = sorted([p for p in active_df["position_group"].dropna().unique()])
+        selected_pos = st.selectbox("Filtrar Posição", ["Todas"] + pos_list)
+
+        display_subset = (
+            active_df if selected_pos == "Todas"
+            else active_df[active_df["position_group"] == selected_pos]
+        ).copy()
+        display_subset["titular_txt"] = (
+            display_subset["starts"].astype("Int64").astype(str) + f"/{team_games}"
+        )
+        depth_table = (
+            display_subset.sort_values(["position_group", "minutes"], ascending=[True, False])
+            .rename(
+                columns={
+                    "name": "Nome",
+                    "position_group": "Posição",
+                    "age": "Idade",
+                    "minutes": "Minutos",
+                    "titular_txt": "Titular",
+                    "starts_share": "% Titular",
+                    "contract_until": "Contrato até",
+                    "market_value_eur": "Valor (€)",
+                    "prod_p90": "xG+xA/90",
+                }
+            )[["Nome", "Posição", "Idade", "Minutos", "Titular", "% Titular", "xG+xA/90", "Contrato até", "Valor (€)"]]
+        )
+        st.dataframe(
+            depth_table,
+            use_container_width=True,
+            hide_index=True,
+            column_config={"% Titular": _PCT_COL, "Valor (€)": _EUR_COL},
+        )
+
+    with col_right:
+        st.subheader("⏱️ Minutos por Posição")
+        min_by_pos = (
+            active_df.groupby("position_group")["minutes"]
+            .sum()
+            .reset_index()
+            .rename(columns={"position_group": "Posição", "minutes": "Total Minutos"})
+        )
+        st.bar_chart(min_by_pos.set_index("Posição"), color="#002B7F", use_container_width=True)
+
+    st.divider()
+
+    col_c1, col_c2 = st.columns(2)
+
+    with col_c1:
+        st.subheader("⚠️ Alertas de Vencimento de Contrato")
+        expiring = active_df[
+            active_df["contract_until"].str.contains("2025|2026", na=False)
+        ].sort_values("contract_until")
+        if not expiring.empty:
+            exp_table = expiring[
+                ["name", "position_group", "age", "minutes", "contract_until", "market_value_eur"]
+            ].rename(
+                columns={
+                    "name": "Atleta",
+                    "position_group": "Posição",
+                    "age": "Idade",
+                    "minutes": "Minutos",
+                    "contract_until": "Vencimento",
+                    "market_value_eur": "Valor (€)",
+                }
+            )
+            st.dataframe(
+                exp_table,
+                use_container_width=True,
+                hide_index=True,
+                column_config={"Valor (€)": _EUR_COL},
+            )
+        else:
+            st.info("Nenhum contrato com vencimento próximo identificado.")
+
+    with col_c2:
+        st.subheader("💰 Eficiência de Mercado (Valor vs Produção)")
+        scatter_df = active_df[active_df["minutes"] >= 180].dropna(
+            subset=["market_value_eur", "prod_total"]
+        )
+        if not scatter_df.empty:
+            st.scatter_chart(
+                scatter_df,
+                x="market_value_eur",
+                y="prod_total",
+                color="position_group",
+                size="minutes",
+                use_container_width=True,
+            )
+            st.caption("Eixo X: Valor de Mercado (€) | Eixo Y: Produção Total (xG + xA acumulado)")
+        else:
+            st.caption("Dados insuficientes para o gráfico de dispersão.")
