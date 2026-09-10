@@ -60,37 +60,45 @@ if matches_count == 0:
         st.warning(f"Sem dados coletados para {team_name}. Execute: `python main.py --team {team} --squad --build`")
         st.stop()
 
+def sv(key, default=0.0):
+    """team_metrics summary value, tolerante a None (tier OGol deixa campos de xG nulos)."""
+    v = s.get(key)
+    return default if v is None else v
+
+
+_has_xg = s.get("points_expected") is not None
+
 c1, c2, c3, c4 = st.columns(4)
 c1.metric(
     "Pontos Reais",
-    s.get("points_real", 0),
-    delta=round(s.get("points_luck", 0), 1),
+    sv("points_real"),
+    delta=round(sv("points_luck"), 1) if _has_xg else None,
     help="delta = Sorte / Overperformance (pontos reais − pontos esperados)",
 )
 c2.metric(
     "Pontos Esperados (xPts)",
-    f"{s.get('points_expected', 0):.1f}",
-    help=f"Modelo Poisson sobre as {s.get('matches', 0)} partidas da temporada.",
+    f"{sv('points_expected'):.1f}" if _has_xg else "—",
+    help=f"Modelo Poisson sobre as {sv('matches', 0)} partidas da temporada.",
 )
 c3.metric(
     "Saldo de xG (ΔxG)",
-    f"{s.get('xg_diff', 0):+.2f}",
+    f"{sv('xg_diff'):+.2f}" if _has_xg else "—",
     help="xG a favor − xG contra",
 )
 c4.metric(
     "Finalização / Defesa",
-    f"{s.get('finishing', 0):+.2f} / {s.get('keeping', 0):+.2f}",
+    f"{sv('finishing'):+.2f} / {sv('keeping'):+.2f}" if _has_xg else "—",
     help="Gols marcados − xG pró (ataque) / xG contra − gols sofridos (defesa)",
 )
 
 st.markdown(
     f"""
     <div style="background: #F1F5F9; border-radius: 8px; padding: 10px 16px; margin: 12px 0 20px 0; font-size: 0.95rem; color: #1E293B;">
-        🦁 <b>Campanha Oficial</b>: <b>{s.get('wins', 0)} Vitórias</b> &nbsp;·&nbsp; 
-        <b>{s.get('draws', 0)} Empates</b> &nbsp;·&nbsp; 
-        <b>{s.get('losses', 0)} Derrotas</b> &nbsp;|&nbsp; 
-        xG Acumulado: <b style="color:#002B7F;">{s.get('xg_for_total', 0):.2f} Pró</b> vs 
-        <b style="color:#E31A2C;">{s.get('xg_against_total', 0):.2f} Contra</b>
+        🦁 <b>Campanha Oficial</b>: <b>{sv('wins', 0)} Vitórias</b> &nbsp;·&nbsp;
+        <b>{sv('draws', 0)} Empates</b> &nbsp;·&nbsp;
+        <b>{sv('losses', 0)} Derrotas</b> &nbsp;|&nbsp;
+        xG Acumulado: <b style="color:#002B7F;">{sv('xg_for_total'):.2f} Pró</b> vs
+        <b style="color:#E31A2C;">{sv('xg_against_total'):.2f} Contra</b>
     </div>
     """,
     unsafe_allow_html=True,
