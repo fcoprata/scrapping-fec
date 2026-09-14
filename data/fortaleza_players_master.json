@@ -82,22 +82,6 @@
       "in_advanced": false
     },
     {
-      "key": "lucyo",
-      "name": "Lucyo",
-      "sofascore_id": null,
-      "ogol_id": "1004398",
-      "position_group": "Defensor",
-      "position_detail": null,
-      "age": 20,
-      "nationality": "Brasil",
-      "market_value_eur": null,
-      "contract_until": null,
-      "active": true,
-      "in_squad": true,
-      "in_ogol_stats": true,
-      "in_advanced": false
-    },
-    {
       "key": "lucas gazal",
       "name": "Lucas Gazal",
       "sofascore_id": "1103705",
@@ -224,6 +208,22 @@
       "in_squad": true,
       "in_ogol_stats": true,
       "in_advanced": true
+    },
+    {
+      "key": "lucyo",
+      "name": "Lucyo",
+      "sofascore_id": null,
+      "ogol_id": "1004398",
+      "position_group": "Defensor",
+      "position_detail": null,
+      "age": 20,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
+      "in_advanced": false
     },
     {
       "key": "kaio henrique",
@@ -498,6 +498,22 @@
       "in_advanced": true
     },
     {
+      "key": "jailson",
+      "name": "Jailson",
+      "sofascore_id": null,
+      "ogol_id": "433669",
+      "position_group": "Meia",
+      "position_detail": "Volante",
+      "age": 31,
+      "nationality": "Brasil",
+      "market_value_eur": 700000,
+      "contract_until": "30/11/2026",
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
+      "in_advanced": false
+    },
+    {
       "key": "pierre",
       "name": "Pierre",
       "sofascore_id": "1017710",
@@ -716,6 +732,22 @@
       "nationality": "Brasil",
       "market_value_eur": 900000,
       "contract_until": "01/12/2026",
+      "active": true,
+      "in_squad": true,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
+      "key": "chico da costa",
+      "name": "Chico da Costa",
+      "sofascore_id": "866847",
+      "ogol_id": "441069",
+      "position_group": "Atacante",
+      "position_detail": "Centroavante",
+      "age": 31,
+      "nationality": "Brasil",
+      "market_value_eur": 1000000,
+      "contract_until": "30/11/2026",
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,

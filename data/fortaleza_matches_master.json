@@ -567,6 +567,27 @@
       "ogol_url": "https://www.ogol.com.br/jogo/2026-09-09-fortaleza-avai/12043478",
       "attendance": null,
       "referee": null
+    },
+    {
+      "event_id": 15526282,
+      "date": "2026-09-13",
+      "competition": "Brasileirão Série B",
+      "round": "28",
+      "is_home": true,
+      "opponent": "Ceará",
+      "score": "1:1",
+      "goals_for": 1,
+      "goals_against": 1,
+      "points": 1,
+      "xg_for": 1.11,
+      "xg_against": 0.98,
+      "xgot_for": 1.08,
+      "xgot_against": 0.95,
+      "tm_matched": false,
+      "ogol_matched": true,
+      "ogol_url": "https://www.ogol.com.br/jogo/2026-09-13-fortaleza-ceara/12043488",
+      "attendance": null,
+      "referee": null
     }
   ]
 }

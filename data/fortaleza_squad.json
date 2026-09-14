@@ -78,21 +78,6 @@
       "contract_until": null
     },
     {
-      "player_id": "1004398",
-      "slug": "lucyo",
-      "name": "Lucyo",
-      "position": "Defensor",
-      "jersey_number": null,
-      "age": 20,
-      "nationality": "Brasil",
-      "market_value_eur": null,
-      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/43/98/1004398_lucyo_20250114032859.jpg",
-      "profile_url": "https://www.ogol.com.br/jogador/lucyo/1004398?epoca_id=155",
-      "active": true,
-      "position_detail": null,
-      "contract_until": null
-    },
-    {
       "player_id": "549214",
       "slug": "lucas-gazal",
       "name": "Lucas Gazal",
@@ -211,6 +196,21 @@
       "active": true,
       "position_detail": "Zagueiro",
       "contract_until": "31/12/2026"
+    },
+    {
+      "player_id": "1004398",
+      "slug": "lucyo",
+      "name": "Lucyo",
+      "position": "Defensor",
+      "jersey_number": null,
+      "age": 20,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/43/98/1004398_lucyo_20250114032859.jpg",
+      "profile_url": "https://www.ogol.com.br/jogador/lucyo/1004398?epoca_id=155",
+      "active": true,
+      "position_detail": null,
+      "contract_until": null
     },
     {
       "player_id": "978427",
@@ -468,6 +468,21 @@
       "contract_until": "31/12/2026"
     },
     {
+      "player_id": "433669",
+      "slug": "jailson",
+      "name": "Jailson",
+      "position": "Meia",
+      "jersey_number": null,
+      "age": 31,
+      "nationality": "Brasil",
+      "market_value_eur": 700000,
+      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/36/69/433669_jailson_20260912031326.jpg",
+      "profile_url": "https://www.ogol.com.br/jogador/jailson/433669?epoca_id=155",
+      "active": true,
+      "position_detail": "Volante",
+      "contract_until": "30/11/2026"
+    },
+    {
       "player_id": "648061",
       "slug": "pierre",
       "name": "Pierre",
@@ -676,6 +691,21 @@
       "active": true,
       "position_detail": "Ponta Direita",
       "contract_until": "01/12/2026"
+    },
+    {
+      "player_id": "441069",
+      "slug": "chico-da-costa",
+      "name": "Chico da Costa",
+      "position": "Atacante",
+      "jersey_number": null,
+      "age": 31,
+      "nationality": "Brasil",
+      "market_value_eur": 1000000,
+      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/10/69/441069_chico_da_costa_20260912034011.jpg",
+      "profile_url": "https://www.ogol.com.br/jogador/chico-da-costa/441069?epoca_id=155",
+      "active": true,
+      "position_detail": "Centroavante",
+      "contract_until": "30/11/2026"
     },
     {
       "player_id": "764393",
