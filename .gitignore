@@ -5,6 +5,8 @@ venv/
 .env
 .streamlit/secrets.toml
 .DS_Store
+.claude/settings.local.json
+*.log
 
 # data/ IS committed (static JSON powers the deployed dashboard).
 # Only keep heavy/derived binaries out:

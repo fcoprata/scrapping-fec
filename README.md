@@ -29,19 +29,22 @@ Páginas:
 1. **Dashboard da Equipe** — KPIs reais vs esperados (Poisson xPts), saldo de xG, diagnóstico
    tático, médias móveis, histórico jogo a jogo; mando, bola parada, estilo; métricas brutas.
 2. **Relatório de Jogo** — xG Race, diagnóstico da partida, estatísticas individuais, finalizações.
-3. **Planejador de Elenco** — minutagem, dependência tática, contratos, valor de mercado.
-4. **Card do Jogador** — radar de percentis, eficiência de finalização/criação, histórico.
-5. **Sobre** — fontes, metodologia e contato do autor.
+3. **Calendário & Classificação** — próximos jogos de Fortaleza e Ceará e a tabela da Série B 2026.
+4. **Planejador de Elenco** — minutagem, dependência tática, contratos, valor de mercado.
+5. **Card do Jogador** — radar de percentis, eficiência de finalização/criação, histórico.
+6. **Sobre** — fontes, metodologia e contato do autor.
 
 Troque o clube em análise (Fortaleza / Ceará) no seletor da barra lateral.
 
 ## Atualizar os dados
 
 ```bash
-python main.py --team fortaleza --all      # coleta incremental + esteira analítica
+python main.py --team fortaleza --all       # coleta incremental + esteira analítica (inclui próximos jogos)
 python main.py --team ceara --all
 python main.py --team fortaleza --build     # só recalcula a esteira offline (<5s)
 python main.py --team fortaleza --analyze   # gera as sínteses textuais determinísticas
+python main.py --team fortaleza --fixtures  # só os próximos jogos do time
+python main.py --standings                  # classificação da Série B (compartilhada entre os times)
 python main.py --list-teams
 ```
 

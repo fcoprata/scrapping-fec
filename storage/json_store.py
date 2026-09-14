@@ -206,6 +206,33 @@ class JsonStore:
         with open(path, encoding="utf-8") as f:
             return json.load(f)
 
+    # ---- fixtures / standings ---------------------------------------
+    def save_fixtures(self, team: str, rows: list) -> str:
+        path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_fixtures.json"))
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump({"fixtures": rows}, f, ensure_ascii=False, indent=2)
+        return path
+
+    def load_fixtures(self, team: str) -> dict:
+        path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_fixtures.json"))
+        if not os.path.exists(path):
+            return {"fixtures": []}
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+
+    def save_standings(self, key: str, rows: list) -> str:
+        path = os.path.abspath(os.path.join(_DATA_DIR, f"standings_{key}.json"))
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump({"standings": rows}, f, ensure_ascii=False, indent=2)
+        return path
+
+    def load_standings(self, key: str) -> dict:
+        path = os.path.abspath(os.path.join(_DATA_DIR, f"standings_{key}.json"))
+        if not os.path.exists(path):
+            return {"standings": []}
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+
 
 def _advanced_row_dict(row: PlayerAdvancedSeason) -> dict:
     d = asdict(row)

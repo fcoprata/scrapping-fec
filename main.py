@@ -67,6 +67,8 @@ def main():
     g_scrape.add_argument("--source", choices=["transfermarkt", "ogol"], default="ogol", help="Fonte para partidas/stats (padrão: ogol).")
     g_scrape.add_argument("--discover", action="store_true", help="Descobre torneios e IDs no SofaScore para a equipe.")
     g_scrape.add_argument("--limit", type=int, default=None, help="Limite máximo de partidas a processar.")
+    g_scrape.add_argument("--fixtures", action="store_true", help="Coleta os próximos jogos (SofaScore) do time.")
+    g_scrape.add_argument("--standings", action="store_true", help="Coleta a classificação (SofaScore) da Série B 2026.")
 
     args = parser.parse_args()
 
@@ -88,6 +90,10 @@ def main():
         skip = {s.strip() for s in args.skip_teams.split(",") if s.strip()}
         _run_batch_full(args.division, store, skip=skip,
                         skip_existing=args.skip_existing, limit_teams=args.limit)
+        return
+
+    if args.standings:
+        _fetch_standings(SofaScoreScraper(), store)
         return
 
     if not args.team:
@@ -120,6 +126,10 @@ def main():
 
     if args.advanced:
         _fetch_advanced(args.team, args.limit, SofaScoreScraper(), store, incremental=args.incremental)
+        return
+
+    if args.fixtures:
+        _fetch_fixtures(args.team, SofaScoreScraper(), store)
         return
 
     if args.squad:
@@ -386,6 +396,22 @@ def _fetch_advanced(team: str, limit: int | None, scraper: SofaScoreScraper, sto
     print(f"Aggregated {len(season_rows)} players -> {path}")
 
 
+def _fetch_fixtures(team: str, scraper: SofaScoreScraper, store: JsonStore) -> None:
+    cfg = TEAMS[team].get("sofascore")
+    if not cfg:
+        print(f"No 'sofascore' config for '{team}'.")
+        return
+    events = scraper.get_next_events(cfg["team_id"])
+    path = store.save_fixtures(team, events)
+    print(f"Saved {len(events)} upcoming fixtures -> {path}")
+
+
+def _fetch_standings(scraper: SofaScoreScraper, store: JsonStore, tournament_id: int = 390, season_id: int = 89840) -> None:
+    rows = scraper.get_standings(tournament_id, season_id)
+    path = store.save_standings("serie_b_2026", rows)
+    print(f"Saved {len(rows)} standings rows -> {path}")
+
+
 def _build_derived(team: str, store: JsonStore) -> None:
     """Offline: player_metrics + team_metrics + match_reports from resolve + raw."""
     players_master = store.load_players_master(team)
@@ -422,6 +448,8 @@ def _run_all(team: str, store: JsonStore) -> None:
         ("squad", lambda: _fetch_squad(team, OGolScraper(), TransfermarktScraper(), store)),
         ("player stats", lambda: _fetch_player_stats(team, None, OGolScraper(), store)),
         ("advanced (incremental)", lambda: _fetch_advanced(team, None, SofaScoreScraper(), store, incremental=True)),
+        ("fixtures", lambda: _fetch_fixtures(team, SofaScoreScraper(), store)),
+        ("standings", lambda: _fetch_standings(SofaScoreScraper(), store)),
     ]
     for name, fn in steps:
         print(f"\n=== {name} ===")

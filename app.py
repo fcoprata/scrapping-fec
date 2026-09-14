@@ -46,6 +46,7 @@ with st.sidebar:
 pages = [
     st.Page("views/team_dashboard.py", title="Dashboard da Equipe", icon="📊", default=True),
     st.Page("views/match_report.py", title="Relatório de Jogo", icon="⚽"),
+    st.Page("views/calendar.py", title="Calendário & Classificação", icon="📅"),
     st.Page("views/squad_planner.py", title="Planejador de Elenco", icon="📋"),
     st.Page("views/player_card.py", title="Card do Jogador", icon="👤"),
     st.Page("views/about.py", title="Sobre", icon="ℹ️"),

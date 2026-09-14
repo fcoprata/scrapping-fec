@@ -71,6 +71,47 @@ class SofaScoreScraper(JsonApiScraper):
                 })
         return out
 
+    # ---- upcoming fixtures ----------------------------------------------
+    def get_next_events(self, team_id: int, max_pages: int = 2) -> List[dict]:
+        """Upcoming (not yet played) fixtures for a team, soonest first."""
+        events: Dict[int, dict] = {}
+        for page in range(max_pages):
+            try:
+                data = self._get_json(f"{API}/team/{team_id}/events/next/{page}")
+            except Exception:
+                break
+            page_events = data.get("events", [])
+            if not page_events:
+                break
+            for e in page_events:
+                events[e["id"]] = self._event_meta(e)
+        return sorted(events.values(), key=lambda m: m.get("date") or "")
+
+    # ---- standings --------------------------------------------------------
+    def get_standings(self, tournament_id: int, season_id: int) -> List[dict]:
+        """League table for a tournament/season (total standings)."""
+        data = self._get_json(
+            f"{API}/unique-tournament/{tournament_id}/season/{season_id}/standings/total"
+        )
+        rows = []
+        for group in data.get("standings", []):
+            for row in group.get("rows", []):
+                team = row.get("team") or {}
+                rows.append({
+                    "position": row.get("position"),
+                    "team_id": team.get("id"),
+                    "team_name": team.get("name"),
+                    "played": row.get("matches"),
+                    "wins": row.get("wins"),
+                    "draws": row.get("draws"),
+                    "losses": row.get("losses"),
+                    "goals_for": row.get("scoresFor"),
+                    "goals_against": row.get("scoresAgainst"),
+                    "goal_diff": row.get("scoreDiffFormatted"),
+                    "points": row.get("points"),
+                })
+        return sorted(rows, key=lambda r: r.get("position") or 999)
+
     # ---- match list ----------------------------------------------------
     def get_season_events(
         self,
