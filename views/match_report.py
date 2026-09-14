@@ -111,6 +111,21 @@ def _format_players_df(players_list):
     if not players_list:
         return pd.DataFrame()
     df = pd.DataFrame(players_list)
+
+    if {"passes_accurate", "passes_total"}.issubset(df.columns):
+        df["pct_passes_certos"] = (
+            df["passes_accurate"] / df["passes_total"].replace(0, pd.NA) * 100
+        ).round(1)
+    if {"possession_lost", "touches"}.issubset(df.columns):
+        df["pct_bolas_perdidas"] = (
+            df["possession_lost"] / df["touches"].replace(0, pd.NA) * 100
+        ).round(1)
+    if {"duels_won", "duels_lost"}.issubset(df.columns):
+        total_duels = df["duels_won"] + df["duels_lost"]
+        df["pct_duelos_ganhos"] = (
+            df["duels_won"] / total_duels.replace(0, pd.NA) * 100
+        ).round(1)
+
     cols = [
         "name",
         "is_starter",
@@ -119,11 +134,14 @@ def _format_players_df(players_list):
         "touches",
         "passes_total",
         "passes_accurate",
+        "pct_passes_certos",
         "key_passes",
         "possession_lost",
+        "pct_bolas_perdidas",
         "ball_recovery",
         "duels_won",
         "duels_lost",
+        "pct_duelos_ganhos",
         "xg",
         "xa",
         "shots_total",
@@ -138,11 +156,14 @@ def _format_players_df(players_list):
         "touches": "Toques",
         "passes_total": "Passes",
         "passes_accurate": "Passes certos",
+        "pct_passes_certos": "% Passes certos",
         "key_passes": "Passes-chave",
         "possession_lost": "Bola perdida",
+        "pct_bolas_perdidas": "% Bolas perdidas",
         "ball_recovery": "Bola recup.",
         "duels_won": "Duelos ganhos",
         "duels_lost": "Duelos perdidos",
+        "pct_duelos_ganhos": "% Duelos ganhos",
         "xg": "xG",
         "xa": "xA",
         "shots_total": "Finaliz.",
@@ -167,11 +188,42 @@ with tab_against:
     else:
         st.caption("Sem estatísticas individuais para o adversário.")
 
+SHOT_TYPE_PT = {
+    "goal": "Gol",
+    "miss": "Perdida",
+    "save": "Defendida",
+    "block": "Bloqueada",
+    "post": "Na trave",
+    "blocked-off-line": "Bloqueada em cima da linha",
+}
+SITUATION_PT = {
+    "regular": "Jogada normal",
+    "assisted": "Jogada assistida",
+    "fast-break": "Contra-ataque",
+    "set-piece": "Bola parada",
+    "corner": "Escanteio",
+    "free-kick": "Falta",
+    "penalty": "Pênalti",
+    "throw-in-set-piece": "Lançamento de lateral",
+}
+BODY_PART_PT = {
+    "right-foot": "Pé direito",
+    "left-foot": "Pé esquerdo",
+    "head": "Cabeça",
+    "other-body-part": "Outra parte do corpo",
+}
+
 with tab_shots:
     shots = match.get("shots", [])
     if shots:
         st.markdown("**Lista Detalhada de Finalizações**")
         sdf = pd.DataFrame(shots)
+        if "shot_type" in sdf.columns:
+            sdf["shot_type"] = sdf["shot_type"].map(SHOT_TYPE_PT).fillna(sdf["shot_type"])
+        if "situation" in sdf.columns:
+            sdf["situation"] = sdf["situation"].map(SITUATION_PT).fillna(sdf["situation"])
+        if "body_part" in sdf.columns:
+            sdf["body_part"] = sdf["body_part"].map(BODY_PART_PT).fillna(sdf["body_part"])
         shot_cols = [
             "minute",
             "player_name",
