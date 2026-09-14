@@ -2,7 +2,7 @@ name: Refresh data
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # toda segunda-feira, 06:00 UTC (03:00 BRT)
+    - cron: "0 6 * * *"   # toda dia, 06:00 UTC (03:00 BRT)
   workflow_dispatch: {}
 
 permissions:
