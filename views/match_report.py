@@ -113,18 +113,14 @@ def _format_players_df(players_list):
     df = pd.DataFrame(players_list)
 
     if {"passes_accurate", "passes_total"}.issubset(df.columns):
-        df["pct_passes_certos"] = (
-            df["passes_accurate"] / df["passes_total"].replace(0, pd.NA) * 100
-        ).round(1)
+        denom = df["passes_total"].astype(float).replace(0, float("nan"))
+        df["pct_passes_certos"] = (df["passes_accurate"] / denom * 100).round(1)
     if {"possession_lost", "touches"}.issubset(df.columns):
-        df["pct_bolas_perdidas"] = (
-            df["possession_lost"] / df["touches"].replace(0, pd.NA) * 100
-        ).round(1)
+        denom = df["touches"].astype(float).replace(0, float("nan"))
+        df["pct_bolas_perdidas"] = (df["possession_lost"] / denom * 100).round(1)
     if {"duels_won", "duels_lost"}.issubset(df.columns):
-        total_duels = df["duels_won"] + df["duels_lost"]
-        df["pct_duelos_ganhos"] = (
-            df["duels_won"] / total_duels.replace(0, pd.NA) * 100
-        ).round(1)
+        total_duels = (df["duels_won"] + df["duels_lost"]).astype(float).replace(0, float("nan"))
+        df["pct_duelos_ganhos"] = (df["duels_won"] / total_duels * 100).round(1)
 
     cols = [
         "name",
