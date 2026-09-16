@@ -402,6 +402,9 @@ def _fetch_fixtures(team: str, scraper: SofaScoreScraper, store: JsonStore) -> N
         print(f"No 'sofascore' config for '{team}'.")
         return
     events = scraper.get_next_events(cfg["team_id"])
+    if not events and store.load_fixtures(team).get("fixtures"):
+        print("No upcoming fixtures fetched (likely blocked/rate-limited); keeping existing file.")
+        return
     path = store.save_fixtures(team, events)
     print(f"Saved {len(events)} upcoming fixtures -> {path}")
 
