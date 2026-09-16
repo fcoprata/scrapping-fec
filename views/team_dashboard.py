@@ -125,7 +125,7 @@ with tab_overview:
         t2_s = _calc_turn_stats(t2_matches)
 
         turns_df = pd.DataFrame([
-            {"Indicador": k, "1º Turno (Rodadas 1 a 19)": t1_s[k], "2º Turno (Rodadas 20 a 28)": t2_s[k]}
+            {"Indicador": k, "1º Turno (Rodadas 1 a 19)": str(t1_s[k]), "2º Turno (Rodadas 20 a 28)": str(t2_s[k])}
             for k in t1_s
         ])
         st.dataframe(turns_df, width="stretch", hide_index=True)

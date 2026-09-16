@@ -130,7 +130,7 @@ with tab_campanha:
             "Aproveitamento Fora (PPG Fora)",
         ],
         "Fortaleza EC 🦁": [
-            f_s.get("matches", 0),
+            str(f_s.get("matches", 0)),
             f"{f_s.get('wins', 0)}V / {f_s.get('draws', 0)}E / {f_s.get('losses', 0)}D",
             f"{f_s.get('goals_for', 0)} / {f_s.get('goals_against', 0)}",
             f"{(f_s.get('goals_for', 0) - f_s.get('goals_against', 0)):+d}",
@@ -142,7 +142,7 @@ with tab_campanha:
             f"{f_ha.get('away', {}).get('ppg', 0.0):.2f} pts/j",
         ],
         "Ceará SC 🏁": [
-            c_s.get("matches", 0),
+            str(c_s.get("matches", 0)),
             f"{c_s.get('wins', 0)}V / {c_s.get('draws', 0)}E / {c_s.get('losses', 0)}D",
             f"{c_s.get('goals_for', 0)} / {c_s.get('goals_against', 0)}",
             f"{(c_s.get('goals_for', 0) - c_s.get('goals_against', 0)):+d}",
