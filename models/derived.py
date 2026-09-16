@@ -306,6 +306,222 @@ def _team_side(match: dict, aliases: set) -> str:
     return "home" if any(a in hs for a in aliases) else "away"
 
 
+def _calculate_game_state(adv_list: list, aliases: set) -> dict:
+    mins_by_state = {"winning": 0, "drawing": 0, "losing": 0}
+    state_stats = {
+        "winning": {"for": {"shots": 0, "goals": 0, "xg": 0.0}, "against": {"shots": 0, "goals": 0, "xg": 0.0}},
+        "drawing": {"for": {"shots": 0, "goals": 0, "xg": 0.0}, "against": {"shots": 0, "goals": 0, "xg": 0.0}},
+        "losing":  {"for": {"shots": 0, "goals": 0, "xg": 0.0}, "against": {"shots": 0, "goals": 0, "xg": 0.0}},
+    }
+
+    for adv in adv_list:
+        side = _team_side(adv, aliases)
+        # Identificar gols da partida
+        goals = []
+        for s in sorted(adv.get("shots", []), key=lambda x: x.get("minute") or 0):
+            if s.get("is_goal"):
+                m_min = s.get("minute") or 0
+                scoring_side = "home" if s.get("is_home") else "away"
+                delta = 1 if scoring_side == side else -1
+                goals.append((m_min, delta))
+
+        # Rastrear minutos jogados em cada estado (0 a 90)
+        curr_diff = 0
+        t_prev = 0
+        for g_min, delta in goals:
+            g_min_clamped = min(max(g_min, 0), 90)
+            dur = max(0, g_min_clamped - t_prev)
+            state = "drawing" if curr_diff == 0 else ("winning" if curr_diff > 0 else "losing")
+            mins_by_state[state] += dur
+            curr_diff += delta
+            t_prev = g_min_clamped
+
+        # Minutos restantes até 90
+        rem_dur = max(0, 90 - t_prev)
+        state = "drawing" if curr_diff == 0 else ("winning" if curr_diff > 0 else "losing")
+        mins_by_state[state] += rem_dur
+
+        # Classificar cada chute no estado do placar antes do chute
+        for s in adv.get("shots", []):
+            m_min = s.get("minute") or 0
+            is_for = s.get("is_home") == (side == "home")
+            bucket = "for" if is_for else "against"
+            diff_before = sum(d for gm, d in goals if gm < m_min)
+            sh_state = "drawing" if diff_before == 0 else ("winning" if diff_before > 0 else "losing")
+
+            state_stats[sh_state][bucket]["shots"] += 1
+            state_stats[sh_state][bucket]["xg"] += (s.get("xg") or 0.0)
+            if s.get("is_goal"):
+                state_stats[sh_state][bucket]["goals"] += 1
+
+    total_mins = sum(mins_by_state.values()) or 1
+    out = {}
+    for st_name in ("winning", "drawing", "losing"):
+        m = mins_by_state[st_name]
+        f = state_stats[st_name]["for"]
+        a = state_stats[st_name]["against"]
+        out[st_name] = {
+            "minutes": m,
+            "share_pct": round(m / total_mins * 100, 1),
+            "goals_for": f["goals"],
+            "goals_against": a["goals"],
+            "xg_for": round(f["xg"], 2),
+            "xg_against": round(a["xg"], 2),
+            "xg_diff": round(f["xg"] - a["xg"], 2),
+            "xg_for_p90": round(f["xg"] / m * 90, 2) if m > 0 else 0.0,
+            "xg_against_p90": round(a["xg"] / m * 90, 2) if m > 0 else 0.0,
+            "shots_for": f["shots"],
+            "shots_against": a["shots"],
+        }
+    return out
+
+
+def _calculate_substitutions_impact(adv_list: list, aliases: set) -> dict:
+    starters = {"count": 0, "minutes": 0, "xg": 0.0, "xa": 0.0, "goals": 0, "assists": 0, "ratings": []}
+    subs = {"count": 0, "minutes": 0, "xg": 0.0, "xa": 0.0, "goals": 0, "assists": 0, "ratings": []}
+    player_subs: dict = {}
+
+    for adv in adv_list:
+        side = _team_side(adv, aliases)
+        for p in adv.get("players", []):
+            if p.get("team") != side:
+                continue
+            is_st = p.get("is_starter", True)
+            mins = p.get("minutes_played", 0) or 0
+            xg = p.get("xg", 0.0) or 0.0
+            xa = p.get("xa", 0.0) or 0.0
+            goals = p.get("goals", 0) or 0
+            assists = p.get("assists", 0) or 0
+            r = p.get("rating")
+
+            target = starters if is_st else subs
+            target["count"] += 1
+            target["minutes"] += mins
+            target["xg"] += xg
+            target["xa"] += xa
+            target["goals"] += goals
+            target["assists"] += assists
+            if r is not None:
+                try:
+                    target["ratings"].append(float(r))
+                except (ValueError, TypeError):
+                    pass
+
+            if not is_st and mins > 0:
+                pid = str(p.get("player_id") or p.get("name"))
+                if pid not in player_subs:
+                    player_subs[pid] = {
+                        "name": p.get("name", ""),
+                        "sub_apps": 0,
+                        "minutes": 0,
+                        "goals": 0,
+                        "assists": 0,
+                        "xg": 0.0,
+                        "xa": 0.0,
+                        "ratings": [],
+                    }
+                entry = player_subs[pid]
+                entry["sub_apps"] += 1
+                entry["minutes"] += mins
+                entry["goals"] += goals
+                entry["assists"] += assists
+                entry["xg"] = round(entry["xg"] + xg, 3)
+                entry["xa"] = round(entry["xa"] + xa, 3)
+                if r is not None:
+                    try:
+                        entry["ratings"].append(float(r))
+                    except (ValueError, TypeError):
+                        pass
+
+    supersubs = []
+    for pid, entry in player_subs.items():
+        avg_r = round(sum(entry["ratings"]) / len(entry["ratings"]), 2) if entry["ratings"] else None
+        supersubs.append({
+            "name": entry["name"],
+            "sub_apps": entry["sub_apps"],
+            "minutes": entry["minutes"],
+            "goals": entry["goals"],
+            "assists": entry["assists"],
+            "goal_involvements": entry["goals"] + entry["assists"],
+            "xg": round(entry["xg"], 2),
+            "xa": round(entry["xa"], 2),
+            "prod_total": round(entry["xg"] + entry["xa"], 2),
+            "avg_rating": avg_r,
+        })
+    supersubs.sort(key=lambda x: (x["goal_involvements"], x["prod_total"]), reverse=True)
+
+    def _summary_sub(t):
+        mins = t["minutes"] or 1
+        return {
+            "total_apps": t["count"],
+            "total_minutes": t["minutes"],
+            "goals": t["goals"],
+            "assists": t["assists"],
+            "xg": round(t["xg"], 2),
+            "xa": round(t["xa"], 2),
+            "xg_p90": round(t["xg"] / mins * 90, 2),
+            "xa_p90": round(t["xa"] / mins * 90, 2),
+            "avg_rating": round(sum(t["ratings"]) / len(t["ratings"]), 2) if t["ratings"] else None,
+        }
+
+    return {
+        "starters_summary": _summary_sub(starters),
+        "subs_summary": _summary_sub(subs),
+        "supersubs": supersubs,
+    }
+
+
+def _detailed_shot_breakdown(shots: list) -> dict:
+    by_body: dict = {}
+    by_situation: dict = {}
+    total_xg = 0.0
+    total_xgot = 0.0
+    total_goals = 0
+
+    for s in shots:
+        bp = s.get("body_part") or "other"
+        sit = s.get("situation") or "other"
+        xg = s.get("xg") or 0.0
+        xgot = s.get("xgot") or 0.0
+        is_g = 1 if s.get("is_goal") else 0
+
+        total_xg += xg
+        total_xgot += xgot
+        total_goals += is_g
+
+        # body part
+        b_entry = by_body.setdefault(bp, {"count": 0, "goals": 0, "xg": 0.0, "xgot": 0.0})
+        b_entry["count"] += 1
+        b_entry["goals"] += is_g
+        b_entry["xg"] = round(b_entry["xg"] + xg, 3)
+        b_entry["xgot"] = round(b_entry["xgot"] + xgot, 3)
+
+        # situation
+        s_entry = by_situation.setdefault(sit, {"count": 0, "goals": 0, "xg": 0.0, "xgot": 0.0})
+        s_entry["count"] += 1
+        s_entry["goals"] += is_g
+        s_entry["xg"] = round(s_entry["xg"] + xg, 3)
+        s_entry["xgot"] = round(s_entry["xgot"] + xgot, 3)
+
+    for group in (by_body, by_situation):
+        for k, v in group.items():
+            cnt = v["count"] or 1
+            v["conversion_pct"] = round(v["goals"] / cnt * 100, 1)
+            v["xg_per_shot"] = round(v["xg"] / cnt, 3)
+
+    tot_shots = len(shots) or 1
+    return {
+        "total_shots": len(shots),
+        "total_goals": total_goals,
+        "total_xg": round(total_xg, 2),
+        "total_xgot": round(total_xgot, 2),
+        "xgot_diff": round(total_xgot - total_xg, 2),
+        "avg_xg_per_shot": round(total_xg / tot_shots, 3),
+        "by_body_part": by_body,
+        "by_situation": by_situation,
+    }
+
+
 def build_team_metrics(
     matches_master: dict, advanced_matches: dict, ogol_stats: list, team: str = "fortaleza"
 ) -> dict:
@@ -466,6 +682,15 @@ def build_team_metrics(
             style["prod_per_possession_point"] = round(prod_per_match / avg_poss, 4) if avg_poss else None
             style["label"] = "direto" if avg_poss and prod_per_match / avg_poss > 0.03 else "apoio"
 
+    # Game State (comportamento por placar) & Substituições
+    adv_list = (advanced_matches or {}).get("matches", []) or []
+    game_state = _calculate_game_state(adv_list, aliases)
+    subs_impact = _calculate_substitutions_impact(adv_list, aliases)
+    shot_breakdown = {
+        "for": _detailed_shot_breakdown(shots_for),
+        "against": _detailed_shot_breakdown(shots_against),
+    }
+
     return {
         "summary": summary,
         "per_match": per_match,
@@ -478,7 +703,10 @@ def build_team_metrics(
             "for": _sit_breakdown(shots_for),
             "against": _sit_breakdown(shots_against),
         },
+        "shot_breakdown": shot_breakdown,
         "timeline": {"for": _timeline(shots_for), "against": _timeline(shots_against)},
+        "game_state": game_state,
+        "substitutions": subs_impact,
         "discipline": discipline,
         "style": style,
     }

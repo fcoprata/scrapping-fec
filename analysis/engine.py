@@ -147,10 +147,13 @@ def build_season_analysis(team_metrics: dict, player_metrics: Optional[List[dict
                                  "Produção ofensiva muito concentrada no top-3.",
                                  f"{share:.0f}% do (xG+xA) vem de {', '.join(x[0] for x in prod[:3])}"))
 
+    editorial_hooks = build_editorial_hooks(team_metrics, player_metrics)
+
     return {
         "strengths": [i for i in items if i["kind"] == "strength"],
         "weaknesses": [i for i in items if i["kind"] == "weakness"],
         "notes": [i for i in items if i["kind"] == "note"],
+        "editorial_hooks": editorial_hooks,
         "facts": {
             "points_real": s.get("points_real"),
             "points_expected": s.get("points_expected"),
@@ -161,6 +164,105 @@ def build_season_analysis(team_metrics: dict, player_metrics: Optional[List[dict
             "ppg_away": a.get("ppg"),
         },
     }
+
+
+def build_editorial_hooks(team_metrics: dict, player_metrics: Optional[List[dict]] = None) -> List[dict]:
+    """Gera pautas jornalísticas e manchetes com embasamento estatístico determinístico."""
+    hooks: List[dict] = []
+    s = team_metrics.get("summary", {})
+    luck = s.get("points_luck")
+    pts_real = s.get("points_real", 0)
+    pts_exp = s.get("points_expected")
+
+    # 1. Sorte vs Desempenho
+    if luck is not None:
+        if luck >= 4.0:
+            hooks.append({
+                "type": "alert",
+                "tag": "Regressão à Média",
+                "headline": f"Pontuação inflada: {pts_real} pontos reais vs {pts_exp:.1f} esperados",
+                "lead": f"O time soma +{luck:.1f} pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
+                "badge": "Alerta Amarelo",
+            })
+        elif luck <= -4.0:
+            hooks.append({
+                "type": "opportunity",
+                "tag": "Potencial Reprimido",
+                "headline": f"Desempenho não reflete na tabela: {pts_real} pontos reais vs {pts_exp:.1f} esperados",
+                "lead": f"A equipe merecia {abs(luck):.1f} pontos a mais pela qualidade das chances geradas e sofridas.",
+                "badge": "Tendência de Alta",
+            })
+
+    # 2. Garçom Oculto
+    if player_metrics:
+        underperforming_creators = []
+        for p in player_metrics:
+            mins = p.get("minutes", 0) or 0
+            if mins < 300:
+                continue
+            xa = (p.get("xa_p90") or 0.0) * mins / 90.0
+            assists = p.get("assists", 0) or 0
+            gap = xa - assists
+            if gap >= 1.0:
+                underperforming_creators.append((p["name"], gap, xa, assists))
+        if underperforming_creators:
+            underperforming_creators.sort(key=lambda x: -x[1])
+            top_c = underperforming_creators[0]
+            hooks.append({
+                "type": "tactical",
+                "tag": "O Garçom Oculto",
+                "headline": f"{top_c[0]} cria chances de elite que os companheiros não convertem",
+                "lead": f"Produziu {top_c[2]:.2f} em Expected Assists (xA), mas soma apenas {top_c[3]} assistências reais por ineficiência dos finalizadores.",
+                "badge": "Destaque Individual",
+            })
+
+    # 3. Game State (Comportamento em Vantagem)
+    gs = team_metrics.get("game_state", {})
+    win_state = gs.get("winning", {})
+    draw_state = gs.get("drawing", {})
+    if win_state.get("minutes", 0) >= 100 and draw_state.get("minutes", 0) >= 100:
+        win_xga = win_state.get("xg_against_p90", 0.0)
+        draw_xga = draw_state.get("xg_against_p90", 0.0)
+        if win_xga >= draw_xga * 1.3 and (win_xga - draw_xga) >= 0.35:
+            hooks.append({
+                "type": "alert",
+                "tag": "Síndrome do Recuo",
+                "headline": f"Vulnerabilidade ao liderar: xG concedido sobe para {win_xga:.2f}/90min ao abrir vantagem",
+                "lead": f"Quando está empatando o time concede {draw_xga:.2f} xG/90, mas recua e cede {win_xga:.2f} xG/90 quando está à frente no placar.",
+                "badge": "Atenção Tática",
+            })
+
+    # 4. Impacto do Banco (Supersubs)
+    subs = team_metrics.get("substitutions", {})
+    supersubs = subs.get("supersubs", [])
+    if supersubs:
+        top_sub = supersubs[0]
+        if top_sub.get("goal_involvements", 0) >= 2 or top_sub.get("prod_total", 0) >= 1.5:
+            hooks.append({
+                "type": "trend",
+                "tag": "O 12º Jogador",
+                "headline": f"{top_sub['name']} é o reserva mais decisivo do elenco",
+                "lead": f"Saindo do banco em {top_sub['sub_apps']} partidas, acumula {top_sub['goal_involvements']} participações em gols ({top_sub['goals']}G / {top_sub['assists']}A) e {top_sub['prod_total']:.2f} (xG+xA).",
+                "badge": "Arma Secreta",
+            })
+
+    # 5. Bola Parada & Aérea
+    sb = team_metrics.get("shot_breakdown", {}).get("for", {})
+    by_body = sb.get("by_body_part", {})
+    head_shots = by_body.get("head", {})
+    tot_goals = sb.get("total_goals", 0)
+    if tot_goals >= 5 and head_shots.get("goals", 0) >= 2:
+        head_share = round(head_shots["goals"] / tot_goals * 100, 1)
+        if head_share >= 25:
+            hooks.append({
+                "type": "strength",
+                "tag": "Força Aérea",
+                "headline": f"Jogo aéreo letal: {head_share:.0f}% dos gols da equipe são de cabeça",
+                "lead": f"{head_shots.get('goals', 0)} gols em {head_shots.get('count', 0)} finalizações de cabeça com média de {head_shots.get('xg_per_shot', 0):.2f} xG por tentativa.",
+                "badge": "Padrão Ofensivo",
+            })
+
+    return hooks
 
 
 # =========================================================================

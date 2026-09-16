@@ -15,6 +15,11 @@ class Shot:
     situation: Optional[str]      # regular-play / corner / fast-break / set-piece / penalty
     body_part: Optional[str]      # right-foot / left-foot / head / other
     is_goal: bool = False
+    x: Optional[float] = None
+    y: Optional[float] = None
+    end_x: Optional[float] = None
+    end_y: Optional[float] = None
+    assist_player_name: Optional[str] = None
 
 
 @dataclass

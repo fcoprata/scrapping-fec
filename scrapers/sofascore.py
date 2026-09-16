@@ -235,6 +235,17 @@ class SofaScoreScraper(JsonApiScraper):
         shots: List[Shot] = []
         for s in data.get("shotmap", []):
             p = s.get("player") or {}
+            draw = s.get("draw") or {}
+            start = draw.get("start") or {}
+            end = draw.get("end") or {}
+            pc = s.get("playerCoordinates") or {}
+
+            # x = lateral width (0-100), y = distance from goal (0-100)
+            sh_x = _as_float(start.get("x")) if start.get("x") is not None else _as_float(pc.get("y"))
+            sh_y = _as_float(start.get("y")) if start.get("y") is not None else _as_float(pc.get("x"))
+            end_x = _as_float(end.get("x"))
+            end_y = _as_float(end.get("y"))
+
             shots.append(Shot(
                 minute=s.get("time"),
                 player_id=str(p.get("id", "")),
@@ -246,6 +257,10 @@ class SofaScoreScraper(JsonApiScraper):
                 situation=s.get("situation"),
                 body_part=s.get("bodyPart"),
                 is_goal=s.get("shotType") == "goal",
+                x=sh_x,
+                y=sh_y,
+                end_x=end_x,
+                end_y=end_y,
             ))
         return shots
 

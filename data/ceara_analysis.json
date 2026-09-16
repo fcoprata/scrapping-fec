@@ -7,13 +7,13 @@
         "tag": "mando",
         "kind": "weakness",
         "text": "Fraco fora de casa.",
-        "evidence": "0.77 ppg fora em 13 jogos"
+        "evidence": "0.79 ppg fora em 14 jogos"
       },
       {
         "tag": "bola_parada",
         "kind": "weakness",
         "text": "Vulnerável em bola parada defensiva.",
-        "evidence": "45% do xG sofrido vem de bola parada"
+        "evidence": "44% do xG sofrido vem de bola parada"
       }
     ],
     "notes": [
@@ -21,7 +21,7 @@
         "tag": "resistencia",
         "kind": "note",
         "text": "Período mais frágil defensivamente: 15-30'.",
-        "evidence": "xG sofrido 8.00 no intervalo"
+        "evidence": "xG sofrido 8.35 no intervalo"
       },
       {
         "tag": "estilo",
@@ -30,16 +30,32 @@
         "evidence": "posse média 48.9%"
       }
     ],
+    "editorial_hooks": [
+      {
+        "type": "tactical",
+        "tag": "O Garçom Oculto",
+        "headline": "Juan Alano cria chances de elite que os companheiros não convertem",
+        "lead": "Produziu 1.38 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
+        "badge": "Destaque Individual"
+      },
+      {
+        "type": "trend",
+        "tag": "O 12º Jogador",
+        "headline": "Giulio é o reserva mais decisivo do elenco",
+        "lead": "Saindo do banco em 8 partidas, acumula 3 participações em gols (0G / 3A) e 1.23 (xG+xA).",
+        "badge": "Arma Secreta"
+      }
+    ],
     "facts": {
-      "points_real": 31,
-      "points_expected": 33.9167,
-      "xg_diff": -4.49,
-      "finishing": -3.61,
-      "keeping": 1.1,
+      "points_real": 32,
+      "points_expected": 35.0243,
+      "xg_diff": -4.76,
+      "finishing": -3.33,
+      "keeping": 1.09,
       "ppg_home": 1.5,
-      "ppg_away": 0.769
+      "ppg_away": 0.786
     },
-    "narrative": "O Ceará SC soma **31 pontos reais** em 27 jogos (8V, 7E, 12D), com expectativa Poisson de **33.9 xPts** e saldo acumulado de xG de **-4.49**.\n\n**Vulnerabilidades monitoradas:** Fraco fora de casa; Vulnerável em bola parada defensiva.\n\n**Padrões táticos observados:** Período mais frágil defensivamente: 15-30'; Estilo de posse/construção."
+    "narrative": "Na temporada, Ceará SC soma **32 pontos reais** (8V, 8E, 12D) com **35.0 xPts** esperados e saldo de **-4.76 xG**.\n\n**Vulnerabilidades:** Fraco fora de casa; Vulnerável em bola parada defensiva.\n\n**Padrões Táticos:** Período mais frágil defensivamente: 15-30'; Estilo de posse/construção."
   },
   "matches": {
     "15525988": {
@@ -70,7 +86,7 @@
           "evidence": "xG 1.77-0.24"
         }
       ],
-      "narrative": "No confronto contra o **São Bernardo** (2026-03-21, em casa), finalizado com o placar de **1:1**, o Ceará SC registrou **1.77 xG gerados** contra **0.24 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; Vinicius Zanocelo decisivo.\n\n**Observações:** Empate com desempenho melhor que o placar.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Vinicius Zanocelo, Lucca, Rafael Ramos**."
+      "narrative": "Partida disputada contra o **São Bernardo** (2026-03-21, em casa), encerrada em **1:1**, com **1.77 xG gerados** e **0.24 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Vinicius Zanocelo decisivo.\n\n**Observações Táticas:** Empate com desempenho melhor que o placar."
     },
     "15525995": {
       "event_id": 15525995,
@@ -107,7 +123,7 @@
           "evidence": "xG+xA 0.74"
         }
       ],
-      "narrative": "No confronto contra o **Ponte Preta** (2026-04-02, fora de casa), finalizado com o placar de **1:1**, o Ceará SC registrou **2.24 xG gerados** contra **1.50 xG concedidos**.\n\n**Destaques positivos:** Rafael Ramos decisivo.\n\n**Pontos de atenção:** Pouca pontaria: criou e não converteu; Lucas Lima abaixo.\n\n**Observações:** William Pottker foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Sánchez, Rafael Ramos, Juan Alano**."
+      "narrative": "Partida disputada contra o **Ponte Preta** (2026-04-02, fora de casa), encerrada em **1:1**, com **2.24 xG gerados** e **1.50 xG concedidos**.\n\n**Pontos Positivos:** Rafael Ramos decisivo.\n\n**Pontos Negativos:** Pouca pontaria: criou e não converteu; Lucas Lima abaixo.\n\n**Observações Táticas:** William Pottker foi o mais perigoso do rival."
     },
     "15526013": {
       "event_id": 15526013,
@@ -143,7 +159,7 @@
           "evidence": "xG+xA 1.32"
         }
       ],
-      "narrative": "No confronto contra o **Cuiabá** (2026-04-04, fora de casa), finalizado com o placar de **0:2**, o Ceará SC registrou **1.48 xG gerados** contra **2.23 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Juan Alano decisivo.\n\n**Observações:** Vitória sofrida — foi superado no volume de chances; Mateus Criciuma foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Juan Alano, Wendel, Sánchez**."
+      "narrative": "Partida disputada contra o **Cuiabá** (2026-04-04, fora de casa), encerrada em **0:2**, com **1.48 xG gerados** e **2.23 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Juan Alano decisivo.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; Mateus Criciuma foi o mais perigoso do rival."
     },
     "15526019": {
       "event_id": 15526019,
@@ -167,7 +183,7 @@
           "evidence": "xG+xA 0.64"
         }
       ],
-      "narrative": "No confronto contra o **Náutico** (2026-04-11, em casa), finalizado com o placar de **1:0**, o Ceará SC registrou **1.56 xG gerados** contra **0.80 xG concedidos**.\n\n**Destaques positivos:** Fernandinho melhor em campo.\n\n**Observações:** Vinícius foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Giulio, Melk, Vina**."
+      "narrative": "Partida disputada contra o **Náutico** (2026-04-11, em casa), encerrada em **1:0**, com **1.56 xG gerados** e **0.80 xG concedidos**.\n\n**Pontos Positivos:** Fernandinho melhor em campo.\n\n**Observações Táticas:** Vinícius foi o mais perigoso do rival."
     },
     "15526028": {
       "event_id": 15526028,
@@ -204,7 +220,7 @@
           "evidence": "xG+xA 0.54"
         }
       ],
-      "narrative": "No confronto contra o **Londrina** (2026-04-19, fora de casa), finalizado com o placar de **0:0**, o Ceará SC registrou **1.12 xG gerados** contra **1.06 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Éder melhor em campo.\n\n**Pontos de atenção:** Pouca pontaria: criou e não converteu.\n\n**Observações:** Bruno Santos foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Pedro Henrique, Lucas Lima, Dieguinho**."
+      "narrative": "Partida disputada contra o **Londrina** (2026-04-19, fora de casa), encerrada em **0:0**, com **1.12 xG gerados** e **1.06 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Éder melhor em campo.\n\n**Pontos Negativos:** Pouca pontaria: criou e não converteu.\n\n**Observações Táticas:** Bruno Santos foi o mais perigoso do rival."
     },
     "15526040": {
       "event_id": 15526040,
@@ -247,7 +263,7 @@
           "evidence": "xG+xA 1.10"
         }
       ],
-      "narrative": "No confronto contra o **Vila Nova FC** (2026-04-26, em casa), finalizado com o placar de **3:3**, o Ceará SC registrou **1.33 xG gerados** contra **1.99 xG concedidos**.\n\n**Destaques positivos:** Finalização clínica: converteu acima do xG; Matheus Araújo decisivo.\n\n**Pontos de atenção:** Rafael Ramos abaixo; Sofreu gol de bola parada.\n\n**Observações:** Rafael Silva foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Matheus Araújo, Lucas Lima, Lucca**."
+      "narrative": "Partida disputada contra o **Vila Nova FC** (2026-04-26, em casa), encerrada em **3:3**, com **1.33 xG gerados** e **1.99 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; Matheus Araújo decisivo.\n\n**Pontos Negativos:** Rafael Ramos abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Rafael Silva foi o mais perigoso do rival."
     },
     "15526072": {
       "event_id": 15526072,
@@ -283,7 +299,7 @@
           "evidence": "xG+xA 1.18"
         }
       ],
-      "narrative": "No confronto contra o **Sport Recife** (2026-05-03, fora de casa), finalizado com o placar de **2:0**, o Ceará SC registrou **0.46 xG gerados** contra **1.94 xG concedidos**.\n\n**Pontos de atenção:** Amassado no volume de chances; Éder abaixo; Sofreu gol de bola parada.\n\n**Observações:** Chrystian Barletta foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Lucca, Fernandinho, Matheus Araújo**."
+      "narrative": "Partida disputada contra o **Sport Recife** (2026-05-03, fora de casa), encerrada em **2:0**, com **0.46 xG gerados** e **1.94 xG concedidos**.\n\n**Pontos Negativos:** Amassado no volume de chances; Éder abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Chrystian Barletta foi o mais perigoso do rival."
     },
     "15526080": {
       "event_id": 15526080,
@@ -332,7 +348,7 @@
           "evidence": "xG+xA 0.80"
         }
       ],
-      "narrative": "No confronto contra o **Atlético Goianiense** (2026-05-09, em casa), finalizado com o placar de **0:1**, o Ceará SC registrou **2.09 xG gerados** contra **1.54 xG concedidos**.\n\n**Destaques positivos:** Luiz Otávio melhor em campo.\n\n**Pontos de atenção:** Dominou e perdeu — falta de eficiência decidiu; Pouca pontaria: criou e não converteu; Entrou mal no jogo — cedeu xG cedo; Sofreu gol de bola parada.\n\n**Observações:** Gustavo Coutinho foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Melk, Vina, Pedro Henrique**."
+      "narrative": "Partida disputada contra o **Atlético Goianiense** (2026-05-09, em casa), encerrada em **0:1**, com **2.09 xG gerados** e **1.54 xG concedidos**.\n\n**Pontos Positivos:** Luiz Otávio melhor em campo.\n\n**Pontos Negativos:** Dominou e perdeu — falta de eficiência decidiu; Pouca pontaria: criou e não converteu; Entrou mal no jogo — cedeu xG cedo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Gustavo Coutinho foi o mais perigoso do rival."
     },
     "15526090": {
       "event_id": 15526090,
@@ -375,7 +391,7 @@
           "evidence": "xG+xA 0.92"
         }
       ],
-      "narrative": "No confronto contra o **Fortaleza** (2026-05-17, em casa), finalizado com o placar de **2:1**, o Ceará SC registrou **1.09 xG gerados** contra **1.66 xG concedidos**.\n\n**Destaques positivos:** Melk decisivo.\n\n**Pontos de atenção:** Entrou mal no jogo — cedeu xG cedo; Sofreu gol de bola parada.\n\n**Observações:** Vitória sofrida — foi superado no volume de chances; Maílton foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Matheus Araújo, Melk, Júlio César**."
+      "narrative": "Partida disputada contra o **Fortaleza** (2026-05-17, em casa), encerrada em **2:1**, com **1.09 xG gerados** e **1.66 xG concedidos**.\n\n**Pontos Positivos:** Melk decisivo.\n\n**Pontos Negativos:** Entrou mal no jogo — cedeu xG cedo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; Maílton foi o mais perigoso do rival."
     },
     "15526098": {
       "event_id": 15526098,
@@ -405,7 +421,7 @@
           "evidence": "xG+xA 0.56"
         }
       ],
-      "narrative": "No confronto contra o **Grêmio Novorizontino** (2026-05-23, fora de casa), finalizado com o placar de **2:1**, o Ceará SC registrou **0.52 xG gerados** contra **0.94 xG concedidos**.\n\n**Pontos de atenção:** Punição acima do esperado — erros pontuais custaram caro; Bruno Ferreira abaixo.\n\n**Observações:** Matheus Bianqui foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Melk, Fernandinho, Matheus Araújo**."
+      "narrative": "Partida disputada contra o **Grêmio Novorizontino** (2026-05-23, fora de casa), encerrada em **2:1**, com **0.52 xG gerados** e **0.94 xG concedidos**.\n\n**Pontos Negativos:** Punição acima do esperado — erros pontuais custaram caro; Bruno Ferreira abaixo.\n\n**Observações Táticas:** Matheus Bianqui foi o mais perigoso do rival."
     },
     "15526111": {
       "event_id": 15526111,
@@ -453,7 +469,7 @@
         }
       ],
       "notes": [],
-      "narrative": "No confronto contra o **Operário-PR** (2026-05-31, em casa), finalizado com o placar de **1:2**, o Ceará SC registrou **1.69 xG gerados** contra **0.83 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; Melk decisivo.\n\n**Pontos de atenção:** Dominou e perdeu — falta de eficiência decidiu; Punição acima do esperado — erros pontuais custaram caro; Richard abaixo; Sofreu gol de bola parada.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Melk, Wendel, Matheus Araújo**."
+      "narrative": "Partida disputada contra o **Operário-PR** (2026-05-31, em casa), encerrada em **1:2**, com **1.69 xG gerados** e **0.83 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Melk decisivo.\n\n**Pontos Negativos:** Dominou e perdeu — falta de eficiência decidiu; Punição acima do esperado — erros pontuais custaram caro; Richard abaixo; Sofreu gol de bola parada."
     },
     "15526121": {
       "event_id": 15526121,
@@ -489,7 +505,7 @@
         }
       ],
       "notes": [],
-      "narrative": "No confronto contra o **Avaí** (2026-06-10, em casa), finalizado com o placar de **2:1**, o Ceará SC registrou **0.87 xG gerados** contra **0.38 xG concedidos**.\n\n**Destaques positivos:** Finalização clínica: converteu acima do xG; Controlou o jogo do início ao fim no xG; Júlio César melhor em campo.\n\n**Pontos de atenção:** Richard abaixo.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Melk, Fernando, Matheus Araújo**."
+      "narrative": "Partida disputada contra o **Avaí** (2026-06-10, em casa), encerrada em **2:1**, com **0.87 xG gerados** e **0.38 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; Controlou o jogo do início ao fim no xG; Júlio César melhor em campo.\n\n**Pontos Negativos:** Richard abaixo."
     },
     "15526134": {
       "event_id": 15526134,
@@ -520,7 +536,7 @@
           "evidence": "xG+xA 0.65"
         }
       ],
-      "narrative": "No confronto contra o **Criciúma** (2026-06-16, fora de casa), finalizado com o placar de **1:1**, o Ceará SC registrou **1.13 xG gerados** contra **1.85 xG concedidos**.\n\n**Destaques positivos:** João Gabriel melhor em campo.\n\n**Pontos de atenção:** Entrou mal no jogo — cedeu xG cedo.\n\n**Observações:** Waguininho foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Melk, João Gabriel, Lucca**."
+      "narrative": "Partida disputada contra o **Criciúma** (2026-06-16, fora de casa), encerrada em **1:1**, com **1.13 xG gerados** e **1.85 xG concedidos**.\n\n**Pontos Positivos:** João Gabriel melhor em campo.\n\n**Pontos Negativos:** Entrou mal no jogo — cedeu xG cedo.\n\n**Observações Táticas:** Waguininho foi o mais perigoso do rival."
     },
     "15526142": {
       "event_id": 15526142,
@@ -551,7 +567,7 @@
           "evidence": "xG+xA 0.56"
         }
       ],
-      "narrative": "No confronto contra o **Botafogo-SP** (2026-06-20, em casa), finalizado com o placar de **0:1**, o Ceará SC registrou **0.51 xG gerados** contra **1.37 xG concedidos**.\n\n**Destaques positivos:** Fernando melhor em campo.\n\n**Pontos de atenção:** Sofreu gol de bola parada.\n\n**Observações:** Hygor foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Lucca, Melk, Fernando**."
+      "narrative": "Partida disputada contra o **Botafogo-SP** (2026-06-20, em casa), encerrada em **0:1**, com **0.51 xG gerados** e **1.37 xG concedidos**.\n\n**Pontos Positivos:** Fernando melhor em campo.\n\n**Pontos Negativos:** Sofreu gol de bola parada.\n\n**Observações Táticas:** Hygor foi o mais perigoso do rival."
     },
     "15526157": {
       "event_id": 15526157,
@@ -586,7 +602,7 @@
         }
       ],
       "notes": [],
-      "narrative": "No confronto contra o **Juventude** (2026-06-28, fora de casa), finalizado com o placar de **2:0**, o Ceará SC registrou **1.09 xG gerados** contra **0.86 xG concedidos**.\n\n**Pontos de atenção:** Pouca pontaria: criou e não converteu; Punição acima do esperado — erros pontuais custaram caro; Lucca abaixo; Sofreu gol de bola parada.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Melk, Kauã Ziegler, Luiz Otávio**."
+      "narrative": "Partida disputada contra o **Juventude** (2026-06-28, fora de casa), encerrada em **2:0**, com **1.09 xG gerados** e **0.86 xG concedidos**.\n\n**Pontos Negativos:** Pouca pontaria: criou e não converteu; Punição acima do esperado — erros pontuais custaram caro; Lucca abaixo; Sofreu gol de bola parada."
     },
     "15526163": {
       "event_id": 15526163,
@@ -622,7 +638,7 @@
         }
       ],
       "notes": [],
-      "narrative": "No confronto contra o **Goiás** (2026-07-04, fora de casa), finalizado com o placar de **2:0**, o Ceará SC registrou **0.69 xG gerados** contra **0.54 xG concedidos**.\n\n**Destaques positivos:** Controlou o jogo do início ao fim no xG; Richardson melhor em campo.\n\n**Pontos de atenção:** Punição acima do esperado — erros pontuais custaram caro; Richard abaixo.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Lucca, Matheusinho, Melk**."
+      "narrative": "Partida disputada contra o **Goiás** (2026-07-04, fora de casa), encerrada em **2:0**, com **0.69 xG gerados** e **0.54 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Richardson melhor em campo.\n\n**Pontos Negativos:** Punição acima do esperado — erros pontuais custaram caro; Richard abaixo."
     },
     "15526172": {
       "event_id": 15526172,
@@ -646,7 +662,7 @@
           "evidence": "xG+xA 0.67"
         }
       ],
-      "narrative": "No confronto contra o **Athletic Club** (2026-07-13, em casa), finalizado com o placar de **0:0**, o Ceará SC registrou **0.41 xG gerados** contra **0.90 xG concedidos**.\n\n**Destaques positivos:** Luiz Otávio melhor em campo.\n\n**Observações:** Ian Luccas foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Lucca, Vina, Luiz Otávio**."
+      "narrative": "Partida disputada contra o **Athletic Club** (2026-07-13, em casa), encerrada em **0:0**, com **0.41 xG gerados** e **0.90 xG concedidos**.\n\n**Pontos Positivos:** Luiz Otávio melhor em campo.\n\n**Observações Táticas:** Ian Luccas foi o mais perigoso do rival."
     },
     "15526180": {
       "event_id": 15526180,
@@ -670,7 +686,7 @@
           "evidence": "xG+xA 0.69"
         }
       ],
-      "narrative": "No confronto contra o **América Mineiro** (2026-07-17, fora de casa), finalizado com o placar de **1:1**, o Ceará SC registrou **0.64 xG gerados** contra **1.20 xG concedidos**.\n\n**Destaques positivos:** Júlio César melhor em campo.\n\n**Observações:** Matías Segovia foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Vina, Sánchez, Enzo Valentim Lodovico**."
+      "narrative": "Partida disputada contra o **América Mineiro** (2026-07-17, fora de casa), encerrada em **1:1**, com **0.64 xG gerados** e **1.20 xG concedidos**.\n\n**Pontos Positivos:** Júlio César melhor em campo.\n\n**Observações Táticas:** Matías Segovia foi o mais perigoso do rival."
     },
     "15526192": {
       "event_id": 15526192,
@@ -694,7 +710,7 @@
           "evidence": "xG+xA 1.03"
         }
       ],
-      "narrative": "No confronto contra o **Clube De Regatas Brasil** (2026-07-22, em casa), finalizado com o placar de **0:1**, o Ceará SC registrou **0.80 xG gerados** contra **1.42 xG concedidos**.\n\n**Pontos de atenção:** Sofreu gol de bola parada.\n\n**Observações:** Mikael foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Vina, Sávio, Melk**."
+      "narrative": "Partida disputada contra o **Clube De Regatas Brasil** (2026-07-22, em casa), encerrada em **0:1**, com **0.80 xG gerados** e **1.42 xG concedidos**.\n\n**Pontos Negativos:** Sofreu gol de bola parada.\n\n**Observações Táticas:** Mikael foi o mais perigoso do rival."
     },
     "15526199": {
       "event_id": 15526199,
@@ -743,7 +759,7 @@
           "evidence": "xG+xA 0.54"
         }
       ],
-      "narrative": "No confronto contra o **São Bernardo** (2026-07-26, fora de casa), finalizado com o placar de **3:4**, o Ceará SC registrou **1.13 xG gerados** contra **1.61 xG concedidos**.\n\n**Destaques positivos:** Finalização clínica: converteu acima do xG; João Gabriel melhor em campo.\n\n**Pontos de atenção:** Richard abaixo; Sofreu gol de bola parada.\n\n**Observações:** Vitória sofrida — foi superado no volume de chances; Felipe Garcia foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Nicolás Ferreira, Vina, Giulio**."
+      "narrative": "Partida disputada contra o **São Bernardo** (2026-07-26, fora de casa), encerrada em **3:4**, com **1.13 xG gerados** e **1.61 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; João Gabriel melhor em campo.\n\n**Pontos Negativos:** Richard abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; Felipe Garcia foi o mais perigoso do rival."
     },
     "15526212": {
       "event_id": 15526212,
@@ -773,7 +789,7 @@
         }
       ],
       "notes": [],
-      "narrative": "No confronto contra o **Ponte Preta** (2026-08-07, em casa), finalizado com o placar de **2:0**, o Ceará SC registrou **2.36 xG gerados** contra **1.08 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Sávio melhor em campo.\n\n**Pontos de atenção:** Entrou mal no jogo — cedeu xG cedo.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Giulio, Lucca, Bryan Borges**."
+      "narrative": "Partida disputada contra o **Ponte Preta** (2026-08-07, em casa), encerrada em **2:0**, com **2.36 xG gerados** e **1.08 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Sávio melhor em campo.\n\n**Pontos Negativos:** Entrou mal no jogo — cedeu xG cedo."
     },
     "15526222": {
       "event_id": 15526222,
@@ -815,7 +831,7 @@
           "evidence": "xG+xA 0.67"
         }
       ],
-      "narrative": "No confronto contra o **Cuiabá** (2026-08-15, em casa), finalizado com o placar de **1:3**, o Ceará SC registrou **0.51 xG gerados** contra **1.93 xG concedidos**.\n\n**Pontos de atenção:** Goleada sofrida; Amassado no volume de chances; Sávio abaixo; Sofreu gol de bola parada.\n\n**Observações:** Jean Dias foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Nicolás Ferreira, Lucca, Enzo Valentim Lodovico**."
+      "narrative": "Partida disputada contra o **Cuiabá** (2026-08-15, em casa), encerrada em **1:3**, com **0.51 xG gerados** e **1.93 xG concedidos**.\n\n**Pontos Negativos:** Goleada sofrida; Amassado no volume de chances; Sávio abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Jean Dias foi o mais perigoso do rival."
     },
     "15526235": {
       "event_id": 15526235,
@@ -858,7 +874,7 @@
           "evidence": "xG+xA 1.37"
         }
       ],
-      "narrative": "No confronto contra o **Náutico** (2026-08-19, fora de casa), finalizado com o placar de **1:0**, o Ceará SC registrou **1.67 xG gerados** contra **2.57 xG concedidos**.\n\n**Destaques positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Richard melhor em campo.\n\n**Pontos de atenção:** Pouca pontaria: criou e não converteu; Sofreu gol de bola parada.\n\n**Observações:** Jean Carlos foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Renzo López, Lucca, Nicolás Ferreira**."
+      "narrative": "Partida disputada contra o **Náutico** (2026-08-19, fora de casa), encerrada em **1:0**, com **1.67 xG gerados** e **2.57 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Richard melhor em campo.\n\n**Pontos Negativos:** Pouca pontaria: criou e não converteu; Sofreu gol de bola parada.\n\n**Observações Táticas:** Jean Carlos foi o mais perigoso do rival."
     },
     "15526242": {
       "event_id": 15526242,
@@ -907,7 +923,7 @@
           "evidence": "xG+xA 0.97"
         }
       ],
-      "narrative": "No confronto contra o **Londrina** (2026-08-22, em casa), finalizado com o placar de **2:1**, o Ceará SC registrou **0.49 xG gerados** contra **1.32 xG concedidos**.\n\n**Destaques positivos:** Finalização clínica: converteu acima do xG; Luiz Otávio melhor em campo.\n\n**Pontos de atenção:** Entrou mal no jogo — cedeu xG cedo; Sofreu gol de bola parada.\n\n**Observações:** Vitória sofrida — foi superado no volume de chances; João Vitor foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Gabriel Silva Rocha, Melk, Enzo Valentim Lodovico**."
+      "narrative": "Partida disputada contra o **Londrina** (2026-08-22, em casa), encerrada em **2:1**, com **0.49 xG gerados** e **1.32 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; Luiz Otávio melhor em campo.\n\n**Pontos Negativos:** Entrou mal no jogo — cedeu xG cedo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; João Vitor foi o mais perigoso do rival."
     },
     "15526257": {
       "event_id": 15526257,
@@ -937,7 +953,7 @@
           "evidence": "xG+xA 0.92"
         }
       ],
-      "narrative": "No confronto contra o **Vila Nova FC** (2026-08-30, fora de casa), finalizado com o placar de **2:0**, o Ceará SC registrou **0.50 xG gerados** contra **2.19 xG concedidos**.\n\n**Pontos de atenção:** Amassado no volume de chances; Sofreu gol de bola parada.\n\n**Observações:** Breno foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Lucas Mugni, Lucca, Sánchez**."
+      "narrative": "Partida disputada contra o **Vila Nova FC** (2026-08-30, fora de casa), encerrada em **2:0**, com **0.50 xG gerados** e **2.19 xG concedidos**.\n\n**Pontos Negativos:** Amassado no volume de chances; Sofreu gol de bola parada.\n\n**Observações Táticas:** Breno foi o mais perigoso do rival."
     },
     "15526262": {
       "event_id": 15526262,
@@ -968,7 +984,7 @@
           "evidence": "xG+xA 0.52"
         }
       ],
-      "narrative": "No confronto contra o **Sport Recife** (2026-09-05, em casa), finalizado com o placar de **2:1**, o Ceará SC registrou **1.56 xG gerados** contra **1.22 xG concedidos**.\n\n**Destaques positivos:** Luiz Otávio melhor em campo.\n\n**Pontos de atenção:** Sofreu gol de bola parada.\n\n**Observações:** Perotti foi o mais perigoso do rival.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Melk, Vina, Luiz Otávio**."
+      "narrative": "Partida disputada contra o **Sport Recife** (2026-09-05, em casa), encerrada em **2:1**, com **1.56 xG gerados** e **1.22 xG concedidos**.\n\n**Pontos Positivos:** Luiz Otávio melhor em campo.\n\n**Pontos Negativos:** Sofreu gol de bola parada.\n\n**Observações Táticas:** Perotti foi o mais perigoso do rival."
     },
     "15526273": {
       "event_id": 15526273,
@@ -1010,7 +1026,31 @@
         }
       ],
       "notes": [],
-      "narrative": "No confronto contra o **Atlético Goianiense** (2026-09-10, fora de casa), finalizado com o placar de **2:1**, o Ceará SC registrou **1.90 xG gerados** contra **0.93 xG concedidos**.\n\n**Destaques positivos:** Melk decisivo.\n\n**Pontos de atenção:** Dominou e perdeu — falta de eficiência decidiu; Punição acima do esperado — erros pontuais custaram caro; Entrou mal no jogo — cedeu xG cedo; Richard abaixo.\n\nOs atletas com maior participação na criação ofensiva (xG + xA) foram **Melk, Lenny Lobato, Nicolás Ferreira**."
+      "narrative": "Partida disputada contra o **Atlético Goianiense** (2026-09-10, fora de casa), encerrada em **2:1**, com **1.90 xG gerados** e **0.93 xG concedidos**.\n\n**Pontos Positivos:** Melk decisivo.\n\n**Pontos Negativos:** Dominou e perdeu — falta de eficiência decidiu; Punição acima do esperado — erros pontuais custaram caro; Entrou mal no jogo — cedeu xG cedo; Richard abaixo."
+    },
+    "15526282": {
+      "event_id": 15526282,
+      "date": "2026-09-13",
+      "opponent": "Fortaleza",
+      "score": "1:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Melk melhor em campo.",
+          "evidence": "nota 7.6, xG+xA 0.33"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Paulo Baya foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.70"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Fortaleza** (2026-09-13, fora de casa), encerrada em **1:1**, com **0.72 xG gerados** e **0.99 xG concedidos**.\n\n**Pontos Positivos:** Melk melhor em campo.\n\n**Observações Táticas:** Paulo Baya foi o mais perigoso do rival."
     }
   }
 }

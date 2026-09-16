@@ -692,7 +692,7 @@
     {
       "key": "saulo mineiro",
       "name": "Saulo Mineiro",
-      "sofascore_id": null,
+      "sofascore_id": "869573",
       "ogol_id": "543813",
       "position_group": "Atacante",
       "position_detail": "Centroavante",
@@ -703,12 +703,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "rian santana",
       "name": "Rian Santana",
-      "sofascore_id": null,
+      "sofascore_id": "2032550",
       "ogol_id": "735011",
       "position_group": "Atacante",
       "position_detail": "Ponta Esquerda",
@@ -719,7 +719,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": false
+      "in_advanced": true
     },
     {
       "key": "enzo lodovico",
@@ -930,9 +930,9 @@
       "in_advanced": true
     },
     {
-      "key": "gabriel silva rocha",
-      "name": "Gabriel Silva Rocha",
-      "sofascore_id": "1591290",
+      "key": "enzo valentim lodovico",
+      "name": "Enzo Valentim Lodovico",
+      "sofascore_id": "1631189",
       "ogol_id": null,
       "position_group": null,
       "position_detail": null,
@@ -946,9 +946,9 @@
       "in_advanced": true
     },
     {
-      "key": "enzo valentim lodovico",
-      "name": "Enzo Valentim Lodovico",
-      "sofascore_id": "1631189",
+      "key": "gabriel silva rocha",
+      "name": "Gabriel Silva Rocha",
+      "sofascore_id": "1591290",
       "ogol_id": null,
       "position_group": null,
       "position_detail": null,

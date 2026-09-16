@@ -265,6 +265,78 @@ def inject_fortaleza_theme(team: Optional[str] = None):
             color: #475569;
             font-weight: 500;
         }}
+
+        /* ========================================================
+           RESPONSIVIDADE MOBILE (@media max-width: 768px)
+           ======================================================== */
+        @media (max-width: 768px) {{
+            /* 1. Aproveitar largura útil em smartphones (reduzir margens mortas) */
+            .block-container {{
+                padding-top: 1.2rem !important;
+                padding-bottom: 2rem !important;
+                padding-left: 0.65rem !important;
+                padding-right: 0.65rem !important;
+            }}
+
+            /* 2. Tipografia fluida em smartphones */
+            h1 {{
+                font-size: 1.45rem !important;
+                line-height: 1.2 !important;
+            }}
+            h2 {{
+                font-size: 1.25rem !important;
+                line-height: 1.25 !important;
+                margin-top: 1rem !important;
+            }}
+            h3 {{
+                font-size: 1.08rem !important;
+                margin-top: 0.8rem !important;
+            }}
+
+            /* 3. Cards de Métricas compactos para evitar scroll excessivo */
+            div[data-testid="stMetric"] {{
+                padding: 10px 12px !important;
+                margin-bottom: 8px !important;
+                border-left-width: 4px !important;
+            }}
+            div[data-testid="stMetric"] label {{
+                font-size: 0.72rem !important;
+                letter-spacing: 0.2px !important;
+            }}
+            div[data-testid="stMetric"] div[data-testid="stMetricValue"] {{
+                font-size: 1.35rem !important;
+                line-height: 1.15 !important;
+            }}
+
+            /* 4. Abas horizontais com padding reduzido para evitar rolagem horizontal agressiva */
+            button[data-baseweb="tab"] {{
+                padding: 6px 10px !important;
+                font-size: 0.8rem !important;
+            }}
+
+            /* 5. Cabeçalhos de seção e cards customizados */
+            .fec-header-card {{
+                padding: 14px 16px !important;
+                border-radius: 10px !important;
+            }}
+            .fec-header-card h2 {{
+                font-size: 1.25rem !important;
+            }}
+            .fec-header-card p {{
+                font-size: 0.85rem !important;
+            }}
+
+            /* 6. Badges compactos */
+            .fec-badge {{
+                font-size: 0.7rem !important;
+                padding: 2px 8px !important;
+            }}
+
+            /* 7. Reduzir espaçamento entre colunas */
+            div[data-testid="stHorizontalBlock"] {{
+                gap: 0.5rem !important;
+            }}
+        }}
         </style>
         """,
         unsafe_allow_html=True,

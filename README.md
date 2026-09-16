@@ -26,13 +26,13 @@ streamlit run app.py
 
 Páginas:
 
-1. **Dashboard da Equipe** — KPIs reais vs esperados (Poisson xPts), saldo de xG, diagnóstico
-   tático, médias móveis, histórico jogo a jogo; mando, bola parada, estilo; métricas brutas.
-2. **Relatório de Jogo** — xG Race, diagnóstico da partida, estatísticas individuais, finalizações.
-3. **Calendário & Classificação** — próximos jogos de Fortaleza e Ceará e a tabela da Série B 2026.
-4. **Planejador de Elenco** — minutagem, dependência tática, contratos, valor de mercado.
-5. **Card do Jogador** — radar de percentis, eficiência de finalização/criação, histórico.
-6. **Sobre** — fontes, metodologia e contato do autor.
+1. **Dashboard da Equipe** — KPIs reais vs esperados (Poisson xPts), Comparativo de Turnos (1º vs 2º Turno), Campo 2D Interativo de Finalizações e Assistências (trajetórias reais e passes de gol), Matriz Tática de Quadrantes (xG/90 vs xA/90), Game State (comportamento por placar), Raio-X de finalizações e impacto das substituições.
+2. **Relatório de Jogo** — xG Race, diagnóstico tático estatístico, Campo 2D do Jogo (trajetória de chutes e passes de assistência), impacto dos reservas e tabela analítica.
+3. **Clássico-Rei (Comparativo)** — Duelo direto Fortaleza vs Ceará (campanha, ataque, defesa, bola parada, mercado e destaques individuais cara a cara).
+4. **Calendário & Pré-Jogo** — Classificação oficial da Série B 2026, calculadora matemática de acesso à Série A (meta 64 pontos), próximos jogos e Raio-X pré-jogo com retrospecto e disciplina.
+5. **Planejador de Elenco** — Minutagem, dependência tática, contratos, valor de mercado.
+6. **Card do Jogador** — Radar de percentis, eficiência de finalização/criação, histórico.
+7. **Sobre** — Fontes, metodologia e contato do autor.
 
 Troque o clube em análise (Fortaleza / Ceará) no seletor da barra lateral.
 
