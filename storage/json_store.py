@@ -233,6 +233,20 @@ class JsonStore:
         with open(path, encoding="utf-8") as f:
             return json.load(f)
 
+    # ---- UFMG statistical & probabilistic data ----------------------
+    def save_ufmg_data(self, key: str, data: dict) -> str:
+        path = os.path.abspath(os.path.join(_DATA_DIR, f"ufmg_{key}.json"))
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        return path
+
+    def load_ufmg_data(self, key: str) -> dict:
+        path = os.path.abspath(os.path.join(_DATA_DIR, f"ufmg_{key}.json"))
+        if not os.path.exists(path):
+            return {}
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+
 
 def _advanced_row_dict(row: PlayerAdvancedSeason) -> dict:
     d = asdict(row)

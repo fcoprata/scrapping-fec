@@ -28,6 +28,7 @@ from analysis import build_analysis
 from scrapers.transfermarkt import TransfermarktScraper
 from scrapers.ogol import OGolScraper
 from scrapers.sofascore import SofaScoreScraper
+from scrapers.ufmg import UFMGScraper
 from storage.json_store import JsonStore
 
 
@@ -69,6 +70,7 @@ def main():
     g_scrape.add_argument("--limit", type=int, default=None, help="Limite máximo de partidas a processar.")
     g_scrape.add_argument("--fixtures", action="store_true", help="Coleta os próximos jogos (SofaScore) do time.")
     g_scrape.add_argument("--standings", action="store_true", help="Coleta a classificação (SofaScore) da Série B 2026.")
+    g_scrape.add_argument("--ufmg", action="store_true", help="Coleta dados estatísticos e probabilidades da UFMG para a Série B 2026.")
 
     args = parser.parse_args()
 
@@ -94,6 +96,10 @@ def main():
 
     if args.standings:
         _fetch_standings(SofaScoreScraper(), store)
+        return
+
+    if args.ufmg:
+        _fetch_ufmg(UFMGScraper(), store)
         return
 
     if not args.team:
@@ -413,6 +419,13 @@ def _fetch_standings(scraper: SofaScoreScraper, store: JsonStore, tournament_id:
     rows = scraper.get_standings(tournament_id, season_id)
     path = store.save_standings("serie_b_2026", rows)
     print(f"Saved {len(rows)} standings rows -> {path}")
+
+
+def _fetch_ufmg(scraper: UFMGScraper, store: JsonStore, key: str = "serie_b_2026") -> None:
+    data = scraper.get_all_serie_b()
+    path = store.save_ufmg_data(key, data)
+    n_teams = len(data.get("probabilities", {}).get("rebaixamento", []))
+    print(f"Saved UFMG statistical data ({n_teams} teams) -> {path}")
 
 
 def _build_derived(team: str, store: JsonStore) -> None:

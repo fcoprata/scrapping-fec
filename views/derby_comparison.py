@@ -110,6 +110,26 @@ with tab_campanha:
             help="Pontos reais menos pontos esperados (Poisson).",
         )
 
+    # Bloco UFMG de Probabilidades Matemáticas
+    ufmg_data = load_json("ufmg_serie_b_2026.json") or {}
+    if ufmg_data:
+        from name_match import normalize_name
+        teams_sum = {r.get("norm_team"): r for r in ufmg_data.get("teams_summary", [])}
+        f_u = teams_sum.get("fortaleza", {})
+        c_u = teams_sum.get("ceara", {})
+        if f_u or c_u:
+            st.markdown("<div style='height: 8px;'></div>", unsafe_allow_html=True)
+            st.markdown("#### 🎯 Probabilidades Matemáticas — Departamento de Matemática UFMG")
+            u1, u2, u3, u4 = st.columns(4)
+            with u1:
+                st.metric("🏆 Prob. Título", f"{f_u.get('prob_campeao', 0.0):.1f}% vs {c_u.get('prob_campeao', 0.0):.1f}%")
+            with u2:
+                st.metric("🚀 Acesso Direto (Top 2)", f"{f_u.get('prob_acesso_direto', 0.0):.1f}% vs {c_u.get('prob_acesso_direto', 0.0):.1f}%")
+            with u3:
+                st.metric("🎟️ Vaga Playoffs (G-6)", f"{f_u.get('prob_playoffs', 0.0):.1f}% vs {c_u.get('prob_playoffs', 0.0):.1f}%")
+            with u4:
+                st.metric("🛑 Risco de Rebaixamento", f"{f_u.get('prob_rebaixamento', 0.0):.1f}% vs {c_u.get('prob_rebaixamento', 0.0):.1f}%")
+
     st.divider()
 
     # Tabela comparativa detalhada
