@@ -36,6 +36,7 @@ class PlayerAdvancedSeason:
     """Season totals/averages of SofaScore per-match advanced metrics."""
     player_id: str
     name: str
+    position_group: Optional[str] = None  # fallback quando não há elenco OGol (ex. times sem cobertura OGol)
     matches: int = 0
     minutes: int = 0
     xg: float = 0.0

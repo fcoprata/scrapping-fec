@@ -164,7 +164,7 @@
       "duel_win_pct_pctl": 100.0,
       "pass_accuracy_pctl": 33.3,
       "touches_p90_pctl": 66.7,
-      "turnover_rate_pctl": 100.0
+      "turnover_rate_pctl": 33.3
     },
     {
       "key": "brenno",
@@ -219,7 +219,7 @@
       "duel_win_pct_pctl": null,
       "pass_accuracy_pctl": 66.7,
       "touches_p90_pctl": 33.3,
-      "turnover_rate_pctl": 33.3
+      "turnover_rate_pctl": 100.0
     },
     {
       "key": "samuel brunhara",
@@ -329,7 +329,7 @@
       "duel_win_pct_pctl": 70.0,
       "pass_accuracy_pctl": 80.0,
       "touches_p90_pctl": 70.0,
-      "turnover_rate_pctl": 20.0
+      "turnover_rate_pctl": 90.0
     },
     {
       "key": "luan freitas",
@@ -384,7 +384,7 @@
       "duel_win_pct_pctl": 80.0,
       "pass_accuracy_pctl": 90.0,
       "touches_p90_pctl": 10.0,
-      "turnover_rate_pctl": 10.0
+      "turnover_rate_pctl": 100.0
     },
     {
       "key": "mailton",
@@ -439,7 +439,7 @@
       "duel_win_pct_pctl": 40.0,
       "pass_accuracy_pctl": 10.0,
       "touches_p90_pctl": 90.0,
-      "turnover_rate_pctl": 100.0
+      "turnover_rate_pctl": 10.0
     },
     {
       "key": "neris",
@@ -494,7 +494,7 @@
       "duel_win_pct_pctl": 10.0,
       "pass_accuracy_pctl": 60.0,
       "touches_p90_pctl": 30.0,
-      "turnover_rate_pctl": 40.0
+      "turnover_rate_pctl": 70.0
     },
     {
       "key": "kaua rocha",
@@ -549,7 +549,7 @@
       "duel_win_pct_pctl": 30.0,
       "pass_accuracy_pctl": 70.0,
       "touches_p90_pctl": 60.0,
-      "turnover_rate_pctl": 70.0
+      "turnover_rate_pctl": 40.0
     },
     {
       "key": "cristovam",
@@ -714,7 +714,7 @@
       "duel_win_pct_pctl": 100.0,
       "pass_accuracy_pctl": 50.0,
       "touches_p90_pctl": 100.0,
-      "turnover_rate_pctl": 30.0
+      "turnover_rate_pctl": 80.0
     },
     {
       "key": "lucyo",
@@ -824,7 +824,7 @@
       "duel_win_pct_pctl": 20.0,
       "pass_accuracy_pctl": 100.0,
       "touches_p90_pctl": 20.0,
-      "turnover_rate_pctl": 50.0
+      "turnover_rate_pctl": 60.0
     },
     {
       "key": "mauricio mucuri",
@@ -879,7 +879,7 @@
       "duel_win_pct_pctl": 50.0,
       "pass_accuracy_pctl": 20.0,
       "touches_p90_pctl": 50.0,
-      "turnover_rate_pctl": 80.0
+      "turnover_rate_pctl": 30.0
     },
     {
       "key": "gabriel fuentes",
@@ -934,7 +934,7 @@
       "duel_win_pct_pctl": 90.0,
       "pass_accuracy_pctl": 30.0,
       "touches_p90_pctl": 80.0,
-      "turnover_rate_pctl": 90.0
+      "turnover_rate_pctl": 20.0
     },
     {
       "key": "benjamin kuscevic",
@@ -1209,7 +1209,7 @@
       "duel_win_pct_pctl": 60.0,
       "pass_accuracy_pctl": 40.0,
       "touches_p90_pctl": 40.0,
-      "turnover_rate_pctl": 60.0
+      "turnover_rate_pctl": 50.0
     },
     {
       "key": "joao lucas",
@@ -1429,7 +1429,7 @@
       "duel_win_pct_pctl": 100.0,
       "pass_accuracy_pctl": 60.0,
       "touches_p90_pctl": 80.0,
-      "turnover_rate_pctl": 50.0
+      "turnover_rate_pctl": 60.0
     },
     {
       "key": "bruninho",
@@ -1539,7 +1539,7 @@
       "duel_win_pct_pctl": 70.0,
       "pass_accuracy_pctl": 90.0,
       "touches_p90_pctl": 50.0,
-      "turnover_rate_pctl": 40.0
+      "turnover_rate_pctl": 70.0
     },
     {
       "key": "lucca prior",
@@ -1594,7 +1594,7 @@
       "duel_win_pct_pctl": 30.0,
       "pass_accuracy_pctl": 20.0,
       "touches_p90_pctl": 40.0,
-      "turnover_rate_pctl": 90.0
+      "turnover_rate_pctl": 20.0
     },
     {
       "key": "rodriguinho",
@@ -1649,7 +1649,7 @@
       "duel_win_pct_pctl": 40.0,
       "pass_accuracy_pctl": 30.0,
       "touches_p90_pctl": 90.0,
-      "turnover_rate_pctl": 80.0
+      "turnover_rate_pctl": 30.0
     },
     {
       "key": "lucas sasha",
@@ -1704,7 +1704,7 @@
       "duel_win_pct_pctl": 50.0,
       "pass_accuracy_pctl": 40.0,
       "touches_p90_pctl": 30.0,
-      "turnover_rate_pctl": 70.0
+      "turnover_rate_pctl": 40.0
     },
     {
       "key": "jailson",
@@ -1814,7 +1814,7 @@
       "duel_win_pct_pctl": 90.0,
       "pass_accuracy_pctl": 75.0,
       "touches_p90_pctl": 60.0,
-      "turnover_rate_pctl": 20.0
+      "turnover_rate_pctl": 90.0
     },
     {
       "key": "ronald",
@@ -1869,7 +1869,7 @@
       "duel_win_pct_pctl": 80.0,
       "pass_accuracy_pctl": 75.0,
       "touches_p90_pctl": 20.0,
-      "turnover_rate_pctl": 10.0
+      "turnover_rate_pctl": 100.0
     },
     {
       "key": "rodrigo",
@@ -1924,7 +1924,7 @@
       "duel_win_pct_pctl": 60.0,
       "pass_accuracy_pctl": 50.0,
       "touches_p90_pctl": 70.0,
-      "turnover_rate_pctl": 60.0
+      "turnover_rate_pctl": 50.0
     },
     {
       "key": "tomas pochettino",
@@ -1979,7 +1979,7 @@
       "duel_win_pct_pctl": 20.0,
       "pass_accuracy_pctl": 10.0,
       "touches_p90_pctl": 10.0,
-      "turnover_rate_pctl": 100.0
+      "turnover_rate_pctl": 10.0
     },
     {
       "key": "matheus rossetto",
@@ -2034,7 +2034,7 @@
       "duel_win_pct_pctl": 10.0,
       "pass_accuracy_pctl": 100.0,
       "touches_p90_pctl": 100.0,
-      "turnover_rate_pctl": 30.0
+      "turnover_rate_pctl": 80.0
     },
     {
       "key": "kauan rodrigues",
@@ -2254,7 +2254,7 @@
       "duel_win_pct_pctl": 30.0,
       "pass_accuracy_pctl": 90.0,
       "touches_p90_pctl": 80.0,
-      "turnover_rate_pctl": 30.0
+      "turnover_rate_pctl": 80.0
     },
     {
       "key": "pedro henrique",
@@ -2309,7 +2309,7 @@
       "duel_win_pct_pctl": 100.0,
       "pass_accuracy_pctl": 40.0,
       "touches_p90_pctl": 70.0,
-      "turnover_rate_pctl": 80.0
+      "turnover_rate_pctl": 30.0
     },
     {
       "key": "lucas emanoel",
@@ -2364,7 +2364,7 @@
       "duel_win_pct_pctl": 60.0,
       "pass_accuracy_pctl": 30.0,
       "touches_p90_pctl": 40.0,
-      "turnover_rate_pctl": 90.0
+      "turnover_rate_pctl": 20.0
     },
     {
       "key": "caio wesley",
@@ -2474,7 +2474,7 @@
       "duel_win_pct_pctl": 90.0,
       "pass_accuracy_pctl": 50.0,
       "touches_p90_pctl": 90.0,
-      "turnover_rate_pctl": 50.0
+      "turnover_rate_pctl": 60.0
     },
     {
       "key": "welliton",
@@ -2529,7 +2529,7 @@
       "duel_win_pct_pctl": 80.0,
       "pass_accuracy_pctl": 60.0,
       "touches_p90_pctl": 100.0,
-      "turnover_rate_pctl": 70.0
+      "turnover_rate_pctl": 40.0
     },
     {
       "key": "chico da costa",
@@ -2584,7 +2584,7 @@
       "duel_win_pct_pctl": 10.0,
       "pass_accuracy_pctl": 100.0,
       "touches_p90_pctl": 10.0,
-      "turnover_rate_pctl": 10.0
+      "turnover_rate_pctl": 100.0
     },
     {
       "key": "juan miritello",
@@ -2639,7 +2639,7 @@
       "duel_win_pct_pctl": 50.0,
       "pass_accuracy_pctl": 70.0,
       "touches_p90_pctl": 30.0,
-      "turnover_rate_pctl": 40.0
+      "turnover_rate_pctl": 70.0
     },
     {
       "key": "nathan fogaca",
@@ -2694,7 +2694,7 @@
       "duel_win_pct_pctl": 40.0,
       "pass_accuracy_pctl": 20.0,
       "touches_p90_pctl": 20.0,
-      "turnover_rate_pctl": 60.0
+      "turnover_rate_pctl": 50.0
     },
     {
       "key": "luiz fernando",
@@ -2749,7 +2749,7 @@
       "duel_win_pct_pctl": 70.0,
       "pass_accuracy_pctl": 80.0,
       "touches_p90_pctl": 50.0,
-      "turnover_rate_pctl": 20.0
+      "turnover_rate_pctl": 90.0
     },
     {
       "key": "gb",
@@ -2914,7 +2914,7 @@
       "duel_win_pct_pctl": 20.0,
       "pass_accuracy_pctl": 10.0,
       "touches_p90_pctl": 60.0,
-      "turnover_rate_pctl": 100.0
+      "turnover_rate_pctl": 10.0
     },
     {
       "key": "adam bareiro",

@@ -1,0 +1,172 @@
+{
+  "fixtures": [
+    {
+      "event_id": 15526291,
+      "date": "2026-09-20",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "29",
+      "home_team": "Londrina",
+      "away_team": "Fortaleza",
+      "home_id": 2022,
+      "away_id": 2020
+    },
+    {
+      "event_id": 16857896,
+      "date": "2026-09-21",
+      "competition": "Copa Paraná",
+      "season": "Copa Paraná 2026",
+      "season_id": 97849,
+      "round": "4",
+      "home_team": "Londrina",
+      "away_team": "Paraná Clube",
+      "home_id": 2022,
+      "away_id": 1965
+    },
+    {
+      "event_id": 15526307,
+      "date": "2026-09-25",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "30",
+      "home_team": "Vila Nova FC",
+      "away_team": "Londrina",
+      "home_id": 2021,
+      "away_id": 2022
+    },
+    {
+      "event_id": 16857900,
+      "date": "2026-09-27",
+      "competition": "Copa Paraná",
+      "season": "Copa Paraná 2026",
+      "season_id": 97849,
+      "round": "5",
+      "home_team": "Azuriz",
+      "away_team": "Londrina",
+      "home_id": 375853,
+      "away_id": 2022
+    },
+    {
+      "event_id": 15526315,
+      "date": "2026-10-02",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "31",
+      "home_team": "Londrina",
+      "away_team": "Criciúma",
+      "home_id": 2022,
+      "away_id": 1984
+    },
+    {
+      "event_id": 15526328,
+      "date": "2026-10-07",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "32",
+      "home_team": "Avaí",
+      "away_team": "Londrina",
+      "home_id": 7315,
+      "away_id": 2022
+    },
+    {
+      "event_id": 16857903,
+      "date": "2026-10-12",
+      "competition": "Copa Paraná",
+      "season": "Copa Paraná 2026",
+      "season_id": 97849,
+      "round": "6",
+      "home_team": "Cascavel",
+      "away_team": "Londrina",
+      "home_id": 21891,
+      "away_id": 2022
+    },
+    {
+      "event_id": 15526334,
+      "date": "2026-10-13",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "33",
+      "home_team": "Athletic Club",
+      "away_team": "Londrina",
+      "home_id": 342775,
+      "away_id": 2022
+    },
+    {
+      "event_id": 15526345,
+      "date": "2026-10-17",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "34",
+      "home_team": "Londrina",
+      "away_team": "Cuiabá",
+      "home_id": 2022,
+      "away_id": 49202
+    },
+    {
+      "event_id": 17071266,
+      "date": "2026-10-17",
+      "competition": "Copa Paraná",
+      "season": "Copa Paraná 2026",
+      "season_id": 97849,
+      "round": "7",
+      "home_team": "Londrina",
+      "away_team": "Athletico",
+      "home_id": 2022,
+      "away_id": 1967
+    },
+    {
+      "event_id": 15526360,
+      "date": "2026-10-24",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "35",
+      "home_team": "Clube De Regatas Brasil",
+      "away_team": "Londrina",
+      "home_id": 22032,
+      "away_id": 2022
+    },
+    {
+      "event_id": 15526365,
+      "date": "2026-10-31",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "36",
+      "home_team": "Londrina",
+      "away_team": "América Mineiro",
+      "home_id": 2022,
+      "away_id": 1973
+    },
+    {
+      "event_id": 15526372,
+      "date": "2026-11-07",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "37",
+      "home_team": "Botafogo-SP",
+      "away_team": "Londrina",
+      "home_id": 1979,
+      "away_id": 2022
+    },
+    {
+      "event_id": 15526385,
+      "date": "2026-11-14",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "38",
+      "home_team": "Londrina",
+      "away_team": "Náutico",
+      "home_id": 2022,
+      "away_id": 2011
+    }
+  ]
+}

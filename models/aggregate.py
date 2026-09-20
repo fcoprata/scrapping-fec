@@ -1,9 +1,19 @@
 """Aggregate per-match SofaScore stats into per-player season totals."""
 
+from collections import Counter
 from typing import Dict, Iterable, List
 
 from models.player_match_stats import MatchAdvancedStats, PlayerMatchStats
 from models.player_stats import PlayerAdvancedSeason
+
+# SofaScore usa letra única por posição; times sem cobertura OGol (a maioria da
+# liga) dependem só disso para agrupar percentis por posição.
+_POSITION_LABELS = {
+    "G": "Goleiro",
+    "D": "Defensor",
+    "M": "Meia",
+    "F": "Atacante",
+}
 
 # PlayerMatchStats attr -> PlayerAdvancedSeason attr (summed)
 _SUM_FIELDS = {
@@ -42,6 +52,7 @@ def aggregate_player_season(
     """Sum per-match rows for players whose team name matches the target club."""
     key = team_name_contains.lower()
     acc: Dict[str, PlayerAdvancedSeason] = {}
+    positions: Dict[str, Counter] = {}
     for match in matches:
         for p in match.players:
             if key not in (p.team_name or "").lower():
@@ -54,6 +65,15 @@ def aggregate_player_season(
             row.name = p.name or row.name
             for src, dst in _SUM_FIELDS.items():
                 setattr(row, dst, _round(getattr(row, dst) + (getattr(p, src) or 0)))
+            if p.position:
+                positions.setdefault(p.player_id, Counter())[p.position] += 1
+
+    for player_id, row in acc.items():
+        counts = positions.get(player_id)
+        if counts:
+            most_common = counts.most_common(1)[0][0]
+            row.position_group = _POSITION_LABELS.get(most_common, most_common)
+
     return sorted(acc.values(), key=lambda r: r.minutes, reverse=True)
 
 

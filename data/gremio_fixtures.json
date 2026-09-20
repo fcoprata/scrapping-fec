@@ -1,0 +1,148 @@
+{
+  "fixtures": [
+    {
+      "event_id": 15237999,
+      "date": "2026-10-07",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "29",
+      "home_team": "Remo",
+      "away_team": "Grêmio",
+      "home_id": 2012,
+      "away_id": 5926
+    },
+    {
+      "event_id": 15238197,
+      "date": "2026-10-11",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "30",
+      "home_team": "Grêmio",
+      "away_team": "Internacional",
+      "home_id": 5926,
+      "away_id": 1966
+    },
+    {
+      "event_id": 15238214,
+      "date": "2026-10-18",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "31",
+      "home_team": "Grêmio",
+      "away_team": "Cruzeiro",
+      "home_id": 5926,
+      "away_id": 1954
+    },
+    {
+      "event_id": 15238215,
+      "date": "2026-10-25",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "32",
+      "home_team": "Coritiba",
+      "away_team": "Grêmio",
+      "home_id": 1982,
+      "away_id": 5926
+    },
+    {
+      "event_id": 15238226,
+      "date": "2026-10-28",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "33",
+      "home_team": "Grêmio",
+      "away_team": "Athletico",
+      "home_id": 5926,
+      "away_id": 1967
+    },
+    {
+      "event_id": 17008797,
+      "date": "2026-11-01",
+      "competition": "Copa Betano do Brasil",
+      "season": "Copa do Brasil 2026",
+      "season_id": 89353,
+      "round": "28",
+      "home_team": "Grêmio",
+      "away_team": "Atlético Mineiro",
+      "home_id": 5926,
+      "away_id": 1977
+    },
+    {
+      "event_id": 15238230,
+      "date": "2026-11-04",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "34",
+      "home_team": "Flamengo",
+      "away_team": "Grêmio",
+      "home_id": 5981,
+      "away_id": 5926
+    },
+    {
+      "event_id": 17008798,
+      "date": "2026-11-08",
+      "competition": "Copa Betano do Brasil",
+      "season": "Copa do Brasil 2026",
+      "season_id": 89353,
+      "round": "28",
+      "home_team": "Atlético Mineiro",
+      "away_team": "Grêmio",
+      "home_id": 1977,
+      "away_id": 5926
+    },
+    {
+      "event_id": 15235657,
+      "date": "2026-11-18",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "35",
+      "home_team": "Grêmio",
+      "away_team": "Bahia",
+      "home_id": 5926,
+      "away_id": 1955
+    },
+    {
+      "event_id": 15235661,
+      "date": "2026-11-22",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "36",
+      "home_team": "Santos",
+      "away_team": "Grêmio",
+      "home_id": 1968,
+      "away_id": 5926
+    },
+    {
+      "event_id": 15235672,
+      "date": "2026-11-29",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "37",
+      "home_team": "Corinthians",
+      "away_team": "Grêmio",
+      "home_id": 1957,
+      "away_id": 5926
+    },
+    {
+      "event_id": 15235687,
+      "date": "2026-12-02",
+      "competition": "Brasileirão Betano",
+      "season": "Brasileiro Serie A 2026",
+      "season_id": 87678,
+      "round": "38",
+      "home_team": "Grêmio",
+      "away_team": "Mirassol",
+      "home_id": 5926,
+      "away_id": 21982
+    }
+  ]
+}

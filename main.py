@@ -24,6 +24,7 @@ from name_match import normalize_name
 from models.aggregate import aggregate_player_season
 from resolve.master import build_players_master, build_matches_master
 from models.derived import build_player_metrics, build_team_metrics, build_match_reports
+from models.league import build_league_player_metrics
 from analysis import build_analysis
 from scrapers.transfermarkt import TransfermarktScraper
 from scrapers.ogol import OGolScraper
@@ -57,6 +58,7 @@ def main():
     g_pipeline.add_argument("--analyze-scope", choices=["season", "matches", "all"], default="all", help="Escopo das sínteses: season, matches ou all (padrão: all).")
     g_pipeline.add_argument("--resolve", action="store_true", help="Executa apenas a unificação de identidades de atletas e casamentos de partidas.")
     g_pipeline.add_argument("--all", dest="run_all", action="store_true", help="Pipeline completo: coleta incremental de todas as fontes + build analítico.")
+    g_pipeline.add_argument("--league", action="store_true", help="Agrega player_metrics de todos os clubes cadastrados num dataset único com percentis por liga/divisão (data/league_player_metrics.json).")
 
     # Grupo 2: Coleta de Dados (Scrapers)
     g_scrape = parser.add_argument_group("🌐 Coleta de Dados (Scrapers)")
@@ -100,6 +102,10 @@ def main():
 
     if args.ufmg:
         _fetch_ufmg(UFMGScraper(), store)
+        return
+
+    if args.league:
+        _build_league(store)
         return
 
     if not args.team:
@@ -560,6 +566,17 @@ def _fetch_stats(team: str, source: str, limit: int | None, scraper, store: Json
 
     path = store.save_stats(save_key, all_stats)
     print(f"Saved {len(all_stats)} match stats → {path}")
+
+
+def _build_league(store: JsonStore) -> None:
+    """Agrega player_metrics de todos os clubes cadastrados com dado já coletado."""
+    data = build_league_player_metrics(store)
+    path = store.save_league_player_metrics(data)
+    n = len(data["players"])
+    print(f"💾 League player metrics: {n} jogadores de {data['teams_covered']} clubes -> {path}")
+    if data["teams_covered"] < len(TEAMS):
+        faltam = len(TEAMS) - data["teams_covered"]
+        print(f"   ⚠️ {faltam} clube(s) ainda sem player_metrics coletado (rode --batch-full).")
 
 
 def _discover_all_seasons() -> None:

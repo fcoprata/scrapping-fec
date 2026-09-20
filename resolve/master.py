@@ -113,7 +113,10 @@ def build_players_master(squad: dict, player_stats: dict, advanced_season: dict)
                 "name": name,
                 "sofascore_id": sofascore_id,
                 "ogol_id": ogol_id,
-                "position_group": sq.get("position") if sq is not None else None,
+                "position_group": (
+                    (sq.get("position") if sq is not None else None)
+                    or (adv.get("position_group") if adv is not None else None)
+                ),
                 "position_detail": sq.get("position_detail") if sq is not None else None,
                 "age": sq.get("age") if sq is not None else None,
                 "nationality": sq.get("nationality") if sq is not None else None,

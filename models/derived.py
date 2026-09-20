@@ -257,9 +257,11 @@ def _inject_percentiles(rows: List[dict]) -> None:
     for metric in _PCTL_METRICS:
         if metric not in df.columns:
             continue
-        # turnover_rate: menor é melhor -> ascending=True dá pct baixo p/ quem perde
-        # menos bola; é exatamente o que queremos (percentil alto = bom).
-        pct = df.groupby("position_group")[metric].rank(pct=True, ascending=True) * 100
+        # turnover_rate: menor é melhor -> ascending=False dá percentil alto para
+        # quem perde menos bola (mantém a convenção "percentil alto = bom" em
+        # todas as métricas, igual xg_p90/duel_win_pct/etc).
+        ascending = metric != "turnover_rate"
+        pct = df.groupby("position_group")[metric].rank(pct=True, ascending=ascending) * 100
         col = f"{metric}_pctl"
         for i, row in enumerate(rows):
             val = pct.iloc[i]

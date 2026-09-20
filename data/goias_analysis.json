@@ -1,0 +1,1011 @@
+{
+  "season_year": "2026",
+  "season": {
+    "strengths": [
+      {
+        "tag": "bola_parada",
+        "kind": "strength",
+        "text": "Arma ofensiva forte em bola parada.",
+        "evidence": "38% do xG criado vem de bola parada"
+      }
+    ],
+    "weaknesses": [
+      {
+        "tag": "finalizacao",
+        "kind": "weakness",
+        "text": "Desperdiça chances: produz xG mas não converte.",
+        "evidence": "28 gols vs 32.61 xG (-4.6)"
+      },
+      {
+        "tag": "bola_parada",
+        "kind": "weakness",
+        "text": "Vulnerável em bola parada defensiva.",
+        "evidence": "34% do xG sofrido vem de bola parada"
+      },
+      {
+        "tag": "resistencia",
+        "kind": "weakness",
+        "text": "Concede mais no fim do jogo — queda física/concentração.",
+        "evidence": "xG sofrido pico no intervalo 75-90' (9.32)"
+      }
+    ],
+    "notes": [],
+    "editorial_hooks": [
+      {
+        "type": "tactical",
+        "tag": "O Garçom Oculto",
+        "headline": "Lourenço cria chances de elite que os companheiros não convertem",
+        "lead": "Produziu 1.59 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
+        "badge": "Destaque Individual"
+      },
+      {
+        "type": "alert",
+        "tag": "Síndrome do Recuo",
+        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.79/90min ao abrir vantagem",
+        "lead": "Quando está empatando o time concede 1.17 xG/90, mas recua e cede 1.79 xG/90 quando está à frente no placar.",
+        "badge": "Atenção Tática"
+      },
+      {
+        "type": "trend",
+        "tag": "O 12º Jogador",
+        "headline": "Esli García é o reserva mais decisivo do elenco",
+        "lead": "Saindo do banco em 11 partidas, acumula 4 participações em gols (1G / 3A) e 1.69 (xG+xA).",
+        "badge": "Arma Secreta"
+      }
+    ],
+    "facts": {
+      "points_real": 39,
+      "points_expected": 36.1616,
+      "xg_diff": -3.83,
+      "finishing": -4.61,
+      "keeping": 2.44,
+      "ppg_home": 1.692,
+      "ppg_away": 1.133
+    },
+    "narrative": "Na temporada, Goiás soma **39 pontos reais** (11V, 6E, 11D) com **36.2 xPts** esperados e saldo de **-3.83 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Desperdiça chances: produz xG mas não converte; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração."
+  },
+  "matches": {
+    "15525989": {
+      "event_id": 15525989,
+      "date": "2026-03-22",
+      "opponent": "América Mineiro",
+      "score": "3:1",
+      "strengths": [
+        {
+          "tag": "resultado",
+          "kind": "strength",
+          "text": "Goleada aplicada.",
+          "evidence": "3-1"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "strength",
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "3 gols de 1.96 xG"
+        },
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 1.96-1.77"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Tadeu decisivo.",
+          "evidence": "nota 7.7, xG+xA 0.79"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Gonzalo Mastriani foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.66"
+        }
+      ],
+      "narrative": "Partida disputada contra o **América Mineiro** (2026-03-22, em casa), encerrada em **3:1**, com **1.96 xG gerados** e **1.77 xG concedidos**.\n\n**Pontos Positivos:** Goleada aplicada; Finalização clínica: converteu acima do xG; Controlou o jogo do início ao fim no xG; Tadeu decisivo.\n\n**Observações Táticas:** Gonzalo Mastriani foi o mais perigoso do rival."
+    },
+    "15525998": {
+      "event_id": 15525998,
+      "date": "2026-04-01",
+      "opponent": "Londrina",
+      "score": "2:2",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Nicolas abaixo.",
+          "evidence": "nota 5.7"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Bruno Santos foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.99"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Londrina** (2026-04-01, fora de casa), encerrada em **2:2**, com **2.12 xG gerados** e **1.62 xG concedidos**.\n\n**Pontos Negativos:** Nicolas abaixo.\n\n**Observações Táticas:** Bruno Santos foi o mais perigoso do rival."
+    },
+    "15526010": {
+      "event_id": 15526010,
+      "date": "2026-04-07",
+      "opponent": "Criciúma",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Cadu decisivo.",
+          "evidence": "nota 7.5, xG+xA 0.62"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Criciúma** (2026-04-07, em casa), encerrada em **1:0**, com **1.32 xG gerados** e **0.74 xG concedidos**.\n\n**Pontos Positivos:** Cadu decisivo."
+    },
+    "15526024": {
+      "event_id": 15526024,
+      "date": "2026-04-11",
+      "opponent": "Juventude",
+      "score": "2:0",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Tadeu melhor em campo.",
+          "evidence": "nota 8.2, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "defesa",
+          "kind": "weakness",
+          "text": "Punição acima do esperado — erros pontuais custaram caro.",
+          "evidence": "2 sofridos de 0.55 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Luiz Felipe abaixo.",
+          "evidence": "nota 5.4"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em set-piece"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Juventude** (2026-04-11, fora de casa), encerrada em **2:0**, com **0.32 xG gerados** e **0.55 xG concedidos**.\n\n**Pontos Positivos:** Tadeu melhor em campo.\n\n**Pontos Negativos:** Punição acima do esperado — erros pontuais custaram caro; Luiz Felipe abaixo; Sofreu gol de bola parada."
+    },
+    "15526030": {
+      "event_id": 15526030,
+      "date": "2026-04-19",
+      "opponent": "Cuiabá",
+      "score": "0:2",
+      "strengths": [],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Hernandes foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.13"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Cuiabá** (2026-04-19, em casa), encerrada em **0:2**, com **0.29 xG gerados** e **1.39 xG concedidos**.\n\n**Observações Táticas:** Hernandes foi o mais perigoso do rival."
+    },
+    "15526037": {
+      "event_id": 15526037,
+      "date": "2026-04-26",
+      "opponent": "São Bernardo",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "1 sofridos de 2.43 xG"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "0 gols de 1.58 xG"
+        },
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Entrou mal no jogo — cedeu xG cedo.",
+          "evidence": "atrás no xG já aos 29'"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Felipe Garcia foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.16"
+        }
+      ],
+      "narrative": "Partida disputada contra o **São Bernardo** (2026-04-26, fora de casa), encerrada em **1:0**, com **1.58 xG gerados** e **2.43 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG.\n\n**Pontos Negativos:** Pouca pontaria: criou e não converteu; Entrou mal no jogo — cedeu xG cedo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Felipe Garcia foi o mais perigoso do rival."
+    },
+    "15526051": {
+      "event_id": 15526051,
+      "date": "2026-05-02",
+      "opponent": "Fortaleza",
+      "score": "4:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Guilherme Baldória melhor em campo.",
+          "evidence": "nota 7.4, xG+xA 0.02"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Goleada sofrida.",
+          "evidence": "1-4"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Nicolas abaixo.",
+          "evidence": "nota 5.1"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Juan Miritello foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.69"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Fortaleza** (2026-05-02, fora de casa), encerrada em **4:1**, com **0.81 xG gerados** e **1.79 xG concedidos**.\n\n**Pontos Positivos:** Guilherme Baldória melhor em campo.\n\n**Pontos Negativos:** Goleada sofrida; Nicolas abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Juan Miritello foi o mais perigoso do rival."
+    },
+    "15526081": {
+      "event_id": 15526081,
+      "date": "2026-05-09",
+      "opponent": "Vila Nova FC",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Gegê melhor em campo.",
+          "evidence": "nota 7.6, xG+xA 0.37"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Ramon Menezes abaixo.",
+          "evidence": "nota 6.0"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Marquinhos Gabriel foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.50"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Vila Nova FC** (2026-05-09, em casa), encerrada em **1:0**, com **1.35 xG gerados** e **0.46 xG concedidos**.\n\n**Pontos Positivos:** Gegê melhor em campo.\n\n**Pontos Negativos:** Ramon Menezes abaixo.\n\n**Observações Táticas:** Marquinhos Gabriel foi o mais perigoso do rival."
+    },
+    "15526091": {
+      "event_id": 15526091,
+      "date": "2026-05-16",
+      "opponent": "Botafogo-SP",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 0.75-0.29"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lucas Ribeiro melhor em campo.",
+          "evidence": "nota 7.8, xG+xA 0.12"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Botafogo-SP** (2026-05-16, em casa), encerrada em **1:0**, com **0.75 xG gerados** e **0.29 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Lucas Ribeiro melhor em campo."
+    },
+    "15526103": {
+      "event_id": 15526103,
+      "date": "2026-05-24",
+      "opponent": "Avaí",
+      "score": "0:2",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lucas Lima melhor em campo.",
+          "evidence": "nota 7.6, xG+xA 0.09"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Avaí** (2026-05-24, fora de casa), encerrada em **0:2**, com **2.23 xG gerados** e **0.50 xG concedidos**.\n\n**Pontos Positivos:** Lucas Lima melhor em campo."
+    },
+    "15526112": {
+      "event_id": 15526112,
+      "date": "2026-05-30",
+      "opponent": "Atlético Goianiense",
+      "score": "1:1",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "1 sofridos de 2.09 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Anselmo Ramon melhor em campo.",
+          "evidence": "nota 7.8, xG+xA 0.07"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Amassado no volume de chances.",
+          "evidence": "xG final 0.69-2.09"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em penalty"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho pior que o placar.",
+          "evidence": "xG 0.69-2.09"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Guilherme Marques foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.09"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Atlético Goianiense** (2026-05-30, fora de casa), encerrada em **1:1**, com **0.69 xG gerados** e **2.09 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Anselmo Ramon melhor em campo.\n\n**Pontos Negativos:** Amassado no volume de chances; Sofreu gol de bola parada.\n\n**Observações Táticas:** Empate com desempenho pior que o placar; Guilherme Marques foi o mais perigoso do rival."
+    },
+    "15526122": {
+      "event_id": 15526122,
+      "date": "2026-06-10",
+      "opponent": "Grêmio Novorizontino",
+      "score": "0:4",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lucas Lima melhor em campo.",
+          "evidence": "nota 7.8, xG+xA 0.48"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Goleada sofrida.",
+          "evidence": "0-4"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "0 gols de 2.16 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Luis Fellipe abaixo.",
+          "evidence": "nota 5.3"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em penalty"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Rômulo foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.40"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Grêmio Novorizontino** (2026-06-10, em casa), encerrada em **0:4**, com **2.16 xG gerados** e **2.92 xG concedidos**.\n\n**Pontos Positivos:** Lucas Lima melhor em campo.\n\n**Pontos Negativos:** Goleada sofrida; Pouca pontaria: criou e não converteu; Luis Fellipe abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Rômulo foi o mais perigoso do rival."
+    },
+    "15526129": {
+      "event_id": 15526129,
+      "date": "2026-06-14",
+      "opponent": "Athletic Club",
+      "score": "1:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Esli García decisivo.",
+          "evidence": "nota 7.8, xG+xA 0.97"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Kadu abaixo.",
+          "evidence": "nota 5.8"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho pior que o placar.",
+          "evidence": "xG 1.17-1.99"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Zeca foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.81"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Athletic Club** (2026-06-14, fora de casa), encerrada em **1:1**, com **1.17 xG gerados** e **1.99 xG concedidos**.\n\n**Pontos Positivos:** Esli García decisivo.\n\n**Pontos Negativos:** Kadu abaixo.\n\n**Observações Táticas:** Empate com desempenho pior que o placar; Zeca foi o mais perigoso do rival."
+    },
+    "16311743": {
+      "event_id": 16311743,
+      "date": "2026-06-21",
+      "opponent": "Operário-PR",
+      "score": "0:3",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Filipe Machado melhor em campo.",
+          "evidence": "nota 8.3, xG+xA 0.07"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Goleada sofrida.",
+          "evidence": "0-3"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "0 gols de 1.03 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Thiago Rodrigues abaixo.",
+          "evidence": "nota 5.2"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Operário-PR** (2026-06-21, em casa), encerrada em **0:3**, com **1.03 xG gerados** e **1.05 xG concedidos**.\n\n**Pontos Positivos:** Filipe Machado melhor em campo.\n\n**Pontos Negativos:** Goleada sofrida; Pouca pontaria: criou e não converteu; Thiago Rodrigues abaixo."
+    },
+    "15526155": {
+      "event_id": 15526155,
+      "date": "2026-06-28",
+      "opponent": "Náutico",
+      "score": "0:1",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "0 sofridos de 1.05 xG"
+        },
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 1.45-1.05"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Thiago Rodrigues melhor em campo.",
+          "evidence": "nota 8.2, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Dodô foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.58"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Náutico** (2026-06-28, fora de casa), encerrada em **0:1**, com **1.45 xG gerados** e **1.05 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Controlou o jogo do início ao fim no xG; Thiago Rodrigues melhor em campo.\n\n**Observações Táticas:** Dodô foi o mais perigoso do rival."
+    },
+    "15526163": {
+      "event_id": 15526163,
+      "date": "2026-07-04",
+      "opponent": "Ceará",
+      "score": "2:0",
+      "strengths": [
+        {
+          "tag": "finalizacao",
+          "kind": "strength",
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "2 gols de 0.54 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lucas Lima melhor em campo.",
+          "evidence": "nota 8.2, xG+xA 0.25"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Cadu abaixo.",
+          "evidence": "nota 6.0"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 0.54-0.69, xPts 1.15"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Ceará** (2026-07-04, em casa), encerrada em **2:0**, com **0.54 xG gerados** e **0.69 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; Lucas Lima melhor em campo.\n\n**Pontos Negativos:** Cadu abaixo.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances."
+    },
+    "15526176": {
+      "event_id": 15526176,
+      "date": "2026-07-12",
+      "opponent": "Clube De Regatas Brasil",
+      "score": "2:2",
+      "strengths": [
+        {
+          "tag": "finalizacao",
+          "kind": "strength",
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "2 gols de 0.90 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Kadu melhor em campo.",
+          "evidence": "nota 7.6, xG+xA 0.04"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Jean Carlos abaixo.",
+          "evidence": "nota 6.0"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em penalty"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho pior que o placar.",
+          "evidence": "xG 0.90-1.86"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Mikael foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.96"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Clube De Regatas Brasil** (2026-07-12, fora de casa), encerrada em **2:2**, com **0.90 xG gerados** e **1.86 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; Kadu melhor em campo.\n\n**Pontos Negativos:** Jean Carlos abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Empate com desempenho pior que o placar; Mikael foi o mais perigoso do rival."
+    },
+    "15526178": {
+      "event_id": 15526178,
+      "date": "2026-07-18",
+      "opponent": "Ponte Preta",
+      "score": "1:2",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Kadu melhor em campo.",
+          "evidence": "nota 8.4, xG+xA 0.22"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em penalty"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 1.11-1.91, xPts 0.88"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Elvis foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.24"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Ponte Preta** (2026-07-18, fora de casa), encerrada em **1:2**, com **1.11 xG gerados** e **1.91 xG concedidos**.\n\n**Pontos Positivos:** Kadu melhor em campo.\n\n**Pontos Negativos:** Sofreu gol de bola parada.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; Elvis foi o mais perigoso do rival."
+    },
+    "15526193": {
+      "event_id": 15526193,
+      "date": "2026-07-22",
+      "opponent": "Sport Recife",
+      "score": "1:1",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 0.82-0.24"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Rodrigo Soares melhor em campo.",
+          "evidence": "nota 7.3, xG+xA 0.23"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Sport Recife** (2026-07-22, em casa), encerrada em **1:1**, com **0.82 xG gerados** e **0.24 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Rodrigo Soares melhor em campo."
+    },
+    "15526200": {
+      "event_id": 15526200,
+      "date": "2026-07-26",
+      "opponent": "América Mineiro",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 2.47-0.15"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Dominou e perdeu — falta de eficiência decidiu.",
+          "evidence": "xG 2.47-0.15, xPts 2.75"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "0 gols de 2.47 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Cadu abaixo.",
+          "evidence": "nota 6.0"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida disputada contra o **América Mineiro** (2026-07-26, fora de casa), encerrada em **1:0**, com **2.47 xG gerados** e **0.15 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG.\n\n**Pontos Negativos:** Dominou e perdeu — falta de eficiência decidiu; Pouca pontaria: criou e não converteu; Cadu abaixo."
+    },
+    "15526213": {
+      "event_id": 15526213,
+      "date": "2026-08-10",
+      "opponent": "Londrina",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 1.50-0.63"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Thiago Rodrigues melhor em campo.",
+          "evidence": "nota 8.5, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "João Vitor foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.57"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Londrina** (2026-08-10, em casa), encerrada em **1:0**, com **1.50 xG gerados** e **0.63 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Thiago Rodrigues melhor em campo.\n\n**Observações Táticas:** João Vitor foi o mais perigoso do rival."
+    },
+    "15526224": {
+      "event_id": 15526224,
+      "date": "2026-08-15",
+      "opponent": "Criciúma",
+      "score": "1:0",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Thiago Rodrigues melhor em campo.",
+          "evidence": "nota 8.0, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "0 gols de 1.01 xG"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Criciúma** (2026-08-15, fora de casa), encerrada em **1:0**, com **1.01 xG gerados** e **0.93 xG concedidos**.\n\n**Pontos Positivos:** Thiago Rodrigues melhor em campo.\n\n**Pontos Negativos:** Pouca pontaria: criou e não converteu; Sofreu gol de bola parada."
+    },
+    "15526233": {
+      "event_id": 15526233,
+      "date": "2026-08-19",
+      "opponent": "Juventude",
+      "score": "0:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Filipe Machado melhor em campo.",
+          "evidence": "nota 7.7, xG+xA 0.09"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Fábio Lima foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.52"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Juventude** (2026-08-19, em casa), encerrada em **0:1**, com **0.62 xG gerados** e **1.01 xG concedidos**.\n\n**Pontos Positivos:** Filipe Machado melhor em campo.\n\n**Observações Táticas:** Fábio Lima foi o mais perigoso do rival."
+    },
+    "15526246": {
+      "event_id": 15526246,
+      "date": "2026-08-22",
+      "opponent": "Cuiabá",
+      "score": "1:1",
+      "strengths": [
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "1 sofridos de 2.81 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Tadeu melhor em campo.",
+          "evidence": "nota 8.8, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Amassado no volume de chances.",
+          "evidence": "xG final 0.73-2.81"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Empate com desempenho pior que o placar.",
+          "evidence": "xG 0.73-2.81"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Vinicius Peixoto foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.21"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Cuiabá** (2026-08-22, fora de casa), encerrada em **1:1**, com **0.73 xG gerados** e **2.81 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Tadeu melhor em campo.\n\n**Pontos Negativos:** Amassado no volume de chances.\n\n**Observações Táticas:** Empate com desempenho pior que o placar; Vinicius Peixoto foi o mais perigoso do rival."
+    },
+    "15526253": {
+      "event_id": 15526253,
+      "date": "2026-08-28",
+      "opponent": "São Bernardo",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lucas Rodrigues melhor em campo.",
+          "evidence": "nota 8.3, xG+xA 0.10"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 1.09-1.15, xPts 1.31"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Pedrinho foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.72"
+        }
+      ],
+      "narrative": "Partida disputada contra o **São Bernardo** (2026-08-28, em casa), encerrada em **2:1**, com **1.09 xG gerados** e **1.15 xG concedidos**.\n\n**Pontos Positivos:** Lucas Rodrigues melhor em campo.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; Pedrinho foi o mais perigoso do rival."
+    },
+    "15526263": {
+      "event_id": 15526263,
+      "date": "2026-09-05",
+      "opponent": "Fortaleza",
+      "score": "0:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lourenço melhor em campo.",
+          "evidence": "nota 7.3, xG+xA 0.18"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Fortaleza** (2026-09-05, em casa), encerrada em **0:1**, com **0.56 xG gerados** e **0.53 xG concedidos**.\n\n**Pontos Positivos:** Lourenço melhor em campo.\n\n**Pontos Negativos:** Sofreu gol de bola parada."
+    },
+    "15526277": {
+      "event_id": 15526277,
+      "date": "2026-09-10",
+      "opponent": "Vila Nova FC",
+      "score": "2:0",
+      "strengths": [],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Kadu abaixo.",
+          "evidence": "nota 5.7"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "João Vieira foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.77"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Vila Nova FC** (2026-09-10, fora de casa), encerrada em **2:0**, com **0.50 xG gerados** e **1.16 xG concedidos**.\n\n**Pontos Negativos:** Kadu abaixo.\n\n**Observações Táticas:** João Vieira foi o mais perigoso do rival."
+    },
+    "15526278": {
+      "event_id": 15526278,
+      "date": "2026-09-14",
+      "opponent": "Botafogo-SP",
+      "score": "1:3",
+      "strengths": [
+        {
+          "tag": "resultado",
+          "kind": "strength",
+          "text": "Goleada aplicada.",
+          "evidence": "3-1"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "strength",
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "3 gols de 1.53 xG"
+        },
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "1 sofridos de 2.73 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Tadeu decisivo.",
+          "evidence": "nota 8.0, xG+xA 0.79"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Amassado no volume de chances.",
+          "evidence": "xG final 1.53-2.73"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 1.53-2.73, xPts 0.77"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Hygor foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.55"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Botafogo-SP** (2026-09-14, fora de casa), encerrada em **1:3**, com **1.53 xG gerados** e **2.73 xG concedidos**.\n\n**Pontos Positivos:** Goleada aplicada; Finalização clínica: converteu acima do xG; Defesa/goleiro salvaram — sofreu menos que o xG; Tadeu decisivo.\n\n**Pontos Negativos:** Amassado no volume de chances.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; Hygor foi o mais perigoso do rival."
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "fixtures": [
+    {
+      "event_id": 15526306,
+      "date": "2026-09-27",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "30",
+      "home_team": "Clube De Regatas Brasil",
+      "away_team": "Cuiabá",
+      "home_id": 22032,
+      "away_id": 49202
+    },
+    {
+      "event_id": 15526311,
+      "date": "2026-10-02",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "31",
+      "home_team": "São Bernardo",
+      "away_team": "Clube De Regatas Brasil",
+      "home_id": 47504,
+      "away_id": 22032
+    },
+    {
+      "event_id": 15526330,
+      "date": "2026-10-07",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "32",
+      "home_team": "Clube De Regatas Brasil",
+      "away_team": "Atlético Goianiense",
+      "home_id": 22032,
+      "away_id": 7314
+    },
+    {
+      "event_id": 15526336,
+      "date": "2026-10-12",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "33",
+      "home_team": "Fortaleza",
+      "away_team": "Clube De Regatas Brasil",
+      "home_id": 2020,
+      "away_id": 22032
+    },
+    {
+      "event_id": 15526350,
+      "date": "2026-10-18",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "34",
+      "home_team": "Clube De Regatas Brasil",
+      "away_team": "Botafogo-SP",
+      "home_id": 22032,
+      "away_id": 1979
+    },
+    {
+      "event_id": 15526360,
+      "date": "2026-10-24",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "35",
+      "home_team": "Clube De Regatas Brasil",
+      "away_team": "Londrina",
+      "home_id": 22032,
+      "away_id": 2022
+    },
+    {
+      "event_id": 15526367,
+      "date": "2026-10-31",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "36",
+      "home_team": "Goiás",
+      "away_team": "Clube De Regatas Brasil",
+      "home_id": 1960,
+      "away_id": 22032
+    },
+    {
+      "event_id": 15526379,
+      "date": "2026-11-07",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "37",
+      "home_team": "Náutico",
+      "away_team": "Clube De Regatas Brasil",
+      "home_id": 2011,
+      "away_id": 22032
+    },
+    {
+      "event_id": 15526390,
+      "date": "2026-11-14",
+      "competition": "Brasileirão Série B",
+      "season": "Brasileiro Serie B 2026",
+      "season_id": 89840,
+      "round": "38",
+      "home_team": "Clube De Regatas Brasil",
+      "away_team": "Ceará",
+      "home_id": 22032,
+      "away_id": 2001
+    }
+  ]
+}

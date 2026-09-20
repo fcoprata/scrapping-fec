@@ -1,5 +1,6 @@
 import json
 import os
+import time
 from dataclasses import asdict
 from typing import List
 from models.match import Match
@@ -10,6 +11,28 @@ from models.player_match_stats import MatchAdvancedStats
 
 
 _DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+
+# Pastas dentro de ~/Documents costumam ser sincronizadas (iCloud Drive), então
+# um arquivo que acabamos de salvar pode ser lido de volta truncado enquanto o
+# sync ainda está materializando o conteúdo em disco. Isso já derrubou builds
+# do pipeline em lote (JSONDecodeError logo após um save bem-sucedido). Como
+# sempre lemos algo que este mesmo processo escreveu por completo segundos
+# antes, um retry curto resolve — não é um dado realmente corrompido.
+_READ_RETRIES = 3
+_READ_RETRY_DELAY_S = 0.4
+
+
+def _read_json(path: str):
+    last_err = None
+    for attempt in range(_READ_RETRIES):
+        try:
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
+        except json.JSONDecodeError as e:
+            last_err = e
+            if attempt < _READ_RETRIES - 1:
+                time.sleep(_READ_RETRY_DELAY_S)
+    raise last_err
 
 
 class JsonStore:
@@ -53,15 +76,13 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_squad.json"))
         if not os.path.exists(path):
             return {"season_year": "", "epoca_id": "", "players": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     def load(self, team: str) -> List[dict]:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_matches.json"))
         if not os.path.exists(path):
             return []
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     # ---- SofaScore advanced stats ------------------------------------
     def save_match_advanced(
@@ -80,8 +101,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_advanced_matches.json"))
         if not os.path.exists(path):
             return {"season_year": "", "matches": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     def save_advanced_season(
         self, team: str, rows: List[PlayerAdvancedSeason], season_year: str
@@ -99,30 +119,26 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_advanced_season.json"))
         if not os.path.exists(path):
             return {"season_year": "", "players": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     # ---- raw source loaders (resolve layer) -------------------------
     def load_ogol_matches(self, team: str) -> list:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_ogol_matches.json"))
         if not os.path.exists(path):
             return []
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     def load_ogol_stats(self, team: str) -> list:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_ogol_stats.json"))
         if not os.path.exists(path):
             return []
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     def load_player_stats(self, team: str) -> dict:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_player_stats.json"))
         if not os.path.exists(path):
             return {"season_year": "", "players": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     # ---- resolve layer: players_master / matches_master ------------
     def save_players_master(self, team: str, rows: list, season_year: str) -> str:
@@ -136,8 +152,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_players_master.json"))
         if not os.path.exists(path):
             return {"season_year": "", "players": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     def save_matches_master(self, team: str, rows: list, season_year: str) -> str:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_matches_master.json"))
@@ -150,8 +165,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_matches_master.json"))
         if not os.path.exists(path):
             return {"season_year": "", "matches": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     # ---- derive layer: player_metrics / team_metrics / match_reports ----
     def save_player_metrics(self, team: str, rows: list, season_year: str) -> str:
@@ -164,8 +178,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_player_metrics.json"))
         if not os.path.exists(path):
             return {"season_year": "", "players": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     def save_team_metrics(self, team: str, data: dict, season_year: str) -> str:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_team_metrics.json"))
@@ -177,8 +190,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_team_metrics.json"))
         if not os.path.exists(path):
             return {}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     def save_match_reports(self, team: str, reports: list, season_year: str) -> str:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_match_reports.json"))
@@ -190,8 +202,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_match_reports.json"))
         if not os.path.exists(path):
             return {"season_year": "", "reports": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     def save_analysis(self, team: str, data: dict, season_year: str) -> str:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_analysis.json"))
@@ -203,8 +214,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_analysis.json"))
         if not os.path.exists(path):
             return {}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     # ---- fixtures / standings ---------------------------------------
     def save_fixtures(self, team: str, rows: list) -> str:
@@ -217,8 +227,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_fixtures.json"))
         if not os.path.exists(path):
             return {"fixtures": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
     def save_standings(self, key: str, rows: list) -> str:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"standings_{key}.json"))
@@ -230,8 +239,20 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"standings_{key}.json"))
         if not os.path.exists(path):
             return {"standings": []}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
+
+    # ---- league-wide (todos os clubes) --------------------------------
+    def save_league_player_metrics(self, data: dict) -> str:
+        path = os.path.abspath(os.path.join(_DATA_DIR, "league_player_metrics.json"))
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        return path
+
+    def load_league_player_metrics(self) -> dict:
+        path = os.path.abspath(os.path.join(_DATA_DIR, "league_player_metrics.json"))
+        if not os.path.exists(path):
+            return {"generated_at": "", "players": []}
+        return _read_json(path)
 
     # ---- UFMG statistical & probabilistic data ----------------------
     def save_ufmg_data(self, key: str, data: dict) -> str:
@@ -244,8 +265,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"ufmg_{key}.json"))
         if not os.path.exists(path):
             return {}
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        return _read_json(path)
 
 
 def _advanced_row_dict(row: PlayerAdvancedSeason) -> dict:
