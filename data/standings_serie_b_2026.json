@@ -15,6 +15,19 @@
     },
     {
       "position": 2,
+      "team_id": 2020,
+      "team_name": "Fortaleza",
+      "played": 29,
+      "wins": 14,
+      "draws": 9,
+      "losses": 6,
+      "goals_for": 33,
+      "goals_against": 24,
+      "goal_diff": "+9",
+      "points": 51
+    },
+    {
+      "position": 3,
       "team_id": 135514,
       "team_name": "Grêmio Novorizontino",
       "played": 29,
@@ -27,7 +40,7 @@
       "points": 50
     },
     {
-      "position": 3,
+      "position": 4,
       "team_id": 1980,
       "team_name": "Juventude",
       "played": 29,
@@ -38,19 +51,6 @@
       "goals_against": 19,
       "goal_diff": "+12",
       "points": 50
-    },
-    {
-      "position": 4,
-      "team_id": 2020,
-      "team_name": "Fortaleza",
-      "played": 28,
-      "wins": 13,
-      "draws": 9,
-      "losses": 6,
-      "goals_for": 31,
-      "goals_against": 23,
-      "goal_diff": "+8",
-      "points": 48
     },
     {
       "position": 5,
@@ -225,13 +225,13 @@
       "position": 18,
       "team_id": 2022,
       "team_name": "Londrina",
-      "played": 28,
+      "played": 29,
       "wins": 7,
       "draws": 7,
-      "losses": 14,
-      "goals_for": 38,
-      "goals_against": 39,
-      "goal_diff": "-1",
+      "losses": 15,
+      "goals_for": 39,
+      "goals_against": 41,
+      "goal_diff": "-2",
       "points": 28
     },
     {

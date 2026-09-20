@@ -63,6 +63,21 @@
       "contract_until": null
     },
     {
+      "player_id": "228951",
+      "slug": "bastos",
+      "name": "Bastos",
+      "position": "Defensor",
+      "jersey_number": null,
+      "age": 35,
+      "nationality": "Angola",
+      "market_value_eur": 600000,
+      "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/85/36/16918536_bastos_20260916185451.png",
+      "profile_url": "https://www.ogol.com.br/jogador/bastos/228951?epoca_id=155",
+      "active": true,
+      "position_detail": "Zagueiro",
+      "contract_until": "-"
+    },
+    {
       "player_id": "730296",
       "slug": "samuel-brunhara",
       "name": "Samuel Brunhara",
@@ -363,21 +378,6 @@
       "contract_until": null
     },
     {
-      "player_id": "1173235",
-      "slug": "luiz-locio",
-      "name": "Luiz Lócio",
-      "position": "Meia",
-      "jersey_number": null,
-      "age": 20,
-      "nationality": "Brasil",
-      "market_value_eur": null,
-      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/30/88/1513088_luiz_locio_20260706145916.png",
-      "profile_url": "https://www.ogol.com.br/jogador/luiz-locio/1173235?epoca_id=155",
-      "active": true,
-      "position_detail": null,
-      "contract_until": null
-    },
-    {
       "player_id": "238452",
       "slug": "lucas-crispim",
       "name": "Lucas Crispim",
@@ -518,7 +518,7 @@
       "name": "Rodrigo",
       "position": "Meia",
       "jersey_number": "29",
-      "age": 25,
+      "age": 26,
       "nationality": "Brasil",
       "market_value_eur": 500000,
       "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/06/44/620644_rodrigo__20250318160439.png",
@@ -733,6 +733,21 @@
       "market_value_eur": 1500000,
       "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/79/57/547957_nathan_fogaca_20260717011704.jpg",
       "profile_url": "https://www.ogol.com.br/jogador/nathan-fogaca/547957?epoca_id=155",
+      "active": true,
+      "position_detail": "Centroavante",
+      "contract_until": "31/12/2027"
+    },
+    {
+      "player_id": "873083",
+      "slug": "juan-cantillo",
+      "name": "Juan Cantillo",
+      "position": "Atacante",
+      "jersey_number": null,
+      "age": 23,
+      "nationality": "Colômbia",
+      "market_value_eur": 200000,
+      "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/30/83/873083_juan_cantillo_20260915170345.png",
+      "profile_url": "https://www.ogol.com.br/jogador/juan-cantillo/873083?epoca_id=155",
       "active": true,
       "position_detail": "Centroavante",
       "contract_until": "31/12/2027"

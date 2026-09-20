@@ -1,18 +1,6 @@
 {
   "fixtures": [
     {
-      "event_id": 15526291,
-      "date": "2026-09-20",
-      "competition": "Brasileirão Série B",
-      "season": "Brasileiro Serie B 2026",
-      "season_id": 89840,
-      "round": "29",
-      "home_team": "Londrina",
-      "away_team": "Fortaleza",
-      "home_id": 2022,
-      "away_id": 2020
-    },
-    {
       "event_id": 15526302,
       "date": "2026-09-27",
       "competition": "Brasileirão Série B",
@@ -50,7 +38,7 @@
     },
     {
       "event_id": 15526336,
-      "date": "2026-10-10",
+      "date": "2026-10-12",
       "competition": "Brasileirão Série B",
       "season": "Brasileiro Serie B 2026",
       "season_id": 89840,
@@ -109,6 +97,30 @@
       "away_id": 2020
     },
     {
+      "event_id": 17142631,
+      "date": "2026-11-07",
+      "competition": "Taca Fares Lopes, Group C",
+      "season": "Taca Fares Lopes 2026",
+      "season_id": 104180,
+      "round": "2",
+      "home_team": "Palmácia EC",
+      "away_team": "Fortaleza",
+      "home_id": 1230057,
+      "away_id": 2020
+    },
+    {
+      "event_id": 17142634,
+      "date": "2026-11-11",
+      "competition": "Taca Fares Lopes, Group C",
+      "season": "Taca Fares Lopes 2026",
+      "season_id": 104180,
+      "round": "3",
+      "home_team": "Fortaleza",
+      "away_team": "Tirol/CEFAT",
+      "home_id": 2020,
+      "away_id": 398170
+    },
+    {
       "event_id": 15526386,
       "date": "2026-11-14",
       "competition": "Brasileirão Série B",
@@ -119,6 +131,30 @@
       "away_team": "Vila Nova FC",
       "home_id": 2020,
       "away_id": 2021
+    },
+    {
+      "event_id": 17142638,
+      "date": "2026-11-14",
+      "competition": "Taca Fares Lopes, Group C",
+      "season": "Taca Fares Lopes 2026",
+      "season_id": 104180,
+      "round": "4",
+      "home_team": "Fortaleza",
+      "away_team": "Palmácia EC",
+      "home_id": 2020,
+      "away_id": 1230057
+    },
+    {
+      "event_id": 17142641,
+      "date": "2026-11-18",
+      "competition": "Taca Fares Lopes, Group C",
+      "season": "Taca Fares Lopes 2026",
+      "season_id": 104180,
+      "round": "5",
+      "home_team": "Tirol/CEFAT",
+      "away_team": "Fortaleza",
+      "home_id": 398170,
+      "away_id": 2020
     }
   ]
 }

@@ -36,40 +36,40 @@
     "match_url": "https://www.ogol.com.br/jogo/2026-10-23-ponte-preta-fortaleza/12043554"
   },
   {
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "opponent": "Sport",
     "score": null,
     "home_away": "A",
     "competition": "Brasileirão Série B 2026",
     "status": "upcoming",
-    "match_url": "https://www.ogol.com.br/jogo/2026-10-16-sport-fortaleza/12043551"
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-17-sport-fortaleza/12043551"
   },
   {
-    "date": "2026-10-08",
+    "date": "2026-10-12",
     "opponent": "CRB",
     "score": null,
     "home_away": "H",
     "competition": "Brasileirão Série B 2026",
     "status": "upcoming",
-    "match_url": "https://www.ogol.com.br/jogo/2026-10-09-fortaleza-crb/12043538"
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-13-fortaleza-crb/12043538"
   },
   {
-    "date": "2026-10-05",
+    "date": "2026-10-07",
     "opponent": "América Mineiro",
     "score": null,
     "home_away": "A",
     "competition": "Brasileirão Série B 2026",
     "status": "upcoming",
-    "match_url": "https://www.ogol.com.br/jogo/2026-10-06-america-mineiro-fortaleza/12043526"
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-08-america-mineiro-fortaleza/12043526"
   },
   {
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "opponent": "Náutico",
     "score": null,
     "home_away": "H",
     "competition": "Brasileirão Série B 2026",
     "status": "upcoming",
-    "match_url": "https://www.ogol.com.br/jogo/2026-10-02-fortaleza-nautico/12043518"
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-03-fortaleza-nautico/12043518"
   },
   {
     "date": "2026-09-27",
@@ -83,10 +83,10 @@
   {
     "date": "2026-09-20",
     "opponent": "Londrina",
-    "score": null,
+    "score": "1-2",
     "home_away": "A",
     "competition": "Brasileirão Série B 2026",
-    "status": "upcoming",
+    "status": "played",
     "match_url": "https://www.ogol.com.br/jogo/2026-09-20-londrina-fortaleza/12043497"
   },
   {

@@ -348,11 +348,29 @@ def _discover_sofascore(team: str) -> None:
 
 
 def _rehydrate_advanced(d: dict):
-    """Reconstruct MatchAdvancedStats from a saved dict (keys match dataclass fields)."""
+    """Reconstruct MatchAdvancedStats from a saved dict (keys match dataclass fields).
+
+    Tolerant of schema drift: JSON saved by an older version of the scraper can carry
+    fields the current dataclasses have renamed or dropped (ex.: ``assist_name`` ->
+    ``assist_player_name`` on Shot). Unknown keys are dropped instead of raising, so a
+    stale cache entry never blocks an incremental fetch from picking up new matches.
+    """
+    from dataclasses import fields
     from models.player_match_stats import MatchAdvancedStats, PlayerMatchStats, Shot
+
+    _SHOT_RENAMES = {"assist_name": "assist_player_name"}
+
+    def _coerce(cls, raw: dict):
+        raw = dict(raw)
+        for old, new in _SHOT_RENAMES.items():
+            if old in raw and new not in raw:
+                raw[new] = raw.pop(old)
+        known = {f.name for f in fields(cls)}
+        return cls(**{k: v for k, v in raw.items() if k in known})
+
     d = dict(d)
-    d["players"] = [PlayerMatchStats(**p) for p in d.get("players", [])]
-    d["shots"] = [Shot(**s) for s in d.get("shots", [])]
+    d["players"] = [_coerce(PlayerMatchStats, p) for p in d.get("players", [])]
+    d["shots"] = [_coerce(Shot, s) for s in d.get("shots", [])]
     return MatchAdvancedStats(**d)
 
 

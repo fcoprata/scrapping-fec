@@ -36,34 +36,34 @@
     "match_url": "https://www.ogol.com.br/jogo/2026-10-23-ceara-goias/12043558"
   },
   {
-    "date": "2026-10-15",
+    "date": "2026-10-17",
     "opponent": "Juventude",
     "score": null,
     "home_away": "H",
     "competition": "Brasileirão Série B 2026",
     "status": "upcoming",
-    "match_url": "https://www.ogol.com.br/jogo/2026-10-16-ceara-juventude/12043548"
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-17-ceara-juventude/12043548"
   },
   {
-    "date": "2026-10-08",
+    "date": "2026-10-12",
     "opponent": "Botafogo-SP",
     "score": null,
     "home_away": "A",
     "competition": "Brasileirão Série B 2026",
     "status": "upcoming",
-    "match_url": "https://www.ogol.com.br/jogo/2026-10-09-botafogo-sp-ceara/12043534"
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-13-botafogo-sp-ceara/12043534"
   },
   {
-    "date": "2026-10-05",
+    "date": "2026-10-08",
     "opponent": "Criciúma",
     "score": null,
     "home_away": "H",
     "competition": "Brasileirão Série B 2026",
     "status": "upcoming",
-    "match_url": "https://www.ogol.com.br/jogo/2026-10-06-ceara-criciuma/12043528"
+    "match_url": "https://www.ogol.com.br/jogo/2026-10-08-ceara-criciuma/12043528"
   },
   {
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "opponent": "Avaí",
     "score": null,
     "home_away": "A",
@@ -83,19 +83,19 @@
   {
     "date": "2026-09-18",
     "opponent": "Grêmio Novorizontino",
-    "score": null,
+    "score": "2-1",
     "home_away": "H",
     "competition": "Brasileirão Série B 2026",
-    "status": "upcoming",
+    "status": "played",
     "match_url": "https://www.ogol.com.br/jogo/2026-09-19-ceara-gremio-novorizontino/12043498"
   },
   {
     "date": "2026-09-13",
     "opponent": "Fortaleza",
-    "score": null,
+    "score": "1-1",
     "home_away": "A",
     "competition": "Brasileirão Série B 2026",
-    "status": "upcoming",
+    "status": "played",
     "match_url": "https://www.ogol.com.br/jogo/2026-09-13-fortaleza-ceara/12043488"
   },
   {
