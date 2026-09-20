@@ -16,7 +16,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -45,6 +45,14 @@ jobs:
         run: |
           python main.py --team fortaleza --analyze || true
           python main.py --team ceara --analyze || true
+        continue-on-error: true
+
+      - name: Run pipeline (demais 38 clubes — Série A/B)
+        run: python main.py --batch-full --division all --skip-teams fortaleza,ceara
+        continue-on-error: true
+
+      - name: Build league-wide dataset
+        run: python main.py --league || true
         continue-on-error: true
 
       - name: Sanity check (no regression to empty)
