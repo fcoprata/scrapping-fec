@@ -14,17 +14,27 @@ if "active_team" not in st.session_state:
 
 _TEAM_LABELS = {t: TEAMS.get(t, {}).get("name", t.title()) for t in available_teams}
 
+if "filter_division" in st.session_state:
+    div_sel = st.session_state["filter_division"]
+    if div_sel in ("Série A", "Série B"):
+        if TEAMS.get(st.session_state.get("active_team"), {}).get("division") != div_sel:
+            matches = [t for t in available_teams if TEAMS.get(t, {}).get("division") == div_sel]
+            matches.sort(key=lambda t: _TEAM_LABELS.get(t, t.title()))
+            if matches:
+                st.session_state["active_team"] = matches[0]
+
 active = get_active_team()
+active_div = TEAMS.get(active, {}).get("division", "Série B")
 inject_fortaleza_theme("fortaleza")
 
 with st.sidebar:
     st.markdown(
-        """
+        f"""
         <div style="text-align: center; padding: 10px 0 14px 0; border-bottom: 2px solid #E2E8F0; margin-bottom: 16px;">
             <div style="font-size: 2.5rem; line-height: 1;">🦁</div>
             <div style="font-size: 1.25rem; font-weight: 800; color: #002B7F; letter-spacing: 0.5px; margin-top: 4px;">FORTALEZA ANALYTICS</div>
             <div style="display: flex; justify-content: center; gap: 4px; margin-top: 6px;">
-                <span class="fec-badge" style="font-size: 0.75rem; padding: 2px 8px;">Série B</span>
+                <span class="fec-badge" style="font-size: 0.75rem; padding: 2px 8px;">{active_div}</span>
                 <span class="fec-badge fec-badge-gold" style="font-size: 0.75rem; padding: 2px 8px;">Temporada 2026</span>
             </div>
             <div style="font-size: 0.78rem; color: #64748B; margin-top: 8px; font-weight: 500;">
@@ -36,9 +46,33 @@ with st.sidebar:
     )
 
     if len(available_teams) > 1:
+        st.markdown("**Divisão:**")
+        if "filter_division" not in st.session_state:
+            st.session_state["filter_division"] = active_div
+
+        div_choice = st.radio(
+            "Filtrar por Divisão",
+            options=["Série A", "Série B", "Todas"],
+            horizontal=True,
+            label_visibility="collapsed",
+            key="filter_division",
+        )
+
+        if div_choice == "Série A":
+            filtered_teams = [t for t in available_teams if TEAMS.get(t, {}).get("division") == "Série A"]
+        elif div_choice == "Série B":
+            filtered_teams = [t for t in available_teams if TEAMS.get(t, {}).get("division") == "Série B"]
+        else:
+            filtered_teams = list(available_teams)
+
+        filtered_teams.sort(key=lambda t: _TEAM_LABELS.get(t, t.title()))
+
+        if st.session_state.get("active_team") not in filtered_teams:
+            st.session_state["active_team"] = filtered_teams[0]
+
         st.selectbox(
             "Clube em análise",
-            options=available_teams,
+            options=filtered_teams,
             format_func=lambda t: _TEAM_LABELS.get(t, t.title()),
             key="active_team",
         )

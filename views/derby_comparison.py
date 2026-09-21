@@ -19,31 +19,67 @@ if "comp_team_a" not in st.session_state:
 if "comp_team_b" not in st.session_state:
     st.session_state["comp_team_b"] = "ceara"
 
+# Sincronização pré-render caso a divisão selecionada mude
+if "comp_div_a" in st.session_state:
+    div_sel_a = st.session_state["comp_div_a"]
+    if div_sel_a in ("Série A", "Série B"):
+        if TEAMS.get(st.session_state.get("comp_team_a"), {}).get("division") != div_sel_a:
+            matches_a = [t for t in available_teams if TEAMS.get(t, {}).get("division") == div_sel_a]
+            matches_a.sort(key=lambda t: TEAMS.get(t, {}).get("name", t.title()))
+            if matches_a:
+                st.session_state["comp_team_a"] = matches_a[0]
+
+if "comp_div_b" in st.session_state:
+    div_sel_b = st.session_state["comp_div_b"]
+    if div_sel_b in ("Série A", "Série B"):
+        if TEAMS.get(st.session_state.get("comp_team_b"), {}).get("division") != div_sel_b:
+            matches_b = [t for t in available_teams if TEAMS.get(t, {}).get("division") == div_sel_b]
+            matches_b.sort(key=lambda t: TEAMS.get(t, {}).get("name", t.title()))
+            if matches_b:
+                pick_b = matches_b[0]
+                if pick_b == st.session_state.get("comp_team_a") and len(matches_b) > 1:
+                    pick_b = matches_b[1]
+                st.session_state["comp_team_b"] = pick_b
+
 # Seleção dos Dois Clubes
 col_sel_a, col_sel_vs, col_sel_b = st.columns([5, 1, 5])
 
-curr_a = st.session_state.get("comp_team_a", "fortaleza")
-curr_b = st.session_state.get("comp_team_b", "ceara")
-
-idx_a = available_teams.index(curr_a) if curr_a in available_teams else 0
-idx_b = available_teams.index(curr_b) if curr_b in available_teams else (1 if len(available_teams) > 1 else 0)
-
 with col_sel_a:
+    st.markdown("**Time A**")
+    if "comp_div_a" not in st.session_state:
+        st.session_state["comp_div_a"] = TEAMS.get(st.session_state.get("comp_team_a", "fortaleza"), {}).get("division", "Série B")
+
+    div_a = st.radio(
+        "Divisão Time A",
+        options=["Série A", "Série B", "Todas"],
+        horizontal=True,
+        key="comp_div_a",
+        label_visibility="collapsed",
+    )
+    if div_a == "Série A":
+        teams_a = [t for t in available_teams if TEAMS.get(t, {}).get("division") == "Série A"]
+    elif div_a == "Série B":
+        teams_a = [t for t in available_teams if TEAMS.get(t, {}).get("division") == "Série B"]
+    else:
+        teams_a = list(available_teams)
+    teams_a.sort(key=lambda t: TEAMS.get(t, {}).get("name", t.title()))
+    if not teams_a:
+        teams_a = list(available_teams)
+
+    if st.session_state.get("comp_team_a") not in teams_a:
+        st.session_state["comp_team_a"] = teams_a[0]
+
     team_a = st.selectbox(
         "Selecione o Time A",
-        options=available_teams,
-        index=idx_a,
+        options=teams_a,
         format_func=lambda t: f"{TEAMS.get(t, {}).get('name', t.title())} ({TEAMS.get(t, {}).get('division', '')})",
-        key="sel_comp_team_a",
+        key="comp_team_a",
     )
-    if team_a != curr_a:
-        st.session_state["comp_team_a"] = team_a
-        st.rerun()
 
 with col_sel_vs:
     st.markdown(
         """
-        <div style="display: flex; align-items: center; justify-content: center; height: 100%; min-height: 70px;">
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%; min-height: 90px; margin-top: 24px;">
             <span style="font-size: 1.4rem; font-weight: 900; color: #94A3B8;">VS</span>
         </div>
         """,
@@ -51,16 +87,39 @@ with col_sel_vs:
     )
 
 with col_sel_b:
+    st.markdown("**Time B**")
+    if "comp_div_b" not in st.session_state:
+        st.session_state["comp_div_b"] = TEAMS.get(st.session_state.get("comp_team_b", "ceara"), {}).get("division", "Série B")
+
+    div_b = st.radio(
+        "Divisão Time B",
+        options=["Série A", "Série B", "Todas"],
+        horizontal=True,
+        key="comp_div_b",
+        label_visibility="collapsed",
+    )
+    if div_b == "Série A":
+        teams_b = [t for t in available_teams if TEAMS.get(t, {}).get("division") == "Série A"]
+    elif div_b == "Série B":
+        teams_b = [t for t in available_teams if TEAMS.get(t, {}).get("division") == "Série B"]
+    else:
+        teams_b = list(available_teams)
+    teams_b.sort(key=lambda t: TEAMS.get(t, {}).get("name", t.title()))
+    if not teams_b:
+        teams_b = list(available_teams)
+
+    if st.session_state.get("comp_team_b") not in teams_b:
+        pick_b = teams_b[0]
+        if pick_b == st.session_state.get("comp_team_a") and len(teams_b) > 1:
+            pick_b = teams_b[1]
+        st.session_state["comp_team_b"] = pick_b
+
     team_b = st.selectbox(
         "Selecione o Time B",
-        options=available_teams,
-        index=idx_b,
+        options=teams_b,
         format_func=lambda t: f"{TEAMS.get(t, {}).get('name', t.title())} ({TEAMS.get(t, {}).get('division', '')})",
-        key="sel_comp_team_b",
+        key="comp_team_b",
     )
-    if team_b != curr_b:
-        st.session_state["comp_team_b"] = team_b
-        st.rerun()
 
 name_a = TEAMS.get(team_a, {}).get("name", team_a.title())
 name_b = TEAMS.get(team_b, {}).get("name", team_b.title())
