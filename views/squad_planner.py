@@ -26,24 +26,6 @@ def _fmt_eur(v) -> str:
 _EUR_COL = st.column_config.NumberColumn("Valor (€)", format="compact")
 _PCT_COL = st.column_config.NumberColumn("% Titular", format="percent", help="Titularidades ÷ jogos do time.")
 
-available_teams = get_available_teams()
-active_curr = get_active_team()
-
-# Seletor de clube no topo da página
-col_head1, col_head2 = st.columns([3, 1])
-with col_head2:
-    idx_def = available_teams.index(active_curr) if active_curr in available_teams else 0
-    selected_team = st.selectbox(
-        "Clube em Análise",
-        options=available_teams,
-        index=idx_def,
-        format_func=lambda t: f"{TEAMS.get(t, {}).get('name', t.title())} ({TEAMS.get(t, {}).get('division', '')})",
-        key="squad_team_select",
-    )
-    if selected_team != st.session_state.get("active_team"):
-        st.session_state["active_team"] = selected_team
-        st.rerun()
-
 team = get_active_team()
 team_name = get_active_team_name()
 

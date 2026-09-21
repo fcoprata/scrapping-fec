@@ -14,47 +14,12 @@ render_page_header(
 
 available_teams = get_available_teams()
 
-# Presets Rápidos de Clássicos
-st.markdown("##### ⚡ Atalhos de Clássicos & Duelos:")
-col_p1, col_p2, col_p3, col_p4, col_p5 = st.columns(5)
-
 if "comp_team_a" not in st.session_state:
     st.session_state["comp_team_a"] = "fortaleza"
 if "comp_team_b" not in st.session_state:
     st.session_state["comp_team_b"] = "ceara"
 
-with col_p1:
-    if st.button("🦁🏁 Clássico-Rei", use_container_width=True):
-        st.session_state["comp_team_a"] = "fortaleza"
-        st.session_state["comp_team_b"] = "ceara"
-        st.rerun()
-
-with col_p2:
-    if st.button("🔴⚫⚪ Fla-Flu", use_container_width=True):
-        st.session_state["comp_team_a"] = "flamengo"
-        st.session_state["comp_team_b"] = "fluminense"
-        st.rerun()
-
-with col_p3:
-    if st.button("🐷🦅 Dérbi Paulista", use_container_width=True):
-        st.session_state["comp_team_a"] = "palmeiras"
-        st.session_state["comp_team_b"] = "corinthians"
-        st.rerun()
-
-with col_p4:
-    if st.button("🐓🦊 Clássico Mineiro", use_container_width=True):
-        st.session_state["comp_team_a"] = "atletico-mineiro"
-        st.session_state["comp_team_b"] = "cruzeiro"
-        st.rerun()
-
-with col_p5:
-    if st.button("🐋🦁 Santos vs Sport", use_container_width=True):
-        st.session_state["comp_team_a"] = "santos"
-        st.session_state["comp_team_b"] = "sport-recife"
-        st.rerun()
-
 # Seleção dos Dois Clubes
-st.markdown("<div style='margin-top: 10px;'></div>", unsafe_allow_html=True)
 col_sel_a, col_sel_vs, col_sel_b = st.columns([5, 1, 5])
 
 curr_a = st.session_state.get("comp_team_a", "fortaleza")
