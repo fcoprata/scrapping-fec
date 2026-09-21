@@ -71,7 +71,7 @@ def main():
     g_scrape.add_argument("--discover", action="store_true", help="Descobre torneios e IDs no SofaScore para a equipe.")
     g_scrape.add_argument("--limit", type=int, default=None, help="Limite máximo de partidas a processar.")
     g_scrape.add_argument("--fixtures", action="store_true", help="Coleta os próximos jogos (SofaScore) do time.")
-    g_scrape.add_argument("--standings", action="store_true", help="Coleta a classificação (SofaScore) da Série B 2026.")
+    g_scrape.add_argument("--standings", action="store_true", help="Coleta a classificação (SofaScore) da Série A e Série B 2026.")
     g_scrape.add_argument("--ufmg", action="store_true", help="Coleta dados estatísticos e probabilidades da UFMG para a Série B 2026.")
 
     args = parser.parse_args()
@@ -439,10 +439,22 @@ def _fetch_fixtures(team: str, scraper: SofaScoreScraper, store: JsonStore) -> N
     print(f"Saved {len(events)} upcoming fixtures -> {path}")
 
 
-def _fetch_standings(scraper: SofaScoreScraper, store: JsonStore, tournament_id: int = 390, season_id: int = 89840) -> None:
-    rows = scraper.get_standings(tournament_id, season_id)
-    path = store.save_standings("serie_b_2026", rows)
-    print(f"Saved {len(rows)} standings rows -> {path}")
+def _fetch_standings(scraper: SofaScoreScraper, store: JsonStore) -> None:
+    # Série B (tournament 390, season 89840)
+    try:
+        rows_b = scraper.get_standings(390, 89840)
+        path_b = store.save_standings("serie_b_2026", rows_b)
+        print(f"Saved {len(rows_b)} standings rows (Série B) -> {path_b}")
+    except Exception as e:
+        print(f"Failed to fetch Série B standings: {e}")
+
+    # Série A (tournament 325, season 87678)
+    try:
+        rows_a = scraper.get_standings(325, 87678)
+        path_a = store.save_standings("serie_a_2026", rows_a)
+        print(f"Saved {len(rows_a)} standings rows (Série A) -> {path_a}")
+    except Exception as e:
+        print(f"Failed to fetch Série A standings: {e}")
 
 
 def _fetch_ufmg(scraper: UFMGScraper, store: JsonStore, key: str = "serie_b_2026") -> None:
