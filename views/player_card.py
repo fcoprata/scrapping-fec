@@ -2,19 +2,40 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+from config import TEAMS
 from views._common import (
     get_active_team,
     get_active_team_name,
+    get_available_teams,
     load_json,
     render_page_header,
 )
 
+available_teams = get_available_teams()
+active_curr = get_active_team()
+
+# Seletor de clube no topo da página
+col_head1, col_head2 = st.columns([3, 1])
+with col_head2:
+    idx_def = available_teams.index(active_curr) if active_curr in available_teams else 0
+    selected_team = st.selectbox(
+        "Clube em Análise",
+        options=available_teams,
+        index=idx_def,
+        format_func=lambda t: f"{TEAMS.get(t, {}).get('name', t.title())} ({TEAMS.get(t, {}).get('division', '')})",
+        key="card_team_select",
+    )
+    if selected_team != st.session_state.get("active_team"):
+        st.session_state["active_team"] = selected_team
+        st.rerun()
+
 team = get_active_team()
 team_name = get_active_team_name()
+division_name = TEAMS.get(team, {}).get("division", "Série B")
 
 render_page_header(
     title=f"Card do Jogador — {team_name}",
-    subtitle="Perfil técnico detalhado, radar de percentis por posição e histórico jogo a jogo.",
+    subtitle=f"Perfil técnico detalhado, radar de percentis e histórico jogo a jogo ({division_name} 2026).",
     tag="Perfil do Atleta",
 )
 
@@ -25,7 +46,7 @@ ogol_players = stats_data.get("players", []) if isinstance(stats_data, dict) els
 
 players = pmj.get("players", [])
 if not players:
-    st.warning(f"Sem métricas individuais de jogadores para {team_name}. Rode: `python main.py --team {team} --build`")
+    st.warning(f"Sem métricas individuais de jogadores para o {team_name}. Rode a esteira analítica para gerar métricas.")
     st.stop()
 
 by_name = {p["name"]: p for p in sorted(players, key=lambda x: -(x.get("minutes") or 0))}
@@ -60,10 +81,12 @@ match_ratings = [
 sofascore_rating = round(sum(match_ratings) / len(match_ratings), 2) if match_ratings else None
 rating_final = p.get("avg_rating") or sofascore_rating or ogol_rating
 
-val_str = f"€ {p['market_value_eur']:,}" if p.get("market_value_eur") else "N/A"
+val_str = f"€ {p['market_value_eur']:,}" if p.get("market_value_eur") else "Sob consulta"
+age_str = f"{p.get('age')} anos" if p.get("age") else "Idade sob consulta"
+contract_str = p.get("contract_until") or "Sob consulta"
 
 # Texto comparativo de minutagem
-min_badge = f"⏱️ <b>{p.get('minutes', 0)} min</b> ({p.get('matches', 0)} jgs na Série B)"
+min_badge = f"⏱️ <b>{p.get('minutes', 0)} min</b> ({p.get('matches', 0)} jgs no {division_name})"
 if ogol_mins and ogol_mins != p.get("minutes"):
     min_badge += f" &nbsp;·&nbsp; 🌍 <b>{ogol_mins} min</b> ({ogol_apps} jgs no ano total)"
 
@@ -73,8 +96,8 @@ st.markdown(
         <span class="fec-badge">{p.get('position_group') or 'Posição N/A'}</span>
         <span style="color: #1E293B; font-weight: 700; font-size: 1.1rem; margin-right: 12px;">{p.get('name')}</span>
         <span style="color: #64748B; font-size: 0.95rem;">
-            🎂 <b>{p.get('age') or '?'} anos</b> &nbsp;·&nbsp;
-            📄 Contrato: <b>{p.get('contract_until') or '?'}</b> &nbsp;·&nbsp;
+            🎂 <b>{age_str}</b> &nbsp;·&nbsp;
+            📄 Contrato: <b>{contract_str}</b> &nbsp;·&nbsp;
             💰 Valor: <b>{val_str}</b> &nbsp;·&nbsp;
             {min_badge}
         </span>
@@ -93,7 +116,7 @@ if is_goalkeeper:
     c1.metric(
         "Nota Média",
         f"{rating_final:.2f}" if rating_final else "—",
-        help=f"Nota SofaScore (Série B): {sofascore_rating or 'N/A'} | Nota OGol (Ano Todo): {ogol_rating or 'N/A'}",
+        help=f"Nota SofaScore ({division_name}): {sofascore_rating or 'N/A'} | Nota OGol (Ano Todo): {ogol_rating or 'N/A'}",
     )
     goals_conceded = p.get("goals_conceded") or ogol_conceded or 0
     c2.metric(
@@ -106,14 +129,14 @@ if is_goalkeeper:
         int(p.get("matches") or 0),
         delta=f"{ogol_apps} jgs no ano" if ogol_apps and ogol_apps != p.get("matches") else None,
         delta_color="off",
-        help=f"Jogos na Série B: {p.get('matches', 0)}. Jogos no ano todo: {ogol_apps or p.get('matches', 0)}.",
+        help=f"Jogos no {division_name}: {p.get('matches', 0)}. Jogos no ano todo: {ogol_apps or p.get('matches', 0)}.",
     )
     c4.metric(
         "Minutos",
         int(p.get("minutes") or 0),
         delta=f"{ogol_mins} min no ano" if ogol_mins and ogol_mins != p.get("minutes") else None,
         delta_color="off",
-        help=f"Minutos na Série B: {p.get('minutes', 0)}. Minutos no ano todo: {ogol_mins or p.get('minutes', 0)}.",
+        help=f"Minutos no {division_name}: {p.get('minutes', 0)}. Minutos no ano todo: {ogol_mins or p.get('minutes', 0)}.",
     )
 else:
     # Jogadores de linha: Nota Média | Gols | Assistências | Minutos
@@ -123,29 +146,28 @@ else:
     c1.metric(
         "Nota Média",
         f"{rating_final:.2f}" if rating_final else "—",
-        help=f"Nota SofaScore (Série B): {sofascore_rating or 'N/A'} | Nota OGol (Ano Todo): {ogol_rating or 'N/A'}",
+        help=f"Nota SofaScore ({division_name}): {sofascore_rating or 'N/A'} | Nota OGol (Ano Todo): {ogol_rating or 'N/A'}",
     )
     c2.metric(
         "Gols",
         int(goals),
         delta=f"{ogol_goals} no ano" if ogol_goals and ogol_goals != goals else (round(p.get("xg_overperformance"), 2) if p.get("xg_overperformance") is not None else None),
-        help=f"Gols na Série B: {goals}. Gols no ano todo (todas as competições): {ogol_goals if ogol_goals is not None else goals}. Delta xG: {p.get('xg_overperformance')}",
+        help=f"Gols no {division_name}: {goals}. Gols no ano todo (todas as competições): {ogol_goals if ogol_goals is not None else goals}. Delta xG: {p.get('xg_overperformance')}",
     )
     c3.metric(
         "Assist.",
         int(assists),
         delta=f"{ogol_assists} no ano" if ogol_assists and ogol_assists != assists else None,
         delta_color="off",
-        help=f"Assistências na Série B: {assists}. Assistências no ano todo: {ogol_assists if ogol_assists is not None else assists}.",
+        help=f"Assistências no {division_name}: {assists}. Assistências no ano todo: {ogol_assists if ogol_assists is not None else assists}.",
     )
     c4.metric(
         "Minutos",
         int(p.get("minutes") or 0),
         delta=f"{ogol_mins} min no ano" if ogol_mins and ogol_mins != p.get("minutes") else f"{int(p.get('matches') or 0)} jogos",
         delta_color="off",
-        help=f"Minutos na Série B: {p.get('minutes', 0)} ({p.get('matches', 0)} jogos). Minutos somando todas as competições: {ogol_mins or p.get('minutes', 0)} ({ogol_apps or p.get('matches', 0)} jogos).",
+        help=f"Minutos no {division_name}: {p.get('minutes', 0)} ({p.get('matches', 0)} jogos). Minutos somando todas as competições: {ogol_mins or p.get('minutes', 0)} ({ogol_apps or p.get('matches', 0)} jogos).",
     )
-
 
 st.divider()
 
@@ -183,14 +205,14 @@ st.subheader(f"📊 Perfil de Percentis vs {p.get('position_group') or 'Posiçã
 if not radar.empty:
     st.bar_chart(radar.set_index("Métrica"))
 else:
-    st.caption("Sem percentis calculados para este jogador.")
+    st.caption("Sem percentis calculados para este atleta.")
 
 st.divider()
 
 # Jogo a jogo
 rows = []
 for r in reports:
-    hit = next((x for x in r.get("players_for", []) if x.get("key") == p["key"]), None)
+    hit = next((x for x in r.get("players_for", []) if x.get("key") == p.get("key") or (x.get("name") or "").lower() == (p.get("name") or "").lower()), None)
     if hit:
         rows.append(
             {
@@ -217,8 +239,8 @@ if rows:
 else:
     st.caption("Sem participações em partidas registradas nesta temporada.")
 
-# Perfis similares
-same = [q for q in players if q.get("position_group") == p.get("position_group") and q["key"] != p["key"]]
+# Perfis similares no elenco
+same = [q for q in players if q.get("position_group") == p.get("position_group") and q.get("key") != p.get("key")]
 if same:
     cols = [f"{m}_pctl" for m in PCTL]
     base = np.array([p.get(c) or 0 for c in cols], float)

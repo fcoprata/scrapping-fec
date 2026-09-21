@@ -28,13 +28,13 @@ Páginas:
 
 1. **Dashboard da Equipe** — KPIs reais vs esperados (Poisson xPts), Comparativo de Turnos (1º vs 2º Turno), Campo 2D Interativo de Finalizações e Assistências (trajetórias reais e passes de gol), Matriz Tática de Quadrantes (xG/90 vs xA/90), Game State (comportamento por placar), Raio-X de finalizações e impacto das substituições.
 2. **Relatório de Jogo** — xG Race, diagnóstico tático estatístico, Campo 2D do Jogo (trajetória de chutes e passes de assistência), impacto dos reservas e tabela analítica.
-3. **Clássico-Rei (Comparativo)** — Duelo direto Fortaleza vs Ceará (campanha, ataque, defesa, bola parada, mercado e destaques individuais cara a cara).
+3. **Comparador de Clubes** — Duelo direto lado a lado entre quaisquer dois clubes das Séries A e B (campanha, ataque, defesa, bola parada, mercado, probabilidades da UFMG e destaques individuais cara a cara, com atalhos para os principais clássicos nacionais).
 4. **Calendário & Inteligência de Tabela** — Classificação oficial da Série B 2026, calculadora matemática de acesso (Modelo G-6), análise aprofundada dos candidatos ao rebaixamento (Z-4 Watch, metas de permanência 45/46 pts), estatísticas e probabilidades oficiais da UFMG (mandantes, visitantes, últimas 10 rodadas), comparativo com a média histórica rodada a rodada, próximos jogos e Raio-X pré-jogo.
-5. **Planejador de Elenco** — Minutagem, dependência tática, contratos, valor de mercado.
-6. **Card do Jogador** — Radar de percentis, eficiência de finalização/criação, histórico.
+5. **Planejador de Elenco** — Minutagem e profundidade de elenco para todos os 40 clubes, dependência tática (concentração Top 3), contratos e eficiência de valor.
+6. **Card do Jogador** — Radar de percentis por posição, eficiência de finalização/criação, notas médias e histórico jogo a jogo para qualquer atleta cadastrado.
 7. **Sobre** — Fontes, metodologia e contato do autor.
 
-Troque o clube em análise (Fortaleza / Ceará) no seletor da barra lateral.
+Troque o clube em análise no seletor da barra lateral ou diretamente nas páginas.
 
 ## Atualizar os dados
 
