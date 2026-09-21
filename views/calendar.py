@@ -107,7 +107,10 @@ if not rows:
 TOTAL_ROUNDS = 38
 played_ref = rows[0].get("played", 28) if rows else 28
 
-ufmg_data = load_json("ufmg_serie_b_2026.json") or {}
+ufmg_file = "ufmg_serie_a_2026.json" if is_serie_a else "ufmg_serie_b_2026.json"
+ufmg_data = load_json(ufmg_file) or {}
+if not ufmg_data:
+    ufmg_data = load_json("ufmg_serie_b_2026.json") or {}
 
 
 def _get_team_ufmg_probs(t_name: str) -> dict:
@@ -244,7 +247,9 @@ with tab_access:
     # --- CALCULADORA DE METAS MATEMÁTICAS ---
     if is_serie_a:
         st.subheader("🎯 Calculadora de Metas — Série A (Título & Libertadores)")
-        st.caption("Projeções de pontuação calibradas para o Brasileirão Série A 2026.")
+        st.caption("Projeções de pontuação calibradas para o Brasileirão Série A 2026 + probabilidades da UFMG.")
+        prob_camp_a = team_ufmg_probs.get("prob_campeao")
+        prob_sula_a = team_ufmg_probs.get("prob_sulamericana")
         scenarios = [
             {
                 "id": "titulo",
@@ -254,7 +259,7 @@ with tab_access:
                 "icone": "🥇",
                 "cor": "#F59E0B",
                 "badge": "Campeão Brasileiro",
-                "prob_ufmg": "—",
+                "prob_ufmg": f"{prob_camp_a:.1f}%" if prob_camp_a is not None else "—",
                 "regras": "Campeão brasileiro e vaga direta na Supercopa do Brasil.",
             },
             {
@@ -287,7 +292,7 @@ with tab_access:
                 "icone": "🟡",
                 "cor": "#8B5CF6",
                 "badge": "Copa Sul-Americana",
-                "prob_ufmg": "—",
+                "prob_ufmg": f"{prob_sula_a:.1f}%" if prob_sula_a is not None else "—",
                 "regras": "Classificação para a fase de grupos da Copa Sul-Americana.",
             },
         ]
@@ -498,7 +503,7 @@ with tab_relegation:
         "A régua matemática histórica estabelece **45 pontos** como o patamar clássico de segurança na permanência."
     )
 
-    reb_prof = calc_team_relegation_profile(team_name, rows, ufmg_data if not is_serie_a else None)
+    reb_prof = calc_team_relegation_profile(team_name, rows, ufmg_data)
 
     # Banner Principal de Status
     t45 = reb_prof["target_45"]
@@ -606,7 +611,7 @@ with tab_relegation:
 
     # Panorama Geral Z-4 Watch
     st.markdown("#### 🚨 Panorama Geral da Luta contra o Rebaixamento (Z-4 Watch)")
-    overview_rows = build_relegation_overview(rows, ufmg_data if not is_serie_a else None, safe_target=45)
+    overview_rows = build_relegation_overview(rows, ufmg_data, safe_target=45)
     if overview_rows:
         odf = pd.DataFrame(overview_rows)
         col_renames = {
@@ -655,53 +660,85 @@ with tab_relegation:
 # TAB 3: Estatísticas de Mando & Momento
 # ============================================================
 with tab_ufmg:
-    if not is_serie_a and ufmg_data:
-        st.subheader("📊 Estatísticas Oficiais do Departamento de Matemática da UFMG")
-        st.caption("Desempenho segmentado: aproveitamento como mandante, visitante e retrospecto recente nas últimas 10 rodadas.")
+    st_map = ufmg_data.get("standings", {}) if ufmg_data else {}
+    home_rows = st_map.get("home", [])
+    away_rows = st_map.get("away", [])
+    last10_rows = st_map.get("last_10_rounds", [])
 
-        tables = ufmg_data.get("tables", {})
-        home_t = tables.get("mandante", {})
-        away_t = tables.get("visitante", {})
-        last10_t = tables.get("ultimas_10", {})
+    if home_rows or away_rows or last10_rows:
+        st.subheader(f"📊 Estatísticas Oficiais do Departamento de Matemática da UFMG ({division})")
 
-        def _fmt_table(t_dict: dict) -> pd.DataFrame:
-            headers = t_dict.get("headers", [])
-            raw_rows = t_dict.get("rows", [])
-            if not headers or not raw_rows:
+        scraped_ts = ufmg_data.get("scraped_at", "")
+        if scraped_ts:
+            try:
+                dt = datetime.fromisoformat(scraped_ts)
+                dt_str = dt.strftime("%d/%m/%Y às %H:%M")
+            except Exception:
+                dt_str = scraped_ts[:10]
+            st.caption(f"🗓️ Dados coletados da UFMG em: **{dt_str}** | Atualizado diariamente pela esteira.")
+        else:
+            st.caption("Desempenho segmentado: aproveitamento como mandante, visitante e retrospecto recente nas últimas 10 rodadas.")
+
+        def _to_df(rows_list: list) -> pd.DataFrame:
+            if not rows_list:
                 return pd.DataFrame()
-            return pd.DataFrame(raw_rows, columns=headers)
+            df = pd.DataFrame(rows_list)
+            if "norm_team" in df.columns:
+                df = df.drop(columns=["norm_team"])
+            col_map = {
+                "position": "Pos",
+                "team": "Time",
+                "points": "Pts",
+                "played": "J",
+                "wins": "V",
+                "draws": "E",
+                "losses": "D",
+                "goals_for": "GP",
+                "goals_against": "GC",
+                "goal_diff": "SG",
+                "efficiency": "Apr (%)",
+            }
+            df = df.rename(columns=col_map)
+            return df
 
         col_h, col_a = st.columns(2)
         with col_h:
             st.markdown("#### 🏠 Classificação como Mandante")
-            df_home = _fmt_table(home_t)
+            df_home = _to_df(home_rows)
             if not df_home.empty:
                 st.dataframe(df_home, width="stretch", hide_index=True)
+            else:
+                st.caption("Sem dados de mandante disponíveis.")
         with col_a:
             st.markdown("#### ✈️ Classificação como Visitante")
-            df_away = _fmt_table(away_t)
+            df_away = _to_df(away_rows)
             if not df_away.empty:
                 st.dataframe(df_away, width="stretch", hide_index=True)
+            else:
+                st.caption("Sem dados de visitante disponíveis.")
 
         st.markdown("#### 🔥 Momento Recente: Classificação das Últimas 10 Rodadas")
-        df_l10 = _fmt_table(last10_t)
+        df_l10 = _to_df(last10_rows)
         if not df_l10.empty:
             st.dataframe(df_l10, width="stretch", hide_index=True)
-    else:
-        st.subheader(f"📊 Desempenho em Casa vs Fora ({division} 2026)")
-        st.caption(f"Comparativo de aproveitamento mandante e visitante do {team_name} e adversários.")
+        else:
+            st.caption("Sem dados das últimas 10 rodadas disponíveis.")
 
-        ha = tm.get("home_away", {})
-        c_home = ha.get("home", {})
-        c_away = ha.get("away", {})
+        st.divider()
 
-        col_h1, col_h2, col_h3 = st.columns(3)
-        with col_h1:
-            st.metric("PPG em Casa", f"{c_home.get('ppg', 0.0):.2f} pts/j", f"{c_home.get('wins', 0)}V {c_home.get('draws', 0)}E {c_home.get('losses', 0)}D")
-        with col_h2:
-            st.metric("PPG Fora de Casa", f"{c_away.get('ppg', 0.0):.2f} pts/j", f"{c_away.get('wins', 0)}V {c_away.get('draws', 0)}E {c_away.get('losses', 0)}D")
-        with col_h3:
-            st.metric("Gols Pró/Contra", f"{s.get('goals_for', 0)} / {s.get('goals_against', 0)}", f"Saldo: {s.get('goals_for', 0) - s.get('goals_against', 0):+d}")
+    # Cards comparativos de PPG do time
+    st.markdown(f"#### ⚡ Rendimento Específico do {team_name} (Temporada 2026)")
+    ha = tm.get("home_away", {}) if tm else {}
+    c_home = ha.get("home", {})
+    c_away = ha.get("away", {})
+
+    col_h1, col_h2, col_h3 = st.columns(3)
+    with col_h1:
+        st.metric("PPG em Casa", f"{c_home.get('ppg', 0.0):.2f} pts/j", f"{c_home.get('wins', 0)}V {c_home.get('draws', 0)}E {c_home.get('losses', 0)}D")
+    with col_h2:
+        st.metric("PPG Fora de Casa", f"{c_away.get('ppg', 0.0):.2f} pts/j", f"{c_away.get('wins', 0)}V {c_away.get('draws', 0)}E {c_away.get('losses', 0)}D")
+    with col_h3:
+        st.metric("Gols Pró/Contra", f"{s.get('goals_for', 0)} / {s.get('goals_against', 0)}", f"Saldo: {s.get('goals_for', 0) - s.get('goals_against', 0):+d}")
 
 # ============================================================
 # TAB 4: Próximos Jogos & Raio-X Pré-Jogo

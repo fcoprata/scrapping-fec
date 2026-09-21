@@ -32,6 +32,8 @@ jobs:
           mkdir -p .refresh_bak
           cp data/fortaleza_team_metrics.json .refresh_bak/ 2>/dev/null || true
           cp data/ceara_team_metrics.json .refresh_bak/ 2>/dev/null || true
+          cp data/ufmg_*.json .refresh_bak/ 2>/dev/null || true
+          cp data/standings_*.json .refresh_bak/ 2>/dev/null || true
 
       - name: Run pipeline (Fortaleza)
         run: python main.py --team fortaleza --all
@@ -53,6 +55,10 @@ jobs:
 
       - name: Build league-wide dataset
         run: python main.py --league || true
+        continue-on-error: true
+
+      - name: Refresh UFMG statistics and probabilities (Série A & B)
+        run: python main.py --ufmg || true
         continue-on-error: true
 
       - name: Sanity check (no regression to empty)

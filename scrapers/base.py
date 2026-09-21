@@ -23,9 +23,10 @@ class BaseScraper:
         if elapsed < SLEEP_SECONDS:
             time.sleep(SLEEP_SECONDS - elapsed)
 
-    def _get(self, url: str) -> requests.Response:
+    def _get(self, url: str, **kwargs) -> requests.Response:
         self._throttle()
-        response = self.session.get(url, timeout=15)
+        timeout = kwargs.pop("timeout", 20)
+        response = self.session.get(url, timeout=timeout, **kwargs)
         response.raise_for_status()
         self._last_request_ts = time.time()
         return response

@@ -72,7 +72,7 @@ def main():
     g_scrape.add_argument("--limit", type=int, default=None, help="Limite máximo de partidas a processar.")
     g_scrape.add_argument("--fixtures", action="store_true", help="Coleta os próximos jogos (SofaScore) do time.")
     g_scrape.add_argument("--standings", action="store_true", help="Coleta a classificação (SofaScore) da Série A e Série B 2026.")
-    g_scrape.add_argument("--ufmg", action="store_true", help="Coleta dados estatísticos e probabilidades da UFMG para a Série B 2026.")
+    g_scrape.add_argument("--ufmg", action="store_true", help="Coleta dados estatísticos e probabilidades da UFMG para a Série A e Série B 2026.")
 
     args = parser.parse_args()
 
@@ -457,11 +457,30 @@ def _fetch_standings(scraper: SofaScoreScraper, store: JsonStore) -> None:
         print(f"Failed to fetch Série A standings: {e}")
 
 
-def _fetch_ufmg(scraper: UFMGScraper, store: JsonStore, key: str = "serie_b_2026") -> None:
-    data = scraper.get_all_serie_b()
-    path = store.save_ufmg_data(key, data)
-    n_teams = len(data.get("probabilities", {}).get("rebaixamento", []))
-    print(f"Saved UFMG statistical data ({n_teams} teams) -> {path}")
+def _fetch_ufmg(scraper: UFMGScraper, store: JsonStore) -> None:
+    # Série B
+    try:
+        data_b = scraper.get_all_serie_b()
+        n_b = len(data_b.get("probabilities", {}).get("rebaixamento", []))
+        if n_b > 0:
+            path_b = store.save_ufmg_data("serie_b_2026", data_b)
+            print(f"Saved UFMG statistical data Série B ({n_b} teams) -> {path_b}")
+        else:
+            print("Warning: UFMG Série B returned empty probabilities; keeping existing file.")
+    except Exception as e:
+        print(f"Failed to scrape UFMG Série B: {e}")
+
+    # Série A
+    try:
+        data_a = scraper.get_all_serie_a()
+        n_a = len(data_a.get("probabilities", {}).get("rebaixamento", []))
+        if n_a > 0:
+            path_a = store.save_ufmg_data("serie_a_2026", data_a)
+            print(f"Saved UFMG statistical data Série A ({n_a} teams) -> {path_a}")
+        else:
+            print("Warning: UFMG Série A returned empty probabilities; keeping existing file.")
+    except Exception as e:
+        print(f"Failed to scrape UFMG Série A: {e}")
 
 
 def _build_derived(team: str, store: JsonStore) -> None:
@@ -502,6 +521,7 @@ def _run_all(team: str, store: JsonStore) -> None:
         ("advanced (incremental)", lambda: _fetch_advanced(team, None, SofaScoreScraper(), store, incremental=True)),
         ("fixtures", lambda: _fetch_fixtures(team, SofaScoreScraper(), store)),
         ("standings", lambda: _fetch_standings(SofaScoreScraper(), store)),
+        ("ufmg", lambda: _fetch_ufmg(UFMGScraper(), store)),
     ]
     for name, fn in steps:
         print(f"\n=== {name} ===")

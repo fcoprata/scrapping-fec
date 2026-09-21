@@ -211,11 +211,19 @@ with tab_campanha:
             help="Pontos reais menos pontos esperados pelo modelo de Poisson.",
         )
 
-    # Bloco UFMG de Probabilidades Matemáticas (se ambos ou algum for da Série B)
-    ufmg_data = load_json("ufmg_serie_b_2026.json") or {}
-    if ufmg_data:
+    # Bloco UFMG de Probabilidades Matemáticas (Série A e Série B)
+    ufmg_a_data = load_json("ufmg_serie_a_2026.json") or {}
+    ufmg_b_data = load_json("ufmg_serie_b_2026.json") or {}
+    teams_sum = {}
+    if ufmg_a_data:
+        for r in ufmg_a_data.get("teams_summary", []):
+            teams_sum[r.get("norm_team")] = r
+    if ufmg_b_data:
+        for r in ufmg_b_data.get("teams_summary", []):
+            teams_sum[r.get("norm_team")] = r
+
+    if teams_sum:
         from name_match import normalize_name
-        teams_sum = {r.get("norm_team"): r for r in ufmg_data.get("teams_summary", [])}
         norm_a = normalize_name(name_a)
         norm_b = normalize_name(name_b)
         u_a = teams_sum.get(norm_a) or teams_sum.get(team_a, {})
@@ -227,9 +235,15 @@ with tab_campanha:
             with u1:
                 st.metric("🏆 Prob. Título", f"{u_a.get('prob_campeao', 0.0):.1f}% vs {u_b.get('prob_campeao', 0.0):.1f}%")
             with u2:
-                st.metric("🚀 Acesso Direto (Top 2)", f"{u_a.get('prob_acesso_direto', 0.0):.1f}% vs {u_b.get('prob_acesso_direto', 0.0):.1f}%")
+                if div_a == "Série A" and div_b == "Série A":
+                    st.metric("🟡 Copa Sul-Americana", f"{u_a.get('prob_sulamericana', 0.0):.1f}% vs {u_b.get('prob_sulamericana', 0.0):.1f}%")
+                else:
+                    st.metric("🚀 Acesso Direto (Top 2)", f"{u_a.get('prob_acesso_direto', 0.0):.1f}% vs {u_b.get('prob_acesso_direto', 0.0):.1f}%")
             with u3:
-                st.metric("🎟️ Vaga Playoffs (G-6)", f"{u_a.get('prob_playoffs', 0.0):.1f}% vs {u_b.get('prob_playoffs', 0.0):.1f}%")
+                if div_a == "Série A" and div_b == "Série A":
+                    st.metric("🟢 Permanência Série A", f"{100.0 - u_a.get('prob_rebaixamento', 0.0):.1f}% vs {100.0 - u_b.get('prob_rebaixamento', 0.0):.1f}%")
+                else:
+                    st.metric("🎟️ Vaga Playoffs (G-6)", f"{u_a.get('prob_playoffs', 0.0):.1f}% vs {u_b.get('prob_playoffs', 0.0):.1f}%")
             with u4:
                 st.metric("🛑 Risco de Rebaixamento", f"{u_a.get('prob_rebaixamento', 0.0):.1f}% vs {u_b.get('prob_rebaixamento', 0.0):.1f}%")
 

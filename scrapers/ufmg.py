@@ -1,23 +1,28 @@
 """Scraper para dados estatísticos e probabilidades do Departamento de Matemática da UFMG.
 
-Fonte: https://www.mat.ufmg.br/futebol/serie-b/
+Fontes:
+- Série B: https://www.mat.ufmg.br/futebol/serie-b/
+- Série A: https://www.mat.ufmg.br/futebol/serie-a/
 """
 
 import re
 from datetime import datetime
 from typing import Any, Dict, List, Optional
+import urllib3
 from bs4 import BeautifulSoup
+from requests.adapters import HTTPAdapter
+from urllib3.util import Retry
 
 from name_match import normalize_name
 from scrapers.base import BaseScraper
 
 
 class UFMGScraper(BaseScraper):
-    """Coleta estatísticas avançadas e probabilidades calculadas pela UFMG para a Série B."""
+    """Coleta estatísticas avançadas e probabilidades calculadas pela UFMG para as Séries A e B."""
 
     BASE_URL = "https://www.mat.ufmg.br/futebol"
 
-    ENDPOINTS = {
+    ENDPOINTS_SERIE_B = {
         "rebaixamento": "/rebaixamento-serie-b/",
         "campeao": "/campeao-serie-b/",
         "acesso": "/classificacao-para-primeira-divisao/",
@@ -33,11 +38,48 @@ class UFMGScraper(BaseScraper):
         "defesa": "/melhor-defesa-serie-b/",
     }
 
-    def _get_soup(self, endpoint_key: str) -> BeautifulSoup:
-        path = self.ENDPOINTS.get(endpoint_key, "")
+    ENDPOINTS_SERIE_A = {
+        "rebaixamento": "/rebaixamento_seriea/",
+        "campeao": "/campeao_seriea/",
+        "sulamericana": "/classificacao-para-sulamericana_seriea/",
+        "mandante": "/classificacao-como-mandante_seriea/",
+        "visitante": "/classificacao-como-visitante_seriea/",
+        "ultimas_10": "/classificacao-das-ultimas-10-rodadas_seriea/",
+        "turno": "/classificacao-do-turno_seriea/",
+        "returno": "/classificacao-do-returno_seriea/",
+        "ataque": "/melhor-ataque_seriea/",
+        "defesa": "/melhor-defesa_seriea/",
+    }
+
+    # Compatibilidade retroativa
+    ENDPOINTS = ENDPOINTS_SERIE_B
+
+    def __init__(self):
+        super().__init__()
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+        self.session.verify = False
+
+        retries = Retry(
+            total=2,
+            backoff_factor=1,
+            status_forcelist=[500, 502, 503, 504],
+        )
+        adapter = HTTPAdapter(max_retries=retries)
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
+
+    def _get_soup(self, endpoint_key: str, endpoints_dict: Optional[dict] = None) -> Optional[BeautifulSoup]:
+        endpoints = endpoints_dict or self.ENDPOINTS
+        path = endpoints.get(endpoint_key, "")
+        if not path:
+            return None
         url = f"{self.BASE_URL}{path}"
-        resp = self._get(url)
-        return BeautifulSoup(resp.text, "html.parser")
+        try:
+            resp = self._get(url, timeout=20)
+            return BeautifulSoup(resp.text, "html.parser")
+        except Exception as e:
+            print(f"    ⚠️ Aviso UFMG: falha ao requisitar '{endpoint_key}' ({url}): {e}")
+            return None
 
     @staticmethod
     def _parse_table(table) -> tuple[str, List[str], List[List[str]]]:
@@ -67,9 +109,11 @@ class UFMGScraper(BaseScraper):
         except (ValueError, TypeError):
             return default
 
-    def get_probabilities(self, endpoint_key: str) -> List[Dict[str, Any]]:
+    def get_probabilities(self, endpoint_key: str, endpoints_dict: Optional[dict] = None) -> List[Dict[str, Any]]:
         """Extrai tabela de probabilidade simples por time (N, Times, Prob(%))."""
-        soup = self._get_soup(endpoint_key)
+        soup = self._get_soup(endpoint_key, endpoints_dict)
+        if not soup:
+            return []
         table = soup.find("table")
         if not table:
             return []
@@ -90,8 +134,10 @@ class UFMGScraper(BaseScraper):
         return results
 
     def get_access_probabilities(self) -> Dict[str, List[Dict[str, Any]]]:
-        """Extrai as 2 tabelas da página de classificação: Acesso Direto (Top 2) e Playoffs."""
+        """Extrai as 2 tabelas da página de classificação da Série B: Acesso Direto (Top 2) e Playoffs."""
         soup = self._get_soup("acesso")
+        if not soup:
+            return {"direct": [], "playoffs": []}
         tables = soup.find_all("table")
         output = {"direct": [], "playoffs": []}
         for i, table in enumerate(tables):
@@ -120,52 +166,57 @@ class UFMGScraper(BaseScraper):
         # 1. Rebaixamento
         try:
             soup_reb = self._get_soup("pts_rebaixamento")
-            table_reb = soup_reb.find("table")
-            if table_reb:
-                _, _, rows = self._parse_table(table_reb)
-                output["rebaixamento"] = [
-                    {"points": self._to_int(r[0]), "prob": self._to_float(r[1])}
-                    for r in rows if len(r) >= 2
-                ]
+            if soup_reb:
+                table_reb = soup_reb.find("table")
+                if table_reb:
+                    _, _, rows = self._parse_table(table_reb)
+                    output["rebaixamento"] = [
+                        {"points": self._to_int(r[0]), "prob": self._to_float(r[1])}
+                        for r in rows if len(r) >= 2
+                    ]
         except Exception as e:
             print(f"Warning: erro ao coletar pts_rebaixamento: {e}")
 
         # 2. Acesso Direto e Playoffs
         try:
             soup_acc = self._get_soup("pts_acesso")
-            tables_acc = soup_acc.find_all("table")
-            for i, t in enumerate(tables_acc):
-                cap, _, rows = self._parse_table(t)
-                cap_lower = cap.lower()
-                key = "direct" if ("primeiros" in cap_lower or i == 0) else "playoffs"
-                output[key] = [
-                    {"points": self._to_int(r[0]), "prob": self._to_float(r[1])}
-                    for r in rows if len(r) >= 2
-                ]
+            if soup_acc:
+                tables_acc = soup_acc.find_all("table")
+                for i, t in enumerate(tables_acc):
+                    cap, _, rows = self._parse_table(t)
+                    cap_lower = cap.lower()
+                    key = "direct" if ("primeiros" in cap_lower or i == 0) else "playoffs"
+                    output[key] = [
+                        {"points": self._to_int(r[0]), "prob": self._to_float(r[1])}
+                        for r in rows if len(r) >= 2
+                    ]
         except Exception as e:
             print(f"Warning: erro ao coletar pts_acesso: {e}")
 
         # 3. Campeão
         try:
             soup_camp = self._get_soup("pts_campeao")
-            table_camp = soup_camp.find("table")
-            if table_camp:
-                _, _, rows = self._parse_table(table_camp)
-                output["campeao"] = [
-                    {"points": self._to_int(r[0]), "prob": self._to_float(r[1])}
-                    for r in rows if len(r) >= 2
-                ]
+            if soup_camp:
+                table_camp = soup_camp.find("table")
+                if table_camp:
+                    _, _, rows = self._parse_table(table_camp)
+                    output["campeao"] = [
+                        {"points": self._to_int(r[0]), "prob": self._to_float(r[1])}
+                        for r in rows if len(r) >= 2
+                    ]
         except Exception as e:
             print(f"Warning: erro ao coletar pts_campeao: {e}")
 
         return output
 
-    def get_standings_table(self, endpoint_key: str) -> List[Dict[str, Any]]:
+    def get_standings_table(self, endpoint_key: str, endpoints_dict: Optional[dict] = None) -> List[Dict[str, Any]]:
         """Extrai tabelas completas de classificação (mandante, visitante, ultimas 10, turno, returno).
 
         Headers típicos: N, Times, PG, J, V, E, D, GF, GC, S, R
         """
-        soup = self._get_soup(endpoint_key)
+        soup = self._get_soup(endpoint_key, endpoints_dict)
+        if not soup:
+            return []
         table = soup.find("table")
         if not table:
             return []
@@ -194,16 +245,17 @@ class UFMGScraper(BaseScraper):
     def get_all_serie_b(self) -> Dict[str, Any]:
         """Coleta e estrutura todos os dados disponíveis da Série B na UFMG."""
         print("Scraping UFMG Série B...")
-        relegation = self.get_probabilities("rebaixamento")
-        champion = self.get_probabilities("campeao")
+        eps = self.ENDPOINTS_SERIE_B
+        relegation = self.get_probabilities("rebaixamento", eps)
+        champion = self.get_probabilities("campeao", eps)
         access = self.get_access_probabilities()
         points_cutoffs = self.get_points_probabilities()
 
-        home_standings = self.get_standings_table("mandante")
-        away_standings = self.get_standings_table("visitante")
-        last_10 = self.get_standings_table("ultimas_10")
-        turno = self.get_standings_table("turno")
-        returno = self.get_standings_table("returno")
+        home_standings = self.get_standings_table("mandante", eps)
+        away_standings = self.get_standings_table("visitante", eps)
+        last_10 = self.get_standings_table("ultimas_10", eps)
+        turno = self.get_standings_table("turno", eps)
+        returno = self.get_standings_table("returno", eps)
 
         # Compilar mapa consolidado por time
         teams_map = {}
@@ -239,6 +291,55 @@ class UFMGScraper(BaseScraper):
                 "playoffs": access.get("playoffs", []),
             },
             "points_cutoffs": points_cutoffs,
+            "standings": {
+                "home": home_standings,
+                "away": away_standings,
+                "last_10_rounds": last_10,
+                "first_half": turno,
+                "second_half": returno,
+            },
+        }
+
+    def get_all_serie_a(self) -> Dict[str, Any]:
+        """Coleta e estrutura todos os dados disponíveis da Série A na UFMG."""
+        print("Scraping UFMG Série A...")
+        eps = self.ENDPOINTS_SERIE_A
+        relegation = self.get_probabilities("rebaixamento", eps)
+        champion = self.get_probabilities("campeao", eps)
+        sulamericana = self.get_probabilities("sulamericana", eps)
+
+        home_standings = self.get_standings_table("mandante", eps)
+        away_standings = self.get_standings_table("visitante", eps)
+        last_10 = self.get_standings_table("ultimas_10", eps)
+        turno = self.get_standings_table("turno", eps)
+        returno = self.get_standings_table("returno", eps)
+
+        teams_map = {}
+        for row in relegation:
+            nt = row["norm_team"]
+            teams_map.setdefault(nt, {"team": row["team"], "norm_team": nt})
+            teams_map[nt]["prob_rebaixamento"] = row["prob"]
+
+        for row in champion:
+            nt = row["norm_team"]
+            teams_map.setdefault(nt, {"team": row["team"], "norm_team": nt})
+            teams_map[nt]["prob_campeao"] = row["prob"]
+
+        for row in sulamericana:
+            nt = row["norm_team"]
+            teams_map.setdefault(nt, {"team": row["team"], "norm_team": nt})
+            teams_map[nt]["prob_sulamericana"] = row["prob"]
+
+        return {
+            "season_year": "2026",
+            "competition": "serie-a",
+            "scraped_at": datetime.now().isoformat(),
+            "teams_summary": list(teams_map.values()),
+            "probabilities": {
+                "rebaixamento": relegation,
+                "campeao": champion,
+                "sulamericana": sulamericana,
+            },
             "standings": {
                 "home": home_standings,
                 "away": away_standings,
