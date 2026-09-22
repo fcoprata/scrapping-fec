@@ -183,7 +183,10 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_player_metrics.json"))
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"season_year": season_year, "players": rows}, f, ensure_ascii=False, indent=2)
-        _db.upsert_player_season_stats(team, season_year, rows)
+
+        in_squad_keys = {p["key"] for p in self.load_players_master(team).get("players", []) if p.get("in_squad")}
+        db_rows = [{**r, "in_current_squad": r.get("key") in in_squad_keys} for r in rows]
+        _db.upsert_player_season_stats(team, season_year, db_rows)
         return path
 
     def load_player_metrics(self, team: str) -> dict:

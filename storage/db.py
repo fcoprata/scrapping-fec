@@ -10,18 +10,21 @@ derruba o pipeline — o JSON continua sendo a garantia mínima de disponibilida
 enquanto a migração amadurece).
 
 Tabelas de identidade (teams/competitions/players/matches/standings) são
-totalmente relacionais com PK/UNIQUE reais. Camadas de métrica derivada
-(player_metrics, team_metrics, match_reports, analysis, league) ficam como
-coluna JSON indexada pela chave relacional — evita reescrever ~30 campos de
-métrica em DDL toda vez que models/derived.py ganha uma métrica nova, sem abrir
-mão de constraint na parte que causava os bugs (join de identidade).
+totalmente relacionais com PK/UNIQUE reais. `player_season_stats` também é
+colunar (não payload JSON) — é o dataset que alimenta o scout, e percentil/
+rank por posição é exatamente o tipo de query que DuckDB faz bem
+(`query_league_player_metrics`, via PERCENT_RANK() OVER, sem pandas). As
+camadas mais voláteis (team_metrics, match_reports, analysis) ficam como
+payload JSON indexado pela chave relacional — evitam reescrever DDL toda vez
+que models/derived.py ganha um campo novo ali, sem abrir mão de constraint na
+parte que causava os bugs (join de identidade).
 """
 
 import json
 import logging
 import os
 from datetime import datetime, timezone
-from typing import Optional
+from typing import List, Optional
 
 import duckdb
 
@@ -126,12 +129,40 @@ CREATE TABLE IF NOT EXISTS standings (
     PRIMARY KEY (comp_key, season_label, team_id)
 );
 
+-- Colunas tipadas (não payload JSON) -- é exatamente o formato analítico que
+-- DuckDB é bom em consultar (percentil/rank via SQL em vez de pandas em
+-- Python a cada carregamento de página). `key` é o nome normalizado do
+-- jogador (mesma chave usada em players_master) -- não temos sofascore_id
+-- aqui porque a camada Derive (models/derived.py) não o carrega adiante.
+-- `in_current_squad` é copiado de players_master.in_squad no momento do
+-- upsert -- é a chave pra fundir o jogador sob o clube atual quando ele
+-- troca de time no meio da temporada (ver query_league_player_metrics).
 CREATE TABLE IF NOT EXISTS player_season_stats (
-    player_key VARCHAR,
+    key VARCHAR,
     team_key VARCHAR,
     season_label VARCHAR,
-    payload JSON,
-    PRIMARY KEY (player_key, team_key, season_label)
+    name VARCHAR,
+    position_group VARCHAR,
+    minutes INTEGER,
+    matches INTEGER,
+    starts INTEGER,
+    sub_apps INTEGER,
+    market_value_eur BIGINT,
+    age INTEGER,
+    contract_until VARCHAR,
+    active BOOLEAN,
+    jersey_number VARCHAR,
+    nationality VARCHAR,
+    in_current_squad BOOLEAN,
+    goals_p90 DOUBLE, xg_p90 DOUBLE, assists_p90 DOUBLE, xa_p90 DOUBLE, shots_p90 DOUBLE,
+    touches_p90 DOUBLE, passes_p90 DOUBLE, key_passes_p90 DOUBLE, long_balls_p90 DOUBLE,
+    crosses_p90 DOUBLE, poss_lost_p90 DOUBLE, ball_recovery_p90 DOUBLE, progressive_carries_p90 DOUBLE,
+    duels_won_p90 DOUBLE, aerials_won_p90 DOUBLE, interceptions_p90 DOUBLE, clearances_p90 DOUBLE,
+    fouls_p90 DOUBLE, accurate_passes_p90 DOUBLE,
+    pass_accuracy DOUBLE, long_ball_accuracy DOUBLE, cross_accuracy DOUBLE, duel_win_pct DOUBLE,
+    turnover_rate DOUBLE, opp_half_pass_share DOUBLE,
+    tier VARCHAR, goals INTEGER, assists INTEGER, goals_conceded INTEGER, avg_rating DOUBLE,
+    PRIMARY KEY (key, team_key, season_label)
 );
 
 CREATE TABLE IF NOT EXISTS team_metrics (
@@ -389,14 +420,44 @@ def _upsert_json_blob(table: str, key_cols: dict, payload: dict) -> None:
     )
 
 
+# Mesmo conjunto usado em models/derived.py::PlayerMetrics (só sem os campos
+# derivados que a query de liga recalcula: xg_overperformance, xa_overperformance,
+# shot_quality). Uma lista central evita o INSERT desalinhar do schema.
+_PLAYER_SEASON_COLS = [
+    "key", "team_key", "season_label", "name", "position_group", "minutes", "matches",
+    "starts", "sub_apps", "market_value_eur", "age", "contract_until", "active",
+    "jersey_number", "nationality", "in_current_squad",
+    "goals_p90", "xg_p90", "assists_p90", "xa_p90", "shots_p90", "touches_p90", "passes_p90",
+    "key_passes_p90", "long_balls_p90", "crosses_p90", "poss_lost_p90", "ball_recovery_p90",
+    "progressive_carries_p90", "duels_won_p90", "aerials_won_p90", "interceptions_p90",
+    "clearances_p90", "fouls_p90", "accurate_passes_p90",
+    "pass_accuracy", "long_ball_accuracy", "cross_accuracy", "duel_win_pct", "turnover_rate",
+    "opp_half_pass_share", "tier", "goals", "assists", "goals_conceded", "avg_rating",
+]
+
+
 @_safe
 def upsert_player_season_stats(team_key: str, season_label: str, players: list) -> None:
+    """`players` já deve trazer `in_current_squad` por linha -- calculado em
+    storage/json_store.py::save_player_metrics a partir de players_master.
+    in_squad (mesma chave normalizada `key`, sem precisar de join no banco;
+    players_master usa sofascore_id/ogol_id como PK em player_team_season,
+    que não bate 1:1 com a `key` normalizada usada aqui)."""
+    conn = get_conn()
+    placeholders = ", ".join(["?"] * len(_PLAYER_SEASON_COLS))
+    update_set = ", ".join(f"{c} = excluded.{c}" for c in _PLAYER_SEASON_COLS if c not in ("key", "team_key", "season_label"))
     for p in players:
-        player_key = str(p.get("sofascore_id") or p.get("player_id") or p.get("key") or p.get("name"))
-        _upsert_json_blob(
-            "player_season_stats",
-            {"player_key": player_key, "team_key": team_key, "season_label": season_label},
-            p,
+        passes_p90, pass_acc = p.get("passes_p90"), p.get("pass_accuracy")
+        accurate_passes_p90 = round(passes_p90 * pass_acc / 100, 2) if passes_p90 is not None and pass_acc is not None else None
+        row = dict(p)
+        row["team_key"] = team_key
+        row["season_label"] = season_label
+        row["accurate_passes_p90"] = accurate_passes_p90
+        values = [row.get(c) for c in _PLAYER_SEASON_COLS]
+        conn.execute(
+            f"""INSERT INTO player_season_stats ({", ".join(_PLAYER_SEASON_COLS)}) VALUES ({placeholders})
+                ON CONFLICT (key, team_key, season_label) DO UPDATE SET {update_set}""",
+            values,
         )
 
 
@@ -465,3 +526,152 @@ def upsert_raw_snapshot(source: str, team_key: str, kind: str, payload) -> None:
                fetched_at = excluded.fetched_at, payload = excluded.payload""",
         [source, team_key, kind, _now(), json.dumps(payload, ensure_ascii=False, default=str)],
     )
+
+
+# ---------------------------------------------------------------------------
+# liga inteira: merge de transferência + percentil, tudo em SQL
+# ---------------------------------------------------------------------------
+_RATE_FIELDS = [
+    "goals_p90", "xg_p90", "assists_p90", "xa_p90", "shots_p90", "touches_p90",
+    "passes_p90", "key_passes_p90", "long_balls_p90", "crosses_p90", "poss_lost_p90",
+    "ball_recovery_p90", "progressive_carries_p90", "duels_won_p90", "aerials_won_p90",
+    "interceptions_p90", "clearances_p90", "fouls_p90", "accurate_passes_p90",
+]
+_RATIO_FIELDS = [
+    "pass_accuracy", "long_ball_accuracy", "cross_accuracy", "duel_win_pct",
+    "turnover_rate", "opp_half_pass_share", "avg_rating",
+]
+_SUM_FIELDS = ["goals", "assists", "matches", "starts", "sub_apps"]
+_IDENTITY_FIELDS = [
+    "name", "position_group", "market_value_eur", "age", "contract_until",
+    "jersey_number", "nationality", "active", "tier", "team_key",
+]
+
+# Mesmo conjunto que o scout expõe (views/scout.py _METRIC_GROUPS) — qualquer
+# métrica nova precisa entrar aqui pra ganhar percentil de liga/divisão.
+_PCTL_METRICS = [
+    "xg_p90", "xa_p90", "key_passes_p90", "progressive_carries_p90",
+    "ball_recovery_p90", "duel_win_pct", "pass_accuracy", "touches_p90",
+    "turnover_rate", "accurate_passes_p90", "duels_won_p90",
+    "interceptions_p90", "clearances_p90", "aerials_won_p90",
+    "crosses_p90", "long_balls_p90", "shots_p90", "fouls_p90", "poss_lost_p90",
+]
+_LOWER_IS_BETTER = {"turnover_rate", "fouls_p90", "poss_lost_p90"}
+MIN_MINUTES = 270  # amostra mínima pra entrar no percentil -- público, usado por models/league.py
+
+
+def _sanitize(rows: List[dict]) -> List[dict]:
+    """DataFrame vindo do DuckDB usa NaN pra NULL em coluna float e ndarray
+    pra coluna LIST (`prior_clubs`) — nenhum dos dois é JSON serializável, e o
+    scout/`--league` export esperam None e list() puros."""
+    import math
+    import numpy as np
+
+    def clean(v):
+        if isinstance(v, float) and math.isnan(v):
+            return None
+        if isinstance(v, np.ndarray):
+            return [clean(x) for x in v.tolist()]
+        return v
+
+    return [{k: clean(v) for k, v in r.items()} for r in rows]
+
+
+def query_league_player_metrics(divisions: Optional[List[str]] = None, min_minutes: int = MIN_MINUTES) -> List[dict]:
+    """Dataset da liga inteira pronto pro scout: um jogador que trocou de clube
+    na temporada some fundido sob o clube atual (ver `in_current_squad`), com
+    percentil por posição calculado via PERCENT_RANK (janela SQL) em vez de
+    pandas.rank em Python -- é o trabalho que antes vivia em models/league.py.
+    """
+    try:
+        conn = get_conn(read_only=True)
+    except Exception as e:
+        logger.warning("query_league_player_metrics: banco indisponível: %s", e)
+        return []
+
+    identity_exprs = ",\n            ".join(f"MAX({f}) FILTER (WHERE rn = 1) AS {f}" for f in _IDENTITY_FIELDS)
+    rate_exprs = ",\n            ".join(
+        f"CASE WHEN SUM(minutes) > 0 THEN ROUND(SUM(COALESCE({f},0) * minutes / 90.0) / (SUM(minutes)/90.0), 3) "
+        f"ELSE 0 END AS {f}"
+        for f in _RATE_FIELDS
+    )
+    ratio_exprs = ",\n            ".join(
+        f"CASE WHEN SUM(CASE WHEN {f} IS NOT NULL THEN minutes ELSE 0 END) > 0 THEN "
+        f"ROUND(SUM(COALESCE({f},0) * CASE WHEN {f} IS NOT NULL THEN minutes ELSE 0 END) "
+        f"/ SUM(CASE WHEN {f} IS NOT NULL THEN minutes ELSE 0 END), 2) ELSE NULL END AS {f}"
+        for f in _RATIO_FIELDS
+    )
+    sum_exprs = ",\n            ".join(f"SUM(COALESCE({f},0)) AS {f}" for f in _SUM_FIELDS)
+
+    where_sql, params = "", []
+    if divisions:
+        where_sql = f"WHERE t.division IN ({', '.join('?' for _ in divisions)})"
+        params = list(divisions)
+
+    pctl_league_exprs = ",\n            ".join(
+        f"ROUND(PERCENT_RANK() OVER (PARTITION BY position_group "
+        f"ORDER BY {m} {'DESC' if m in _LOWER_IS_BETTER else 'ASC'}) * 100, 1) AS {m}_league_pctl"
+        for m in _PCTL_METRICS
+    )
+    pctl_division_exprs = ",\n            ".join(
+        f"ROUND(PERCENT_RANK() OVER (PARTITION BY position_group, division "
+        f"ORDER BY {m} {'DESC' if m in _LOWER_IS_BETTER else 'ASC'}) * 100, 1) AS {m}_division_pctl"
+        for m in _PCTL_METRICS
+    )
+
+    query = f"""
+    WITH stints AS (
+        SELECT pss.*, t.name AS team_name_full, t.division AS division, t.state AS state,
+            ROW_NUMBER() OVER (
+                PARTITION BY pss.key
+                ORDER BY COALESCE(pss.in_current_squad, false) DESC, pss.minutes DESC
+            ) AS rn,
+            COUNT(*) OVER (PARTITION BY pss.key) AS n_stints
+        FROM player_season_stats pss
+        JOIN teams t ON t.team_key = pss.team_key
+        {where_sql}
+    ),
+    merged AS (
+        SELECT
+            key,
+            {identity_exprs},
+            MAX(team_name_full) FILTER (WHERE rn = 1) AS team_name,
+            MAX(division) FILTER (WHERE rn = 1) AS division,
+            MAX(state) FILTER (WHERE rn = 1) AS state,
+            SUM(minutes) AS minutes,
+            {sum_exprs},
+            {rate_exprs},
+            {ratio_exprs},
+            MAX(n_stints) AS n_stints,
+            list(team_name_full) FILTER (WHERE rn != 1) AS prior_clubs
+        FROM stints
+        GROUP BY key
+    ),
+    derived AS (
+        SELECT *,
+            CASE WHEN matches > 0 THEN ROUND(starts::DOUBLE / matches, 3) ELSE NULL END AS starts_share,
+            ROUND(goals - xg_p90 * minutes / 90.0, 2) AS xg_overperformance,
+            ROUND(assists - xa_p90 * minutes / 90.0, 2) AS xa_overperformance,
+            CASE WHEN shots_p90 > 0 THEN ROUND(xg_p90 / shots_p90, 3) ELSE NULL END AS shot_quality,
+            (n_stints > 1) AS transferred
+        FROM merged
+    ),
+    eligible AS (
+        SELECT * FROM derived WHERE minutes >= {int(min_minutes)}
+    ),
+    pctl AS (
+        SELECT key,
+            {pctl_league_exprs},
+            {pctl_division_exprs}
+        FROM eligible
+    )
+    SELECT d.*, p.* EXCLUDE (key)
+    FROM derived d
+    LEFT JOIN pctl p ON p.key = d.key
+    """
+    try:
+        df = conn.execute(query, params).df()
+    except Exception as e:
+        logger.warning("query_league_player_metrics: falha na query: %s: %s", type(e).__name__, e)
+        return []
+    return _sanitize(df.to_dict("records"))

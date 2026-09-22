@@ -35,7 +35,9 @@ def main():
 
         pmet = store.load_player_metrics(team_key)
         if pmet.get("players"):
-            db.upsert_player_season_stats(team_key, pmet.get("season_year", ""), pmet["players"])
+            in_squad_keys = {p["key"] for p in pm.get("players", []) if p.get("in_squad")}
+            db_rows = [{**r, "in_current_squad": r.get("key") in in_squad_keys} for r in pmet["players"]]
+            db.upsert_player_season_stats(team_key, pmet.get("season_year", ""), db_rows)
             n_player_metrics += 1
 
         tmet = store.load_team_metrics(team_key)
