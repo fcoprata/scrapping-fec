@@ -721,7 +721,7 @@ def build_team_metrics(
 _REPORT_PLAYER_COLS = [
     "name", "is_starter", "minutes_played", "rating", "touches", "passes_total",
     "passes_accurate", "key_passes", "possession_lost", "ball_recovery",
-    "duels_won", "duels_lost", "xg", "xa", "shots_total", "goals",
+    "duels_won", "duels_lost", "xg", "xa", "shots_total", "goals", "position",
 ]
 
 
