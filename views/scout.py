@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-from models.league import find_player, top_by_metric
+from models.league import find_player
 from storage import db as _db
 from views._common import get_team_badge_html, load_json, render_page_header
 
@@ -112,7 +112,8 @@ tab_ranking, tab_compare = st.tabs(["🏆 Ranking por Métrica", "⚖️ Compara
 # TAB 1: Ranking
 # ============================================================
 with tab_ranking:
-    c1, c2, c3, c4, c5 = st.columns([1, 0.9, 1.1, 1.3, 0.8])
+    st.caption("Escolha a área e veja todas as métricas dela de uma vez — clique num cabeçalho de coluna pra reordenar por ela.")
+    c1, c2, c3, c4 = st.columns([1, 0.9, 1.3, 0.9])
     with c1:
         division = st.selectbox("Divisão", ["Todas", "Série A", "Série B"], index=0, key="scout_division")
     with c2:
@@ -121,46 +122,50 @@ with tab_ranking:
     with c3:
         group = st.selectbox("Área", list(_METRIC_GROUPS.keys()), key="scout_group")
     with c4:
-        group_metrics = _METRIC_GROUPS[group]
-        metric = st.selectbox(
-            "Métrica", list(group_metrics.keys()), format_func=lambda k: group_metrics[k], key="scout_metric"
-        )
-    with c5:
         min_minutes = st.number_input("Minutos mín.", min_value=0, value=270, step=90, key="scout_min_minutes")
 
     div_filter = None if division == "Todas" else division
     pos_filter = None if position == "Todas" else position
+    group_metrics = _METRIC_GROUPS[group]
 
-    ranked = top_by_metric(
-        league_rows, metric, position_group=pos_filter, division=div_filter,
-        min_minutes=min_minutes, n=50,
-    )
+    filtered = [
+        r for r in league_rows
+        if (r.get("minutes") or 0) >= min_minutes
+        and (pos_filter is None or r.get("position_group") == pos_filter)
+        and (div_filter is None or r.get("division") == div_filter)
+    ]
 
-    if not ranked:
+    if not filtered:
         st.info("Nenhum jogador encontrado com esses filtros — tente reduzir os minutos mínimos.")
     else:
-        pctl_col = f"{metric}_league_pctl"
-        df = pd.DataFrame([
-            {
+        rows_out = []
+        for r in filtered:
+            pctls = [r.get(f"{m}_league_pctl") for m in group_metrics if r.get(f"{m}_league_pctl") is not None]
+            row = {
                 "Jogador": r.get("name"),
                 "Clube": r.get("team_name") + (" 🔁" if r.get("transferred") else ""),
                 "Divisão": r.get("division"),
                 "Posição": r.get("position_group"),
                 "Minutos": r.get("minutes"),
-                _METRIC_LABELS[metric]: round(r.get(metric, 0.0), 2) if r.get(metric) is not None else None,
-                "Percentil (liga)": r.get(pctl_col),
             }
-            for r in ranked
-        ])
-        if any(r.get("transferred") for r in ranked):
+            for m, label in group_metrics.items():
+                v = r.get(m)
+                row[label] = round(v, 2) if v is not None else None
+            row["Percentil médio (área)"] = round(sum(pctls) / len(pctls), 1) if pctls else None
+            rows_out.append(row)
+
+        df = pd.DataFrame(rows_out).sort_values("Percentil médio (área)", ascending=False, na_position="last")
+
+        if any(r.get("transferred") for r in filtered):
             st.caption("🔁 trocou de clube na temporada — minutos e métricas somam todos os clubes; clube exibido é o atual.")
+        st.caption(f"{len(df)} jogadores nesse filtro.")
         st.dataframe(
             df,
             width="stretch",
             hide_index=True,
             column_config={
-                "Percentil (liga)": st.column_config.ProgressColumn(
-                    "Percentil (liga)", min_value=0, max_value=100, format="%.0f",
+                "Percentil médio (área)": st.column_config.ProgressColumn(
+                    "Percentil médio (área)", min_value=0, max_value=100, format="%.0f",
                 ),
             },
         )
