@@ -7,13 +7,13 @@
         "tag": "mando",
         "kind": "weakness",
         "text": "Fraco fora de casa.",
-        "evidence": "0.92 ppg fora em 13 jogos"
+        "evidence": "1.07 ppg fora em 14 jogos"
       },
       {
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (10.31)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (10.53)"
       }
     ],
     "notes": [
@@ -21,10 +21,17 @@
         "tag": "mando",
         "kind": "note",
         "text": "Rendimento muito superior como mandante.",
-        "evidence": "2.36 ppg casa vs 0.92 fora"
+        "evidence": "2.36 ppg casa vs 1.07 fora"
       }
     ],
     "editorial_hooks": [
+      {
+        "type": "alert",
+        "tag": "Regressão à Média",
+        "headline": "Pontuação inflada: 48 pontos reais vs 43.6 esperados",
+        "lead": "O time soma +4.4 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
+        "badge": "Alerta Amarelo"
+      },
       {
         "type": "tactical",
         "tag": "O Garçom Oculto",
@@ -35,8 +42,8 @@
       {
         "type": "alert",
         "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.49/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 0.88 xG/90, mas recua e cede 1.49 xG/90 quando está à frente no placar.",
+        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.69/90min ao abrir vantagem",
+        "lead": "Quando está empatando o time concede 0.85 xG/90, mas recua e cede 1.69 xG/90 quando está à frente no placar.",
         "badge": "Atenção Tática"
       },
       {
@@ -49,21 +56,21 @@
       {
         "type": "strength",
         "tag": "Força Aérea",
-        "headline": "Jogo aéreo letal: 29% dos gols da equipe são de cabeça",
+        "headline": "Jogo aéreo letal: 27% dos gols da equipe são de cabeça",
         "lead": "12 gols em 69 finalizações de cabeça com média de 0.12 xG por tentativa.",
         "badge": "Padrão Ofensivo"
       }
     ],
     "facts": {
-      "points_real": 45,
-      "points_expected": 42.2273,
-      "xg_diff": 7.93,
-      "finishing": 1.88,
-      "keeping": -3.81,
+      "points_real": 48,
+      "points_expected": 43.6014,
+      "xg_diff": 7.87,
+      "finishing": 2.5,
+      "keeping": -2.37,
       "ppg_home": 2.357,
-      "ppg_away": 0.923
+      "ppg_away": 1.071
     },
-    "narrative": "Na temporada, Fluminense soma **45 pontos reais** (12V, 9E, 6D) com **42.2 xPts** esperados e saldo de **+7.93 xG**.\n\n**Vulnerabilidades:** Fraco fora de casa; Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Rendimento muito superior como mandante."
+    "narrative": "Na temporada, Fluminense soma **48 pontos reais** (13V, 9E, 6D) com **43.6 xPts** esperados e saldo de **+7.87 xG**.\n\n**Vulnerabilidades:** Fraco fora de casa; Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Rendimento muito superior como mandante."
   },
   "matches": {
     "15237884": {
@@ -973,6 +980,55 @@
         }
       ],
       "narrative": "Partida disputada contra o **Atlético Mineiro** (2026-09-12, fora de casa), encerrada em **3:1**, com **0.84 xG gerados** e **2.07 xG concedidos**.\n\n**Pontos Positivos:** Rodrigo Castillo decisivo.\n\n**Pontos Negativos:** Goleada sofrida; Amassado no volume de chances; Guilherme Arana abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Tomás Cuello foi o mais perigoso do rival."
+    },
+    "15235484": {
+      "event_id": 15235484,
+      "date": "2026-09-20",
+      "opponent": "Corinthians",
+      "score": "1:3",
+      "strengths": [
+        {
+          "tag": "resultado",
+          "kind": "strength",
+          "text": "Goleada aplicada.",
+          "evidence": "3-1"
+        },
+        {
+          "tag": "defesa",
+          "kind": "strength",
+          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
+          "evidence": "1 sofridos de 2.44 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Hulk decisivo.",
+          "evidence": "nota 9.4, xG+xA 1.59"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 2.38-2.44, xPts 1.37"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Gustavo Henrique foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.63"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Corinthians** (2026-09-20, fora de casa), encerrada em **1:3**, com **2.38 xG gerados** e **2.44 xG concedidos**.\n\n**Pontos Positivos:** Goleada aplicada; Defesa/goleiro salvaram — sofreu menos que o xG; Hulk decisivo.\n\n**Pontos Negativos:** Sofreu gol de bola parada.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; Gustavo Henrique foi o mais perigoso do rival."
     }
   }
 }

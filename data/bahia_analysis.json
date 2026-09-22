@@ -6,7 +6,7 @@
         "tag": "bola_parada",
         "kind": "strength",
         "text": "Arma ofensiva forte em bola parada.",
-        "evidence": "36% do xG criado vem de bola parada"
+        "evidence": "38% do xG criado vem de bola parada"
       }
     ],
     "weaknesses": [
@@ -14,18 +14,11 @@
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (8.52)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (8.57)"
       }
     ],
     "notes": [],
     "editorial_hooks": [
-      {
-        "type": "alert",
-        "tag": "Regressão à Média",
-        "headline": "Pontuação inflada: 46 pontos reais vs 41.1 esperados",
-        "lead": "O time soma +4.9 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
-        "badge": "Alerta Amarelo"
-      },
       {
         "type": "tactical",
         "tag": "O Garçom Oculto",
@@ -37,7 +30,7 @@
         "type": "alert",
         "tag": "Síndrome do Recuo",
         "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.58/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.12 xG/90, mas recua e cede 1.58 xG/90 quando está à frente no placar.",
+        "lead": "Quando está empatando o time concede 1.11 xG/90, mas recua e cede 1.58 xG/90 quando está à frente no placar.",
         "badge": "Atenção Tática"
       },
       {
@@ -51,20 +44,20 @@
         "type": "strength",
         "tag": "Força Aérea",
         "headline": "Jogo aéreo letal: 26% dos gols da equipe são de cabeça",
-        "lead": "11 gols em 83 finalizações de cabeça com média de 0.12 xG por tentativa.",
+        "lead": "11 gols em 87 finalizações de cabeça com média de 0.12 xG por tentativa.",
         "badge": "Padrão Ofensivo"
       }
     ],
     "facts": {
       "points_real": 46,
-      "points_expected": 41.121,
-      "xg_diff": 7.04,
-      "finishing": -0.96,
-      "keeping": 2.92,
+      "points_expected": 42.9081,
+      "xg_diff": 7.59,
+      "finishing": -1.15,
+      "keeping": 1.56,
       "ppg_home": 1.714,
-      "ppg_away": 1.692
+      "ppg_away": 1.571
     },
-    "narrative": "Na temporada, Bahia soma **46 pontos reais** (12V, 10E, 5D) com **41.1 xPts** esperados e saldo de **+7.04 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Concede mais no fim do jogo — queda física/concentração."
+    "narrative": "Na temporada, Bahia soma **46 pontos reais** (12V, 10E, 6D) com **42.9 xPts** esperados e saldo de **+7.59 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Concede mais no fim do jogo — queda física/concentração."
   },
   "matches": {
     "15237887": {
@@ -982,6 +975,36 @@
         }
       ],
       "narrative": "Partida disputada contra o **Remo** (2026-09-14, em casa), encerrada em **2:1**, com **2.57 xG gerados** e **1.32 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Cristian Olivera decisivo.\n\n**Pontos Negativos:** Sofreu gol de bola parada.\n\n**Observações Táticas:** Vitor Bueno foi o mais perigoso do rival."
+    },
+    "15237987": {
+      "event_id": 15237987,
+      "date": "2026-09-20",
+      "opponent": "Athletico",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Erick Pulga melhor em campo.",
+          "evidence": "nota 7.6, xG+xA 0.15"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Dominou e perdeu — falta de eficiência decidiu.",
+          "evidence": "xG 1.19-0.64, xPts 1.79"
+        },
+        {
+          "tag": "defesa",
+          "kind": "weakness",
+          "text": "Punição acima do esperado — erros pontuais custaram caro.",
+          "evidence": "2 sofridos de 0.64 xG"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Athletico** (2026-09-20, fora de casa), encerrada em **2:1**, com **1.19 xG gerados** e **0.64 xG concedidos**.\n\n**Pontos Positivos:** Erick Pulga melhor em campo.\n\n**Pontos Negativos:** Dominou e perdeu — falta de eficiência decidiu; Punição acima do esperado — erros pontuais custaram caro."
     }
   }
 }

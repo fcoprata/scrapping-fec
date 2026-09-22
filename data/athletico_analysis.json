@@ -1,50 +1,56 @@
 {
   "season_year": "2026",
   "season": {
-    "strengths": [
-      {
-        "tag": "bola_parada",
-        "kind": "strength",
-        "text": "Arma ofensiva forte em bola parada.",
-        "evidence": "33% do xG criado vem de bola parada"
-      }
-    ],
+    "strengths": [],
     "weaknesses": [
       {
         "tag": "bola_parada",
         "kind": "weakness",
         "text": "Vulnerável em bola parada defensiva.",
-        "evidence": "35% do xG sofrido vem de bola parada"
+        "evidence": "36% do xG sofrido vem de bola parada"
       },
       {
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (8.25)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (9.11)"
       }
     ],
     "notes": [
       {
+        "tag": "sorte",
+        "kind": "note",
+        "text": "Pontuação acima do desempenho — regressão provável.",
+        "evidence": "49 pts reais vs 42.3033 esperados (+6.7)"
+      },
+      {
         "tag": "mando",
         "kind": "note",
         "text": "Rendimento muito superior como mandante.",
-        "evidence": "2.15 ppg casa vs 1.29 fora"
+        "evidence": "2.21 ppg casa vs 1.29 fora"
       }
     ],
     "editorial_hooks": [
       {
         "type": "alert",
         "tag": "Regressão à Média",
-        "headline": "Pontuação inflada: 46 pontos reais vs 41.4 esperados",
-        "lead": "O time soma +4.6 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
+        "headline": "Pontuação inflada: 49 pontos reais vs 42.3 esperados",
+        "lead": "O time soma +6.7 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
         "badge": "Alerta Amarelo"
       },
       {
         "type": "tactical",
         "tag": "O Garçom Oculto",
         "headline": "Leozinho cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.07 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
+        "lead": "Produziu 1.08 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
         "badge": "Destaque Individual"
+      },
+      {
+        "type": "alert",
+        "tag": "Síndrome do Recuo",
+        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.52/90min ao abrir vantagem",
+        "lead": "Quando está empatando o time concede 1.09 xG/90, mas recua e cede 1.52 xG/90 quando está à frente no placar.",
+        "badge": "Atenção Tática"
       },
       {
         "type": "trend",
@@ -55,15 +61,15 @@
       }
     ],
     "facts": {
-      "points_real": 46,
-      "points_expected": 41.3984,
-      "xg_diff": 6.5,
-      "finishing": 2.52,
-      "keeping": 0.98,
-      "ppg_home": 2.154,
+      "points_real": 49,
+      "points_expected": 42.3033,
+      "xg_diff": 5.95,
+      "finishing": 3.88,
+      "keeping": 1.17,
+      "ppg_home": 2.214,
       "ppg_away": 1.286
     },
-    "narrative": "Na temporada, Athletico soma **46 pontos reais** (13V, 7E, 7D) com **41.4 xPts** esperados e saldo de **+6.50 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Rendimento muito superior como mandante."
+    "narrative": "Na temporada, Athletico soma **49 pontos reais** (14V, 7E, 7D) com **42.3 xPts** esperados e saldo de **+5.95 xG**.\n\n**Vulnerabilidades:** Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Pontuação acima do desempenho — regressão provável; Rendimento muito superior como mandante."
   },
   "matches": {
     "15237890": {
@@ -982,6 +988,49 @@
         }
       ],
       "narrative": "Partida disputada contra o **Coritiba** (2026-09-12, fora de casa), encerrada em **3:3**, com **1.82 xG gerados** e **1.73 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; Arthur Dias melhor em campo.\n\n**Pontos Negativos:** Mycael abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Tiago Cóser foi o mais perigoso do rival."
+    },
+    "15237987": {
+      "event_id": 15237987,
+      "date": "2026-09-20",
+      "opponent": "Bahia",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "finalizacao",
+          "kind": "strength",
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "2 gols de 0.64 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lucas Esquivel melhor em campo.",
+          "evidence": "nota 8.2, xG+xA 0.36"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Juan Felipe Aguirre abaixo.",
+          "evidence": "nota 6.0"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 0.64-1.19, xPts 0.90"
+        },
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Everaldo foi o mais perigoso do rival.",
+          "evidence": "xG+xA 0.86"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Bahia** (2026-09-20, em casa), encerrada em **2:1**, com **0.64 xG gerados** e **1.19 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; Lucas Esquivel melhor em campo.\n\n**Pontos Negativos:** Juan Felipe Aguirre abaixo.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; Everaldo foi o mais perigoso do rival."
     }
   }
 }

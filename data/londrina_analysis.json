@@ -6,7 +6,7 @@
         "tag": "bola_parada",
         "kind": "strength",
         "text": "Arma ofensiva forte em bola parada.",
-        "evidence": "33% do xG criado vem de bola parada"
+        "evidence": "34% do xG criado vem de bola parada"
       }
     ],
     "weaknesses": [
@@ -20,7 +20,7 @@
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (9.20)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (9.31)"
       }
     ],
     "notes": [
@@ -28,22 +28,22 @@
         "tag": "sorte",
         "kind": "note",
         "text": "Merecia mais pontos pelo desempenho (azar/eficiência baixa).",
-        "evidence": "28 pts reais vs 35.15 esperados (-7.2)"
+        "evidence": "28 pts reais vs 36.9258 esperados (-8.9)"
       }
     ],
     "editorial_hooks": [
       {
         "type": "opportunity",
         "tag": "Potencial Reprimido",
-        "headline": "Desempenho não reflete na tabela: 28 pontos reais vs 35.1 esperados",
-        "lead": "A equipe merecia 7.2 pontos a mais pela qualidade das chances geradas e sofridas.",
+        "headline": "Desempenho não reflete na tabela: 28 pontos reais vs 36.9 esperados",
+        "lead": "A equipe merecia 8.9 pontos a mais pela qualidade das chances geradas e sofridas.",
         "badge": "Tendência de Alta"
       },
       {
         "type": "alert",
         "tag": "Síndrome do Recuo",
         "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.99/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.44 xG/90, mas recua e cede 1.99 xG/90 quando está à frente no placar.",
+        "lead": "Quando está empatando o time concede 1.40 xG/90, mas recua e cede 1.99 xG/90 quando está à frente no placar.",
         "badge": "Atenção Tática"
       },
       {
@@ -57,20 +57,20 @@
         "type": "strength",
         "tag": "Força Aérea",
         "headline": "Jogo aéreo letal: 26% dos gols da equipe são de cabeça",
-        "lead": "10 gols em 66 finalizações de cabeça com média de 0.14 xG por tentativa.",
+        "lead": "10 gols em 68 finalizações de cabeça com média de 0.13 xG por tentativa.",
         "badge": "Padrão Ofensivo"
       }
     ],
     "facts": {
       "points_real": 28,
-      "points_expected": 35.15,
-      "xg_diff": -4.8,
-      "finishing": 1.37,
-      "keeping": 2.43,
-      "ppg_home": 1.214,
+      "points_expected": 36.9258,
+      "xg_diff": -4.28,
+      "finishing": 1.35,
+      "keeping": 0.93,
+      "ppg_home": 1.133,
       "ppg_away": 0.786
     },
-    "narrative": "Na temporada, Londrina soma **28 pontos reais** (7V, 7E, 14D) com **35.1 xPts** esperados e saldo de **-4.80 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Fraco fora de casa; Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Merecia mais pontos pelo desempenho (azar/eficiência baixa)."
+    "narrative": "Na temporada, Londrina soma **28 pontos reais** (7V, 7E, 15D) com **36.9 xPts** esperados e saldo de **-4.28 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Fraco fora de casa; Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Merecia mais pontos pelo desempenho (azar/eficiência baixa)."
   },
   "matches": {
     "15525985": {
@@ -1043,6 +1043,48 @@
       "weaknesses": [],
       "notes": [],
       "narrative": "Partida disputada contra o **Ponte Preta** (2026-09-15, em casa), encerrada em **6:0**, com **3.30 xG gerados** e **0.99 xG concedidos**.\n\n**Pontos Positivos:** Goleada aplicada; Finalização clínica: converteu acima do xG; Herbert decisivo."
+    },
+    "15526291": {
+      "event_id": 15526291,
+      "date": "2026-09-20",
+      "opponent": "Fortaleza",
+      "score": "1:2",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Igor Bahia melhor em campo.",
+          "evidence": "nota 7.9, xG+xA 0.20"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Dominou e perdeu — falta de eficiência decidiu.",
+          "evidence": "xG 1.02-0.50, xPts 1.78"
+        },
+        {
+          "tag": "defesa",
+          "kind": "weakness",
+          "text": "Punição acima do esperado — erros pontuais custaram caro.",
+          "evidence": "2 sofridos de 0.50 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Heron abaixo.",
+          "evidence": "nota 5.1"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em set-piece"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Fortaleza** (2026-09-20, em casa), encerrada em **1:2**, com **1.02 xG gerados** e **0.50 xG concedidos**.\n\n**Pontos Positivos:** Igor Bahia melhor em campo.\n\n**Pontos Negativos:** Dominou e perdeu — falta de eficiência decidiu; Punição acima do esperado — erros pontuais custaram caro; Heron abaixo; Sofreu gol de bola parada."
     }
   }
 }

@@ -2,22 +2,22 @@
   "season_year": "2026",
   "summary": {
     "tier": "sofascore",
-    "matches": 26,
-    "scored_matches": 26,
+    "matches": 27,
+    "scored_matches": 27,
     "wins": 10,
     "draws": 6,
-    "losses": 10,
+    "losses": 11,
     "points_real": 36,
-    "goals_for": 32,
-    "goals_against": 29,
-    "points_expected": 40.5214,
-    "points_expected_scored": 40.5214,
-    "points_luck": -4.521,
-    "xg_for_total": 38.35,
-    "xg_against_total": 29.23,
-    "xg_diff": 9.12,
-    "finishing": -6.35,
-    "keeping": 0.23
+    "goals_for": 33,
+    "goals_against": 31,
+    "points_expected": 40.8424,
+    "points_expected_scored": 40.8424,
+    "points_luck": -4.842,
+    "xg_for_total": 39.11,
+    "xg_against_total": 32.17,
+    "xg_diff": 6.94,
+    "finishing": -6.11,
+    "keeping": 1.17
   },
   "per_match": [
     {
@@ -513,6 +513,25 @@
       "xg_for_roll5": 1.498,
       "xg_against_roll5": 1.72,
       "points_roll5": 1.0
+    },
+    {
+      "date": "2026-09-20",
+      "opponent": "Flamengo",
+      "is_home": false,
+      "score": "2:1",
+      "points": 0,
+      "goals_for": 1,
+      "goals_against": 2,
+      "xg_for": 0.76,
+      "xg_against": 2.94,
+      "xg_diff": -2.18,
+      "xpoints": 0.321,
+      "p_win": 0.0671,
+      "p_draw": 0.1197,
+      "p_loss": 0.8132,
+      "xg_for_roll5": 1.412,
+      "xg_against_roll5": 1.884,
+      "points_roll5": 0.8
     }
   ],
   "home_away": {
@@ -523,41 +542,41 @@
       "ppg": 1.538
     },
     "away": {
-      "matches": 13,
-      "xg_for": 1.431,
-      "xg_against": 1.427,
-      "ppg": 1.231
+      "matches": 14,
+      "xg_for": 1.383,
+      "xg_against": 1.535,
+      "ppg": 1.143
     }
   },
   "set_pieces": {
-    "xg_for_setpiece_pct": 31.0,
-    "xg_against_setpiece_pct": 29.3
+    "xg_for_setpiece_pct": 30.7,
+    "xg_against_setpiece_pct": 29.4
   },
   "shot_situations": {
     "for": {
       "assisted": {
-        "count": 204,
-        "xg_sum": 17.084,
+        "count": 210,
+        "xg_sum": 17.318,
         "goals": 9
       },
       "regular": {
-        "count": 60,
-        "xg_sum": 5.51,
+        "count": 61,
+        "xg_sum": 5.53,
         "goals": 5
       },
       "corner": {
-        "count": 83,
-        "xg_sum": 5.24,
-        "goals": 8
+        "count": 85,
+        "xg_sum": 5.253,
+        "goals": 9
       },
       "fast-break": {
-        "count": 34,
-        "xg_sum": 3.953,
+        "count": 37,
+        "xg_sum": 4.341,
         "goals": 5
       },
       "set-piece": {
-        "count": 19,
-        "xg_sum": 1.044,
+        "count": 21,
+        "xg_sum": 1.079,
         "goals": 0
       },
       "penalty": {
@@ -566,8 +585,8 @@
         "goals": 2
       },
       "free-kick": {
-        "count": 10,
-        "xg_sum": 0.554,
+        "count": 12,
+        "xg_sum": 0.622,
         "goals": 2
       },
       "throw-in-set-piece": {
@@ -578,13 +597,13 @@
     },
     "against": {
       "assisted": {
-        "count": 157,
-        "xg_sum": 14.025,
-        "goals": 15
+        "count": 162,
+        "xg_sum": 14.95,
+        "goals": 16
       },
       "free-kick": {
-        "count": 17,
-        "xg_sum": 0.717,
+        "count": 18,
+        "xg_sum": 0.781,
         "goals": 0
       },
       "set-piece": {
@@ -598,18 +617,18 @@
         "goals": 0
       },
       "regular": {
-        "count": 42,
-        "xg_sum": 4.869,
+        "count": 43,
+        "xg_sum": 5.109,
         "goals": 4
       },
       "corner": {
-        "count": 56,
-        "xg_sum": 3.506,
-        "goals": 5
+        "count": 57,
+        "xg_sum": 4.389,
+        "goals": 6
       },
       "fast-break": {
-        "count": 18,
-        "xg_sum": 1.976,
+        "count": 21,
+        "xg_sum": 3.009,
         "goals": 0
       },
       "penalty": {
@@ -621,36 +640,36 @@
   },
   "shot_breakdown": {
     "for": {
-      "total_shots": 424,
-      "total_goals": 32,
-      "total_xg": 38.49,
-      "total_xgot": 39.09,
-      "xgot_diff": 0.61,
-      "avg_xg_per_shot": 0.091,
+      "total_shots": 440,
+      "total_goals": 33,
+      "total_xg": 39.24,
+      "total_xgot": 39.36,
+      "xgot_diff": 0.12,
+      "avg_xg_per_shot": 0.089,
       "by_body_part": {
         "head": {
-          "count": 91,
+          "count": 93,
           "goals": 6,
-          "xg": 8.84,
-          "xgot": 7.315,
-          "conversion_pct": 6.6,
-          "xg_per_shot": 0.097
+          "xg": 8.912,
+          "xgot": 7.349,
+          "conversion_pct": 6.5,
+          "xg_per_shot": 0.096
         },
         "left-foot": {
-          "count": 112,
+          "count": 115,
           "goals": 9,
-          "xg": 7.706,
-          "xgot": 8.575,
-          "conversion_pct": 8.0,
+          "xg": 7.911,
+          "xgot": 8.584,
+          "conversion_pct": 7.8,
           "xg_per_shot": 0.069
         },
         "right-foot": {
-          "count": 220,
-          "goals": 16,
-          "xg": 21.931,
-          "xgot": 22.936,
-          "conversion_pct": 7.3,
-          "xg_per_shot": 0.1
+          "count": 231,
+          "goals": 17,
+          "xg": 22.412,
+          "xgot": 23.163,
+          "conversion_pct": 7.4,
+          "xg_per_shot": 0.097
         },
         "other": {
           "count": 1,
@@ -663,44 +682,44 @@
       },
       "by_situation": {
         "assisted": {
-          "count": 204,
+          "count": 210,
           "goals": 9,
-          "xg": 17.084,
-          "xgot": 18.178,
-          "conversion_pct": 4.4,
-          "xg_per_shot": 0.084
+          "xg": 17.318,
+          "xgot": 18.338,
+          "conversion_pct": 4.3,
+          "xg_per_shot": 0.082
         },
         "regular": {
-          "count": 60,
+          "count": 61,
           "goals": 5,
-          "xg": 5.51,
+          "xg": 5.53,
           "xgot": 4.914,
-          "conversion_pct": 8.3,
-          "xg_per_shot": 0.092
+          "conversion_pct": 8.2,
+          "xg_per_shot": 0.091
         },
         "corner": {
-          "count": 83,
-          "goals": 8,
-          "xg": 5.24,
-          "xgot": 5.712,
-          "conversion_pct": 9.6,
-          "xg_per_shot": 0.063
+          "count": 85,
+          "goals": 9,
+          "xg": 5.253,
+          "xgot": 5.788,
+          "conversion_pct": 10.6,
+          "xg_per_shot": 0.062
         },
         "fast-break": {
-          "count": 34,
+          "count": 37,
           "goals": 5,
-          "xg": 3.953,
+          "xg": 4.341,
           "xgot": 4.174,
-          "conversion_pct": 14.7,
-          "xg_per_shot": 0.116
+          "conversion_pct": 13.5,
+          "xg_per_shot": 0.117
         },
         "set-piece": {
-          "count": 19,
+          "count": 21,
           "goals": 0,
-          "xg": 1.044,
-          "xgot": 1.233,
+          "xg": 1.079,
+          "xgot": 1.267,
           "conversion_pct": 0.0,
-          "xg_per_shot": 0.055
+          "xg_per_shot": 0.051
         },
         "penalty": {
           "count": 5,
@@ -711,12 +730,12 @@
           "xg_per_shot": 0.788
         },
         "free-kick": {
-          "count": 10,
+          "count": 12,
           "goals": 2,
-          "xg": 0.554,
+          "xg": 0.622,
           "xgot": 1.653,
-          "conversion_pct": 20.0,
-          "xg_per_shot": 0.055
+          "conversion_pct": 16.7,
+          "xg_per_shot": 0.052
         },
         "throw-in-set-piece": {
           "count": 9,
@@ -729,28 +748,28 @@
       }
     },
     "against": {
-      "total_shots": 323,
-      "total_goals": 29,
-      "total_xg": 29.5,
-      "total_xgot": 29.85,
-      "xgot_diff": 0.35,
-      "avg_xg_per_shot": 0.091,
+      "total_shots": 334,
+      "total_goals": 31,
+      "total_xg": 32.64,
+      "total_xgot": 32.81,
+      "xgot_diff": 0.16,
+      "avg_xg_per_shot": 0.098,
       "by_body_part": {
         "right-foot": {
-          "count": 139,
-          "goals": 8,
-          "xg": 11.882,
-          "xgot": 11.042,
-          "conversion_pct": 5.8,
-          "xg_per_shot": 0.085
+          "count": 145,
+          "goals": 9,
+          "xg": 13.273,
+          "xgot": 12.602,
+          "conversion_pct": 6.2,
+          "xg_per_shot": 0.092
         },
         "left-foot": {
-          "count": 119,
-          "goals": 9,
-          "xg": 10.712,
-          "xgot": 9.174,
-          "conversion_pct": 7.6,
-          "xg_per_shot": 0.09
+          "count": 124,
+          "goals": 10,
+          "xg": 12.466,
+          "xgot": 10.574,
+          "conversion_pct": 8.1,
+          "xg_per_shot": 0.101
         },
         "head": {
           "count": 62,
@@ -771,20 +790,20 @@
       },
       "by_situation": {
         "assisted": {
-          "count": 157,
-          "goals": 15,
-          "xg": 14.025,
-          "xgot": 15.782,
-          "conversion_pct": 9.6,
-          "xg_per_shot": 0.089
+          "count": 162,
+          "goals": 16,
+          "xg": 14.95,
+          "xgot": 16.724,
+          "conversion_pct": 9.9,
+          "xg_per_shot": 0.092
         },
         "free-kick": {
-          "count": 17,
+          "count": 18,
           "goals": 0,
-          "xg": 0.717,
+          "xg": 0.781,
           "xgot": 0.158,
           "conversion_pct": 0.0,
-          "xg_per_shot": 0.042
+          "xg_per_shot": 0.043
         },
         "set-piece": {
           "count": 20,
@@ -803,28 +822,28 @@
           "xg_per_shot": 0.095
         },
         "regular": {
-          "count": 42,
+          "count": 43,
           "goals": 4,
-          "xg": 4.869,
-          "xgot": 4.27,
-          "conversion_pct": 9.5,
-          "xg_per_shot": 0.116
+          "xg": 5.109,
+          "xgot": 4.523,
+          "conversion_pct": 9.3,
+          "xg_per_shot": 0.119
         },
         "corner": {
-          "count": 56,
-          "goals": 5,
-          "xg": 3.506,
-          "xgot": 3.04,
-          "conversion_pct": 8.9,
-          "xg_per_shot": 0.063
+          "count": 57,
+          "goals": 6,
+          "xg": 4.389,
+          "xgot": 4.027,
+          "conversion_pct": 10.5,
+          "xg_per_shot": 0.077
         },
         "fast-break": {
-          "count": 18,
+          "count": 21,
           "goals": 0,
-          "xg": 1.976,
-          "xgot": 1.301,
+          "xg": 3.009,
+          "xgot": 2.079,
           "conversion_pct": 0.0,
-          "xg_per_shot": 0.11
+          "xg_per_shot": 0.143
         },
         "penalty": {
           "count": 3,
@@ -839,20 +858,20 @@
   },
   "timeline": {
     "for": {
-      "0-15": 5.708,
+      "0-15": 6.042,
       "15-30": 4.503,
-      "30-45": 5.976,
-      "45-60": 7.02,
+      "30-45": 6.029,
+      "45-60": 7.122,
       "60-75": 5.579,
-      "75-90": 9.691,
+      "75-90": 9.96,
       "90+": 0.0
     },
     "against": {
-      "0-15": 4.404,
-      "15-30": 3.604,
-      "30-45": 6.501,
-      "45-60": 5.548,
-      "60-75": 4.89,
+      "0-15": 5.394,
+      "15-30": 3.881,
+      "30-45": 6.635,
+      "45-60": 6.409,
+      "60-75": 5.773,
       "75-90": 4.551,
       "90+": 0.0
     }
@@ -860,7 +879,7 @@
   "game_state": {
     "winning": {
       "minutes": 583,
-      "share_pct": 24.9,
+      "share_pct": 24.0,
       "goals_for": 8,
       "goals_against": 10,
       "xg_for": 11.17,
@@ -872,53 +891,53 @@
       "shots_against": 115
     },
     "drawing": {
-      "minutes": 1208,
-      "share_pct": 51.6,
+      "minutes": 1221,
+      "share_pct": 50.2,
       "goals_for": 19,
-      "goals_against": 14,
-      "xg_for": 18.97,
-      "xg_against": 14.56,
-      "xg_diff": 4.42,
-      "xg_for_p90": 1.41,
-      "xg_against_p90": 1.08,
-      "shots_for": 224,
-      "shots_against": 146
+      "goals_against": 15,
+      "xg_for": 19.31,
+      "xg_against": 15.55,
+      "xg_diff": 3.76,
+      "xg_for_p90": 1.42,
+      "xg_against_p90": 1.15,
+      "shots_for": 226,
+      "shots_against": 149
     },
     "losing": {
-      "minutes": 549,
-      "share_pct": 23.5,
-      "goals_for": 5,
-      "goals_against": 5,
-      "xg_for": 8.34,
-      "xg_against": 5.86,
-      "xg_diff": 2.48,
-      "xg_for_p90": 1.37,
-      "xg_against_p90": 0.96,
-      "shots_for": 111,
-      "shots_against": 62
+      "minutes": 626,
+      "share_pct": 25.8,
+      "goals_for": 6,
+      "goals_against": 6,
+      "xg_for": 8.77,
+      "xg_against": 8.02,
+      "xg_diff": 0.75,
+      "xg_for_p90": 1.26,
+      "xg_against_p90": 1.15,
+      "shots_for": 125,
+      "shots_against": 70
     }
   },
   "substitutions": {
     "starters_summary": {
-      "total_apps": 286,
-      "total_minutes": 23314,
+      "total_apps": 297,
+      "total_minutes": 24157,
       "goals": 25,
       "assists": 14,
-      "xg": 31.76,
-      "xa": 23.38,
+      "xg": 32.49,
+      "xa": 23.6,
       "xg_p90": 0.12,
       "xa_p90": 0.09,
-      "avg_rating": 6.9
+      "avg_rating": 6.89
     },
     "subs_summary": {
-      "total_apps": 312,
-      "total_minutes": 2580,
+      "total_apps": 324,
+      "total_minutes": 2727,
       "goals": 3,
       "assists": 5,
-      "xg": 6.72,
-      "xa": 3.95,
-      "xg_p90": 0.23,
-      "xa_p90": 0.14,
+      "xg": 6.76,
+      "xa": 4.05,
+      "xg_p90": 0.22,
+      "xa_p90": 0.13,
       "avg_rating": 6.69
     },
     "supersubs": [
@@ -948,15 +967,15 @@
       },
       {
         "name": "Henry Mosquera",
-        "sub_apps": 6,
-        "minutes": 162,
+        "sub_apps": 7,
+        "minutes": 207,
         "goals": 0,
         "assists": 1,
         "goal_involvements": 1,
-        "xg": 0.24,
-        "xa": 0.7,
-        "prod_total": 0.94,
-        "avg_rating": 6.98
+        "xg": 0.25,
+        "xa": 0.77,
+        "prod_total": 1.02,
+        "avg_rating": 7.0
       },
       {
         "name": "Marcelinho Braz",
@@ -996,27 +1015,27 @@
       },
       {
         "name": "Ignacio Sosa",
-        "sub_apps": 11,
-        "minutes": 183,
+        "sub_apps": 12,
+        "minutes": 196,
         "goals": 0,
         "assists": 0,
         "goal_involvements": 0,
         "xg": 0.2,
-        "xa": 0.63,
-        "prod_total": 0.83,
-        "avg_rating": 6.73
+        "xa": 0.64,
+        "prod_total": 0.84,
+        "avg_rating": 6.72
       },
       {
         "name": "José Herrera",
-        "sub_apps": 5,
-        "minutes": 90,
+        "sub_apps": 6,
+        "minutes": 122,
         "goals": 0,
         "assists": 0,
         "goal_involvements": 0,
-        "xg": 0.44,
-        "xa": 0.1,
-        "prod_total": 0.54,
-        "avg_rating": 6.62
+        "xg": 0.46,
+        "xa": 0.11,
+        "prod_total": 0.57,
+        "avg_rating": 6.6
       },
       {
         "name": "Davi Gomes",
@@ -1139,6 +1158,18 @@
         "avg_rating": 6.48
       },
       {
+        "name": "Alix Vinicius",
+        "sub_apps": 3,
+        "minutes": 98,
+        "goals": 0,
+        "assists": 0,
+        "goal_involvements": 0,
+        "xg": 0.01,
+        "xa": 0.05,
+        "prod_total": 0.06,
+        "avg_rating": 6.63
+      },
+      {
         "name": "Eduardo Santos",
         "sub_apps": 3,
         "minutes": 50,
@@ -1149,18 +1180,6 @@
         "xa": 0.05,
         "prod_total": 0.05,
         "avg_rating": 6.83
-      },
-      {
-        "name": "Alix Vinicius",
-        "sub_apps": 2,
-        "minutes": 53,
-        "goals": 0,
-        "assists": 0,
-        "goal_involvements": 0,
-        "xg": 0.01,
-        "xa": 0.04,
-        "prod_total": 0.05,
-        "avg_rating": 6.65
       },
       {
         "name": "Yuri Alves de Aquino",
@@ -1245,13 +1264,25 @@
         "xa": 0.0,
         "prod_total": 0.0,
         "avg_rating": 6.8
+      },
+      {
+        "name": "Cleiton",
+        "sub_apps": 1,
+        "minutes": 12,
+        "goals": 0,
+        "assists": 0,
+        "goal_involvements": 0,
+        "xg": 0.0,
+        "xa": 0.0,
+        "prod_total": 0.0,
+        "avg_rating": 6.6
       }
     ]
   },
   "discipline": {
-    "coverage": "0/26"
+    "coverage": "0/27"
   },
   "style": {
-    "coverage": "0/26"
+    "coverage": "0/27"
   }
 }

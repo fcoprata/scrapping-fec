@@ -588,6 +588,27 @@
       "ogol_url": null,
       "attendance": null,
       "referee": null
+    },
+    {
+      "event_id": 15526296,
+      "date": "2026-09-22",
+      "competition": "Brasileirão Série B",
+      "round": "29",
+      "is_home": false,
+      "opponent": "Cuiabá",
+      "score": "3:0",
+      "goals_for": 0,
+      "goals_against": 3,
+      "points": 0,
+      "xg_for": 0.5,
+      "xg_against": 2.98,
+      "xgot_for": 0.39,
+      "xgot_against": 3.97,
+      "tm_matched": false,
+      "ogol_matched": false,
+      "ogol_url": null,
+      "attendance": null,
+      "referee": null
     }
   ]
 }

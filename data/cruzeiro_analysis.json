@@ -7,13 +7,13 @@
         "tag": "defesa",
         "kind": "weakness",
         "text": "Sofre mais gols do que o xG concedido sugere.",
-        "evidence": "39 sofridos vs 34.98 xG (-4.0)"
+        "evidence": "40 sofridos vs 35.57 xG (-4.4)"
       },
       {
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (7.59)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (7.86)"
       }
     ],
     "notes": [],
@@ -22,7 +22,7 @@
         "type": "tactical",
         "tag": "O Garçom Oculto",
         "headline": "Matheus Pereira cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 5.73 em Expected Assists (xA), mas soma apenas 4 assistências reais por ineficiência dos finalizadores.",
+        "lead": "Produziu 5.80 em Expected Assists (xA), mas soma apenas 4 assistências reais por ineficiência dos finalizadores.",
         "badge": "Destaque Individual"
       },
       {
@@ -34,15 +34,15 @@
       }
     ],
     "facts": {
-      "points_real": 42,
-      "points_expected": 39.6491,
-      "xg_diff": 3.42,
-      "finishing": 0.6,
-      "keeping": -4.02,
+      "points_real": 45,
+      "points_expected": 41.2842,
+      "xg_diff": 3.78,
+      "finishing": 2.65,
+      "keeping": -4.43,
       "ppg_home": 1.786,
-      "ppg_away": 1.308
+      "ppg_away": 1.429
     },
-    "narrative": "Na temporada, Cruzeiro soma **42 pontos reais** (12V, 6E, 9D) com **39.6 xPts** esperados e saldo de **+3.42 xG**.\n\n**Vulnerabilidades:** Sofre mais gols do que o xG concedido sugere; Concede mais no fim do jogo — queda física/concentração."
+    "narrative": "Na temporada, Cruzeiro soma **45 pontos reais** (13V, 6E, 9D) com **41.3 xPts** esperados e saldo de **+3.78 xG**.\n\n**Vulnerabilidades:** Sofre mais gols do que o xG concedido sugere; Concede mais no fim do jogo — queda física/concentração."
   },
   "matches": {
     "15237885": {
@@ -993,6 +993,35 @@
         }
       ],
       "narrative": "Partida disputada contra o **Santos** (2026-09-13, fora de casa), encerrada em **2:1**, com **1.55 xG gerados** e **2.35 xG concedidos**.\n\n**Pontos Positivos:** Otávio Costa melhor em campo.\n\n**Observações Táticas:** Benjamín Rollheiser foi o mais perigoso do rival."
+    },
+    "15237988": {
+      "event_id": 15237988,
+      "date": "2026-09-20",
+      "opponent": "Vitória",
+      "score": "1:3",
+      "strengths": [
+        {
+          "tag": "resultado",
+          "kind": "strength",
+          "text": "Goleada aplicada.",
+          "evidence": "3-1"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "strength",
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "3 gols de 0.95 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Keny Arroyo melhor em campo.",
+          "evidence": "nota 8.4, xG+xA 0.30"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Vitória** (2026-09-20, fora de casa), encerrada em **1:3**, com **0.95 xG gerados** e **0.59 xG concedidos**.\n\n**Pontos Positivos:** Goleada aplicada; Finalização clínica: converteu acima do xG; Keny Arroyo melhor em campo."
     }
   }
 }

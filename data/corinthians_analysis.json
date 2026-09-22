@@ -8,12 +8,6 @@
         "kind": "weakness",
         "text": "Fraco fora de casa.",
         "evidence": "1.08 ppg fora em 13 jogos"
-      },
-      {
-        "tag": "bola_parada",
-        "kind": "weakness",
-        "text": "Vulnerável em bola parada defensiva.",
-        "evidence": "35% do xG sofrido vem de bola parada"
       }
     ],
     "notes": [
@@ -21,15 +15,22 @@
         "tag": "resistencia",
         "kind": "note",
         "text": "Período mais frágil defensivamente: 30-45'.",
-        "evidence": "xG sofrido 6.67 no intervalo"
+        "evidence": "xG sofrido 6.93 no intervalo"
       }
     ],
     "editorial_hooks": [
       {
+        "type": "opportunity",
+        "tag": "Potencial Reprimido",
+        "headline": "Desempenho não reflete na tabela: 32 pontos reais vs 36.5 esperados",
+        "lead": "A equipe merecia 4.5 pontos a mais pela qualidade das chances geradas e sofridas.",
+        "badge": "Tendência de Alta"
+      },
+      {
         "type": "tactical",
         "tag": "O Garçom Oculto",
         "headline": "Memphis Depay cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.43 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
+        "lead": "Produziu 1.49 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
         "badge": "Destaque Individual"
       },
       {
@@ -42,14 +43,14 @@
     ],
     "facts": {
       "points_real": 32,
-      "points_expected": 35.0467,
-      "xg_diff": -2.07,
-      "finishing": 2.1,
-      "keeping": -1.03,
-      "ppg_home": 1.286,
+      "points_expected": 36.4843,
+      "xg_diff": -2.01,
+      "finishing": 0.66,
+      "keeping": -1.65,
+      "ppg_home": 1.2,
       "ppg_away": 1.077
     },
-    "narrative": "Na temporada, Corinthians soma **32 pontos reais** (8V, 8E, 11D) com **35.0 xPts** esperados e saldo de **-2.07 xG**.\n\n**Vulnerabilidades:** Fraco fora de casa; Vulnerável em bola parada defensiva.\n\n**Padrões Táticos:** Período mais frágil defensivamente: 30-45'."
+    "narrative": "Na temporada, Corinthians soma **32 pontos reais** (8V, 8E, 12D) com **36.5 xPts** esperados e saldo de **-2.01 xG**.\n\n**Vulnerabilidades:** Fraco fora de casa.\n\n**Padrões Táticos:** Período mais frágil defensivamente: 30-45'."
   },
   "matches": {
     "15237887": {
@@ -1000,6 +1001,55 @@
         }
       ],
       "narrative": "Partida disputada contra o **Flamengo** (2026-09-13, fora de casa), encerrada em **2:1**, com **0.53 xG gerados** e **2.51 xG concedidos**.\n\n**Pontos Positivos:** Hugo Souza melhor em campo.\n\n**Pontos Negativos:** Amassado no volume de chances; Jesse Lingard abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Pedro Guilherme foi o mais perigoso do rival."
+    },
+    "15235484": {
+      "event_id": 15235484,
+      "date": "2026-09-20",
+      "opponent": "Fluminense",
+      "score": "1:3",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Rodrigo Garro decisivo.",
+          "evidence": "nota 7.9, xG+xA 0.52"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Goleada sofrida.",
+          "evidence": "1-3"
+        },
+        {
+          "tag": "finalizacao",
+          "kind": "weakness",
+          "text": "Pouca pontaria: criou e não converteu.",
+          "evidence": "1 gols de 2.44 xG"
+        },
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Entrou mal no jogo — cedeu xG cedo.",
+          "evidence": "atrás no xG já aos 24'"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Hugo Souza abaixo.",
+          "evidence": "nota 5.9"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Hulk foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.59"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Fluminense** (2026-09-20, em casa), encerrada em **1:3**, com **2.44 xG gerados** e **2.38 xG concedidos**.\n\n**Pontos Positivos:** Rodrigo Garro decisivo.\n\n**Pontos Negativos:** Goleada sofrida; Pouca pontaria: criou e não converteu; Entrou mal no jogo — cedeu xG cedo; Hugo Souza abaixo.\n\n**Observações Táticas:** Hulk foi o mais perigoso do rival."
     }
   }
 }

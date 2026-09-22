@@ -588,6 +588,27 @@
       "ogol_url": null,
       "attendance": null,
       "referee": null
+    },
+    {
+      "event_id": 15526296,
+      "date": "2026-09-22",
+      "competition": "Brasileirão Série B",
+      "round": "29",
+      "is_home": true,
+      "opponent": "Náutico",
+      "score": "3:0",
+      "goals_for": 3,
+      "goals_against": 0,
+      "points": 3,
+      "xg_for": 2.98,
+      "xg_against": 0.5,
+      "xgot_for": 3.97,
+      "xgot_against": 0.39,
+      "tm_matched": false,
+      "ogol_matched": false,
+      "ogol_url": null,
+      "attendance": null,
+      "referee": null
     }
   ]
 }

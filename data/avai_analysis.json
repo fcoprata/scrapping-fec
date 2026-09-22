@@ -6,7 +6,7 @@
         "tag": "bola_parada",
         "kind": "strength",
         "text": "Arma ofensiva forte em bola parada.",
-        "evidence": "38% do xG criado vem de bola parada"
+        "evidence": "37% do xG criado vem de bola parada"
       }
     ],
     "weaknesses": [
@@ -14,43 +14,42 @@
         "tag": "mando",
         "kind": "weakness",
         "text": "Fraco fora de casa.",
-        "evidence": "0.79 ppg fora em 14 jogos"
+        "evidence": "0.73 ppg fora em 15 jogos"
       },
       {
         "tag": "bola_parada",
         "kind": "weakness",
         "text": "Vulnerável em bola parada defensiva.",
-        "evidence": "42% do xG sofrido vem de bola parada"
-      }
-    ],
-    "notes": [
+        "evidence": "40% do xG sofrido vem de bola parada"
+      },
       {
         "tag": "resistencia",
-        "kind": "note",
-        "text": "Período mais frágil defensivamente: 30-45'.",
-        "evidence": "xG sofrido 9.01 no intervalo"
+        "kind": "weakness",
+        "text": "Concede mais no fim do jogo — queda física/concentração.",
+        "evidence": "xG sofrido pico no intervalo 75-90' (9.24)"
       }
     ],
+    "notes": [],
     "editorial_hooks": [
       {
         "type": "opportunity",
         "tag": "Potencial Reprimido",
-        "headline": "Desempenho não reflete na tabela: 30 pontos reais vs 34.2 esperados",
-        "lead": "A equipe merecia 4.2 pontos a mais pela qualidade das chances geradas e sofridas.",
+        "headline": "Desempenho não reflete na tabela: 30 pontos reais vs 34.7 esperados",
+        "lead": "A equipe merecia 4.7 pontos a mais pela qualidade das chances geradas e sofridas.",
         "badge": "Tendência de Alta"
       },
       {
         "type": "tactical",
         "tag": "O Garçom Oculto",
         "headline": "Daniel Penha cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 2.07 em Expected Assists (xA), mas soma apenas 1 assistências reais por ineficiência dos finalizadores.",
+        "lead": "Produziu 2.13 em Expected Assists (xA), mas soma apenas 1 assistências reais por ineficiência dos finalizadores.",
         "badge": "Destaque Individual"
       },
       {
         "type": "alert",
         "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.65/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.16 xG/90, mas recua e cede 1.65 xG/90 quando está à frente no placar.",
+        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.86/90min ao abrir vantagem",
+        "lead": "Quando está empatando o time concede 1.17 xG/90, mas recua e cede 1.86 xG/90 quando está à frente no placar.",
         "badge": "Atenção Tática"
       },
       {
@@ -63,14 +62,14 @@
     ],
     "facts": {
       "points_real": 30,
-      "points_expected": 34.2383,
-      "xg_diff": -6.28,
-      "finishing": 1.22,
-      "keeping": -1.94,
+      "points_expected": 34.6735,
+      "xg_diff": -7.94,
+      "finishing": 1.54,
+      "keeping": -1.6,
       "ppg_home": 1.357,
-      "ppg_away": 0.786
+      "ppg_away": 0.733
     },
-    "narrative": "Na temporada, Avaí soma **30 pontos reais** (8V, 6E, 14D) com **34.2 xPts** esperados e saldo de **-6.28 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Fraco fora de casa; Vulnerável em bola parada defensiva.\n\n**Padrões Táticos:** Período mais frágil defensivamente: 30-45'."
+    "narrative": "Na temporada, Avaí soma **30 pontos reais** (8V, 6E, 15D) com **34.7 xPts** esperados e saldo de **-7.94 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Fraco fora de casa; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração."
   },
   "matches": {
     "15525991": {
@@ -965,6 +964,43 @@
       "weaknesses": [],
       "notes": [],
       "narrative": "Partida disputada contra o **Vila Nova FC** (2026-09-15, em casa), encerrada em **1:1**, com **1.06 xG gerados** e **0.59 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Daniel Penha melhor em campo."
+    },
+    "15526293": {
+      "event_id": 15526293,
+      "date": "2026-09-20",
+      "opponent": "Goiás",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Paulo Vitor melhor em campo.",
+          "evidence": "nota 7.3, xG+xA 0.01"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Amassado no volume de chances.",
+          "evidence": "xG final 0.68-2.34"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Jean Lucas abaixo.",
+          "evidence": "nota 5.7"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Kadu foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.10"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Goiás** (2026-09-20, fora de casa), encerrada em **2:1**, com **0.68 xG gerados** e **2.34 xG concedidos**.\n\n**Pontos Positivos:** Paulo Vitor melhor em campo.\n\n**Pontos Negativos:** Amassado no volume de chances; Jean Lucas abaixo.\n\n**Observações Táticas:** Kadu foi o mais perigoso do rival."
     }
   }
 }

@@ -588,6 +588,27 @@
       "ogol_url": "https://www.ogol.com.br/jogo/2026-09-13-fortaleza-ceara/12043488",
       "attendance": null,
       "referee": null
+    },
+    {
+      "event_id": 15526292,
+      "date": "2026-09-18",
+      "competition": "Brasileirão Série B",
+      "round": "29",
+      "is_home": true,
+      "opponent": "Grêmio Novorizontino",
+      "score": "2:1",
+      "goals_for": 2,
+      "goals_against": 1,
+      "points": 3,
+      "xg_for": 0.92,
+      "xg_against": 2.22,
+      "xgot_for": 1.38,
+      "xgot_against": 2.7,
+      "tm_matched": false,
+      "ogol_matched": true,
+      "ogol_url": "https://www.ogol.com.br/jogo/2026-09-19-ceara-gremio-novorizontino/12043498",
+      "attendance": null,
+      "referee": null
     }
   ]
 }

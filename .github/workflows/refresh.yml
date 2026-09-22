@@ -57,6 +57,10 @@ jobs:
         run: python main.py --league || true
         continue-on-error: true
 
+      - name: Refresh Standings (Série A & B)
+        run: python main.py --standings || true
+        continue-on-error: true
+
       - name: Refresh UFMG statistics and probabilities (Série A & B)
         run: python main.py --ufmg || true
         continue-on-error: true

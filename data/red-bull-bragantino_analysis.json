@@ -1,20 +1,13 @@
 {
   "season_year": "2026",
   "season": {
-    "strengths": [
-      {
-        "tag": "controle",
-        "kind": "strength",
-        "text": "Domina o volume de chances na temporada.",
-        "evidence": "xG diff acumulado +9.1"
-      }
-    ],
+    "strengths": [],
     "weaknesses": [
       {
         "tag": "finalizacao",
         "kind": "weakness",
         "text": "Desperdiça chances: produz xG mas não converte.",
-        "evidence": "32 gols vs 38.35 xG (-6.3)"
+        "evidence": "33 gols vs 39.11 xG (-6.1)"
       }
     ],
     "notes": [
@@ -22,22 +15,22 @@
         "tag": "resistencia",
         "kind": "note",
         "text": "Período mais frágil defensivamente: 30-45'.",
-        "evidence": "xG sofrido 6.50 no intervalo"
+        "evidence": "xG sofrido 6.63 no intervalo"
       }
     ],
     "editorial_hooks": [
       {
         "type": "opportunity",
         "tag": "Potencial Reprimido",
-        "headline": "Desempenho não reflete na tabela: 36 pontos reais vs 40.5 esperados",
-        "lead": "A equipe merecia 4.5 pontos a mais pela qualidade das chances geradas e sofridas.",
+        "headline": "Desempenho não reflete na tabela: 36 pontos reais vs 40.8 esperados",
+        "lead": "A equipe merecia 4.8 pontos a mais pela qualidade das chances geradas e sofridas.",
         "badge": "Tendência de Alta"
       },
       {
         "type": "tactical",
         "tag": "O Garçom Oculto",
         "headline": "Lucas Barbosa cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 4.10 em Expected Assists (xA), mas soma apenas 2 assistências reais por ineficiência dos finalizadores.",
+        "lead": "Produziu 4.14 em Expected Assists (xA), mas soma apenas 2 assistências reais por ineficiência dos finalizadores.",
         "badge": "Destaque Individual"
       },
       {
@@ -50,14 +43,14 @@
     ],
     "facts": {
       "points_real": 36,
-      "points_expected": 40.5214,
-      "xg_diff": 9.12,
-      "finishing": -6.35,
-      "keeping": 0.23,
+      "points_expected": 40.8424,
+      "xg_diff": 6.94,
+      "finishing": -6.11,
+      "keeping": 1.17,
       "ppg_home": 1.538,
-      "ppg_away": 1.231
+      "ppg_away": 1.143
     },
-    "narrative": "Na temporada, Red Bull Bragantino soma **36 pontos reais** (10V, 6E, 10D) com **40.5 xPts** esperados e saldo de **+9.12 xG**.\n\n**Virtudes da Equipe:** Domina o volume de chances na temporada.\n\n**Vulnerabilidades:** Desperdiça chances: produz xG mas não converte.\n\n**Padrões Táticos:** Período mais frágil defensivamente: 30-45'."
+    "narrative": "Na temporada, Red Bull Bragantino soma **36 pontos reais** (10V, 6E, 11D) com **40.8 xPts** esperados e saldo de **+6.94 xG**.\n\n**Vulnerabilidades:** Desperdiça chances: produz xG mas não converte.\n\n**Padrões Táticos:** Período mais frágil defensivamente: 30-45'."
   },
   "matches": {
     "15237891": {
@@ -899,6 +892,49 @@
         }
       ],
       "narrative": "Partida disputada contra o **Botafogo** (2026-09-12, fora de casa), encerrada em **1:1**, com **1.09 xG gerados** e **1.79 xG concedidos**.\n\n**Pontos Positivos:** Tiago Volpi melhor em campo.\n\n**Observações Táticas:** Kadir Barría foi o mais perigoso do rival."
+    },
+    "15235478": {
+      "event_id": 15235478,
+      "date": "2026-09-20",
+      "opponent": "Flamengo",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Tiago Volpi melhor em campo.",
+          "evidence": "nota 7.4, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Amassado no volume de chances.",
+          "evidence": "xG final 0.76-2.94"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Gustavo Marques abaixo.",
+          "evidence": "nota 5.7"
+        },
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Jorge Carrascal foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.20"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Flamengo** (2026-09-20, fora de casa), encerrada em **2:1**, com **0.76 xG gerados** e **2.94 xG concedidos**.\n\n**Pontos Positivos:** Tiago Volpi melhor em campo.\n\n**Pontos Negativos:** Amassado no volume de chances; Gustavo Marques abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Jorge Carrascal foi o mais perigoso do rival."
     }
   }
 }

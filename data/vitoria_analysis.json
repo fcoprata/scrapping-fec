@@ -6,7 +6,7 @@
         "tag": "bola_parada",
         "kind": "strength",
         "text": "Arma ofensiva forte em bola parada.",
-        "evidence": "39% do xG criado vem de bola parada"
+        "evidence": "38% do xG criado vem de bola parada"
       }
     ],
     "weaknesses": [
@@ -14,7 +14,7 @@
         "tag": "controle",
         "kind": "weakness",
         "text": "É dominado no volume de chances na temporada.",
-        "evidence": "xG diff acumulado -12.1"
+        "evidence": "xG diff acumulado -12.5"
       },
       {
         "tag": "mando",
@@ -32,7 +32,7 @@
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (9.34)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (9.76)"
       }
     ],
     "notes": [
@@ -40,7 +40,7 @@
         "tag": "mando",
         "kind": "note",
         "text": "Rendimento muito superior como mandante.",
-        "evidence": "2.15 ppg casa vs 0.36 fora"
+        "evidence": "2.00 ppg casa vs 0.36 fora"
       }
     ],
     "editorial_hooks": [
@@ -61,14 +61,14 @@
     ],
     "facts": {
       "points_real": 33,
-      "points_expected": 30.8438,
-      "xg_diff": -12.13,
-      "finishing": -0.33,
-      "keeping": 0.46,
-      "ppg_home": 2.154,
+      "points_expected": 31.8562,
+      "xg_diff": -12.49,
+      "finishing": 0.08,
+      "keeping": -1.59,
+      "ppg_home": 2.0,
       "ppg_away": 0.357
     },
-    "narrative": "Na temporada, Vitória soma **33 pontos reais** (9V, 6E, 12D) com **30.8 xPts** esperados e saldo de **-12.13 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** É dominado no volume de chances na temporada; Fraco fora de casa; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Rendimento muito superior como mandante."
+    "narrative": "Na temporada, Vitória soma **33 pontos reais** (9V, 6E, 13D) com **31.9 xPts** esperados e saldo de **-12.49 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** É dominado no volume de chances na temporada; Fraco fora de casa; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Rendimento muito superior como mandante."
   },
   "matches": {
     "15237892": {
@@ -1051,6 +1051,42 @@
         }
       ],
       "narrative": "Partida disputada contra o **Mirassol** (2026-09-13, fora de casa), encerrada em **2:2**, com **1.67 xG gerados** e **1.76 xG concedidos**.\n\n**Pontos Positivos:** Renê Sousa decisivo.\n\n**Observações Táticas:** Reinaldo foi o mais perigoso do rival."
+    },
+    "15237988": {
+      "event_id": 15237988,
+      "date": "2026-09-20",
+      "opponent": "Cruzeiro",
+      "score": "1:3",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Renê Sousa melhor em campo.",
+          "evidence": "nota 7.3, xG+xA 0.10"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Goleada sofrida.",
+          "evidence": "1-3"
+        },
+        {
+          "tag": "defesa",
+          "kind": "weakness",
+          "text": "Punição acima do esperado — erros pontuais custaram caro.",
+          "evidence": "3 sofridos de 0.95 xG"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Lucas Arcanjo abaixo.",
+          "evidence": "nota 5.6"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Cruzeiro** (2026-09-20, em casa), encerrada em **1:3**, com **0.59 xG gerados** e **0.95 xG concedidos**.\n\n**Pontos Positivos:** Renê Sousa melhor em campo.\n\n**Pontos Negativos:** Goleada sofrida; Punição acima do esperado — erros pontuais custaram caro; Lucas Arcanjo abaixo."
     }
   }
 }

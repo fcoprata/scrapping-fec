@@ -567,6 +567,27 @@
       "ogol_url": null,
       "attendance": null,
       "referee": null
+    },
+    {
+      "event_id": 15237987,
+      "date": "2026-09-20",
+      "competition": "Brasileirão Betano",
+      "round": "28",
+      "is_home": true,
+      "opponent": "Bahia",
+      "score": "2:1",
+      "goals_for": 2,
+      "goals_against": 1,
+      "points": 3,
+      "xg_for": 0.64,
+      "xg_against": 1.19,
+      "xgot_for": 1.05,
+      "xgot_against": 1.61,
+      "tm_matched": false,
+      "ogol_matched": false,
+      "ogol_url": null,
+      "attendance": null,
+      "referee": null
     }
   ]
 }

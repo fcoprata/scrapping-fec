@@ -6,13 +6,13 @@
         "tag": "finalizacao",
         "kind": "strength",
         "text": "Converte finalizações acima do esperado (xG).",
-        "evidence": "53 gols vs 45.89 xG (+7.1)"
+        "evidence": "55 gols vs 48.83 xG (+6.2)"
       },
       {
         "tag": "controle",
         "kind": "strength",
         "text": "Domina o volume de chances na temporada.",
-        "evidence": "xG diff acumulado +20.6"
+        "evidence": "xG diff acumulado +22.8"
       }
     ],
     "weaknesses": [
@@ -20,7 +20,7 @@
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (7.80)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (8.07)"
       }
     ],
     "notes": [
@@ -28,15 +28,15 @@
         "tag": "sorte",
         "kind": "note",
         "text": "Pontuação acima do desempenho — regressão provável.",
-        "evidence": "57 pts reais vs 50.0288 esperados (+7.0)"
+        "evidence": "60 pts reais vs 52.5853 esperados (+7.4)"
       }
     ],
     "editorial_hooks": [
       {
         "type": "alert",
         "tag": "Regressão à Média",
-        "headline": "Pontuação inflada: 57 pontos reais vs 50.0 esperados",
-        "lead": "O time soma +7.0 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
+        "headline": "Pontuação inflada: 60 pontos reais vs 52.6 esperados",
+        "lead": "O time soma +7.4 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
         "badge": "Alerta Amarelo"
       },
       {
@@ -50,20 +50,20 @@
         "type": "trend",
         "tag": "O 12º Jogador",
         "headline": "Bruno Henrique é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 16 partidas, acumula 4 participações em gols (2G / 2A) e 2.68 (xG+xA).",
+        "lead": "Saindo do banco em 17 partidas, acumula 5 participações em gols (3G / 2A) e 2.69 (xG+xA).",
         "badge": "Arma Secreta"
       }
     ],
     "facts": {
-      "points_real": 57,
-      "points_expected": 50.0288,
-      "xg_diff": 20.61,
-      "finishing": 7.11,
-      "keeping": 3.28,
-      "ppg_home": 2.308,
+      "points_real": 60,
+      "points_expected": 52.5853,
+      "xg_diff": 22.79,
+      "finishing": 6.17,
+      "keeping": 3.04,
+      "ppg_home": 2.357,
       "ppg_away": 1.929
     },
-    "narrative": "Na temporada, Flamengo soma **57 pontos reais** (17V, 6E, 4D) com **50.0 xPts** esperados e saldo de **+20.61 xG**.\n\n**Virtudes da Equipe:** Converte finalizações acima do esperado (xG); Domina o volume de chances na temporada.\n\n**Vulnerabilidades:** Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Pontuação acima do desempenho — regressão provável."
+    "narrative": "Na temporada, Flamengo soma **60 pontos reais** (18V, 6E, 4D) com **52.6 xPts** esperados e saldo de **+22.79 xG**.\n\n**Virtudes da Equipe:** Converte finalizações acima do esperado (xG); Domina o volume de chances na temporada.\n\n**Vulnerabilidades:** Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Pontuação acima do desempenho — regressão provável."
   },
   "matches": {
     "15237886": {
@@ -974,6 +974,36 @@
         }
       ],
       "narrative": "Partida disputada contra o **Corinthians** (2026-09-13, em casa), encerrada em **2:1**, com **2.51 xG gerados** e **0.53 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Lucas Paquetá melhor em campo.\n\n**Observações Táticas:** Kaio César foi o mais perigoso do rival."
+    },
+    "15235478": {
+      "event_id": 15235478,
+      "date": "2026-09-20",
+      "opponent": "Red Bull Bragantino",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 2.94-0.76"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Jorge Carrascal decisivo.",
+          "evidence": "nota 8.4, xG+xA 1.20"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "bola_parada",
+          "kind": "weakness",
+          "text": "Sofreu gol de bola parada.",
+          "evidence": "1 gol(s) em corner"
+        }
+      ],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Red Bull Bragantino** (2026-09-20, em casa), encerrada em **2:1**, com **2.94 xG gerados** e **0.76 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Jorge Carrascal decisivo.\n\n**Pontos Negativos:** Sofreu gol de bola parada."
     }
   }
 }

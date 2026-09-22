@@ -1,13 +1,20 @@
 {
   "season_year": "2026",
   "season": {
-    "strengths": [],
+    "strengths": [
+      {
+        "tag": "controle",
+        "kind": "strength",
+        "text": "Domina o volume de chances na temporada.",
+        "evidence": "xG diff acumulado +9.8"
+      }
+    ],
     "weaknesses": [
       {
         "tag": "finalizacao",
         "kind": "weakness",
         "text": "Desperdiça chances: produz xG mas não converte.",
-        "evidence": "27 gols vs 32.73 xG (-5.7)"
+        "evidence": "30 gols vs 35.71 xG (-5.7)"
       },
       {
         "tag": "bola_parada",
@@ -19,7 +26,7 @@
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (7.60)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (7.68)"
       }
     ],
     "notes": [],
@@ -32,13 +39,6 @@
         "badge": "Destaque Individual"
       },
       {
-        "type": "alert",
-        "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.25/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 0.90 xG/90, mas recua e cede 1.25 xG/90 quando está à frente no placar.",
-        "badge": "Atenção Tática"
-      },
-      {
         "type": "trend",
         "tag": "O 12º Jogador",
         "headline": "Kauan Cristtyan é o reserva mais decisivo do elenco",
@@ -48,21 +48,21 @@
       {
         "type": "strength",
         "tag": "Força Aérea",
-        "headline": "Jogo aéreo letal: 26% dos gols da equipe são de cabeça",
-        "lead": "7 gols em 81 finalizações de cabeça com média de 0.13 xG por tentativa.",
+        "headline": "Jogo aéreo letal: 27% dos gols da equipe são de cabeça",
+        "lead": "8 gols em 87 finalizações de cabeça com média de 0.13 xG por tentativa.",
         "badge": "Padrão Ofensivo"
       }
     ],
     "facts": {
-      "points_real": 40,
-      "points_expected": 42.1257,
-      "xg_diff": 7.31,
-      "finishing": -5.73,
-      "keeping": 3.42,
-      "ppg_home": 1.571,
+      "points_real": 43,
+      "points_expected": 44.8168,
+      "xg_diff": 9.79,
+      "finishing": -5.71,
+      "keeping": 3.92,
+      "ppg_home": 1.667,
       "ppg_away": 1.286
     },
-    "narrative": "Na temporada, Cuiabá soma **40 pontos reais** (9V, 13E, 6D) com **42.1 xPts** esperados e saldo de **+7.31 xG**.\n\n**Vulnerabilidades:** Desperdiça chances: produz xG mas não converte; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração."
+    "narrative": "Na temporada, Cuiabá soma **43 pontos reais** (10V, 13E, 6D) com **44.8 xPts** esperados e saldo de **+9.79 xG**.\n\n**Virtudes da Equipe:** Domina o volume de chances na temporada.\n\n**Vulnerabilidades:** Desperdiça chances: produz xG mas não converte; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração."
   },
   "matches": {
     "15525993": {
@@ -968,6 +968,35 @@
         }
       ],
       "narrative": "Partida disputada contra o **Grêmio Novorizontino** (2026-09-13, fora de casa), encerrada em **1:1**, com **0.83 xG gerados** e **2.77 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Lorenzo melhor em campo.\n\n**Pontos Negativos:** Amassado no volume de chances; Fábio Gomes abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Empate com desempenho pior que o placar; Rômulo foi o mais perigoso do rival."
+    },
+    "15526296": {
+      "event_id": 15526296,
+      "date": "2026-09-22",
+      "opponent": "Náutico",
+      "score": "3:0",
+      "strengths": [
+        {
+          "tag": "resultado",
+          "kind": "strength",
+          "text": "Goleada aplicada.",
+          "evidence": "3-0"
+        },
+        {
+          "tag": "controle",
+          "kind": "strength",
+          "text": "Controlou o jogo do início ao fim no xG.",
+          "evidence": "xG final 2.98-0.50"
+        },
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Kauan Cristtyan decisivo.",
+          "evidence": "nota 8.2, xG+xA 1.73"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Náutico** (2026-09-22, em casa), encerrada em **3:0**, com **2.98 xG gerados** e **0.50 xG concedidos**.\n\n**Pontos Positivos:** Goleada aplicada; Controlou o jogo do início ao fim no xG; Kauan Cristtyan decisivo."
     }
   }
 }

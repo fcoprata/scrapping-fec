@@ -546,6 +546,27 @@
       "ogol_url": null,
       "attendance": null,
       "referee": null
+    },
+    {
+      "event_id": 15235478,
+      "date": "2026-09-20",
+      "competition": "Brasileirão Betano",
+      "round": "28",
+      "is_home": false,
+      "opponent": "Flamengo",
+      "score": "2:1",
+      "goals_for": 1,
+      "goals_against": 2,
+      "points": 0,
+      "xg_for": 0.76,
+      "xg_against": 2.94,
+      "xgot_for": 0.27,
+      "xgot_against": 2.96,
+      "tm_matched": false,
+      "ogol_matched": false,
+      "ogol_url": null,
+      "attendance": null,
+      "referee": null
     }
   ]
 }

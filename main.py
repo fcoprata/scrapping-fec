@@ -710,12 +710,14 @@ def _run_batch_full(division: str, store: JsonStore, skip: set[str] | None = Non
         name = TEAMS.get(team, {}).get("name", team.title())
         print(f"\n{'=' * 70}\n[{idx}/{len(teams_to_run)}] ⚽ {name} ({team})\n{'=' * 70}")
 
-        steps = [
-            ("ogol matches", lambda t=team: _fetch_matches_ogol(t, OGolScraper(), store)),
-            ("squad", lambda t=team: _fetch_squad(t, OGolScraper(), TransfermarktScraper(), store)),
-            ("player stats", lambda t=team: _fetch_player_stats(t, None, OGolScraper(), store)),
-            ("ogol match stats", lambda t=team: _fetch_stats(t, "ogol", None, OGolScraper(), store)),
-        ]
+        steps = []
+        if TEAMS.get(team, {}).get("ogol"):
+            steps.extend([
+                ("ogol matches", lambda t=team: _fetch_matches_ogol(t, OGolScraper(), store)),
+                ("squad", lambda t=team: _fetch_squad(t, OGolScraper(), TransfermarktScraper(), store)),
+                ("player stats", lambda t=team: _fetch_player_stats(t, None, OGolScraper(), store)),
+                ("ogol match stats", lambda t=team: _fetch_stats(t, "ogol", None, OGolScraper(), store)),
+            ])
         if _team_seasons(team):
             steps.append(
                 ("advanced (incremental)",

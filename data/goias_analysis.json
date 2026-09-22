@@ -6,7 +6,7 @@
         "tag": "bola_parada",
         "kind": "strength",
         "text": "Arma ofensiva forte em bola parada.",
-        "evidence": "38% do xG criado vem de bola parada"
+        "evidence": "36% do xG criado vem de bola parada"
       }
     ],
     "weaknesses": [
@@ -14,7 +14,7 @@
         "tag": "finalizacao",
         "kind": "weakness",
         "text": "Desperdiça chances: produz xG mas não converte.",
-        "evidence": "28 gols vs 32.61 xG (-4.6)"
+        "evidence": "30 gols vs 34.95 xG (-5.0)"
       },
       {
         "tag": "bola_parada",
@@ -26,7 +26,7 @@
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (9.32)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (9.44)"
       }
     ],
     "notes": [],
@@ -35,14 +35,14 @@
         "type": "tactical",
         "tag": "O Garçom Oculto",
         "headline": "Lourenço cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.59 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
+        "lead": "Produziu 2.22 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
         "badge": "Destaque Individual"
       },
       {
         "type": "alert",
         "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.79/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.17 xG/90, mas recua e cede 1.79 xG/90 quando está à frente no placar.",
+        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.76/90min ao abrir vantagem",
+        "lead": "Quando está empatando o time concede 1.16 xG/90, mas recua e cede 1.76 xG/90 quando está à frente no placar.",
         "badge": "Atenção Tática"
       },
       {
@@ -54,15 +54,15 @@
       }
     ],
     "facts": {
-      "points_real": 39,
-      "points_expected": 36.1616,
-      "xg_diff": -3.83,
-      "finishing": -4.61,
-      "keeping": 2.44,
-      "ppg_home": 1.692,
+      "points_real": 42,
+      "points_expected": 38.5625,
+      "xg_diff": -2.17,
+      "finishing": -4.95,
+      "keeping": 2.12,
+      "ppg_home": 1.786,
       "ppg_away": 1.133
     },
-    "narrative": "Na temporada, Goiás soma **39 pontos reais** (11V, 6E, 11D) com **36.2 xPts** esperados e saldo de **-3.83 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Desperdiça chances: produz xG mas não converte; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração."
+    "narrative": "Na temporada, Goiás soma **42 pontos reais** (12V, 6E, 11D) com **38.6 xPts** esperados e saldo de **-2.17 xG**.\n\n**Virtudes da Equipe:** Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Desperdiça chances: produz xG mas não converte; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração."
   },
   "matches": {
     "15525989": {
@@ -1006,6 +1006,23 @@
         }
       ],
       "narrative": "Partida disputada contra o **Botafogo-SP** (2026-09-14, fora de casa), encerrada em **1:3**, com **1.53 xG gerados** e **2.73 xG concedidos**.\n\n**Pontos Positivos:** Goleada aplicada; Finalização clínica: converteu acima do xG; Defesa/goleiro salvaram — sofreu menos que o xG; Tadeu decisivo.\n\n**Pontos Negativos:** Amassado no volume de chances.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances; Hygor foi o mais perigoso do rival."
+    },
+    "15526293": {
+      "event_id": 15526293,
+      "date": "2026-09-20",
+      "opponent": "Avaí",
+      "score": "2:1",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Lourenço decisivo.",
+          "evidence": "nota 8.3, xG+xA 0.81"
+        }
+      ],
+      "weaknesses": [],
+      "notes": [],
+      "narrative": "Partida disputada contra o **Avaí** (2026-09-20, em casa), encerrada em **2:1**, com **2.34 xG gerados** e **0.68 xG concedidos**.\n\n**Pontos Positivos:** Lourenço decisivo."
     }
   }
 }

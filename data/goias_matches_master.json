@@ -588,6 +588,27 @@
       "ogol_url": null,
       "attendance": null,
       "referee": null
+    },
+    {
+      "event_id": 15526293,
+      "date": "2026-09-20",
+      "competition": "Brasileirão Série B",
+      "round": "29",
+      "is_home": true,
+      "opponent": "Avaí",
+      "score": "2:1",
+      "goals_for": 2,
+      "goals_against": 1,
+      "points": 3,
+      "xg_for": 2.34,
+      "xg_against": 0.68,
+      "xgot_for": 2.65,
+      "xgot_against": 0.87,
+      "tm_matched": false,
+      "ogol_matched": false,
+      "ogol_url": null,
+      "attendance": null,
+      "referee": null
     }
   ]
 }

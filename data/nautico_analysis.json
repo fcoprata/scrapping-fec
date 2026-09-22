@@ -6,7 +6,7 @@
         "tag": "defesa",
         "kind": "strength",
         "text": "Defesa/goleiro seguram abaixo do xG sofrido.",
-        "evidence": "33 sofridos vs 39.43 xG (+6.4)"
+        "evidence": "36 sofridos vs 42.41 xG (+6.4)"
       },
       {
         "tag": "bola_parada",
@@ -20,19 +20,19 @@
         "tag": "finalizacao",
         "kind": "weakness",
         "text": "Desperdiça chances: produz xG mas não converte.",
-        "evidence": "35 gols vs 40.75 xG (-5.8)"
+        "evidence": "35 gols vs 41.25 xG (-6.2)"
       },
       {
         "tag": "mando",
         "kind": "weakness",
         "text": "Fraco fora de casa.",
-        "evidence": "1.00 ppg fora em 14 jogos"
+        "evidence": "0.93 ppg fora em 15 jogos"
       },
       {
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (9.13)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (9.45)"
       }
     ],
     "notes": [],
@@ -48,20 +48,20 @@
         "type": "trend",
         "tag": "O 12º Jogador",
         "headline": "Todinho é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 8 partidas, acumula 4 participações em gols (3G / 1A) e 1.61 (xG+xA).",
+        "lead": "Saindo do banco em 9 partidas, acumula 4 participações em gols (3G / 1A) e 1.63 (xG+xA).",
         "badge": "Arma Secreta"
       }
     ],
     "facts": {
       "points_real": 38,
-      "points_expected": 39.8579,
-      "xg_diff": 1.32,
-      "finishing": -5.75,
-      "keeping": 6.43,
+      "points_expected": 40.0667,
+      "xg_diff": -1.16,
+      "finishing": -6.25,
+      "keeping": 6.41,
       "ppg_home": 1.714,
-      "ppg_away": 1.0
+      "ppg_away": 0.933
     },
-    "narrative": "Na temporada, Náutico soma **38 pontos reais** (10V, 8E, 10D) com **39.9 xPts** esperados e saldo de **+1.32 xG**.\n\n**Virtudes da Equipe:** Defesa/goleiro seguram abaixo do xG sofrido; Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Desperdiça chances: produz xG mas não converte; Fraco fora de casa; Concede mais no fim do jogo — queda física/concentração."
+    "narrative": "Na temporada, Náutico soma **38 pontos reais** (10V, 8E, 11D) com **40.1 xPts** esperados e saldo de **-1.16 xG**.\n\n**Virtudes da Equipe:** Defesa/goleiro seguram abaixo do xG sofrido; Arma ofensiva forte em bola parada.\n\n**Vulnerabilidades:** Desperdiça chances: produz xG mas não converte; Fraco fora de casa; Concede mais no fim do jogo — queda física/concentração."
   },
   "matches": {
     "15525992": {
@@ -1010,6 +1010,49 @@
         }
       ],
       "narrative": "Partida disputada contra o **Operário-PR** (2026-09-15, em casa), encerrada em **3:3**, com **3.58 xG gerados** e **1.93 xG concedidos**.\n\n**Pontos Positivos:** Controlou o jogo do início ao fim no xG; Jean Carlos decisivo.\n\n**Pontos Negativos:** Wanderson abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Empate com desempenho melhor que o placar; Vinicius Diniz foi o mais perigoso do rival."
+    },
+    "15526296": {
+      "event_id": 15526296,
+      "date": "2026-09-22",
+      "opponent": "Cuiabá",
+      "score": "3:0",
+      "strengths": [
+        {
+          "tag": "individual",
+          "kind": "strength",
+          "text": "Muriel melhor em campo.",
+          "evidence": "nota 7.9, xG+xA 0.00"
+        }
+      ],
+      "weaknesses": [
+        {
+          "tag": "resultado",
+          "kind": "weakness",
+          "text": "Goleada sofrida.",
+          "evidence": "0-3"
+        },
+        {
+          "tag": "controle",
+          "kind": "weakness",
+          "text": "Amassado no volume de chances.",
+          "evidence": "xG final 0.50-2.98"
+        },
+        {
+          "tag": "individual",
+          "kind": "weakness",
+          "text": "Vinícius abaixo.",
+          "evidence": "nota 6.0"
+        }
+      ],
+      "notes": [
+        {
+          "tag": "alerta",
+          "kind": "note",
+          "text": "Kauan Cristtyan foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.73"
+        }
+      ],
+      "narrative": "Partida disputada contra o **Cuiabá** (2026-09-22, fora de casa), encerrada em **3:0**, com **0.50 xG gerados** e **2.98 xG concedidos**.\n\n**Pontos Positivos:** Muriel melhor em campo.\n\n**Pontos Negativos:** Goleada sofrida; Amassado no volume de chances; Vinícius abaixo.\n\n**Observações Táticas:** Kauan Cristtyan foi o mais perigoso do rival."
     }
   }
 }

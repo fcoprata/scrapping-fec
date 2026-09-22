@@ -588,6 +588,27 @@
       "ogol_url": null,
       "attendance": null,
       "referee": null
+    },
+    {
+      "event_id": 15526293,
+      "date": "2026-09-20",
+      "competition": "Brasileirão Série B",
+      "round": "29",
+      "is_home": false,
+      "opponent": "Goiás",
+      "score": "2:1",
+      "goals_for": 1,
+      "goals_against": 2,
+      "points": 0,
+      "xg_for": 0.68,
+      "xg_against": 2.34,
+      "xgot_for": 0.87,
+      "xgot_against": 2.65,
+      "tm_matched": false,
+      "ogol_matched": false,
+      "ogol_url": null,
+      "attendance": null,
+      "referee": null
     }
   ]
 }
