@@ -13,18 +13,39 @@ render_page_header(
 )
 
 
+@st.cache_resource
+def _bootstrap_db_once() -> bool:
+    """Roda uma vez por processo do servidor: se o DuckDB existe mas está vazio
+    (caso do deploy no Streamlit Community Cloud -- o arquivo vive fora do repo
+    de propósito, ver storage/db.py, então cada container sobe sem ele),
+    reconstrói a partir do data/*.json já commitado. Sem rede, ~15s pros 40
+    clubes. `st.cache_resource` garante que só a primeira visita de cada
+    container paga esse custo; visitas seguintes reusam o banco já montado."""
+    from scripts.migrate_json_to_duckdb import migrate
+    try:
+        migrate(verbose=False)
+        return True
+    except Exception as e:
+        st.session_state["_scout_bootstrap_error"] = f"{type(e).__name__}: {e}"
+        return False
+
+
 @st.cache_data(ttl=300)
 def _load_league_rows():
     """Consulta o DuckDB direto (read-only) quando ele existe -- é o caso local,
     com merge de transferência e percentil calculados em SQL (storage/db.py::
-    query_league_player_metrics). O banco vive fora do repo (~/.local/share,
-    de propósito -- ver storage/db.py) então não existe no deploy do Streamlit
-    Community Cloud, que só tem o que está no git: cai pro export JSON
-    committado (`data/league_player_metrics.json`, atualizado via `--league`)
-    nesse caso, em vez de mostrar a tela vazia."""
+    query_league_player_metrics). Se vier vazio, tenta montar o banco a partir
+    do JSON commitado (`_bootstrap_db_once`, caso Cloud) antes de desistir e
+    cair pro export estático (`league_player_metrics.json`) como último recurso."""
     rows = _db.query_league_player_metrics()
     if rows:
         return rows, "db"
+
+    _bootstrap_db_once()
+    rows = _db.query_league_player_metrics()
+    if rows:
+        return rows, "db_bootstrapped"
+
     return load_json("league_player_metrics.json").get("players", []), "json_export"
 
 
@@ -37,10 +58,16 @@ if not league_rows:
     )
     st.stop()
 
-if _source == "json_export":
+if _source == "db_bootstrapped":
     st.caption(
-        f"⚠️ Lendo o export estático (`league_player_metrics.json`, sem banco local disponível aqui) — "
-        f"pode estar desatualizado em relação à última coleta. "
+        f"🔧 Banco reconstruído agora a partir do JSON commitado (primeira carga deste servidor). "
+        f"{len({r.get('team_key') for r in league_rows})} clubes · {len(league_rows)} jogadores."
+    )
+elif _source == "json_export":
+    err = st.session_state.get("_scout_bootstrap_error")
+    st.caption(
+        f"⚠️ Lendo o export estático (`league_player_metrics.json`, não consegui montar o banco aqui"
+        f"{f': {err}' if err else ''}) — pode estar desatualizado em relação à última coleta. "
         f"{len({r.get('team_key') for r in league_rows})} clubes · {len(league_rows)} jogadores."
     )
 else:

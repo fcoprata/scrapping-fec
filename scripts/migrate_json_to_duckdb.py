@@ -1,11 +1,15 @@
-"""One-off: backfill o DuckDB (storage/db.py) a partir dos data/*.json já
-coletados pelos 40 clubes, sem precisar re-rodar scraping.
+"""Backfill o DuckDB (storage/db.py) a partir dos data/*.json já coletados
+pelos 40 clubes, sem precisar re-rodar scraping.
 
 Idempotente — reaproveita os mesmos upserts que o pipeline ao vivo usa
 (storage/json_store.py já chama db.py em todo save_* novo daqui pra frente;
-este script só cobre o histórico que já existia em disco antes da migração).
+este script cobre o histórico que já existia em disco antes da migração — e
+serve de auto-bootstrap: o DuckDB vive fora do repo (~/.local/share, ver
+storage/db.py), então não existe no deploy do Streamlit Community Cloud, que
+só tem o que está no git. `views/scout.py` chama `migrate()` na primeira vez
+que o banco estiver vazio lá, reconstruindo a partir do JSON commitado.
 
-Uso: python scripts/migrate_json_to_duckdb.py
+Uso via CLI: python scripts/migrate_json_to_duckdb.py
 """
 
 import sys
@@ -15,8 +19,8 @@ from storage import db
 from storage.json_store import JsonStore
 
 
-def main():
-    store = JsonStore()
+def migrate(store: JsonStore = None, verbose: bool = True) -> dict:
+    store = store or JsonStore()
     db.sync_config(TEAMS, COMPETITIONS)
 
     n_players_master = n_matches_master = n_player_metrics = 0
@@ -90,18 +94,22 @@ def main():
     if league.get("players"):
         db.upsert_league_player_metrics(league)
 
-    print(f"players_master: {n_players_master}/{len(TEAMS)} clubes")
-    print(f"matches_master: {n_matches_master}/{len(TEAMS)} clubes")
-    print(f"player_metrics: {n_player_metrics}/{len(TEAMS)} clubes")
-    print(f"team_metrics:   {n_team_metrics}/{len(TEAMS)} clubes")
-    print(f"match_reports:  {n_match_reports}/{len(TEAMS)} clubes")
-    print(f"analysis:       {n_analysis}/{len(TEAMS)} clubes")
-
-    conn = db.get_conn()
-    for t in ("teams", "competitions", "players", "matches", "standings", "raw_snapshots"):
-        n = conn.execute(f"select count(*) from {t}").fetchone()[0]
-        print(f"  {t}: {n} linhas no banco")
+    stats = {
+        "players_master": n_players_master, "matches_master": n_matches_master,
+        "player_metrics": n_player_metrics, "team_metrics": n_team_metrics,
+        "match_reports": n_match_reports, "analysis": n_analysis, "teams_total": len(TEAMS),
+    }
+    if verbose:
+        for k, v in stats.items():
+            if k != "teams_total":
+                print(f"{k}: {v}/{len(TEAMS)} clubes")
+        conn = db.get_conn()
+        for t in ("teams", "competitions", "players", "matches", "standings", "raw_snapshots"):
+            n = conn.execute(f"select count(*) from {t}").fetchone()[0]
+            print(f"  {t}: {n} linhas no banco")
+    return stats
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    migrate()
+    sys.exit(0)
