@@ -293,7 +293,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Guilherme Henrique",
@@ -1695,7 +1695,7 @@
           "shots_total": 3,
           "goals": 1,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Indio",
@@ -3059,7 +3059,7 @@
           "shots_total": 1,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Bruno José",
@@ -3279,7 +3279,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -4644,7 +4644,7 @@
           "shots_total": 1,
           "goals": 1,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Natã",
@@ -4784,7 +4784,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -6058,7 +6058,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Léo Tocantins",
@@ -7508,7 +7508,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         },
         {
           "name": "Leo Jacó",
@@ -7528,7 +7528,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         }
       ],
       "players_against": [
@@ -8845,7 +8845,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Adriano Martins",
@@ -8905,7 +8905,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         },
         {
           "name": "Léo Tocantins",
@@ -10156,7 +10156,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Felipe Guimarães",
@@ -10276,7 +10276,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -11891,7 +11891,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Gustavo Daniel",
@@ -11971,7 +11971,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         },
         {
           "name": "Léo Tocantins",
@@ -13389,7 +13389,7 @@
           "shots_total": 2,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Redney Emanuel de Jesus Assis",
@@ -13549,7 +13549,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -14937,7 +14937,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Felipe Guimarães",
@@ -15057,7 +15057,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -16430,7 +16430,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         },
         {
           "name": "Leo Jacó",
@@ -16450,7 +16450,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         }
       ],
       "players_against": [
@@ -17951,7 +17951,7 @@
           "shots_total": 1,
           "goals": 1,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Adriano Martins",
@@ -18031,7 +18031,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -19232,7 +19232,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         },
         {
           "name": "Ewerthon",
@@ -19452,7 +19452,7 @@
           "shots_total": 2,
           "goals": 1,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Felipe Guimarães",
@@ -20885,7 +20885,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Felipe Guimarães",
@@ -21005,7 +21005,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -22421,7 +22421,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Gabriel Dias Pae",
@@ -22521,7 +22521,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -23791,7 +23791,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Gustavo Daniel",
@@ -23891,7 +23891,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         },
         {
           "name": "Léo Tocantins",
@@ -25078,7 +25078,7 @@
           "shots_total": 2,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Marrony",
@@ -25278,7 +25278,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -26682,7 +26682,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         },
         {
           "name": "Leo Jacó",
@@ -26702,7 +26702,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         }
       ],
       "players_against": [
@@ -27946,7 +27946,7 @@
           "shots_total": 1,
           "goals": 0,
           "position": "F",
-          "key": "leo"
+          "key": null
         },
         {
           "name": "Kauã Henrique",
@@ -28046,7 +28046,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -29667,7 +29667,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -31350,7 +31350,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -32668,7 +32668,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -34357,7 +34357,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -35850,7 +35850,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -37454,7 +37454,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -39189,7 +39189,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -40878,7 +40878,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [
@@ -42275,7 +42275,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "G",
-          "key": "paulo henrique"
+          "key": "paulo"
         }
       ],
       "players_against": [

@@ -4,9 +4,12 @@ Pure functions only. No network calls, no DataFrame use. Dict/loop style
 mirroring ``models/aggregate.py``. Joins are by key, never by list index.
 """
 
+import logging
 import re
 
 from name_match import normalize_name
+
+logger = logging.getLogger(__name__)
 
 # Extract the numeric OGol player id from a profile_url whose path looks like
 # /jogador/<slug>/<digits>
@@ -30,7 +33,13 @@ def _ogol_id_from_url(url):
 
 
 def _fuzzy_lookup(by_name, norm):
-    """Exact-then-alias-then-substring lookup."""
+    """Exact-then-alias-then-substring lookup.
+
+    Substring only fires when it resolves to a single candidate — with two+
+    players whose normalized name is a substring of one another (common with
+    short/common names), picking the first `dict` hit silently mixed one
+    player's stats into another's row. Ambiguous cases return None instead.
+    """
     hit = by_name.get(norm)
     if hit is not None:
         return hit
@@ -40,10 +49,16 @@ def _fuzzy_lookup(by_name, norm):
     if alias and alias in by_name:
         return by_name[alias]
 
-    return next(
-        (v for k, v in by_name.items() if k in norm or norm in k),
-        None,
-    )
+    candidates = [(k, v) for k, v in by_name.items() if k in norm or norm in k]
+    if len(candidates) == 1:
+        logger.warning("players_master: '%s' casado por substring com '%s'", norm, candidates[0][0])
+        return candidates[0][1]
+    if len(candidates) > 1:
+        logger.warning(
+            "players_master: '%s' ambíguo entre %d nomes (%s) — nenhum retornado",
+            norm, len(candidates), [k for k, _ in candidates],
+        )
+    return None
 
 
 def _longest(*names):
@@ -248,14 +263,32 @@ def _fuzzy_opp_lookup(opponents_by_date, date, opp_norm):
     candidates = opponents_by_date.get(date, [])
     if not candidates:
         return None
-    for opp_name, obj in candidates:
-        if opp_name == opp_norm or opp_name in opp_norm or opp_norm in opp_name:
-            return obj
-        # token overlap match
-        if set(opp_name.split()) & set(opp_norm.split()):
-            return obj
+
+    exact = [c for c in candidates if c[0] == opp_norm]
+    if exact:
+        return exact[0][1]
+
     if len(candidates) == 1:
-        return candidates[0][1]
+        # Único jogo nessa data — substring/token overlap frágil é aceitável
+        # porque não há outro candidato pra confundir com.
+        opp_name, obj = candidates[0]
+        if opp_name in opp_norm or opp_norm in opp_name or (set(opp_name.split()) & set(opp_norm.split())):
+            return obj
+        return None
+
+    # Múltiplos jogos na mesma data: substring/token overlap pode casar com o
+    # adversário errado — só aceita se resolver a exatamente 1 candidato.
+    fuzzy_hits = [
+        (opp_name, obj) for opp_name, obj in candidates
+        if opp_name in opp_norm or opp_norm in opp_name or (set(opp_name.split()) & set(opp_norm.split()))
+    ]
+    if len(fuzzy_hits) == 1:
+        return fuzzy_hits[0][1]
+    if len(fuzzy_hits) > 1:
+        logger.warning(
+            "matches_master: adversário '%s' em %s ambíguo entre %d candidatos (%s)",
+            opp_norm, date, len(fuzzy_hits), [n for n, _ in fuzzy_hits],
+        )
     return None
 
 

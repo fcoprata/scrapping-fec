@@ -25,7 +25,7 @@ COMPETITIONS = {
     },
     "copa-do-nordeste": {
         "name": "Copa do Nordeste",
-        "sofascore_tournament_id": 2081,
+        "sofascore_tournament_id": 1596,  # era 2081 — id errado, corrigido via --discover-competitions
         "ogol_slug": "copa-do-nordeste",
     },
 }

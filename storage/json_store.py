@@ -8,6 +8,7 @@ from models.match_stats import MatchStats
 from models.player import Player
 from models.player_stats import PlayerAdvancedSeason, PlayerSeasonStats
 from models.player_match_stats import MatchAdvancedStats
+from storage import db as _db
 
 
 _DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
@@ -41,14 +42,18 @@ class JsonStore:
 
     def save(self, team: str, matches: List[Match]) -> str:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_matches.json"))
+        rows = [asdict(m) for m in matches]
         with open(path, "w", encoding="utf-8") as f:
-            json.dump([asdict(m) for m in matches], f, ensure_ascii=False, indent=2)
+            json.dump(rows, f, ensure_ascii=False, indent=2)
+        _db.upsert_raw_snapshot("matches", team, "matches", rows)
         return path
 
     def save_stats(self, team: str, stats: List[MatchStats]) -> str:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_stats.json"))
+        rows = [asdict(s) for s in stats]
         with open(path, "w", encoding="utf-8") as f:
-            json.dump([asdict(s) for s in stats], f, ensure_ascii=False, indent=2)
+            json.dump(rows, f, ensure_ascii=False, indent=2)
+        _db.upsert_raw_snapshot("stats", team, "stats", rows)
         return path
 
     def save_squad(self, team: str, players: List[Player], season_year: str, epoca_id: str) -> str:
@@ -60,6 +65,7 @@ class JsonStore:
         }
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
+        _db.upsert_raw_snapshot("squad", team, "squad", payload)
         return path
 
     def save_player_stats(self, team: str, stats: List[PlayerSeasonStats], season_year: str) -> str:
@@ -70,6 +76,7 @@ class JsonStore:
         }
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
+        _db.upsert_raw_snapshot("player_stats", team, "player_stats", payload)
         return path
 
     def load_squad(self, team: str) -> dict:
@@ -95,6 +102,7 @@ class JsonStore:
         }
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
+        _db.upsert_raw_snapshot("sofascore", team, "advanced_matches", payload)
         return path
 
     def load_match_advanced(self, team: str) -> dict:
@@ -113,6 +121,7 @@ class JsonStore:
         }
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
+        _db.upsert_raw_snapshot("sofascore", team, "advanced_season", payload)
         return path
 
     def load_advanced_season(self, team: str) -> dict:
@@ -146,6 +155,7 @@ class JsonStore:
         payload = {"season_year": season_year, "players": rows}
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
+        _db.upsert_players_master(team, season_year, rows)
         return path
 
     def load_players_master(self, team: str) -> dict:
@@ -159,6 +169,7 @@ class JsonStore:
         payload = {"season_year": season_year, "matches": rows}
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
+        _db.upsert_matches_master(team, season_year, rows)
         return path
 
     def load_matches_master(self, team: str) -> dict:
@@ -172,6 +183,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_player_metrics.json"))
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"season_year": season_year, "players": rows}, f, ensure_ascii=False, indent=2)
+        _db.upsert_player_season_stats(team, season_year, rows)
         return path
 
     def load_player_metrics(self, team: str) -> dict:
@@ -184,6 +196,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_team_metrics.json"))
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"season_year": season_year, **data}, f, ensure_ascii=False, indent=2)
+        _db.upsert_team_metrics(team, season_year, data)
         return path
 
     def load_team_metrics(self, team: str) -> dict:
@@ -194,8 +207,10 @@ class JsonStore:
 
     def save_match_reports(self, team: str, reports: list, season_year: str) -> str:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_match_reports.json"))
+        payload = {"season_year": season_year, "reports": reports}
         with open(path, "w", encoding="utf-8") as f:
-            json.dump({"season_year": season_year, "reports": reports}, f, ensure_ascii=False, indent=2)
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        _db.upsert_match_reports(team, season_year, payload)
         return path
 
     def load_match_reports(self, team: str) -> dict:
@@ -208,6 +223,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_analysis.json"))
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"season_year": season_year, **data}, f, ensure_ascii=False, indent=2)
+        _db.upsert_team_analysis(team, season_year, data)
         return path
 
     def load_analysis(self, team: str) -> dict:
@@ -221,6 +237,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"{team}_fixtures.json"))
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"fixtures": rows}, f, ensure_ascii=False, indent=2)
+        _db.upsert_raw_snapshot("sofascore", team, "fixtures", rows)
         return path
 
     def load_fixtures(self, team: str) -> dict:
@@ -233,6 +250,14 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"standings_{key}.json"))
         with open(path, "w", encoding="utf-8") as f:
             json.dump({"standings": rows}, f, ensure_ascii=False, indent=2)
+        season_label = key.replace("_", "-")
+        comp_key = season_label.rsplit("-", 1)[0]
+        from config import TEAMS
+        team_key_by_sofascore_id = {
+            (v.get("sofascore") or {}).get("team_id"): k
+            for k, v in TEAMS.items() if (v.get("sofascore") or {}).get("team_id")
+        }
+        _db.upsert_standings(comp_key, season_label, rows, team_key_by_sofascore_id)
         return path
 
     def load_standings(self, key: str) -> dict:
@@ -246,6 +271,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, "league_player_metrics.json"))
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
+        _db.upsert_league_player_metrics(data)
         return path
 
     def load_league_player_metrics(self) -> dict:
@@ -259,6 +285,7 @@ class JsonStore:
         path = os.path.abspath(os.path.join(_DATA_DIR, f"ufmg_{key}.json"))
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
+        _db.upsert_ufmg(key, data)
         return path
 
     def load_ufmg_data(self, key: str) -> dict:

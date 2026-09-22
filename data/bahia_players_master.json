@@ -547,8 +547,8 @@
     },
     {
       "key": "victor",
-      "name": "Marcos Victor",
-      "sofascore_id": "1174196",
+      "name": "Victor",
+      "sofascore_id": "1640599",
       "ogol_id": null,
       "position_group": "Goleiro",
       "position_detail": null,
@@ -560,7 +560,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "santiago ramos mingo",

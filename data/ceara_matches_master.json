@@ -227,10 +227,10 @@
       "xgot_for": 1.77,
       "xgot_against": 0.88,
       "tm_matched": false,
-      "ogol_matched": true,
-      "ogol_url": "https://www.ogol.com.br/jogo/2026-05-31-ceara-operario-ferroviario/12043318",
+      "ogol_matched": false,
+      "ogol_url": null,
       "attendance": null,
-      "referee": "Gustavo Ervino Bauermann"
+      "referee": null
     },
     {
       "event_id": 15526121,
@@ -353,10 +353,10 @@
       "xgot_for": 0.04,
       "xgot_against": 0.22,
       "tm_matched": false,
-      "ogol_matched": true,
-      "ogol_url": "https://www.ogol.com.br/jogo/2026-07-14-ceara-athletic-mg/12043378",
+      "ogol_matched": false,
+      "ogol_url": null,
       "attendance": null,
-      "referee": "José Mendonça da Silva Jr."
+      "referee": null
     },
     {
       "event_id": 15526180,
@@ -395,10 +395,10 @@
       "xgot_for": 0.96,
       "xgot_against": 1.03,
       "tm_matched": false,
-      "ogol_matched": true,
-      "ogol_url": "https://www.ogol.com.br/jogo/2026-07-22-ceara-crb/12043398",
+      "ogol_matched": false,
+      "ogol_url": null,
       "attendance": null,
-      "referee": "Paulo Henrique Vollkopf"
+      "referee": null
     },
     {
       "event_id": 15526199,

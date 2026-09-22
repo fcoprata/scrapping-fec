@@ -128,6 +128,7 @@ pages = [
     st.Page("views/calendar.py", title="Calendário & Pré-Jogo", icon="📅"),
     st.Page("views/squad_planner.py", title="Planejador de Elenco", icon="📋"),
     st.Page("views/player_card.py", title="Card do Jogador", icon="👤"),
+    st.Page("views/scout.py", title="Scout — Ranking de Jogadores", icon="🔎"),
     st.Page("views/about.py", title="Sobre", icon="ℹ️"),
 ]
 

@@ -1,0 +1,1048 @@
+{
+  "athletico": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 24285,
+      "tournament": "Copa Paraná",
+      "season_id": 97849,
+      "season": "Copa Paraná 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 382,
+      "tournament": "Paranaense",
+      "season_id": 86658,
+      "season": "Paranaense, 1. Divisao 2026",
+      "year": "2026"
+    }
+  ],
+  "atletico-mineiro": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 480,
+      "tournament": "CONMEBOL Sudamericana",
+      "season_id": 87770,
+      "season": "CONMEBOL Sudamericana 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 379,
+      "tournament": "Mineiro, Módulo I",
+      "season_id": 87236,
+      "season": "Mineiro, Modulo I 2026",
+      "year": "2026"
+    }
+  ],
+  "bahia": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 374,
+      "tournament": "Baianão Mansão Green 2026",
+      "season_id": 86656,
+      "season": "Baianão Mansão Green 2026",
+      "year": "2026"
+    }
+  ],
+  "botafogo": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 480,
+      "tournament": "CONMEBOL Sudamericana",
+      "season_id": 87770,
+      "season": "CONMEBOL Sudamericana 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 92,
+      "tournament": "Carioca",
+      "season_id": 86674,
+      "season": "Carioca, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "chapecoense": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 376,
+      "tournament": "Catarinense",
+      "season_id": 86675,
+      "season": "Catarinense, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "corinthians": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 384,
+      "tournament": "CONMEBOL Libertadores",
+      "season_id": 87760,
+      "season": "CONMEBOL Libertadores 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 14602,
+      "tournament": "Supercopa do Brasil",
+      "season_id": 88072,
+      "season": "Supercopa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "coritiba": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 382,
+      "tournament": "Paranaense",
+      "season_id": 86658,
+      "season": "Paranaense, 1. Divisao 2026",
+      "year": "2026"
+    }
+  ],
+  "cruzeiro": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 384,
+      "tournament": "CONMEBOL Libertadores",
+      "season_id": 87760,
+      "season": "CONMEBOL Libertadores 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 379,
+      "tournament": "Mineiro, Módulo I",
+      "season_id": 87236,
+      "season": "Mineiro, Modulo I 2026",
+      "year": "2026"
+    }
+  ],
+  "flamengo": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 490,
+      "tournament": "CONMEBOL Recopa",
+      "season_id": 87761,
+      "season": "CONMEBOL Recopa 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 384,
+      "tournament": "CONMEBOL Libertadores",
+      "season_id": 87760,
+      "season": "CONMEBOL Libertadores 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 14602,
+      "tournament": "Supercopa do Brasil",
+      "season_id": 88072,
+      "season": "Supercopa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 92,
+      "tournament": "Carioca",
+      "season_id": 86674,
+      "season": "Carioca, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "fluminense": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 384,
+      "tournament": "CONMEBOL Libertadores",
+      "season_id": 87760,
+      "season": "CONMEBOL Libertadores 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 92,
+      "tournament": "Carioca",
+      "season_id": 86674,
+      "season": "Carioca, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "gremio": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 480,
+      "tournament": "CONMEBOL Sudamericana",
+      "season_id": 87770,
+      "season": "CONMEBOL Sudamericana 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 377,
+      "tournament": "Gaúcho",
+      "season_id": 86736,
+      "season": "Gaucho, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "internacional": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 377,
+      "tournament": "Gaúcho",
+      "season_id": 86736,
+      "season": "Gaucho, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "mirassol": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 384,
+      "tournament": "CONMEBOL Libertadores",
+      "season_id": 87760,
+      "season": "CONMEBOL Libertadores 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "palmeiras": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 384,
+      "tournament": "CONMEBOL Libertadores",
+      "season_id": 87760,
+      "season": "CONMEBOL Libertadores 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "red-bull-bragantino": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 480,
+      "tournament": "CONMEBOL Sudamericana",
+      "season_id": 87770,
+      "season": "CONMEBOL Sudamericana 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "remo": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 11669,
+      "tournament": "Paraense",
+      "season_id": 87575,
+      "season": "Paraense, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "santos": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 480,
+      "tournament": "CONMEBOL Sudamericana",
+      "season_id": 87770,
+      "season": "CONMEBOL Sudamericana 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "sao-paulo": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 480,
+      "tournament": "CONMEBOL Sudamericana",
+      "season_id": 87770,
+      "season": "CONMEBOL Sudamericana 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "vasco-da-gama": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 480,
+      "tournament": "CONMEBOL Sudamericana",
+      "season_id": 87770,
+      "season": "CONMEBOL Sudamericana 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 92,
+      "tournament": "Carioca",
+      "season_id": 86674,
+      "season": "Carioca, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "vitoria": [
+    {
+      "tournament_id": 325,
+      "tournament": "Brasileirão Betano",
+      "season_id": 87678,
+      "season": "Brasileiro Serie A 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 1596,
+      "tournament": "Copa do Nordeste",
+      "season_id": 91324,
+      "season": "Copa do Nordeste 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 374,
+      "tournament": "Baianão Mansão Green 2026",
+      "season_id": 86656,
+      "season": "Baianão Mansão Green 2026",
+      "year": "2026"
+    }
+  ],
+  "america-mineiro": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 379,
+      "tournament": "Mineiro, Módulo I",
+      "season_id": 87236,
+      "season": "Mineiro, Modulo I 2026",
+      "year": "2026"
+    }
+  ],
+  "athletic-club": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 379,
+      "tournament": "Mineiro, Módulo I",
+      "season_id": 87236,
+      "season": "Mineiro, Modulo I 2026",
+      "year": "2026"
+    }
+  ],
+  "atletico-goianiense": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 381,
+      "tournament": "Goiano",
+      "season_id": 86814,
+      "season": "Goiano 2026",
+      "year": "2026"
+    }
+  ],
+  "avai": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 376,
+      "tournament": "Catarinense",
+      "season_id": 86675,
+      "season": "Catarinense, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "botafogo-sp": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "ceara": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 1596,
+      "tournament": "Copa do Nordeste",
+      "season_id": 91324,
+      "season": "Copa do Nordeste 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 378,
+      "tournament": "Cearense",
+      "season_id": 86657,
+      "season": "Cearense, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "crb": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 1596,
+      "tournament": "Copa do Nordeste",
+      "season_id": 91324,
+      "season": "Copa do Nordeste 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    }
+  ],
+  "criciuma": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 376,
+      "tournament": "Catarinense",
+      "season_id": 86675,
+      "season": "Catarinense, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "cuiaba": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    }
+  ],
+  "fortaleza": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 1596,
+      "tournament": "Copa do Nordeste",
+      "season_id": 91324,
+      "season": "Copa do Nordeste 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 378,
+      "tournament": "Cearense",
+      "season_id": 86657,
+      "season": "Cearense, Serie A 2026",
+      "year": "2026"
+    }
+  ],
+  "goias": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 381,
+      "tournament": "Goiano",
+      "season_id": 86814,
+      "season": "Goiano 2026",
+      "year": "2026"
+    }
+  ],
+  "gremio-novorizontino": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "juventude": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 377,
+      "tournament": "Gaúcho",
+      "season_id": 86736,
+      "season": "Gaucho, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "londrina": [
+    {
+      "tournament_id": 24285,
+      "tournament": "Copa Paraná",
+      "season_id": 97849,
+      "season": "Copa Paraná 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 382,
+      "tournament": "Paranaense",
+      "season_id": 86658,
+      "season": "Paranaense, 1. Divisao 2026",
+      "year": "2026"
+    }
+  ],
+  "nautico": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 380,
+      "tournament": "Pernambucano",
+      "season_id": 87395,
+      "season": "Pernambucano 2026",
+      "year": "2026"
+    }
+  ],
+  "operario-pr": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 382,
+      "tournament": "Paranaense",
+      "season_id": 86658,
+      "season": "Paranaense, 1. Divisao 2026",
+      "year": "2026"
+    }
+  ],
+  "ponte-preta": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "sao-bernardo": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 372,
+      "tournament": "Paulista Série A1",
+      "season_id": 86993,
+      "season": "Paulista, Serie A1 2026",
+      "year": "2026"
+    }
+  ],
+  "sport-recife": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 1596,
+      "tournament": "Copa do Nordeste",
+      "season_id": 91324,
+      "season": "Copa do Nordeste 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 380,
+      "tournament": "Pernambucano",
+      "season_id": 87395,
+      "season": "Pernambucano 2026",
+      "year": "2026"
+    }
+  ],
+  "vila-nova-fc": [
+    {
+      "tournament_id": 390,
+      "tournament": "Brasileirão Série B",
+      "season_id": 89840,
+      "season": "Brasileiro Serie B 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 373,
+      "tournament": "Copa Betano do Brasil",
+      "season_id": 89353,
+      "season": "Copa do Brasil 2026",
+      "year": "2026"
+    },
+    {
+      "tournament_id": 381,
+      "tournament": "Goiano",
+      "season_id": 86814,
+      "season": "Goiano 2026",
+      "year": "2026"
+    }
+  ]
+}

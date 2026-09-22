@@ -31,6 +31,7 @@ from scrapers.ogol import OGolScraper
 from scrapers.sofascore import SofaScoreScraper
 from scrapers.ufmg import UFMGScraper
 from storage.json_store import JsonStore
+from storage import db as _db
 
 
 def main():
@@ -49,6 +50,7 @@ def main():
     parser.add_argument("--skip-existing", action="store_true", help="Com --batch-full: pula clubes que já têm matches_master preenchido.")
     parser.add_argument("--skip-teams", default="", help="Lista de team keys separadas por vírgula a ignorar no batch (ex: fortaleza).")
     parser.add_argument("--discover-seasons", action="store_true", help="Descobre e cacheia as temporadas 2026 (Série A/B) do SofaScore (data/sofascore_seasons.json).")
+    parser.add_argument("--discover-competitions", action="store_true", help="Descobre TODAS as competições 2026 (Copa do Brasil, Copa do Nordeste, estaduais etc) de cada clube no SofaScore e persiste no banco (data/sofascore_competitions.json + team_competition_seasons).")
     parser.add_argument("--division", choices=["serie-a", "serie-b", "all"], default="all", help="Divisão para o batch-full (padrão: all).")
 
     # Grupo 1: Esteira Analítica
@@ -85,9 +87,15 @@ def main():
         return
 
     store = JsonStore()
+    from config import COMPETITIONS
+    _db.sync_config(TEAMS, COMPETITIONS)
 
     if args.discover_seasons:
         _discover_all_seasons()
+        return
+
+    if args.discover_competitions:
+        _discover_all_competitions()
         return
 
     if args.batch_full:
@@ -670,6 +678,58 @@ def _build_league(store: JsonStore) -> None:
     if data["teams_covered"] < len(TEAMS):
         faltam = len(TEAMS) - data["teams_covered"]
         print(f"   ⚠️ {faltam} clube(s) ainda sem player_metrics coletado (rode --batch-full).")
+
+
+def _slugify(name: str) -> str:
+    import re
+    import unicodedata
+    n = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode("ascii")
+    n = re.sub(r"[^a-zA-Z0-9]+", "-", n).strip("-").lower()
+    return n or "desconhecido"
+
+
+def _discover_all_competitions() -> None:
+    """Descobre TODAS as competições 2026 (SofaScore) de cada clube — Série A/B,
+    Copa do Brasil, Copa do Nordeste e estaduais inclusos, não só as 2 fixas em
+    config.py. `scraper.get_team_seasons(team_id)` já retorna tudo; a versão
+    antiga (`--discover-seasons`) filtrava pra tournament_id in {325, 390} e
+    pulava time que já tinha seasons configuradas — por isso nunca achava Copa
+    do Brasil/Nordeste/estadual pra nenhum dos 40 clubes.
+
+    Persiste em data/sofascore_competitions.json (auditoria) e em
+    team_competition_seasons/competitions no DuckDB (storage/db.py) — é o que
+    `--advanced --competition <comp_key>` passa a usar pra buscar partidas de
+    qualquer competição descoberta, não só a season principal.
+    """
+    scraper = SofaScoreScraper()
+    targets = [k for k, v in TEAMS.items() if (v.get("sofascore") or {}).get("team_id")]
+    print(f"\n🔎 Descobrindo TODAS as competições 2026 (SofaScore) para {len(targets)} clubes...\n")
+
+    out = {}
+    for idx, team in enumerate(targets, 1):
+        team_id = TEAMS[team]["sofascore"]["team_id"]
+        try:
+            rows = scraper.get_team_seasons(team_id)
+        except Exception as e:
+            print(f"[{idx}/{len(targets)}] {team}: falha ({type(e).__name__}: {e})")
+            continue
+
+        found = [r for r in rows if str(r.get("year") or "") in ("2026", "26", "25/26")]
+        out[team] = found
+        for r in found:
+            comp_key = _db.get_comp_key_for_tournament(r["tournament_id"]) or _slugify(r["tournament"])
+            season_label = f"{comp_key}-2026"
+            _db.upsert_competition(comp_key, r["tournament"], r["tournament_id"])
+            _db.upsert_team_competition_season(team, comp_key, season_label, r["season_id"])
+
+        novas = [r["tournament"] for r in found if r["tournament_id"] not in (325, 390)]
+        label = f"{len(found)} competições" + (f" (novas: {', '.join(sorted(set(novas)))})" if novas else "")
+        print(f"[{idx}/{len(targets)}] {team}: {label}")
+
+    path = os.path.abspath(os.path.join("data", "sofascore_competitions.json"))
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=2)
+    print(f"\n💾 Cache salvo -> {path}\n")
 
 
 def _discover_all_seasons() -> None:

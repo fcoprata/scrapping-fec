@@ -4,8 +4,11 @@ Cruza dados da tabela de classificação oficial e da esteira analítica com os 
 de probabilidade e desempenho segmentado da UFMG.
 """
 
+import logging
 from typing import Any, Dict, List, Optional
 from name_match import normalize_name
+
+logger = logging.getLogger(__name__)
 
 
 def _calc_target_combo(pts_needed: int, matches_remaining: int) -> str:
@@ -32,20 +35,64 @@ def _match_team_name(name_a: str, name_b: str) -> bool:
     return na == nb or na in nb or nb in na
 
 
+def _find_standings_row(
+    team_name: str, standings_rows: List[Dict[str, Any]], team_id: Optional[int] = None
+) -> Optional[Dict[str, Any]]:
+    """Casa o time com uma linha da tabela de classificação.
+
+    `team_id` (SofaScore, já presente em cada row de `get_standings`) é a chave
+    real e sempre preferida quando disponível — nomes de exibição divergem
+    entre fontes, `team_id` não. Nomes só entram como fallback pra tabelas sem
+    `team_id` (ex.: dados UFMG). Exact match de nome antes de substring; nunca
+    cai de volta pro primeiro item da tabela — isso já causou pontos/posição de
+    outro clube sendo exibidos silenciosamente.
+    """
+    if team_id is not None:
+        for r in standings_rows:
+            if r.get("team_id") == team_id:
+                return r
+        logger.warning("relegation: team_id=%s não encontrado na tabela (%d rows)", team_id, len(standings_rows))
+        return None
+
+    norm_target = normalize_name(team_name)
+
+    for r in standings_rows:
+        if normalize_name(r.get("team_name", "")) == norm_target:
+            return r
+
+    candidates = [r for r in standings_rows if _match_team_name(r.get("team_name", ""), norm_target)]
+    if len(candidates) == 1:
+        logger.warning(
+            "relegation: '%s' casado por substring com '%s' na tabela (sem match exato)",
+            team_name, candidates[0].get("team_name"),
+        )
+        return candidates[0]
+    if len(candidates) > 1:
+        logger.warning(
+            "relegation: '%s' ambíguo entre %d times na tabela (%s) — nenhum retornado",
+            team_name, len(candidates), [c.get("team_name") for c in candidates],
+        )
+        return None
+
+    logger.warning("relegation: '%s' não encontrado na tabela de classificação", team_name)
+    return None
+
+
 def calc_team_relegation_profile(
     team_name: str,
     standings_rows: List[Dict[str, Any]],
     ufmg_data: Optional[Dict[str, Any]] = None,
     total_rounds: int = 38,
+    team_id: Optional[int] = None,
 ) -> Dict[str, Any]:
-    """Calcula diagnóstico detalhado de permanência/rebaixamento para uma equipe."""
+    """Calcula diagnóstico detalhado de permanência/rebaixamento para uma equipe.
+
+    `team_id` (SofaScore) deve ser passado sempre que disponível — é a chave
+    confiável pra achar a linha certa na tabela de classificação.
+    """
     norm_target = normalize_name(team_name)
-    row = next(
-        (r for r in standings_rows if _match_team_name(r.get("team_name", ""), norm_target)),
-        None,
-    )
-    if not row and standings_rows:
-        row = standings_rows[0]
+    row = _find_standings_row(team_name, standings_rows, team_id=team_id)
+    unmatched = row is None
 
     pos = row.get("position", 0) if row else 0
     played = row.get("played", 28) if row else 28
@@ -118,6 +165,7 @@ def calc_team_relegation_profile(
 
     return {
         "team_name": team_name,
+        "unmatched": unmatched,
         "position": pos,
         "played": played,
         "points": points,
@@ -191,10 +239,14 @@ def build_relegation_overview(
         # Buscar probabilidade UFMG correspondente
         prob = ufmg_reb_map.get(norm)
         if prob is None:
-            for k, v in ufmg_reb_map.items():
-                if k in norm or norm in k:
-                    prob = v
-                    break
+            substr_hits = [(k, v) for k, v in ufmg_reb_map.items() if k in norm or norm in k]
+            if len(substr_hits) == 1:
+                prob = substr_hits[0][1]
+            elif len(substr_hits) > 1:
+                logger.warning(
+                    "relegation overview: '%s' ambíguo entre %d times UFMG (%s) — prob 0.0",
+                    tname, len(substr_hits), [k for k, _ in substr_hits],
+                )
         prob = prob if prob is not None else 0.0
 
         # Considerar ameaçados: probabilidade > 0 ou posição >= 13 ou pontos < 45

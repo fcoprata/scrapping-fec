@@ -3,6 +3,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
+from config import TEAMS
 from views._common import (
     get_active_team,
     get_active_team_name,
@@ -41,11 +42,31 @@ def sv(key, default=0.0):
 
 _has_xg = s.get("points_expected") is not None
 
+# Pontos Reais: prefere a tabela oficial (standings_*.json, casada por team_id
+# do SofaScore) — matches_master pode estar incompleto (rodada faltando,
+# incremental parcial) e subestimar os pontos. Cai pro cálculo local só se a
+# tabela oficial ainda não foi coletada pra essa divisão.
+_division = TEAMS.get(team, {}).get("division", "Série B")
+_standings_key = "serie_a_2026" if _division == "Série A" else "serie_b_2026"
+_team_sofascore_id = TEAMS.get(team, {}).get("sofascore", {}).get("team_id")
+_standings_rows = load_json(f"standings_{_standings_key}.json").get("standings", [])
+_official_row = next((r for r in _standings_rows if r.get("team_id") == _team_sofascore_id), None)
+
+points_real = sv("points_real")
+if _official_row is not None:
+    points_real = _official_row.get("points", points_real)
+    if _official_row.get("points") != sv("points_real"):
+        st.info(
+            f"Pontos oficiais ({_official_row.get('points')}) divergem do cálculo local a partir dos jogos "
+            f"coletados ({sv('points_real'):.0f}) — provavelmente falta rodada em matches_master. "
+            f"Exibindo o valor oficial."
+        )
+
 # Top KPIs Numéricos
 c1, c2, c3, c4 = st.columns(4)
 c1.metric(
     "Pontos Reais",
-    sv("points_real"),
+    points_real,
     delta=round(sv("points_luck"), 1) if _has_xg else None,
     help="delta = Sorte / Overperformance (pontos reais − pontos esperados)",
 )

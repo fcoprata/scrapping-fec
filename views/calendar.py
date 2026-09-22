@@ -487,7 +487,13 @@ with tab_relegation:
         "A régua matemática histórica estabelece **45 pontos** como o patamar clássico de segurança na permanência."
     )
 
-    reb_prof = calc_team_relegation_profile(team_name, rows, ufmg_data)
+    reb_prof = calc_team_relegation_profile(team_name, rows, ufmg_data, team_id=active_team_id)
+
+    if reb_prof.get("unmatched"):
+        st.warning(
+            f"Não encontrei '{team_name}' na tabela de classificação oficial — "
+            "os números abaixo (posição, pontos, projeção) estão zerados, não são de outro clube."
+        )
 
     # Banner Principal de Status
     t45 = reb_prof["target_45"]

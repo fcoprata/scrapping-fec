@@ -227,10 +227,10 @@
       "xgot_for": 1.13,
       "xgot_against": 0.72,
       "tm_matched": true,
-      "ogol_matched": true,
-      "ogol_url": "https://www.ogol.com.br/jogo/2026-05-30-athletic-mg-fortaleza/12043316",
+      "ogol_matched": false,
+      "ogol_url": null,
       "attendance": null,
-      "referee": "Wagner do Nascimento Magalhães"
+      "referee": null
     },
     {
       "event_id": 15526124,
@@ -268,7 +268,7 @@
       "xg_against": 2.6,
       "xgot_for": 1.46,
       "xgot_against": 3.17,
-      "tm_matched": true,
+      "tm_matched": false,
       "ogol_matched": true,
       "ogol_url": "https://www.ogol.com.br/jogo/2026-06-17-fortaleza-america-mineiro/12043338",
       "attendance": null,
@@ -289,11 +289,11 @@
       "xg_against": 1.08,
       "xgot_for": 1.7,
       "xgot_against": 2.04,
-      "tm_matched": true,
-      "ogol_matched": true,
-      "ogol_url": "https://www.ogol.com.br/jogo/2026-06-21-crb-fortaleza/12043352",
+      "tm_matched": false,
+      "ogol_matched": false,
+      "ogol_url": null,
       "attendance": null,
-      "referee": "Bruno Arleu"
+      "referee": null
     },
     {
       "event_id": 15526152,
@@ -352,7 +352,7 @@
       "xg_against": 0.52,
       "xgot_for": 0.31,
       "xgot_against": 0.29,
-      "tm_matched": true,
+      "tm_matched": false,
       "ogol_matched": true,
       "ogol_url": "https://www.ogol.com.br/jogo/2026-07-12-atletico-goianiense-fortaleza/12043379",
       "attendance": null,
@@ -521,8 +521,8 @@
       "xgot_for": 1.52,
       "xgot_against": 0.89,
       "tm_matched": false,
-      "ogol_matched": true,
-      "ogol_url": "https://www.ogol.com.br/jogo/2026-08-31-fortaleza-operario-ferroviario/12043458",
+      "ogol_matched": false,
+      "ogol_url": null,
       "attendance": null,
       "referee": null
     },

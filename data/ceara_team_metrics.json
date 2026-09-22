@@ -1402,16 +1402,16 @@
     ]
   },
   "discipline": {
-    "coverage": "23/29",
-    "games_with_fouls": 13,
-    "avg_fouls": 13.54,
-    "avg_fouls_against": 13.85
+    "coverage": "20/29",
+    "games_with_fouls": 11,
+    "avg_fouls": 13.55,
+    "avg_fouls_against": 14.45
   },
   "style": {
-    "coverage": "23/29",
-    "games_with_possession": 14,
-    "avg_possession": 48.9,
-    "prod_per_possession_point": 0.0234,
+    "coverage": "20/29",
+    "games_with_possession": 12,
+    "avg_possession": 46.9,
+    "prod_per_possession_point": 0.0244,
     "label": "apoio"
   }
 }
