@@ -44,6 +44,83 @@ def get_team_badge_html(
     return ""
 
 
+CLUB_SHORT_LABELS = {
+    # Série A
+    "athletico": "CAP",
+    "atletico-mineiro": "CAM",
+    "bahia": "BAH",
+    "botafogo": "BOT",
+    "chapecoense": "CHA",
+    "corinthians": "COR",
+    "coritiba": "CFC",
+    "cruzeiro": "CRU",
+    "flamengo": "FLA",
+    "fluminense": "FLU",
+    "gremio": "GRE",
+    "internacional": "INT",
+    "mirassol": "MIR",
+    "palmeiras": "PAL",
+    "red-bull-bragantino": "RBB",
+    "remo": "REM",
+    "santos": "SAN",
+    "sao-paulo": "SPFC",
+    "vasco-da-gama": "VAS",
+    "vitoria": "VIT",
+    # Série B
+    "america-mineiro": "AME",
+    "athletic-club": "ATH",
+    "atletico-goianiense": "ACG",
+    "avai": "AVA",
+    "botafogo-sp": "BSP",
+    "ceara": "CSC",
+    "crb": "CRB",
+    "criciuma": "CRI",
+    "cuiaba": "CUI",
+    "fortaleza": "FEC",
+    "goias": "GOI",
+    "gremio-novorizontino": "NOV",
+    "juventude": "JUV",
+    "londrina": "LON",
+    "nautico": "NAU",
+    "operario-pr": "OPE",
+    "ponte-preta": "PON",
+    "sao-bernardo": "SBO",
+    "sport-recife": "SPO",
+    "vila-nova-fc": "VIL",
+}
+
+
+def render_team_badge_selector(
+    teams_list: List[str],
+    active_slug: str,
+    cols_count: int = 5,
+    badge_size: int = 28,
+) -> str:
+    """Gera um grid HTML responsivo com escudos clicáveis para seleção direta do clube."""
+    html_items = []
+    for slug in teams_list:
+        b64 = get_team_badge_b64(slug)
+        if not b64:
+            continue
+        is_active = (slug == active_slug)
+        full_name = TEAMS.get(slug, {}).get("name", slug.title())
+        div = TEAMS.get(slug, {}).get("division", "")
+        short = CLUB_SHORT_LABELS.get(slug, slug[:3].upper())
+
+        active_cls = "active" if is_active else ""
+        item_html = (
+            f'<a href="?team={slug}" target="_self" class="fec-badge-btn {active_cls}" '
+            f'title="{full_name} ({div}) — Clique para selecionar">'
+            f'  <img src="{b64}" alt="{full_name}" width="{badge_size}" height="{badge_size}" />'
+            f'  <span class="fec-badge-label">{short}</span>'
+            f'</a>'
+        )
+        html_items.append(item_html)
+
+    style_grid = f"grid-template-columns: repeat({cols_count}, 1fr);"
+    return f'<div class="fec-badge-grid" style="{style_grid}">{"".join(html_items)}</div>'
+
+
 _STATE_EXPANSIONS = {
     "mg": "mineiro",
     "pr": "",
@@ -399,6 +476,67 @@ def inject_fortaleza_theme(team: Optional[str] = None):
             font-size: 0.85rem;
             color: #475569;
             font-weight: 500;
+        }}
+
+        /* Grid Seletor Visual de Escudos na Sidebar */
+        .fec-badge-grid {{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+            padding: 4px 0 10px 0;
+            width: 100%;
+        }}
+
+        .fec-badge-btn {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none !important;
+            padding: 5px 2px 4px 2px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1.5px solid #E2E8F0;
+            transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            box-sizing: border-box;
+        }}
+
+        .fec-badge-btn:hover {{
+            background: #FFFFFF !important;
+            border-color: {accent} !important;
+            transform: translateY(-2px) scale(1.08);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12) !important;
+        }}
+
+        .fec-badge-btn.active {{
+            background: #FFFFFF !important;
+            border: 2px solid {primary} !important;
+            box-shadow: 0 0 10px rgba(0, 43, 127, 0.28) !important;
+            transform: scale(1.06);
+        }}
+
+        .fec-badge-btn img {{
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 3px rgba(0,0,0,0.15));
+            transition: transform 0.18s ease;
+        }}
+
+        .fec-badge-label {{
+            font-size: 0.62rem;
+            font-weight: 700;
+            color: #64748B;
+            margin-top: 3px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            line-height: 1;
+        }}
+
+        .fec-badge-btn.active .fec-badge-label {{
+            color: {primary} !important;
+            font-weight: 800;
         }}
 
         /* ========================================================
