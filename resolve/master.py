@@ -98,15 +98,27 @@ def build_players_master(squad: dict, player_stats: dict, advanced_season: dict)
         if key in seen_keys:
             continue
 
-        sq = _fuzzy_lookup(squad_by_name, key)
-        ps = _fuzzy_lookup(pstats_by_name, key)
-        adv = _fuzzy_lookup(adv_by_name, key)
+        sq = squad_by_name.get(key)
+        adv = adv_by_name.get(key)
 
-        # Fallback de cruzamento por SofaScore player_id caso o nome varie ligeiramente
+        # squad e advanced_season vêm da mesma fonte (SofaScore) e compartilham
+        # o mesmo player_id numérico -- cruzar por id é exato. Cruzar por nome
+        # (via _fuzzy_lookup/substring) é o que causava a colisão real: dois
+        # jogadores distintos com nome curto contido no nome completo do outro
+        # (ex.: "Fernando" substring de "Fernando Costa") ficavam merged sob a
+        # mesma linha, um roubando as estatísticas do outro.
         if sq is None and adv is not None and adv.get("player_id"):
             sq = squad_by_id.get(str(adv.get("player_id")))
         if adv is None and sq is not None and sq.get("player_id"):
             adv = adv_by_id.get(str(sq.get("player_id")))
+
+        # Nome só recorre a fuzzy/substring quando não há id em nenhum dos dois
+        # lados pra desambiguar (ex.: um deles ausente da fonte SofaScore).
+        if sq is None and adv is None:
+            sq = _fuzzy_lookup(squad_by_name, key)
+            adv = _fuzzy_lookup(adv_by_name, key)
+
+        ps = _fuzzy_lookup(pstats_by_name, key)
 
         # avoid emitting a second row when a non-squad name matched a
         # squad row already produced under its own key

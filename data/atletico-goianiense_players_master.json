@@ -343,8 +343,8 @@
     },
     {
       "key": "brenno",
-      "name": "Brenno Das Chagas Gomes",
-      "sofascore_id": "2405607",
+      "name": "Brenno",
+      "sofascore_id": "2677493",
       "ogol_id": null,
       "position_group": "Meia",
       "position_detail": null,
@@ -356,7 +356,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "nata",
@@ -599,7 +599,7 @@
     {
       "key": "paulo henrique",
       "name": "Paulo Henrique",
-      "sofascore_id": "345119",
+      "sofascore_id": "552660",
       "ogol_id": null,
       "position_group": "Goleiro",
       "position_detail": "GK",
@@ -611,7 +611,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "leo",
@@ -636,6 +636,23 @@
       "sofascore_id": "865400",
       "ogol_id": null,
       "position_group": "Meia",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "leo jaco",
+      "name": "Leo Jacó",
+      "sofascore_id": "1462709",
+      "ogol_id": null,
+      "position_group": "Atacante",
       "position_detail": null,
       "jersey_number": null,
       "age": null,
@@ -840,6 +857,40 @@
       "sofascore_id": "2139179",
       "ogol_id": null,
       "position_group": "Defensor",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "brenno das chagas gomes",
+      "name": "Brenno Das Chagas Gomes",
+      "sofascore_id": "2405607",
+      "ogol_id": null,
+      "position_group": "Atacante",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "yuri henrique da silveira",
+      "name": "Yuri Henrique da Silveira",
+      "sofascore_id": "1884678",
+      "ogol_id": null,
+      "position_group": "Goleiro",
       "position_detail": null,
       "jersey_number": null,
       "age": null,

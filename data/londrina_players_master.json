@@ -684,7 +684,7 @@
     {
       "key": "kaue leonardo de souza prado",
       "name": "Kaue Leonardo de Souza Prado",
-      "sofascore_id": "1631271",
+      "sofascore_id": "2613171",
       "ogol_id": null,
       "position_group": "Meia",
       "position_detail": null,
@@ -696,7 +696,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "thauan firmino da silva",
@@ -1211,7 +1211,7 @@
     {
       "key": "pablo dyego da silva rosa",
       "name": "Pablo Dyego Da Silva Rosa",
-      "sofascore_id": "550248",
+      "sofascore_id": "2774592",
       "ogol_id": null,
       "position_group": "Meia",
       "position_detail": null,
@@ -1223,7 +1223,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "bruno santos",
@@ -1265,6 +1265,23 @@
       "sofascore_id": "1199393",
       "ogol_id": null,
       "position_group": "Atacante",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "joao vitor gomes lopes",
+      "name": "João Vitor Gomes Lopes",
+      "sofascore_id": "1474898",
+      "ogol_id": null,
+      "position_group": "Defensor",
       "position_detail": null,
       "jersey_number": null,
       "age": null,

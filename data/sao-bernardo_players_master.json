@@ -361,7 +361,7 @@
     {
       "key": "joao vitor rodrigues galdino",
       "name": "Joao Vitor Rodrigues Galdino",
-      "sofascore_id": "2470408",
+      "sofascore_id": "2726152",
       "ogol_id": null,
       "position_group": "Meia",
       "position_detail": null,
@@ -373,7 +373,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "jemerson",

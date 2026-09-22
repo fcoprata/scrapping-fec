@@ -344,7 +344,7 @@
     {
       "key": "juan ferreira leite",
       "name": "Juan Ferreira Leite",
-      "sofascore_id": "2666138",
+      "sofascore_id": "2083035",
       "ogol_id": null,
       "position_group": "Meia",
       "position_detail": null,
@@ -356,7 +356,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "rosivan",
@@ -582,7 +582,7 @@
     {
       "key": "fernando carlos da silva filho",
       "name": "Fernando Carlos da Silva Filho",
-      "sofascore_id": "1017746",
+      "sofascore_id": "1463319",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": "DL",
@@ -594,7 +594,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "luciano",
@@ -942,6 +942,23 @@
       "sofascore_id": "2477688",
       "ogol_id": null,
       "position_group": "Goleiro",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "juan",
+      "name": "Juan",
+      "sofascore_id": "2666138",
+      "ogol_id": null,
+      "position_group": "Meia",
       "position_detail": null,
       "jersey_number": null,
       "age": null,

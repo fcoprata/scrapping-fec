@@ -327,7 +327,7 @@
     {
       "key": "julio cesar leme do nascimento",
       "name": "Julio Cesar Leme do Nascimento",
-      "sofascore_id": "2660888",
+      "sofascore_id": "2537252",
       "ogol_id": null,
       "position_group": "Meia",
       "position_detail": "AM",
@@ -339,7 +339,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "murilo rodrigues povoa",
@@ -531,7 +531,7 @@
     {
       "key": "luidy montes carneiro",
       "name": "Luidy Montes Carneiro",
-      "sofascore_id": "2584981",
+      "sofascore_id": "2589474",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": null,
@@ -543,7 +543,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "cristian",
@@ -565,7 +565,7 @@
     {
       "key": "heitor manuel barcelos lima",
       "name": "Heitor Manuel Barcelos Lima",
-      "sofascore_id": "1105092",
+      "sofascore_id": "1587793",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": null,
@@ -577,7 +577,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "gustavo",
@@ -869,9 +869,43 @@
       "in_advanced": true
     },
     {
+      "key": "luidy",
+      "name": "Luidy",
+      "sofascore_id": "2584981",
+      "ogol_id": null,
+      "position_group": "Defensor",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
       "key": "maguinho",
       "name": "Maguinho",
       "sofascore_id": "871209",
+      "ogol_id": null,
+      "position_group": "Defensor",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "heitor",
+      "name": "Heitor",
+      "sofascore_id": "1105092",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": null,

@@ -531,7 +531,7 @@
     {
       "key": "joao vitor lima rocha",
       "name": "João Vitor Lima Rocha",
-      "sofascore_id": "1643776",
+      "sofascore_id": "1489429",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": null,
@@ -543,7 +543,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "bruno ferreira",

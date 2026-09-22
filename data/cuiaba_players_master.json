@@ -157,7 +157,7 @@
     {
       "key": "ramon de araujo silva moutinho",
       "name": "Ramon de Araujo Silva Moutinho",
-      "sofascore_id": "1176784",
+      "sofascore_id": "2726157",
       "ogol_id": null,
       "position_group": "Atacante",
       "position_detail": null,
@@ -169,7 +169,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "pepe",
@@ -548,7 +548,7 @@
     {
       "key": "lorenzo martins",
       "name": "Lorenzo Martins",
-      "sofascore_id": "2114147",
+      "sofascore_id": "2456850",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": null,
@@ -560,7 +560,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "ataide",

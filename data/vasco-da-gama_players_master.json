@@ -564,8 +564,8 @@
     },
     {
       "key": "riquelme",
-      "name": "Riquelme Avellar",
-      "sofascore_id": "2026623",
+      "name": "Riquelme",
+      "sofascore_id": "1016905",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": "DL",
@@ -577,7 +577,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "riquelme avellar",

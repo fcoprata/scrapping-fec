@@ -633,7 +633,7 @@
     {
       "key": "fernando costa",
       "name": "Fernando Costa",
-      "sofascore_id": "911195",
+      "sofascore_id": "2140167",
       "ogol_id": null,
       "position_group": "Goleiro",
       "position_detail": null,
@@ -645,7 +645,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "pedro henrique",

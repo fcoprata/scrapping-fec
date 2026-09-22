@@ -428,8 +428,8 @@
     },
     {
       "key": "henrique",
-      "name": "Kauã Henrique",
-      "sofascore_id": "2198470",
+      "name": "Henrique",
+      "sofascore_id": "2055875",
       "ogol_id": null,
       "position_group": "Meia",
       "position_detail": null,
@@ -441,7 +441,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "kaua lucas oliveira",
@@ -700,8 +700,8 @@
     },
     {
       "key": "jhan pool",
-      "name": "Jhan Pool Torres",
-      "sofascore_id": "1899903",
+      "name": "Jhan Pool",
+      "sofascore_id": "2154297",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": null,
@@ -713,7 +713,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "renan gustavo ribeiro moreira",

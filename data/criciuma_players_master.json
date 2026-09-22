@@ -343,8 +343,8 @@
     },
     {
       "key": "romulo",
-      "name": "Rómulo Otero",
-      "sofascore_id": "845323",
+      "name": "Rômulo",
+      "sofascore_id": "1117102",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": "DC",
@@ -356,7 +356,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "bruno alves",

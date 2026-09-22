@@ -615,8 +615,8 @@
     },
     {
       "key": "luan",
-      "name": "Luan Polli",
-      "sofascore_id": "880117",
+      "name": "Luan",
+      "sofascore_id": "368842",
       "ogol_id": null,
       "position_group": "Goleiro",
       "position_detail": "DM",
@@ -628,7 +628,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "ian luccas",

@@ -105,6 +105,7 @@ _METRIC_GROUPS = {
     },
 }
 _METRIC_LABELS = {k: v for group in _METRIC_GROUPS.values() for k, v in group.items()}
+_LOWER_IS_BETTER = {"turnover_rate", "fouls_p90", "poss_lost_p90"}
 
 tab_ranking, tab_compare = st.tabs(["🏆 Ranking por Métrica", "⚖️ Comparador de Jogadores"])
 
@@ -112,7 +113,10 @@ tab_ranking, tab_compare = st.tabs(["🏆 Ranking por Métrica", "⚖️ Compara
 # TAB 1: Ranking
 # ============================================================
 with tab_ranking:
-    st.caption("Escolha a área e veja todas as métricas dela de uma vez — clique num cabeçalho de coluna pra reordenar por ela.")
+    st.caption(
+        "Escolha a área, depois a métrica — a tabela ordena pelos melhores nessa métrica específica. "
+        "As outras métricas da área ficam visíveis do lado pra dar contexto, mas não entram no ranking."
+    )
     c1, c2, c3, c4 = st.columns([1, 0.9, 1.3, 0.9])
     with c1:
         division = st.selectbox("Divisão", ["Todas", "Série A", "Série B"], index=0, key="scout_division")
@@ -124,23 +128,36 @@ with tab_ranking:
     with c4:
         min_minutes = st.number_input("Minutos mín.", min_value=0, value=270, step=90, key="scout_min_minutes")
 
+    group_metrics = _METRIC_GROUPS[group]
+    metric_key = st.selectbox(
+        "Ranquear por", list(group_metrics.keys()), format_func=lambda m: group_metrics[m], key="scout_metric",
+    )
+
+    if position == "Todas":
+        st.caption(
+            "⚠️ Posição em \"Todas\" — a área só escolhe quais colunas aparecem, não filtra quem entra na "
+            "lista. Goleiro/zagueiro com dado nessa métrica também aparece. Escolha uma posição pra comparar "
+            "só entre pares."
+        )
+
     div_filter = None if division == "Todas" else division
     pos_filter = None if position == "Todas" else position
-    group_metrics = _METRIC_GROUPS[group]
 
     filtered = [
         r for r in league_rows
         if (r.get("minutes") or 0) >= min_minutes
         and (pos_filter is None or r.get("position_group") == pos_filter)
         and (div_filter is None or r.get("division") == div_filter)
+        and r.get(metric_key) is not None
     ]
 
     if not filtered:
         st.info("Nenhum jogador encontrado com esses filtros — tente reduzir os minutos mínimos.")
     else:
+        metric_label = group_metrics[metric_key]
+        pctl_label = f"Percentil ({metric_label})"
         rows_out = []
         for r in filtered:
-            pctls = [r.get(f"{m}_league_pctl") for m in group_metrics if r.get(f"{m}_league_pctl") is not None]
             row = {
                 "Jogador": r.get("name"),
                 "Clube": r.get("team_name") + (" 🔁" if r.get("transferred") else ""),
@@ -151,21 +168,27 @@ with tab_ranking:
             for m, label in group_metrics.items():
                 v = r.get(m)
                 row[label] = round(v, 2) if v is not None else None
-            row["Percentil médio (área)"] = round(sum(pctls) / len(pctls), 1) if pctls else None
+            row[pctl_label] = r.get(f"{metric_key}_league_pctl")
             rows_out.append(row)
 
-        df = pd.DataFrame(rows_out).sort_values("Percentil médio (área)", ascending=False, na_position="last")
+        ascending = metric_key in _LOWER_IS_BETTER
+        df = pd.DataFrame(rows_out).sort_values(metric_label, ascending=ascending, na_position="last")
 
         if any(r.get("transferred") for r in filtered):
             st.caption("🔁 trocou de clube na temporada — minutos e métricas somam todos os clubes; clube exibido é o atual.")
-        st.caption(f"{len(df)} jogadores nesse filtro.")
+        st.caption(
+            f"{len(df)} jogadores nesse filtro, ordenados por **{metric_label}**"
+            f"{' (menor primeiro)' if ascending else ' (maior primeiro)'}. "
+            f"\"{pctl_label}\" é a posição de cada um só nessa métrica, comparado com todos da mesma posição "
+            f"na liga — 100 = melhor da posição, independe do filtro de divisão/minutos acima."
+        )
         st.dataframe(
             df,
             width="stretch",
             hide_index=True,
             column_config={
-                "Percentil médio (área)": st.column_config.ProgressColumn(
-                    "Percentil médio (área)", min_value=0, max_value=100, format="%.0f",
+                pctl_label: st.column_config.ProgressColumn(
+                    pctl_label, min_value=0, max_value=100, format="%.0f",
                 ),
             },
         )

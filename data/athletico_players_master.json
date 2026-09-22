@@ -599,7 +599,7 @@
     {
       "key": "fabio lucas ferreira dos santos",
       "name": "Fábio Lucas Ferreira Dos Santos",
-      "sofascore_id": "166491",
+      "sofascore_id": "1631220",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": "DC",
@@ -611,7 +611,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "enzo bernardo freitas de souza",

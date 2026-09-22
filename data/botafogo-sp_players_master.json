@@ -514,7 +514,7 @@
     {
       "key": "darlan da silva",
       "name": "Darlan Da Silva",
-      "sofascore_id": "1199411",
+      "sofascore_id": "2456665",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": null,
@@ -526,7 +526,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "gabriel tocantins",
@@ -599,7 +599,7 @@
     {
       "key": "brenno faro klippel",
       "name": "Brenno Faro Klippel",
-      "sofascore_id": "1613318",
+      "sofascore_id": "1587982",
       "ogol_id": null,
       "position_group": "Goleiro",
       "position_detail": "GK",
@@ -611,7 +611,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "luizao",
@@ -653,6 +653,23 @@
       "sofascore_id": "1147010",
       "ogol_id": null,
       "position_group": "Meia",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "brenno",
+      "name": "Brenno",
+      "sofascore_id": "1613318",
+      "ogol_id": null,
+      "position_group": "Goleiro",
       "position_detail": null,
       "jersey_number": null,
       "age": null,
