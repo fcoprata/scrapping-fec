@@ -4887,477 +4887,15 @@
       "date": "2026-04-12",
       "competition": "Brasileirão Série B",
       "round": "4",
-      "opponent": "Athletic Club",
-      "is_home": true,
+      "opponent": "Clube De Regatas Brasil",
+      "is_home": false,
       "score": "2:3",
-      "points": 0,
-      "xg_for": 1.53,
-      "xg_against": 1.67,
-      "xgot_for": 2.48,
-      "xgot_against": 2.02,
+      "points": 3,
+      "xg_for": 1.67,
+      "xg_against": 1.53,
+      "xgot_for": 2.02,
+      "xgot_against": 2.48,
       "players_for": [
-        {
-          "name": "Matheus Albino",
-          "is_starter": true,
-          "minutes_played": 90,
-          "rating": 6.0,
-          "touches": 29,
-          "passes_total": 21,
-          "passes_accurate": 15,
-          "key_passes": 0,
-          "possession_lost": 6,
-          "ball_recovery": 4,
-          "duels_won": 0,
-          "duels_lost": 0,
-          "xg": 0.0,
-          "xa": 0.0002,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "G",
-          "key": null
-        },
-        {
-          "name": "Diogo Hereda",
-          "is_starter": true,
-          "minutes_played": 45,
-          "rating": 7.3,
-          "touches": 30,
-          "passes_total": 20,
-          "passes_accurate": 19,
-          "key_passes": 2,
-          "possession_lost": 4,
-          "ball_recovery": 1,
-          "duels_won": 3,
-          "duels_lost": 1,
-          "xg": 0.0,
-          "xa": 0.0879,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "D",
-          "key": null
-        },
-        {
-          "name": "Bressan",
-          "is_starter": true,
-          "minutes_played": 83,
-          "rating": 6.1,
-          "touches": 36,
-          "passes_total": 28,
-          "passes_accurate": 23,
-          "key_passes": 0,
-          "possession_lost": 6,
-          "ball_recovery": 0,
-          "duels_won": 1,
-          "duels_lost": 4,
-          "xg": 0.0,
-          "xa": 0.0031,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "D",
-          "key": null
-        },
-        {
-          "name": "Fábio Alemão",
-          "is_starter": true,
-          "minutes_played": 90,
-          "rating": 7.5,
-          "touches": 73,
-          "passes_total": 58,
-          "passes_accurate": 51,
-          "key_passes": 0,
-          "possession_lost": 7,
-          "ball_recovery": 3,
-          "duels_won": 5,
-          "duels_lost": 5,
-          "xg": 0.0,
-          "xa": 0.0206,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "D",
-          "key": null
-        },
-        {
-          "name": "Lucas Lovat",
-          "is_starter": true,
-          "minutes_played": 90,
-          "rating": 6.3,
-          "touches": 54,
-          "passes_total": 25,
-          "passes_accurate": 22,
-          "key_passes": 0,
-          "possession_lost": 11,
-          "ball_recovery": 2,
-          "duels_won": 9,
-          "duels_lost": 5,
-          "xg": 0.0,
-          "xa": 0.0074,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "D",
-          "key": null
-        },
-        {
-          "name": "Pedro Castro",
-          "is_starter": true,
-          "minutes_played": 77,
-          "rating": 7.9,
-          "touches": 30,
-          "passes_total": 19,
-          "passes_accurate": 16,
-          "key_passes": 2,
-          "possession_lost": 6,
-          "ball_recovery": 4,
-          "duels_won": 3,
-          "duels_lost": 1,
-          "xg": 0.1244,
-          "xa": 0.0857,
-          "shots_total": 1,
-          "goals": 1,
-          "position": "M",
-          "key": null
-        },
-        {
-          "name": "Luizão",
-          "is_starter": true,
-          "minutes_played": 64,
-          "rating": 6.7,
-          "touches": 35,
-          "passes_total": 25,
-          "passes_accurate": 22,
-          "key_passes": 1,
-          "possession_lost": 5,
-          "ball_recovery": 3,
-          "duels_won": 4,
-          "duels_lost": 2,
-          "xg": 0.0768,
-          "xa": 0.0062,
-          "shots_total": 1,
-          "goals": 0,
-          "position": "M",
-          "key": null
-        },
-        {
-          "name": "Danielzinho",
-          "is_starter": true,
-          "minutes_played": 90,
-          "rating": 6.6,
-          "touches": 60,
-          "passes_total": 50,
-          "passes_accurate": 43,
-          "key_passes": 0,
-          "possession_lost": 9,
-          "ball_recovery": 2,
-          "duels_won": 3,
-          "duels_lost": 1,
-          "xg": 0.1882,
-          "xa": 0.0454,
-          "shots_total": 3,
-          "goals": 0,
-          "position": "M",
-          "key": null
-        },
-        {
-          "name": "Douglas Baggio",
-          "is_starter": true,
-          "minutes_played": 90,
-          "rating": 6.8,
-          "touches": 36,
-          "passes_total": 22,
-          "passes_accurate": 18,
-          "key_passes": 1,
-          "possession_lost": 8,
-          "ball_recovery": 5,
-          "duels_won": 4,
-          "duels_lost": 7,
-          "xg": 0.9497,
-          "xa": 0.0537,
-          "shots_total": 2,
-          "goals": 1,
-          "position": "F",
-          "key": null
-        },
-        {
-          "name": "Luiz Phellype",
-          "is_starter": true,
-          "minutes_played": 64,
-          "rating": 6.4,
-          "touches": 14,
-          "passes_total": 7,
-          "passes_accurate": 7,
-          "key_passes": 1,
-          "possession_lost": 2,
-          "ball_recovery": 0,
-          "duels_won": 1,
-          "duels_lost": 3,
-          "xg": 0.0288,
-          "xa": 0.0407,
-          "shots_total": 1,
-          "goals": 0,
-          "position": "F",
-          "key": null
-        },
-        {
-          "name": "Dadá Belmonte",
-          "is_starter": true,
-          "minutes_played": 90,
-          "rating": 7.9,
-          "touches": 41,
-          "passes_total": 17,
-          "passes_accurate": 13,
-          "key_passes": 3,
-          "possession_lost": 11,
-          "ball_recovery": 7,
-          "duels_won": 11,
-          "duels_lost": 5,
-          "xg": 0.1086,
-          "xa": 0.4239,
-          "shots_total": 2,
-          "goals": 0,
-          "position": "F",
-          "key": null
-        },
-        {
-          "name": "Kevin",
-          "is_starter": false,
-          "minutes_played": 45,
-          "rating": 6.1,
-          "touches": 23,
-          "passes_total": 13,
-          "passes_accurate": 11,
-          "key_passes": 0,
-          "possession_lost": 5,
-          "ball_recovery": 1,
-          "duels_won": 0,
-          "duels_lost": 1,
-          "xg": 0.0,
-          "xa": 0.041,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "D",
-          "key": null
-        },
-        {
-          "name": "Patrick De Lucca",
-          "is_starter": false,
-          "minutes_played": 26,
-          "rating": 6.2,
-          "touches": 36,
-          "passes_total": 31,
-          "passes_accurate": 22,
-          "key_passes": 1,
-          "possession_lost": 12,
-          "ball_recovery": 2,
-          "duels_won": 1,
-          "duels_lost": 2,
-          "xg": 0.0,
-          "xa": 0.0859,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "M",
-          "key": null
-        },
-        {
-          "name": "Guilherme Pato",
-          "is_starter": false,
-          "minutes_played": 26,
-          "rating": 6.6,
-          "touches": 16,
-          "passes_total": 7,
-          "passes_accurate": 4,
-          "key_passes": 0,
-          "possession_lost": 5,
-          "ball_recovery": 0,
-          "duels_won": 5,
-          "duels_lost": 5,
-          "xg": 0.0519,
-          "xa": 0.0033,
-          "shots_total": 1,
-          "goals": 0,
-          "position": "F",
-          "key": null
-        },
-        {
-          "name": "Wallace",
-          "is_starter": false,
-          "minutes_played": 13,
-          "rating": 6.0,
-          "touches": 22,
-          "passes_total": 15,
-          "passes_accurate": 14,
-          "key_passes": 0,
-          "possession_lost": 1,
-          "ball_recovery": 1,
-          "duels_won": 3,
-          "duels_lost": 3,
-          "xg": 0.0,
-          "xa": 0.0063,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "D",
-          "key": null
-        },
-        {
-          "name": "Guilherme Estrella",
-          "is_starter": false,
-          "minutes_played": 19,
-          "rating": 6.3,
-          "touches": 12,
-          "passes_total": 5,
-          "passes_accurate": 3,
-          "key_passes": 0,
-          "possession_lost": 5,
-          "ball_recovery": 1,
-          "duels_won": 2,
-          "duels_lost": 3,
-          "xg": 0.0,
-          "xa": 0.0013,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "M",
-          "key": null
-        },
-        {
-          "name": "Vitor Caetano",
-          "is_starter": false,
-          "minutes_played": 0,
-          "rating": null,
-          "touches": 0,
-          "passes_total": 0,
-          "passes_accurate": 0,
-          "key_passes": 0,
-          "possession_lost": 0,
-          "ball_recovery": 0,
-          "duels_won": 0,
-          "duels_lost": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "G",
-          "key": null
-        },
-        {
-          "name": "Henri Santos",
-          "is_starter": false,
-          "minutes_played": 0,
-          "rating": null,
-          "touches": 0,
-          "passes_total": 0,
-          "passes_accurate": 0,
-          "key_passes": 0,
-          "possession_lost": 0,
-          "ball_recovery": 0,
-          "duels_won": 0,
-          "duels_lost": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "D",
-          "key": null
-        },
-        {
-          "name": "Lyncon",
-          "is_starter": false,
-          "minutes_played": 0,
-          "rating": null,
-          "touches": 0,
-          "passes_total": 0,
-          "passes_accurate": 0,
-          "key_passes": 0,
-          "possession_lost": 0,
-          "ball_recovery": 0,
-          "duels_won": 0,
-          "duels_lost": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "D",
-          "key": null
-        },
-        {
-          "name": "Maycon",
-          "is_starter": false,
-          "minutes_played": 0,
-          "rating": null,
-          "touches": 0,
-          "passes_total": 0,
-          "passes_accurate": 0,
-          "key_passes": 0,
-          "possession_lost": 0,
-          "ball_recovery": 0,
-          "duels_won": 0,
-          "duels_lost": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "D",
-          "key": null
-        },
-        {
-          "name": "David Braw",
-          "is_starter": false,
-          "minutes_played": 0,
-          "rating": null,
-          "touches": 0,
-          "passes_total": 0,
-          "passes_accurate": 0,
-          "key_passes": 0,
-          "possession_lost": 0,
-          "ball_recovery": 0,
-          "duels_won": 0,
-          "duels_lost": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "M",
-          "key": null
-        },
-        {
-          "name": "Vinicius Barata",
-          "is_starter": false,
-          "minutes_played": 0,
-          "rating": null,
-          "touches": 0,
-          "passes_total": 0,
-          "passes_accurate": 0,
-          "key_passes": 0,
-          "possession_lost": 0,
-          "ball_recovery": 0,
-          "duels_won": 0,
-          "duels_lost": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "F",
-          "key": null
-        },
-        {
-          "name": "Guilherme Kauan",
-          "is_starter": false,
-          "minutes_played": 0,
-          "rating": null,
-          "touches": 0,
-          "passes_total": 0,
-          "passes_accurate": 0,
-          "key_passes": 0,
-          "possession_lost": 0,
-          "ball_recovery": 0,
-          "duels_won": 0,
-          "duels_lost": 0,
-          "xg": 0.0,
-          "xa": 0.0,
-          "shots_total": 0,
-          "goals": 0,
-          "position": "F",
-          "key": null
-        }
-      ],
-      "players_against": [
         {
           "name": "Luan Polli",
           "is_starter": true,
@@ -5375,7 +4913,8 @@
           "xa": 0.0,
           "shots_total": 0,
           "goals": 0,
-          "position": "G"
+          "position": "G",
+          "key": "luan"
         },
         {
           "name": "Diogo Batista de Souza",
@@ -5394,7 +4933,8 @@
           "xa": 0.0589,
           "shots_total": 2,
           "goals": 0,
-          "position": "D"
+          "position": "D",
+          "key": "diogo batista de souza"
         },
         {
           "name": "Jhonathan",
@@ -5413,7 +4953,8 @@
           "xa": 0.0096,
           "shots_total": 0,
           "goals": 0,
-          "position": "D"
+          "position": "D",
+          "key": "jhonathan"
         },
         {
           "name": "Lucas Belezi",
@@ -5432,7 +4973,8 @@
           "xa": 0.0058,
           "shots_total": 2,
           "goals": 0,
-          "position": "D"
+          "position": "D",
+          "key": "lucas belezi"
         },
         {
           "name": "Zeca",
@@ -5451,7 +4993,8 @@
           "xa": 0.0634,
           "shots_total": 0,
           "goals": 0,
-          "position": "D"
+          "position": "D",
+          "key": "zeca"
         },
         {
           "name": "Kauan Rodrigues",
@@ -5470,7 +5013,8 @@
           "xa": 0.0191,
           "shots_total": 1,
           "goals": 0,
-          "position": "M"
+          "position": "M",
+          "key": "kauan rodrigues"
         },
         {
           "name": "Jota",
@@ -5489,7 +5033,8 @@
           "xa": 0.2876,
           "shots_total": 0,
           "goals": 0,
-          "position": "M"
+          "position": "M",
+          "key": "jota"
         },
         {
           "name": "Gian Cabezas",
@@ -5508,7 +5053,8 @@
           "xa": 0.0136,
           "shots_total": 0,
           "goals": 0,
-          "position": "M"
+          "position": "M",
+          "key": "gian cabezas"
         },
         {
           "name": "Bruninho",
@@ -5527,7 +5073,8 @@
           "xa": 0.1763,
           "shots_total": 3,
           "goals": 0,
-          "position": "F"
+          "position": "F",
+          "key": "bruninho"
         },
         {
           "name": "Ronaldo Tavares",
@@ -5546,7 +5093,8 @@
           "xa": 0.0383,
           "shots_total": 3,
           "goals": 3,
-          "position": "F"
+          "position": "F",
+          "key": "ronaldo tavares"
         },
         {
           "name": "Ruan Lucas de Assis",
@@ -5565,7 +5113,8 @@
           "xa": 0.0105,
           "shots_total": 0,
           "goals": 0,
-          "position": "F"
+          "position": "F",
+          "key": "ruan lucas de assis"
         },
         {
           "name": "Léo Chú",
@@ -5584,7 +5133,8 @@
           "xa": 0.0449,
           "shots_total": 0,
           "goals": 0,
-          "position": "F"
+          "position": "F",
+          "key": "leo chu"
         },
         {
           "name": "Marcelo Henrique",
@@ -5603,7 +5153,8 @@
           "xa": 0.0048,
           "shots_total": 0,
           "goals": 0,
-          "position": "D"
+          "position": "D",
+          "key": "marcelo henrique"
         },
         {
           "name": "Dixon Vera",
@@ -5622,7 +5173,8 @@
           "xa": 0.0238,
           "shots_total": 1,
           "goals": 0,
-          "position": "F"
+          "position": "F",
+          "key": "dixon vera"
         },
         {
           "name": "Joao Miguel",
@@ -5641,7 +5193,8 @@
           "xa": 0.0067,
           "shots_total": 0,
           "goals": 0,
-          "position": "M"
+          "position": "M",
+          "key": "joao miguel"
         },
         {
           "name": "Pedro Oliveira",
@@ -5660,7 +5213,8 @@
           "xa": 0.0013,
           "shots_total": 0,
           "goals": 0,
-          "position": "M"
+          "position": "M",
+          "key": "pedro oliveira"
         },
         {
           "name": "Glauco Tadeu",
@@ -5679,7 +5233,8 @@
           "xa": 0.0,
           "shots_total": 0,
           "goals": 0,
-          "position": "G"
+          "position": "G",
+          "key": "glauco tadeu"
         },
         {
           "name": "Gabriel Indio",
@@ -5698,7 +5253,8 @@
           "xa": 0.0,
           "shots_total": 0,
           "goals": 0,
-          "position": "M"
+          "position": "M",
+          "key": "gabriel indio"
         },
         {
           "name": "Alexandre Pena",
@@ -5717,10 +5273,451 @@
           "xa": 0.0,
           "shots_total": 0,
           "goals": 0,
-          "position": "M"
+          "position": "M",
+          "key": "alexandre pena"
         },
         {
           "name": "Oluwasegun Samuel Otusanya",
+          "is_starter": false,
+          "minutes_played": 0,
+          "rating": null,
+          "touches": 0,
+          "passes_total": 0,
+          "passes_accurate": 0,
+          "key_passes": 0,
+          "possession_lost": 0,
+          "ball_recovery": 0,
+          "duels_won": 0,
+          "duels_lost": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "F",
+          "key": "oluwasegun samuel otusanya"
+        }
+      ],
+      "players_against": [
+        {
+          "name": "Matheus Albino",
+          "is_starter": true,
+          "minutes_played": 90,
+          "rating": 6.0,
+          "touches": 29,
+          "passes_total": 21,
+          "passes_accurate": 15,
+          "key_passes": 0,
+          "possession_lost": 6,
+          "ball_recovery": 4,
+          "duels_won": 0,
+          "duels_lost": 0,
+          "xg": 0.0,
+          "xa": 0.0002,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "G"
+        },
+        {
+          "name": "Diogo Hereda",
+          "is_starter": true,
+          "minutes_played": 45,
+          "rating": 7.3,
+          "touches": 30,
+          "passes_total": 20,
+          "passes_accurate": 19,
+          "key_passes": 2,
+          "possession_lost": 4,
+          "ball_recovery": 1,
+          "duels_won": 3,
+          "duels_lost": 1,
+          "xg": 0.0,
+          "xa": 0.0879,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "D"
+        },
+        {
+          "name": "Bressan",
+          "is_starter": true,
+          "minutes_played": 83,
+          "rating": 6.1,
+          "touches": 36,
+          "passes_total": 28,
+          "passes_accurate": 23,
+          "key_passes": 0,
+          "possession_lost": 6,
+          "ball_recovery": 0,
+          "duels_won": 1,
+          "duels_lost": 4,
+          "xg": 0.0,
+          "xa": 0.0031,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "D"
+        },
+        {
+          "name": "Fábio Alemão",
+          "is_starter": true,
+          "minutes_played": 90,
+          "rating": 7.5,
+          "touches": 73,
+          "passes_total": 58,
+          "passes_accurate": 51,
+          "key_passes": 0,
+          "possession_lost": 7,
+          "ball_recovery": 3,
+          "duels_won": 5,
+          "duels_lost": 5,
+          "xg": 0.0,
+          "xa": 0.0206,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "D"
+        },
+        {
+          "name": "Lucas Lovat",
+          "is_starter": true,
+          "minutes_played": 90,
+          "rating": 6.3,
+          "touches": 54,
+          "passes_total": 25,
+          "passes_accurate": 22,
+          "key_passes": 0,
+          "possession_lost": 11,
+          "ball_recovery": 2,
+          "duels_won": 9,
+          "duels_lost": 5,
+          "xg": 0.0,
+          "xa": 0.0074,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "D"
+        },
+        {
+          "name": "Pedro Castro",
+          "is_starter": true,
+          "minutes_played": 77,
+          "rating": 7.9,
+          "touches": 30,
+          "passes_total": 19,
+          "passes_accurate": 16,
+          "key_passes": 2,
+          "possession_lost": 6,
+          "ball_recovery": 4,
+          "duels_won": 3,
+          "duels_lost": 1,
+          "xg": 0.1244,
+          "xa": 0.0857,
+          "shots_total": 1,
+          "goals": 1,
+          "position": "M"
+        },
+        {
+          "name": "Luizão",
+          "is_starter": true,
+          "minutes_played": 64,
+          "rating": 6.7,
+          "touches": 35,
+          "passes_total": 25,
+          "passes_accurate": 22,
+          "key_passes": 1,
+          "possession_lost": 5,
+          "ball_recovery": 3,
+          "duels_won": 4,
+          "duels_lost": 2,
+          "xg": 0.0768,
+          "xa": 0.0062,
+          "shots_total": 1,
+          "goals": 0,
+          "position": "M"
+        },
+        {
+          "name": "Danielzinho",
+          "is_starter": true,
+          "minutes_played": 90,
+          "rating": 6.6,
+          "touches": 60,
+          "passes_total": 50,
+          "passes_accurate": 43,
+          "key_passes": 0,
+          "possession_lost": 9,
+          "ball_recovery": 2,
+          "duels_won": 3,
+          "duels_lost": 1,
+          "xg": 0.1882,
+          "xa": 0.0454,
+          "shots_total": 3,
+          "goals": 0,
+          "position": "M"
+        },
+        {
+          "name": "Douglas Baggio",
+          "is_starter": true,
+          "minutes_played": 90,
+          "rating": 6.8,
+          "touches": 36,
+          "passes_total": 22,
+          "passes_accurate": 18,
+          "key_passes": 1,
+          "possession_lost": 8,
+          "ball_recovery": 5,
+          "duels_won": 4,
+          "duels_lost": 7,
+          "xg": 0.9497,
+          "xa": 0.0537,
+          "shots_total": 2,
+          "goals": 1,
+          "position": "F"
+        },
+        {
+          "name": "Luiz Phellype",
+          "is_starter": true,
+          "minutes_played": 64,
+          "rating": 6.4,
+          "touches": 14,
+          "passes_total": 7,
+          "passes_accurate": 7,
+          "key_passes": 1,
+          "possession_lost": 2,
+          "ball_recovery": 0,
+          "duels_won": 1,
+          "duels_lost": 3,
+          "xg": 0.0288,
+          "xa": 0.0407,
+          "shots_total": 1,
+          "goals": 0,
+          "position": "F"
+        },
+        {
+          "name": "Dadá Belmonte",
+          "is_starter": true,
+          "minutes_played": 90,
+          "rating": 7.9,
+          "touches": 41,
+          "passes_total": 17,
+          "passes_accurate": 13,
+          "key_passes": 3,
+          "possession_lost": 11,
+          "ball_recovery": 7,
+          "duels_won": 11,
+          "duels_lost": 5,
+          "xg": 0.1086,
+          "xa": 0.4239,
+          "shots_total": 2,
+          "goals": 0,
+          "position": "F"
+        },
+        {
+          "name": "Kevin",
+          "is_starter": false,
+          "minutes_played": 45,
+          "rating": 6.1,
+          "touches": 23,
+          "passes_total": 13,
+          "passes_accurate": 11,
+          "key_passes": 0,
+          "possession_lost": 5,
+          "ball_recovery": 1,
+          "duels_won": 0,
+          "duels_lost": 1,
+          "xg": 0.0,
+          "xa": 0.041,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "D"
+        },
+        {
+          "name": "Patrick De Lucca",
+          "is_starter": false,
+          "minutes_played": 26,
+          "rating": 6.2,
+          "touches": 36,
+          "passes_total": 31,
+          "passes_accurate": 22,
+          "key_passes": 1,
+          "possession_lost": 12,
+          "ball_recovery": 2,
+          "duels_won": 1,
+          "duels_lost": 2,
+          "xg": 0.0,
+          "xa": 0.0859,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "M"
+        },
+        {
+          "name": "Guilherme Pato",
+          "is_starter": false,
+          "minutes_played": 26,
+          "rating": 6.6,
+          "touches": 16,
+          "passes_total": 7,
+          "passes_accurate": 4,
+          "key_passes": 0,
+          "possession_lost": 5,
+          "ball_recovery": 0,
+          "duels_won": 5,
+          "duels_lost": 5,
+          "xg": 0.0519,
+          "xa": 0.0033,
+          "shots_total": 1,
+          "goals": 0,
+          "position": "F"
+        },
+        {
+          "name": "Wallace",
+          "is_starter": false,
+          "minutes_played": 13,
+          "rating": 6.0,
+          "touches": 22,
+          "passes_total": 15,
+          "passes_accurate": 14,
+          "key_passes": 0,
+          "possession_lost": 1,
+          "ball_recovery": 1,
+          "duels_won": 3,
+          "duels_lost": 3,
+          "xg": 0.0,
+          "xa": 0.0063,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "D"
+        },
+        {
+          "name": "Guilherme Estrella",
+          "is_starter": false,
+          "minutes_played": 19,
+          "rating": 6.3,
+          "touches": 12,
+          "passes_total": 5,
+          "passes_accurate": 3,
+          "key_passes": 0,
+          "possession_lost": 5,
+          "ball_recovery": 1,
+          "duels_won": 2,
+          "duels_lost": 3,
+          "xg": 0.0,
+          "xa": 0.0013,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "M"
+        },
+        {
+          "name": "Vitor Caetano",
+          "is_starter": false,
+          "minutes_played": 0,
+          "rating": null,
+          "touches": 0,
+          "passes_total": 0,
+          "passes_accurate": 0,
+          "key_passes": 0,
+          "possession_lost": 0,
+          "ball_recovery": 0,
+          "duels_won": 0,
+          "duels_lost": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "G"
+        },
+        {
+          "name": "Henri Santos",
+          "is_starter": false,
+          "minutes_played": 0,
+          "rating": null,
+          "touches": 0,
+          "passes_total": 0,
+          "passes_accurate": 0,
+          "key_passes": 0,
+          "possession_lost": 0,
+          "ball_recovery": 0,
+          "duels_won": 0,
+          "duels_lost": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "D"
+        },
+        {
+          "name": "Lyncon",
+          "is_starter": false,
+          "minutes_played": 0,
+          "rating": null,
+          "touches": 0,
+          "passes_total": 0,
+          "passes_accurate": 0,
+          "key_passes": 0,
+          "possession_lost": 0,
+          "ball_recovery": 0,
+          "duels_won": 0,
+          "duels_lost": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "D"
+        },
+        {
+          "name": "Maycon",
+          "is_starter": false,
+          "minutes_played": 0,
+          "rating": null,
+          "touches": 0,
+          "passes_total": 0,
+          "passes_accurate": 0,
+          "key_passes": 0,
+          "possession_lost": 0,
+          "ball_recovery": 0,
+          "duels_won": 0,
+          "duels_lost": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "D"
+        },
+        {
+          "name": "David Braw",
+          "is_starter": false,
+          "minutes_played": 0,
+          "rating": null,
+          "touches": 0,
+          "passes_total": 0,
+          "passes_accurate": 0,
+          "key_passes": 0,
+          "possession_lost": 0,
+          "ball_recovery": 0,
+          "duels_won": 0,
+          "duels_lost": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "M"
+        },
+        {
+          "name": "Vinicius Barata",
+          "is_starter": false,
+          "minutes_played": 0,
+          "rating": null,
+          "touches": 0,
+          "passes_total": 0,
+          "passes_accurate": 0,
+          "key_passes": 0,
+          "possession_lost": 0,
+          "ball_recovery": 0,
+          "duels_won": 0,
+          "duels_lost": 0,
+          "xg": 0.0,
+          "xa": 0.0,
+          "shots_total": 0,
+          "goals": 0,
+          "position": "F"
+        },
+        {
+          "name": "Guilherme Kauan",
           "is_starter": false,
           "minutes_played": 0,
           "rating": null,
@@ -5756,7 +5753,7 @@
           "end_x": 47.5,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 2,
@@ -5774,7 +5771,7 @@
           "end_x": 49.2,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 12,
@@ -5792,7 +5789,7 @@
           "end_x": 51.1,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 16,
@@ -5810,7 +5807,7 @@
           "end_x": 53.3,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 16,
@@ -5828,7 +5825,7 @@
           "end_x": 49.7,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 21,
@@ -5846,7 +5843,7 @@
           "end_x": 45.8,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 24,
@@ -5864,7 +5861,7 @@
           "end_x": 47.4,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 29,
@@ -5882,7 +5879,7 @@
           "end_x": 57.3,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 29,
@@ -5900,7 +5897,7 @@
           "end_x": 48.0,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 32,
@@ -5918,7 +5915,7 @@
           "end_x": 39.2,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 33,
@@ -5936,7 +5933,7 @@
           "end_x": 45.4,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 40,
@@ -5954,7 +5951,7 @@
           "end_x": 51.3,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 44,
@@ -5972,7 +5969,7 @@
           "end_x": 46.3,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 45,
@@ -5990,7 +5987,7 @@
           "end_x": 46.9,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 45,
@@ -6008,7 +6005,7 @@
           "end_x": 28.6,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 45,
@@ -6026,7 +6023,7 @@
           "end_x": 53.3,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 49,
@@ -6044,7 +6041,7 @@
           "end_x": 48.7,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 73,
@@ -6062,7 +6059,7 @@
           "end_x": 42.2,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 73,
@@ -6080,7 +6077,7 @@
           "end_x": 48.4,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 77,
@@ -6098,7 +6095,7 @@
           "end_x": 55.3,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "for"
+          "side": "against"
         },
         {
           "minute": 79,
@@ -6116,7 +6113,7 @@
           "end_x": 45.5,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 90,
@@ -6134,7 +6131,7 @@
           "end_x": 49.8,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         },
         {
           "minute": 90,
@@ -6152,130 +6149,130 @@
           "end_x": 46.3,
           "end_y": 0.0,
           "assist_player_name": null,
-          "side": "against"
+          "side": "for"
         }
       ],
       "xg_race": [
         {
           "minute": 1,
-          "cum_xg_for": 0.084,
-          "cum_xg_against": 0.0
+          "cum_xg_for": 0.0,
+          "cum_xg_against": 0.084
         },
         {
           "minute": 2,
-          "cum_xg_for": 0.246,
-          "cum_xg_against": 0.0
+          "cum_xg_for": 0.0,
+          "cum_xg_against": 0.246
         },
         {
           "minute": 12,
-          "cum_xg_for": 0.27,
-          "cum_xg_against": 0.0
+          "cum_xg_for": 0.0,
+          "cum_xg_against": 0.27
         },
         {
           "minute": 16,
-          "cum_xg_for": 0.299,
-          "cum_xg_against": 0.0
+          "cum_xg_for": 0.0,
+          "cum_xg_against": 0.299
         },
         {
           "minute": 16,
-          "cum_xg_for": 0.327,
-          "cum_xg_against": 0.0
+          "cum_xg_for": 0.0,
+          "cum_xg_against": 0.327
         },
         {
           "minute": 21,
-          "cum_xg_for": 0.451,
-          "cum_xg_against": 0.0
+          "cum_xg_for": 0.0,
+          "cum_xg_against": 0.451
         },
         {
           "minute": 24,
-          "cum_xg_for": 0.451,
-          "cum_xg_against": 0.027
+          "cum_xg_for": 0.027,
+          "cum_xg_against": 0.451
         },
         {
           "minute": 29,
-          "cum_xg_for": 0.513,
-          "cum_xg_against": 0.027
+          "cum_xg_for": 0.027,
+          "cum_xg_against": 0.513
         },
         {
           "minute": 29,
-          "cum_xg_for": 0.611,
-          "cum_xg_against": 0.027
+          "cum_xg_for": 0.027,
+          "cum_xg_against": 0.611
         },
         {
           "minute": 32,
-          "cum_xg_for": 0.688,
-          "cum_xg_against": 0.027
+          "cum_xg_for": 0.027,
+          "cum_xg_against": 0.688
         },
         {
           "minute": 33,
-          "cum_xg_for": 0.688,
-          "cum_xg_against": 0.046
+          "cum_xg_for": 0.046,
+          "cum_xg_against": 0.688
         },
         {
           "minute": 40,
-          "cum_xg_for": 0.688,
-          "cum_xg_against": 0.199
+          "cum_xg_for": 0.199,
+          "cum_xg_against": 0.688
         },
         {
           "minute": 44,
-          "cum_xg_for": 0.688,
-          "cum_xg_against": 0.224
+          "cum_xg_for": 0.224,
+          "cum_xg_against": 0.688
         },
         {
           "minute": 45,
-          "cum_xg_for": 1.476,
-          "cum_xg_against": 0.224
+          "cum_xg_for": 0.224,
+          "cum_xg_against": 1.476
         },
         {
           "minute": 45,
-          "cum_xg_for": 1.476,
-          "cum_xg_against": 0.236
+          "cum_xg_for": 0.236,
+          "cum_xg_against": 1.476
         },
         {
           "minute": 45,
-          "cum_xg_for": 1.476,
-          "cum_xg_against": 0.347
+          "cum_xg_for": 0.347,
+          "cum_xg_against": 1.476
         },
         {
           "minute": 49,
-          "cum_xg_for": 1.476,
-          "cum_xg_against": 0.494
+          "cum_xg_for": 0.494,
+          "cum_xg_against": 1.476
         },
         {
           "minute": 73,
-          "cum_xg_for": 1.476,
-          "cum_xg_against": 0.589
+          "cum_xg_for": 0.589,
+          "cum_xg_against": 1.476
         },
         {
           "minute": 73,
-          "cum_xg_for": 1.476,
-          "cum_xg_against": 0.736
+          "cum_xg_for": 0.736,
+          "cum_xg_against": 1.476
         },
         {
           "minute": 77,
-          "cum_xg_for": 1.528,
-          "cum_xg_against": 0.736
+          "cum_xg_for": 0.736,
+          "cum_xg_against": 1.528
         },
         {
           "minute": 79,
-          "cum_xg_for": 1.528,
-          "cum_xg_against": 0.834
+          "cum_xg_for": 0.834,
+          "cum_xg_against": 1.528
         },
         {
           "minute": 90,
-          "cum_xg_for": 1.528,
-          "cum_xg_against": 1.622
+          "cum_xg_for": 1.622,
+          "cum_xg_against": 1.528
         },
         {
           "minute": 90,
-          "cum_xg_for": 1.528,
-          "cum_xg_against": 1.674
+          "cum_xg_for": 1.674,
+          "cum_xg_against": 1.528
         }
       ],
       "top_contributors": [
-        "Douglas Baggio",
-        "Dadá Belmonte",
-        "Danielzinho"
+        "Ronaldo Tavares",
+        "Bruninho",
+        "Lucas Belezi"
       ]
     },
     {
@@ -26919,8 +26916,8 @@
       "round": "19",
       "opponent": "São Bernardo",
       "is_home": true,
-      "score": "0:0",
-      "points": 1,
+      "score": "2:1",
+      "points": 3,
       "xg_for": 0.8,
       "xg_against": 1.56,
       "xgot_for": 1.1,

@@ -331,6 +331,7 @@ TEAMS = {
         "name": "CRB",
         "division": "Série B",
         "state": "AL",
+        "aliases": ["Clube De Regatas Brasil", "Regatas Brasil", "CRB"],
         "sofascore": {
             "team_id": 22032,
             "seasons": {

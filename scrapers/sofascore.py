@@ -231,6 +231,8 @@ class SofaScoreScraper(JsonApiScraper):
             "away_team": e["awayTeam"]["name"],
             "home_id": e["homeTeam"]["id"],
             "away_id": e["awayTeam"]["id"],
+            "home_score": (e.get("homeScore") or {}).get("current"),
+            "away_score": (e.get("awayScore") or {}).get("current"),
         }
 
     # ---- per-match advanced stats ------------------------------------
@@ -270,6 +272,8 @@ class SofaScoreScraper(JsonApiScraper):
             xg_away=xg_away,
             xgot_home=xgot_home,
             xgot_away=xgot_away,
+            home_score=meta.get("home_score"),
+            away_score=meta.get("away_score"),
             players=players,
             shots=shots,
         )

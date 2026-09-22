@@ -164,6 +164,20 @@ def _iso_date(raw):
     return token
 
 
+_KNOWN_TEAM_ALIASES = {
+    "crb": {"clube de regatas brasil", "regatas brasil", "crb"},
+    "athletico": {"athletico paranaense", "atletico paranaense", "cap"},
+    "atletico-mineiro": {"atletico mineiro", "atlético mineiro", "cam", "galo"},
+    "atletico-goianiense": {"atletico goianiense", "atlético goianiense", "acg"},
+    "botafogo-sp": {"botafogo sp", "botafogo-sp", "botafogo futebol clube"},
+    "red-bull-bragantino": {"bragantino", "red bull bragantino", "rb bragantino"},
+    "sport-recife": {"sport recife", "sport club do recife", "sport"},
+    "vila-nova-fc": {"vila nova", "vila nova fc", "vila nova go"},
+    "america-mineiro": {"america mineiro", "américa mineiro", "america mg"},
+    "operario-pr": {"operario pr", "operário pr", "operario ferrovario"},
+}
+
+
 def _team_aliases(team: str) -> set:
     """Lowercase substrings that identify a team in a home/away name string."""
     from config import TEAMS
@@ -171,18 +185,23 @@ def _team_aliases(team: str) -> set:
     out = {team.lower().replace("-", " "), team.lower()}
     cfg = TEAMS.get(team, {})
     name = (cfg.get("name") or "").lower()
+    for al in cfg.get("aliases", []):
+        out.add(al.lower())
+    for al in _KNOWN_TEAM_ALIASES.get(team, []):
+        out.add(al.lower())
     # drop common club-type suffixes/prefixes so "Ceará SC" -> "ceará"
+    _STOPWORDS = {"club", "clube", "esporte", "futebol", "football", "sporting", "de", "do", "da", "para", "fc", "ec", "sc", "ac"}
     for noise in (" ec", " fc", " sc", " ac", " sac", "ec ", "fc ", "sc ",
                   " esporte clube", " futebol clube", " sporting club",
                   " sporting", " clube", "-"):
         name = name.replace(noise, " ")
     for tok in name.split():
-        if len(tok) >= 3:
+        if len(tok) >= 3 and tok not in _STOPWORDS:
             out.add(tok)
     ogol_slug = (cfg.get("ogol") or {}).get("slug")
     if ogol_slug:
         out.add(ogol_slug.lower().replace("-", " "))
-    return {a.strip() for a in out if a.strip()}
+    return {a.strip() for a in out if a.strip() and a.strip() not in _STOPWORDS}
 
 
 def _is_home_side(home_team: str, aliases: set) -> bool:
@@ -193,7 +212,11 @@ def _is_home_side(home_team: str, aliases: set) -> bool:
 def _opponent(home_team, away_team, aliases):
     home_team = home_team or ""
     away_team = away_team or ""
-    return away_team if _is_home_side(home_team, aliases) else home_team
+    if _is_home_side(home_team, aliases):
+        return away_team
+    if _is_home_side(away_team, aliases):
+        return home_team
+    return away_team
 
 
 def _parse_score(score, is_home):
@@ -333,7 +356,22 @@ def build_matches_master(
         elif ogol is not None and ogol.get("score"):
             goals_for, goals_against, points, score = _parse_score(ogol.get("score"), is_home)
 
-        # Fallback: derive exact match result from shots / goals when TM/OGol don't have score
+        # 1st Fallback: official SofaScore match score if present in advanced match
+        if (goals_for is None or goals_against is None) and adv.get("home_score") is not None and adv.get("away_score") is not None:
+            hs = int(adv["home_score"])
+            aws = int(adv["away_score"])
+            gf = hs if is_home else aws
+            ga = aws if is_home else hs
+            goals_for, goals_against = gf, ga
+            score = f"{hs}:{aws}"
+            if gf > ga:
+                points = _POINTS["W"]
+            elif gf == ga:
+                points = _POINTS["D"]
+            else:
+                points = _POINTS["L"]
+
+        # 2nd Fallback: derive exact match result from shots / goals when TM/OGol don't have score
         if goals_for is None or goals_against is None:
             shots = adv.get("shots", [])
             gf = sum(

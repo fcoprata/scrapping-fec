@@ -6,7 +6,7 @@
         "tag": "defesa",
         "kind": "strength",
         "text": "Defesa/goleiro seguram abaixo do xG sofrido.",
-        "evidence": "31 sofridos vs 41.86 xG (+10.9)"
+        "evidence": "31 sofridos vs 41.72 xG (+10.7)"
       }
     ],
     "weaknesses": [
@@ -14,7 +14,7 @@
         "tag": "controle",
         "kind": "weakness",
         "text": "É dominado no volume de chances na temporada.",
-        "evidence": "xG diff acumulado -10.4"
+        "evidence": "xG diff acumulado -10.1"
       },
       {
         "tag": "bola_parada",
@@ -26,11 +26,25 @@
         "tag": "resistencia",
         "kind": "weakness",
         "text": "Concede mais no fim do jogo — queda física/concentração.",
-        "evidence": "xG sofrido pico no intervalo 75-90' (10.68)"
+        "evidence": "xG sofrido pico no intervalo 75-90' (9.80)"
       }
     ],
-    "notes": [],
+    "notes": [
+      {
+        "tag": "sorte",
+        "kind": "note",
+        "text": "Pontuação acima do desempenho — regressão provável.",
+        "evidence": "41 pts reais vs 33.9019 esperados (+7.1)"
+      }
+    ],
     "editorial_hooks": [
+      {
+        "type": "alert",
+        "tag": "Regressão à Média",
+        "headline": "Pontuação inflada: 41 pontos reais vs 33.9 esperados",
+        "lead": "O time soma +7.1 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
+        "badge": "Alerta Amarelo"
+      },
       {
         "type": "tactical",
         "tag": "O Garçom Oculto",
@@ -41,8 +55,8 @@
       {
         "type": "alert",
         "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.61/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.17 xG/90, mas recua e cede 1.61 xG/90 quando está à frente no placar.",
+        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.64/90min ao abrir vantagem",
+        "lead": "Quando está empatando o time concede 1.14 xG/90, mas recua e cede 1.64 xG/90 quando está à frente no placar.",
         "badge": "Atenção Tática"
       },
       {
@@ -54,15 +68,15 @@
       }
     ],
     "facts": {
-      "points_real": 36,
-      "points_expected": 33.7226,
-      "xg_diff": -10.41,
-      "finishing": -0.45,
-      "keeping": 10.86,
-      "ppg_home": 1.312,
-      "ppg_away": 1.154
+      "points_real": 41,
+      "points_expected": 33.9019,
+      "xg_diff": -10.13,
+      "finishing": 2.41,
+      "keeping": 10.72,
+      "ppg_home": 1.533,
+      "ppg_away": 1.286
     },
-    "narrative": "Na temporada, Athletic Club soma **36 pontos reais** (8V, 12E, 9D) com **33.7 xPts** esperados e saldo de **-10.41 xG**.\n\n**Virtudes da Equipe:** Defesa/goleiro seguram abaixo do xG sofrido.\n\n**Vulnerabilidades:** É dominado no volume de chances na temporada; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração."
+    "narrative": "Na temporada, Athletic Club soma **41 pontos reais** (10V, 11E, 8D) com **33.9 xPts** esperados e saldo de **-10.13 xG**.\n\n**Virtudes da Equipe:** Defesa/goleiro seguram abaixo do xG sofrido.\n\n**Vulnerabilidades:** É dominado no volume de chances na temporada; Vulnerável em bola parada defensiva; Concede mais no fim do jogo — queda física/concentração.\n\n**Padrões Táticos:** Pontuação acima do desempenho — regressão provável."
   },
   "matches": {
     "15525986": {
@@ -171,23 +185,23 @@
     "15526023": {
       "event_id": 15526023,
       "date": "2026-04-12",
-      "opponent": "Athletic Club",
+      "opponent": "Clube De Regatas Brasil",
       "score": "2:3",
       "strengths": [
         {
+          "tag": "finalizacao",
+          "kind": "strength",
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "3 gols de 1.67 xG"
+        },
+        {
           "tag": "individual",
           "kind": "strength",
-          "text": "Pedro Castro melhor em campo.",
-          "evidence": "nota 7.9, xG+xA 0.21"
+          "text": "Ronaldo Tavares decisivo.",
+          "evidence": "nota 10.0, xG+xA 1.07"
         }
       ],
       "weaknesses": [
-        {
-          "tag": "individual",
-          "kind": "weakness",
-          "text": "Matheus Albino abaixo.",
-          "evidence": "nota 6.0"
-        },
         {
           "tag": "bola_parada",
           "kind": "weakness",
@@ -199,11 +213,11 @@
         {
           "tag": "alerta",
           "kind": "note",
-          "text": "Ronaldo Tavares foi o mais perigoso do rival.",
-          "evidence": "xG+xA 1.07"
+          "text": "Douglas Baggio foi o mais perigoso do rival.",
+          "evidence": "xG+xA 1.00"
         }
       ],
-      "narrative": "Partida disputada contra o **Athletic Club** (2026-04-12, em casa), encerrada em **2:3**, com **1.53 xG gerados** e **1.67 xG concedidos**.\n\n**Pontos Positivos:** Pedro Castro melhor em campo.\n\n**Pontos Negativos:** Matheus Albino abaixo; Sofreu gol de bola parada.\n\n**Observações Táticas:** Ronaldo Tavares foi o mais perigoso do rival."
+      "narrative": "Partida disputada contra o **Clube De Regatas Brasil** (2026-04-12, fora de casa), encerrada em **2:3**, com **1.67 xG gerados** e **1.53 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; Ronaldo Tavares decisivo.\n\n**Pontos Negativos:** Sofreu gol de bola parada.\n\n**Observações Táticas:** Douglas Baggio foi o mais perigoso do rival."
     },
     "15526026": {
       "event_id": 15526026,
@@ -687,13 +701,13 @@
       "event_id": 15526190,
       "date": "2026-07-23",
       "opponent": "São Bernardo",
-      "score": "0:0",
+      "score": "2:1",
       "strengths": [
         {
-          "tag": "defesa",
+          "tag": "finalizacao",
           "kind": "strength",
-          "text": "Defesa/goleiro salvaram — sofreu menos que o xG.",
-          "evidence": "0 sofridos de 1.56 xG"
+          "text": "Finalização clínica: converteu acima do xG.",
+          "evidence": "2 gols de 0.80 xG"
         },
         {
           "tag": "individual",
@@ -703,8 +717,15 @@
         }
       ],
       "weaknesses": [],
-      "notes": [],
-      "narrative": "Partida disputada contra o **São Bernardo** (2026-07-23, em casa), encerrada em **0:0**, com **0.80 xG gerados** e **1.56 xG concedidos**.\n\n**Pontos Positivos:** Defesa/goleiro salvaram — sofreu menos que o xG; Luan Polli melhor em campo."
+      "notes": [
+        {
+          "tag": "resultado",
+          "kind": "note",
+          "text": "Vitória sofrida — foi superado no volume de chances.",
+          "evidence": "xG 0.80-1.56, xPts 0.83"
+        }
+      ],
+      "narrative": "Partida disputada contra o **São Bernardo** (2026-07-23, em casa), encerrada em **2:1**, com **0.80 xG gerados** e **1.56 xG concedidos**.\n\n**Pontos Positivos:** Finalização clínica: converteu acima do xG; Luan Polli melhor em campo.\n\n**Observações Táticas:** Vitória sofrida — foi superado no volume de chances."
     },
     "15526198": {
       "event_id": 15526198,

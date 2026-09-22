@@ -87,5 +87,7 @@ class MatchAdvancedStats:
     xg_away: Optional[float] = None
     xgot_home: Optional[float] = None
     xgot_away: Optional[float] = None
+    home_score: Optional[int] = None
+    away_score: Optional[int] = None
     players: List[PlayerMatchStats] = field(default_factory=list)
     shots: List[Shot] = field(default_factory=list)
