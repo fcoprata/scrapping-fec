@@ -6,8 +6,10 @@ from views._common import (
     get_active_team,
     get_active_team_name,
     get_available_teams,
+    get_team_badge_html,
     load_json,
     render_page_header,
+    render_squad_quadrant,
 )
 
 
@@ -31,7 +33,7 @@ team_name = get_active_team_name()
 
 render_page_header(
     title=f"Planejador de Elenco — {team_name}",
-    subtitle="Gestão de profundidade de elenco, distribuição de minutagem, alertas de contrato e eficiência de valor.",
+    subtitle="Gestão de profundidade de elenco, matriz tática de quadrantes, minutagem e eficiência de mercado.",
     tag=team_name,
 )
 
@@ -67,23 +69,42 @@ active_df["prod_total"] = ((active_df["prod_p90"] * active_df["minutes"].fillna(
 
 total_market_val = active_df["market_value_eur"].dropna().sum() if "market_value_eur" in active_df.columns else 0
 avg_age = active_df["age"].dropna().mean() if "age" in active_df.columns and not active_df["age"].dropna().empty else float("nan")
+tot_goals = int(active_df["goals"].sum()) if "goals" in active_df.columns else 0
+tot_mins = int(active_df["minutes"].sum()) if "minutes" in active_df.columns else 0
 total_prod = active_df["prod_total"].sum()
 top3_prod = active_df.sort_values("prod_total", ascending=False).head(3)["prod_total"].sum()
 top3_share = round((top3_prod / total_prod * 100), 1) if total_prod > 0 else 0.0
 
 # 1. KPIs Gerais
 c1, c2, c3, c4 = st.columns(4)
-c1.metric("Atletas no Elenco / Utilizados", len(active_df))
-c2.metric(
-    "Valor Total do Elenco",
-    _fmt_eur(total_market_val) if total_market_val > 0 else "Sob consulta",
-    help="Valor de mercado consolidado via Transfermarkt (se disponível)",
-)
-c3.metric(
-    "Média de Idade",
-    f"{avg_age:.1f} anos" if not pd.isna(avg_age) else "—",
-    help="Média de idade dos atletas com registro de nascimento",
-)
+c1.metric("Atletas no Elenco", len(active_df), help="Atletas ativos ou que atuaram na temporada 2026")
+
+if total_market_val > 0:
+    c2.metric(
+        "Valor Total do Elenco",
+        _fmt_eur(total_market_val),
+        help="Valor de mercado consolidado via Transfermarkt",
+    )
+else:
+    c2.metric(
+        "Gols Marcados",
+        f"{tot_goals} gols",
+        help="Total de gols marcados pelos atletas do elenco na temporada",
+    )
+
+if not pd.isna(avg_age):
+    c3.metric(
+        "Média de Idade",
+        f"{avg_age:.1f} anos",
+        help="Média de idade dos atletas com registro de nascimento",
+    )
+else:
+    c3.metric(
+        "Minutos Acumulados",
+        f"{tot_mins:,} min".replace(",", "."),
+        help="Total de minutos disputados pelo elenco na temporada",
+    )
+
 c4.metric(
     "Concentração Top 3 (xG+xA)",
     f"{top3_share}%",
@@ -108,8 +129,8 @@ active_df["nationality"] = active_df["name"].apply(
 # Lookup de métricas analíticas por nome do jogador
 pm_lookup = {p.get("name"): p for p in players}
 
-tab_squad_table, tab_planner = st.tabs(
-    ["📋 Plantel Geral", "📊 Profundidade & Minutagem"]
+tab_squad_table, tab_quadrant, tab_planner = st.tabs(
+    ["📋 Plantel Geral", "🎯 Matriz de Quadrantes", "📊 Profundidade & Minutagem"]
 )
 
 # ============================================================
@@ -194,7 +215,20 @@ with tab_squad_table:
     )
 
 # ============================================================
-# TAB 2 — Profundidade & Minutagem
+# TAB 2 — Matriz Tática de Quadrantes do Elenco
+# ============================================================
+with tab_quadrant:
+    st.subheader(f"🎯 Matriz Tática de Quadrantes — {team_name}")
+    st.caption("Distribuição estatística dos atletas em produção ofensiva por 90 minutos (xG/90 vs xA/90) de jogadores no elenco.")
+    render_squad_quadrant(
+        players_list=players,
+        master_players=master_lookup,
+        team_name=team_name,
+        key_prefix="squad_plan",
+    )
+
+# ============================================================
+# TAB 3 — Profundidade & Minutagem
 # ============================================================
 with tab_planner:
     col_left, col_right = st.columns([3, 2])

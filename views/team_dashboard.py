@@ -8,6 +8,7 @@ from views._common import (
     get_active_team_name,
     load_json,
     render_page_header,
+    render_squad_quadrant,
 )
 from views.pitch import create_2d_pitch_figure, SITUATION_PT, BODY_PART_PT, SHOT_TYPE_PT
 
@@ -450,210 +451,18 @@ with tab_tactics:
 # ============================================================
 with tab_quadrants:
     st.subheader("👥 Matriz Tática de Quadrantes: Finalização vs Criação")
-    st.caption("Distribuição estatística dos atletas em produção ofensiva por 90 minutos (xG/90 vs xA/90) de jogadores atualmente no elenco.")
+    st.caption("Distribuição estatística dos atletas em produção ofensiva por 90 minutos (xG/90 vs xA/90) de jogadores no elenco.")
 
     master_data = load_json(f"{team}_players_master.json")
     master_players = {p["name"]: p for p in (master_data.get("players", []) if isinstance(master_data, dict) else [])}
     players_list = pm_data.get("players", []) if isinstance(pm_data, dict) else (pm_data or [])
 
-    # Filtrar apenas atletas ativos no elenco
-    active_players = []
-    for p in players_list:
-        if p.get("position_group") == "Goleiro":
-            continue
-        p_name = p.get("name")
-        m_info = master_players.get(p_name, {})
-        if p.get("active") is False or m_info.get("active") is False or m_info.get("in_squad") is False:
-            continue
-        active_players.append({
-            **p,
-            "position_detail": m_info.get("position_detail") or p.get("position_group"),
-        })
-
-    if active_players:
-        col_q1, col_q2 = st.columns([2, 1])
-        with col_q1:
-            pos_filter = st.radio(
-                "Setor do Elenco",
-                ["Meias & Atacantes (Ofensivo)", "Todo o Elenco Ativo", "Apenas Atacantes", "Apenas Meias", "Apenas Defensores"],
-                horizontal=True,
-                key="quadrant_pos_filter",
-            )
-        with col_q2:
-            min_min_val = st.slider("Minutagem Mínima", min_value=150, max_value=800, value=250, step=50, key="quadrant_min_min")
-
-        # Filtrar conforme setor e minutos
-        if pos_filter == "Meias & Atacantes (Ofensivo)":
-            filtered_q = [
-                p for p in active_players
-                if (p.get("minutes") or 0) >= min_min_val
-                and (p.get("position_group") in ("Meia", "Atacante") or (p.get("xg_p90", 0.0) + p.get("xa_p90", 0.0)) >= 0.15)
-            ]
-        elif pos_filter == "Apenas Atacantes":
-            filtered_q = [p for p in active_players if (p.get("minutes") or 0) >= min_min_val and p.get("position_group") == "Atacante"]
-        elif pos_filter == "Apenas Meias":
-            filtered_q = [p for p in active_players if (p.get("minutes") or 0) >= min_min_val and p.get("position_group") == "Meia"]
-        elif pos_filter == "Apenas Defensores":
-            filtered_q = [p for p in active_players if (p.get("minutes") or 0) >= min_min_val and p.get("position_group") == "Defensor"]
-        else:
-            filtered_q = [p for p in active_players if (p.get("minutes") or 0) >= min_min_val]
-
-        if not filtered_q:
-            st.info("Nenhum atleta encontrado com os filtros selecionados.")
-        else:
-            q_df = pd.DataFrame(filtered_q)
-            q_df["xg_p90"] = q_df["xg_p90"].fillna(0.0)
-            q_df["xa_p90"] = q_df["xa_p90"].fillna(0.0)
-            q_df["prod_p90"] = q_df["xg_p90"] + q_df["xa_p90"]
-
-            ref_xg = round(q_df["xg_p90"].median(), 3) if len(q_df) > 3 else 0.15
-            ref_xa = round(q_df["xa_p90"].median(), 3) if len(q_df) > 3 else 0.10
-
-            max_x = max(float(q_df["xg_p90"].max()), 0.45)
-            max_y = max(float(q_df["xa_p90"].max()), 0.28)
-
-            def _get_quadrant(row):
-                if row["xg_p90"] >= ref_xg and row["xa_p90"] >= ref_xa:
-                    return "🔥 Ameaça Total"
-                elif row["xg_p90"] < ref_xg and row["xa_p90"] >= ref_xa:
-                    return "🎁 Criadores Puros"
-                elif row["xg_p90"] >= ref_xg and row["xa_p90"] < ref_xa:
-                    return "🎯 Finalizadores Puros"
-                else:
-                    return "🛡️ Suporte & Combate"
-
-            q_df["quadrante"] = q_df.apply(_get_quadrant, axis=1)
-
-            # Posicionamento inteligente alternado de texto para evitar colisão visual
-            text_positions = []
-            pts_seen = []
-            pos_cycle = ["top center", "bottom right", "top left", "bottom left", "top right", "bottom center"]
-
-            for _, r in q_df.iterrows():
-                rx, ry = r["xg_p90"], r["xa_p90"]
-                close_count = sum(1 for (px, py) in pts_seen if abs(px - rx) < 0.055 and abs(py - ry) < 0.04)
-                text_positions.append(pos_cycle[close_count % len(pos_cycle)])
-                pts_seen.append((rx, ry))
-
-            fig_q = go.Figure()
-
-            # 1. Shading de fundo para os 4 quadrantes
-            fig_q.add_shape(
-                type="rect", x0=ref_xg, y0=ref_xa, x1=max_x * 1.15, y1=max_y * 1.25,
-                fillcolor="rgba(34, 197, 94, 0.06)", line=dict(width=0), layer="below"
-            )
-            fig_q.add_shape(
-                type="rect", x0=-0.03, y0=ref_xa, x1=ref_xg, y1=max_y * 1.25,
-                fillcolor="rgba(14, 165, 233, 0.06)", line=dict(width=0), layer="below"
-            )
-            fig_q.add_shape(
-                type="rect", x0=ref_xg, y0=-0.02, x1=max_x * 1.15, y1=ref_xa,
-                fillcolor="rgba(245, 158, 11, 0.06)", line=dict(width=0), layer="below"
-            )
-            fig_q.add_shape(
-                type="rect", x0=-0.03, y0=-0.02, x1=ref_xg, y1=ref_xa,
-                fillcolor="rgba(148, 163, 184, 0.04)", line=dict(width=0), layer="below"
-            )
-
-            # 2. Linhas de corte centralizadas
-            fig_q.add_vline(x=ref_xg, line=dict(color="rgba(15, 23, 42, 0.35)", dash="dash", width=1.5))
-            fig_q.add_hline(y=ref_xa, line=dict(color="rgba(15, 23, 42, 0.35)", dash="dash", width=1.5))
-
-            # 3. Dispersão de Atletas
-            fig_q.add_trace(go.Scatter(
-                x=q_df["xg_p90"],
-                y=q_df["xa_p90"],
-                mode="markers+text",
-                text=q_df["name"],
-                textposition=text_positions,
-                textfont=dict(size=11, color="#1E293B", family="sans-serif"),
-                marker=dict(
-                    size=[max(12, min(int(m / 75), 30)) for m in q_df["minutes"]],
-                    color=q_df["prod_p90"],
-                    colorscale="Viridis",
-                    showscale=True,
-                    colorbar=dict(title=dict(text="xG+xA/90", side="top"), thickness=14, len=0.75),
-                    line=dict(color="#0F172A", width=1.5),
-                    opacity=0.92,
-                ),
-                hovertext=[
-                    f"<b>{row['name']}</b> ({row['position_group']})<br>"
-                    f"Posição Detalhada: {row.get('position_detail', '—')}<br>"
-                    f"Minutagem: <b>{row['minutes']} min</b> ({row.get('matches', 0)} jogos)<br>"
-                    f"xG/90: <b>{row['xg_p90']:.3f}</b> (Gols: {row.get('goals', 0)})<br>"
-                    f"xA/90: <b>{row['xa_p90']:.3f}</b> (Assistências: {row.get('assists', 0)})<br>"
-                    f"Produção Direta: <b>{row['prod_p90']:.3f}/90</b><br>"
-                    f"Classificação: <b>{row['quadrante']}</b>"
-                    for _, row in q_df.iterrows()
-                ],
-                hoverinfo="text",
-            ))
-
-            # 4. Rótulos dos 4 quadrantes
-            fig_q.add_annotation(
-                x=max_x * 0.88, y=max_y * 1.12,
-                text="🔥 <b>Ameaça Total</b><br><span style='font-size:10px; color:#15803D;'>Alto xG/90 + Alto xA/90</span>",
-                showarrow=False, align="center", font=dict(color="#15803D", size=12),
-            )
-            fig_q.add_annotation(
-                x=ref_xg * 0.35, y=max_y * 1.12,
-                text="🎁 <b>Criadores Puros</b><br><span style='font-size:10px; color:#0284C7;'>Alto xA/90 (Criação)</span>",
-                showarrow=False, align="center", font=dict(color="#0284C7", size=12),
-            )
-            fig_q.add_annotation(
-                x=max_x * 0.88, y=0.015,
-                text="🎯 <b>Finalizadores Puros</b><br><span style='font-size:10px; color:#D97706;'>Alto xG/90 (Finalização)</span>",
-                showarrow=False, align="center", font=dict(color="#D97706", size=12),
-            )
-            fig_q.add_annotation(
-                x=ref_xg * 0.35, y=0.015,
-                text="🛡️ <b>Suporte & Combate</b><br><span style='font-size:10px; color:#64748B;'>Menor Produção Final</span>",
-                showarrow=False, align="center", font=dict(color="#64748B", size=12),
-            )
-
-            fig_q.update_layout(
-                title=f"Matriz de Produção Ofensiva — {team_name} ({len(q_df)} atletas em análise)",
-                xaxis=dict(
-                    title="Finalização (xG por 90 minutos)",
-                    range=[-0.02, max_x * 1.15],
-                    zeroline=True,
-                    zerolinecolor="rgba(0,0,0,0.15)",
-                ),
-                yaxis=dict(
-                    title="Criação (xA por 90 minutos)",
-                    range=[-0.015, max_y * 1.20],
-                    zeroline=True,
-                    zerolinecolor="rgba(0,0,0,0.15)",
-                ),
-                height=600,
-                margin=dict(l=30, r=30, t=60, b=30),
-                plot_bgcolor="#FFFFFF",
-            )
-            st.plotly_chart(fig_q, width="stretch", config={"responsive": True, "displayModeBar": False})
-
-            # 5. Tabela de Classificação
-            st.markdown("##### 📋 Classificação Detalhada por Produção Ofensiva (xG+xA / 90min)")
-            table_q = q_df[[
-                "name", "position_group", "minutes", "goals", "assists", "xg_p90", "xa_p90", "prod_p90", "quadrante"
-            ]].rename(columns={
-                "name": "Atleta",
-                "position_group": "Posição",
-                "minutes": "Minutos",
-                "goals": "Gols",
-                "assists": "Assist.",
-                "xg_p90": "xG/90",
-                "xa_p90": "xA/90",
-                "prod_p90": "xG+xA/90",
-                "quadrante": "Classificação Tática",
-            }).sort_values(by="xG+xA/90", ascending=False)
-
-            table_q["xG/90"] = table_q["xG/90"].round(3)
-            table_q["xA/90"] = table_q["xA/90"].round(3)
-            table_q["xG+xA/90"] = table_q["xG+xA/90"].round(3)
-
-            st.dataframe(table_q, width="stretch", hide_index=True)
-    else:
-        st.info("Sem jogadores suficientes com minutagem mínima.")
+    render_squad_quadrant(
+        players_list=players_list,
+        master_players=master_players,
+        team_name=team_name,
+        key_prefix="team_dash",
+    )
 
 
 # ============================================================

@@ -3,7 +3,13 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from config import TEAMS
-from views._common import get_available_teams, load_json, render_page_header
+from views._common import (
+    CLUB_PALETTES,
+    get_available_teams,
+    get_team_badge_html,
+    load_json,
+    render_page_header,
+)
 from views.pitch import BODY_PART_PT
 
 render_page_header(
@@ -150,17 +156,18 @@ def _v(summary, key, default=0.0):
 st.markdown("<div style='margin-top: 10px;'></div>", unsafe_allow_html=True)
 col_b_a, col_b_vs, col_b_b = st.columns([5, 1, 5])
 
-icon_a = "🦁" if team_a == "fortaleza" else ("🏁" if team_a == "ceara" else "⚽")
-icon_b = "🦁" if team_b == "fortaleza" else ("🏁" if team_b == "ceara" else "⚽")
-
-color_a = "#002B7F" if team_a == "fortaleza" else "#1E293B"
-color_b = "#002B7F" if team_b == "fortaleza" else "#1E293B"
+palette_a = CLUB_PALETTES.get(team_a, {"primary": "#002B7F", "secondary": "#E31A2C"})
+palette_b = CLUB_PALETTES.get(team_b, {"primary": "#1E293B", "secondary": "#64748B"})
+color_a = palette_a.get("primary", "#002B7F")
+color_b = palette_b.get("primary", "#1E293B")
+badge_a_html = get_team_badge_html(team_a, size=58, margin_right=0)
+badge_b_html = get_team_badge_html(team_b, size=58, margin_right=0)
 
 with col_b_a:
     st.markdown(
         f"""
-        <div style="background: #F0F4FA; border: 2px solid {color_a}; border-radius: 12px; padding: 14px; text-align: center;">
-            <div style="font-size: 2rem;">{icon_a}</div>
+        <div style="background: rgba(240, 244, 250, 0.06); border: 2px solid {color_a}; border-radius: 12px; padding: 14px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+            <div style="display: flex; justify-content: center; margin-bottom: 8px;">{badge_a_html}</div>
             <div style="font-size: 1.25rem; font-weight: 800; color: {color_a};">{name_a.upper()}</div>
             <div style="font-size: 0.85rem; color: #64748B; font-weight: 600;">{div_a} · Temporada 2026</div>
         </div>
@@ -181,8 +188,8 @@ with col_b_vs:
 with col_b_b:
     st.markdown(
         f"""
-        <div style="background: #F8FAFC; border: 2px solid {color_b}; border-radius: 12px; padding: 14px; text-align: center;">
-            <div style="font-size: 2rem;">{icon_b}</div>
+        <div style="background: rgba(248, 250, 252, 0.06); border: 2px solid {color_b}; border-radius: 12px; padding: 14px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+            <div style="display: flex; justify-content: center; margin-bottom: 8px;">{badge_b_html}</div>
             <div style="font-size: 1.25rem; font-weight: 800; color: {color_b};">{name_b.upper()}</div>
             <div style="font-size: 0.85rem; color: #64748B; font-weight: 600;">{div_b} · Temporada 2026</div>
         </div>
@@ -342,7 +349,7 @@ with tab_campanha:
         name=name_a,
         x=categories,
         y=vals_a,
-        marker_color="#002B7F",
+        marker_color=color_a,
         text=vals_a,
         textposition="auto",
     ))
@@ -350,7 +357,7 @@ with tab_campanha:
         name=name_b,
         x=categories,
         y=vals_b,
-        marker_color="#1E293B",
+        marker_color=color_b,
         text=vals_b,
         textposition="auto",
     ))
@@ -394,7 +401,7 @@ with tab_tatica:
 
     col_t1, col_t2 = st.columns(2)
     with col_t1:
-        st.markdown(f"**{icon_a} {name_a} — Anatomia dos Chutes**")
+        st.markdown(f"**{get_team_badge_html(team_a, size=20)} {name_a} — Anatomia dos Chutes**", unsafe_allow_html=True)
         body_a = sb_a.get("by_body_part", {})
         if body_a:
             b_df_a = pd.DataFrame([
@@ -412,7 +419,7 @@ with tab_tatica:
             st.caption("Sem dados de finalizações por parte do corpo.")
 
     with col_t2:
-        st.markdown(f"**{icon_b} {name_b} — Anatomia dos Chutes**")
+        st.markdown(f"**{get_team_badge_html(team_b, size=20)} {name_b} — Anatomia dos Chutes**", unsafe_allow_html=True)
         body_b = sb_b.get("by_body_part", {})
         if body_b:
             b_df_b = pd.DataFrame([
@@ -510,11 +517,11 @@ with tab_elenco:
             <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-top: 4px solid #F59E0B; border-radius: 10px; padding: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
                 <div style="font-weight: 800; font-size: 0.95rem; color: #1E293B; margin-bottom: 8px;">🎯 Duelo dos Goleadores</div>
                 <div style="padding-bottom: 6px; border-bottom: 1px solid #F1F5F9;">
-                    <span style="font-weight: 700; color: #002B7F;">{name_a}: {top_gol_a.get('name', 'N/A')}</span><br>
+                    <span style="font-weight: 700; color: {color_a};">{name_a}: {top_gol_a.get('name', 'N/A')}</span><br>
                     <small style="color: #64748B;">{top_gol_a.get('goals', 0)} gols ({top_gol_a.get('xg_p90', 0) or 0:.2f} xG/90)</small>
                 </div>
                 <div style="padding-top: 6px;">
-                    <span style="font-weight: 700; color: #1E293B;">{name_b}: {top_gol_b.get('name', 'N/A')}</span><br>
+                    <span style="font-weight: 700; color: {color_b};">{name_b}: {top_gol_b.get('name', 'N/A')}</span><br>
                     <small style="color: #64748B;">{top_gol_b.get('goals', 0)} gols ({top_gol_b.get('xg_p90', 0) or 0:.2f} xG/90)</small>
                 </div>
             </div>
@@ -528,11 +535,11 @@ with tab_elenco:
             <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-top: 4px solid #0284C7; border-radius: 10px; padding: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
                 <div style="font-weight: 800; font-size: 0.95rem; color: #1E293B; margin-bottom: 8px;">🎁 Mestres da Criação (xA)</div>
                 <div style="padding-bottom: 6px; border-bottom: 1px solid #F1F5F9;">
-                    <span style="font-weight: 700; color: #002B7F;">{name_a}: {top_gar_a.get('name', 'N/A')}</span><br>
+                    <span style="font-weight: 700; color: {color_a};">{name_a}: {top_gar_a.get('name', 'N/A')}</span><br>
                     <small style="color: #64748B;">{top_gar_a.get('xa_p90', 0) or 0:.2f} xA/90 ({top_gar_a.get('assists', 0)} assistências)</small>
                 </div>
                 <div style="padding-top: 6px;">
-                    <span style="font-weight: 700; color: #1E293B;">{name_b}: {top_gar_b.get('name', 'N/A')}</span><br>
+                    <span style="font-weight: 700; color: {color_b};">{name_b}: {top_gar_b.get('name', 'N/A')}</span><br>
                     <small style="color: #64748B;">{top_gar_b.get('xa_p90', 0) or 0:.2f} xA/90 ({top_gar_b.get('assists', 0)} assistências)</small>
                 </div>
             </div>
@@ -546,11 +553,11 @@ with tab_elenco:
             <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-top: 4px solid #16A34A; border-radius: 10px; padding: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
                 <div style="font-weight: 800; font-size: 0.95rem; color: #1E293B; margin-bottom: 8px;">⭐ Maior Regularidade (Nota)</div>
                 <div style="padding-bottom: 6px; border-bottom: 1px solid #F1F5F9;">
-                    <span style="font-weight: 700; color: #002B7F;">{name_a}: {top_rt_a.get('name', 'N/A')}</span><br>
+                    <span style="font-weight: 700; color: {color_a};">{name_a}: {top_rt_a.get('name', 'N/A')}</span><br>
                     <small style="color: #64748B;">Nota Média: {top_rt_a.get('avg_rating', 0) or 0:.2f} ({top_rt_a.get('minutes', 0)} min)</small>
                 </div>
                 <div style="padding-top: 6px;">
-                    <span style="font-weight: 700; color: #1E293B;">{name_b}: {top_rt_b.get('name', 'N/A')}</span><br>
+                    <span style="font-weight: 700; color: {color_b};">{name_b}: {top_rt_b.get('name', 'N/A')}</span><br>
                     <small style="color: #64748B;">Nota Média: {top_rt_b.get('avg_rating', 0) or 0:.2f} ({top_rt_b.get('minutes', 0)} min)</small>
                 </div>
             </div>

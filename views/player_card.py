@@ -67,14 +67,24 @@ val_str = f"€ {p['market_value_eur']:,}" if p.get("market_value_eur") else "So
 age_str = f"{p.get('age')} anos" if p.get("age") else "Idade sob consulta"
 contract_str = p.get("contract_until") or "Sob consulta"
 
+from views._common import CLUB_PALETTES
+club_color = CLUB_PALETTES.get(team, {}).get("primary", "#002B7F")
+
 # Texto comparativo de minutagem
-min_badge = f"⏱️ <b>{p.get('minutes', 0)} min</b> ({p.get('matches', 0)} jgs no {division_name})"
-if ogol_mins and ogol_mins != p.get("minutes"):
-    min_badge += f" &nbsp;·&nbsp; 🌍 <b>{ogol_mins} min</b> ({ogol_apps} jgs no ano total)"
+if (p.get("minutes") or 0) > 0:
+    min_badge = f"⏱️ <b>{p.get('minutes', 0)} min</b> ({p.get('matches', 0)} jgs no {division_name})"
+    if ogol_mins and ogol_mins != p.get("minutes"):
+        min_badge += f" &nbsp;·&nbsp; 🌍 <b>{ogol_mins} min</b> ({ogol_apps} jgs no ano somando outras competições)"
+else:
+    min_badge = f"⏱️ <b style='color:#DC2626;'>Ainda não estreou no {division_name} 2026</b>"
+    if ogol_mins:
+        og_comps = [c.get("competition") for c in ogol_hit.get("competitions", []) if c.get("competition")]
+        comps_info = f" ({', '.join(og_comps[:2])})" if og_comps else ""
+        min_badge += f" &nbsp;·&nbsp; 🌍 <b>{ogol_mins} min</b> em outros torneios/clubes{comps_info}"
 
 st.markdown(
     f"""
-    <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-left: 5px solid #002B7F; border-radius: 10px; padding: 12px 18px; margin-bottom: 20px;">
+    <div style="background: rgba(248, 250, 252, 0.05); border: 1px solid #E2E8F0; border-left: 5px solid {club_color}; border-radius: 10px; padding: 12px 18px; margin-bottom: 20px;">
         <span class="fec-badge">{p.get('position_group') or 'Posição N/A'}</span>
         <span style="color: #1E293B; font-weight: 700; font-size: 1.1rem; margin-right: 12px;">{p.get('name')}</span>
         <span style="color: #64748B; font-size: 0.95rem;">

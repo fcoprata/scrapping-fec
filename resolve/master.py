@@ -122,8 +122,8 @@ def build_players_master(squad: dict, player_stats: dict, advanced_season: dict)
                 "nationality": sq.get("nationality") if sq is not None else None,
                 "market_value_eur": sq.get("market_value_eur") if sq is not None else None,
                 "contract_until": sq.get("contract_until") if sq is not None else None,
-                "active": sq.get("active") if sq is not None else None,
-                "in_squad": sq is not None,
+                "active": sq.get("active") if sq is not None else (True if not squad_players else None),
+                "in_squad": sq is not None if squad_players else True,
                 "in_ogol_stats": ps is not None,
                 "in_advanced": adv is not None,
             }

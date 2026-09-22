@@ -7,9 +7,11 @@ from name_match import normalize_name
 from analysis.relegation import calc_team_relegation_profile, build_relegation_overview
 from analysis.historical import compare_team_to_historical, get_round_benchmark
 from views._common import (
+    find_team_slug_by_name,
     get_active_team,
     get_active_team_name,
     get_available_teams,
+    get_team_badge_html,
     load_json,
     render_page_header,
 )
@@ -768,6 +770,12 @@ with tab_preview:
         home_color = "#FDE047" if is_home else "#38BDF8"
         away_color = "#38BDF8" if is_home else "#FDE047"
 
+        home_slug = find_team_slug_by_name(home_team_name) or (team if is_home else None)
+        away_slug = find_team_slug_by_name(away_team_name) or (None if is_home else team)
+
+        home_badge_html = get_team_badge_html(home_slug, size=36, margin_right=8) if home_slug else ""
+        away_badge_html = get_team_badge_html(away_slug, size=36, margin_right=8) if away_slug else ""
+
         st.markdown(
             f"""
             <div style="background: linear-gradient(135deg, #0A1E4A 0%, #002B7F 100%); color: #FFFFFF; border-radius: 12px; padding: 16px 20px; margin-bottom: 16px; border-left: 6px solid #F59E0B; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
@@ -775,10 +783,16 @@ with tab_preview:
                     <span class="fec-badge" style="background:#F59E0B; color:#0F172A; font-weight:800; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; letter-spacing: 0.5px;">PRÓXIMO CONFRONTO ({rnd})</span>
                     <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.8rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;">{division} 2026</span>
                 </div>
-                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 12px 0 8px 0;">
-                    <span style="font-size: clamp(1.2rem, 5vw, 1.85rem); font-weight: 800; color: {home_color}; letter-spacing: -0.5px; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">{home_team_name}</span>
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin: 12px 0 8px 0;">
+                    <div style="display: inline-flex; align-items: center;">
+                        {home_badge_html}
+                        <span style="font-size: clamp(1.2rem, 5vw, 1.85rem); font-weight: 800; color: {home_color}; letter-spacing: -0.5px; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">{home_team_name}</span>
+                    </div>
                     <span style="font-size: clamp(0.85rem, 3vw, 1.15rem); font-weight: 900; color: #F59E0B; padding: 2px 8px; background: rgba(245, 158, 11, 0.2); border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.4);">VS</span>
-                    <span style="font-size: clamp(1.2rem, 5vw, 1.85rem); font-weight: 800; color: {away_color}; letter-spacing: -0.5px; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">{away_team_name}</span>
+                    <div style="display: inline-flex; align-items: center;">
+                        {away_badge_html}
+                        <span style="font-size: clamp(1.2rem, 5vw, 1.85rem); font-weight: 800; color: {away_color}; letter-spacing: -0.5px; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">{away_team_name}</span>
+                    </div>
                 </div>
                 <p style="color:#CBD5E1 !important; margin: 0; font-size:0.9rem;">
                     📅 <b style="color:#FFFFFF;">{date_str}</b> &nbsp;·&nbsp; Condição do {team_name}: <b style="color:#FDE047;">{mando_str}</b>

@@ -1,10 +1,16 @@
 import streamlit as st
 from config import TEAMS
-from views._common import get_active_team, get_available_teams, inject_fortaleza_theme
+from views._common import (
+    get_active_team,
+    get_active_team_name,
+    get_available_teams,
+    get_team_badge_html,
+    inject_fortaleza_theme,
+)
 
 st.set_page_config(
-    page_title="Fortaleza Analytics — Inteligência de Dados",
-    page_icon="🦁",
+    page_title="Futebol Analytics — Inteligência de Dados",
+    page_icon="⚽",
     layout="wide",
 )
 
@@ -24,15 +30,19 @@ if "filter_division" in st.session_state:
                 st.session_state["active_team"] = matches[0]
 
 active = get_active_team()
+active_name = get_active_team_name()
 active_div = TEAMS.get(active, {}).get("division", "Série B")
-inject_fortaleza_theme("fortaleza")
+inject_fortaleza_theme(active)
 
 with st.sidebar:
+    badge_hero = get_team_badge_html(active, size=64, margin_right=0, extra_style="margin-bottom: 6px;")
     st.markdown(
         f"""
         <div style="text-align: center; padding: 10px 0 14px 0; border-bottom: 2px solid #E2E8F0; margin-bottom: 16px;">
-            <div style="font-size: 2.5rem; line-height: 1;">🦁</div>
-            <div style="font-size: 1.25rem; font-weight: 800; color: #002B7F; letter-spacing: 0.5px; margin-top: 4px;">FORTALEZA ANALYTICS</div>
+            <div style="display: flex; justify-content: center; align-items: center; min-height: 68px;">
+                {badge_hero if badge_hero else '<div style="font-size: 2.5rem;">⚽</div>'}
+            </div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: #1E293B; letter-spacing: 0.5px; margin-top: 4px;">{active_name.upper()}</div>
             <div style="display: flex; justify-content: center; gap: 4px; margin-top: 6px;">
                 <span class="fec-badge" style="font-size: 0.75rem; padding: 2px 8px;">{active_div}</span>
                 <span class="fec-badge fec-badge-gold" style="font-size: 0.75rem; padding: 2px 8px;">Temporada 2026</span>
@@ -76,6 +86,18 @@ with st.sidebar:
             format_func=lambda t: _TEAM_LABELS.get(t, t.title()),
             key="active_team",
         )
+
+    # Galeria Visual dos 40 Clubes
+    with st.expander("🛡️ Galeria dos 40 Clubes (Séries A & B)", expanded=False):
+        for div_title, div_key in [("Série A (20 Clubes)", "Série A"), ("Série B (20 Clubes)", "Série B")]:
+            st.markdown(f"<div style='font-size:0.8rem; font-weight:700; margin:6px 0 4px 0;'>{div_title}</div>", unsafe_allow_html=True)
+            t_list = [t for t in available_teams if TEAMS.get(t, {}).get("division") == div_key]
+            t_list.sort(key=lambda t: _TEAM_LABELS.get(t, t.title()))
+            cols = st.columns(5)
+            for i, t_slug in enumerate(t_list):
+                with cols[i % 5]:
+                    b_html = get_team_badge_html(t_slug, size=28, margin_right=0)
+                    st.markdown(f"<div style='text-align:center; padding:3px 0;' title='{_TEAM_LABELS.get(t_slug)}'>{b_html}</div>", unsafe_allow_html=True)
 
 pages = [
     st.Page("views/team_dashboard.py", title="Dashboard da Equipe", icon="📊", default=True),
