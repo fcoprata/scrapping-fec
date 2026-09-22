@@ -92,6 +92,19 @@ c4.metric(
 
 st.divider()
 
+# Enriquecer active_df com metadados de camisa (#) e nacionalidade (País)
+squad_lookup = {p["name"].lower(): p for p in squad_data.get("players", [])} if squad_data else {}
+master_lookup = {p["name"].lower(): p for p in master_data.get("players", [])} if master_data else {}
+
+active_df["jersey_number"] = active_df["name"].apply(
+    lambda n: squad_lookup.get(str(n).lower(), {}).get("jersey_number")
+)
+active_df["nationality"] = active_df["name"].apply(
+    lambda n: squad_lookup.get(str(n).lower(), {}).get("nationality")
+    or master_lookup.get(str(n).lower(), {}).get("nationality")
+    or "Brasil"
+)
+
 # Lookup de métricas analíticas por nome do jogador
 pm_lookup = {p.get("name"): p for p in players}
 
@@ -100,211 +113,85 @@ tab_squad_table, tab_planner = st.tabs(
 )
 
 # ============================================================
-# TAB 1 — Tabela Geral do Plantel
+# TAB 1 — Tabela Geral do Plantel Oficial (Universal para os 40 Clubes)
 # ============================================================
 with tab_squad_table:
-    st.subheader(f"👥 Plantel Completo — {team_name}")
-    squad = squad_data.get("players", [])
-    player_stats = stats_data.get("players", [])
+    st.subheader(f"👥 Plantel Oficial na Temporada — {team_name}")
+    st.caption("Estatísticas oficiais de atuação pelo clube em 2026 (SofaScore) integradas com dados contratuais (Transfermarkt).")
 
-    if squad:
-        # Cenário A: Clube possui dados do OGol/Transfermarkt (Fortaleza / Ceará)
-        squad_df = pd.DataFrame(squad)
-        stats_by_id = {s["player_id"]: s for s in player_stats}
+    col_f1, col_f2 = st.columns([1, 2])
+    with col_f1:
+        show_unplayed = st.checkbox("Mostrar atletas sem minutagem na temporada", value=True, key="sq_unplayed")
+    with col_f2:
+        positions_raw = sorted([p for p in active_df["position_group"].dropna().unique()])
+        sel_pos_raw = st.multiselect("Filtrar Posição", positions_raw, default=positions_raw, key="sq_pos")
 
-        stats_cols = [
-            "total_appearances",
-            "total_minutes",
-            "total_goals",
-            "total_goals_conceded",
-            "total_assists",
-            "starts",
-            "substitute_appearances",
-            "avg_rating",
-        ]
-        stats_df = (
-            pd.DataFrame(player_stats)[["player_id"] + stats_cols]
-            if player_stats
-            else pd.DataFrame(columns=["player_id"] + stats_cols)
-        )
+    filtered_df = active_df[active_df["position_group"].isin(sel_pos_raw)].copy()
+    if not show_unplayed:
+        filtered_df = filtered_df[filtered_df["minutes"].fillna(0) > 0]
 
-        squad_df["player_id"] = squad_df["player_id"].astype(str)
-        stats_df["player_id"] = stats_df["player_id"].astype(str)
-        df_merged = squad_df.merge(stats_df, on="player_id", how="left")
+    sort_options = {
+        "Minutos": "minutes",
+        "Jogos": "matches",
+        "Titularidades": "starts",
+        "Banco": "sub_apps",
+        "Gols": "goals",
+        "Assistências": "assists",
+        "xG+xA/90": "prod_p90",
+        "Rating médio": "avg_rating",
+        "Valor de mercado": "market_value_eur",
+        "Idade": "age",
+    }
+    sort_lbl = st.selectbox("Ordenar tabela por", list(sort_options.keys()), key="sq_sort")
+    filtered_df = filtered_df.sort_values(sort_options[sort_lbl], ascending=False, na_position="last")
 
-        for col in stats_cols:
-            if col not in df_merged.columns:
-                df_merged[col] = None
-
-        def _xgxa(name):
-            p = pm_lookup.get(name)
-            if not p:
-                return None
-            xg = float(p.get("xg_p90") or 0)
-            xa = float(p.get("xa_p90") or 0)
-            return round(xg + xa, 3) if (xg + xa) > 0 else None
-
-        df_merged["xg_xa_p90"] = df_merged["name"].map(_xgxa)
-
-        col_f1, col_f2 = st.columns([1, 2])
-        with col_f1:
-            show_inactive = st.checkbox("Mostrar inativos / transferidos", value=False, key="sq_inactive")
-        with col_f2:
-            positions_raw = sorted([p for p in df_merged["position"].dropna().unique()])
-            sel_pos_raw = st.multiselect("Filtrar Posição", positions_raw, default=positions_raw, key="sq_pos")
-
-        filtered_raw = df_merged[df_merged["position"].isin(sel_pos_raw)]
-        if not show_inactive:
-            filtered_raw = filtered_raw[filtered_raw["active"]]
-
-        sort_options = {
-            "Minutos": "total_minutes",
-            "Jogos": "total_appearances",
-            "Gols": "total_goals",
-            "Assistências": "total_assists",
-            "Rating médio": "avg_rating",
-            "xG+xA/90": "xg_xa_p90",
-            "Idade": "age",
-            "Valor de mercado": "market_value_eur",
+    display_df = filtered_df.rename(
+        columns={
+            "jersey_number": "#",
+            "name": "Nome",
+            "position_group": "Posição",
+            "age": "Idade",
+            "nationality": "País",
+            "market_value_eur": "Valor (€)",
+            "contract_until": "Contrato",
+            "matches": "Jogos",
+            "starts": "Titular",
+            "sub_apps": "Banco",
+            "minutes": "Minutos",
+            "goals": "Gols",
+            "assists": "Assist.",
+            "prod_p90": "xG+xA/90",
+            "avg_rating": "Rating",
         }
-        sort_lbl = st.selectbox("Ordenar tabela por", list(sort_options.keys()), key="sq_sort")
-        filtered_raw = filtered_raw.sort_values(sort_options[sort_lbl], ascending=False, na_position="last")
+    )[[
+        "#",
+        "Nome",
+        "Posição",
+        "Idade",
+        "País",
+        "Valor (€)",
+        "Contrato",
+        "Jogos",
+        "Titular",
+        "Banco",
+        "Minutos",
+        "Gols",
+        "Assist.",
+        "xG+xA/90",
+        "Rating",
+    ]]
 
-        display_raw = filtered_raw.rename(
-            columns={
-                "jersey_number": "#",
-                "name": "Nome",
-                "position": "Posição",
-                "age": "Idade",
-                "nationality": "País",
-                "market_value_eur": "Valor (€)",
-                "contract_until": "Contrato",
-                "total_appearances": "Jogos",
-                "total_minutes": "Minutos",
-                "total_goals": "Gols",
-                "total_goals_conceded": "Gols sofr.",
-                "total_assists": "Assist.",
-                "starts": "Titular",
-                "substitute_appearances": "Banco",
-                "avg_rating": "Rating",
-                "xg_xa_p90": "xG+xA/90",
-            }
-        )[[
-            "#",
-            "Nome",
-            "Posição",
-            "Idade",
-            "País",
-            "Valor (€)",
-            "Contrato",
-            "Jogos",
-            "Titular",
-            "Banco",
-            "Minutos",
-            "Gols",
-            "Assist.",
-            "xG+xA/90",
-            "Rating",
-        ]]
-
-        st.dataframe(
-            display_raw,
-            width="stretch",
-            hide_index=True,
-            column_config={
-                "Valor (€)": _EUR_COL,
-                "xG+xA/90": st.column_config.NumberColumn("xG+xA/90", format="%.3f"),
-                "Rating": st.column_config.NumberColumn("Rating", format="%.2f"),
-            },
-        )
-
-        st.divider()
-        st.subheader("🏆 Detalhe por Campeonato")
-        names = filtered_raw["name"].tolist()
-        if names:
-            selected_name = st.selectbox("Selecione o Atleta", names, key="sq_detail_player")
-            row = filtered_raw[filtered_raw["name"] == selected_name].iloc[0]
-            detail = stats_by_id.get(row["player_id"])
-            if detail and detail.get("competitions"):
-                comp_df = pd.DataFrame(detail["competitions"]).rename(
-                    columns={
-                        "competition": "Competição",
-                        "appearances": "Jogos",
-                        "minutes": "Minutos",
-                        "goals": "Gols",
-                        "goals_conceded": "Gols sofridos",
-                        "assists": "Assist.",
-                    }
-                )
-                if detail.get("position") != "Goleiro":
-                    comp_df = comp_df.drop(columns=["Gols sofridos"], errors="ignore")
-                st.dataframe(comp_df, width="stretch", hide_index=True)
-            else:
-                st.caption("Sem estatísticas detalhadas de competições para este atleta.")
-    else:
-        # Cenário B: Fallback universal a partir de player_metrics (demais 38 clubes)
-        fallback_df = active_df.copy()
-        col_f1, col_f2 = st.columns([1, 2])
-        with col_f1:
-            st.caption(f"Exibindo {len(fallback_df)} atletas utilizados na temporada por {team_name} (SofaScore).")
-        with col_f2:
-            positions_raw = sorted([p for p in fallback_df["position_group"].dropna().unique()])
-            sel_pos_raw = st.multiselect(
-                "Filtrar Posição",
-                positions_raw,
-                default=positions_raw,
-                key="sq_fallback_pos",
-            )
-
-        filtered_fallback = fallback_df[fallback_df["position_group"].isin(sel_pos_raw)]
-
-        sort_options = {
-            "Minutos": "minutes",
-            "Jogos": "matches",
-            "Titularidades": "starts",
-            "Gols": "goals",
-            "Assistências": "assists",
-            "Rating médio": "avg_rating",
-            "xG+xA/90": "prod_p90",
-        }
-        sort_lbl = st.selectbox("Ordenar tabela por", list(sort_options.keys()), key="sq_fallback_sort")
-        filtered_fallback = filtered_fallback.sort_values(sort_options[sort_lbl], ascending=False, na_position="last")
-
-        display_fallback = filtered_fallback.rename(
-            columns={
-                "name": "Nome",
-                "position_group": "Posição",
-                "matches": "Jogos",
-                "starts": "Titular",
-                "sub_apps": "Banco",
-                "minutes": "Minutos",
-                "goals": "Gols",
-                "assists": "Assist.",
-                "prod_p90": "xG+xA/90",
-                "avg_rating": "Rating",
-            }
-        )[[
-            "Nome",
-            "Posição",
-            "Jogos",
-            "Titular",
-            "Banco",
-            "Minutos",
-            "Gols",
-            "Assist.",
-            "xG+xA/90",
-            "Rating",
-        ]]
-
-        st.dataframe(
-            display_fallback,
-            width="stretch",
-            hide_index=True,
-            column_config={
-                "xG+xA/90": st.column_config.NumberColumn("xG+xA/90", format="%.3f"),
-                "Rating": st.column_config.NumberColumn("Rating", format="%.2f"),
-            },
-        )
+    st.dataframe(
+        display_df,
+        width="stretch",
+        hide_index=True,
+        column_config={
+            "#": st.column_config.TextColumn("#", width="small"),
+            "Valor (€)": _EUR_COL,
+            "xG+xA/90": st.column_config.NumberColumn("xG+xA/90", format="%.3f"),
+            "Rating": st.column_config.NumberColumn("Rating", format="%.2f"),
+        },
+    )
 
 # ============================================================
 # TAB 2 — Profundidade & Minutagem

@@ -61,7 +61,8 @@ def aggregate_player_season(
             if row is None:
                 row = PlayerAdvancedSeason(player_id=p.player_id, name=p.name)
                 acc[p.player_id] = row
-            row.matches += 1
+            if p.is_starter or (p.minutes_played or 0) > 0:
+                row.matches += 1
             row.name = p.name or row.name
             for src, dst in _SUM_FIELDS.items():
                 setattr(row, dst, _round(getattr(row, dst) + (getattr(p, src) or 0)))
