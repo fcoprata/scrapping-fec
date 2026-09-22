@@ -23,14 +23,12 @@ if "team" in st.query_params:
     qp_team = st.query_params.get("team")
     if qp_team in available_teams:
         st.session_state["active_team"] = qp_team
-        st.session_state["active_team_select"] = qp_team
         qp_div = TEAMS.get(qp_team, {}).get("division")
         if qp_div in ("Série A", "Série B"):
             st.session_state["filter_division"] = qp_div
 
 if "active_team" not in st.session_state:
     st.session_state["active_team"] = "fortaleza"
-    st.session_state["active_team_select"] = "fortaleza"
 
 active = get_active_team()
 active_name = get_active_team_name()
@@ -48,7 +46,6 @@ if "filter_division" in st.session_state:
             matches.sort(key=lambda t: _TEAM_LABELS.get(t, t.title()))
             if matches:
                 st.session_state["active_team"] = matches[0]
-                st.session_state["active_team_select"] = matches[0]
 
 active = get_active_team()
 active_name = get_active_team_name()
@@ -123,29 +120,6 @@ with st.sidebar:
             st.markdown("<div style='font-size:0.75rem; font-weight:700; color:#64748B; margin-top:6px;'>Série B (20 Clubes)</div>", unsafe_allow_html=True)
             st.markdown(render_team_badge_selector(teams_b, st.session_state.get("active_team"), cols_count=5), unsafe_allow_html=True)
 
-        # Selectbox sincronizado como busca alternativa rápida
-        cur_t = st.session_state.get("active_team", "fortaleza")
-        cur_idx = filtered_teams.index(cur_t) if cur_t in filtered_teams else 0
-        chosen = st.selectbox(
-            "Ou selecione por lista",
-            options=filtered_teams,
-            index=cur_idx,
-            format_func=lambda t: _TEAM_LABELS.get(t, t.title()),
-            key="active_team_select",
-        )
-        if chosen != st.session_state.get("active_team"):
-            st.session_state["active_team"] = chosen
-            st.query_params["team"] = chosen
-            st.rerun()
-
-    # Expander de referência completa (caso esteja filtrado em uma só divisão)
-    if len(available_teams) > 1 and st.session_state.get("filter_division") != "Todas":
-        with st.expander("🛡️ Galeria Completa dos 40 Clubes", expanded=False):
-            for div_title, div_key in [("Série A (20 Clubes)", "Série A"), ("Série B (20 Clubes)", "Série B")]:
-                st.markdown(f"<div style='font-size:0.8rem; font-weight:700; margin:6px 0 4px 0;'>{div_title}</div>", unsafe_allow_html=True)
-                t_list = [t for t in available_teams if TEAMS.get(t, {}).get("division") == div_key]
-                t_list.sort(key=lambda t: _TEAM_LABELS.get(t, t.title()))
-                st.markdown(render_team_badge_selector(t_list, st.session_state.get("active_team"), cols_count=5), unsafe_allow_html=True)
 
 pages = [
     st.Page("views/team_dashboard.py", title="Dashboard da Equipe", icon="📊", default=True),
