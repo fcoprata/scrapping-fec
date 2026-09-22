@@ -63,9 +63,12 @@ def build_players_master(squad: dict, player_stats: dict, advanced_season: dict)
     pstats_players = (player_stats or {}).get("players", []) or []
     adv_players = (advanced_season or {}).get("players", []) or []
 
-    squad_by_name = {normalize_name(p["name"]): p for p in squad_players}
-    pstats_by_name = {normalize_name(p["name"]): p for p in pstats_players}
-    adv_by_name = {normalize_name(p["name"]): p for p in adv_players}
+    squad_by_name = {normalize_name(p["name"]): p for p in squad_players if p.get("name")}
+    pstats_by_name = {normalize_name(p["name"]): p for p in pstats_players if p.get("name")}
+    adv_by_name = {normalize_name(p["name"]): p for p in adv_players if p.get("name")}
+
+    squad_by_id = {str(p["player_id"]): p for p in squad_players if p.get("player_id")}
+    adv_by_id = {str(p["player_id"]): p for p in adv_players if p.get("player_id")}
 
     rows = []
     seen_keys = set()
@@ -84,6 +87,12 @@ def build_players_master(squad: dict, player_stats: dict, advanced_season: dict)
         ps = _fuzzy_lookup(pstats_by_name, key)
         adv = _fuzzy_lookup(adv_by_name, key)
 
+        # Fallback de cruzamento por SofaScore player_id caso o nome varie ligeiramente
+        if sq is None and adv is not None and adv.get("player_id"):
+            sq = squad_by_id.get(str(adv.get("player_id")))
+        if adv is None and sq is not None and sq.get("player_id"):
+            adv = adv_by_id.get(str(sq.get("player_id")))
+
         # avoid emitting a second row when a non-squad name matched a
         # squad row already produced under its own key
         if sq is not None and key not in squad_by_name:
@@ -100,6 +109,8 @@ def build_players_master(squad: dict, player_stats: dict, advanced_season: dict)
             ogol_id = _ogol_id_from_url(ps.get("profile_url"))
 
         sofascore_id = adv.get("player_id") if adv is not None else None
+        if not sofascore_id and sq is not None and sq.get("player_id"):
+            sofascore_id = str(sq.get("player_id"))
 
         name = _longest(
             sq.get("name") if sq is not None else "",
@@ -118,8 +129,9 @@ def build_players_master(squad: dict, player_stats: dict, advanced_season: dict)
                     or (adv.get("position_group") if adv is not None else None)
                 ),
                 "position_detail": sq.get("position_detail") if sq is not None else None,
+                "jersey_number": sq.get("jersey_number") if sq is not None else None,
                 "age": sq.get("age") if sq is not None else None,
-                "nationality": sq.get("nationality") if sq is not None else None,
+                "nationality": sq.get("nationality") if sq is not None else "Brasil",
                 "market_value_eur": sq.get("market_value_eur") if sq is not None else None,
                 "contract_until": sq.get("contract_until") if sq is not None else None,
                 "active": sq.get("active") if sq is not None else (True if not squad_players else None),

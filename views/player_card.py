@@ -25,6 +25,8 @@ pmj = load_json(f"{team}_player_metrics.json")
 reports = load_json(f"{team}_match_reports.json").get("reports", [])
 stats_data = load_json(f"{team}_player_stats.json")
 ogol_players = stats_data.get("players", []) if isinstance(stats_data, dict) else []
+master_data = load_json(f"{team}_players_master.json")
+squad_data = load_json(f"{team}_squad.json")
 
 players = pmj.get("players", [])
 if not players:
@@ -63,9 +65,37 @@ match_ratings = [
 sofascore_rating = round(sum(match_ratings) / len(match_ratings), 2) if match_ratings else None
 rating_final = p.get("avg_rating") or sofascore_rating or ogol_rating
 
-val_str = f"€ {p['market_value_eur']:,}" if p.get("market_value_eur") else "Sob consulta"
-age_str = f"{p.get('age')} anos" if p.get("age") else "Idade sob consulta"
-contract_str = p.get("contract_until") or "Sob consulta"
+master_hit = next(
+    (x for x in (master_data.get("players", []) if master_data else []) if (x.get("name") or "").lower() == (p.get("name") or "").lower() or str(x.get("sofascore_id") or "") == str(p.get("player_id") or "")),
+    {},
+)
+squad_hit = next(
+    (x for x in (squad_data.get("players", []) if squad_data else []) if (x.get("name") or "").lower() == (p.get("name") or "").lower() or str(x.get("player_id") or "") == str(p.get("player_id") or "")),
+    {},
+)
+
+val_raw = p.get("market_value_eur") or master_hit.get("market_value_eur") or squad_hit.get("market_value_eur")
+age_raw = p.get("age") or master_hit.get("age") or squad_hit.get("age")
+contract_raw = p.get("contract_until") or master_hit.get("contract_until") or squad_hit.get("contract_until")
+jersey_num = p.get("jersey_number") or master_hit.get("jersey_number") or squad_hit.get("jersey_number")
+
+if val_raw:
+    try:
+        val_num = int(val_raw)
+        if val_num >= 1_000_000:
+            val_str = f"€ {val_num / 1_000_000:.1f} mi".replace(".", ",")
+        elif val_num >= 1_000:
+            val_str = f"€ {val_num / 1_000:.0f} mil"
+        else:
+            val_str = f"€ {val_num:,}".replace(",", ".")
+    except (ValueError, TypeError):
+        val_str = str(val_raw)
+else:
+    val_str = "Sob consulta"
+
+age_str = f"{age_raw} anos" if age_raw else "Idade sob consulta"
+contract_str = contract_raw or "Sob consulta"
+jersey_badge = f'<span class="fec-badge fec-badge-gold" style="font-size:0.8rem; margin-right: 6px; padding: 2px 7px;">#{jersey_num}</span>' if jersey_num and str(jersey_num) != "None" else ""
 
 from views._common import CLUB_PALETTES
 club_color = CLUB_PALETTES.get(team, {}).get("primary", "#002B7F")
@@ -85,7 +115,7 @@ else:
 st.markdown(
     f"""
     <div style="background: rgba(248, 250, 252, 0.05); border: 1px solid #E2E8F0; border-left: 5px solid {club_color}; border-radius: 10px; padding: 12px 18px; margin-bottom: 20px;">
-        <span class="fec-badge">{p.get('position_group') or 'Posição N/A'}</span>
+        {jersey_badge}<span class="fec-badge">{p.get('position_group') or 'Posição N/A'}</span>
         <span style="color: #1E293B; font-weight: 700; font-size: 1.1rem; margin-right: 12px;">{p.get('name')}</span>
         <span style="color: #64748B; font-size: 0.95rem;">
             🎂 <b>{age_str}</b> &nbsp;·&nbsp;

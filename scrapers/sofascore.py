@@ -71,6 +71,79 @@ class SofaScoreScraper(JsonApiScraper):
                 })
         return out
 
+    def get_team_players(self, team_id: int) -> List["Player"]:
+        """Elenco oficial do clube via SofaScore com posições, camisa, idade, contrato e valor de mercado."""
+        from models.player import Player
+
+        try:
+            data = self._get_json(f"{API}/team/{team_id}/players")
+        except Exception:
+            return []
+
+        raw_players = data.get("players", [])
+        out: List[Player] = []
+        pos_map = {
+            "G": "Goleiro",
+            "D": "Defensor",
+            "M": "Meia",
+            "F": "Atacante",
+        }
+        ref_date = _dt.date.today()
+        for item in raw_players:
+            p = item.get("player") or {}
+            pid = p.get("id")
+            if not pid or not p.get("name"):
+                continue
+
+            dob_ts = p.get("dateOfBirthTimestamp")
+            age = None
+            if dob_ts:
+                try:
+                    dob = _dt.datetime.fromtimestamp(dob_ts).date()
+                    age = ref_date.year - dob.year - ((ref_date.month, ref_date.day) < (dob.month, dob.day))
+                except Exception:
+                    pass
+
+            contract_ts = p.get("contractUntilTimestamp")
+            contract_until = None
+            if contract_ts:
+                try:
+                    contract_until = _dt.datetime.fromtimestamp(contract_ts).strftime("%d/%m/%Y")
+                except Exception:
+                    pass
+
+            val = (p.get("proposedMarketValueRaw") or {}).get("value") or p.get("proposedMarketValue")
+            market_val = int(val) if val is not None else None
+
+            jersey = p.get("shirtNumber") or p.get("jerseyNumber")
+            jersey_str = str(jersey) if jersey is not None else None
+
+            pos_code = p.get("position")
+            pos_group = pos_map.get(pos_code, "Meia")
+            details = p.get("positionsDetailed")
+            pos_detail = details[0] if details and isinstance(details, list) else None
+
+            country_name = (p.get("country") or {}).get("name") or "Brasil"
+
+            out.append(
+                Player(
+                    player_id=str(pid),
+                    slug=p.get("slug") or p.get("name", "").lower().replace(" ", "-"),
+                    name=p.get("name"),
+                    position=pos_group,
+                    jersey_number=jersey_str,
+                    age=age,
+                    nationality=country_name,
+                    market_value_eur=market_val,
+                    photo_url=None,
+                    profile_url=f"https://www.sofascore.com/player/{p.get('slug')}/{pid}" if p.get("slug") else "",
+                    active=True,
+                    position_detail=pos_detail,
+                    contract_until=contract_until,
+                )
+            )
+        return out
+
     # ---- upcoming fixtures ----------------------------------------------
     def get_next_events(self, team_id: int, max_pages: int = 2) -> List[dict]:
         """Upcoming (not yet played) fixtures for a team, soonest first."""

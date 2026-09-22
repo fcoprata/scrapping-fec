@@ -113,17 +113,39 @@ c4.metric(
 
 st.divider()
 
-# Enriquecer active_df com metadados de camisa (#) e nacionalidade (País)
-squad_lookup = {p["name"].lower(): p for p in squad_data.get("players", [])} if squad_data else {}
-master_lookup = {p["name"].lower(): p for p in master_data.get("players", [])} if master_data else {}
+# Enriquecer active_df com metadados de camisa (#), idade, valor, contrato e nacionalidade (País)
+squad_players = squad_data.get("players", []) if squad_data else []
+master_players = master_data.get("players", []) if master_data else []
 
-active_df["jersey_number"] = active_df["name"].apply(
-    lambda n: squad_lookup.get(str(n).lower(), {}).get("jersey_number")
-)
-active_df["nationality"] = active_df["name"].apply(
-    lambda n: squad_lookup.get(str(n).lower(), {}).get("nationality")
-    or master_lookup.get(str(n).lower(), {}).get("nationality")
-    or "Brasil"
+squad_lookup = {p["name"].lower(): p for p in squad_players if p.get("name")}
+master_lookup = {p["name"].lower(): p for p in master_players if p.get("name")}
+
+for col in ["jersey_number", "age", "market_value_eur", "contract_until"]:
+    if col not in active_df.columns:
+        active_df[col] = None
+    active_df[col] = active_df.apply(
+        lambda r: (
+            r[col]
+            if pd.notna(r.get(col)) and str(r.get(col)) not in ("None", "", "nan")
+            else (
+                squad_lookup.get(str(r["name"]).lower(), {}).get(col)
+                or master_lookup.get(str(r["name"]).lower(), {}).get(col)
+            )
+        ),
+        axis=1,
+    )
+
+active_df["nationality"] = active_df.apply(
+    lambda r: (
+        r.get("nationality")
+        if pd.notna(r.get("nationality")) and str(r.get("nationality")) not in ("None", "", "nan")
+        else (
+            squad_lookup.get(str(r["name"]).lower(), {}).get("nationality")
+            or master_lookup.get(str(r["name"]).lower(), {}).get("nationality")
+            or "Brasil"
+        )
+    ),
+    axis=1,
 )
 
 # Lookup de métricas analíticas por nome do jogador
@@ -202,13 +224,26 @@ with tab_squad_table:
         "Rating",
     ]]
 
+    # Formatação limpa de valores nulos (evita exibir o texto literal 'None')
+    display_df["#"] = display_df["#"].apply(
+        lambda v: f"{int(float(v))}" if pd.notna(v) and str(v).replace(".0", "").isdigit() else (str(v) if pd.notna(v) and v and str(v) != "None" else "—")
+    )
+    display_df["Idade"] = display_df["Idade"].apply(
+        lambda v: f"{int(float(v))}" if pd.notna(v) and str(v).replace(".0", "").isdigit() else "—"
+    )
+    display_df["Contrato"] = display_df["Contrato"].fillna("—").replace({None: "—", "None": "—", "": "—"})
+    display_df["País"] = display_df["País"].fillna("Brasil").replace({None: "Brasil", "None": "Brasil", "": "Brasil"})
+    display_df["Valor (€)"] = pd.to_numeric(display_df["Valor (€)"], errors="coerce")
+
     st.dataframe(
         display_df,
         width="stretch",
         hide_index=True,
         column_config={
-            "#": st.column_config.TextColumn("#", width="small"),
+            "#": st.column_config.TextColumn("#", width="small", help="Número da camisa oficial"),
+            "Idade": st.column_config.TextColumn("Idade", width="small", help="Idade do atleta"),
             "Valor (€)": _EUR_COL,
+            "Contrato": st.column_config.TextColumn("Contrato", help="Término do contrato profissional"),
             "xG+xA/90": st.column_config.NumberColumn("xG+xA/90", format="%.3f"),
             "Rating": st.column_config.NumberColumn("Rating", format="%.2f"),
         },

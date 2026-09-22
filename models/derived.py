@@ -59,6 +59,8 @@ class PlayerMetrics:
     age: Optional[int]
     contract_until: Optional[str]
     active: bool
+    jersey_number: Optional[str] = None
+    nationality: Optional[str] = None
 
     # per-90 (None se minutes == 0)
     goals_p90: Optional[float] = None
@@ -139,6 +141,8 @@ def _ogol_player_metrics(players_master: dict, player_stats: dict) -> List[dict]
             age=pm.get("age"),
             contract_until=pm.get("contract_until"),
             active=True if pm.get("active") is None else bool(pm.get("active")),
+            jersey_number=pm.get("jersey_number"),
+            nationality=pm.get("nationality") or "Brasil",
             goals_p90=_p90(goals or 0, minutes),
             assists_p90=_p90(assists or 0, minutes),
             tier="ogol",
@@ -227,6 +231,8 @@ def build_player_metrics(
             age=pm.get("age"),
             contract_until=pm.get("contract_until"),
             active=True if pm.get("active") is None else bool(pm.get("active")),
+            jersey_number=pm.get("jersey_number"),
+            nationality=pm.get("nationality") or "Brasil",
             pass_accuracy=_pct(adv.get("passes_accurate", 0), adv.get("passes", 0)) if adv else None,
             long_ball_accuracy=_pct(adv.get("long_balls_accurate", 0), adv.get("long_balls", 0)) if adv else None,
             cross_accuracy=_pct(adv.get("crosses_accurate", 0), adv.get("crosses", 0)) if adv else None,

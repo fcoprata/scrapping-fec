@@ -133,7 +133,7 @@
           "shots_total": 5,
           "goals": 0,
           "position": "M",
-          "key": "patrick de paula"
+          "key": null
         },
         {
           "name": "Zé Ricardo",
@@ -1799,7 +1799,7 @@
           "shots_total": 5,
           "goals": 0,
           "position": "M",
-          "key": "patrick de paula"
+          "key": null
         },
         {
           "name": "Alef Manga",
@@ -3361,7 +3361,7 @@
           "shots_total": 3,
           "goals": 0,
           "position": "M",
-          "key": "patrick de paula"
+          "key": null
         },
         {
           "name": "Vitor Bueno",
@@ -5013,7 +5013,7 @@
           "shots_total": 2,
           "goals": 0,
           "position": "M",
-          "key": "patrick de paula"
+          "key": null
         },
         {
           "name": "Leonel Picco",
@@ -6584,7 +6584,7 @@
           "shots_total": 1,
           "goals": 0,
           "position": "M",
-          "key": "patrick de paula"
+          "key": null
         },
         {
           "name": "Yago Pikachu",
@@ -9533,7 +9533,7 @@
           "shots_total": 2,
           "goals": 0,
           "position": "M",
-          "key": "patrick de paula"
+          "key": null
         },
         {
           "name": "Alef Manga",
@@ -15651,7 +15651,7 @@
           "shots_total": 0,
           "goals": 0,
           "position": "M",
-          "key": "patrick de paula"
+          "key": null
         }
       ],
       "players_against": [

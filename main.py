@@ -295,6 +295,48 @@ def _fetch_squad(team: str, ogol_scraper: OGolScraper, tm_scraper: Transfermarkt
     print(f"Saved → {path}")
 
 
+def _fetch_squad_sofascore(team: str, scraper: SofaScoreScraper, store: JsonStore) -> None:
+    """Busca o elenco oficial com camisa, idade, contrato e valor de mercado via SofaScore."""
+    cfg = TEAMS.get(team, {}).get("sofascore", {})
+    team_id = cfg.get("team_id")
+    if not team_id:
+        print(f"No SofaScore team_id configured for '{team}'.")
+        return
+    print(f"Fetching official squad: {team} from SofaScore (team_id={team_id})")
+    players = scraper.get_team_players(team_id)
+    if not players:
+        print(f"No squad returned by SofaScore for {team}")
+        return
+
+    existing = store.load_squad(team)
+    if existing and existing.get("players"):
+        from name_match import normalize_name
+
+        ex_by_name = {normalize_name(p["name"]): p for p in existing.get("players", []) if p.get("name")}
+        for p in players:
+            m = ex_by_name.get(normalize_name(p.name))
+            if m:
+                if not m.get("jersey_number") and p.jersey_number:
+                    m["jersey_number"] = p.jersey_number
+                if not m.get("market_value_eur") and p.market_value_eur:
+                    m["market_value_eur"] = p.market_value_eur
+                if not m.get("contract_until") and p.contract_until:
+                    m["contract_until"] = p.contract_until
+                if not m.get("age") and p.age:
+                    m["age"] = p.age
+        from models.player import Player
+
+        merged = [
+            Player(**{k: v for k, v in p.items() if k in Player.__annotations__})
+            for p in existing["players"]
+        ]
+        path = store.save_squad(team, merged, existing.get("season_year", "2026"), existing.get("epoca_id", "0"))
+        print(f"Saved merged squad ({len(merged)} players) → {path}")
+    else:
+        path = store.save_squad(team, players, "2026", "0")
+        print(f"Saved SofaScore squad ({len(players)} players) → {path}")
+
+
 def _fetch_player_stats(team: str, limit: int | None, scraper: OGolScraper, store: JsonStore) -> None:
     squad = store.load_squad(team)
     players = squad["players"]
@@ -517,6 +559,7 @@ def _run_all(team: str, store: JsonStore) -> None:
     steps = [
         ("ogol matches", lambda: _fetch_matches_ogol(team, OGolScraper(), store)),
         ("squad", lambda: _fetch_squad(team, OGolScraper(), TransfermarktScraper(), store)),
+        ("squad (sofascore)", lambda: _fetch_squad_sofascore(team, SofaScoreScraper(), store)),
         ("player stats", lambda: _fetch_player_stats(team, None, OGolScraper(), store)),
         ("advanced (incremental)", lambda: _fetch_advanced(team, None, SofaScoreScraper(), store, incremental=True)),
         ("fixtures", lambda: _fetch_fixtures(team, SofaScoreScraper(), store)),
@@ -718,6 +761,9 @@ def _run_batch_full(division: str, store: JsonStore, skip: set[str] | None = Non
                 ("player stats", lambda t=team: _fetch_player_stats(t, None, OGolScraper(), store)),
                 ("ogol match stats", lambda t=team: _fetch_stats(t, "ogol", None, OGolScraper(), store)),
             ])
+        steps.append(
+            ("squad (sofascore)", lambda t=team: _fetch_squad_sofascore(t, SofaScoreScraper(), store))
+        )
         if _team_seasons(team):
             steps.append(
                 ("advanced (incremental)",
