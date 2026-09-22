@@ -3,7 +3,7 @@ import streamlit as st
 
 from models.league import find_player, top_by_metric
 from storage import db as _db
-from views._common import get_team_badge_html, render_page_header
+from views._common import get_team_badge_html, load_json, render_page_header
 
 render_page_header(
     title="Scout — Ranking & Comparador de Jogadores",
@@ -15,22 +15,36 @@ render_page_header(
 
 @st.cache_data(ttl=300)
 def _load_league_rows():
-    # Consulta o DuckDB direto (read-only -- nunca disputa lock de escrita com
-    # um --batch-full rodando em paralelo). Merge de transferência e percentil
-    # já vêm prontos da query SQL (storage/db.py::query_league_player_metrics).
-    return _db.query_league_player_metrics()
+    """Consulta o DuckDB direto (read-only) quando ele existe -- é o caso local,
+    com merge de transferência e percentil calculados em SQL (storage/db.py::
+    query_league_player_metrics). O banco vive fora do repo (~/.local/share,
+    de propósito -- ver storage/db.py) então não existe no deploy do Streamlit
+    Community Cloud, que só tem o que está no git: cai pro export JSON
+    committado (`data/league_player_metrics.json`, atualizado via `--league`)
+    nesse caso, em vez de mostrar a tela vazia."""
+    rows = _db.query_league_player_metrics()
+    if rows:
+        return rows, "db"
+    return load_json("league_player_metrics.json").get("players", []), "json_export"
 
 
-league_rows = _load_league_rows()
+league_rows, _source = _load_league_rows()
 
 if not league_rows:
     st.warning(
-        "Sem dataset de liga ainda no banco. Rode `python main.py --build` (ou `--batch-full`) "
-        "pra pelo menos alguns clubes primeiro."
+        "Sem dataset de liga ainda. Rode `python main.py --build` (ou `--batch-full`) pra pelo "
+        "menos alguns clubes, depois `python main.py --league` pra gerar o export."
     )
     st.stop()
 
-st.caption(f"{len({r.get('team_key') for r in league_rows})} clubes cobertos · {len(league_rows)} jogadores.")
+if _source == "json_export":
+    st.caption(
+        f"⚠️ Lendo o export estático (`league_player_metrics.json`, sem banco local disponível aqui) — "
+        f"pode estar desatualizado em relação à última coleta. "
+        f"{len({r.get('team_key') for r in league_rows})} clubes · {len(league_rows)} jogadores."
+    )
+else:
+    st.caption(f"{len({r.get('team_key') for r in league_rows})} clubes cobertos · {len(league_rows)} jogadores.")
 
 # Agrupado por área do jogo — evita um dropdown único de 19 itens e ajuda a
 # escolher a métrica certa pra cada posição (zagueiro não se compara por xG).
