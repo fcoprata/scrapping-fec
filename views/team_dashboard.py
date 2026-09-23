@@ -3,8 +3,14 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
+import importlib
 from config import TEAMS
 from analysis.engine import build_season_analysis
+import views._common as _common
+
+if not hasattr(_common, "render_insight_cards"):
+    importlib.reload(_common)
+
 from views._common import (
     get_active_team,
     get_active_team_name,

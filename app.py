@@ -1,5 +1,11 @@
+import importlib
 import streamlit as st
 from config import TEAMS
+import views._common as _common
+
+if not hasattr(_common, "render_insight_cards"):
+    importlib.reload(_common)
+
 from views._common import (
     get_active_team,
     get_active_team_name,
