@@ -159,11 +159,11 @@ hooks_b = analysis_b.get("editorial_hooks", [])
 combined_derby_hooks = []
 if hooks_a:
     h_a = dict(hooks_a[0])
-    h_a["tag"] = f"{name_a}: {h_a.get('tag', '')}"
+    h_a["tag"] = f"{name_a} · {h_a.get('tag', '')}"
     combined_derby_hooks.append(h_a)
 if hooks_b:
     h_b = dict(hooks_b[0])
-    h_b["tag"] = f"{name_b}: {h_b.get('tag', '')}"
+    h_b["tag"] = f"{name_b} · {h_b.get('tag', '')}"
     combined_derby_hooks.append(h_b)
 
 def _v(summary, key, default=0.0):
