@@ -478,6 +478,84 @@ def inject_fortaleza_theme(team: Optional[str] = None):
             font-weight: 500;
         }}
 
+        /* Cards de Insight Editorial / Hooks Narrativos */
+        .tactical-hook {{
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }}
+        .tactical-hook-alert {{
+            background: #FEF2F2;
+            border: 1px solid #FECACA;
+            border-left: 5px solid #DC2626;
+        }}
+        .tactical-hook-opportunity {{
+            background: #F0FDF4;
+            border: 1px solid #BBF7D0;
+            border-left: 5px solid #16A34A;
+        }}
+        .tactical-hook-tactical {{
+            background: #EFF6FF;
+            border: 1px solid #BFDBFE;
+            border-left: 5px solid #2563EB;
+        }}
+        .tactical-hook-trend {{
+            background: #FAF5FF;
+            border: 1px solid #E9D5FF;
+            border-left: 5px solid #9333EA;
+        }}
+        .tactical-hook-strength {{
+            background: #ECFDF5;
+            border: 1px solid #A7F3D0;
+            border-left: 5px solid #059669;
+        }}
+        .tactical-hook-pill {{
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }}
+        .pill-alert {{
+            background: #FEE2E2;
+            color: #991B1B;
+        }}
+        .pill-opportunity {{
+            background: #DCFCE7;
+            color: #166534;
+        }}
+        .pill-tactical {{
+            background: #DBEAFE;
+            color: #1E40AF;
+        }}
+        .pill-trend {{
+            background: #F3E8FF;
+            color: #6B21A8;
+        }}
+        .pill-strength {{
+            background: #D1FAE5;
+            color: #065F46;
+        }}
+        .tactical-hook-title {{
+            font-size: 1.02rem;
+            font-weight: 800;
+            line-height: 1.35;
+            margin: 6px 0;
+            color: #0F172A;
+        }}
+        .tactical-hook-lead {{
+            font-size: 0.88rem;
+            line-height: 1.45;
+            color: #334155;
+            font-weight: 500;
+        }}
+
         /* Grid Seletor Visual de Escudos na Sidebar */
         .fec-badge-grid {{
             display: grid;
@@ -709,6 +787,63 @@ def render_analysis_section(analysis: dict, title: str = "Diagnóstico Tático")
                     """,
                     unsafe_allow_html=True,
                 )
+
+
+def render_insight_cards(hooks: Optional[list] = None, title: str = "💡 Destaques & Anomalias Táticas"):
+    """
+    Renderiza cards de destaque narrativo a partir dos editorial hooks calculados.
+    Reaproveita o design system da plataforma com variantes por tipo (alert/opportunity/tactical/trend/strength).
+    Exibe os Top 2 em destaque lado a lado e o restante agrupado em st.expander.
+    """
+    if not hooks:
+        return
+
+    st.subheader(title)
+
+    def _render_hook_card(h: dict) -> str:
+        htype = h.get("type", "tactical")
+        badge = h.get("badge", "Insight")
+        tag = h.get("tag", "")
+        headline = h.get("headline", "")
+        lead = h.get("lead", "")
+
+        tag_html = f"<span style='font-size: 0.75rem; color: #64748B; font-weight: 600; text-transform: uppercase;'>{tag}</span>" if tag else ""
+
+        return f"""
+        <div class="tactical-hook tactical-hook-{htype}">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+                <span class="tactical-hook-pill pill-{htype}">{badge}</span>
+                {tag_html}
+            </div>
+            <div class="tactical-hook-title">{headline}</div>
+            <div class="tactical-hook-lead">{lead}</div>
+        </div>
+        """
+
+    top_hooks = hooks[:2]
+    rest_hooks = hooks[2:]
+
+    if len(top_hooks) == 1:
+        st.markdown(_render_hook_card(top_hooks[0]), unsafe_allow_html=True)
+    else:
+        c1, c2 = st.columns(2)
+        with c1:
+            st.markdown(_render_hook_card(top_hooks[0]), unsafe_allow_html=True)
+        with c2:
+            st.markdown(_render_hook_card(top_hooks[1]), unsafe_allow_html=True)
+
+    if rest_hooks:
+        with st.expander(f"Ver todos os insights identificados ({len(hooks)} no total)", expanded=False):
+            if len(rest_hooks) == 1:
+                st.markdown(_render_hook_card(rest_hooks[0]), unsafe_allow_html=True)
+            else:
+                for i in range(0, len(rest_hooks), 2):
+                    cols = st.columns(2)
+                    with cols[0]:
+                        st.markdown(_render_hook_card(rest_hooks[i]), unsafe_allow_html=True)
+                    if i + 1 < len(rest_hooks):
+                        with cols[1]:
+                            st.markdown(_render_hook_card(rest_hooks[i + 1]), unsafe_allow_html=True)
 
 
 def render_squad_quadrant(

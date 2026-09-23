@@ -4,10 +4,13 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from config import TEAMS
+from analysis.engine import build_season_analysis
 from views._common import (
     get_active_team,
     get_active_team_name,
     load_json,
+    render_analysis_section,
+    render_insight_cards,
     render_page_header,
     render_squad_quadrant,
 )
@@ -33,6 +36,9 @@ matches_count = s.get("matches", 0)
 if matches_count == 0:
     st.warning(f"Sem dados coletados para {team_name}. Execute: `python main.py --team {team} --build`")
     st.stop()
+
+players_list = pm_data.get("players", []) if isinstance(pm_data, dict) else (pm_data or [])
+season_analysis = build_season_analysis(tm, players_list)
 
 
 def sv(key, default=0.0):
@@ -61,6 +67,9 @@ if _official_row is not None:
             f"coletados ({sv('points_real'):.0f}) — provavelmente falta rodada em matches_master. "
             f"Exibindo o valor oficial."
         )
+
+# Destaques Narrativos & Anomalias Táticas (Insight do Dia antes dos KPIs)
+render_insight_cards(season_analysis.get("editorial_hooks", []), title="💡 Destaques & Anomalias Táticas")
 
 # Top KPIs Numéricos
 c1, c2, c3, c4 = st.columns(4)
@@ -349,6 +358,10 @@ with tab_pitch:
 # TAB 3: Game State & Tática
 # ============================================================
 with tab_tactics:
+    # Diagnóstico Tático da Temporada (Forças, Fraquezas e Notas)
+    render_analysis_section(season_analysis, title="Diagnóstico Tático da Temporada")
+    st.divider()
+
     # 1. Game State (Comportamento por Placar)
     st.subheader("⏱️ Game State: Comportamento por Placar")
     st.caption("Taxa de produção e vulnerabilidade por 90 minutos de jogo conforme o placar da partida.")

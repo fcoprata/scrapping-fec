@@ -3,11 +3,13 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from config import TEAMS
+from analysis.engine import build_season_analysis
 from views._common import (
     CLUB_PALETTES,
     get_available_teams,
     get_team_badge_html,
     load_json,
+    render_insight_cards,
     render_page_header,
 )
 from views.pitch import BODY_PART_PT
@@ -148,6 +150,22 @@ players_b = pm_b.get("players", []) if isinstance(pm_b, dict) else (pm_b or [])
 sum_a = tm_a.get("summary", {}) if tm_a else {}
 sum_b = tm_b.get("summary", {}) if tm_b else {}
 
+analysis_a = build_season_analysis(tm_a, players_a) if tm_a else {}
+analysis_b = build_season_analysis(tm_b, players_b) if tm_b else {}
+
+hooks_a = analysis_a.get("editorial_hooks", [])
+hooks_b = analysis_b.get("editorial_hooks", [])
+
+combined_derby_hooks = []
+if hooks_a:
+    h_a = dict(hooks_a[0])
+    h_a["tag"] = f"{name_a}: {h_a.get('tag', '')}"
+    combined_derby_hooks.append(h_a)
+if hooks_b:
+    h_b = dict(hooks_b[0])
+    h_b["tag"] = f"{name_b}: {h_b.get('tag', '')}"
+    combined_derby_hooks.append(h_b)
+
 def _v(summary, key, default=0.0):
     val = summary.get(key)
     return default if val is None else val
@@ -196,6 +214,9 @@ with col_b_b:
         """,
         unsafe_allow_html=True,
     )
+
+if combined_derby_hooks:
+    render_insight_cards(combined_derby_hooks, title="💡 Raio-X & Anomalias Táticas dos Clubes")
 
 st.markdown("<div style='margin-bottom: 20px;'></div>", unsafe_allow_html=True)
 

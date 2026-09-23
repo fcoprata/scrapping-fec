@@ -174,6 +174,22 @@ with tab_ranking:
         ascending = metric_key in _LOWER_IS_BETTER
         df = pd.DataFrame(rows_out).sort_values(metric_label, ascending=ascending, na_position="last")
 
+        if not df.empty:
+            top_leader = df.iloc[0]
+            leader_name = top_leader["Jogador"]
+            leader_club = top_leader["Clube"]
+            leader_val = top_leader[metric_label]
+            leader_pctl = top_leader.get(pctl_label)
+            pctl_str = f" · Percentil **{leader_pctl:.0f}** na posição" if pd.notna(leader_pctl) else ""
+            st.markdown(
+                f"""
+                <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-left: 5px solid #16A34A; border-radius: 8px; padding: 10px 14px; margin: 10px 0 12px 0; font-size: 0.92rem; color: #14532D;">
+                    ⭐ <b>Destaque do Ranking:</b> <b>{leader_name}</b> ({leader_club}) é o líder em <b>{metric_label}</b> com <b>{leader_val}</b>{pctl_str}.
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
         if any(r.get("transferred") for r in filtered):
             st.caption("🔁 trocou de clube na temporada — minutos e métricas somam todos os clubes; clube exibido é o atual.")
         st.caption(
@@ -196,6 +212,30 @@ with tab_ranking:
 # ============================================================
 # TAB 2: Comparador
 # ============================================================
+def _find_player_standout(player: dict) -> str:
+    """Retorna uma frase descritiva com o maior diferencial ou métrica de elite do atleta."""
+    best_pctl = -1
+    best_label = ""
+    best_val = None
+
+    for g_name, metrics in _METRIC_GROUPS.items():
+        for m, label in metrics.items():
+            pctl = player.get(f"{m}_league_pctl")
+            v = player.get(m)
+            if pctl is not None and v is not None and pctl > best_pctl:
+                best_pctl = pctl
+                best_label = label
+                best_val = round(v, 2)
+
+    if best_pctl >= 80:
+        return f"🏆 <b>Destaque de Elite:</b> Top {100 - best_pctl:.0f}% da liga em <b>{best_label}</b> ({best_val})"
+    elif best_pctl >= 60:
+        return f"⭐ <b>Ponto Forte:</b> Percentil {best_pctl:.0f} em <b>{best_label}</b> ({best_val})"
+    elif best_label:
+        return f"📊 <b>Maior Marca:</b> {best_label} ({best_val} · pctl {best_pctl:.0f})"
+    return "📊 Sem métricas de percentil suficientes para destaque."
+
+
 with tab_compare:
     st.caption("Busque até 3 jogadores pelo nome pra comparar lado a lado.")
     query = st.text_input("Buscar jogador", key="scout_search")
@@ -223,11 +263,22 @@ with tab_compare:
                 if player.get("transferred"):
                     st.caption(f"🔁 trocou de clube — passou por: {', '.join(player.get('prior_clubs', []))}")
                 st.metric("Minutos (temporada)", player.get("minutes") or 0)
+
+                standout_txt = _find_player_standout(player)
+                st.markdown(
+                    f"""
+                    <div style="background: #EFF6FF; border: 1px solid #BFDBFE; border-left: 4px solid #2563EB; border-radius: 6px; padding: 7px 10px; margin: 8px 0 12px 0; font-size: 0.83rem; color: #1E40AF; line-height: 1.35;">
+                        {standout_txt}
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+
                 for group_name, metrics in _METRIC_GROUPS.items():
-                    st.markdown(f"**{group_name}**")
-                    for m, label in metrics.items():
-                        v = player.get(m)
-                        pctl = player.get(f"{m}_league_pctl")
-                        if v is None:
-                            continue
-                        st.write(f"{label}: **{round(v, 2)}**" + (f" · percentil {pctl:.0f}" if pctl is not None else ""))
+                    with st.expander(f"📁 {group_name}", expanded=False):
+                        for m, label in metrics.items():
+                            v = player.get(m)
+                            pctl = player.get(f"{m}_league_pctl")
+                            if v is None:
+                                continue
+                            st.write(f"{label}: **{round(v, 2)}**" + (f" · percentil {pctl:.0f}" if pctl is not None else ""))

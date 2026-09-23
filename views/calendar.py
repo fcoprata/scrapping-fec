@@ -4,6 +4,7 @@ import streamlit as st
 
 from config import TEAMS
 from name_match import normalize_name
+from analysis.engine import build_season_analysis
 from analysis.relegation import calc_team_relegation_profile, build_relegation_overview
 from analysis.historical import compare_team_to_historical, get_round_benchmark
 from views._common import (
@@ -13,6 +14,7 @@ from views._common import (
     get_available_teams,
     get_team_badge_html,
     load_json,
+    render_insight_cards,
     render_page_header,
 )
 
@@ -807,6 +809,17 @@ with tab_preview:
             """,
             unsafe_allow_html=True,
         )
+
+        opp_slug = away_slug if is_home else home_slug
+        if opp_slug:
+            opp_tm = load_json(f"{opp_slug}_team_metrics.json")
+            opp_pm = load_json(f"{opp_slug}_player_metrics.json")
+            if opp_tm:
+                opp_players = opp_pm.get("players", []) if isinstance(opp_pm, dict) else (opp_pm or [])
+                opp_analysis = build_season_analysis(opp_tm, opp_players)
+                opp_hooks = opp_analysis.get("editorial_hooks", [])
+                if opp_hooks:
+                    render_insight_cards(opp_hooks[:1], title=f"💡 Alerta Tático Pré-Jogo — {opp}")
 
     st.subheader(f"📋 Lista de Próximos Jogos — {team_name}")
     df_fix = _fixtures_df(team)
