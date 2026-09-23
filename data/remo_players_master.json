@@ -580,6 +580,23 @@
       "in_advanced": true
     },
     {
+      "key": "patrick de paula",
+      "name": "Patrick de Paula",
+      "sofascore_id": "1015291",
+      "ogol_id": null,
+      "position_group": "Meia",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
       "key": "joao pedro silva",
       "name": "João Pedro Silva",
       "sofascore_id": "362966",

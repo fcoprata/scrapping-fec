@@ -88,8 +88,8 @@
     },
     {
       "key": "jorge",
-      "name": "Jorge Bartholdy",
-      "sofascore_id": "1639127",
+      "name": "Jorge",
+      "sofascore_id": "701576",
       "ogol_id": "701576",
       "position_group": "Goleiro",
       "position_detail": null,
@@ -101,7 +101,7 @@
       "active": false,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "bruno ferreira",
@@ -122,8 +122,8 @@
     },
     {
       "key": "thalisson",
-      "name": "Thalisson Gabriel",
-      "sofascore_id": "1109577",
+      "name": "Thalisson",
+      "sofascore_id": "716116",
       "ogol_id": "716116",
       "position_group": "Defensor",
       "position_detail": "Zagueiro",
@@ -135,7 +135,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "luizao",
@@ -292,8 +292,8 @@
     },
     {
       "key": "aloisio",
-      "name": "Aloísio Barbosa de Abreu Neto",
-      "sofascore_id": "2537131",
+      "name": "Aloísio",
+      "sofascore_id": "1217759",
       "ogol_id": "1217759",
       "position_group": "Defensor",
       "position_detail": null,
@@ -305,12 +305,12 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "gilmar",
-      "name": "Pedro Gilmar",
-      "sofascore_id": "1589365",
+      "name": "Gilmar",
+      "sofascore_id": "770737",
       "ogol_id": "770737",
       "position_group": "Defensor",
       "position_detail": "Zagueiro",
@@ -322,7 +322,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "rafael ramos",
@@ -513,8 +513,8 @@
     },
     {
       "key": "pavani",
-      "name": "Giovanni Pavani",
-      "sofascore_id": "1176815",
+      "name": "Pavani",
+      "sofascore_id": "549380",
       "ogol_id": "549380",
       "position_group": "Meia",
       "position_detail": "Meia Central",
@@ -526,7 +526,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "vinicius zanocelo",
@@ -632,8 +632,8 @@
     },
     {
       "key": "pedro esli",
-      "name": "Pedro Esli da Silva",
-      "sofascore_id": "2025593",
+      "name": "Pedro Esli",
+      "sofascore_id": "1191547",
       "ogol_id": "1191547",
       "position_group": "Meia",
       "position_detail": null,
@@ -645,7 +645,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "lucas mugni",
@@ -820,7 +820,7 @@
     {
       "key": "wendel silva",
       "name": "Wendel Silva",
-      "sofascore_id": "937265",
+      "sofascore_id": "619610",
       "ogol_id": "619610",
       "position_group": "Atacante",
       "position_detail": "Centroavante",
@@ -832,7 +832,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "gabriel amaral",
@@ -1005,6 +1005,23 @@
       "in_advanced": true
     },
     {
+      "key": "wendel",
+      "name": "Wendel Silva",
+      "sofascore_id": "937265",
+      "ogol_id": "619610",
+      "position_group": "Atacante",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
       "key": "gabriel silva rocha",
       "name": "Gabriel Silva Rocha",
       "sofascore_id": "1591290",
@@ -1022,11 +1039,113 @@
       "in_advanced": true
     },
     {
+      "key": "giovanni pavani",
+      "name": "Giovanni Pavani",
+      "sofascore_id": "1176815",
+      "ogol_id": "549380",
+      "position_group": "Meia",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
+      "key": "thalisson gabriel",
+      "name": "Thalisson Gabriel",
+      "sofascore_id": "1109577",
+      "ogol_id": "716116",
+      "position_group": "Defensor",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
+      "key": "pedro esli da silva",
+      "name": "Pedro Esli da Silva",
+      "sofascore_id": "2025593",
+      "ogol_id": "1191547",
+      "position_group": "Meia",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
       "key": "jose wilson neto",
       "name": "José Wilson Neto",
       "sofascore_id": "1911817",
       "ogol_id": null,
       "position_group": "Meia",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "pedro gilmar",
+      "name": "Pedro Gilmar",
+      "sofascore_id": "1589365",
+      "ogol_id": "770737",
+      "position_group": "Defensor",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
+      "key": "aloisio barbosa de abreu neto",
+      "name": "Aloísio Barbosa de Abreu Neto",
+      "sofascore_id": "2537131",
+      "ogol_id": "1217759",
+      "position_group": "Defensor",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
+      "key": "jorge bartholdy",
+      "name": "Jorge Bartholdy",
+      "sofascore_id": "1639127",
+      "ogol_id": null,
+      "position_group": "Goleiro",
       "position_detail": null,
       "jersey_number": null,
       "age": null,

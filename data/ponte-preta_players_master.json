@@ -276,7 +276,7 @@
     {
       "key": "murilo henrique cavalcante",
       "name": "Murilo Henrique Cavalcante",
-      "sofascore_id": "2035942",
+      "sofascore_id": "993043",
       "ogol_id": null,
       "position_group": "Meia",
       "position_detail": "MC",
@@ -288,7 +288,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "juan rodrigues leopoldino",
@@ -770,6 +770,23 @@
       "key": "leo gomes",
       "name": "Léo Gomes",
       "sofascore_id": "931751",
+      "ogol_id": null,
+      "position_group": "Meia",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "murilo",
+      "name": "Murilo",
+      "sofascore_id": "2035942",
       "ogol_id": null,
       "position_group": "Meia",
       "position_detail": null,

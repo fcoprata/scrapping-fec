@@ -446,7 +446,7 @@
     {
       "key": "breno augusto",
       "name": "Breno Augusto",
-      "sofascore_id": "2649997",
+      "sofascore_id": "1023594",
       "ogol_id": null,
       "position_group": "Defensor",
       "position_detail": null,
@@ -458,7 +458,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "alex ramiro",
@@ -525,6 +525,23 @@
       "contract_until": "30/12/2026",
       "active": true,
       "in_squad": true,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "breno",
+      "name": "Breno",
+      "sofascore_id": "2649997",
+      "ogol_id": null,
+      "position_group": "Defensor",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
       "in_ogol_stats": false,
       "in_advanced": true
     },

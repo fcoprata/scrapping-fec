@@ -699,6 +699,23 @@
       "in_advanced": true
     },
     {
+      "key": "gabriel",
+      "name": "Gabriel",
+      "sofascore_id": "147467",
+      "ogol_id": null,
+      "position_group": "Goleiro",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
       "key": "aitor cantalapiedra",
       "name": "Aitor Cantalapiedra",
       "sofascore_id": "823831",

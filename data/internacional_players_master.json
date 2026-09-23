@@ -88,8 +88,8 @@
     },
     {
       "key": "fabricio",
-      "name": "Fabricio Zechmeister do Prado",
-      "sofascore_id": "2123330",
+      "name": "Fabricio",
+      "sofascore_id": "2677478",
       "ogol_id": null,
       "position_group": "Atacante",
       "position_detail": null,
@@ -101,7 +101,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": false,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "alan patrick",
@@ -755,6 +755,23 @@
       "sofascore_id": "1890679",
       "ogol_id": null,
       "position_group": "Goleiro",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": false,
+      "in_advanced": true
+    },
+    {
+      "key": "fabricio zechmeister do prado",
+      "name": "Fabricio Zechmeister do Prado",
+      "sofascore_id": "2123330",
+      "ogol_id": null,
+      "position_group": "Atacante",
       "position_detail": null,
       "jersey_number": null,
       "age": null,

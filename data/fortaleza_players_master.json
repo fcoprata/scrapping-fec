@@ -276,7 +276,7 @@
     {
       "key": "mauricio mucuri",
       "name": "Maurício Mucuri",
-      "sofascore_id": "1197893",
+      "sofascore_id": "805867",
       "ogol_id": "805867",
       "position_group": "Defensor",
       "position_detail": "Lateral Esq.",
@@ -288,7 +288,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "gabriel fuentes",
@@ -462,8 +462,8 @@
     },
     {
       "key": "ryan",
-      "name": "Ryan Gustavo",
-      "sofascore_id": "1170779",
+      "name": "Ryan",
+      "sofascore_id": "716458",
       "ogol_id": "716458",
       "position_group": "Meia",
       "position_detail": "Volante",
@@ -475,7 +475,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "lucca prior",
@@ -581,8 +581,8 @@
     },
     {
       "key": "rodrigo",
-      "name": "Rodrigo Santos",
-      "sofascore_id": "1173040",
+      "name": "Rodrigo",
+      "sofascore_id": "620644",
       "ogol_id": "620644",
       "position_group": "Meia",
       "position_detail": "Volante",
@@ -594,7 +594,7 @@
       "active": true,
       "in_squad": true,
       "in_ogol_stats": true,
-      "in_advanced": true
+      "in_advanced": false
     },
     {
       "key": "tomas pochettino",
@@ -952,6 +952,57 @@
       "in_squad": true,
       "in_ogol_stats": false,
       "in_advanced": false
+    },
+    {
+      "key": "mauricio lima",
+      "name": "Maurício Mucuri",
+      "sofascore_id": "1197893",
+      "ogol_id": "805867",
+      "position_group": "Defensor",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
+      "key": "rodrigo santos",
+      "name": "Rodrigo Santos",
+      "sofascore_id": "1173040",
+      "ogol_id": "620644",
+      "position_group": "Meia",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": true,
+      "in_advanced": true
+    },
+    {
+      "key": "ryan gustavo",
+      "name": "Ryan Gustavo",
+      "sofascore_id": "1170779",
+      "ogol_id": "716458",
+      "position_group": "Meia",
+      "position_detail": null,
+      "jersey_number": null,
+      "age": null,
+      "nationality": "Brasil",
+      "market_value_eur": null,
+      "contract_until": null,
+      "active": null,
+      "in_squad": false,
+      "in_ogol_stats": true,
+      "in_advanced": true
     }
   ]
 }
