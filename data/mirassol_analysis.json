@@ -27,17 +27,10 @@
     "editorial_hooks": [
       {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Reinaldo cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 6.63 em Expected Assists (xA), mas soma apenas 4 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
-      },
-      {
-        "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Nathan Fogaça é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 8 partidas, acumula 1 participações em gols (1G / 0A) e 2.23 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Reinaldo distribui chances com expectativa de 6.6 assistências (4 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       }
     ],
     "facts": {

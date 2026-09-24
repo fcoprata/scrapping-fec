@@ -19,25 +19,11 @@
     "notes": [],
     "editorial_hooks": [
       {
-        "type": "alert",
-        "tag": "Regressão à Média",
-        "headline": "Pontuação inflada: 44 pontos reais vs 39.0 esperados",
-        "lead": "O time soma +5.0 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
-        "badge": "Alerta Amarelo"
-      },
-      {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Moraes Júnior cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.09 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
-      },
-      {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Caio Dantas é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 17 partidas, acumula 2 participações em gols (2G / 0A) e 1.42 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Caio Dantas é o reserva mais participativo (2 participações diretas)",
+        "lead": "Entrando durante as partidas (17 jogos do banco), soma 2G e 0A com impacto imediato."
       }
     ],
     "facts": {

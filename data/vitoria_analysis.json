@@ -45,18 +45,11 @@
     ],
     "editorial_hooks": [
       {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Ramon cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.29 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
-      },
-      {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Erick é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 4 partidas, acumula 4 participações em gols (2G / 2A) e 0.95 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Erick é o reserva mais participativo (4 participações diretas)",
+        "lead": "Entrando durante as partidas (4 jogos do banco), soma 2G e 2A com impacto imediato."
       }
     ],
     "facts": {

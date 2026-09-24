@@ -33,25 +33,32 @@
     ],
     "editorial_hooks": [
       {
-        "type": "alert",
-        "tag": "Regressão à Média",
-        "headline": "Pontuação inflada: 60 pontos reais vs 52.6 esperados",
-        "lead": "O time soma +7.4 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
-        "badge": "Alerta Amarelo"
+        "type": "trend",
+        "tag": "Rendimento de Tabela",
+        "badge": "Eficiência de Pontos",
+        "headline": "Aproveitamento supera projeção estatística (+7.4 pts reais vs xPts)",
+        "lead": "Com 60 pontos somados frente a 52.6 esperados, o time maximiza resultados através da alta efetividade nas áreas decisivas."
+      },
+      {
+        "type": "strength",
+        "tag": "Poder de Fogo",
+        "badge": "Eficiência Ofensiva",
+        "headline": "Ataque cirúrgico: 55 gols marcados com excedente de +6.2 sobre o xG",
+        "lead": "A taxa de conversão dos finalizadores supera com folga a expectativa das chances geradas (48.8 xG)."
       },
       {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Lucas Paquetá cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 2.27 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Lucas Paquetá distribui chances com expectativa de 2.3 assistências (0 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Bruno Henrique é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 17 partidas, acumula 5 participações em gols (3G / 2A) e 2.69 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Bruno Henrique é o reserva mais participativo (5 participações diretas)",
+        "lead": "Entrando durante as partidas (17 jogos do banco), soma 3G e 2A com impacto imediato."
       }
     ],
     "facts": {

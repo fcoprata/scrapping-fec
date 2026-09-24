@@ -32,18 +32,32 @@
     "notes": [],
     "editorial_hooks": [
       {
+        "type": "strength",
+        "tag": "Solidez Defensiva",
+        "badge": "Efetividade na Área",
+        "headline": "Defesa e goleiro evitam 8.5 gols prováveis na temporada",
+        "lead": "A equipe sofreu 27 gols a partir de 35.5 xG concedidos, sustentando resultados com intervenções de alto nível."
+      },
+      {
+        "type": "alert",
+        "tag": "Conversão Ofensiva",
+        "badge": "Ajuste de Pontaria",
+        "headline": "Ataque desperdiça volume: marcou 8.0 gols a menos que o xG produzido",
+        "lead": "A criação produziu chances para 44.0 gols, mas a equipe anotou apenas 36 tentos até aqui."
+      },
+      {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Ewerthon cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 2.63 em Expected Assists (xA), mas soma apenas 1 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Ewerthon distribui chances com expectativa de 2.6 assistências (1 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Bruno José é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 14 partidas, acumula 4 participações em gols (2G / 2A) e 3.23 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Bruno José é o reserva mais participativo (4 participações diretas)",
+        "lead": "Entrando durante as partidas (14 jogos do banco), soma 2G e 2A com impacto imediato."
       }
     ],
     "facts": {

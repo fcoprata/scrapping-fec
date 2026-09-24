@@ -35,30 +35,30 @@
       {
         "type": "opportunity",
         "tag": "Potencial Reprimido",
-        "headline": "Desempenho não reflete na tabela: 28 pontos reais vs 36.9 esperados",
-        "lead": "A equipe merecia 8.9 pontos a mais pela qualidade das chances geradas e sofridas.",
-        "badge": "Tendência de Alta"
-      },
-      {
-        "type": "alert",
-        "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.99/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.40 xG/90, mas recua e cede 1.99 xG/90 quando está à frente no placar.",
-        "badge": "Atenção Tática"
+        "badge": "Margem de Evolução",
+        "headline": "Volume em campo justifica pontuação superior (36.9 xPts projetados)",
+        "lead": "A equipe soma 28 pontos, mas a qualidade das finalizações geradas e cedidas indica produção para somar até +8.9 pontos na tabela."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Paulinho Moccelin é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 11 partidas, acumula 2 participações em gols (0G / 2A) e 0.78 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Paulinho Moccelin é o reserva mais participativo (2 participações diretas)",
+        "lead": "Entrando durante as partidas (11 jogos do banco), soma 0G e 2A com impacto imediato."
+      },
+      {
+        "type": "alert",
+        "tag": "Comportamento por Placar",
+        "badge": "Oscilação Tática",
+        "headline": "Queda de controle ao liderar: xG concedido sobe para 1.99/90min",
+        "lead": "A equipe concede 1.40 xG/90 no empate, mas recua as linhas e cede 1.99 xG/90 quando está à frente no placar."
       },
       {
         "type": "strength",
-        "tag": "Força Aérea",
-        "headline": "Jogo aéreo letal: 26% dos gols da equipe são de cabeça",
-        "lead": "10 gols em 68 finalizações de cabeça com média de 0.13 xG por tentativa.",
-        "badge": "Padrão Ofensivo"
+        "tag": "Jogo Aéreo",
+        "badge": "Padrão Ofensivo",
+        "headline": "Ataque pelo alto: 26% dos gols da equipe nascem de cabeça",
+        "lead": "10 gols marcados em 68 cabeceios, evidenciando força em bolas alçadas na área."
       }
     ],
     "facts": {

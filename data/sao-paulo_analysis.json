@@ -33,24 +33,24 @@
     "editorial_hooks": [
       {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Ferreirinha cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.63 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Luciano distribui chances com expectativa de 2.5 assistências (1 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "alert",
-        "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.65/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.11 xG/90, mas recua e cede 1.65 xG/90 quando está à frente no placar.",
-        "badge": "Atenção Tática"
+        "tag": "Comportamento por Placar",
+        "badge": "Oscilação Tática",
+        "headline": "Queda de controle ao liderar: xG concedido sobe para 1.65/90min",
+        "lead": "A equipe concede 1.11 xG/90 no empate, mas recua as linhas e cede 1.65 xG/90 quando está à frente no placar."
       },
       {
         "type": "strength",
-        "tag": "Força Aérea",
-        "headline": "Jogo aéreo letal: 25% dos gols da equipe são de cabeça",
-        "lead": "8 gols em 70 finalizações de cabeça com média de 0.10 xG por tentativa.",
-        "badge": "Padrão Ofensivo"
+        "tag": "Jogo Aéreo",
+        "badge": "Padrão Ofensivo",
+        "headline": "Ataque pelo alto: 25% dos gols da equipe nascem de cabeça",
+        "lead": "8 gols marcados em 70 cabeceios, evidenciando força em bolas alçadas na área."
       }
     ],
     "facts": {

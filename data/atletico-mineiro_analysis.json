@@ -33,24 +33,24 @@
     "editorial_hooks": [
       {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Tomás Cuello cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 3.83 em Expected Assists (xA), mas soma apenas 2 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
-      },
-      {
-        "type": "alert",
-        "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.61/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.07 xG/90, mas recua e cede 1.61 xG/90 quando está à frente no placar.",
-        "badge": "Atenção Tática"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Tomás Cuello distribui chances com expectativa de 3.8 assistências (2 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Dudu é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 15 partidas, acumula 2 participações em gols (2G / 0A) e 2.25 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Dudu é o reserva mais participativo (2 participações diretas)",
+        "lead": "Entrando durante as partidas (15 jogos do banco), soma 2G e 0A com impacto imediato."
+      },
+      {
+        "type": "alert",
+        "tag": "Comportamento por Placar",
+        "badge": "Oscilação Tática",
+        "headline": "Queda de controle ao liderar: xG concedido sobe para 1.61/90min",
+        "lead": "A equipe concede 1.07 xG/90 no empate, mas recua as linhas e cede 1.61 xG/90 quando está à frente no placar."
       }
     ],
     "facts": {

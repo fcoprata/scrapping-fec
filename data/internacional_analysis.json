@@ -34,30 +34,37 @@
       {
         "type": "opportunity",
         "tag": "Potencial Reprimido",
-        "headline": "Desempenho não reflete na tabela: 28 pontos reais vs 41.6 esperados",
-        "lead": "A equipe merecia 13.6 pontos a mais pela qualidade das chances geradas e sofridas.",
-        "badge": "Tendência de Alta"
-      },
-      {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Alan Patrick cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 4.74 em Expected Assists (xA), mas soma apenas 1 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "badge": "Margem de Evolução",
+        "headline": "Volume em campo justifica pontuação superior (41.6 xPts projetados)",
+        "lead": "A equipe soma 28 pontos, mas a qualidade das finalizações geradas e cedidas indica produção para somar até +13.6 pontos na tabela."
       },
       {
         "type": "alert",
-        "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.64/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.12 xG/90, mas recua e cede 1.64 xG/90 quando está à frente no placar.",
-        "badge": "Atenção Tática"
+        "tag": "Conversão Ofensiva",
+        "badge": "Ajuste de Pontaria",
+        "headline": "Ataque desperdiça volume: marcou 11.5 gols a menos que o xG produzido",
+        "lead": "A criação produziu chances para 41.5 gols, mas a equipe anotou apenas 30 tentos até aqui."
+      },
+      {
+        "type": "tactical",
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Alan Patrick distribui chances com expectativa de 4.7 assistências (1 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Braian Aguirre é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 12 partidas, acumula 2 participações em gols (2G / 0A) e 1.23 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Braian Aguirre é o reserva mais participativo (2 participações diretas)",
+        "lead": "Entrando durante as partidas (12 jogos do banco), soma 2G e 0A com impacto imediato."
+      },
+      {
+        "type": "alert",
+        "tag": "Comportamento por Placar",
+        "badge": "Oscilação Tática",
+        "headline": "Queda de controle ao liderar: xG concedido sobe para 1.64/90min",
+        "lead": "A equipe concede 1.12 xG/90 no empate, mas recua as linhas e cede 1.64 xG/90 quando está à frente no placar."
       }
     ],
     "facts": {

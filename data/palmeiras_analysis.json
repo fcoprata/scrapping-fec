@@ -33,32 +33,46 @@
     ],
     "editorial_hooks": [
       {
-        "type": "alert",
-        "tag": "Regressão à Média",
-        "headline": "Pontuação inflada: 57 pontos reais vs 41.4 esperados",
-        "lead": "O time soma +15.6 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
-        "badge": "Alerta Amarelo"
-      },
-      {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Marlon Freitas cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 3.50 em Expected Assists (xA), mas soma apenas 1 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
-      },
-      {
-        "type": "alert",
-        "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.24/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 0.86 xG/90, mas recua e cede 1.24 xG/90 quando está à frente no placar.",
-        "badge": "Atenção Tática"
+        "type": "strength",
+        "tag": "Solidez Defensiva",
+        "badge": "Efetividade na Área",
+        "headline": "Defesa e goleiro evitam 7.1 gols prováveis na temporada",
+        "lead": "A equipe sofreu 21 gols a partir de 28.1 xG concedidos, sustentando resultados com intervenções de alto nível."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Paulinho é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 5 partidas, acumula 2 participações em gols (2G / 0A) e 0.78 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Rendimento de Tabela",
+        "badge": "Eficiência de Pontos",
+        "headline": "Aproveitamento supera projeção estatística (+15.6 pts reais vs xPts)",
+        "lead": "Com 57 pontos somados frente a 41.4 esperados, o time maximiza resultados através da alta efetividade nas áreas decisivas."
+      },
+      {
+        "type": "strength",
+        "tag": "Poder de Fogo",
+        "badge": "Eficiência Ofensiva",
+        "headline": "Ataque cirúrgico: 47 gols marcados com excedente de +13.3 sobre o xG",
+        "lead": "A taxa de conversão dos finalizadores supera com folga a expectativa das chances geradas (33.7 xG)."
+      },
+      {
+        "type": "tactical",
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Marlon Freitas distribui chances com expectativa de 3.5 assistências (1 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
+      },
+      {
+        "type": "trend",
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Paulinho é o reserva mais participativo (2 participações diretas)",
+        "lead": "Entrando durante as partidas (5 jogos do banco), soma 2G e 0A com impacto imediato."
+      },
+      {
+        "type": "alert",
+        "tag": "Comportamento por Placar",
+        "badge": "Oscilação Tática",
+        "headline": "Queda de controle ao liderar: xG concedido sobe para 1.24/90min",
+        "lead": "A equipe concede 0.86 xG/90 no empate, mas recua as linhas e cede 1.24 xG/90 quando está à frente no placar."
       }
     ],
     "facts": {

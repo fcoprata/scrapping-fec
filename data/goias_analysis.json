@@ -32,25 +32,32 @@
     "notes": [],
     "editorial_hooks": [
       {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Lourenço cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 2.22 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "type": "alert",
+        "tag": "Conversão Ofensiva",
+        "badge": "Ajuste de Pontaria",
+        "headline": "Ataque desperdiça volume: marcou 5.0 gols a menos que o xG produzido",
+        "lead": "A criação produziu chances para 35.0 gols, mas a equipe anotou apenas 30 tentos até aqui."
       },
       {
-        "type": "alert",
-        "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.76/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.16 xG/90, mas recua e cede 1.76 xG/90 quando está à frente no placar.",
-        "badge": "Atenção Tática"
+        "type": "tactical",
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Lourenço distribui chances com expectativa de 2.2 assistências (0 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Esli García é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 11 partidas, acumula 4 participações em gols (1G / 3A) e 1.69 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Esli García é o reserva mais participativo (4 participações diretas)",
+        "lead": "Entrando durante as partidas (11 jogos do banco), soma 1G e 3A com impacto imediato."
+      },
+      {
+        "type": "alert",
+        "tag": "Comportamento por Placar",
+        "badge": "Oscilação Tática",
+        "headline": "Queda de controle ao liderar: xG concedido sobe para 1.76/90min",
+        "lead": "A equipe concede 1.16 xG/90 no empate, mas recua as linhas e cede 1.76 xG/90 quando está à frente no placar."
       }
     ],
     "facts": {

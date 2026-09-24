@@ -26,25 +26,18 @@
     "notes": [],
     "editorial_hooks": [
       {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Sander cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.31 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "type": "trend",
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Juninho é o reserva mais participativo (8 participações diretas)",
+        "lead": "Entrando durante as partidas (25 jogos do banco), soma 3G e 5A com impacto imediato."
       },
       {
         "type": "alert",
-        "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 1.33/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 0.86 xG/90, mas recua e cede 1.33 xG/90 quando está à frente no placar.",
-        "badge": "Atenção Tática"
-      },
-      {
-        "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Juninho é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 25 partidas, acumula 8 participações em gols (3G / 5A) e 4.16 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Comportamento por Placar",
+        "badge": "Oscilação Tática",
+        "headline": "Queda de controle ao liderar: xG concedido sobe para 1.33/90min",
+        "lead": "A equipe concede 0.86 xG/90 no empate, mas recua as linhas e cede 1.33 xG/90 quando está à frente no placar."
       }
     ],
     "facts": {

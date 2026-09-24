@@ -27,17 +27,17 @@
     "editorial_hooks": [
       {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Benjamín Rollheiser cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 4.12 em Expected Assists (xA), mas soma apenas 2 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Benjamín Rollheiser distribui chances com expectativa de 4.1 assistências (2 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Moisés é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 9 partidas, acumula 2 participações em gols (2G / 0A) e 1.89 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Moisés é o reserva mais participativo (2 participações diretas)",
+        "lead": "Entrando durante as partidas (9 jogos do banco), soma 2G e 0A com impacto imediato."
       }
     ],
     "facts": {

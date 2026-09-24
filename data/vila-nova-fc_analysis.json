@@ -39,18 +39,18 @@
     ],
     "editorial_hooks": [
       {
-        "type": "alert",
-        "tag": "Regressão à Média",
-        "headline": "Pontuação inflada: 51 pontos reais vs 38.6 esperados",
-        "lead": "O time soma +12.4 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
-        "badge": "Alerta Amarelo"
+        "type": "trend",
+        "tag": "Rendimento de Tabela",
+        "badge": "Eficiência de Pontos",
+        "headline": "Aproveitamento supera projeção estatística (+12.4 pts reais vs xPts)",
+        "lead": "Com 51 pontos somados frente a 38.6 esperados, o time maximiza resultados através da alta efetividade nas áreas decisivas."
       },
       {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Hayner cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.25 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "type": "strength",
+        "tag": "Poder de Fogo",
+        "badge": "Eficiência Ofensiva",
+        "headline": "Ataque cirúrgico: 41 gols marcados com excedente de +7.9 sobre o xG",
+        "lead": "A taxa de conversão dos finalizadores supera com folga a expectativa das chances geradas (33.1 xG)."
       }
     ],
     "facts": {

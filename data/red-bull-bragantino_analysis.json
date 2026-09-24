@@ -20,25 +20,25 @@
     ],
     "editorial_hooks": [
       {
-        "type": "opportunity",
-        "tag": "Potencial Reprimido",
-        "headline": "Desempenho não reflete na tabela: 36 pontos reais vs 40.8 esperados",
-        "lead": "A equipe merecia 4.8 pontos a mais pela qualidade das chances geradas e sofridas.",
-        "badge": "Tendência de Alta"
+        "type": "alert",
+        "tag": "Conversão Ofensiva",
+        "badge": "Ajuste de Pontaria",
+        "headline": "Ataque desperdiça volume: marcou 6.1 gols a menos que o xG produzido",
+        "lead": "A criação produziu chances para 39.1 gols, mas a equipe anotou apenas 33 tentos até aqui."
       },
       {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Lucas Barbosa cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 4.14 em Expected Assists (xA), mas soma apenas 2 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Lucas Barbosa distribui chances com expectativa de 4.1 assistências (2 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Fernando é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 8 partidas, acumula 3 participações em gols (2G / 1A) e 1.71 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Fernando é o reserva mais participativo (3 participações diretas)",
+        "lead": "Entrando durante as partidas (8 jogos do banco), soma 2G e 1A com impacto imediato."
       }
     ],
     "facts": {

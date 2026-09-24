@@ -38,18 +38,25 @@
     ],
     "editorial_hooks": [
       {
+        "type": "alert",
+        "tag": "Ajuste em Bola Parada",
+        "badge": "Atenção Defensiva",
+        "headline": "Bolas paradas concentram 44% de todo o perigo sofrido pela defesa",
+        "lead": "Cruzamentos, escanteios e faltas alçadas representam 44.4% do xG cedido aos adversários."
+      },
+      {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Juan Alano cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.38 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "tag": "Pressão no Final",
+        "badge": "Intensidade Tática",
+        "headline": "Intensidade tardia: 32% da produção ofensiva ocorre após os 75 minutos",
+        "lead": "A equipe mantém fôlego e presença de área no terço decisivo das partidas, acumulando 10.7 xG na reta final."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Giulio é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 8 partidas, acumula 3 participações em gols (0G / 3A) e 1.23 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Giulio é o reserva mais participativo (3 participações diretas)",
+        "lead": "Entrando durante as partidas (8 jogos do banco), soma 0G e 3A com impacto imediato."
       }
     ],
     "facts": {

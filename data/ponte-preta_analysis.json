@@ -59,37 +59,30 @@
       {
         "type": "opportunity",
         "tag": "Potencial Reprimido",
-        "headline": "Desempenho não reflete na tabela: 13 pontos reais vs 24.5 esperados",
-        "lead": "A equipe merecia 11.5 pontos a mais pela qualidade das chances geradas e sofridas.",
-        "badge": "Tendência de Alta"
-      },
-      {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Elvis cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 4.17 em Expected Assists (xA), mas soma apenas 3 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "badge": "Margem de Evolução",
+        "headline": "Volume em campo justifica pontuação superior (24.5 xPts projetados)",
+        "lead": "A equipe soma 13 pontos, mas a qualidade das finalizações geradas e cedidas indica produção para somar até +11.5 pontos na tabela."
       },
       {
         "type": "alert",
-        "tag": "Síndrome do Recuo",
-        "headline": "Vulnerabilidade ao liderar: xG concedido sobe para 2.43/90min ao abrir vantagem",
-        "lead": "Quando está empatando o time concede 1.62 xG/90, mas recua e cede 2.43 xG/90 quando está à frente no placar.",
-        "badge": "Atenção Tática"
+        "tag": "Conversão Ofensiva",
+        "badge": "Ajuste de Pontaria",
+        "headline": "Ataque desperdiça volume: marcou 11.0 gols a menos que o xG produzido",
+        "lead": "A criação produziu chances para 28.0 gols, mas a equipe anotou apenas 17 tentos até aqui."
       },
       {
-        "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Daniel Baianinho é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 9 partidas, acumula 1 participações em gols (1G / 0A) e 1.59 (xG+xA).",
-        "badge": "Arma Secreta"
+        "type": "alert",
+        "tag": "Comportamento por Placar",
+        "badge": "Oscilação Tática",
+        "headline": "Queda de controle ao liderar: xG concedido sobe para 2.43/90min",
+        "lead": "A equipe concede 1.62 xG/90 no empate, mas recua as linhas e cede 2.43 xG/90 quando está à frente no placar."
       },
       {
         "type": "strength",
-        "tag": "Força Aérea",
-        "headline": "Jogo aéreo letal: 29% dos gols da equipe são de cabeça",
-        "lead": "5 gols em 62 finalizações de cabeça com média de 0.08 xG por tentativa.",
-        "badge": "Padrão Ofensivo"
+        "tag": "Jogo Aéreo",
+        "badge": "Padrão Ofensivo",
+        "headline": "Ataque pelo alto: 29% dos gols da equipe nascem de cabeça",
+        "lead": "5 gols marcados em 62 cabeceios, evidenciando força em bolas alçadas na área."
       }
     ],
     "facts": {

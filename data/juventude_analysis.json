@@ -33,32 +33,46 @@
     ],
     "editorial_hooks": [
       {
-        "type": "alert",
-        "tag": "Regressão à Média",
-        "headline": "Pontuação inflada: 50 pontos reais vs 42.1 esperados",
-        "lead": "O time soma +7.9 pontos acima do modelo Poisson de xG. Eficiência defensiva ou sorte que tendem a regredir no médio prazo.",
-        "badge": "Alerta Amarelo"
+        "type": "strength",
+        "tag": "Solidez Defensiva",
+        "badge": "Efetividade na Área",
+        "headline": "Defesa e goleiro evitam 9.7 gols prováveis na temporada",
+        "lead": "A equipe sofreu 19 gols a partir de 28.7 xG concedidos, sustentando resultados com intervenções de alto nível."
       },
       {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Diogo Barbosa cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 2.00 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "type": "alert",
+        "tag": "Ajuste em Bola Parada",
+        "badge": "Atenção Defensiva",
+        "headline": "Bolas paradas concentram 46% de todo o perigo sofrido pela defesa",
+        "lead": "Cruzamentos, escanteios e faltas alçadas representam 45.9% do xG cedido aos adversários."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Alan Kardec é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 14 partidas, acumula 4 participações em gols (3G / 1A) e 1.78 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Rendimento de Tabela",
+        "badge": "Eficiência de Pontos",
+        "headline": "Aproveitamento supera projeção estatística (+7.9 pts reais vs xPts)",
+        "lead": "Com 50 pontos somados frente a 42.1 esperados, o time maximiza resultados através da alta efetividade nas áreas decisivas."
+      },
+      {
+        "type": "tactical",
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Fábio Lima distribui chances com expectativa de 2.9 assistências (1 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
+      },
+      {
+        "type": "trend",
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Alan Kardec é o reserva mais participativo (4 participações diretas)",
+        "lead": "Entrando durante as partidas (14 jogos do banco), soma 3G e 1A com impacto imediato."
       },
       {
         "type": "strength",
-        "tag": "Força Aérea",
-        "headline": "Jogo aéreo letal: 26% dos gols da equipe são de cabeça",
-        "lead": "8 gols em 81 finalizações de cabeça com média de 0.09 xG por tentativa.",
-        "badge": "Padrão Ofensivo"
+        "tag": "Jogo Aéreo",
+        "badge": "Padrão Ofensivo",
+        "headline": "Ataque pelo alto: 26% dos gols da equipe nascem de cabeça",
+        "lead": "8 gols marcados em 81 cabeceios, evidenciando força em bolas alçadas na área."
       }
     ],
     "facts": {

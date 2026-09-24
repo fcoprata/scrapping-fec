@@ -32,25 +32,32 @@
     "notes": [],
     "editorial_hooks": [
       {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Marlon Lopes cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.47 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "type": "alert",
+        "tag": "Ajuste em Bola Parada",
+        "badge": "Atenção Defensiva",
+        "headline": "Bolas paradas concentram 42% de todo o perigo sofrido pela defesa",
+        "lead": "Cruzamentos, escanteios e faltas alçadas representam 42.3% do xG cedido aos adversários."
+      },
+      {
+        "type": "alert",
+        "tag": "Conversão Ofensiva",
+        "badge": "Ajuste de Pontaria",
+        "headline": "Ataque desperdiça volume: marcou 5.7 gols a menos que o xG produzido",
+        "lead": "A criação produziu chances para 35.7 gols, mas a equipe anotou apenas 30 tentos até aqui."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Kauan Cristtyan é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 14 partidas, acumula 4 participações em gols (3G / 1A) e 2.06 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Kauan Cristtyan é o reserva mais participativo (4 participações diretas)",
+        "lead": "Entrando durante as partidas (14 jogos do banco), soma 3G e 1A com impacto imediato."
       },
       {
         "type": "strength",
-        "tag": "Força Aérea",
-        "headline": "Jogo aéreo letal: 27% dos gols da equipe são de cabeça",
-        "lead": "8 gols em 87 finalizações de cabeça com média de 0.13 xG por tentativa.",
-        "badge": "Padrão Ofensivo"
+        "tag": "Jogo Aéreo",
+        "badge": "Padrão Ofensivo",
+        "headline": "Ataque pelo alto: 27% dos gols da equipe nascem de cabeça",
+        "lead": "8 gols marcados em 87 cabeceios, evidenciando força em bolas alçadas na área."
       }
     ],
     "facts": {

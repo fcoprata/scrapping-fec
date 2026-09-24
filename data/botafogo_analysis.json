@@ -26,18 +26,11 @@
     "notes": [],
     "editorial_hooks": [
       {
-        "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Santiago Rodríguez cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 1.29 em Expected Assists (xA), mas soma apenas 0 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
-      },
-      {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Santiago Rodríguez é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 8 partidas, acumula 2 participações em gols (2G / 0A) e 0.74 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Santiago Rodríguez é o reserva mais participativo (2 participações diretas)",
+        "lead": "Entrando durante as partidas (8 jogos do banco), soma 2G e 0A com impacto imediato."
       }
     ],
     "facts": {

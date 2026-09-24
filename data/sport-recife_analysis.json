@@ -26,18 +26,25 @@
     "notes": [],
     "editorial_hooks": [
       {
+        "type": "strength",
+        "tag": "Solidez Defensiva",
+        "badge": "Efetividade na Área",
+        "headline": "Defesa e goleiro evitam 6.8 gols prováveis na temporada",
+        "lead": "A equipe sofreu 29 gols a partir de 35.8 xG concedidos, sustentando resultados com intervenções de alto nível."
+      },
+      {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Chrystian Barletta cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 4.86 em Expected Assists (xA), mas soma apenas 3 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Chrystian Barletta distribui chances com expectativa de 4.9 assistências (3 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Carlos De Pena é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 11 partidas, acumula 3 participações em gols (1G / 2A) e 2.84 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Carlos De Pena é o reserva mais participativo (3 participações diretas)",
+        "lead": "Entrando durante as partidas (11 jogos do banco), soma 1G e 2A com impacto imediato."
       }
     ],
     "facts": {

@@ -20,17 +20,10 @@
     "editorial_hooks": [
       {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Matheus Pereira cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 5.80 em Expected Assists (xA), mas soma apenas 4 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
-      },
-      {
-        "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Luciano Rodríguez é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 3 partidas, acumula 2 participações em gols (0G / 2A) e 0.93 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Matheus Pereira distribui chances com expectativa de 5.8 assistências (4 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       }
     ],
     "facts": {

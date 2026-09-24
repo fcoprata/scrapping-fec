@@ -53,30 +53,37 @@
       {
         "type": "opportunity",
         "tag": "Potencial Reprimido",
-        "headline": "Desempenho não reflete na tabela: 31 pontos reais vs 43.6 esperados",
-        "lead": "A equipe merecia 12.6 pontos a mais pela qualidade das chances geradas e sofridas.",
-        "badge": "Tendência de Alta"
+        "badge": "Margem de Evolução",
+        "headline": "Volume em campo justifica pontuação superior (43.6 xPts projetados)",
+        "lead": "A equipe soma 31 pontos, mas a qualidade das finalizações geradas e cedidas indica produção para somar até +12.6 pontos na tabela."
+      },
+      {
+        "type": "alert",
+        "tag": "Conversão Ofensiva",
+        "badge": "Ajuste de Pontaria",
+        "headline": "Ataque desperdiça volume: marcou 10.1 gols a menos que o xG produzido",
+        "lead": "A criação produziu chances para 44.0 gols, mas a equipe anotou apenas 34 tentos até aqui."
       },
       {
         "type": "tactical",
-        "tag": "O Garçom Oculto",
-        "headline": "Andrés Gómez cria chances de elite que os companheiros não convertem",
-        "lead": "Produziu 5.63 em Expected Assists (xA), mas soma apenas 2 assistências reais por ineficiência dos finalizadores.",
-        "badge": "Destaque Individual"
+        "tag": "Criação Ofensiva",
+        "badge": "Destaque Criativo",
+        "headline": "Andrés Gómez distribui chances com expectativa de 5.6 assistências (2 convertidas)",
+        "lead": "O jogador lidera a construção com volume superior à média, mas a baixa taxa de conversão dos arremates limita o número de assistências diretas."
       },
       {
         "type": "trend",
-        "tag": "O 12º Jogador",
-        "headline": "Ramon Rique é o reserva mais decisivo do elenco",
-        "lead": "Saindo do banco em 7 partidas, acumula 3 participações em gols (1G / 2A) e 0.71 (xG+xA).",
-        "badge": "Arma Secreta"
+        "tag": "Impacto do Banco",
+        "badge": "Arma do 2º Tempo",
+        "headline": "Ramon Rique é o reserva mais participativo (3 participações diretas)",
+        "lead": "Entrando durante as partidas (7 jogos do banco), soma 1G e 2A com impacto imediato."
       },
       {
         "type": "strength",
-        "tag": "Força Aérea",
-        "headline": "Jogo aéreo letal: 26% dos gols da equipe são de cabeça",
-        "lead": "9 gols em 88 finalizações de cabeça com média de 0.12 xG por tentativa.",
-        "badge": "Padrão Ofensivo"
+        "tag": "Jogo Aéreo",
+        "badge": "Padrão Ofensivo",
+        "headline": "Ataque pelo alto: 26% dos gols da equipe nascem de cabeça",
+        "lead": "9 gols marcados em 88 cabeceios, evidenciando força em bolas alçadas na área."
       }
     ],
     "facts": {
