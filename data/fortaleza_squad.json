@@ -63,21 +63,6 @@
       "contract_until": null
     },
     {
-      "player_id": "228951",
-      "slug": "bastos",
-      "name": "Bastos",
-      "position": "Defensor",
-      "jersey_number": null,
-      "age": 35,
-      "nationality": "Angola",
-      "market_value_eur": 600000,
-      "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/85/36/16918536_bastos_20260916185451.png",
-      "profile_url": "https://www.ogol.com.br/jogador/bastos/228951?epoca_id=155",
-      "active": true,
-      "position_detail": "Zagueiro",
-      "contract_until": "-"
-    },
-    {
       "player_id": "730296",
       "slug": "samuel-brunhara",
       "name": "Samuel Brunhara",
@@ -91,6 +76,21 @@
       "active": true,
       "position_detail": null,
       "contract_until": null
+    },
+    {
+      "player_id": "228951",
+      "slug": "bastos",
+      "name": "Bastos",
+      "position": "Defensor",
+      "jersey_number": null,
+      "age": 35,
+      "nationality": "Angola",
+      "market_value_eur": 600000,
+      "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/85/36/16918536_bastos_20260916185451.png",
+      "profile_url": "https://www.ogol.com.br/jogador/bastos/228951?epoca_id=155",
+      "active": true,
+      "position_detail": "Zagueiro",
+      "contract_until": "-"
     },
     {
       "player_id": "549214",
@@ -449,7 +449,7 @@
       "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/92/77/16319277_rodriguinho_20260210211451.jpg",
       "profile_url": "https://www.ogol.com.br/jogador/rodriguinho/715043?epoca_id=155",
       "active": true,
-      "position_detail": "Ponta Esquerda",
+      "position_detail": "Ponta-Esquerda",
       "contract_until": "31/12/2026"
     },
     {
@@ -614,7 +614,7 @@
       "photo_url": "https://cdn-img.staticzz.com/img/jogadores/42/682142_20230923031548_vitinho.png",
       "profile_url": "https://www.ogol.com.br/jogador/vitinho/682142?epoca_id=155",
       "active": true,
-      "position_detail": "Ponta Direita",
+      "position_detail": "Ponta-Direita",
       "contract_until": "31/12/2026"
     },
     {
@@ -629,7 +629,7 @@
       "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/50/41/16615041_pedro_henrique_20260625194452.jpg",
       "profile_url": "https://www.ogol.com.br/jogador/pedro-henrique/174460?epoca_id=155",
       "active": true,
-      "position_detail": "Ponta Direita",
+      "position_detail": "Ponta-Direita",
       "contract_until": "31/12/2027"
     },
     {
@@ -674,7 +674,7 @@
       "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/21/72/16382172_paulo_baya_20260304121219.png",
       "profile_url": "https://www.ogol.com.br/jogador/paulo-baya/772006?epoca_id=155",
       "active": true,
-      "position_detail": "Ponta Esquerda",
+      "position_detail": "Ponta-Esquerda",
       "contract_until": "31/12/2026"
     },
     {
@@ -689,7 +689,7 @@
       "photo_url": "https://cdn-img.staticzz.com/img/jogadores/new/72/29/457229_welliton_20260303231731.jpg",
       "profile_url": "https://www.ogol.com.br/jogador/welliton/457229?epoca_id=155",
       "active": true,
-      "position_detail": "Ponta Direita",
+      "position_detail": "Ponta-Direita",
       "contract_until": "01/12/2026"
     },
     {
@@ -697,7 +697,7 @@
       "slug": "chico-da-costa",
       "name": "Chico da Costa",
       "position": "Atacante",
-      "jersey_number": "91",
+      "jersey_number": null,
       "age": 31,
       "nationality": "Brasil",
       "market_value_eur": 1000000,
@@ -742,7 +742,7 @@
       "slug": "juan-cantillo",
       "name": "Juan Cantillo",
       "position": "Atacante",
-      "jersey_number": "21",
+      "jersey_number": null,
       "age": 23,
       "nationality": "Colômbia",
       "market_value_eur": 200000,
@@ -764,7 +764,7 @@
       "photo_url": "https://cdn-img.staticzz.com/img/planteis/new/23/23/16322323_luiz_fernando_20260211164427.png",
       "profile_url": "https://www.ogol.com.br/jogador/luiz-fernando/457216?epoca_id=155",
       "active": true,
-      "position_detail": "Ponta Esquerda",
+      "position_detail": "Ponta-Esquerda",
       "contract_until": "31/12/2027"
     },
     {
