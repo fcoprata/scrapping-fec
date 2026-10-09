@@ -1,7 +1,7 @@
 {
   "season_year": "2026",
   "competition": "serie-b",
-  "scraped_at": "2026-10-08T12:51:00.119826",
+  "scraped_at": "2026-10-09T12:38:21.144319",
   "teams_summary": [
     {
       "team": "PONTE PRETA",
@@ -22,7 +22,7 @@
     {
       "team": "LONDRINA",
       "norm_team": "londrina",
-      "prob_rebaixamento": 98.8,
+      "prob_rebaixamento": 98.9,
       "prob_campeao": 0.0,
       "prob_acesso_direto": 0.0,
       "prob_playoffs": 0.0
@@ -30,7 +30,7 @@
     {
       "team": "AVAÍ",
       "norm_team": "avai",
-      "prob_rebaixamento": 84.9,
+      "prob_rebaixamento": 85.2,
       "prob_campeao": 0.0,
       "prob_acesso_direto": 0.0,
       "prob_playoffs": 0.0
@@ -38,130 +38,130 @@
     {
       "team": "BOTAFOGO-SP",
       "norm_team": "botafogo-sp",
-      "prob_rebaixamento": 12.9,
+      "prob_rebaixamento": 13.7,
       "prob_campeao": 0.0,
       "prob_acesso_direto": 0.0,
       "prob_playoffs": 0.0
     },
     {
-      "team": "CEARÁ",
-      "norm_team": "ceara",
-      "prob_rebaixamento": 2.3,
-      "prob_campeao": 0.0,
-      "prob_acesso_direto": 0.0,
-      "prob_playoffs": 0.082
-    },
-    {
       "team": "ATHLETIC-MG",
       "norm_team": "athletic-mg",
-      "prob_rebaixamento": 0.73,
+      "prob_rebaixamento": 0.81,
       "prob_campeao": 0.0,
       "prob_acesso_direto": 0.0,
-      "prob_playoffs": 0.092
+      "prob_playoffs": 0.1
     },
     {
       "team": "NÁUTICO",
       "norm_team": "nautico",
-      "prob_rebaixamento": 0.27,
+      "prob_rebaixamento": 0.78,
       "prob_campeao": 0.0,
-      "prob_acesso_direto": 0.003,
-      "prob_playoffs": 0.99
+      "prob_acesso_direto": 0.0,
+      "prob_playoffs": 0.14
+    },
+    {
+      "team": "CEARÁ",
+      "norm_team": "ceara",
+      "prob_rebaixamento": 0.52,
+      "prob_campeao": 0.0,
+      "prob_acesso_direto": 0.0,
+      "prob_playoffs": 0.19
     },
     {
       "team": "SÃO BERNARDO",
       "norm_team": "sao bernardo",
-      "prob_rebaixamento": 0.027,
+      "prob_rebaixamento": 0.034,
       "prob_campeao": 0.0,
-      "prob_acesso_direto": 0.004,
-      "prob_playoffs": 1.3
+      "prob_acesso_direto": 0.002,
+      "prob_playoffs": 1.4
     },
     {
       "team": "GOIÁS",
       "norm_team": "goias",
-      "prob_rebaixamento": 0.01,
+      "prob_rebaixamento": 0.013,
       "prob_campeao": 0.0,
-      "prob_acesso_direto": 0.002,
+      "prob_acesso_direto": 0.001,
       "prob_playoffs": 2.5
     },
     {
       "team": "CUIABÁ",
       "norm_team": "cuiaba",
       "prob_rebaixamento": 0.001,
-      "prob_campeao": 0.002,
-      "prob_acesso_direto": 0.031,
-      "prob_playoffs": 5.5
+      "prob_campeao": 0.001,
+      "prob_acesso_direto": 0.021,
+      "prob_playoffs": 5.6
     },
     {
       "team": "OPERÁRIO",
       "norm_team": "operario",
       "prob_rebaixamento": 0.0,
-      "prob_campeao": 0.021,
-      "prob_acesso_direto": 0.17,
-      "prob_playoffs": 11.1
+      "prob_campeao": 0.015,
+      "prob_acesso_direto": 0.13,
+      "prob_playoffs": 11.0
     },
     {
       "team": "VILA NOVA",
       "norm_team": "vila nova",
       "prob_rebaixamento": 0.0,
-      "prob_campeao": 27.5,
-      "prob_acesso_direto": 51.6,
-      "prob_playoffs": 46.4
+      "prob_campeao": 26.7,
+      "prob_acesso_direto": 49.7,
+      "prob_playoffs": 48.2
     },
     {
       "team": "SPORT",
       "norm_team": "sport",
       "prob_rebaixamento": 0.0,
-      "prob_campeao": 0.12,
-      "prob_acesso_direto": 0.74,
-      "prob_playoffs": 21.9
+      "prob_campeao": 0.09,
+      "prob_acesso_direto": 0.59,
+      "prob_playoffs": 23.2
     },
     {
       "team": "NOVORIZONTINO",
       "norm_team": "novorizontino",
       "prob_rebaixamento": 0.0,
-      "prob_campeao": 10.5,
-      "prob_acesso_direto": 25.3,
-      "prob_playoffs": 60.2
+      "prob_campeao": 21.9,
+      "prob_acesso_direto": 45.1,
+      "prob_playoffs": 51.0
     },
     {
       "team": "JUVENTUDE",
       "norm_team": "juventude",
       "prob_rebaixamento": 0.0,
-      "prob_campeao": 43.0,
-      "prob_acesso_direto": 68.5,
-      "prob_playoffs": 30.9
+      "prob_campeao": 37.8,
+      "prob_acesso_direto": 64.4,
+      "prob_playoffs": 35.0
     },
     {
       "team": "FORTALEZA",
       "norm_team": "fortaleza",
       "prob_rebaixamento": 0.0,
-      "prob_campeao": 10.8,
-      "prob_acesso_direto": 28.5,
-      "prob_playoffs": 62.4
+      "prob_campeao": 9.9,
+      "prob_acesso_direto": 26.1,
+      "prob_playoffs": 65.0
     },
     {
       "team": "CRICIÚMA",
       "norm_team": "criciuma",
       "prob_rebaixamento": 0.0,
-      "prob_campeao": 6.3,
-      "prob_acesso_direto": 17.4,
-      "prob_playoffs": 61.7
+      "prob_campeao": 2.1,
+      "prob_acesso_direto": 7.1,
+      "prob_playoffs": 59.5
     },
     {
       "team": "CRB",
       "norm_team": "crb",
       "prob_rebaixamento": 0.0,
-      "prob_campeao": 0.67,
-      "prob_acesso_direto": 3.0,
-      "prob_playoffs": 43.6
+      "prob_campeao": 0.61,
+      "prob_acesso_direto": 2.8,
+      "prob_playoffs": 45.4
     },
     {
       "team": "ATLÉTICO-GO",
       "norm_team": "atletico-go",
       "prob_rebaixamento": 0.0,
-      "prob_campeao": 1.1,
-      "prob_acesso_direto": 4.8,
-      "prob_playoffs": 51.3
+      "prob_campeao": 0.95,
+      "prob_acesso_direto": 4.0,
+      "prob_playoffs": 51.6
     }
   ],
   "probabilities": {
@@ -182,49 +182,49 @@
         "rank": 3,
         "team": "LONDRINA",
         "norm_team": "londrina",
-        "prob": 98.8
+        "prob": 98.9
       },
       {
         "rank": 4,
         "team": "AVAÍ",
         "norm_team": "avai",
-        "prob": 84.9
+        "prob": 85.2
       },
       {
         "rank": 5,
         "team": "BOTAFOGO-SP",
         "norm_team": "botafogo-sp",
-        "prob": 12.9
+        "prob": 13.7
       },
       {
         "rank": 6,
-        "team": "CEARÁ",
-        "norm_team": "ceara",
-        "prob": 2.3
+        "team": "ATHLETIC-MG",
+        "norm_team": "athletic-mg",
+        "prob": 0.81
       },
       {
         "rank": 7,
-        "team": "ATHLETIC-MG",
-        "norm_team": "athletic-mg",
-        "prob": 0.73
+        "team": "NÁUTICO",
+        "norm_team": "nautico",
+        "prob": 0.78
       },
       {
         "rank": 8,
-        "team": "NÁUTICO",
-        "norm_team": "nautico",
-        "prob": 0.27
+        "team": "CEARÁ",
+        "norm_team": "ceara",
+        "prob": 0.52
       },
       {
         "rank": 9,
         "team": "SÃO BERNARDO",
         "norm_team": "sao bernardo",
-        "prob": 0.027
+        "prob": 0.034
       },
       {
         "rank": 10,
         "team": "GOIÁS",
         "norm_team": "goias",
-        "prob": 0.01
+        "prob": 0.013
       },
       {
         "rank": 11,
@@ -292,61 +292,61 @@
         "rank": 1,
         "team": "JUVENTUDE",
         "norm_team": "juventude",
-        "prob": 43.0
+        "prob": 37.8
       },
       {
         "rank": 2,
         "team": "VILA NOVA",
         "norm_team": "vila nova",
-        "prob": 27.5
+        "prob": 26.7
       },
       {
         "rank": 3,
-        "team": "FORTALEZA",
-        "norm_team": "fortaleza",
-        "prob": 10.8
+        "team": "NOVORIZONTINO",
+        "norm_team": "novorizontino",
+        "prob": 21.9
       },
       {
         "rank": 4,
-        "team": "NOVORIZONTINO",
-        "norm_team": "novorizontino",
-        "prob": 10.5
+        "team": "FORTALEZA",
+        "norm_team": "fortaleza",
+        "prob": 9.9
       },
       {
         "rank": 5,
         "team": "CRICIÚMA",
         "norm_team": "criciuma",
-        "prob": 6.3
+        "prob": 2.1
       },
       {
         "rank": 6,
         "team": "ATLÉTICO-GO",
         "norm_team": "atletico-go",
-        "prob": 1.1
+        "prob": 0.95
       },
       {
         "rank": 7,
         "team": "CRB",
         "norm_team": "crb",
-        "prob": 0.67
+        "prob": 0.61
       },
       {
         "rank": 8,
         "team": "SPORT",
         "norm_team": "sport",
-        "prob": 0.12
+        "prob": 0.09
       },
       {
         "rank": 9,
         "team": "OPERÁRIO",
         "norm_team": "operario",
-        "prob": 0.021
+        "prob": 0.015
       },
       {
         "rank": 10,
         "team": "CUIABÁ",
         "norm_team": "cuiaba",
-        "prob": 0.002
+        "prob": 0.001
       },
       {
         "rank": 11,
@@ -356,8 +356,8 @@
       },
       {
         "rank": 12,
-        "team": "NÁUTICO",
-        "norm_team": "nautico",
+        "team": "GOIÁS",
+        "norm_team": "goias",
         "prob": 0.0
       },
       {
@@ -374,14 +374,20 @@
       },
       {
         "rank": 13,
+        "team": "NÁUTICO",
+        "norm_team": "nautico",
+        "prob": 0.0
+      },
+      {
+        "rank": 13,
         "team": "BOTAFOGO-SP",
         "norm_team": "botafogo-sp",
         "prob": 0.0
       },
       {
         "rank": 13,
-        "team": "GOIÁS",
-        "norm_team": "goias",
+        "team": "AVAÍ",
+        "norm_team": "avai",
         "prob": 0.0
       },
       {
@@ -394,12 +400,6 @@
         "rank": 13,
         "team": "LONDRINA",
         "norm_team": "londrina",
-        "prob": 0.0
-      },
-      {
-        "rank": 13,
-        "team": "AVAÍ",
-        "norm_team": "avai",
         "prob": 0.0
       },
       {
@@ -414,118 +414,118 @@
         "rank": 1,
         "team": "JUVENTUDE",
         "norm_team": "juventude",
-        "prob": 68.5
+        "prob": 64.4
       },
       {
         "rank": 2,
         "team": "VILA NOVA",
         "norm_team": "vila nova",
-        "prob": 51.6
+        "prob": 49.7
       },
       {
         "rank": 3,
-        "team": "FORTALEZA",
-        "norm_team": "fortaleza",
-        "prob": 28.5
+        "team": "NOVORIZONTINO",
+        "norm_team": "novorizontino",
+        "prob": 45.1
       },
       {
         "rank": 4,
-        "team": "NOVORIZONTINO",
-        "norm_team": "novorizontino",
-        "prob": 25.3
+        "team": "FORTALEZA",
+        "norm_team": "fortaleza",
+        "prob": 26.1
       },
       {
         "rank": 5,
         "team": "CRICIÚMA",
         "norm_team": "criciuma",
-        "prob": 17.4
+        "prob": 7.1
       },
       {
         "rank": 6,
         "team": "ATLÉTICO-GO",
         "norm_team": "atletico-go",
-        "prob": 4.8
+        "prob": 4.0
       },
       {
         "rank": 7,
         "team": "CRB",
         "norm_team": "crb",
-        "prob": 3.0
+        "prob": 2.8
       },
       {
         "rank": 8,
         "team": "SPORT",
         "norm_team": "sport",
-        "prob": 0.74
+        "prob": 0.59
       },
       {
         "rank": 9,
         "team": "OPERÁRIO",
         "norm_team": "operario",
-        "prob": 0.17
+        "prob": 0.13
       },
       {
         "rank": 10,
         "team": "CUIABÁ",
         "norm_team": "cuiaba",
-        "prob": 0.031
+        "prob": 0.021
       },
       {
         "rank": 11,
         "team": "SÃO BERNARDO",
         "norm_team": "sao bernardo",
-        "prob": 0.004
-      },
-      {
-        "rank": 12,
-        "team": "NÁUTICO",
-        "norm_team": "nautico",
-        "prob": 0.003
-      },
-      {
-        "rank": 13,
-        "team": "GOIÁS",
-        "norm_team": "goias",
         "prob": 0.002
       },
       {
-        "rank": 14,
+        "rank": 12,
+        "team": "GOIÁS",
+        "norm_team": "goias",
+        "prob": 0.001
+      },
+      {
+        "rank": 13,
         "team": "AMÉRICA",
         "norm_team": "america",
         "prob": 0.0
       },
       {
-        "rank": 14,
+        "rank": 13,
         "team": "ATHLETIC-MG",
         "norm_team": "athletic-mg",
         "prob": 0.0
       },
       {
-        "rank": 14,
+        "rank": 13,
         "team": "AVAÍ",
         "norm_team": "avai",
         "prob": 0.0
       },
       {
-        "rank": 14,
+        "rank": 13,
         "team": "BOTAFOGO-SP",
         "norm_team": "botafogo-sp",
         "prob": 0.0
       },
       {
-        "rank": 14,
+        "rank": 13,
         "team": "CEARÁ",
         "norm_team": "ceara",
         "prob": 0.0
       },
       {
-        "rank": 14,
+        "rank": 13,
         "team": "LONDRINA",
         "norm_team": "londrina",
         "prob": 0.0
       },
       {
-        "rank": 14,
+        "rank": 13,
+        "team": "NÁUTICO",
+        "norm_team": "nautico",
+        "prob": 0.0
+      },
+      {
+        "rank": 13,
         "team": "PONTE PRETA",
         "norm_team": "ponte preta",
         "prob": 0.0
@@ -536,61 +536,61 @@
         "rank": 1,
         "team": "FORTALEZA",
         "norm_team": "fortaleza",
-        "prob": 62.4
+        "prob": 65.0
       },
       {
         "rank": 2,
         "team": "CRICIÚMA",
         "norm_team": "criciuma",
-        "prob": 61.7
+        "prob": 59.5
       },
       {
         "rank": 3,
-        "team": "NOVORIZONTINO",
-        "norm_team": "novorizontino",
-        "prob": 60.2
+        "team": "ATLÉTICO-GO",
+        "norm_team": "atletico-go",
+        "prob": 51.6
       },
       {
         "rank": 4,
-        "team": "ATLÉTICO-GO",
-        "norm_team": "atletico-go",
-        "prob": 51.3
+        "team": "NOVORIZONTINO",
+        "norm_team": "novorizontino",
+        "prob": 51.0
       },
       {
         "rank": 5,
         "team": "VILA NOVA",
         "norm_team": "vila nova",
-        "prob": 46.4
+        "prob": 48.2
       },
       {
         "rank": 6,
         "team": "CRB",
         "norm_team": "crb",
-        "prob": 43.6
+        "prob": 45.4
       },
       {
         "rank": 7,
         "team": "JUVENTUDE",
         "norm_team": "juventude",
-        "prob": 30.9
+        "prob": 35.0
       },
       {
         "rank": 8,
         "team": "SPORT",
         "norm_team": "sport",
-        "prob": 21.9
+        "prob": 23.2
       },
       {
         "rank": 9,
         "team": "OPERÁRIO",
         "norm_team": "operario",
-        "prob": 11.1
+        "prob": 11.0
       },
       {
         "rank": 10,
         "team": "CUIABÁ",
         "norm_team": "cuiaba",
-        "prob": 5.5
+        "prob": 5.6
       },
       {
         "rank": 11,
@@ -602,25 +602,25 @@
         "rank": 12,
         "team": "SÃO BERNARDO",
         "norm_team": "sao bernardo",
-        "prob": 1.3
+        "prob": 1.4
       },
       {
         "rank": 13,
-        "team": "NÁUTICO",
-        "norm_team": "nautico",
-        "prob": 0.99
+        "team": "CEARÁ",
+        "norm_team": "ceara",
+        "prob": 0.19
       },
       {
         "rank": 14,
-        "team": "ATHLETIC-MG",
-        "norm_team": "athletic-mg",
-        "prob": 0.092
+        "team": "NÁUTICO",
+        "norm_team": "nautico",
+        "prob": 0.14
       },
       {
         "rank": 15,
-        "team": "CEARÁ",
-        "norm_team": "ceara",
-        "prob": 0.082
+        "team": "ATHLETIC-MG",
+        "norm_team": "athletic-mg",
+        "prob": 0.1
       },
       {
         "rank": 16,
@@ -657,6 +657,10 @@
   "points_cutoffs": {
     "rebaixamento": [
       {
+        "points": 55,
+        "prob": 0.0
+      },
+      {
         "points": 54,
         "prob": 0.0
       },
@@ -670,117 +674,117 @@
       },
       {
         "points": 51,
-        "prob": 0.014
+        "prob": 0.019
       },
       {
         "points": 50,
-        "prob": 0.15
+        "prob": 0.198
       },
       {
         "points": 49,
-        "prob": 0.816
+        "prob": 1.087
       },
       {
         "points": 48,
-        "prob": 3.268
+        "prob": 4.306
       },
       {
         "points": 47,
-        "prob": 9.331
+        "prob": 11.825
       },
       {
         "points": 46,
-        "prob": 19.93
+        "prob": 24.116
       },
       {
         "points": 45,
-        "prob": 35.818
+        "prob": 41.3
       },
       {
         "points": 44,
-        "prob": 53.763
+        "prob": 59.11
       },
       {
         "points": 43,
-        "prob": 70.341
+        "prob": 74.357
       },
       {
         "points": 42,
-        "prob": 84.075
+        "prob": 86.435
       },
       {
         "points": 41,
-        "prob": 92.966
+        "prob": 93.993
       },
       {
         "points": 40,
-        "prob": 97.558
+        "prob": 97.868
       },
       {
         "points": 39,
-        "prob": 99.5
+        "prob": 99.546
       },
       {
         "points": 38,
+        "prob": 99.999
+      },
+      {
+        "points": 37,
         "prob": 100.0
       }
     ],
     "direct": [
-      {
-        "points": 59,
-        "prob": 0.0
-      },
       {
         "points": 60,
         "prob": 0.0
       },
       {
         "points": 61,
-        "prob": 0.009
+        "prob": 0.003
       },
       {
         "points": 62,
-        "prob": 0.219
+        "prob": 0.112
       },
       {
         "points": 63,
-        "prob": 2.072
+        "prob": 1.312
       },
       {
         "points": 64,
-        "prob": 10.428
+        "prob": 7.716
       },
       {
         "points": 65,
-        "prob": 30.473
+        "prob": 25.305
       },
       {
         "points": 66,
-        "prob": 57.065
+        "prob": 51.527
       },
       {
         "points": 67,
-        "prob": 80.663
+        "prob": 77.018
       },
       {
         "points": 68,
-        "prob": 93.303
+        "prob": 91.704
       },
       {
         "points": 69,
-        "prob": 98.348
+        "prob": 97.872
       },
       {
         "points": 70,
-        "prob": 99.69
+        "prob": 99.578
       },
       {
         "points": 71,
-        "prob": 99.963
+        "prob": 99.955
       },
       {
         "points": 72,
-        "prob": 99.995
+        "prob": 99.994
       },
       {
         "points": 73,
@@ -794,47 +798,47 @@
       },
       {
         "points": 55,
-        "prob": 0.005
+        "prob": 0.006
       },
       {
         "points": 56,
-        "prob": 0.115
+        "prob": 0.141
       },
       {
         "points": 57,
-        "prob": 1.27
+        "prob": 1.471
       },
       {
         "points": 58,
-        "prob": 6.791
+        "prob": 7.487
       },
       {
         "points": 59,
-        "prob": 22.798
+        "prob": 24.102
       },
       {
         "points": 60,
-        "prob": 48.973
+        "prob": 49.452
       },
       {
         "points": 61,
-        "prob": 75.308
+        "prob": 75.436
       },
       {
         "points": 62,
-        "prob": 92.681
+        "prob": 92.412
       },
       {
         "points": 63,
-        "prob": 98.512
+        "prob": 98.408
       },
       {
         "points": 64,
-        "prob": 99.858
+        "prob": 99.844
       },
       {
         "points": 65,
-        "prob": 99.993
+        "prob": 99.992
       },
       {
         "points": 66,
@@ -843,68 +847,64 @@
     ],
     "campeao": [
       {
-        "points": 60,
-        "prob": 0.0
-      },
-      {
         "points": 61,
         "prob": 0.0
       },
       {
         "points": 62,
-        "prob": 0.003
+        "prob": 0.001
       },
       {
         "points": 63,
-        "prob": 0.074
+        "prob": 0.031
       },
       {
         "points": 64,
-        "prob": 0.92
+        "prob": 0.5
       },
       {
         "points": 65,
-        "prob": 5.522
+        "prob": 3.677
       },
       {
         "points": 66,
-        "prob": 18.005
+        "prob": 13.846
       },
       {
         "points": 67,
-        "prob": 40.083
+        "prob": 34.249
       },
       {
         "points": 68,
-        "prob": 63.339
+        "prob": 57.955
       },
       {
         "points": 69,
-        "prob": 82.277
+        "prob": 78.703
       },
       {
         "points": 70,
-        "prob": 92.684
+        "prob": 90.74
       },
       {
         "points": 71,
-        "prob": 97.802
+        "prob": 97.059
       },
       {
         "points": 72,
-        "prob": 99.305
+        "prob": 99.067
       },
       {
         "points": 73,
-        "prob": 99.897
+        "prob": 99.804
       },
       {
         "points": 74,
-        "prob": 99.976
+        "prob": 99.969
       },
       {
         "points": 75,
-        "prob": 99.998
+        "prob": 99.993
       },
       {
         "points": 76,
@@ -1059,17 +1059,31 @@
         "team": "NÁUTICO",
         "norm_team": "nautico",
         "points": 27,
-        "played": 15,
+        "played": 16,
         "wins": 8,
         "draws": 3,
-        "losses": 4,
+        "losses": 5,
         "goals_for": 19,
-        "goals_against": 13,
-        "goal_diff": 6,
-        "efficiency": 60.0
+        "goals_against": 15,
+        "goal_diff": 4,
+        "efficiency": 56.25
       },
       {
         "position": 12,
+        "team": "CEARÁ",
+        "norm_team": "ceara",
+        "points": 27,
+        "played": 16,
+        "wins": 8,
+        "draws": 3,
+        "losses": 5,
+        "goals_for": 20,
+        "goals_against": 17,
+        "goal_diff": 3,
+        "efficiency": 56.25
+      },
+      {
+        "position": 13,
         "team": "OPERÁRIO",
         "norm_team": "operario",
         "points": 26,
@@ -1081,20 +1095,6 @@
         "goals_against": 20,
         "goal_diff": 3,
         "efficiency": 54.17
-      },
-      {
-        "position": 13,
-        "team": "CEARÁ",
-        "norm_team": "ceara",
-        "points": 24,
-        "played": 15,
-        "wins": 7,
-        "draws": 3,
-        "losses": 5,
-        "goals_for": 19,
-        "goals_against": 17,
-        "goal_diff": 2,
-        "efficiency": 53.33
       },
       {
         "position": 14,
@@ -1212,6 +1212,20 @@
       },
       {
         "position": 2,
+        "team": "NOVORIZONTINO",
+        "norm_team": "novorizontino",
+        "points": 26,
+        "played": 16,
+        "wins": 7,
+        "draws": 5,
+        "losses": 4,
+        "goals_for": 28,
+        "goals_against": 13,
+        "goal_diff": 15,
+        "efficiency": 54.17
+      },
+      {
+        "position": 3,
         "team": "JUVENTUDE",
         "norm_team": "juventude",
         "points": 25,
@@ -1223,20 +1237,6 @@
         "goals_against": 13,
         "goal_diff": 2,
         "efficiency": 52.08
-      },
-      {
-        "position": 3,
-        "team": "NOVORIZONTINO",
-        "norm_team": "novorizontino",
-        "points": 23,
-        "played": 15,
-        "wins": 6,
-        "draws": 5,
-        "losses": 4,
-        "goals_for": 26,
-        "goals_against": 13,
-        "goal_diff": 13,
-        "efficiency": 51.11
       },
       {
         "position": 4,
@@ -1271,14 +1271,14 @@
         "team": "CRICIÚMA",
         "norm_team": "criciuma",
         "points": 22,
-        "played": 15,
+        "played": 16,
         "wins": 6,
         "draws": 4,
-        "losses": 5,
+        "losses": 6,
         "goals_for": 15,
-        "goals_against": 17,
-        "goal_diff": -2,
-        "efficiency": 48.89
+        "goals_against": 18,
+        "goal_diff": -3,
+        "efficiency": 45.83
       },
       {
         "position": 7,
@@ -1480,6 +1480,20 @@
     "last_10_rounds": [
       {
         "position": 1,
+        "team": "NOVORIZONTINO",
+        "norm_team": "novorizontino",
+        "points": 23,
+        "played": 10,
+        "wins": 7,
+        "draws": 2,
+        "losses": 1,
+        "goals_for": 22,
+        "goals_against": 7,
+        "goal_diff": 15,
+        "efficiency": 76.67
+      },
+      {
+        "position": 2,
         "team": "VILA NOVA",
         "norm_team": "vila nova",
         "points": 21,
@@ -1491,20 +1505,6 @@
         "goals_against": 6,
         "goal_diff": 9,
         "efficiency": 70.0
-      },
-      {
-        "position": 2,
-        "team": "NOVORIZONTINO",
-        "norm_team": "novorizontino",
-        "points": 20,
-        "played": 9,
-        "wins": 6,
-        "draws": 2,
-        "losses": 1,
-        "goals_for": 20,
-        "goals_against": 7,
-        "goal_diff": 13,
-        "efficiency": 74.07
       },
       {
         "position": 3,
@@ -1578,6 +1578,20 @@
       },
       {
         "position": 8,
+        "team": "CEARÁ",
+        "norm_team": "ceara",
+        "points": 17,
+        "played": 10,
+        "wins": 5,
+        "draws": 2,
+        "losses": 3,
+        "goals_for": 12,
+        "goals_against": 11,
+        "goal_diff": 1,
+        "efficiency": 56.67
+      },
+      {
+        "position": 9,
         "team": "SPORT",
         "norm_team": "sport",
         "points": 15,
@@ -1591,7 +1605,7 @@
         "efficiency": 50.0
       },
       {
-        "position": 9,
+        "position": 10,
         "team": "SÃO BERNARDO",
         "norm_team": "sao bernardo",
         "points": 15,
@@ -1605,32 +1619,18 @@
         "efficiency": 50.0
       },
       {
-        "position": 10,
+        "position": 11,
         "team": "NÁUTICO",
         "norm_team": "nautico",
         "points": 15,
-        "played": 9,
+        "played": 10,
         "wins": 4,
         "draws": 3,
-        "losses": 2,
-        "goals_for": 13,
-        "goals_against": 12,
-        "goal_diff": 1,
-        "efficiency": 55.56
-      },
-      {
-        "position": 11,
-        "team": "CEARÁ",
-        "norm_team": "ceara",
-        "points": 14,
-        "played": 9,
-        "wins": 4,
-        "draws": 2,
         "losses": 3,
-        "goals_for": 11,
-        "goals_against": 11,
-        "goal_diff": 0,
-        "efficiency": 51.85
+        "goals_for": 13,
+        "goals_against": 14,
+        "goal_diff": -1,
+        "efficiency": 50.0
       },
       {
         "position": 12,
@@ -1662,22 +1662,22 @@
       },
       {
         "position": 14,
-        "team": "CRICIÚMA",
-        "norm_team": "criciuma",
-        "points": 10,
-        "played": 9,
-        "wins": 3,
-        "draws": 1,
-        "losses": 5,
-        "goals_for": 9,
-        "goals_against": 13,
-        "goal_diff": -4,
-        "efficiency": 37.04
-      },
-      {
-        "position": 15,
         "team": "AVAÍ",
         "norm_team": "avai",
+        "points": 10,
+        "played": 10,
+        "wins": 3,
+        "draws": 1,
+        "losses": 6,
+        "goals_for": 9,
+        "goals_against": 14,
+        "goal_diff": -5,
+        "efficiency": 33.33
+      },
+      {
+        "position": 14,
+        "team": "CRICIÚMA",
+        "norm_team": "criciuma",
         "points": 10,
         "played": 10,
         "wins": 3,
@@ -2044,6 +2044,20 @@
     "second_half": [
       {
         "position": 1,
+        "team": "NOVORIZONTINO",
+        "norm_team": "novorizontino",
+        "points": 27,
+        "played": 13,
+        "wins": 8,
+        "draws": 3,
+        "losses": 2,
+        "goals_for": 26,
+        "goals_against": 9,
+        "goal_diff": 17,
+        "efficiency": 69.23
+      },
+      {
+        "position": 2,
         "team": "JUVENTUDE",
         "norm_team": "juventude",
         "points": 27,
@@ -2057,7 +2071,7 @@
         "efficiency": 69.23
       },
       {
-        "position": 2,
+        "position": 3,
         "team": "CRB",
         "norm_team": "crb",
         "points": 25,
@@ -2071,7 +2085,7 @@
         "efficiency": 64.1
       },
       {
-        "position": 3,
+        "position": 4,
         "team": "FORTALEZA",
         "norm_team": "fortaleza",
         "points": 25,
@@ -2083,20 +2097,6 @@
         "goals_against": 8,
         "goal_diff": 7,
         "efficiency": 64.1
-      },
-      {
-        "position": 4,
-        "team": "NOVORIZONTINO",
-        "norm_team": "novorizontino",
-        "points": 24,
-        "played": 12,
-        "wins": 7,
-        "draws": 3,
-        "losses": 2,
-        "goals_for": 24,
-        "goals_against": 9,
-        "goal_diff": 15,
-        "efficiency": 66.67
       },
       {
         "position": 5,
@@ -2128,6 +2128,20 @@
       },
       {
         "position": 7,
+        "team": "CEARÁ",
+        "norm_team": "ceara",
+        "points": 23,
+        "played": 13,
+        "wins": 7,
+        "draws": 2,
+        "losses": 4,
+        "goals_for": 19,
+        "goals_against": 17,
+        "goal_diff": 2,
+        "efficiency": 58.97
+      },
+      {
+        "position": 8,
         "team": "CUIABÁ",
         "norm_team": "cuiaba",
         "points": 23,
@@ -2141,7 +2155,7 @@
         "efficiency": 58.97
       },
       {
-        "position": 8,
+        "position": 9,
         "team": "SPORT",
         "norm_team": "sport",
         "points": 22,
@@ -2153,20 +2167,6 @@
         "goals_against": 16,
         "goal_diff": 4,
         "efficiency": 56.41
-      },
-      {
-        "position": 9,
-        "team": "CEARÁ",
-        "norm_team": "ceara",
-        "points": 20,
-        "played": 12,
-        "wins": 6,
-        "draws": 2,
-        "losses": 4,
-        "goals_for": 18,
-        "goals_against": 17,
-        "goal_diff": 1,
-        "efficiency": 55.56
       },
       {
         "position": 10,
@@ -2187,14 +2187,14 @@
         "team": "NÁUTICO",
         "norm_team": "nautico",
         "points": 18,
-        "played": 12,
+        "played": 13,
         "wins": 4,
         "draws": 6,
-        "losses": 2,
+        "losses": 3,
         "goals_for": 15,
-        "goals_against": 14,
-        "goal_diff": 1,
-        "efficiency": 50.0
+        "goals_against": 16,
+        "goal_diff": -1,
+        "efficiency": 46.15
       },
       {
         "position": 12,
@@ -2226,20 +2226,6 @@
       },
       {
         "position": 14,
-        "team": "CRICIÚMA",
-        "norm_team": "criciuma",
-        "points": 14,
-        "played": 12,
-        "wins": 4,
-        "draws": 2,
-        "losses": 6,
-        "goals_for": 10,
-        "goals_against": 15,
-        "goal_diff": -5,
-        "efficiency": 38.89
-      },
-      {
-        "position": 15,
         "team": "BOTAFOGO-SP",
         "norm_team": "botafogo-sp",
         "points": 14,
@@ -2249,6 +2235,20 @@
         "losses": 7,
         "goals_for": 12,
         "goals_against": 18,
+        "goal_diff": -6,
+        "efficiency": 35.9
+      },
+      {
+        "position": 15,
+        "team": "CRICIÚMA",
+        "norm_team": "criciuma",
+        "points": 14,
+        "played": 13,
+        "wins": 4,
+        "draws": 2,
+        "losses": 7,
+        "goals_for": 10,
+        "goals_against": 16,
         "goal_diff": -6,
         "efficiency": 35.9
       },
