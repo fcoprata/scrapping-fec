@@ -1,12 +1,12 @@
 {
   "season_year": "2026",
   "competition": "serie-a",
-  "scraped_at": "2026-11-02T14:44:03.673261",
+  "scraped_at": "2026-11-03T13:40:21.623421",
   "teams_summary": [
     {
       "team": "CHAPECOENSE",
       "norm_team": "chapecoense",
-      "prob_rebaixamento": 99.999,
+      "prob_rebaixamento": 100.0,
       "prob_campeao": 0.0,
       "prob_sulamericana": 0.0
     },
@@ -20,79 +20,72 @@
     {
       "team": "INTERNACIONAL",
       "norm_team": "internacional",
-      "prob_rebaixamento": 57.2,
+      "prob_rebaixamento": 57.3,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 2.4
+      "prob_sulamericana": 2.1
     },
     {
       "team": "CORINTHIANS",
       "norm_team": "corinthians",
       "prob_rebaixamento": 42.7,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 4.9
+      "prob_sulamericana": 4.6
     },
     {
       "team": "GRÊMIO",
       "norm_team": "gremio",
-      "prob_rebaixamento": 36.5,
+      "prob_rebaixamento": 36.6,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 4.5
+      "prob_sulamericana": 4.2
     },
     {
       "team": "MIRASSOL",
       "norm_team": "mirassol",
-      "prob_rebaixamento": 32.9,
+      "prob_rebaixamento": 33.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 5.8
+      "prob_sulamericana": 5.3
     },
     {
       "team": "VITÓRIA",
       "norm_team": "vitoria",
-      "prob_rebaixamento": 14.7,
+      "prob_rebaixamento": 14.1,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 14.4
+      "prob_sulamericana": 14.0
     },
     {
       "team": "VASCO DA GAMA",
       "norm_team": "vasco da gama",
-      "prob_rebaixamento": 8.2,
+      "prob_rebaixamento": 8.5,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 29.1
+      "prob_sulamericana": 26.7
     },
     {
       "team": "BOTAFOGO",
       "norm_team": "botafogo",
       "prob_rebaixamento": 7.8,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 22.3
+      "prob_sulamericana": 21.0
     },
     {
       "team": "CORITIBA",
       "norm_team": "coritiba",
-      "prob_rebaixamento": 0.79,
+      "prob_rebaixamento": 0.76,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 42.7
+      "prob_sulamericana": 42.3
     },
     {
       "team": "SÃO PAULO",
       "norm_team": "sao paulo",
       "prob_rebaixamento": 0.024,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 85.3
-    },
-    {
-      "team": "BRAGANTINO",
-      "norm_team": "bragantino",
-      "prob_rebaixamento": 0.005,
-      "prob_campeao": 0.0,
-      "prob_sulamericana": 89.6
+      "prob_sulamericana": 84.2
     },
     {
       "team": "SANTOS",
       "norm_team": "santos",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 95.1
+      "prob_sulamericana": 96.4
     },
     {
       "team": "PALMEIRAS",
@@ -106,7 +99,7 @@
       "norm_team": "fluminense",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 32.7
+      "prob_sulamericana": 32.8
     },
     {
       "team": "FLAMENGO",
@@ -120,28 +113,35 @@
       "norm_team": "cruzeiro",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 3.3
+      "prob_sulamericana": 3.2
+    },
+    {
+      "team": "BRAGANTINO",
+      "norm_team": "bragantino",
+      "prob_rebaixamento": 0.0,
+      "prob_campeao": 0.0,
+      "prob_sulamericana": 97.9
     },
     {
       "team": "BAHIA",
       "norm_team": "bahia",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 55.7
+      "prob_sulamericana": 54.7
     },
     {
       "team": "ATHLETICO-PR",
       "norm_team": "athletico-pr",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 30.4
+      "prob_sulamericana": 29.5
     },
     {
       "team": "ATLÉTICO-MG",
       "norm_team": "atletico-mg",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 81.7
+      "prob_sulamericana": 81.2
     }
   ],
   "probabilities": {
@@ -150,7 +150,7 @@
         "rank": 1,
         "team": "CHAPECOENSE",
         "norm_team": "chapecoense",
-        "prob": 99.999
+        "prob": 100.0
       },
       {
         "rank": 2,
@@ -162,7 +162,7 @@
         "rank": 3,
         "team": "INTERNACIONAL",
         "norm_team": "internacional",
-        "prob": 57.2
+        "prob": 57.3
       },
       {
         "rank": 4,
@@ -174,25 +174,25 @@
         "rank": 5,
         "team": "GRÊMIO",
         "norm_team": "gremio",
-        "prob": 36.5
+        "prob": 36.6
       },
       {
         "rank": 6,
         "team": "MIRASSOL",
         "norm_team": "mirassol",
-        "prob": 32.9
+        "prob": 33.0
       },
       {
         "rank": 7,
         "team": "VITÓRIA",
         "norm_team": "vitoria",
-        "prob": 14.7
+        "prob": 14.1
       },
       {
         "rank": 8,
         "team": "VASCO DA GAMA",
         "norm_team": "vasco da gama",
-        "prob": 8.2
+        "prob": 8.5
       },
       {
         "rank": 9,
@@ -204,7 +204,7 @@
         "rank": 10,
         "team": "CORITIBA",
         "norm_team": "coritiba",
-        "prob": 0.79
+        "prob": 0.76
       },
       {
         "rank": 11,
@@ -214,12 +214,6 @@
       },
       {
         "rank": 12,
-        "team": "BRAGANTINO",
-        "norm_team": "bragantino",
-        "prob": 0.005
-      },
-      {
-        "rank": 13,
         "team": "SANTOS",
         "norm_team": "santos",
         "prob": 0.0
@@ -246,6 +240,12 @@
         "rank": 13,
         "team": "CRUZEIRO",
         "norm_team": "cruzeiro",
+        "prob": 0.0
+      },
+      {
+        "rank": 13,
+        "team": "BRAGANTINO",
+        "norm_team": "bragantino",
         "prob": 0.0
       },
       {
@@ -306,8 +306,8 @@
       },
       {
         "rank": 3,
-        "team": "CRUZEIRO",
-        "norm_team": "cruzeiro",
+        "team": "CORITIBA",
+        "norm_team": "coritiba",
         "prob": 0.0
       },
       {
@@ -372,8 +372,8 @@
       },
       {
         "rank": 3,
-        "team": "CORITIBA",
-        "norm_team": "coritiba",
+        "team": "CRUZEIRO",
+        "norm_team": "cruzeiro",
         "prob": 0.0
       },
       {
@@ -392,99 +392,99 @@
     "sulamericana": [
       {
         "rank": 1,
-        "team": "SANTOS",
-        "norm_team": "santos",
-        "prob": 95.1
+        "team": "BRAGANTINO",
+        "norm_team": "bragantino",
+        "prob": 97.9
       },
       {
         "rank": 2,
-        "team": "BRAGANTINO",
-        "norm_team": "bragantino",
-        "prob": 89.6
+        "team": "SANTOS",
+        "norm_team": "santos",
+        "prob": 96.4
       },
       {
         "rank": 3,
         "team": "SÃO PAULO",
         "norm_team": "sao paulo",
-        "prob": 85.3
+        "prob": 84.2
       },
       {
         "rank": 4,
         "team": "ATLÉTICO-MG",
         "norm_team": "atletico-mg",
-        "prob": 81.7
+        "prob": 81.2
       },
       {
         "rank": 4,
         "team": "BAHIA",
         "norm_team": "bahia",
-        "prob": 55.7
+        "prob": 54.7
       },
       {
         "rank": 6,
         "team": "CORITIBA",
         "norm_team": "coritiba",
-        "prob": 42.7
+        "prob": 42.3
       },
       {
         "rank": 7,
         "team": "FLUMINENSE",
         "norm_team": "fluminense",
-        "prob": 32.7
+        "prob": 32.8
       },
       {
         "rank": 7,
         "team": "ATHLETICO-PR",
         "norm_team": "athletico-pr",
-        "prob": 30.4
+        "prob": 29.5
       },
       {
         "rank": 9,
         "team": "VASCO DA GAMA",
         "norm_team": "vasco da gama",
-        "prob": 29.1
+        "prob": 26.7
       },
       {
         "rank": 10,
         "team": "BOTAFOGO",
         "norm_team": "botafogo",
-        "prob": 22.3
+        "prob": 21.0
       },
       {
         "rank": 11,
         "team": "VITÓRIA",
         "norm_team": "vitoria",
-        "prob": 14.4
+        "prob": 14.0
       },
       {
         "rank": 12,
         "team": "MIRASSOL",
         "norm_team": "mirassol",
-        "prob": 5.8
+        "prob": 5.3
       },
       {
         "rank": 13,
         "team": "CORINTHIANS",
         "norm_team": "corinthians",
-        "prob": 4.9
+        "prob": 4.6
       },
       {
         "rank": 14,
         "team": "GRÊMIO",
         "norm_team": "gremio",
-        "prob": 4.5
+        "prob": 4.2
       },
       {
         "rank": 15,
         "team": "CRUZEIRO",
         "norm_team": "cruzeiro",
-        "prob": 3.3
+        "prob": 3.2
       },
       {
         "rank": 16,
         "team": "INTERNACIONAL",
         "norm_team": "internacional",
-        "prob": 2.4
+        "prob": 2.1
       },
       {
         "rank": 17,
@@ -628,6 +628,20 @@
       },
       {
         "position": 9,
+        "team": "BRAGANTINO",
+        "norm_team": "bragantino",
+        "points": 30,
+        "played": 17,
+        "wins": 9,
+        "draws": 3,
+        "losses": 5,
+        "goals_for": 29,
+        "goals_against": 18,
+        "goal_diff": 11,
+        "efficiency": 58.82
+      },
+      {
+        "position": 10,
         "team": "BAHIA",
         "norm_team": "bahia",
         "points": 30,
@@ -641,7 +655,7 @@
         "efficiency": 58.82
       },
       {
-        "position": 10,
+        "position": 11,
         "team": "GRÊMIO",
         "norm_team": "gremio",
         "points": 29,
@@ -653,20 +667,6 @@
         "goals_against": 21,
         "goal_diff": 6,
         "efficiency": 56.86
-      },
-      {
-        "position": 11,
-        "team": "BRAGANTINO",
-        "norm_team": "bragantino",
-        "points": 27,
-        "played": 16,
-        "wins": 8,
-        "draws": 3,
-        "losses": 5,
-        "goals_for": 27,
-        "goals_against": 17,
-        "goal_diff": 10,
-        "efficiency": 56.25
       },
       {
         "position": 12,
@@ -857,14 +857,14 @@
         "team": "SANTOS",
         "norm_team": "santos",
         "points": 22,
-        "played": 16,
+        "played": 17,
         "wins": 6,
         "draws": 4,
-        "losses": 6,
-        "goals_for": 26,
-        "goals_against": 26,
-        "goal_diff": 0,
-        "efficiency": 45.83
+        "losses": 7,
+        "goals_for": 27,
+        "goals_against": 28,
+        "goal_diff": -1,
+        "efficiency": 43.14
       },
       {
         "position": 6,
@@ -1083,157 +1083,143 @@
         "team": "FLAMENGO",
         "norm_team": "flamengo",
         "points": 25,
-        "played": 10,
+        "played": 9,
         "wins": 8,
         "draws": 1,
-        "losses": 1,
-        "goals_for": 22,
-        "goals_against": 9,
-        "goal_diff": 13,
-        "efficiency": 83.33
+        "losses": 0,
+        "goals_for": 21,
+        "goals_against": 7,
+        "goal_diff": 14,
+        "efficiency": 92.59
       },
       {
         "position": 2,
         "team": "PALMEIRAS",
         "norm_team": "palmeiras",
-        "points": 22,
-        "played": 10,
-        "wins": 6,
+        "points": 19,
+        "played": 9,
+        "wins": 5,
         "draws": 4,
         "losses": 0,
-        "goals_for": 16,
-        "goals_against": 3,
-        "goal_diff": 13,
-        "efficiency": 73.33
+        "goals_for": 12,
+        "goals_against": 2,
+        "goal_diff": 10,
+        "efficiency": 70.37
       },
       {
         "position": 3,
         "team": "CRUZEIRO",
         "norm_team": "cruzeiro",
-        "points": 21,
-        "played": 10,
-        "wins": 7,
+        "points": 18,
+        "played": 9,
+        "wins": 6,
         "draws": 0,
         "losses": 3,
-        "goals_for": 20,
-        "goals_against": 14,
-        "goal_diff": 6,
-        "efficiency": 70.0
+        "goals_for": 18,
+        "goals_against": 13,
+        "goal_diff": 5,
+        "efficiency": 66.67
       },
       {
         "position": 4,
-        "team": "BAHIA",
-        "norm_team": "bahia",
-        "points": 19,
+        "team": "SANTOS",
+        "norm_team": "santos",
+        "points": 18,
         "played": 10,
-        "wins": 6,
-        "draws": 1,
-        "losses": 3,
-        "goals_for": 16,
-        "goals_against": 14,
-        "goal_diff": 2,
-        "efficiency": 63.33
+        "wins": 5,
+        "draws": 3,
+        "losses": 2,
+        "goals_for": 15,
+        "goals_against": 12,
+        "goal_diff": 3,
+        "efficiency": 60.0
       },
       {
         "position": 5,
-        "team": "SANTOS",
-        "norm_team": "santos",
-        "points": 19,
-        "played": 10,
-        "wins": 5,
-        "draws": 4,
-        "losses": 1,
-        "goals_for": 15,
-        "goals_against": 11,
-        "goal_diff": 4,
-        "efficiency": 63.33
-      },
-      {
-        "position": 6,
-        "team": "FLUMINENSE",
-        "norm_team": "fluminense",
-        "points": 16,
-        "played": 10,
-        "wins": 5,
-        "draws": 1,
-        "losses": 4,
-        "goals_for": 18,
-        "goals_against": 14,
-        "goal_diff": 4,
-        "efficiency": 53.33
-      },
-      {
-        "position": 7,
         "team": "VASCO DA GAMA",
         "norm_team": "vasco da gama",
         "points": 16,
-        "played": 10,
+        "played": 9,
         "wins": 5,
         "draws": 1,
-        "losses": 4,
-        "goals_for": 17,
-        "goals_against": 15,
-        "goal_diff": 2,
-        "efficiency": 53.33
+        "losses": 3,
+        "goals_for": 16,
+        "goals_against": 11,
+        "goal_diff": 5,
+        "efficiency": 59.26
       },
       {
-        "position": 8,
+        "position": 6,
         "team": "SÃO PAULO",
         "norm_team": "sao paulo",
         "points": 16,
-        "played": 10,
+        "played": 9,
         "wins": 5,
         "draws": 1,
-        "losses": 4,
+        "losses": 3,
         "goals_for": 11,
-        "goals_against": 11,
-        "goal_diff": 0,
-        "efficiency": 53.33
+        "goals_against": 10,
+        "goal_diff": 1,
+        "efficiency": 59.26
       },
       {
-        "position": 9,
+        "position": 7,
+        "team": "BAHIA",
+        "norm_team": "bahia",
+        "points": 16,
+        "played": 9,
+        "wins": 5,
+        "draws": 1,
+        "losses": 3,
+        "goals_for": 14,
+        "goals_against": 14,
+        "goal_diff": 0,
+        "efficiency": 59.26
+      },
+      {
+        "position": 8,
         "team": "ATLÉTICO-MG",
         "norm_team": "atletico-mg",
-        "points": 15,
-        "played": 10,
+        "points": 14,
+        "played": 9,
         "wins": 4,
-        "draws": 3,
+        "draws": 2,
         "losses": 3,
         "goals_for": 13,
         "goals_against": 12,
         "goal_diff": 1,
-        "efficiency": 50.0
+        "efficiency": 51.85
+      },
+      {
+        "position": 9,
+        "team": "FLUMINENSE",
+        "norm_team": "fluminense",
+        "points": 13,
+        "played": 9,
+        "wins": 4,
+        "draws": 1,
+        "losses": 4,
+        "goals_for": 16,
+        "goals_against": 13,
+        "goal_diff": 3,
+        "efficiency": 48.15
       },
       {
         "position": 10,
         "team": "MIRASSOL",
         "norm_team": "mirassol",
-        "points": 14,
-        "played": 10,
+        "points": 13,
+        "played": 9,
         "wins": 3,
-        "draws": 5,
+        "draws": 4,
         "losses": 2,
-        "goals_for": 12,
-        "goals_against": 10,
+        "goals_for": 11,
+        "goals_against": 9,
         "goal_diff": 2,
-        "efficiency": 46.67
+        "efficiency": 48.15
       },
       {
         "position": 11,
-        "team": "ATHLETICO-PR",
-        "norm_team": "athletico-pr",
-        "points": 13,
-        "played": 10,
-        "wins": 3,
-        "draws": 4,
-        "losses": 3,
-        "goals_for": 19,
-        "goals_against": 20,
-        "goal_diff": -1,
-        "efficiency": 43.33
-      },
-      {
-        "position": 12,
         "team": "BRAGANTINO",
         "norm_team": "bragantino",
         "points": 12,
@@ -1241,122 +1227,136 @@
         "wins": 3,
         "draws": 3,
         "losses": 4,
-        "goals_for": 15,
-        "goals_against": 14,
+        "goals_for": 16,
+        "goals_against": 15,
         "goal_diff": 1,
         "efficiency": 40.0
       },
       {
-        "position": 13,
+        "position": 12,
         "team": "GRÊMIO",
         "norm_team": "gremio",
         "points": 12,
-        "played": 10,
+        "played": 9,
         "wins": 3,
         "draws": 3,
-        "losses": 4,
+        "losses": 3,
         "goals_for": 11,
-        "goals_against": 11,
-        "goal_diff": 0,
-        "efficiency": 40.0
+        "goals_against": 10,
+        "goal_diff": 1,
+        "efficiency": 44.44
       },
       {
-        "position": 14,
+        "position": 13,
         "team": "INTERNACIONAL",
         "norm_team": "internacional",
-        "points": 11,
-        "played": 10,
+        "points": 10,
+        "played": 9,
         "wins": 3,
-        "draws": 2,
+        "draws": 1,
         "losses": 5,
         "goals_for": 13,
         "goals_against": 14,
         "goal_diff": -1,
-        "efficiency": 36.67
+        "efficiency": 37.04
+      },
+      {
+        "position": 14,
+        "team": "ATHLETICO-PR",
+        "norm_team": "athletico-pr",
+        "points": 10,
+        "played": 9,
+        "wins": 2,
+        "draws": 4,
+        "losses": 3,
+        "goals_for": 16,
+        "goals_against": 18,
+        "goal_diff": -2,
+        "efficiency": 37.04
       },
       {
         "position": 15,
-        "team": "CORITIBA",
-        "norm_team": "coritiba",
-        "points": 11,
-        "played": 10,
-        "wins": 3,
-        "draws": 2,
-        "losses": 5,
-        "goals_for": 12,
-        "goals_against": 20,
-        "goal_diff": -8,
-        "efficiency": 36.67
-      },
-      {
-        "position": 16,
-        "team": "CHAPECOENSE",
-        "norm_team": "chapecoense",
-        "points": 10,
-        "played": 10,
-        "wins": 3,
-        "draws": 1,
-        "losses": 6,
-        "goals_for": 9,
-        "goals_against": 20,
-        "goal_diff": -11,
-        "efficiency": 33.33
-      },
-      {
-        "position": 17,
         "team": "VITÓRIA",
         "norm_team": "vitoria",
         "points": 9,
-        "played": 10,
+        "played": 9,
         "wins": 2,
         "draws": 3,
-        "losses": 5,
+        "losses": 4,
         "goals_for": 12,
-        "goals_against": 15,
-        "goal_diff": -3,
-        "efficiency": 30.0
+        "goals_against": 13,
+        "goal_diff": -1,
+        "efficiency": 33.33
+      },
+      {
+        "position": 16,
+        "team": "CORITIBA",
+        "norm_team": "coritiba",
+        "points": 8,
+        "played": 9,
+        "wins": 2,
+        "draws": 2,
+        "losses": 5,
+        "goals_for": 10,
+        "goals_against": 19,
+        "goal_diff": -9,
+        "efficiency": 29.63
+      },
+      {
+        "position": 17,
+        "team": "CHAPECOENSE",
+        "norm_team": "chapecoense",
+        "points": 7,
+        "played": 9,
+        "wins": 2,
+        "draws": 1,
+        "losses": 6,
+        "goals_for": 8,
+        "goals_against": 20,
+        "goal_diff": -12,
+        "efficiency": 25.93
       },
       {
         "position": 18,
         "team": "REMO",
         "norm_team": "remo",
         "points": 6,
-        "played": 10,
+        "played": 9,
         "wins": 1,
         "draws": 3,
-        "losses": 6,
-        "goals_for": 9,
-        "goals_against": 14,
-        "goal_diff": -5,
-        "efficiency": 20.0
+        "losses": 5,
+        "goals_for": 8,
+        "goals_against": 12,
+        "goal_diff": -4,
+        "efficiency": 22.22
       },
       {
         "position": 19,
         "team": "BOTAFOGO",
         "norm_team": "botafogo",
         "points": 6,
-        "played": 10,
+        "played": 9,
         "wins": 1,
         "draws": 3,
-        "losses": 6,
-        "goals_for": 7,
-        "goals_against": 17,
-        "goal_diff": -10,
-        "efficiency": 20.0
+        "losses": 5,
+        "goals_for": 5,
+        "goals_against": 14,
+        "goal_diff": -9,
+        "efficiency": 22.22
       },
       {
         "position": 20,
         "team": "CORINTHIANS",
         "norm_team": "corinthians",
         "points": 4,
-        "played": 10,
+        "played": 9,
         "wins": 1,
         "draws": 1,
-        "losses": 8,
-        "goals_for": 11,
-        "goals_against": 20,
-        "goal_diff": -9,
-        "efficiency": 13.33
+        "losses": 7,
+        "goals_for": 10,
+        "goals_against": 18,
+        "goal_diff": -8,
+        "efficiency": 14.81
       }
     ],
     "first_half": [
@@ -1689,14 +1689,14 @@
         "team": "SANTOS",
         "norm_team": "santos",
         "points": 26,
-        "played": 14,
+        "played": 15,
         "wins": 7,
         "draws": 5,
-        "losses": 2,
-        "goals_for": 22,
-        "goals_against": 16,
-        "goal_diff": 6,
-        "efficiency": 61.9
+        "losses": 3,
+        "goals_for": 23,
+        "goals_against": 18,
+        "goal_diff": 5,
+        "efficiency": 57.78
       },
       {
         "position": 5,
@@ -1798,6 +1798,20 @@
       },
       {
         "position": 12,
+        "team": "BRAGANTINO",
+        "norm_team": "bragantino",
+        "points": 17,
+        "played": 15,
+        "wins": 4,
+        "draws": 5,
+        "losses": 6,
+        "goals_for": 18,
+        "goals_against": 19,
+        "goal_diff": -1,
+        "efficiency": 37.78
+      },
+      {
+        "position": 13,
         "team": "GRÊMIO",
         "norm_team": "gremio",
         "points": 16,
@@ -1811,7 +1825,7 @@
         "efficiency": 38.1
       },
       {
-        "position": 13,
+        "position": 14,
         "team": "CORITIBA",
         "norm_team": "coritiba",
         "points": 16,
@@ -1823,20 +1837,6 @@
         "goals_against": 23,
         "goal_diff": -8,
         "efficiency": 38.1
-      },
-      {
-        "position": 14,
-        "team": "BRAGANTINO",
-        "norm_team": "bragantino",
-        "points": 14,
-        "played": 14,
-        "wins": 3,
-        "draws": 5,
-        "losses": 6,
-        "goals_for": 16,
-        "goals_against": 18,
-        "goal_diff": -2,
-        "efficiency": 33.33
       },
       {
         "position": 15,
