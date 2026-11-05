@@ -1,7 +1,7 @@
 {
   "season_year": "2026",
   "competition": "serie-b",
-  "scraped_at": "2026-11-04T13:50:52.256837",
+  "scraped_at": "2026-11-05T14:03:29.904514",
   "teams_summary": [
     {
       "team": "PONTE PRETA",
@@ -662,7 +662,7 @@
       },
       {
         "points": 43,
-        "prob": 87.634
+        "prob": 87.625
       },
       {
         "points": 42,
@@ -676,19 +676,19 @@
       },
       {
         "points": 66,
-        "prob": 19.731
+        "prob": 19.675
       },
       {
         "points": 67,
-        "prob": 62.796
+        "prob": 62.802
       },
       {
         "points": 68,
-        "prob": 90.152
+        "prob": 90.158
       },
       {
         "points": 69,
-        "prob": 97.757
+        "prob": 97.753
       },
       {
         "points": 70,
@@ -698,27 +698,27 @@
     "playoffs": [
       {
         "points": 56,
-        "prob": 0.035
+        "prob": 0.036
       },
       {
         "points": 57,
-        "prob": 2.877
+        "prob": 2.871
       },
       {
         "points": 58,
-        "prob": 11.199
+        "prob": 11.188
       },
       {
         "points": 59,
-        "prob": 46.878
+        "prob": 46.864
       },
       {
         "points": 60,
-        "prob": 91.673
+        "prob": 91.661
       },
       {
         "points": 61,
-        "prob": 91.673
+        "prob": 91.661
       },
       {
         "points": 62,
@@ -727,32 +727,28 @@
     ],
     "campeao": [
       {
-        "points": 65,
+        "points": 66,
         "prob": 0.0
       },
       {
-        "points": 66,
-        "prob": 0.97
-      },
-      {
         "points": 67,
-        "prob": 13.128
+        "prob": 13.131
       },
       {
         "points": 68,
-        "prob": 38.506
+        "prob": 38.517
       },
       {
         "points": 69,
-        "prob": 67.552
+        "prob": 67.537
       },
       {
         "points": 70,
-        "prob": 93.32
+        "prob": 93.327
       },
       {
         "points": 71,
-        "prob": 95.646
+        "prob": 95.649
       },
       {
         "points": 72,
