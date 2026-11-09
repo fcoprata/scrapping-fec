@@ -1,7 +1,7 @@
 {
   "season_year": "2026",
   "competition": "serie-a",
-  "scraped_at": "2026-11-08T12:49:47.700975",
+  "scraped_at": "2026-11-09T15:07:23.741002",
   "teams_summary": [
     {
       "team": "CHAPECOENSE",
@@ -20,72 +20,72 @@
     {
       "team": "GRÊMIO",
       "norm_team": "gremio",
-      "prob_rebaixamento": 55.2,
+      "prob_rebaixamento": 55.3,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 1.2
+      "prob_sulamericana": 3.8
     },
     {
       "team": "CORINTHIANS",
       "norm_team": "corinthians",
       "prob_rebaixamento": 51.1,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 1.9
+      "prob_sulamericana": 5.2
     },
     {
       "team": "VITÓRIA",
       "norm_team": "vitoria",
       "prob_rebaixamento": 37.9,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 2.9
+      "prob_sulamericana": 7.1
     },
     {
       "team": "INTERNACIONAL",
       "norm_team": "internacional",
       "prob_rebaixamento": 37.5,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 3.3
+      "prob_sulamericana": 7.8
     },
     {
       "team": "MIRASSOL",
       "norm_team": "mirassol",
       "prob_rebaixamento": 13.5,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 10.7
+      "prob_sulamericana": 22.7
     },
     {
       "team": "CORITIBA",
       "norm_team": "coritiba",
       "prob_rebaixamento": 2.4,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 18.5
+      "prob_sulamericana": 35.1
     },
     {
       "team": "VASCO DA GAMA",
       "norm_team": "vasco da gama",
       "prob_rebaixamento": 1.6,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 54.0
+      "prob_sulamericana": 71.1
     },
     {
       "team": "BOTAFOGO",
       "norm_team": "botafogo",
       "prob_rebaixamento": 0.93,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 36.9
+      "prob_sulamericana": 59.0
     },
     {
       "team": "SÃO PAULO",
       "norm_team": "sao paulo",
-      "prob_rebaixamento": 0.005,
+      "prob_rebaixamento": 0.006,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 75.7
+      "prob_sulamericana": 89.1
     },
     {
       "team": "SANTOS",
       "norm_team": "santos",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 95.8
+      "prob_sulamericana": 94.0
     },
     {
       "team": "PALMEIRAS",
@@ -99,7 +99,7 @@
       "norm_team": "fluminense",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 5.5
+      "prob_sulamericana": 0.58
     },
     {
       "team": "FLAMENGO",
@@ -113,35 +113,35 @@
       "norm_team": "cruzeiro",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 0.12
+      "prob_sulamericana": 0.0
     },
     {
       "team": "BRAGANTINO",
       "norm_team": "bragantino",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 97.1
+      "prob_sulamericana": 95.6
     },
     {
       "team": "BAHIA",
       "norm_team": "bahia",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 60.9
+      "prob_sulamericana": 24.7
     },
     {
       "team": "ATHLETICO-PR",
       "norm_team": "athletico-pr",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 46.0
+      "prob_sulamericana": 13.6
     },
     {
       "team": "ATLÉTICO-MG",
       "norm_team": "atletico-mg",
       "prob_rebaixamento": 0.0,
       "prob_campeao": 0.0,
-      "prob_sulamericana": 89.4
+      "prob_sulamericana": 70.6
     }
   ],
   "probabilities": {
@@ -162,7 +162,7 @@
         "rank": 3,
         "team": "GRÊMIO",
         "norm_team": "gremio",
-        "prob": 55.2
+        "prob": 55.3
       },
       {
         "rank": 4,
@@ -210,7 +210,7 @@
         "rank": 11,
         "team": "SÃO PAULO",
         "norm_team": "sao paulo",
-        "prob": 0.005
+        "prob": 0.006
       },
       {
         "rank": 12,
@@ -394,97 +394,97 @@
         "rank": 1,
         "team": "BRAGANTINO",
         "norm_team": "bragantino",
-        "prob": 97.1
+        "prob": 95.6
       },
       {
         "rank": 1,
         "team": "SANTOS",
         "norm_team": "santos",
-        "prob": 95.8
+        "prob": 94.0
       },
       {
-        "rank": 1,
-        "team": "ATLÉTICO-MG",
-        "norm_team": "atletico-mg",
-        "prob": 89.4
+        "rank": 3,
+        "team": "SÃO PAULO",
+        "norm_team": "sao paulo",
+        "prob": 89.1
       },
       {
         "rank": 4,
-        "team": "SÃO PAULO",
-        "norm_team": "sao paulo",
-        "prob": 75.7
+        "team": "VASCO DA GAMA",
+        "norm_team": "vasco da gama",
+        "prob": 71.1
       },
       {
         "rank": 5,
-        "team": "BAHIA",
-        "norm_team": "bahia",
-        "prob": 60.9
+        "team": "ATLÉTICO-MG",
+        "norm_team": "atletico-mg",
+        "prob": 70.6
       },
       {
         "rank": 6,
-        "team": "VASCO DA GAMA",
-        "norm_team": "vasco da gama",
-        "prob": 54.0
+        "team": "BOTAFOGO",
+        "norm_team": "botafogo",
+        "prob": 59.0
       },
       {
         "rank": 7,
-        "team": "ATHLETICO-PR",
-        "norm_team": "athletico-pr",
-        "prob": 46.0
+        "team": "CORITIBA",
+        "norm_team": "coritiba",
+        "prob": 35.1
       },
       {
         "rank": 8,
-        "team": "BOTAFOGO",
-        "norm_team": "botafogo",
-        "prob": 36.9
+        "team": "BAHIA",
+        "norm_team": "bahia",
+        "prob": 24.7
       },
       {
         "rank": 9,
-        "team": "CORITIBA",
-        "norm_team": "coritiba",
-        "prob": 18.5
+        "team": "MIRASSOL",
+        "norm_team": "mirassol",
+        "prob": 22.7
       },
       {
         "rank": 10,
-        "team": "MIRASSOL",
-        "norm_team": "mirassol",
-        "prob": 10.7
+        "team": "ATHLETICO-PR",
+        "norm_team": "athletico-pr",
+        "prob": 13.6
       },
       {
         "rank": 11,
-        "team": "FLUMINENSE",
-        "norm_team": "fluminense",
-        "prob": 5.5
+        "team": "INTERNACIONAL",
+        "norm_team": "internacional",
+        "prob": 7.8
       },
       {
         "rank": 12,
-        "team": "INTERNACIONAL",
-        "norm_team": "internacional",
-        "prob": 3.3
+        "team": "VITÓRIA",
+        "norm_team": "vitoria",
+        "prob": 7.1
       },
       {
         "rank": 13,
-        "team": "VITÓRIA",
-        "norm_team": "vitoria",
-        "prob": 2.9
+        "team": "CORINTHIANS",
+        "norm_team": "corinthians",
+        "prob": 5.2
       },
       {
         "rank": 14,
-        "team": "CORINTHIANS",
-        "norm_team": "corinthians",
-        "prob": 1.9
+        "team": "GRÊMIO",
+        "norm_team": "gremio",
+        "prob": 3.8
       },
       {
         "rank": 15,
-        "team": "GRÊMIO",
-        "norm_team": "gremio",
-        "prob": 1.2
+        "team": "FLUMINENSE",
+        "norm_team": "fluminense",
+        "prob": 0.58
       },
       {
-        "rank": 16,
+        "rank": 15,
         "team": "CRUZEIRO",
         "norm_team": "cruzeiro",
-        "prob": 0.12
+        "prob": 0.0
       },
       {
         "rank": 17,
